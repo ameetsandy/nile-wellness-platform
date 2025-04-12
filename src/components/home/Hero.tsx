@@ -80,7 +80,7 @@ const Hero = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-nile-600 text-white py-3 px-5 rounded-lg shadow-lg text-sm">
+            <div className="absolute -bottom-4 -left-6 bg-nile-600 text-white py-3 px-5 rounded-lg shadow-lg text-sm">
               Trusted by 1000+ International Patients
             </div>
           </div>
