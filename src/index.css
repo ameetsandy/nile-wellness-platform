@@ -84,25 +84,26 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-background text-foreground font-inter antialiased;
+    scroll-behavior: smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-poppins font-semibold;
+    @apply font-poppins font-semibold tracking-tight;
   }
 }
 
 @layer components {
   .section-container {
-    @apply container mx-auto px-4 sm:px-6 py-12 md:py-16;
+    @apply container mx-auto px-4 sm:px-6 py-12 md:py-20 overflow-hidden;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-6 text-center text-gray-800;
+    @apply text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800;
   }
   
   .section-subtitle {
-    @apply text-lg md:text-xl text-gray-600 mb-10 text-center max-w-3xl mx-auto;
+    @apply text-lg md:text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto;
   }
 
   .card-shadow {
@@ -114,14 +115,27 @@
   }
   
   .cta-primary {
-    @apply bg-nile-600 hover:bg-nile-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 inline-flex items-center gap-2 text-center justify-center;
+    @apply bg-nile-600 hover:bg-nile-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 inline-flex items-center gap-2 text-center justify-center shadow-md hover:shadow-lg;
   }
   
   .cta-secondary {
-    @apply bg-white hover:bg-gray-100 text-nile-600 border border-nile-600 font-semibold py-3 px-6 rounded-lg transition-colors duration-300 inline-flex items-center gap-2 text-center justify-center;
+    @apply bg-white hover:bg-gray-50 text-nile-600 border border-nile-600 font-semibold py-3 px-6 rounded-lg transition-colors duration-300 inline-flex items-center gap-2 text-center justify-center shadow-sm hover:shadow-md;
   }
   
   .cta-whatsapp {
-    @apply bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 inline-flex items-center gap-2 text-center justify-center;
+    @apply bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 inline-flex items-center gap-2 text-center justify-center shadow-md hover:shadow-lg;
   }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
 }

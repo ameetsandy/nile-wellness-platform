@@ -11,19 +11,20 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-medical-50 to-nile-50 pt-16 pb-20">
+    <div className="bg-gradient-to-r from-medical-50 to-nile-50 pt-20 pb-24 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
+          <div className="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0 text-left">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
-              Get Free Medical Opinion from India's Top Doctors – With Govt. Verified Support
+              Get Free Medical Opinion from India's Top Doctors
+              <span className="block text-nile-600 mt-2">With Govt. Verified Support</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 mb-8 max-w-xl">
               Fast, Affordable, and Trusted Medical Care in India for International Patients.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button 
-                className="cta-whatsapp text-lg"
+                className="cta-whatsapp text-base py-3 px-6 h-auto"
                 onClick={openWhatsApp}
               >
                 <MessageSquare className="mr-2 h-5 w-5" />
@@ -31,36 +32,36 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline"
-                className="text-lg border-nile-600 text-nile-600 hover:bg-nile-50"
+                className="text-base py-3 px-6 h-auto border-nile-600 text-nile-600 hover:bg-nile-50"
               >
                 Talk to a Medical Expert
               </Button>
             </div>
             
             {/* Trust Badges */}
-            <div className="flex flex-wrap items-center gap-4">
-              <div className="bg-white p-2 rounded-md shadow-sm">
+            <div className="flex flex-wrap items-center gap-4 mt-6">
+              <div className="bg-white p-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300">
                 <img 
                   src="https://placehold.co/60x30/white/gray/?text=IMA" 
                   alt="Indian Medical Association" 
                   className="h-6"
                 />
               </div>
-              <div className="bg-white p-2 rounded-md shadow-sm">
+              <div className="bg-white p-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300">
                 <img 
                   src="https://placehold.co/60x30/white/gray/?text=NABH" 
                   alt="NABH Accreditation" 
                   className="h-6"
                 />
               </div>
-              <div className="bg-white p-2 rounded-md shadow-sm">
+              <div className="bg-white p-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300">
                 <img 
                   src="https://placehold.co/60x30/white/gray/?text=JCI" 
                   alt="JCI Certification" 
                   className="h-6"
                 />
               </div>
-              <div className="bg-white p-2 rounded-md shadow-sm">
+              <div className="bg-white p-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300">
                 <img 
                   src="https://placehold.co/100x30/white/gray/?text=Govt.+of+India" 
                   alt="Government of India" 
@@ -71,7 +72,7 @@ const Hero = () => {
           </div>
           
           <div className="lg:w-1/2 relative">
-            <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
               <img 
                 src="https://placehold.co/600x400/medical-600/white/?text=Doctors+With+Patients" 
                 alt="Diverse patients with Indian doctors" 
