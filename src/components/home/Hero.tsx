@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -22,7 +23,7 @@ const Hero = () => {
             <p className="text-xl text-gray-600 mb-8 max-w-xl">
               Fast, Affordable, and Trusted Medical Care in India for International Patients.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <Button 
                 className="cta-whatsapp text-base py-3 px-6 h-auto"
                 onClick={openWhatsApp}
@@ -38,8 +39,8 @@ const Hero = () => {
               </Button>
             </div>
             
-            {/* Trust Badges */}
-            <div className="flex flex-wrap items-center gap-4 mt-6">
+            {/* Trust Indicators */}
+            <div className="flex flex-wrap items-center gap-4 mt-4">
               <div className="bg-white p-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300">
                 <img 
                   src="https://placehold.co/60x30/white/gray/?text=IMA" 
@@ -79,8 +80,8 @@ const Hero = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-nile-600 text-white py-3 px-5 rounded-lg shadow-lg">
-              <p className="font-semibold">Trusted by 1000+ International Patients</p>
+            <div className="absolute -bottom-6 -left-6 bg-nile-600 text-white py-3 px-5 rounded-lg shadow-lg text-sm">
+              Trusted by 1000+ International Patients
             </div>
           </div>
         </div>
