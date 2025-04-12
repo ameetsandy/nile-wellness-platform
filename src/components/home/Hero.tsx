@@ -1,5 +1,5 @@
 
-import { WhatsappLogo } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -26,7 +26,7 @@ const Hero = () => {
                 className="cta-whatsapp text-lg"
                 onClick={openWhatsApp}
               >
-                <WhatsappLogo className="mr-2 h-5 w-5" />
+                <MessageSquare className="mr-2 h-5 w-5" />
                 Send Medical Reports via WhatsApp
               </Button>
               <Button 

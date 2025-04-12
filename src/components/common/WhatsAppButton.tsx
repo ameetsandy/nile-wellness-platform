@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import { MessageSquare, X } from 'lucide-react';
 
 const WhatsAppButton = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -42,7 +42,7 @@ const WhatsAppButton = () => {
           isExpanded ? 'bg-red-500 hover:bg-red-600' : 'bg-green-600 hover:bg-green-700'
         } text-white shadow-lg transition-colors duration-300 animate-float`}
       >
-        {isExpanded ? <X size={24} /> : <MessageCircle size={24} />}
+        {isExpanded ? <X size={24} /> : <MessageSquare size={24} />}
       </button>
     </div>
   );
