@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/home/Hero";
+import TrustSection from "@/components/home/TrustSection";
+import TopTreatments from "@/components/home/TopTreatments";
+import WhyChooseIndia from "@/components/home/WhyChooseIndia";
+import PopularDoctors from "@/components/home/PopularDoctors";
+import PartneredHospitals from "@/components/home/PartneredHospitals";
+import HowItWorks from "@/components/home/HowItWorks";
+import Testimonials from "@/components/home/Testimonials";
+import FAQ from "@/components/home/FAQ";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <TrustSection />
+        <TopTreatments />
+        <WhyChooseIndia />
+        <PopularDoctors />
+        <PartneredHospitals />
+        <HowItWorks />
+        <Testimonials />
+        <FAQ />
+      </main>
+      <WhatsAppButton />
+      <Footer />
     </div>
   );
 };
