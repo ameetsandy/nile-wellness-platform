@@ -75,8 +75,8 @@ const Hero = () => {
           <div className="lg:w-1/2 relative">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
               <img 
-                src="https://placehold.co/600x400/medical-600/white/?text=Doctors+With+Patients" 
-                alt="Diverse patients with Indian doctors" 
+              src="https://i.ibb.co/kshPQtJb/istockphoto-1460981468-612x612.jpg" 
+            alt="Diverse patients with Indian doctors" 
                 className="w-full h-auto object-cover"
               />
             </div>

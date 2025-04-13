@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Phone, MessageCircle } from "lucide-react";
@@ -87,7 +86,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center gap-2">
+            <img src="/logo.svg" alt="Nile Wellness Logo" className="h-10 w-10" />
             <span className="text-2xl font-bold text-nile-600">Nile Wellness</span>
           </Link>
 
