@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, Phone, MessageCircle } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, MessageCircle, MapPin, Users, Headphones, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -25,7 +25,6 @@ const Header = () => {
     };
   }, []);
 
-  // Close mobile menu when route changes
   useEffect(() => {
     setIsMenuOpen(false);
     setActiveDropdown(null);
@@ -67,13 +66,27 @@ const Header = () => {
       dropdown: false,
     },
     {
-      name: "Why India",
-      path: "/why-india",
+      name: "Free Services",
+      path: "/free-services",
+      icon: Headphones,
+      dropdown: false,
+    },
+    {
+      name: "Patient Stories",
+      path: "/patient-stories",
+      icon: Users,
+      dropdown: false,
+    },
+    {
+      name: "Plan Your Trip",
+      path: "/plan-your-trip",
+      icon: MapPin,
       dropdown: false,
     },
     {
       name: "About Us",
       path: "/about",
+      icon: Info,
       dropdown: false,
     },
   ];
@@ -85,13 +98,11 @@ const Header = () => {
     )}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img src="/logo.svg" alt="Nile Wellness Logo" className="h-10 w-10" />
             <span className="text-2xl font-bold text-nile-600">Nile Wellness</span>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             {navigationItems.map((item) => (
               <div key={item.name} className="relative group">
@@ -109,8 +120,9 @@ const Header = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className="text-gray-700 hover:text-nile-600 font-medium py-2"
+                    className="flex items-center text-gray-700 hover:text-nile-600 font-medium py-2"
                   >
+                    {item.icon && <item.icon className="mr-1 h-4 w-4" />}
                     {item.name}
                   </Link>
                 )}
@@ -140,17 +152,17 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm" className="flex items-center gap-1">
               <Phone className="h-4 w-4" /> +91 1234567890
             </Button>
-            <Button className="bg-nile-600 hover:bg-nile-700">
-              <MessageCircle className="mr-2 h-4 w-4" /> Contact Us
+            <Button className="bg-nile-600 hover:bg-nile-700" asChild>
+              <Link to="/contact">
+                <MessageCircle className="mr-2 h-4 w-4" /> Contact Us
+              </Link>
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -163,7 +175,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-2 max-h-[80vh] overflow-y-auto">
             {navigationItems.map((item) => (
@@ -203,9 +214,10 @@ const Header = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className="block py-3 text-gray-700 hover:text-nile-600 font-medium"
+                    className="flex items-center py-3 text-gray-700 hover:text-nile-600 font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
+                    {item.icon && <item.icon className="mr-2 h-4 w-4" />}
                     {item.name}
                   </Link>
                 )}
@@ -216,8 +228,10 @@ const Header = () => {
               <Button variant="outline" size="sm" className="flex items-center justify-center gap-1 w-full">
                 <Phone className="h-4 w-4" /> +91 1234567890
               </Button>
-              <Button className="bg-nile-600 hover:bg-nile-700 w-full">
-                <MessageCircle className="mr-2 h-4 w-4" /> Contact Us
+              <Button className="bg-nile-600 hover:bg-nile-700 w-full" asChild>
+                <Link to="/contact">
+                  <MessageCircle className="mr-2 h-4 w-4" /> Contact Us
+                </Link>
               </Button>
             </div>
           </div>
