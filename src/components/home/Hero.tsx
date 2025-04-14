@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { MessageSquare, Headphones, Users, MapPin, Info, Contact } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -24,7 +23,7 @@ const Hero = () => {
             <p className="text-xl text-gray-600 mb-8 max-w-xl">
               Fast, Affordable, and Trusted Medical Care in India for International Patients.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-6">
+            <div className="flex flex-col sm:flex-row gap-4 mb-4">
               <Button 
                 className="cta-whatsapp text-base py-3 px-6 h-auto"
                 onClick={openWhatsApp}
@@ -37,50 +36,6 @@ const Hero = () => {
                 className="text-base py-3 px-6 h-auto border-nile-600 text-nile-600 hover:bg-nile-50"
               >
                 Talk to a Medical Expert
-              </Button>
-            </div>
-            
-            {/* Service Buttons */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-              <Button 
-                variant="secondary" 
-                className="justify-start bg-white border border-nile-200 hover:bg-nile-50"
-                asChild
-              >
-                <Link to="/free-services">
-                  <Headphones className="mr-2 h-4 w-4 text-nile-600" />
-                  Free Services
-                </Link>
-              </Button>
-              <Button 
-                variant="secondary" 
-                className="justify-start bg-white border border-nile-200 hover:bg-nile-50"
-                asChild
-              >
-                <Link to="/patient-stories">
-                  <Users className="mr-2 h-4 w-4 text-nile-600" />
-                  Patient Stories
-                </Link>
-              </Button>
-              <Button 
-                variant="secondary" 
-                className="justify-start bg-white border border-nile-200 hover:bg-nile-50"
-                asChild
-              >
-                <Link to="/plan-your-trip">
-                  <MapPin className="mr-2 h-4 w-4 text-nile-600" />
-                  Plan Your Trip
-                </Link>
-              </Button>
-              <Button 
-                variant="secondary" 
-                className="justify-start bg-white border border-nile-200 hover:bg-nile-50"
-                asChild
-              >
-                <Link to="/about">
-                  <Info className="mr-2 h-4 w-4 text-nile-600" />
-                  About Us
-                </Link>
               </Button>
             </div>
             
