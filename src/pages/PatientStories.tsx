@@ -1,9 +1,8 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { MessageCircle, Play, Calendar, MapPin, HeartPulse, User, Quote, Star, ArrowRight, ChevronRight, ChevronLeft } from "lucide-react";
+import { MessageCircle, Play, Calendar, MapPin, HeartPulse, User as UserIcon, Quote, Star, ArrowRight, ChevronRight, ChevronLeft, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
@@ -264,7 +263,7 @@ const PatientStories = () => {
                                 <span className="text-white/90 text-sm">{testimonial.treatment}</span>
                               </div>
                               <div className="flex items-center">
-                                <Building className="h-4 w-4 opacity-70 mr-2" />
+                                <Building2 className="h-4 w-4 opacity-70 mr-2" />
                                 <span className="text-white/90 text-sm">{testimonial.hospital}</span>
                               </div>
                             </div>
@@ -313,7 +312,7 @@ const PatientStories = () => {
           </div>
         </section>
         
-        <section className="py-12 bg-gray-50">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">Video Testimonials</h2>
@@ -437,7 +436,7 @@ const PatientStories = () => {
                         <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
                         <div className="flex justify-between items-center mb-4">
                           <div className="flex items-center text-gray-500 text-sm">
-                            <User className="h-4 w-4 mr-1" />
+                            <UserIcon className="h-4 w-4 mr-1" />
                             <span>{story.patient}</span>
                           </div>
                           <div className="flex items-center text-nile-600 text-sm">
@@ -484,7 +483,7 @@ const PatientStories = () => {
                         <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
                         <div className="flex justify-between items-center mb-4">
                           <div className="flex items-center text-gray-500 text-sm">
-                            <User className="h-4 w-4 mr-1" />
+                            <UserIcon className="h-4 w-4 mr-1" />
                             <span>{story.patient}</span>
                           </div>
                           <div className="flex items-center text-nile-600 text-sm">
@@ -503,7 +502,6 @@ const PatientStories = () => {
                 </div>
               </TabsContent>
               
-              {/* Similar structure for other categories */}
               <TabsContent value="orthopedic">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {successStories.filter(story => 
@@ -516,7 +514,6 @@ const PatientStories = () => {
                       key={story.id}
                       className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
                     >
-                      {/* Same card structure as above */}
                       <img 
                         src={story.image}
                         alt={story.title}
@@ -534,7 +531,7 @@ const PatientStories = () => {
                         <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
                         <div className="flex justify-between items-center mb-4">
                           <div className="flex items-center text-gray-500 text-sm">
-                            <User className="h-4 w-4 mr-1" />
+                            <UserIcon className="h-4 w-4 mr-1" />
                             <span>{story.patient}</span>
                           </div>
                           <div className="flex items-center text-nile-600 text-sm">
@@ -636,7 +633,7 @@ const PatientStories = () => {
                       
                       <div className="bg-white p-4 rounded-md shadow-sm">
                         <h4 className="font-medium mb-2 flex items-center">
-                          <User className="h-5 w-5 text-nile-600 mr-2" />
+                          <UserIcon className="h-5 w-5 text-nile-600 mr-2" />
                           Feature Story
                         </h4>
                         <p className="text-sm text-gray-600">
