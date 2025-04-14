@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Phone, MessageCircle } from "lucide-react";
@@ -98,7 +99,6 @@ const Header = () => {
                     to={item.path}
                     className="flex items-center text-gray-700 hover:text-nile-600 font-medium py-2"
                   >
-                    {item.icon && <item.icon className="mr-1 h-4 w-4" />}
                     {item.name}
                   </Link>
                 )}
@@ -193,7 +193,6 @@ const Header = () => {
                     className="flex items-center py-3 text-gray-700 hover:text-nile-600 font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {item.icon && <item.icon className="mr-2 h-4 w-4" />}
                     {item.name}
                   </Link>
                 )}
