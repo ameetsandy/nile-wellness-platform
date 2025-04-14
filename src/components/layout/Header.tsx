@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, Phone, MessageCircle, MapPin, Users, Headphones, Info } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -63,30 +63,6 @@ const Header = () => {
     {
       name: "Hospitals",
       path: "/hospitals",
-      dropdown: false,
-    },
-    {
-      name: "Free Services",
-      path: "/free-services",
-      icon: Headphones,
-      dropdown: false,
-    },
-    {
-      name: "Patient Stories",
-      path: "/patient-stories",
-      icon: Users,
-      dropdown: false,
-    },
-    {
-      name: "Plan Your Trip",
-      path: "/plan-your-trip",
-      icon: MapPin,
-      dropdown: false,
-    },
-    {
-      name: "About Us",
-      path: "/about",
-      icon: Info,
       dropdown: false,
     },
   ];

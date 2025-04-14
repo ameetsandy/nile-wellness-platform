@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MessageSquare, Headphones, Users, MapPin, Info, Contact } from "lucide-react";
+import { MessageSquare, Headphones, MapPin, Info, HelpCircle, Plane, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -40,7 +39,6 @@ const Hero = () => {
               </Button>
             </div>
             
-            {/* Service Buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
               <Button 
                 variant="secondary" 
@@ -48,7 +46,7 @@ const Hero = () => {
                 asChild
               >
                 <Link to="/free-services">
-                  <Headphones className="mr-2 h-4 w-4 text-nile-600" />
+                  <HelpCircle className="mr-2 h-4 w-4 text-nile-600" />
                   Free Services
                 </Link>
               </Button>
@@ -57,9 +55,9 @@ const Hero = () => {
                 className="justify-start bg-white border border-nile-200 hover:bg-nile-50"
                 asChild
               >
-                <Link to="/patient-stories">
-                  <Users className="mr-2 h-4 w-4 text-nile-600" />
-                  Patient Stories
+                <Link to="/free-services/visa-help">
+                  <Plane className="mr-2 h-4 w-4 text-nile-600" />
+                  Visa Help
                 </Link>
               </Button>
               <Button 
@@ -67,9 +65,9 @@ const Hero = () => {
                 className="justify-start bg-white border border-nile-200 hover:bg-nile-50"
                 asChild
               >
-                <Link to="/plan-your-trip">
+                <Link to="/free-services/pickup">
                   <MapPin className="mr-2 h-4 w-4 text-nile-600" />
-                  Plan Your Trip
+                  Pickup & Transfer
                 </Link>
               </Button>
               <Button 
@@ -77,14 +75,13 @@ const Hero = () => {
                 className="justify-start bg-white border border-nile-200 hover:bg-nile-50"
                 asChild
               >
-                <Link to="/about">
-                  <Info className="mr-2 h-4 w-4 text-nile-600" />
-                  About Us
+                <Link to="/free-services/translators">
+                  <Globe className="mr-2 h-4 w-4 text-nile-600" />
+                  Language Support
                 </Link>
               </Button>
             </div>
             
-            {/* Trust Indicators */}
             <div className="flex flex-wrap items-center gap-4 mt-4">
               <div className="bg-white p-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300">
                 <img 
