@@ -29,16 +29,16 @@ const TopTreatments = () => {
       description: "Life-saving liver transplant procedures"
     },
     {
-      title: "Cancer Treatment",
-      image: "https://placehold.co/300x300/nile-600/white/?text=Cancer",
-      path: "/treatments/cancer",
-      description: "Comprehensive oncology care"
+      title: "Kidney Transplant",
+      image: "https://placehold.co/300x300/nile-600/white/?text=Kidney",
+      path: "/treatments/kidney-transplant",
+      description: "Expert care for end-stage renal disease"
     },
     {
-      title: "IVF & Fertility",
-      image: "https://placehold.co/300x300/nile-600/white/?text=IVF",
-      path: "/treatments/ivf-fertility",
-      description: "Fulfill your dreams of parenthood"
+      title: "Dental Implants",
+      image: "https://placehold.co/300x300/nile-600/white/?text=Dental",
+      path: "/treatments/dental-implants",
+      description: "Restore your smile with quality implants"
     },
     {
       title: "Bariatric Surgery",
@@ -47,10 +47,10 @@ const TopTreatments = () => {
       description: "Sustainable weight loss solutions"
     },
     {
-      title: "Dental & Eye Care",
-      image: "https://placehold.co/300x300/nile-600/white/?text=Dental",
-      path: "/treatments/dental-eye-care",
-      description: "Specialized dental and vision care"
+      title: "Hip Replacement",
+      image: "https://placehold.co/300x300/nile-600/white/?text=Hip",
+      path: "/treatments/hip-replacement",
+      description: "Advanced joint care for better mobility"
     }
   ];
 

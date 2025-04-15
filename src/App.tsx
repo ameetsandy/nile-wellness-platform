@@ -21,6 +21,10 @@ import BariatricSurgery from "./pages/treatments/BariatricSurgery";
 import SpineSurgery from "./pages/treatments/SpineSurgery";
 import LiverTransplant from "./pages/treatments/LiverTransplant";
 import KneeReplacement from "./pages/treatments/KneeReplacement";
+import HeartBypassSurgery from "./pages/treatments/HeartBypassSurgery";
+import KidneyTransplant from "./pages/treatments/KidneyTransplant";
+import DentalImplants from "./pages/treatments/DentalImplants";
+import HipReplacement from "./pages/treatments/HipReplacement";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +45,10 @@ const App = () => (
           <Route path="/treatments/spine-surgery" element={<SpineSurgery />} />
           <Route path="/treatments/liver-transplant" element={<LiverTransplant />} />
           <Route path="/treatments/knee-replacement" element={<KneeReplacement />} />
+          <Route path="/treatments/heart-bypass" element={<HeartBypassSurgery />} />
+          <Route path="/treatments/kidney-transplant" element={<KidneyTransplant />} />
+          <Route path="/treatments/dental-implants" element={<DentalImplants />} />
+          <Route path="/treatments/hip-replacement" element={<HipReplacement />} />
           <Route path="/free-opinion" element={<FreeOpinion />} />
           <Route path="/free-services" element={<FreeServices />} />
           <Route path="/patient-stories" element={<PatientStories />} />
