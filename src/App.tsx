@@ -18,6 +18,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import BariatricSurgery from "./pages/treatments/BariatricSurgery";
+import SpineSurgery from "./pages/treatments/SpineSurgery";
+import LiverTransplant from "./pages/treatments/LiverTransplant";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +37,8 @@ const App = () => (
           <Route path="/hospitals/:id" element={<HospitalDetail />} />
           <Route path="/treatments" element={<Treatments />} />
           <Route path="/treatments/bariatric-surgery" element={<BariatricSurgery />} />
+          <Route path="/treatments/spine-surgery" element={<SpineSurgery />} />
+          <Route path="/treatments/liver-transplant" element={<LiverTransplant />} />
           <Route path="/free-opinion" element={<FreeOpinion />} />
           <Route path="/free-services" element={<FreeServices />} />
           <Route path="/patient-stories" element={<PatientStories />} />

@@ -27,7 +27,7 @@ const Hero = () => {
             <p className="text-xl text-gray-600 mb-8 max-w-xl">
               Fast, Affordable, and Trusted Medical Care in India for International Patients.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Button 
                 className="cta-whatsapp text-base py-3 px-6 h-auto"
                 onClick={openWhatsApp}
@@ -81,13 +81,19 @@ const Hero = () => {
           <div className="lg:w-1/2 relative">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
               <img 
-                src="https://i.ibb.co/kshPQtJb/istockphoto-1460981468-612x612.jpg" 
+                src="https://images.unsplash.com/photo-1504813184591-01572f98c85f" 
                 alt="Diverse patients with Indian doctors" 
                 className="w-full h-auto object-cover"
               />
             </div>
             <div className="absolute -bottom-4 -left-6 bg-nile-600 text-white py-3 px-5 rounded-lg shadow-lg text-sm">
               Trusted by 1000+ International Patients
+            </div>
+            <div className="absolute -top-6 -right-6 bg-white rounded-full p-3 shadow-lg flex items-center justify-center">
+              <div className="text-center">
+                <span className="block text-nile-600 font-bold text-lg">70%</span>
+                <span className="text-xs text-gray-600">Cost Savings</span>
+              </div>
             </div>
           </div>
         </div>

@@ -17,22 +17,22 @@ const TopTreatments = () => {
       description: "Regain mobility and relieve pain"
     },
     {
+      title: "Spine Surgery",
+      image: "https://placehold.co/300x300/nile-600/white/?text=Spine",
+      path: "/treatments/spine-surgery",
+      description: "Advanced spine treatments & rehabilitation"
+    },
+    {
+      title: "Liver Transplant",
+      image: "https://placehold.co/300x300/nile-600/white/?text=Liver",
+      path: "/treatments/liver-transplant",
+      description: "Life-saving liver transplant procedures"
+    },
+    {
       title: "Cancer Treatment",
       image: "https://placehold.co/300x300/nile-600/white/?text=Cancer",
       path: "/treatments/cancer",
       description: "Comprehensive oncology care"
-    },
-    {
-      title: "Kidney & Liver Transplant",
-      image: "https://placehold.co/300x300/nile-600/white/?text=Transplant",
-      path: "/treatments/kidney-liver-transplant",
-      description: "Life-saving transplant procedures"
-    },
-    {
-      title: "Spine & Brain Surgery",
-      image: "https://placehold.co/300x300/nile-600/white/?text=Spine",
-      path: "/treatments/spine-brain-surgery",
-      description: "Advanced neurosurgical care"
     },
     {
       title: "IVF & Fertility",
