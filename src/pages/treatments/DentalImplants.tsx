@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Tooth, CheckCircle, Phone, MessageCircle } from "lucide-react";
+import { Smile, CheckCircle, Phone, MessageCircle } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const DentalImplants = () => {
@@ -49,7 +49,7 @@ const DentalImplants = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="bg-white p-8 rounded-xl shadow-md">
                 <div className="flex items-center mb-6">
-                  <Tooth className="text-nile-600 mr-3 h-8 w-8" />
+                  <Smile className="text-nile-600 mr-3 h-8 w-8" />
                   <h2 className="text-2xl font-bold">What are Dental Implants?</h2>
                 </div>
                 <p className="text-gray-700">
