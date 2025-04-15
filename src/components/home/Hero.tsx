@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MessageSquare } from "lucide-react";
+import { MessageSquare, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -9,6 +9,10 @@ const Hero = () => {
     const message = "I'd like to send my medical reports for a free opinion.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+  };
+
+  const callNow = () => {
+    window.location.href = "tel:+911234567890"; // Replace with actual phone number
   };
 
   return (
@@ -34,7 +38,9 @@ const Hero = () => {
               <Button 
                 variant="outline"
                 className="text-base py-3 px-6 h-auto border-nile-600 text-nile-600 hover:bg-nile-50"
+                onClick={callNow}
               >
+                <Phone className="mr-2 h-5 w-5" />
                 Talk to a Medical Expert
               </Button>
             </div>
@@ -75,8 +81,8 @@ const Hero = () => {
           <div className="lg:w-1/2 relative">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
               <img 
-              src="https://i.ibb.co/kshPQtJb/istockphoto-1460981468-612x612.jpg" 
-            alt="Diverse patients with Indian doctors" 
+                src="https://i.ibb.co/kshPQtJb/istockphoto-1460981468-612x612.jpg" 
+                alt="Diverse patients with Indian doctors" 
                 className="w-full h-auto object-cover"
               />
             </div>

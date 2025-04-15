@@ -17,6 +17,7 @@ import PlanYourTrip from "./pages/PlanYourTrip";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import BariatricSurgery from "./pages/treatments/BariatricSurgery";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/hospitals" element={<Hospitals />} />
           <Route path="/hospitals/:id" element={<HospitalDetail />} />
           <Route path="/treatments" element={<Treatments />} />
+          <Route path="/treatments/bariatric-surgery" element={<BariatricSurgery />} />
           <Route path="/free-opinion" element={<FreeOpinion />} />
           <Route path="/free-services" element={<FreeServices />} />
           <Route path="/patient-stories" element={<PatientStories />} />
