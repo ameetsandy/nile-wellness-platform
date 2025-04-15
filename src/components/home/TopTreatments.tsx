@@ -13,7 +13,7 @@ const TopTreatments = () => {
     {
       title: "Knee & Hip Replacement",
       image: "https://placehold.co/300x300/nile-600/white/?text=Knee",
-      path: "/treatments/knee-hip-replacement",
+      path: "/treatments/knee-replacement",
       description: "Regain mobility and relieve pain"
     },
     {

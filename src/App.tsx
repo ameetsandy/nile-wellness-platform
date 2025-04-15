@@ -20,6 +20,7 @@ import NotFound from "./pages/NotFound";
 import BariatricSurgery from "./pages/treatments/BariatricSurgery";
 import SpineSurgery from "./pages/treatments/SpineSurgery";
 import LiverTransplant from "./pages/treatments/LiverTransplant";
+import KneeReplacement from "./pages/treatments/KneeReplacement";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/treatments/bariatric-surgery" element={<BariatricSurgery />} />
           <Route path="/treatments/spine-surgery" element={<SpineSurgery />} />
           <Route path="/treatments/liver-transplant" element={<LiverTransplant />} />
+          <Route path="/treatments/knee-replacement" element={<KneeReplacement />} />
           <Route path="/free-opinion" element={<FreeOpinion />} />
           <Route path="/free-services" element={<FreeServices />} />
           <Route path="/patient-stories" element={<PatientStories />} />
