@@ -30,6 +30,10 @@ import CancerTreatment from "./pages/treatments/CancerTreatment";
 import IVFFertility from "./pages/treatments/IVFFertility";
 import EyeCare from "./pages/treatments/EyeCare";
 import AllTreatments from "./pages/treatments/AllTreatments";
+import KneeHipReplacement from "./pages/treatments/KneeHipReplacement";
+import KidneyLiverTransplant from "./pages/treatments/KidneyLiverTransplant";
+import SpineBrainSurgery from "./pages/treatments/SpineBrainSurgery";
+import DentalEyeCare from "./pages/treatments/DentalEyeCare";
 
 const queryClient = new QueryClient();
 
@@ -52,13 +56,17 @@ const App = () => (
           <Route path="/treatments/brain-surgery" element={<BrainSurgery />} />
           <Route path="/treatments/liver-transplant" element={<LiverTransplant />} />
           <Route path="/treatments/knee-replacement" element={<KneeReplacement />} />
+          <Route path="/treatments/hip-replacement" element={<HipReplacement />} />
+          <Route path="/treatments/knee-hip-replacement" element={<KneeHipReplacement />} />
           <Route path="/treatments/heart-bypass" element={<HeartBypassSurgery />} />
           <Route path="/treatments/kidney-transplant" element={<KidneyTransplant />} />
+          <Route path="/treatments/kidney-liver-transplant" element={<KidneyLiverTransplant />} />
+          <Route path="/treatments/spine-brain-surgery" element={<SpineBrainSurgery />} />
           <Route path="/treatments/dental-implants" element={<DentalImplants />} />
-          <Route path="/treatments/hip-replacement" element={<HipReplacement />} />
+          <Route path="/treatments/eye-care" element={<EyeCare />} />
+          <Route path="/treatments/dental-eye-care" element={<DentalEyeCare />} />
           <Route path="/treatments/cancer-treatment" element={<CancerTreatment />} />
           <Route path="/treatments/ivf-fertility" element={<IVFFertility />} />
-          <Route path="/treatments/eye-care" element={<EyeCare />} />
           <Route path="/free-opinion" element={<FreeOpinion />} />
           <Route path="/free-services" element={<FreeServices />} />
           <Route path="/patient-stories" element={<PatientStories />} />

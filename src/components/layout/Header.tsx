@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Phone, MessageCircle, MapPin, Users, Headphones, Info } from "lucide-react";
@@ -45,14 +46,22 @@ const Header = () => {
       dropdown: true,
       items: [
         { name: "Heart Bypass Surgery", path: "/treatments/heart-bypass" },
+        { name: "Knee Replacement", path: "/treatments/knee-replacement" },
+        { name: "Hip Replacement", path: "/treatments/hip-replacement" },
         { name: "Knee & Hip Replacement", path: "/treatments/knee-hip-replacement" },
-        { name: "Cancer Treatment", path: "/treatments/cancer" },
+        { name: "Cancer Treatment", path: "/treatments/cancer-treatment" },
+        { name: "Kidney Transplant", path: "/treatments/kidney-transplant" },
+        { name: "Liver Transplant", path: "/treatments/liver-transplant" },
         { name: "Kidney & Liver Transplant", path: "/treatments/kidney-liver-transplant" },
+        { name: "Spine Surgery", path: "/treatments/spine-surgery" },
+        { name: "Brain Surgery", path: "/treatments/brain-surgery" },
         { name: "Spine & Brain Surgery", path: "/treatments/spine-brain-surgery" },
         { name: "IVF & Fertility", path: "/treatments/ivf-fertility" },
         { name: "Bariatric Surgery", path: "/treatments/bariatric-surgery" },
+        { name: "Dental Implants", path: "/treatments/dental-implants" },
+        { name: "Eye Care", path: "/treatments/eye-care" },
         { name: "Dental & Eye Care", path: "/treatments/dental-eye-care" },
-        { name: "All Treatments", path: "/treatments" },
+        { name: "All Treatments", path: "/treatments/all" },
       ],
     },
     {
