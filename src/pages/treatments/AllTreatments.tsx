@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Heart, Bone, Brain, Microscope, Activity, Baby, Eye, Smile, Phone, MessageCircle } from "lucide-react";
+import { Heart, Bone, Brain, Microscope, Activity, Baby, Eye, Smile, Phone, MessageCircle, Clock, CircleDollarSign } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const AllTreatments = () => {

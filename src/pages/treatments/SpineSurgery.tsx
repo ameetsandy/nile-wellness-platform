@@ -1,10 +1,9 @@
-
 import { Link } from "react-router-dom";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Spine, CheckCircle, Phone, MessageCircle } from "lucide-react";
+import { Spline, CheckCircle, Phone, MessageCircle } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const SpineSurgery = () => {
@@ -49,7 +48,7 @@ const SpineSurgery = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="bg-white p-8 rounded-xl shadow-md">
                 <div className="flex items-center mb-6">
-                  <Spine className="text-red-500 mr-3 h-8 w-8" />
+                  <Spline className="text-red-500 mr-3 h-8 w-8" />
                   <h2 className="text-2xl font-bold">What is Spine Surgery?</h2>
                 </div>
                 <p className="text-gray-700">
