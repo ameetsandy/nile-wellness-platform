@@ -4,12 +4,17 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ActivitySquare, CheckCircle, Phone, MessageCircle } from "lucide-react";
+import { ActivitySquare, CheckCircle, Phone, MessageCircle, Bone, Flag, CircleDollarSign } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import { Helmet } from "react-helmet";
 
 const KneeReplacement = () => {
   return (
     <div className="flex flex-col min-h-screen">
+      <Helmet>
+        <title>Knee Replacement Surgery in India – Cost, Best Surgeons & Hospitals</title>
+        <meta name="description" content="Get affordable and expert knee replacement in India. Compare costs, top doctors, and best orthopedic hospitals. Free consultation and visa support." />
+      </Helmet>
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -28,7 +33,7 @@ const KneeReplacement = () => {
                     <MessageCircle className="mr-2 h-5 w-5" /> WhatsApp Now
                   </Button>
                   <Button variant="outline" className="border-blue-600 text-blue-600 hover:text-blue-700">
-                    <Phone className="mr-2 h-5 w-5" /> Call Us
+                    <Phone className="mr-2 h-5 w-5" /> Request Callback
                   </Button>
                 </div>
               </div>
@@ -62,7 +67,7 @@ const KneeReplacement = () => {
                   <h2 className="text-2xl font-bold">Why Choose India?</h2>
                 </div>
                 <p className="text-gray-700">
-                  India offers some of the best orthopedic care in the world at a fraction of the cost. Patients benefit from internationally trained orthopedic surgeons, JCI/NABH-accredited hospitals, advanced robotic-assisted surgery, and access to globally approved implants. Most Indian hospitals have little to no waiting period and provide dedicated recovery care including physiotherapy and mobility aids.
+                  India offers some of the best orthopedic care in the world at a fraction of the cost. Patients benefit from internationally trained orthopedic surgeons, JCI/NABH-accredited hospitals, advanced robotic-assisted surgery, and access to globally approved implants. Most Indian hospitals have little to no waiting period and provide dedicated recovery care including physiotherapy and mobility aids. Patients from Africa, GCC, and CIS countries especially appreciate the support for visas, translation, and travel.
                 </p>
               </div>
             </div>
