@@ -11,7 +11,7 @@ const TopTreatments = () => {
       description: "Restore blood flow to your heart"
     },
     {
-      title: "Knee & Hip Replacement",
+      title: "Knee Replacement",
       image: "https://placehold.co/300x300/nile-600/white/?text=Knee",
       path: "/treatments/knee-replacement",
       description: "Regain mobility and relieve pain"
@@ -88,7 +88,7 @@ const TopTreatments = () => {
       
       <div className="mt-12 text-center">
         <Link 
-          to="/treatments"
+          to="/treatments/all"
           className="inline-flex items-center gap-2 text-nile-600 hover:text-nile-700 font-medium"
         >
           View all treatments

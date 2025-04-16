@@ -19,12 +19,17 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import BariatricSurgery from "./pages/treatments/BariatricSurgery";
 import SpineSurgery from "./pages/treatments/SpineSurgery";
+import BrainSurgery from "./pages/treatments/BrainSurgery";
 import LiverTransplant from "./pages/treatments/LiverTransplant";
 import KneeReplacement from "./pages/treatments/KneeReplacement";
 import HeartBypassSurgery from "./pages/treatments/HeartBypassSurgery";
 import KidneyTransplant from "./pages/treatments/KidneyTransplant";
 import DentalImplants from "./pages/treatments/DentalImplants";
 import HipReplacement from "./pages/treatments/HipReplacement";
+import CancerTreatment from "./pages/treatments/CancerTreatment";
+import IVFFertility from "./pages/treatments/IVFFertility";
+import EyeCare from "./pages/treatments/EyeCare";
+import AllTreatments from "./pages/treatments/AllTreatments";
 
 const queryClient = new QueryClient();
 
@@ -41,14 +46,19 @@ const App = () => (
           <Route path="/hospitals" element={<Hospitals />} />
           <Route path="/hospitals/:id" element={<HospitalDetail />} />
           <Route path="/treatments" element={<Treatments />} />
+          <Route path="/treatments/all" element={<AllTreatments />} />
           <Route path="/treatments/bariatric-surgery" element={<BariatricSurgery />} />
           <Route path="/treatments/spine-surgery" element={<SpineSurgery />} />
+          <Route path="/treatments/brain-surgery" element={<BrainSurgery />} />
           <Route path="/treatments/liver-transplant" element={<LiverTransplant />} />
           <Route path="/treatments/knee-replacement" element={<KneeReplacement />} />
           <Route path="/treatments/heart-bypass" element={<HeartBypassSurgery />} />
           <Route path="/treatments/kidney-transplant" element={<KidneyTransplant />} />
           <Route path="/treatments/dental-implants" element={<DentalImplants />} />
           <Route path="/treatments/hip-replacement" element={<HipReplacement />} />
+          <Route path="/treatments/cancer-treatment" element={<CancerTreatment />} />
+          <Route path="/treatments/ivf-fertility" element={<IVFFertility />} />
+          <Route path="/treatments/eye-care" element={<EyeCare />} />
           <Route path="/free-opinion" element={<FreeOpinion />} />
           <Route path="/free-services" element={<FreeServices />} />
           <Route path="/patient-stories" element={<PatientStories />} />
