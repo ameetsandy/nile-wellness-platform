@@ -78,16 +78,24 @@ const Testimonials = () => {
                   key={testimonial.id}
                   className="w-full flex-shrink-0 px-4"
                 >
-                  <div className="bg-white rounded-xl shadow-md p-6 md:p-8 text-center">
+                  <div className="bg-white rounded-xl shadow-md p-6 md:p-8 text-center relative">
                     <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                       <div className="w-12 h-12 rounded-full bg-nile-600 flex items-center justify-center">
                         <Quote className="h-6 w-6 text-white" />
                       </div>
                     </div>
                     
-                    <p className="text-gray-600 text-lg mt-6 mb-6 relative">
-                      "{testimonial.text}"
-                    </p>
+                    {/* Quote with custom quote icon styling */}
+                    <div className="relative mb-6">
+                      <img 
+                        src="/lovable-uploads/74c8a9b9-c3af-4139-a52b-2501e6fb0c33.png" 
+                        alt="Quote icon" 
+                        className="absolute left-0 top-0 w-16 h-16 -ml-4 -mt-4"
+                      />
+                      <p className="text-gray-600 text-lg mt-6 text-left pl-16 pr-4">
+                        "{testimonial.text}"
+                      </p>
+                    </div>
                     
                     <div className="flex items-center justify-center">
                       <div className="mr-4 relative">
@@ -138,3 +146,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
