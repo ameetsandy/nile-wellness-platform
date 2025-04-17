@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Phone, MessageCircle, Menu as MenuIcon, X } from "lucide-react";
@@ -108,13 +107,13 @@ const Header = () => {
             <span className="text-2xl font-bold text-nile-600">Nile Wellness</span>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8">  {/* Increased space-x from 6 to 8 */}
+          <nav className="hidden md:flex items-center space-x-8">
             {navigationItems.map((item) => (
               <div key={item.name} className="relative group">
                 {item.dropdown ? (
                   <button
                     onClick={() => toggleDropdown(item.name)}
-                    className="flex items-center text-gray-700 hover:text-nile-600 font-medium py-2 space-x-2"  {/* Added space-x-2 for dropdown items */}
+                    className="flex items-center text-gray-700 hover:text-nile-600 font-medium py-2 space-x-2"
                   >
                     {item.name}
                     <ChevronDown className={cn(
@@ -156,7 +155,7 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center space-x-4">  {/* Keep existing space-x-4 */}
+          <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm" className="flex items-center gap-1">
               <Phone className="h-4 w-4" /> +91 1234567890
             </Button>
