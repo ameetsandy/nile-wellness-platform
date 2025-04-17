@@ -54,15 +54,24 @@ const HowItWorks = () => {
               key={index}
               className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8`}
             >
-              <div className={`md:w-1/2 text-center ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                <h3 className="text-xl font-semibold mb-2">
-                  <span className="text-nile-600 mr-2">{index + 1}.</span>
+              <div className={`md:w-1/2 text-center ${index % 2 === 0 ? 'md:text-right pr-8' : 'md:text-left pl-8'}`}>
+                <h3 className="text-xl font-semibold mb-3">
                   {step.title}
                 </h3>
-                <p className="text-gray-600">{step.description}</p>
+                <p className="text-gray-600 max-w-md mx-auto md:mx-0 leading-relaxed">
+                  {step.description}
+                </p>
               </div>
               
-              <div className="flex-shrink-0 z-10">
+              <div className="flex-shrink-0 z-10 relative">
+                {/* Number indicator slightly offset from timeline */}
+                <div className="absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 md:translate-x-0 left-1/2 md:left-auto md:right-auto w-7 h-7 rounded-full bg-nile-100 flex items-center justify-center text-nile-700 font-bold text-sm"
+                  style={{ 
+                    [index % 2 === 0 ? 'right' : 'left']: '-30px'
+                  }}
+                >
+                  {index + 1}
+                </div>
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-nile-600 to-medical-700 flex items-center justify-center shadow-lg">
                   {step.icon}
                 </div>
