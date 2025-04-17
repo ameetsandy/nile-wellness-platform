@@ -78,14 +78,15 @@ const Testimonials = () => {
                   key={testimonial.id}
                   className="w-full flex-shrink-0 px-4"
                 >
-                  <div className="bg-white rounded-xl shadow-md p-6 md:p-8 text-center">
+                  <div className="bg-white rounded-xl shadow-md p-6 md:p-8 text-center relative">
+                    {/* Quote Icon */}
                     <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                       <div className="w-12 h-12 rounded-full bg-nile-600 flex items-center justify-center">
                         <Quote className="h-6 w-6 text-white" />
                       </div>
                     </div>
                     
-                    <p className="text-gray-600 text-lg mt-6 mb-6 relative">
+                    <p className="text-gray-600 text-lg mt-6 mb-6 min-h-[4.5rem] flex items-center justify-center">
                       "{testimonial.text}"
                     </p>
                     
