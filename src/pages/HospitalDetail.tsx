@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -8,6 +7,7 @@ import { MessageCircle, Building, Award, MapPin, ArrowRight, Phone, CheckCircle,
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import { calculateInternationalPatients, generatePatientSatisfaction, generateSuccessRate } from "@/utils/hospitalStats";
 
 const HospitalDetail = () => {
   const { id } = useParams();
@@ -75,9 +75,25 @@ const HospitalDetail = () => {
             }
           ],
           reviews: 4.8,
-          reviewCount: 789
+          reviewCount: 789,
+          images: [
+            "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+            "https://images.unsplash.com/photo-1431576901776-e539bd916ba2",
+            "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e",
+            "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace"
+          ]
         };
-        setHospital(mockHospital);
+
+        // Calculate statistics
+        const stats = {
+          internationalPatients: calculateInternationalPatients(mockHospital.beds),
+          patientSatisfaction: generatePatientSatisfaction(),
+          successRate: generateSuccessRate(),
+          // Established year would come from Excel data
+          established: 1983
+        };
+
+        setHospital({ ...mockHospital, stats });
         setLoading(false);
       }, 500);
     };
@@ -242,15 +258,22 @@ const HospitalDetail = () => {
                             </div>
                             
                             <div className="bg-gray-50 p-4 rounded-lg">
-                              <h3 className="font-semibold text-gray-800 mb-3">Hospital Location</h3>
-                              <div className="rounded-lg overflow-hidden mb-3">
-                                <img 
-                                  src="https://placehold.co/800x300/white/gray/?text=Hospital+Map"
-                                  alt="Hospital Location Map"
-                                  className="w-full h-auto"
-                                />
+                              <h3 className="font-semibold text-gray-800 mb-3">Hospital Images</h3>
+                              <div className="grid grid-cols-2 gap-4">
+                                {hospital.images.map((image: string, index: number) => (
+                                  <div 
+                                    key={index} 
+                                    className="aspect-square rounded-lg overflow-hidden"
+                                  >
+                                    <img 
+                                      src={`${image}?auto=format&fit=crop&w=600&h=600`}
+                                      alt={`${hospital.name} - Image ${index + 1}`}
+                                      className="w-full h-full object-cover"
+                                    />
+                                  </div>
+                                ))}
                               </div>
-                              <div className="flex items-start">
+                              <div className="flex items-start mt-4">
                                 <MapPin className="h-5 w-5 text-nile-600 mr-2 flex-shrink-0 mt-0.5" />
                                 <div>
                                   <p className="text-gray-700">{hospital.address}</p>
@@ -268,19 +291,19 @@ const HospitalDetail = () => {
                           <div className="space-y-4">
                             <div className="flex items-center justify-between py-2 border-b border-gray-100">
                               <span className="text-gray-600">International Patients</span>
-                              <span className="font-semibold text-nile-600">{hospital.internationalPatients}+</span>
+                              <span className="font-semibold text-nile-600">{hospital.stats.internationalPatients}+</span>
                             </div>
                             <div className="flex items-center justify-between py-2 border-b border-gray-100">
                               <span className="text-gray-600">Patient Satisfaction</span>
-                              <span className="font-semibold text-nile-600">96%</span>
+                              <span className="font-semibold text-nile-600">{hospital.stats.patientSatisfaction}%</span>
                             </div>
                             <div className="flex items-center justify-between py-2 border-b border-gray-100">
                               <span className="text-gray-600">Established</span>
-                              <span className="font-semibold text-nile-600">{hospital.established}</span>
+                              <span className="font-semibold text-nile-600">{hospital.stats.established}</span>
                             </div>
                             <div className="flex items-center justify-between py-2">
                               <span className="text-gray-600">Success Rate</span>
-                              <span className="font-semibold text-nile-600">98.5%</span>
+                              <span className="font-semibold text-nile-600">{hospital.stats.successRate}%</span>
                             </div>
                           </div>
                         </div>
