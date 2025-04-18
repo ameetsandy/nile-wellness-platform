@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { MessageCircle, Calendar, ArrowRight } from "lucide-react";
+import { MessageCircle, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const PopularDoctors = () => {
@@ -10,7 +10,6 @@ const PopularDoctors = () => {
       name: "Dr. Arjun Mehta",
       specialty: "Cardiologist",
       hospital: "Apollo Hospital",
-      location: "Delhi",
       experience: "15+ Yrs",
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Mehta",
       path: "/doctors/arjun-mehta"
@@ -19,9 +18,8 @@ const PopularDoctors = () => {
       id: 2,
       name: "Dr. Pooja Nair",
       specialty: "Oncologist",
-      hospital: "Fortis Hospital",
-      location: "Mumbai",
-      experience: "20+ Yrs",
+      hospital: "Apollo Hospital",
+      experience: "20+ Yrs", 
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Nair",
       path: "/doctors/pooja-nair"
     },
@@ -29,11 +27,19 @@ const PopularDoctors = () => {
       id: 3,
       name: "Dr. Yusuf Khan",
       specialty: "Orthopedic",
-      hospital: "Max Hospital",
-      location: "Gurgaon",
+      hospital: "Apollo Hospital",
       experience: "18+ Yrs",
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Khan",
       path: "/doctors/yusuf-khan"
+    },
+    {
+      id: 4,
+      name: "Dr. Sarah Patel",
+      specialty: "Neurologist",
+      hospital: "Apollo Hospital",
+      experience: "12+ Yrs",
+      image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Patel",
+      path: "/doctors/sarah-patel"
     }
   ];
 
@@ -48,7 +54,7 @@ const PopularDoctors = () => {
     <section className="section-container bg-gray-50">
       <h2 className="section-title">Top-Rated Specialists at Your Service</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {doctors.map((doctor) => (
           <div 
             key={doctor.id}
@@ -72,28 +78,21 @@ const PopularDoctors = () => {
                 </h3>
               </Link>
               <p className="text-gray-600 mb-4">
-                {doctor.specialty} - {doctor.hospital}, {doctor.location}
+                {doctor.specialty} - {doctor.hospital}
               </p>
               
               <div className="flex gap-2 mt-6">
                 <Button variant="outline" size="sm" className="flex-1">
-                  <Calendar className="mr-1 h-4 w-4" /> Request Appointment
+                  <Calendar className="mr-1 h-4 w-4" /> Schedule Visit
                 </Button>
                 <Button 
                   size="sm" 
                   className="bg-green-600 hover:bg-green-700 flex-1"
                   onClick={() => openWhatsApp(doctor.name)}
                 >
-                  <MessageCircle className="mr-1 h-4 w-4" /> WhatsApp
+                  <MessageCircle className="mr-1 h-4 w-4" /> Contact Now
                 </Button>
               </div>
-              <Link 
-                to={doctor.path}
-                className="mt-4 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-sm"
-              >
-                View Full Profile
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
             </div>
           </div>
         ))}
@@ -104,7 +103,7 @@ const PopularDoctors = () => {
           to="/doctors"
           className="cta-secondary"
         >
-          View All Doctors <ArrowRight className="ml-1 h-4 w-4" />
+          View More Doctors
         </Link>
       </div>
     </section>
