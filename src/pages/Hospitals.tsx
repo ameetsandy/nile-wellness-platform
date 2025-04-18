@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
@@ -7,9 +6,14 @@ import WhatsAppButton from "@/components/common/WhatsAppButton";
 import { Search, Filter, Star, MapPin, Building, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// Utility function to generate random star rating between 4 and 5
+const generateStarRating = () => {
+  return 4 + Math.random(); // Returns a number between 4 and 5
+};
+
 const Hospitals = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [specialty, setSpecialty] = useState("");
+  const [category, setCategory] = useState("");
   const [city, setCity] = useState("");
 
   const hospitals = [
@@ -17,10 +21,11 @@ const Hospitals = () => {
       id: 1,
       name: "Apollo Hospitals",
       location: "Chennai",
-      specialties: ["Cardiology", "Oncology", "Neurology", "Transplant"],
+      category: "Super Speciality",
       accreditation: "JCI, NABH",
       founded: 1983,
       beds: 700,
+      rating: generateStarRating(),
       image: "https://placehold.co/600x400/medical-600/white/?text=Apollo+Hospitals",
       logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
       path: "/hospitals/apollo-chennai"
@@ -29,10 +34,11 @@ const Hospitals = () => {
       id: 2,
       name: "Medanta - The Medicity",
       location: "Gurgaon",
-      specialties: ["Cardiac Sciences", "Orthopedics", "Neurosciences", "Kidney & Urology"],
+      category: "Multi Speciality",
       accreditation: "NABH, ISO 9001",
       founded: 2009,
       beds: 1250,
+      rating: generateStarRating(),
       image: "https://placehold.co/600x400/medical-600/white/?text=Medanta+Hospital",
       logo: "https://placehold.co/200x100/white/gray/?text=Medanta",
       path: "/hospitals/medanta-gurgaon"
@@ -41,10 +47,11 @@ const Hospitals = () => {
       id: 3,
       name: "Fortis Healthcare",
       location: "Mumbai",
-      specialties: ["Orthopedics", "Neurology", "Cardiology", "IVF & Fertility"],
+      category: "Super Speciality",
       accreditation: "JCI, NABH",
       founded: 2001,
       beds: 600,
+      rating: generateStarRating(),
       image: "https://placehold.co/600x400/medical-600/white/?text=Fortis+Healthcare",
       logo: "https://placehold.co/200x100/white/gray/?text=Fortis",
       path: "/hospitals/fortis-mumbai"
@@ -53,10 +60,11 @@ const Hospitals = () => {
       id: 4,
       name: "Max Super Speciality Hospital",
       location: "Delhi",
-      specialties: ["Cardiac Surgery", "Neurosurgery", "Oncology", "Orthopedics"],
+      category: "Super Speciality",
       accreditation: "NABH, ISO 9001",
       founded: 2000,
       beds: 850,
+      rating: generateStarRating(),
       image: "https://placehold.co/600x400/medical-600/white/?text=Max+Hospital",
       logo: "https://placehold.co/200x100/white/gray/?text=Max",
       path: "/hospitals/max-delhi"
@@ -65,10 +73,11 @@ const Hospitals = () => {
       id: 5,
       name: "Manipal Hospitals",
       location: "Bangalore",
-      specialties: ["Cardiology", "Orthopedics", "Neurology", "Oncology"],
+      category: "Multi Speciality",
       accreditation: "NABH, JCI",
       founded: 1991,
       beds: 750,
+      rating: generateStarRating(),
       image: "https://placehold.co/600x400/medical-600/white/?text=Manipal+Hospitals",
       logo: "https://placehold.co/200x100/white/gray/?text=Manipal",
       path: "/hospitals/manipal-bangalore"
@@ -77,37 +86,81 @@ const Hospitals = () => {
       id: 6,
       name: "Kokilaben Dhirubhai Ambani Hospital",
       location: "Mumbai",
-      specialties: ["Cardiology", "Neurosciences", "Oncology", "Organ Transplant"],
+      category: "Super Speciality",
       accreditation: "JCI, NABH",
       founded: 2009,
       beds: 750,
+      rating: generateStarRating(),
       image: "https://placehold.co/600x400/medical-600/white/?text=Kokilaben+Hospital",
       logo: "https://placehold.co/200x100/white/gray/?text=Kokilaben",
       path: "/hospitals/kokilaben-mumbai"
     }
   ];
 
-  const specialties = ["Cardiology", "Oncology", "Orthopedics", "Neurology", "Transplant", "IVF & Fertility"];
+  const categories = ["Multi Speciality", "Super Speciality", "Single Speciality"];
   const cities = ["Delhi", "Mumbai", "Gurgaon", "Chennai", "Bangalore", "Hyderabad"];
 
   const filteredHospitals = hospitals.filter(hospital => {
     const matchesSearch = hospital.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          hospital.location.toLowerCase().includes(searchTerm.toLowerCase());
     
-    const matchesSpecialty = specialty 
-      ? hospital.specialties.some(spec => spec.toLowerCase().includes(specialty.toLowerCase()))
+    const matchesCategory = category 
+      ? hospital.category === category
       : true;
       
     const matchesCity = city 
       ? hospital.location.toLowerCase() === city.toLowerCase()
       : true;
     
-    return matchesSearch && matchesSpecialty && matchesCity;
+    return matchesSearch && matchesCategory && matchesCity;
   });
+
+  // Function to render star rating
+  const renderStarRating = (rating: number) => {
+    const fullStars = Math.floor(rating);
+    const partialFill = (rating % 1) * 100;
+    const stars = [];
+
+    // Add full stars
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(
+        <Star key={`full-${i}`} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+      );
+    }
+
+    // Add partial star if needed
+    if (partialFill > 0) {
+      stars.push(
+        <div key="partial" className="relative">
+          <Star className="h-4 w-4 text-yellow-400" />
+          <div
+            className="absolute inset-0 overflow-hidden"
+            style={{ width: `${partialFill}%` }}
+          >
+            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+          </div>
+        </div>
+      );
+    }
+
+    // Add remaining empty stars
+    for (let i = Math.ceil(rating); i < 5; i++) {
+      stars.push(
+        <Star key={`empty-${i}`} className="h-4 w-4 text-gray-300" />
+      );
+    }
+
+    return (
+      <div className="flex items-center gap-0.5">
+        {stars}
+        <span className="ml-1 text-sm text-gray-600">({rating.toFixed(1)})</span>
+      </div>
+    );
+  };
 
   const resetFilters = () => {
     setSearchTerm("");
-    setSpecialty("");
+    setCategory("");
     setCity("");
   };
 
@@ -142,13 +195,13 @@ const Hospitals = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="min-w-[200px]">
                   <select
-                    value={specialty}
-                    onChange={(e) => setSpecialty(e.target.value)}
+                    value={category}
+                    onChange={(e) => setCategory(e.target.value)}
                     className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-nile-600 focus:border-nile-600 appearance-none bg-white"
                   >
-                    <option value="">All Specialties</option>
-                    {specialties.map((spec) => (
-                      <option key={spec} value={spec}>{spec}</option>
+                    <option value="">All Categories</option>
+                    {categories.map((cat) => (
+                      <option key={cat} value={cat}>{cat}</option>
                     ))}
                   </select>
                 </div>
@@ -209,13 +262,7 @@ const Hospitals = () => {
                       alt={`${hospital.name} logo`}
                       className="h-10"
                     />
-                    <div className="flex items-center">
-                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    </div>
+                    {renderStarRating(hospital.rating)}
                   </div>
                   
                   <Link to={hospital.path}>
@@ -230,14 +277,9 @@ const Hospitals = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <h4 className="text-sm font-medium text-gray-700 mb-2">Key Specialties:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {hospital.specialties.map((specialty, index) => (
-                        <span key={index} className="bg-gray-100 text-gray-700 px-2 py-1 rounded-md text-xs">
-                          {specialty}
-                        </span>
-                      ))}
-                    </div>
+                    <span className="inline-block bg-nile-50 text-nile-600 px-3 py-1 rounded-full text-sm font-medium">
+                      {hospital.category}
+                    </span>
                   </div>
                   
                   <div className="mt-auto">

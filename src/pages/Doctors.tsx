@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
@@ -16,72 +15,72 @@ const Doctors = () => {
     {
       id: 1,
       name: "Dr. Arjun Mehta",
-      specialty: "Cardiology",
+      specialty: "Cardiologist",
+      designation: "Senior Consultant",
       hospital: "Apollo Hospital",
       city: "Delhi",
       experience: "15+ Yrs",
-      languages: ["English", "Hindi", "Arabic"],
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Mehta",
       path: "/doctors/arjun-mehta"
     },
     {
       id: 2,
       name: "Dr. Pooja Nair",
-      specialty: "Oncology",
+      specialty: "Oncologist",
+      designation: "Director",
       hospital: "Fortis Hospital",
       city: "Mumbai",
       experience: "20+ Yrs",
-      languages: ["English", "Hindi", "Malayalam"],
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Nair",
       path: "/doctors/pooja-nair"
     },
     {
       id: 3,
       name: "Dr. Yusuf Khan",
-      specialty: "Orthopedics",
+      specialty: "Orthopedic Surgeon",
+      designation: "HOD & Senior Consultant",
       hospital: "Max Hospital",
       city: "Gurgaon",
       experience: "18+ Yrs",
-      languages: ["English", "Hindi", "Urdu"],
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Khan",
       path: "/doctors/yusuf-khan"
     },
     {
       id: 4,
       name: "Dr. Sanjay Gupta",
-      specialty: "Neurology",
+      specialty: "Neurologist",
+      designation: "Senior Consultant",
       hospital: "Medanta Hospital",
       city: "Gurgaon",
       experience: "22+ Yrs",
-      languages: ["English", "Hindi"],
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Gupta",
       path: "/doctors/sanjay-gupta"
     },
     {
       id: 5,
       name: "Dr. Ananya Sharma",
-      specialty: "Gynecology",
+      specialty: "Gynecologist",
+      designation: "Senior Consultant",
       hospital: "BLK Hospital",
       city: "Delhi",
       experience: "12+ Yrs",
-      languages: ["English", "Hindi", "Bengali"],
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Sharma",
       path: "/doctors/ananya-sharma"
     },
     {
       id: 6,
       name: "Dr. Rajiv Malhotra",
-      specialty: "Nephrology",
+      specialty: "Nephrologist",
+      designation: "Director & HOD",
       hospital: "Apollo Hospital",
       city: "Chennai",
       experience: "25+ Yrs",
-      languages: ["English", "Hindi", "Tamil"],
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Malhotra",
       path: "/doctors/rajiv-malhotra"
     }
   ];
 
-  const specialties = ["Cardiology", "Oncology", "Orthopedics", "Neurology", "Gynecology", "Nephrology"];
+  const specialties = ["Cardiologist", "Oncologist", "Orthopedic Surgeon", "Neurologist", "Gynecologist", "Nephrologist"];
   const cities = ["Delhi", "Mumbai", "Gurgaon", "Chennai", "Bangalore", "Hyderabad"];
 
   const filteredDoctors = doctors.filter(doctor => {
@@ -197,16 +196,17 @@ const Doctors = () => {
                       {doctor.name}
                     </h3>
                   </Link>
-                  <p className="text-gray-700 font-medium">
-                    {doctor.specialty}
-                  </p>
-                  <p className="text-gray-600 mb-4">
-                    {doctor.hospital}, {doctor.city}
-                  </p>
                   
-                  <div className="mb-4">
-                    <span className="text-sm text-gray-500">Languages: </span>
-                    <span className="text-sm">{doctor.languages.join(", ")}</span>
+                  <div className="space-y-2 mb-4">
+                    <p className="text-gray-700">
+                      <span className="font-medium">Specialty</span> – {doctor.specialty}
+                    </p>
+                    <p className="text-gray-700">
+                      <span className="font-medium">Designation</span> – {doctor.designation}
+                    </p>
+                    <p className="text-gray-600">
+                      {doctor.hospital}, {doctor.city}
+                    </p>
                   </div>
                   
                   <div className="flex gap-2 mt-6">

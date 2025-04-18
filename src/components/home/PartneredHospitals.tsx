@@ -1,6 +1,10 @@
-
 import { Link } from "react-router-dom";
-import { MapPin, ArrowRight, Building } from "lucide-react";
+import { MapPin, ArrowRight, Building, Star } from "lucide-react";
+
+// Utility function to generate random star rating between 4 and 5
+const generateStarRating = () => {
+  return 4 + Math.random(); // Returns a number between 4 and 5
+};
 
 const PartneredHospitals = () => {
   const hospitals = [
@@ -8,7 +12,9 @@ const PartneredHospitals = () => {
       id: 1,
       name: "Apollo Hospitals",
       location: "Chennai",
+      category: "Super Speciality",
       accreditation: "JCI",
+      rating: generateStarRating(),
       image: "https://placehold.co/600x400/medical-600/white/?text=Apollo+Hospitals",
       logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
       path: "/hospitals/apollo-chennai"
@@ -17,7 +23,9 @@ const PartneredHospitals = () => {
       id: 2,
       name: "Medanta Hospital",
       location: "Gurgaon",
+      category: "Multi Speciality",
       accreditation: "NABH",
+      rating: generateStarRating(),
       image: "https://placehold.co/600x400/medical-600/white/?text=Medanta+Hospital",
       logo: "https://placehold.co/200x100/white/gray/?text=Medanta",
       path: "/hospitals/medanta-gurgaon"
@@ -26,12 +34,57 @@ const PartneredHospitals = () => {
       id: 3,
       name: "Fortis Healthcare",
       location: "Mumbai",
+      category: "Super Speciality",
       accreditation: "JCI",
+      rating: generateStarRating(),
       image: "https://placehold.co/600x400/medical-600/white/?text=Fortis+Healthcare",
       logo: "https://placehold.co/200x100/white/gray/?text=Fortis",
       path: "/hospitals/fortis-mumbai"
     }
   ];
+
+  // Function to render star rating
+  const renderStarRating = (rating: number) => {
+    const fullStars = Math.floor(rating);
+    const partialFill = (rating % 1) * 100;
+    const stars = [];
+
+    // Add full stars
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(
+        <Star key={`full-${i}`} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+      );
+    }
+
+    // Add partial star if needed
+    if (partialFill > 0) {
+      stars.push(
+        <div key="partial" className="relative">
+          <Star className="h-4 w-4 text-yellow-400" />
+          <div
+            className="absolute inset-0 overflow-hidden"
+            style={{ width: `${partialFill}%` }}
+          >
+            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+          </div>
+        </div>
+      );
+    }
+
+    // Add remaining empty stars
+    for (let i = Math.ceil(rating); i < 5; i++) {
+      stars.push(
+        <Star key={`empty-${i}`} className="h-4 w-4 text-gray-300" />
+      );
+    }
+
+    return (
+      <div className="flex items-center gap-0.5">
+        {stars}
+        <span className="ml-1 text-sm text-gray-600">({rating.toFixed(1)})</span>
+      </div>
+    );
+  };
 
   return (
     <section className="section-container">
@@ -68,6 +121,7 @@ const PartneredHospitals = () => {
                   alt={`${hospital.name} logo`}
                   className="h-10"
                 />
+                {renderStarRating(hospital.rating)}
               </div>
               
               <Link to={hospital.path}>
@@ -77,9 +131,11 @@ const PartneredHospitals = () => {
                 </h3>
               </Link>
               
-              <p className="text-gray-600 text-sm mb-4">
-                Multi-specialty hospital with advanced medical technology and international standard care.
-              </p>
+              <div className="mb-4">
+                <span className="inline-block bg-nile-50 text-nile-600 px-3 py-1 rounded-full text-sm font-medium">
+                  {hospital.category}
+                </span>
+              </div>
               
               <Link 
                 to={hospital.path}
