@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { MessageCircle, Building, Award, MapPin, ArrowRight, Phone, CheckCircle, User, Bed, HeartPulse, Clock } from "lucide-react";
+import { MessageCircle, Building, Award, MapPin, ArrowRight, Phone, CheckCircle, User, Bed, HeartPulse, Clock, BedDouble, Hotel } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
@@ -478,99 +478,35 @@ const HospitalDetail = () => {
                       
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         <div>
-                          <img 
-                            src="https://placehold.co/600x400/white/gray/?text=Hospital+Facilities"
-                            alt="Hospital Facilities"
-                            className="w-full h-auto rounded-lg mb-4"
-                          />
-                          <h3 className="text-xl font-medium mb-3">Medical Facilities</h3>
-                          <ul className="space-y-2">
-                            <li className="flex items-center">
-                              <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0" />
-                              <span className="text-gray-700">Advanced Imaging Center (MRI, CT, PET)</span>
-                            </li>
-                            <li className="flex items-center">
-                              <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0" />
-                              <span className="text-gray-700">Modern Operation Theaters (20+)</span>
-                            </li>
-                            <li className="flex items-center">
-                              <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0" />
-                              <span className="text-gray-700">Intensive Care Units (100+ beds)</span>
-                            </li>
-                            <li className="flex items-center">
-                              <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0" />
-                              <span className="text-gray-700">Catheterization Lab</span>
-                            </li>
-                            <li className="flex items-center">
-                              <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0" />
-                              <span className="text-gray-700">Radiation Therapy Center</span>
-                            </li>
-                            <li className="flex items-center">
-                              <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0" />
-                              <span className="text-gray-700">24/7 Emergency Department</span>
-                            </li>
+                          <h3 className="text-xl font-medium mb-6 flex items-center">
+                            <BedDouble className="h-6 w-6 text-nile-600 mr-3" />
+                            Medical Facilities
+                          </h3>
+                          <ul className="space-y-4">
+                            {hospital.facilities.slice(0, 6).map((facility: string, index: number) => (
+                              <li key={index} className="flex items-center">
+                                <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                                <span className="text-gray-700">{facility}</span>
+                              </li>
+                            ))}
                           </ul>
                         </div>
                         
                         <div>
-                          <img 
-                            src="https://placehold.co/600x400/white/gray/?text=Patient+Amenities"
-                            alt="Patient Amenities"
-                            className="w-full h-auto rounded-lg mb-4"
-                          />
-                          <h3 className="text-xl font-medium mb-3">Patient Amenities</h3>
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            {hospital.facilities.map((facility: string, index: number) => (
+                          <h3 className="text-xl font-medium mb-6 flex items-center">
+                            <Hotel className="h-6 w-6 text-nile-600 mr-3" />
+                            Patient Amenities
+                          </h3>
+                          <div className="grid grid-cols-1 gap-3">
+                            {hospital.facilities.slice(6).map((facility: string, index: number) => (
                               <div 
                                 key={index}
-                                className="flex items-center bg-gray-50 p-3 rounded-lg"
+                                className="flex items-center bg-gray-50 p-3 rounded-lg hover:bg-nile-50 transition-colors"
                               >
-                                <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0" />
-                                <span className="text-gray-700 text-sm">{facility}</span>
+                                <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                                <span className="text-gray-700">{facility}</span>
                               </div>
                             ))}
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div>
-                        <h3 className="text-xl font-medium mb-4">Room Categories</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                          <div className="bg-gray-50 rounded-lg overflow-hidden">
-                            <img 
-                              src="https://placehold.co/400x250/white/gray/?text=Standard+Room"
-                              alt="Standard Room"
-                              className="w-full h-40 object-cover"
-                            />
-                            <div className="p-4">
-                              <h4 className="font-medium text-gray-800">Standard Room</h4>
-                              <p className="text-sm text-gray-600 mt-1">Single occupancy with attached bathroom</p>
-                              <p className="text-sm text-nile-600 mt-2">$80 - $100 per night</p>
-                            </div>
-                          </div>
-                          <div className="bg-gray-50 rounded-lg overflow-hidden">
-                            <img 
-                              src="https://placehold.co/400x250/white/gray/?text=Deluxe+Room"
-                              alt="Deluxe Room"
-                              className="w-full h-40 object-cover"
-                            />
-                            <div className="p-4">
-                              <h4 className="font-medium text-gray-800">Deluxe Room</h4>
-                              <p className="text-sm text-gray-600 mt-1">Spacious room with sofa and dining area</p>
-                              <p className="text-sm text-nile-600 mt-2">$150 - $180 per night</p>
-                            </div>
-                          </div>
-                          <div className="bg-gray-50 rounded-lg overflow-hidden">
-                            <img 
-                              src="https://placehold.co/400x250/white/gray/?text=Suite"
-                              alt="Suite"
-                              className="w-full h-40 object-cover"
-                            />
-                            <div className="p-4">
-                              <h4 className="font-medium text-gray-800">Suite</h4>
-                              <p className="text-sm text-gray-600 mt-1">Premium suite with separate living room</p>
-                              <p className="text-sm text-nile-600 mt-2">$250 - $300 per night</p>
-                            </div>
                           </div>
                         </div>
                       </div>
