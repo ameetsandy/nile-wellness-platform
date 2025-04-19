@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -120,7 +120,6 @@ const Doctors = () => {
         </section>
         
         <section className="container mx-auto px-4 py-8">
-          {/* Search and Filters */}
           <div className="bg-white rounded-lg shadow-md p-6 mb-8">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex-grow relative">
@@ -172,12 +171,11 @@ const Doctors = () => {
             </div>
           </div>
           
-          {/* Doctors Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredDoctors.map((doctor) => (
               <div 
                 key={doctor.id}
-                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
                 <div className="relative">
                   <img 
@@ -198,13 +196,13 @@ const Doctors = () => {
                   </Link>
                   
                   <div className="space-y-2 mb-4">
-                    <p className="text-gray-700">
-                      <span className="font-medium">Specialty</span> – {doctor.specialty}
+                    <p className="text-sm text-gray-700 font-medium tracking-wide">
+                      {doctor.specialty}
                     </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Designation</span> – {doctor.designation}
+                    <p className="text-xs text-gray-600 italic">
+                      {doctor.designation}
                     </p>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm">
                       {doctor.hospital}, {doctor.city}
                     </p>
                   </div>
@@ -243,7 +241,6 @@ const Doctors = () => {
             </div>
           )}
           
-          {/* More Information */}
           <div className="mt-16 bg-white rounded-lg shadow-md p-8">
             <h2 className="text-2xl font-bold mb-4">Why Choose Indian Doctors?</h2>
             <div className="prose max-w-none">

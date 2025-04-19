@@ -9,6 +9,7 @@ const PopularDoctors = () => {
       id: 1,
       name: "Dr. Arjun Mehta",
       specialty: "Cardiologist",
+      designation: "Senior Consultant",
       hospital: "Apollo Hospital",
       location: "Delhi",
       experience: "15+ Yrs",
@@ -19,6 +20,7 @@ const PopularDoctors = () => {
       id: 2,
       name: "Dr. Pooja Nair",
       specialty: "Oncologist",
+      designation: "Director",
       hospital: "Fortis Hospital",
       location: "Mumbai",
       experience: "20+ Yrs",
@@ -29,6 +31,7 @@ const PopularDoctors = () => {
       id: 3,
       name: "Dr. Yusuf Khan",
       specialty: "Orthopedic",
+      designation: "HOD & Senior Consultant",
       hospital: "Max Hospital",
       location: "Gurgaon",
       experience: "18+ Yrs",
@@ -52,7 +55,7 @@ const PopularDoctors = () => {
         {doctors.map((doctor) => (
           <div 
             key={doctor.id}
-            className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+            className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
           >
             <div className="relative">
               <img 
@@ -71,9 +74,18 @@ const PopularDoctors = () => {
                   {doctor.name}
                 </h3>
               </Link>
-              <p className="text-gray-600 mb-4">
-                {doctor.specialty} - {doctor.hospital}, {doctor.location}
-              </p>
+              
+              <div className="space-y-2 mb-4">
+                <p className="text-sm text-gray-700 font-medium tracking-wide">
+                  {doctor.specialty}
+                </p>
+                <p className="text-xs text-gray-600 italic">
+                  {doctor.designation}
+                </p>
+                <p className="text-gray-600 text-sm">
+                  {doctor.hospital}, {doctor.location}
+                </p>
+              </div>
               
               <div className="flex gap-2 mt-6">
                 <Button variant="outline" size="sm" className="flex-1">
@@ -104,7 +116,7 @@ const PopularDoctors = () => {
           to="/doctors"
           className="cta-secondary"
         >
-          View All Doctors <ArrowRight className="ml-1 h-4 w-4" />
+          View More Doctors <ArrowRight className="ml-1 h-4 w-4" />
         </Link>
       </div>
     </section>
@@ -112,3 +124,4 @@ const PopularDoctors = () => {
 };
 
 export default PopularDoctors;
+
