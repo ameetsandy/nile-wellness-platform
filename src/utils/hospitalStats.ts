@@ -10,6 +10,23 @@ export const calculateInternationalPatients = (beds: number): number => {
 };
 
 /**
+ * Calculate number of operation theaters based on bed count
+ * Minimum 5, Maximum 20
+ */
+export const calculateOperationTheaters = (beds: number): number => {
+  const theaters = Math.floor(beds / 10);
+  return Math.min(20, Math.max(5, theaters));
+};
+
+/**
+ * Calculate ICU beds (4x operation theaters, rounded to nearest 5)
+ */
+export const calculateICUBeds = (operationTheaters: number): number => {
+  const icuBeds = operationTheaters * 4;
+  return Math.round(icuBeds / 5) * 5;
+};
+
+/**
  * Generate a random patient satisfaction percentage between 95.1% and 99.8%
  */
 export const generatePatientSatisfaction = (): number => {
@@ -22,3 +39,4 @@ export const generatePatientSatisfaction = (): number => {
 export const generateSuccessRate = (): number => {
   return Number((Math.random() * (100 - 98.1) + 98.1).toFixed(1));
 };
+

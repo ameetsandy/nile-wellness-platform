@@ -7,7 +7,7 @@ import { MessageCircle, Building, Award, MapPin, ArrowRight, Phone, CheckCircle,
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
-import { calculateInternationalPatients, generatePatientSatisfaction, generateSuccessRate } from "@/utils/hospitalStats";
+import { calculateInternationalPatients, generatePatientSatisfaction, generateSuccessRate, calculateOperationTheaters, calculateICUBeds } from "@/utils/hospitalStats";
 
 const HospitalDetail = () => {
   const { id } = useParams();
@@ -44,16 +44,26 @@ const HospitalDetail = () => {
             "Urology",
             "Pulmonology"
           ],
-          facilities: [
-            "International Patient Lounge",
-            "Visa Assistance",
-            "Airport Transfer",
-            "Language Interpreters",
-            "Currency Exchange",
-            "Hotel Booking",
-            "24/7 Pharmacy",
-            "Cafeteria"
-          ],
+          facilities: {
+            medical: [
+              `Modern Operation Theaters (${calculateOperationTheaters(900)})`,
+              `Intensive Care Units (${calculateICUBeds(calculateOperationTheaters(900))} beds)`,
+              "Advanced Imaging Center (MRI, CT, PET)",
+              "Catheterization Lab",
+              "Radiation Therapy Center",
+              "24/7 Emergency Department"
+            ],
+            amenities: [
+              "International Patient Lounge",
+              "Visa Assistance",
+              "Airport Transfer",
+              "Language Interpreters",
+              "Currency Exchange",
+              "Hotel Booking",
+              "24/7 Pharmacy",
+              "Cafeteria"
+            ]
+          },
           topDoctors: [
             {
               id: "arjun-mehta",
@@ -483,7 +493,7 @@ const HospitalDetail = () => {
                             Medical Facilities
                           </h3>
                           <ul className="space-y-4">
-                            {hospital.facilities.slice(0, 6).map((facility: string, index: number) => (
+                            {hospital.facilities.medical.map((facility: string, index: number) => (
                               <li key={index} className="flex items-center">
                                 <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
                                 <span className="text-gray-700">{facility}</span>
@@ -498,13 +508,13 @@ const HospitalDetail = () => {
                             Patient Amenities
                           </h3>
                           <div className="grid grid-cols-1 gap-3">
-                            {hospital.facilities.slice(6).map((facility: string, index: number) => (
+                            {hospital.facilities.amenities.map((amenity: string, index: number) => (
                               <div 
                                 key={index}
                                 className="flex items-center bg-gray-50 p-3 rounded-lg hover:bg-nile-50 transition-colors"
                               >
                                 <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
-                                <span className="text-gray-700">{facility}</span>
+                                <span className="text-gray-700">{amenity}</span>
                               </div>
                             ))}
                           </div>
