@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -79,7 +78,7 @@ const PopularDoctors = () => {
                 <p className="text-sm text-gray-700 font-medium tracking-wide">
                   {doctor.specialty}
                 </p>
-                <p className="text-xs text-gray-600 italic">
+                <p className="text-xs text-gray-600 font-inter font-normal tracking-tight">
                   {doctor.designation}
                 </p>
                 <p className="text-gray-600 text-sm">
@@ -124,4 +123,3 @@ const PopularDoctors = () => {
 };
 
 export default PopularDoctors;
-

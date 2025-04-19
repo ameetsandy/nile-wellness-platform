@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
@@ -199,7 +200,7 @@ const Doctors = () => {
                     <p className="text-sm text-gray-700 font-medium tracking-wide">
                       {doctor.specialty}
                     </p>
-                    <p className="text-xs text-gray-600 italic">
+                    <p className="text-xs text-gray-600 font-inter font-normal tracking-tight">
                       {doctor.designation}
                     </p>
                     <p className="text-gray-600 text-sm">
