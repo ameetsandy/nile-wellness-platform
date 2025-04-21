@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MessageSquare, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -79,10 +78,10 @@ const Hero = () => {
           </div>
           
           <div className="lg:w-1/2 relative">
-            <div className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1504813184591-01572f98c85f" 
-                alt="Diverse patients with Indian doctors" 
+                src="https://i.ibb.co/Q3Vp56zs/Home-Page-Image.jpg" 
+                alt="Happy recovered Black patient with smiling doctor" 
                 className="w-full h-auto object-cover"
               />
             </div>
