@@ -27,39 +27,41 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow-sm">
-      {/* Top Row - Header Area */}
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Left side - Logo */}
-        <div className="flex items-center">
-          <Link to="/" className="flex items-center transition-transform hover:scale-105">
-            <img 
-              src="https://i.ibb.co/ZRb7k2jp/Screenshot-2025-04-21-143211.png" 
-              alt="Nile Wellness Logo" 
-              className="h-14 w-auto"
-            />
-          </Link>
-        </div>
-
-        {/* Right side - Contact Information */}
-        <div className="flex items-center gap-6">
-          <div className="flex items-center text-nile-700 hover:text-nile-800 transition-colors">
-            <Phone className="h-5 w-5 mr-2" />
-            <span className="font-semibold">+91 12345 67890</span>
+    <>
+      {/* Top Header */}
+      <div className="bg-white">
+        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+          {/* Left side - Logo */}
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center transition-transform hover:scale-105">
+              <img 
+                src="https://i.ibb.co/ZRb7k2jp/Screenshot-2025-04-21-143211.png" 
+                alt="Nile Wellness Logo" 
+                className="h-14 w-auto"
+              />
+            </Link>
           </div>
-          <Link 
-            to="/contact" 
-            className="bg-nile-600 text-white px-4 py-2 rounded-md hover:bg-nile-700 transition-colors font-medium"
-          >
-            Contact Us
-          </Link>
+
+          {/* Right side - Contact Information */}
+          <div className="flex items-center gap-6">
+            <div className="flex items-center text-nile-700 hover:text-nile-800 transition-colors">
+              <Phone className="h-5 w-5 mr-2" />
+              <span className="font-semibold">+91 12345 67890</span>
+            </div>
+            <Link 
+              to="/contact" 
+              className="bg-nile-600 text-white px-4 py-2 rounded-md hover:bg-nile-700 transition-colors font-medium"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
 
-      {/* Main Navigation Bar */}
-      <div className="bg-nile-50 border-t border-nile-100">
-        <div className="container mx-auto px-6 py-3">
-          <nav className="flex justify-between items-center">
+      {/* Sticky Navigation Bar */}
+      <div className="sticky top-0 z-50 bg-white border-y border-gray-100 shadow-sm">
+        <div className="container mx-auto px-6">
+          <nav className="flex justify-between items-center h-14">
             {/* Left-aligned Menu Items */}
             <div className="flex items-center gap-8">
               <div className="relative group">
@@ -74,7 +76,7 @@ const Header = () => {
                   )} />
                 </button>
                 {isTreatmentsOpen && (
-                  <div className="absolute left-0 mt-2 w-64 rounded-lg shadow-lg bg-white ring-1 ring-nile-100 p-2 space-y-1 z-20">
+                  <div className="absolute left-0 mt-2 w-64 rounded-lg shadow-lg bg-white ring-1 ring-nile-100 p-2 space-y-1 z-50">
                     {treatments.map((treatment) => (
                       <Link
                         key={treatment.name}
@@ -126,7 +128,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 
