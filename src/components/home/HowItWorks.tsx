@@ -5,37 +5,37 @@ const HowItWorks = () => {
     {
       icon: <FileText className="h-6 w-6 text-white" />,
       title: "Upload Medical Reports",
-      description: "Share your medical reports and history via WhatsApp or our secure portal."
+      description: "Upload your reports via WhatsApp or our secure portal."
     },
     {
       icon: <MessageCircle className="h-6 w-6 text-white" />,
       title: "Get Free Opinion from Top Doctors",
-      description: "Receive treatment options and cost estimates from India's leading specialists."
+      description: "Get treatment options and cost estimates from top specialists in India."
     },
     {
       icon: <UserCheck className="h-6 w-6 text-white" />,
       title: "Confirm Doctor & Hospital",
-      description: "Choose your preferred doctor and hospital based on our recommendations."
+      description: "Select your doctor and hospital from our recommendations."
     },
     {
       icon: <Plane className="h-6 w-6 text-white" />,
       title: "Visa Support + Flight Planning",
-      description: "We'll assist with medical visa, invitation letter, and travel arrangements."
+      description: "We help with visa, invitation letter, and travel plans."
     },
     {
       icon: <Car className="h-6 w-6 text-white" />,
       title: "Arrival & Pickup",
-      description: "Our team will greet you at the airport and take you to your accommodation."
+      description: "Airport pickup and drop to your stay"
     },
     {
       icon: <Building className="h-6 w-6 text-white" />,
       title: "Hospital Admission & Treatment",
-      description: "Seamless admission process and personalized care throughout your treatment."
+      description: "Smooth admission and personalized care during your treatment."
     },
     {
       icon: <Home className="h-6 w-6 text-white" />,
       title: "Recovery + Return Home",
-      description: "Post-treatment care, follow-up consultations, and return travel assistance."
+      description: "Post-treatment care, follow-ups, and help with return travel."
     }
   ];
 
