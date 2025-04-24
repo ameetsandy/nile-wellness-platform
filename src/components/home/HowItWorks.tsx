@@ -1,3 +1,4 @@
+import React from 'react';
 import { FileText, MessageCircle, UserCheck, Plane, Car, Building, Home } from "lucide-react";
 
 const HowItWorks = () => {
@@ -52,45 +53,71 @@ const HowItWorks = () => {
         </div>
       
         <div className="relative">
-          {/* Central Timeline */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 transform -translate-x-1/2"></div>
-          
-          <div className="relative space-y-16">
+          {/* Central vertical timeline */}
+          <div className="absolute left-1/2 -translate-x-1/2 w-1 bg-nile-100 h-full z-0"></div>
+
+          <div className="flex flex-col gap-16 relative z-10">
             {steps.map((step, index) => (
-              <div key={index} className="relative">
-                {/* Combined Step Number and Icon */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center">
-                  <div className="relative">
-                    {/* Number Circle */}
-                    <div className="w-12 h-12 rounded-full bg-white ring-4 ring-gray-100 flex items-center justify-center">
-                      <span className="text-gray-500 text-lg font-medium">
-                        {(index + 1).toString().padStart(2, '0')}
-                      </span>
+              <div key={index} className="flex items-center justify-between w-full relative">
+                {index % 2 === 0 ? (
+                  <>
+                    {/* LEFT CARD */}
+                    <div className="w-[48%] flex justify-end">
+                      <div className="bg-white rounded-lg shadow-md border border-gray-100 p-4 max-w-md">
+                        <div className="flex items-center gap-2 mb-1">
+                          <div className="w-6 h-6 rounded-full bg-nile-600 flex items-center justify-center">
+                            {step.icon}
+                          </div>
+                          <h3 className="text-base font-semibold text-gray-900">
+                            {step.title}
+                          </h3>
+                        </div>
+                        <p className="text-sm text-gray-500 pl-8">{step.description}</p>
+                      </div>
                     </div>
-                    {/* Icon Circle - Overlapping */}
-                    <div className="absolute -right-4 -top-4 w-8 h-8 rounded-full bg-nile-600 flex items-center justify-center shadow-md">
-                      {step.icon}
-                    </div>
-                  </div>
-                </div>
 
-                <div className={`flex items-start justify-center gap-12 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-                  {/* Content Container */}
-                  <div className={`w-[calc(50%-3.5rem)] ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                    {/* Text Box Container */}
-                    <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
-                      <h3 className="text-xl font-semibold text-gray-900 tracking-tight mb-3">
-                        {step.title}
-                      </h3>
-                      <p className="text-base text-gray-500 leading-relaxed">
-                        {step.description}
-                      </p>
+                    {/* TIMELINE DOT */}
+                    <div className="w-4 flex justify-center items-center z-10">
+                      <div className="w-8 h-8 rounded-full bg-nile-100 border-4 border-white flex items-center justify-center shadow-md">
+                        <span className="text-nile-600 text-sm font-medium">
+                          {(index + 1).toString().padStart(2, "0")}
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Spacer for the other side */}
-                  <div className="w-[calc(50%-3.5rem)]"></div>
-                </div>
+                    {/* RIGHT SPACER */}
+                    <div className="w-[48%]"></div>
+                  </>
+                ) : (
+                  <>
+                    {/* LEFT SPACER */}
+                    <div className="w-[48%]"></div>
+
+                    {/* TIMELINE DOT */}
+                    <div className="w-4 flex justify-center items-center z-10">
+                      <div className="w-8 h-8 rounded-full bg-nile-100 border-4 border-white flex items-center justify-center shadow-md">
+                        <span className="text-nile-600 text-sm font-medium">
+                          {(index + 1).toString().padStart(2, "0")}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* RIGHT CARD */}
+                    <div className="w-[48%] flex justify-start">
+                      <div className="bg-white rounded-lg shadow-md border border-gray-100 p-4 max-w-md">
+                        <div className="flex items-center gap-2 mb-1">
+                          <div className="w-6 h-6 rounded-full bg-nile-600 flex items-center justify-center">
+                            {step.icon}
+                          </div>
+                          <h3 className="text-base font-semibold text-gray-900">
+                            {step.title}
+                          </h3>
+                        </div>
+                        <p className="text-sm text-gray-500 pl-8">{step.description}</p>
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
             ))}
           </div>
