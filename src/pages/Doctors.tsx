@@ -165,11 +165,44 @@ const Doctors = () => {
       experience: "13+ Yrs",
       image: "https://www.vaidam.com/sites/default/files/dr-harsh-bhardwaj.jpg",
       path: "/doctors/dr-harsh-bhardwaj"
+    },
+    {
+      id: 15,
+      name: "Dr. Ankit Singh",
+      specialty: "Neurologist",
+      designation: "Associate Consultant",
+      hospital: "Apollo Medics Super Speciality Hospital",
+      city: "Lucknow",
+      experience: "12+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._ankit-min.png",
+      path: "/doctors/dr-ankit-singh"
+    },
+    {
+      id: 16,
+      name: "Dr. Ashok G N",
+      specialty: "Laparoscopic Surgeon",
+      designation: "Consultant",
+      hospital: "SS SPARSH Hospital",
+      city: "Bangalore",
+      experience: "16+ Yrs",
+      image: "https://d1ea147o02h74h.cloudfront.net/dr._ashok_g_n_-_general_and_laparoscopic_surgeon.jpg",
+      path: "/doctors/dr-ashok-g-n"
+    },
+    {
+      id: 17,
+      name: "Dr. Avinash Agarwal",
+      specialty: "Cosmetic Surgeon",
+      designation: "Consultant",
+      hospital: "Artemis Hospital",
+      city: "Gurgaon",
+      experience: "16+ Yrs",
+      image: "https://d1ea147o02h.cloudfront.net/dr._avinash_agarwal_-_cosmetic_and_plastic_surgeon.jpg",
+      path: "/doctors/dr-avinash-agarwal"
     }
   ];
 
-  const specialties = ["Cardiologist", "Oncologist", "Orthopedic Surgeon", "Neurologist", "Gynecologist", "Nephrologist"];
-  const cities = ["Delhi", "Mumbai", "Gurgaon", "Chennai", "Bangalore", "Hyderabad"];
+  const specialties = ["Cardiologist", "Oncologist", "Orthopedic Surgeon", "Neurologist", "Gynecologist", "Nephrologist", "Laparoscopic Surgeon", "Cosmetic Surgeon"];
+  const cities = ["Delhi", "Mumbai", "Gurgaon", "Chennai", "Bangalore", "Hyderabad", "Lucknow"];
 
   const filteredDoctors = doctors.filter(doctor => {
     const matchesSearch = doctor.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
