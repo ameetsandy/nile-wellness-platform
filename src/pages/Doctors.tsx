@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
@@ -78,6 +77,94 @@ const Doctors = () => {
       experience: "25+ Yrs",
       image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Malhotra",
       path: "/doctors/rajiv-malhotra"
+    },
+    {
+      id: 7,
+      name: "Dr. Dheeraj Garg",
+      specialty: "Interventional Cardiologist",
+      designation: "Senior Consultant",
+      hospital: "",
+      city: "New Delhi",
+      experience: "20+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._dheeraj_garg.jpg",
+      path: "/doctors/dr-dheeraj-garg"
+    },
+    {
+      id: 8,
+      name: "Dr. Subodh Chandra Pande",
+      specialty: "Radiation Oncologist",
+      designation: "Consultant",
+      hospital: "Artemis Hospital",
+      city: "Gurgaon",
+      experience: "10+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr-subhash-chandra-pande-radiation-oncology.jpg",
+      path: "/doctors/dr-subodh-chandra-pande"
+    },
+    {
+      id: 9,
+      name: "Dr. Anmol Nagaraj",
+      specialty: "Neurosurgeon",
+      designation: "Consultant",
+      hospital: "Sparsh Hospital",
+      city: "Bangalore",
+      experience: "14+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._anmol_nagaraj-min.jpg",
+      path: "/doctors/dr-anmol-nagaraj"
+    },
+    {
+      id: 10,
+      name: "Dr. Mahesh Ghogare",
+      specialty: "Interventional Cardiologist",
+      designation: "Consultant",
+      hospital: "Reliance Hospitals",
+      city: "Mumbai",
+      experience: "14+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr_mahesh.jpg",
+      path: "/doctors/dr-mahesh-ghogare"
+    },
+    {
+      id: 11,
+      name: "Dr. Amit Sharma",
+      specialty: "Spine Surgeon",
+      designation: "Consultant",
+      hospital: "Saifee Hospital",
+      city: "Mumbai",
+      experience: "14+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._amit_sharma_-_spine_surgeon.jpg",
+      path: "/doctors/dr-amit-sharma"
+    },
+    {
+      id: 12,
+      name: "Dr. Arvind Prasad",
+      specialty: "Interventional Cardiologist",
+      designation: "Consultant",
+      hospital: "",
+      city: "Bangalore",
+      experience: "14+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._arvind_prasad_-_cardiologist.jpg",
+      path: "/doctors/dr-arvind-prasad"
+    },
+    {
+      id: 13,
+      name: "Dr. Yadhu K Lokanath",
+      specialty: "Spine Surgeon",
+      designation: "Consultant",
+      hospital: "Aster RV Hospital",
+      city: "Bangalore",
+      experience: "14+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr-yadhu-k-lokanath.jpg",
+      path: "/doctors/dr-yadhu-k-lokanath"
+    },
+    {
+      id: 14,
+      name: "Dr. Harsh Bhardwaj",
+      specialty: "Neurologist",
+      designation: "Consultant",
+      hospital: "Aakash Healthcare",
+      city: "New Delhi",
+      experience: "13+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr-harsh-bhardwaj.jpg",
+      path: "/doctors/dr-harsh-bhardwaj"
     }
   ];
 
@@ -172,31 +259,31 @@ const Doctors = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {filteredDoctors.map((doctor) => (
               <div 
                 key={doctor.id}
                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
-                <div className="relative">
+                <div className="relative aspect-square">
                   <img 
                     src={doctor.image}
                     alt={doctor.name}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
-                  <div className="absolute bottom-0 right-0 bg-nile-600 text-white py-1 px-3 rounded-tl-md">
-                    <span className="text-sm font-medium">{doctor.experience}</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-1 px-3">
+                    <span className="text-sm font-medium block text-center">{doctor.experience}</span>
                   </div>
                 </div>
                 
-                <div className="p-6">
+                <div className="p-4">
                   <Link to={doctor.path}>
-                    <h3 className="text-xl font-semibold mb-2 hover:text-nile-600 transition-colors">
+                    <h3 className="text-lg font-semibold mb-1 hover:text-nile-600 transition-colors">
                       {doctor.name}
                     </h3>
                   </Link>
                   
-                  <div className="space-y-2 mb-4">
+                  <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium tracking-wide">
                       {doctor.specialty}
                     </p>
@@ -208,24 +295,24 @@ const Doctors = () => {
                     </p>
                   </div>
                   
-                  <div className="flex gap-2 mt-6">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Calendar className="mr-1 h-4 w-4" /> Request Appointment
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="sm" className="flex-1 whitespace-nowrap text-xs py-1">
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button 
                       size="sm" 
-                      className="bg-green-600 hover:bg-green-700 flex-1"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
                       onClick={() => openWhatsApp(doctor.name)}
                     >
-                      <MessageCircle className="mr-1 h-4 w-4" /> WhatsApp
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
                   <Link 
                     to={doctor.path}
-                    className="mt-4 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-sm"
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
                   >
                     View Full Profile
-                    <ArrowRight className="ml-1 h-4 w-4" />
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </Link>
                 </div>
               </div>

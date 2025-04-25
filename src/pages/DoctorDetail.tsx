@@ -106,6 +106,206 @@ const mockDoctors = {
     ],
     patientCount: 18000,
     successRate: 85.5
+  },
+  "dr-dheeraj-garg": {
+    id: "dr-dheeraj-garg",
+    name: "Dr. Dheeraj Garg",
+    specialty: "Interventional Cardiologist",
+    designation: "Senior Consultant",
+    hospital: "",
+    location: "New Delhi",
+    experience: "20+ Years Experience",
+    education: "MBBS, MD, DM (Cardiology)",
+    image: "https://www.vaidam.com/sites/default/files/dr._dheeraj_garg.jpg",
+    about: "Dr. Dheeraj Garg, Senior Consultant Interventional Cardiologist in New Delhi, India, with over 15 years of experience. Specializes in Adult Intervention Cardiology and Cardiac Electrophysiology, performing procedures such as Coronary Angiography, Angioplasty, Pacemaker Implantation, and Cardiac Ablation. Known for expertise in complex cardiac interventions.",
+    expertise: [
+      "Interventional Cardiology",
+      "Cardiac Electrophysiology",
+      "Coronary Angiography",
+      "Pacemaker Implantation"
+    ],
+    awards: [
+      "10,000 Coronary Angiograms performed",
+      "200 Permanent Pacemakers implanted",
+      "200 Supraventricular Arrhythmias treated"
+    ],
+    patientCount: 10000,
+    successRate: 98.5
+  },
+  "dr-subodh-chandra-pande": {
+    id: "dr-subodh-chandra-pande",
+    name: "Dr. Subodh Chandra Pande",
+    specialty: "Radiation Oncologist",
+    designation: "Consultant",
+    hospital: "Artemis Hospital, Gurgaon",
+    location: "Gurgaon",
+    experience: "10+ Years Experience",
+    education: "MBBS, MD, DMRT",
+    image: "https://www.vaidam.com/sites/default/files/dr-subhash-chandra-pande-radiation-oncology.jpg",
+    about: "Dr. Subodh Chandra Pande, a renowned Radiation Oncologist at Artemis Hospital, Gurgaon, India, boasts nearly five decades of experience. He is a pioneer in Image-Guided Radiation Therapy and pediatric oncology, with specialized expertise in Head & Neck, CNS, Childhood, and Prostate Cancers. Dr. Pande led the installation of Rajasthan's first Linear Accelerator.",
+    expertise: [
+      "Radiation Oncology",
+      "Image-Guided Therapy",
+      "Pediatric Oncology",
+      "Head & Neck Cancers"
+    ],
+    awards: [
+      "10+ years at Artemis Hospital",
+      "Leadership in Rajasthan",
+      "Specialized Expertise in Radiation Oncology"
+    ],
+    patientCount: 1000,
+    successRate: 95.0
+  },
+  "dr-anmol-nagaraj": {
+    id: "dr-anmol-nagaraj",
+    name: "Dr. Anmol Nagaraj",
+    specialty: "Neurosurgeon",
+    designation: "Consultant",
+    hospital: "Sparsh Hospital (Yeshwanthpur) Bangalore",
+    location: "Bangalore",
+    experience: "14+ Years Experience",
+    education: "M.Ch. Neurosurgery - Manipal Academy of Higher Education",
+    image: "https://www.vaidam.com/sites/default/files/dr._anmol_nagaraj-min.jpg",
+    about: "Dr. Anmol Nagaraj is a Consultant Neurosurgeon with over 10 years of experience. Graduated from JJM Medical College, Davangere, he completed his M.Ch. in Neurosurgery at Manipal Academy of Higher Education. Specializing in Brain Tumor Surgery, Spine Surgery, and more, he is dedicated to advancing neurosurgical care.",
+    expertise: [
+      "Neurosurgery",
+      "Brain Tumor Surgery",
+      "Radiosurgery (Cyberknife, Gamma Knife)",
+      "Spine Surgery"
+    ],
+    awards: [
+      "10+ years experience",
+      "M.Ch. Neurosurgery, 2017",
+      "Published several papers"
+    ],
+    patientCount: 1000,
+    successRate: 97.0
+  },
+  "dr-mahesh-ghogare": {
+    id: "dr-mahesh-ghogare",
+    name: "Dr. Mahesh Ghogare",
+    specialty: "Interventional Cardiologist",
+    designation: "Consultant",
+    hospital: "Reliance Hospitals, Navi Mumbai",
+    location: "Mumbai",
+    experience: "14+ Years Experience",
+    education: "DM in Cardiology - Lokmanya Tilak Municipal Medical College, Mumbai",
+    image: "https://www.vaidam.com/sites/default/files/dr_mahesh.jpg",
+    about: "Dr. Mahesh Ghogare, Consultant Interventional Cardiologist in Mumbai, India, with 10+ years of experience. Specializes in Coronary Angiography, Angioplasty, Peripheral Vascular Interventions, Cardiac Catheterization, Valvular Heart Diseases, and more. Graduated from Government Medical College, Nagpur, and holds DM in Cardiology from Lokmanya Tilak Municipal Medical College, Mumbai. A member of various prestigious medical associations.",
+    expertise: [
+      "Interventional Cardiology",
+      "Cardiac Catheterisation",
+      "Valvular Heart Diseases",
+      "Permanent Pacemakers"
+    ],
+    awards: [
+      "10+ years experience",
+      "Member of Medical Council",
+      "Guest speaker at conferences"
+    ],
+    patientCount: 500,
+    successRate: 96.5
+  },
+  "dr-amit-sharma": {
+    id: "dr-amit-sharma",
+    name: "Dr. Amit Sharma",
+    specialty: "Spine Surgeon",
+    designation: "Consultant",
+    hospital: "Saifee Hospital, Mumbai",
+    location: "Mumbai",
+    experience: "14+ Years Experience",
+    education: "Pediatric orthopedics training from Children's Hospital, New Orleans, USA; Orthopedic surgery training from KEM Hospital, Mumbai",
+    image: "https://www.vaidam.com/sites/default/files/dr._amit_sharma_-_spine_surgeon.jpg",
+    about: "Dr. Amit Sharma, a Consultant Spine Surgeon at Saifee Hospital, Mumbai, specializes in various spine surgeries with over 10 years of experience. He is actively involved in research and has presented work in national and international meetings, with publications in international journals.",
+    expertise: [
+      "Cervical spine surgery",
+      "Minimally invasive spine surgery",
+      "Spinal deformity correction",
+      "Revision spine surgeries"
+    ],
+    awards: [
+      "10+ years experience",
+      "Specializes in spine surgery",
+      "Published in international journals"
+    ],
+    patientCount: 500,
+    successRate: 98.0
+  },
+  "dr-arvind-prasad": {
+    id: "dr-arvind-prasad",
+    name: "Dr. Arvind Prasad",
+    specialty: "Interventional Cardiologist",
+    designation: "Consultant",
+    hospital: "",
+    location: "Bangalore",
+    experience: "14+ Years Experience",
+    education: "MBBS - Adichunchanagiri Institute of Medical Sciences; MD in Medicine - Government Medical College VIMS Bellary; DM in cardiology - Sri Jayadeva Institute of Cardiovascular Sciences & Research",
+    image: "https://www.vaidam.com/sites/default/files/dr._arvind_prasad_-_cardiologist.jpg",
+    about: "Dr. Arvind Prasad, an experienced Interventional Cardiologist in Bangalore, India, specializes in emergency and elective cardiac interventions such as primary PCI, Pacemaker Implantation, and Peripheral Interventions. With over 10 years of experience, he is affiliated with various medical associations and has multiple publications in national journals.",
+    expertise: [
+      "Interventional Cardiology",
+      "Emergency Cardiac Interventions",
+      "Elective Cardiac Interventions",
+      "Peripheral Interventions"
+    ],
+    awards: [
+      "10+ years of experience",
+      "Member of various medical associations",
+      "Multiple publications in national journals"
+    ],
+    patientCount: 1000,
+    successRate: 97.5
+  },
+  "dr-yadhu-k-lokanath": {
+    id: "dr-yadhu-k-lokanath",
+    name: "Dr. Yadhu K Lokanath",
+    specialty: "Spine Surgeon",
+    designation: "Consultant",
+    hospital: "Aster RV Hospital (J P Nagar) Bangalore",
+    location: "Bangalore",
+    experience: "14+ Years Experience",
+    education: "MCh Neurosurgery J.N Medical College",
+    image: "https://www.vaidam.com/sites/default/files/dr-yadhu-k-lokanath.jpg",
+    about: "Dr. Yadhu K Lokanath, a Consultant Spine Surgeon based in Bangalore, India, specializes in spinal conditions across all age groups. With over 10 years of experience, he offers expertise in lateral access surgery, minimally invasive surgery, endoscopic spine surgery, and treatment of various brain and spine disorders.",
+    expertise: [
+      "Spine Surgeon",
+      "Neurosurgeon",
+      "Minimally Invasive Spine Surgeon",
+      "Trauma Surgeon"
+    ],
+    awards: [
+      "10+ years of experience",
+      "National and international publications",
+      "Guest speaker worldwide"
+    ],
+    patientCount: 1000,
+    successRate: 96.0
+  },
+  "dr-harsh-bhardwaj": {
+    id: "dr-harsh-bhardwaj",
+    name: "Dr. Harsh Bhardwaj",
+    specialty: "Neurologist",
+    designation: "Consultant",
+    hospital: "Aakash Healthcare Super Speciality Hospital, Dwarka, New Delhi",
+    location: "New Delhi",
+    experience: "13+ Years Experience",
+    education: "MBBS - Vardhman Mahavir Medical College 2011; MD in General Medicine - Same college 2014",
+    image: "https://www.vaidam.com/sites/default/files/dr-harsh-bhardwaj.jpg",
+    about: "Dr. Harsh Bhardwaj, a Consultant Neurologist based in New Delhi, India, brings 12 years of experience in treating over 10,000 patients with neurological disorders. Specializing in multiple sclerosis, autoimmune disorders, epilepsy, stroke, dementia, migraine, and movement disorders, he excels in thrombolytic therapy for stroke and BOTOX therapy for various neurological conditions.",
+    expertise: [
+      "Neurology",
+      "Multiple Sclerosis",
+      "Epilepsy",
+      "Stroke"
+    ],
+    awards: [
+      "12 years experience",
+      "10,000+ patients treated",
+      "Vast stroke management experience"
+    ],
+    patientCount: 10000,
+    successRate: 95.5
   }
 };
 
