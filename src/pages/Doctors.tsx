@@ -198,6 +198,260 @@ const Doctors = () => {
       experience: "16+ Yrs",
       image: "https://d1ea147o02h.cloudfront.net/dr._avinash_agarwal_-_cosmetic_and_plastic_surgeon.jpg",
       path: "/doctors/dr-avinash-agarwal"
+    },
+    {
+      id: 18,
+      name: "Dr. Anurag Sihag",
+      specialty: "Neurosurgeon",
+      designation: "Consultant",
+      hospital: "Shalby Hospital",
+      city: "Jaipur",
+      experience: "12+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr_anurag_sihag.png",
+      path: "/doctors/dr-anurag-sihag"
+    },
+    {
+      id: 19,
+      name: "Dr. Rahul Jain",
+      specialty: "Aesthetics and Plastic Surgeon",
+      designation: "Consultant",
+      hospital: "Fortis Hospital",
+      city: "Manesar, Gurgaon",
+      experience: "12+ Yrs",
+      image: "https://d1ea147o02h74h.cloudfront.net/dr_rahul_jain.jpg",
+      path: "/doctors/dr-rahul-jain-plastic-surgeon"
+    },
+    {
+      id: 20,
+      name: "Dr. Ashok Kumar P",
+      specialty: "Interventional Cardiologist",
+      designation: "Consultant",
+      hospital: "",
+      city: "",
+      experience: "16+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._ashok_kumar_p_-_cardiologist.jpg",
+      path: "/doctors/dr-ashok-kumar-p"
+    },
+    {
+      id: 21,
+      name: "Dr. Ved Prakash",
+      specialty: "Interventional Cardiologist",
+      designation: "Consultant",
+      hospital: "Sarvodaya Hospital",
+      city: "Faridabad",
+      experience: "12+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._ved_prakash-removebg-preview-min_0.png",
+      path: "/doctors/dr-ved-prakash"
+    },
+    {
+      id: 22,
+      name: "Dr. Avinash K M",
+      specialty: "Neurosurgeon",
+      designation: "Consultant",
+      hospital: "Manipal Hospital",
+      city: "Bangalore",
+      experience: "16+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._avinash-min.jpg",
+      path: "/doctors/dr-avinash-k-m"
+    },
+    {
+      id: 23,
+      name: "Dr. G Dimpu Edwin Jonathan",
+      specialty: "Interventional Cardiologist",
+      designation: "Consultant",
+      hospital: "Aster RV Hospital",
+      city: "Bangalore",
+      experience: "12+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._g_dimpu_edwin_jonathan.jpg",
+      path: "/doctors/dr-g-dimpu-edwin-jonathan"
+    },
+    {
+      id: 24,
+      name: "Dr. Annamaneni Ravi Chander Rao",
+      specialty: "Aesthetics and Plastic Surgeon",
+      designation: "Consultant",
+      hospital: "Care Hospitals",
+      city: "Hyderabad",
+      experience: "13+ Yrs",
+      image: "https://d1ea147o02h74h.cloudfront.net/dr_a_ravi_chander_rao-min.png",
+      path: "/doctors/dr-annamaneni-ravi-chander-rao"
+    },
+    {
+      id: 25,
+      name: "Dr. A. M. Bharath Reddy",
+      specialty: "Cardiac Surgeon",
+      designation: "Consultant",
+      hospital: "Apollo Spectra Hospital",
+      city: "Chennai",
+      experience: "17+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._a._m._bharath_reddy_-_cardiologist.jpg",
+      path: "/doctors/dr-m-bharath-reddy"
+    },
+    
+    {
+      id: 26,
+      name: "Dr. Abhishek Patil",
+      specialty: "Rheumatologist",
+      designation: "Consultant",
+      hospital: "Manipal Hospital (Old Airport Road)",
+      city: "Bangalore",
+      experience: "14+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr.abhishek-min.png",
+      path: "/doctors/dr-abhishek-patil"
+    },
+    {
+      id: 27,
+      name: "Dr. Sumana B Pallegar",
+      specialty: "Neurosurgeon",
+      designation: "Consultant",
+      hospital: "Narayana Multispeciality Hospital",
+      city: "Bangalore",
+      experience: "18+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._sumana_b_pallegar_-_neurosurgeon.jpg",
+      path: "/doctors/dr-sumana-b-pallegar"
+    },
+    {
+      id: 28,
+      name: "Dr Khushbu Goel",
+      specialty: "Neurologist",
+      designation: "Consultant",
+      hospital: "Manipal Hospitals Dwarka",
+      city: "Delhi",
+      experience: "17+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr_khushbu_goel.jpg",
+      path: "/doctors/dr-khushbu-goel"
+    },
+    {
+      id: 29,
+      name: "Dr. Gundurao Harish Joshi",
+      specialty: "Interventional Cardiologist",
+      designation: "Consultant",
+      hospital: "",
+      city: "",
+      experience: "18+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._gundurao_harish_joshi_-_cardiologist_0.jpg",
+      path: "/doctors/dr-gundurao-harish-joshi"
+    },
+    {
+      id: 30,
+      name: "Dr. Keval Changadiya",
+      specialty: "Neurologist",
+      designation: "Consultant",
+      hospital: "CIMS Hospital",
+      city: "Ahmedabad",
+      experience: "14+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr_keval_changadiya.jpeg",
+      path: "/doctors/dr-keval-changadiya"
+    },
+    {
+      id: 31,
+      name: "Dr. Ankit Gupta",
+      specialty: "Cardiac Surgeon",
+      designation: "Consultant",
+      hospital: "Shalby Hospital",
+      city: "Jaipur",
+      experience: "14+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr_ankit_gupta-min.png",
+      path: "/doctors/dr-ankit-gupta-cardiologist"
+    },
+    {
+      id: 32,
+      name: "Dr. Nishant Shanker Yagnick",
+      specialty: "Neurosurgeon",
+      designation: "Senior Consultant",
+      hospital: "Fortis Hospital, Manesar",
+      city: "Gurgaon",
+      experience: "14+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._nishant-min.jpg",
+      path: "/doctors/dr-nishant-shanker-yagnick"
+    },
+    {
+      id: 33,
+      name: "Dr. Anil Tibrewala",
+      specialty: "Cosmetic Surgeon",
+      designation: "Consultant",
+      hospital: "Saifee Hospital",
+      city: "Mumbai",
+      experience: "19+ Yrs",
+      image: "https://d1ea147o02h74h.cloudfront.net/dr._anil_tibrewala_-_plastic_and_cosmetic_surgeon.jpg",
+      path: "/doctors/dr-anil-tibrewala"
+    },
+    {
+      id: 34,
+      name: "Dr. Anup Charles Steven",
+      specialty: "Cardiac Surgeon",
+      designation: "Consultant",
+      hospital: "Aster CMI Hospital (Hebbel)",
+      city: "Bangalore",
+      experience: "15+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._anup_charles_steven_-_cardiothoracic_surgeon.jpg",
+      path: "/doctors/dr-anup-charles-steven"
+    },
+    {
+      id: 35,
+      name: "Dr. Praveen Phaneendranath Sadarmin",
+      specialty: "Interventional Cardiologist",
+      designation: "Consultant",
+      hospital: "Narayana Institute of Cardiac Sciences",
+      city: "Bangalore",
+      experience: "15+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._praveen_phaneendranath_sadarmin_-_cardiologist.jpg",
+      path: "/doctors/dr-praveen-phaneendranath-sadarmin"
+    },
+    {
+      id: 36,
+      name: "Dr. Ashwin Borkar",
+      specialty: "Neurosurgeon",
+      designation: "Consultant",
+      hospital: "Wockhardt Super Speciality Hospital",
+      city: "Mira Road, Mumbai",
+      experience: "15+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._ashwin_borkar-min.jpg",
+      path: "/doctors/dr-ashwin-borkar"
+    },
+    {
+      id: 37,
+      name: "Dr. Srichandran L",
+      specialty: "Interventional Cardiologist",
+      designation: "Consultant",
+      hospital: "MGM Healthcare",
+      city: "Chennai",
+      experience: "19+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._srichandran_l_-_interventional_cardiologist.jpg",
+      path: "/doctors/dr-srichandran-l"
+    },
+    {
+      id: 38,
+      name: "Dr. Arvind Kulkarni",
+      specialty: "Spine Surgeon",
+      designation: "Consultant",
+      hospital: "Saifee Hospital",
+      city: "Mumbai",
+      experience: "19+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._arvind_kulkarni_-_spinal_surgeon_0.jpg",
+      path: "/doctors/dr-arvind-kulkarni"
+    },
+    {
+      id: 39,
+      name: "Dr. Mohamed Ibrahim B K",
+      specialty: "Cosmetic Surgeon",
+      designation: "Consultant",
+      hospital: "SIMS Hospital",
+      city: "Vadapalani, Chennai",
+      experience: "15+ Yrs",
+      image: "https://d1ea147o02h74h.cloudfront.net/dr._mohamed_ibrahim_b_k.png",
+      path: "/doctors/dr-mohamed-ibrahim-b-k"
+    },
+    {
+      id: 40,
+      name: "Dr. Jimmy Lalkaka",
+      specialty: "Neurologist",
+      designation: "Consultant",
+      hospital: "Saifee Hospital",
+      city: "Mumbai",
+      experience: "19+ Yrs",
+      image: "https://www.vaidam.com/sites/default/files/dr._jimmy_lalkaka_-_neurologist.jpg",
+      path: "/doctors/dr-jimmy-lalkaka"
     }
   ];
 
