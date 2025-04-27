@@ -94,6 +94,97 @@ const Hospitals = () => {
       image: "https://placehold.co/600x400/medical-600/white/?text=Kokilaben+Hospital",
       logo: "https://placehold.co/200x100/white/gray/?text=Kokilaben",
       path: "/hospitals/kokilaben-mumbai"
+    },
+    {
+      id: 7,
+      name: "Aakash Healthcare Super Speciality Hospital",
+      location: "New Delhi",
+      category: "Multi Speciality",
+      accreditation: "NABH",
+      founded: 2011,
+      beds: 200,
+      rating: generateStarRating(),
+      image: "https://www.vaidam.com/sites/default/files/main_image-min_14.jpg",
+      logo: "https://placehold.co/200x100/white/gray/?text=Aakash",
+      path: "/hospitals/aakash-healthcare-super-speciality-hospital-dwarka-new-delhi"
+    },
+    {
+      id: 8,
+      name: "Aditya Birla Memorial Hospital",
+      location: "Pune",
+      category: "Multi Speciality",
+      accreditation: "JCI, NABH",
+      founded: 2006,
+      beds: 500,
+      rating: generateStarRating(),
+      image: "https://www.vaidam.com/sites/default/files/aditya_birla_memorial_hospital_pune_building-min.jpg",
+      logo: "https://placehold.co/200x100/white/gray/?text=Aditya+Birla",
+      path: "/hospitals/aditya-birla-memorial-hospital-pune"
+    },
+    {
+      id: 9,
+      name: "Advance Fertility and Gynaecology Centre",
+      location: "New Delhi",
+      category: "Single Speciality",
+      accreditation: "",
+      founded: 2011,
+      beds: 0,
+      rating: generateStarRating(),
+      image: "https://www.vaidam.com/sites/default/files/advanced_fertility_center_-dr_kaberi_banerjee-_new_delhi.jpg",
+      logo: "https://placehold.co/200x100/white/gray/?text=Advance+Fertility",
+      path: "/hospitals/advanced-fertility-and-gynaecology-centre-new-delhi"
+    },
+    {
+      id: 10,
+      name: "Ahalia Ayurveda Hospital",
+      location: "Palakkad",
+      category: "Multi Speciality",
+      accreditation: "JCI, NABH",
+      founded: 1984,
+      beds: 100,
+      rating: generateStarRating(),
+      image: "https://www.vaidam.com/sites/default/files/ahalia_ayurveda_hospital_kerala.jpg",
+      logo: "https://placehold.co/200x100/white/gray/?text=Ahalia",
+      path: "/hospitals/ahalia-ayurveda-hospital-kerala"
+    },
+    {
+      id: 11,
+      name: "Ajanta Hospital & IVF Centre Pvt. Ltd.",
+      location: "Lucknow",
+      category: "Multi Speciality",
+      accreditation: "NABH",
+      founded: 2004,
+      beds: 141,
+      rating: generateStarRating(),
+      image: "https://www.vaidam.com/sites/default/files/ajanta_hospital_building-min.jpg",
+      logo: "https://placehold.co/200x100/white/gray/?text=Ajanta",
+      path: "/hospitals/ajanta-hospital-ivf-centre-pvt-ltd"
+    },
+    {
+      id: 12,
+      name: "Alexis Multispeciality Hospital",
+      location: "Nagpur",
+      category: "Multi Speciality",
+      accreditation: "JCI",
+      founded: 2016,
+      beds: 200,
+      rating: generateStarRating(),
+      image: "https://www.vaidam.com/sites/default/files/alexis_profile-min.jpg",
+      logo: "https://placehold.co/200x100/white/gray/?text=Alexis",
+      path: "/hospitals/alexis-multispeciality-hospital-nagpur-maharashtra-india"
+    },
+    {
+      id: 13,
+      name: "Alive Wellness Clinics",
+      location: "New Delhi",
+      category: "Single Speciality",
+      accreditation: "",
+      founded: 1997,
+      beds: 0,
+      rating: generateStarRating(),
+      image: "https://www.vaidam.com/sites/default/files/alive_wellness_list_image-min.png",
+      logo: "https://placehold.co/200x100/white/gray/?text=Alive",
+      path: "/hospitals/alive-wellness-clinics"
     }
   ];
 

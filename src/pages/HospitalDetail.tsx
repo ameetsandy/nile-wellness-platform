@@ -20,87 +20,453 @@ const HospitalDetail = () => {
       setLoading(true);
       // Simulate API call
       setTimeout(() => {
-        const mockHospital = {
-          id: id,
-          name: "Apollo Hospitals",
-          location: "Delhi",
-          address: "Sarita Vihar, Delhi Mathura Road, New Delhi - 110076",
-          accreditation: ["JCI", "NABH"],
-          established: 1983,
-          description: "Apollo Hospitals, Delhi is a state-of-the-art multi-specialty tertiary care hospital established in 1996. The hospital is spread across 15 acres and has 900 beds. The hospital is a world-class facility and offers high-quality healthcare services to patients from India and abroad.",
-          image: "https://placehold.co/800x400/medical-600/white/?text=Apollo+Hospitals",
-          logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-          internationalPatients: 5000,
-          beds: 900,
-          doctors: 500,
-          specialties: 57,
-          specializations: [
-            "Cardiology",
-            "Oncology",
-            "Neurology",
-            "Orthopedics",
-            "Gastroenterology",
-            "Nephrology",
-            "Urology",
-            "Pulmonology"
-          ],
-          facilities: {
-            medical: [
-              `Modern Operation Theaters (${calculateOperationTheaters(900)})`,
-              `Intensive Care Units (${calculateICUBeds(calculateOperationTheaters(900))} beds)`,
-              "Advanced Imaging Center (MRI, CT, PET)",
-              "Catheterization Lab",
-              "Radiation Therapy Center",
-              "24/7 Emergency Department"
+        const mockHospitals = {
+          "aakash-healthcare-super-speciality-hospital-dwarka-new-delhi": {
+            id: "aakash-healthcare-super-speciality-hospital-dwarka-new-delhi",
+            name: "Aakash Healthcare Super Speciality Hospital",
+            location: "New Delhi",
+            address: "Sector 3, Dwarka, New Delhi - 110075",
+            accreditation: ["NABH"],
+            established: 2011,
+            description: "Aakash Healthcare Super Speciality Hospital is a state-of-the-art multi-specialty hospital in Dwarka, New Delhi. With 200 beds and advanced medical infrastructure, it provides comprehensive healthcare services with a focus on patient-centric care.",
+            image: "https://www.vaidam.com/sites/default/files/main_image-min_14.jpg",
+            logo: "https://placehold.co/200x100/white/gray/?text=Aakash",
+            internationalPatients: 2000,
+            beds: 200,
+            doctors: 150,
+            specialties: 25,
+            specializations: [
+              "Cardiology",
+              "Orthopedics",
+              "Neurology",
+              "Gastroenterology",
+              "Nephrology",
+              "Urology",
+              "Oncology",
+              "Critical Care"
             ],
-            amenities: [
-              "International Patient Lounge",
-              "Visa Assistance",
-              "Airport Transfer",
-              "Language Interpreters",
-              "Currency Exchange",
-              "Hotel Booking",
-              "24/7 Pharmacy",
-              "Cafeteria"
+            facilities: {
+              medical: [
+                `Modern Operation Theaters (${calculateOperationTheaters(200)})`,
+                `Intensive Care Units (${calculateICUBeds(calculateOperationTheaters(200))} beds)`,
+                "Advanced Imaging Center",
+                "Cath Lab",
+                "Dialysis Unit",
+                "24/7 Emergency Department"
+              ],
+              amenities: [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer",
+                "Language Interpreters",
+                "Currency Exchange",
+                "24/7 Pharmacy",
+                "Cafeteria"
+              ]
+            },
+            topDoctors: [
+              {
+                id: "harsh-bhardwaj",
+                name: "Dr. Harsh Bhardwaj",
+                specialty: "Neurologist",
+                image: "https://www.vaidam.com/sites/default/files/dr-harsh-bhardwaj.jpg"
+              },
+              {
+                id: "ankit-gupta",
+                name: "Dr. Ankit Gupta",
+                specialty: "Cardiac Surgeon",
+                image: "https://www.vaidam.com/sites/default/files/dr_ankit_gupta-min.png"
+              }
+            ],
+            reviews: 4.7,
+            reviewCount: 450,
+            images: [
+              "https://www.vaidam.com/sites/default/files/main_image-min_14.jpg",
+              "https://placehold.co/600x400/medical-600/white/?text=Aakash+Hospital+2",
+              "https://placehold.co/600x400/medical-600/white/?text=Aakash+Hospital+3",
+              "https://placehold.co/600x400/medical-600/white/?text=Aakash+Hospital+4"
             ]
           },
-          topDoctors: [
-            {
-              id: "arjun-mehta",
-              name: "Dr. Arjun Mehta",
-              specialty: "Cardiologist",
-              image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Mehta"
+          "aditya-birla-memorial-hospital-pune": {
+            id: "aditya-birla-memorial-hospital-pune",
+            name: "Aditya Birla Memorial Hospital",
+            location: "Pune",
+            address: "Aditya Birla Memorial Hospital, Chinchwad, Pune - 411033",
+            accreditation: ["JCI", "NABH"],
+            established: 2006,
+            description: "Aditya Birla Memorial Hospital is a 500-bed multi-specialty hospital in Pune, known for its world-class infrastructure and advanced medical technology. The hospital is committed to providing quality healthcare services with a focus on patient safety and satisfaction.",
+            image: "https://www.vaidam.com/sites/default/files/aditya_birla_memorial_hospital_pune_building-min.jpg",
+            logo: "https://placehold.co/200x100/white/gray/?text=Aditya+Birla",
+            internationalPatients: 5000,
+            beds: 500,
+            doctors: 300,
+            specialties: 35,
+            specializations: [
+              "Cardiology",
+              "Neurology",
+              "Orthopedics",
+              "Oncology",
+              "Gastroenterology",
+              "Nephrology",
+              "Urology",
+              "Pulmonology",
+              "Pediatrics"
+            ],
+            facilities: {
+              medical: [
+                `Modern Operation Theaters (${calculateOperationTheaters(500)})`,
+                `Intensive Care Units (${calculateICUBeds(calculateOperationTheaters(500))} beds)`,
+                "Advanced Imaging Center",
+                "Cath Lab",
+                "Radiation Therapy Center",
+                "24/7 Emergency Department"
+              ],
+              amenities: [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer",
+                "Language Interpreters",
+                "Currency Exchange",
+                "Hotel Booking",
+                "24/7 Pharmacy",
+                "Cafeteria"
+              ]
             },
-            {
-              id: "pooja-nair",
-              name: "Dr. Pooja Nair",
-              specialty: "Oncologist",
-              image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Nair"
+            topDoctors: [
+              {
+                id: "sudhir-kumar",
+                name: "Dr. Sudhir Kumar",
+                specialty: "Neurologist",
+                image: "https://d1ea147o02h74h.cloudfront.net/dr._sudhir_kumar_0.jpg"
+              },
+              {
+                id: "kisley-shrivastav",
+                name: "Dr. Kisley Shrivastav",
+                specialty: "Interventional Cardiologist",
+                image: "https://www.vaidam.com/sites/default/files/dr._kisley_shrivastav_0.jpg"
+              }
+            ],
+            reviews: 4.8,
+            reviewCount: 600,
+            images: [
+              "https://www.vaidam.com/sites/default/files/aditya_birla_memorial_hospital_pune_building-min.jpg",
+              "https://placehold.co/600x400/medical-600/white/?text=Aditya+Birla+Hospital+2",
+              "https://placehold.co/600x400/medical-600/white/?text=Aditya+Birla+Hospital+3",
+              "https://placehold.co/600x400/medical-600/white/?text=Aditya+Birla+Hospital+4"
+            ]
+          },
+          "advanced-fertility-and-gynaecology-centre-new-delhi": {
+            id: "advanced-fertility-and-gynaecology-centre-new-delhi",
+            name: "Advance Fertility and Gynaecology Centre",
+            location: "New Delhi",
+            address: "Greater Kailash, New Delhi - 110048",
+            accreditation: [],
+            established: 2011,
+            description: "Advance Fertility and Gynaecology Centre is a specialized center for reproductive medicine and gynecological care. The center is known for its high success rates in fertility treatments and personalized care for patients.",
+            image: "https://www.vaidam.com/sites/default/files/advanced_fertility_center_-dr_kaberi_banerjee-_new_delhi.jpg",
+            logo: "https://placehold.co/200x100/white/gray/?text=Advance+Fertility",
+            internationalPatients: 1000,
+            beds: 0,
+            doctors: 15,
+            specialties: 2,
+            specializations: [
+              "Fertility Treatment",
+              "Gynecology"
+            ],
+            facilities: {
+              medical: [
+                "Advanced IVF Lab",
+                "Ultrasound Room",
+                "Operation Theater",
+                "Recovery Room",
+                "Consultation Rooms"
+              ],
+              amenities: [
+                "Patient Counseling Room",
+                "Comfortable Waiting Area",
+                "24/7 Emergency Services",
+                "Pharmacy"
+              ]
             },
-            {
-              id: "yusuf-khan",
-              name: "Dr. Yusuf Khan",
-              specialty: "Orthopedic",
-              image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Khan"
-            }
-          ],
-          reviews: 4.8,
-          reviewCount: 789,
-          images: [
-            "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-            "https://images.unsplash.com/photo-1431576901776-e539bd916ba2",
-            "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e",
-            "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace"
-          ]
+            topDoctors: [
+              {
+                id: "kaberi-banerjee",
+                name: "Dr. Kaberi Banerjee",
+                specialty: "Fertility Specialist",
+                image: "https://www.vaidam.com/sites/default/files/advanced_fertility_center_-dr_kaberi_banerjee-_new_delhi.jpg"
+              }
+            ],
+            reviews: 4.9,
+            reviewCount: 300,
+            images: [
+              "https://www.vaidam.com/sites/default/files/advanced_fertility_center_-dr_kaberi_banerjee-_new_delhi.jpg",
+              "https://placehold.co/600x400/medical-600/white/?text=Fertility+Center+2",
+              "https://placehold.co/600x400/medical-600/white/?text=Fertility+Center+3",
+              "https://placehold.co/600x400/medical-600/white/?text=Fertility+Center+4"
+            ]
+          },
+          "ahalia-ayurveda-hospital-kerala": {
+            id: "ahalia-ayurveda-hospital-kerala",
+            name: "Ahalia Ayurveda Hospital",
+            location: "Palakkad",
+            address: "Ahalia Campus, Kozhippara, Palakkad - 678557, Kerala",
+            accreditation: ["JCI", "NABH"],
+            established: 1984,
+            description: "Ahalia Ayurveda Hospital is a renowned Ayurvedic healthcare center in Kerala, offering traditional Ayurvedic treatments with modern facilities. The hospital combines ancient Ayurvedic wisdom with contemporary medical practices to provide holistic healthcare solutions.",
+            image: "https://www.vaidam.com/sites/default/files/ahalia_ayurveda_hospital_kerala.jpg",
+            logo: "https://placehold.co/200x100/white/gray/?text=Ahalia",
+            internationalPatients: 1000,
+            beds: 100,
+            doctors: 50,
+            specialties: 15,
+            specializations: [
+              "Panchakarma",
+              "Kerala Ayurveda",
+              "Rheumatology",
+              "Neurology",
+              "Orthopedics",
+              "Dermatology",
+              "Respiratory Care",
+              "Gastroenterology"
+            ],
+            facilities: {
+              medical: [
+                `Modern Operation Theaters (${calculateOperationTheaters(100)})`,
+                `Intensive Care Units (${calculateICUBeds(calculateOperationTheaters(100))} beds)`,
+                "Panchakarma Center",
+                "Ayurvedic Pharmacy",
+                "Yoga and Meditation Center",
+                "24/7 Emergency Department"
+              ],
+              amenities: [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer",
+                "Language Interpreters",
+                "Currency Exchange",
+                "24/7 Pharmacy",
+                "Cafeteria",
+                "Garden Area"
+              ]
+            },
+            topDoctors: [
+              {
+                id: "rajesh-kumar",
+                name: "Dr. Rajesh Kumar",
+                specialty: "Ayurvedic Physician",
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Kumar"
+              },
+              {
+                id: "meera-nair",
+                name: "Dr. Meera Nair",
+                specialty: "Panchakarma Specialist",
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Nair"
+              }
+            ],
+            reviews: 4.8,
+            reviewCount: 350,
+            images: [
+              "https://www.vaidam.com/sites/default/files/ahalia_ayurveda_hospital_kerala.jpg",
+              "https://placehold.co/600x400/medical-600/white/?text=Ahalia+Hospital+2",
+              "https://placehold.co/600x400/medical-600/white/?text=Ahalia+Hospital+3",
+              "https://placehold.co/600x400/medical-600/white/?text=Ahalia+Hospital+4"
+            ]
+          },
+          "ajanta-hospital-ivf-centre-pvt-ltd": {
+            id: "ajanta-hospital-ivf-centre-pvt-ltd",
+            name: "Ajanta Hospital & IVF Centre Pvt. Ltd.",
+            location: "Lucknow",
+            address: "Sector 1, Gomti Nagar, Lucknow - 226010, Uttar Pradesh",
+            accreditation: ["NABH"],
+            established: 2004,
+            description: "Ajanta Hospital & IVF Centre is a leading multi-specialty hospital in Lucknow, known for its excellence in IVF treatments and comprehensive healthcare services. The hospital combines advanced medical technology with compassionate care.",
+            image: "https://www.vaidam.com/sites/default/files/ajanta_hospital_building-min.jpg",
+            logo: "https://placehold.co/200x100/white/gray/?text=Ajanta",
+            internationalPatients: 2000,
+            beds: 141,
+            doctors: 75,
+            specialties: 20,
+            specializations: [
+              "IVF and Infertility",
+              "Obstetrics & Gynecology",
+              "Pediatrics",
+              "General Medicine",
+              "Orthopedics",
+              "ENT",
+              "Ophthalmology",
+              "Dermatology"
+            ],
+            facilities: {
+              medical: [
+                `Modern Operation Theaters (${calculateOperationTheaters(141)})`,
+                `Intensive Care Units (${calculateICUBeds(calculateOperationTheaters(141))} beds)`,
+                "Advanced IVF Lab",
+                "Neonatal ICU",
+                "Labor & Delivery Suites",
+                "24/7 Emergency Department"
+              ],
+              amenities: [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer",
+                "Language Interpreters",
+                "Currency Exchange",
+                "24/7 Pharmacy",
+                "Cafeteria",
+                "Patient Counseling Room"
+              ]
+            },
+            topDoctors: [
+              {
+                id: "anil-gupta",
+                name: "Dr. Anil Gupta",
+                specialty: "IVF Specialist",
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Gupta"
+              },
+              {
+                id: "priya-sharma",
+                name: "Dr. Priya Sharma",
+                specialty: "Gynecologist",
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Sharma"
+              }
+            ],
+            reviews: 4.7,
+            reviewCount: 400,
+            images: [
+              "https://www.vaidam.com/sites/default/files/ajanta_hospital_building-min.jpg",
+              "https://placehold.co/600x400/medical-600/white/?text=Ajanta+Hospital+2",
+              "https://placehold.co/600x400/medical-600/white/?text=Ajanta+Hospital+3",
+              "https://placehold.co/600x400/medical-600/white/?text=Ajanta+Hospital+4"
+            ]
+          },
+          "alexis-multispeciality-hospital-nagpur-maharashtra-india": {
+            id: "alexis-multispeciality-hospital-nagpur-maharashtra-india",
+            name: "Alexis Multispeciality Hospital",
+            location: "Nagpur",
+            address: "Wardha Road, Nagpur - 440015, Maharashtra",
+            accreditation: ["JCI"],
+            established: 2016,
+            description: "Alexis Multispeciality Hospital is a state-of-the-art healthcare facility in Nagpur, offering comprehensive medical services with a focus on patient care and advanced treatment options. The hospital is known for its modern infrastructure and expert medical team.",
+            image: "https://www.vaidam.com/sites/default/files/alexis_profile-min.jpg",
+            logo: "https://placehold.co/200x100/white/gray/?text=Alexis",
+            internationalPatients: 1500,
+            beds: 200,
+            doctors: 100,
+            specialties: 30,
+            specializations: [
+              "Cardiology",
+              "Neurology",
+              "Orthopedics",
+              "Oncology",
+              "Gastroenterology",
+              "Nephrology",
+              "Urology",
+              "Pulmonology"
+            ],
+            facilities: {
+              medical: [
+                `Modern Operation Theaters (${calculateOperationTheaters(200)})`,
+                `Intensive Care Units (${calculateICUBeds(calculateOperationTheaters(200))} beds)`,
+                "Advanced Imaging Center",
+                "Cath Lab",
+                "Dialysis Unit",
+                "24/7 Emergency Department"
+              ],
+              amenities: [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer",
+                "Language Interpreters",
+                "Currency Exchange",
+                "24/7 Pharmacy",
+                "Cafeteria",
+                "Garden Area"
+              ]
+            },
+            topDoctors: [
+              {
+                id: "vikram-patil",
+                name: "Dr. Vikram Patil",
+                specialty: "Cardiologist",
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Patil"
+              },
+              {
+                id: "anita-deshmukh",
+                name: "Dr. Anita Deshmukh",
+                specialty: "Neurologist",
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Deshmukh"
+              }
+            ],
+            reviews: 4.6,
+            reviewCount: 300,
+            images: [
+              "https://www.vaidam.com/sites/default/files/alexis_profile-min.jpg",
+              "https://placehold.co/600x400/medical-600/white/?text=Alexis+Hospital+2",
+              "https://placehold.co/600x400/medical-600/white/?text=Alexis+Hospital+3",
+              "https://placehold.co/600x400/medical-600/white/?text=Alexis+Hospital+4"
+            ]
+          },
+          "alive-wellness-clinics": {
+            id: "alive-wellness-clinics",
+            name: "Alive Wellness Clinics",
+            location: "New Delhi",
+            address: "Greater Kailash, New Delhi - 110048",
+            accreditation: [],
+            established: 1997,
+            description: "Alive Wellness Clinics is a specialized center focusing on holistic wellness and preventive healthcare. The clinic offers personalized wellness programs, lifestyle management, and preventive healthcare services.",
+            image: "https://www.vaidam.com/sites/default/files/alive_wellness_list_image-min.png",
+            logo: "https://placehold.co/200x100/white/gray/?text=Alive",
+            internationalPatients: 500,
+            beds: 0,
+            doctors: 10,
+            specialties: 3,
+            specializations: [
+              "Wellness Programs",
+              "Lifestyle Management",
+              "Preventive Healthcare"
+            ],
+            facilities: {
+              medical: [
+                "Consultation Rooms",
+                "Wellness Assessment Center",
+                "Dietary Counseling Room",
+                "Fitness Assessment Area",
+                "Therapy Rooms"
+              ],
+              amenities: [
+                "Comfortable Waiting Area",
+                "Cafeteria",
+                "Wellness Library",
+                "Parking Facility"
+              ]
+            },
+            topDoctors: [
+              {
+                id: "rahul-sharma",
+                name: "Dr. Rahul Sharma",
+                specialty: "Wellness Specialist",
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Sharma"
+              }
+            ],
+            reviews: 4.9,
+            reviewCount: 200,
+            images: [
+              "https://www.vaidam.com/sites/default/files/alive_wellness_list_image-min.png",
+              "https://placehold.co/600x400/medical-600/white/?text=Alive+Clinic+2",
+              "https://placehold.co/600x400/medical-600/white/?text=Alive+Clinic+3",
+              "https://placehold.co/600x400/medical-600/white/?text=Alive+Clinic+4"
+            ]
+          }
         };
+
+        const mockHospital = mockHospitals[id as keyof typeof mockHospitals] || mockHospitals["aakash-healthcare-super-speciality-hospital-dwarka-new-delhi"];
 
         // Calculate statistics
         const stats = {
           internationalPatients: calculateInternationalPatients(mockHospital.beds),
           patientSatisfaction: generatePatientSatisfaction(),
           successRate: generateSuccessRate(),
-          // Established year would come from Excel data
-          established: 1983
+          established: mockHospital.established
         };
 
         setHospital({ ...mockHospital, stats });
