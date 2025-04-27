@@ -69,13 +69,15 @@ const HospitalDetail = () => {
                 id: "harsh-bhardwaj",
                 name: "Dr. Harsh Bhardwaj",
                 specialty: "Neurologist",
-                image: "https://www.vaidam.com/sites/default/files/dr-harsh-bhardwaj.jpg"
+                image: "https://www.vaidam.com/sites/default/files/dr-harsh-bhardwaj.jpg",
+                experience: "20+ Yrs"
               },
               {
                 id: "ankit-gupta",
                 name: "Dr. Ankit Gupta",
                 specialty: "Cardiac Surgeon",
-                image: "https://www.vaidam.com/sites/default/files/dr_ankit_gupta-min.png"
+                image: "https://www.vaidam.com/sites/default/files/dr_ankit_gupta-min.png",
+                experience: "20+ Yrs"
               }
             ],
             reviews: 4.7,
@@ -92,58 +94,60 @@ const HospitalDetail = () => {
             name: "Aditya Birla Memorial Hospital",
             location: "Pune",
             address: "Aditya Birla Memorial Hospital, Chinchwad, Pune - 411033",
-            accreditation: ["JCI", "NABH"],
+          accreditation: ["JCI", "NABH"],
             established: 2006,
             description: "Aditya Birla Memorial Hospital is a 500-bed multi-specialty hospital in Pune, known for its world-class infrastructure and advanced medical technology. The hospital is committed to providing quality healthcare services with a focus on patient safety and satisfaction.",
             image: "https://www.vaidam.com/sites/default/files/aditya_birla_memorial_hospital_pune_building-min.jpg",
             logo: "https://placehold.co/200x100/white/gray/?text=Aditya+Birla",
-            internationalPatients: 5000,
+          internationalPatients: 5000,
             beds: 500,
             doctors: 300,
             specialties: 35,
-            specializations: [
-              "Cardiology",
-              "Neurology",
-              "Orthopedics",
+          specializations: [
+            "Cardiology",
+            "Neurology",
+            "Orthopedics",
               "Oncology",
-              "Gastroenterology",
-              "Nephrology",
-              "Urology",
+            "Gastroenterology",
+            "Nephrology",
+            "Urology",
               "Pulmonology",
               "Pediatrics"
-            ],
-            facilities: {
-              medical: [
+          ],
+          facilities: {
+            medical: [
                 `Modern Operation Theaters (${calculateOperationTheaters(500)})`,
                 `Intensive Care Units (${calculateICUBeds(calculateOperationTheaters(500))} beds)`,
                 "Advanced Imaging Center",
                 "Cath Lab",
-                "Radiation Therapy Center",
-                "24/7 Emergency Department"
-              ],
-              amenities: [
-                "International Patient Lounge",
-                "Visa Assistance",
-                "Airport Transfer",
-                "Language Interpreters",
-                "Currency Exchange",
-                "Hotel Booking",
-                "24/7 Pharmacy",
-                "Cafeteria"
-              ]
-            },
-            topDoctors: [
-              {
+              "Radiation Therapy Center",
+              "24/7 Emergency Department"
+            ],
+            amenities: [
+              "International Patient Lounge",
+              "Visa Assistance",
+              "Airport Transfer",
+              "Language Interpreters",
+              "Currency Exchange",
+              "Hotel Booking",
+              "24/7 Pharmacy",
+              "Cafeteria"
+            ]
+          },
+          topDoctors: [
+            {
                 id: "sudhir-kumar",
                 name: "Dr. Sudhir Kumar",
                 specialty: "Neurologist",
-                image: "https://d1ea147o02h74h.cloudfront.net/dr._sudhir_kumar_0.jpg"
+                image: "https://d1ea147o02h74h.cloudfront.net/dr._sudhir_kumar_0.jpg",
+                experience: "20+ Yrs"
               },
               {
                 id: "kisley-shrivastav",
                 name: "Dr. Kisley Shrivastav",
                 specialty: "Interventional Cardiologist",
-                image: "https://www.vaidam.com/sites/default/files/dr._kisley_shrivastav_0.jpg"
+                image: "https://www.vaidam.com/sites/default/files/dr._kisley_shrivastav_0.jpg",
+                experience: "20+ Yrs"
               }
             ],
             reviews: 4.8,
@@ -193,7 +197,8 @@ const HospitalDetail = () => {
                 id: "kaberi-banerjee",
                 name: "Dr. Kaberi Banerjee",
                 specialty: "Fertility Specialist",
-                image: "https://www.vaidam.com/sites/default/files/advanced_fertility_center_-dr_kaberi_banerjee-_new_delhi.jpg"
+                image: "https://www.vaidam.com/sites/default/files/advanced_fertility_center_-dr_kaberi_banerjee-_new_delhi.jpg",
+                experience: "20+ Yrs"
               }
             ],
             reviews: 4.9,
@@ -254,16 +259,18 @@ const HospitalDetail = () => {
                 id: "rajesh-kumar",
                 name: "Dr. Rajesh Kumar",
                 specialty: "Ayurvedic Physician",
-                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Kumar"
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Kumar",
+                experience: "20+ Yrs"
               },
               {
                 id: "meera-nair",
                 name: "Dr. Meera Nair",
                 specialty: "Panchakarma Specialist",
-                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Nair"
-              }
-            ],
-            reviews: 4.8,
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Nair",
+                experience: "20+ Yrs"
+            }
+          ],
+          reviews: 4.8,
             reviewCount: 350,
             images: [
               "https://www.vaidam.com/sites/default/files/ahalia_ayurveda_hospital_kerala.jpg",
@@ -321,13 +328,15 @@ const HospitalDetail = () => {
                 id: "anil-gupta",
                 name: "Dr. Anil Gupta",
                 specialty: "IVF Specialist",
-                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Gupta"
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Gupta",
+                experience: "20+ Yrs"
               },
               {
                 id: "priya-sharma",
                 name: "Dr. Priya Sharma",
                 specialty: "Gynecologist",
-                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Sharma"
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Sharma",
+                experience: "20+ Yrs"
               }
             ],
             reviews: 4.7,
@@ -388,13 +397,15 @@ const HospitalDetail = () => {
                 id: "vikram-patil",
                 name: "Dr. Vikram Patil",
                 specialty: "Cardiologist",
-                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Patil"
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Patil",
+                experience: "20+ Yrs"
               },
               {
                 id: "anita-deshmukh",
                 name: "Dr. Anita Deshmukh",
                 specialty: "Neurologist",
-                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Deshmukh"
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Deshmukh",
+                experience: "20+ Yrs"
               }
             ],
             reviews: 4.6,
@@ -445,12 +456,13 @@ const HospitalDetail = () => {
                 id: "rahul-sharma",
                 name: "Dr. Rahul Sharma",
                 specialty: "Wellness Specialist",
-                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Sharma"
+                image: "https://placehold.co/300x300/medical-700/white/?text=Dr.+Sharma",
+                experience: "20+ Yrs"
               }
             ],
             reviews: 4.9,
             reviewCount: 200,
-            images: [
+          images: [
               "https://www.vaidam.com/sites/default/files/alive_wellness_list_image-min.png",
               "https://placehold.co/600x400/medical-600/white/?text=Alive+Clinic+2",
               "https://placehold.co/600x400/medical-600/white/?text=Alive+Clinic+3",
@@ -815,11 +827,18 @@ const HospitalDetail = () => {
                             className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-md transition-shadow"
                           >
                             <div className="flex flex-col sm:flex-row">
-                              <img 
-                                src={doctor.image}
-                                alt={doctor.name}
-                                className="sm:w-1/3 h-32 sm:h-auto object-cover"
-                              />
+                              <div className="relative sm:w-1/3 h-32 sm:h-auto">
+                                <img 
+                                  src={doctor.image}
+                                  alt={doctor.name}
+                                  className="w-full h-full object-cover"
+                                />
+                                {doctor.experience && (
+                                  <div className="absolute bottom-0 left-0 w-full bg-nile-600 text-white text-xs py-1 text-center font-semibold" style={{borderRadius: 0}}>
+                                    {doctor.experience}
+                                  </div>
+                                )}
+                              </div>
                               <div className="p-4 flex-1">
                                 <h3 className="font-semibold text-gray-800">{doctor.name}</h3>
                                 <p className="text-nile-600 text-sm mb-2">{doctor.specialty}</p>
