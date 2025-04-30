@@ -10,6 +10,7 @@ const Doctors = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [specialty, setSpecialty] = useState("");
   const [city, setCity] = useState("");
+  const [visibleDoctors, setVisibleDoctors] = useState(40); // Show 12 doctors initially (3 rows)
 
   const doctors = [
     {
@@ -468,10 +469,18 @@ const Doctors = () => {
     return matchesSearch && matchesSpecialty && matchesCity;
   });
 
+  const displayedDoctors = filteredDoctors.slice(0, visibleDoctors);
+  const hasMoreDoctors = visibleDoctors < filteredDoctors.length;
+
+  const loadMore = () => {
+    setVisibleDoctors(prev => prev + 40); // Load 12 more doctors (3 more rows)
+  };
+
   const resetFilters = () => {
     setSearchTerm("");
     setSpecialty("");
     setCity("");
+    setVisibleDoctors(40); // Reset to initial number of visible doctors
   };
 
   const openWhatsApp = (doctorName: string) => {
@@ -547,37 +556,39 @@ const Doctors = () => {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {filteredDoctors.map((doctor) => (
+            {displayedDoctors.map((doctor) => (
               <div 
                 key={doctor.id}
-                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="relative aspect-square">
-                  <img 
-                    src={doctor.image}
-                    alt={doctor.name}
-                    className="w-full h-full object-cover object-center"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-1 px-3">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
+                    <img 
+                      src={doctor.image}
+                      alt={doctor.name}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
                     <span className="text-sm font-medium block text-center">{doctor.experience}</span>
                   </div>
                 </div>
                 
                 <div className="p-4">
                   <Link to={doctor.path}>
-                    <h3 className="text-lg font-semibold mb-1 hover:text-nile-600 transition-colors">
+                    <h3 className="text-base font-semibold mb-1 hover:text-nile-600 transition-colors">
                       {doctor.name}
                     </h3>
                   </Link>
                   
                   <div className="space-y-1 mb-3">
-                    <p className="text-sm text-gray-700 font-medium tracking-wide">
+                    <p className="text-sm text-gray-700 font-medium">
                       {doctor.specialty}
                     </p>
-                    <p className="text-xs text-gray-600 font-inter font-normal tracking-tight">
+                    <p className="text-xs text-gray-500">
                       {doctor.designation}
                     </p>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 text-xs">
                       {doctor.hospital}, {doctor.city}
                     </p>
                   </div>
@@ -612,6 +623,18 @@ const Doctors = () => {
               <p className="text-gray-500 mb-4">Try changing your search criteria</p>
               <Button onClick={resetFilters}>
                 Reset Filters
+              </Button>
+            </div>
+          )}
+
+          {hasMoreDoctors && (
+            <div className="text-center mt-8">
+              <Button 
+                onClick={loadMore}
+                variant="outline"
+                className="px-8 py-2 text-nile-600 border-nile-600 hover:bg-nile-50"
+              >
+                Load More Doctors
               </Button>
             </div>
           )}
