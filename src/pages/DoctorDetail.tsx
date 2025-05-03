@@ -7,919 +7,4805 @@ import { Button } from "@/components/ui/button";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const mockDoctors = {
-  "dr-arjun-mehta": {
-    id: "dr-arjun-mehta",
-    name: "Dr. Arjun Mehta",
-    specialty: "Cardiologist",
-    designation: "Director of Cardiac Sciences",
-    hospital: "Medanta - The Medicity",
-    location: "Gurugram",
-    experience: "22+ Years Experience",
-    education: "MBBS - AIIMS Delhi, MD (Cardiology), DM (Interventional Cardiology) - PGIMER Chandigarh",
-    image: "https://placehold.co/500x500/medical-700/white/?text=Dr.+Mehta",
-    about: "Dr. Arjun Mehta is a pioneer in minimally invasive cardiac procedures with over two decades of experience. He has performed more than 8,000 successful angioplasties and introduced several innovative techniques in interventional cardiology. His expertise includes complex coronary interventions, structural heart disease management, and preventive cardiology.",
-    expertise: [
-      "Complex Coronary Interventions",
-      "Structural Heart Disease",
-      "Minimally Invasive Cardiac Surgery",
-      "Preventive Cardiology"
-    ],
-    awards: [
-      "Padma Shri for contributions to Medical Sciences (2019)",
-      "Dr. B.C. Roy National Award for Medical Innovation",
-      "Excellence in Interventional Cardiology - Asia Pacific Society"
-    ],
-    patientCount: 15000,
-    successRate: 99.8
-  },
-  "dr-priya-sharma": {
-    id: "dr-priya-sharma",
-    name: "Dr. Priya Sharma",
-    specialty: "Neurologist",
-    designation: "Head of Neurology Department",
-    hospital: "Max Institute of Neurosciences",
-    location: "New Delhi",
-    experience: "18+ Years Experience",
-    education: "MBBS - Lady Hardinge Medical College, MD (Neurology), DM (Neurology) - NIMHANS Bangalore",
-    image: "https://placehold.co/500x500/medical-700/white/?text=Dr.+Sharma",
-    about: "Dr. Priya Sharma is renowned for her groundbreaking work in movement disorders and neuroimmunology. She has established Delhi's first comprehensive Movement Disorders Clinic and has been instrumental in introducing advanced deep brain stimulation techniques in India. Her research on Parkinson's disease has been published in several international journals.",
-    expertise: [
-      "Movement Disorders",
-      "Neuroimmunology",
-      "Deep Brain Stimulation",
-      "Multiple Sclerosis Management"
-    ],
-    awards: [
-      "International Movement Disorder Society Excellence Award",
-      "Best Neurologist Award - Indian Academy of Neurology",
-      "Research Excellence in Neuroimmunology - NIMHANS"
-    ],
-    patientCount: 12000,
-    successRate: 97.5
-  },
-  "dr-rajesh-kumar": {
-    id: "dr-rajesh-kumar",
-    name: "Dr. Rajesh Kumar",
-    specialty: "Orthopedic Surgeon",
-    designation: "Senior Joint Replacement Surgeon",
-    hospital: "Fortis Memorial Research Institute",
-    location: "Gurugram",
-    experience: "25+ Years Experience",
-    education: "MBBS - King George Medical University, MS (Ortho) - AIIMS Delhi, Fellowship in Joint Replacement - UK",
-    image: "https://placehold.co/500x500/medical-700/white/?text=Dr.+Kumar",
-    about: "Dr. Rajesh Kumar is a leading joint replacement surgeon who has pioneered robotic knee replacement surgery in India. With expertise in complex revision surgeries and sports injuries, he has treated numerous national-level athletes. He has performed over 10,000 joint replacements with exceptional outcomes and introduced several innovative techniques in minimally invasive surgery.",
-    expertise: [
-      "Robotic Joint Replacement",
-      "Complex Revision Surgery",
-      "Sports Injury Management",
-      "Minimally Invasive Surgery"
-    ],
-    awards: [
-      "ISAKOS Award for Innovation in Arthroscopy",
-      "Best Paper Award - International Society for Technology in Arthroplasty",
-      "Lifetime Achievement Award - Indian Orthopaedic Association"
-    ],
-    patientCount: 20000,
-    successRate: 99.5
-  },
-  "dr-anita-desai": {
-    id: "dr-anita-desai",
-    name: "Dr. Anita Desai",
-    specialty: "Oncologist",
-    designation: "Chief of Medical Oncology",
-    hospital: "Tata Memorial Hospital",
-    location: "Mumbai",
-    experience: "20+ Years Experience",
-    education: "MBBS - Grant Medical College Mumbai, MD (Medicine), DM (Medical Oncology) - Tata Memorial, Fellowship in Precision Oncology - USA",
-    image: "https://placehold.co/500x500/medical-700/white/?text=Dr.+Desai",
-    about: "Dr. Anita Desai is a pioneer in precision oncology and immunotherapy. Her research has led to breakthrough treatments in breast and lung cancers. She leads India's largest molecular tumor board and has established a comprehensive cancer genetics program. Her work in personalized cancer treatment has benefited thousands of patients across South Asia.",
-    expertise: [
-      "Precision Oncology",
-      "Immunotherapy",
-      "Cancer Genetics",
-      "Clinical Trials"
-    ],
-    awards: [
-      "ESMO Award for Innovation in Cancer Research",
-      "Outstanding Achievement in Oncology - ASCO",
-      "Woman Scientist of the Year - Indian Cancer Society"
-    ],
-    patientCount: 18000,
-    successRate: 85.5
-  },
-  "dr-dheeraj-garg": {
-    id: "dr-dheeraj-garg",
-    name: "Dr. Dheeraj Garg",
-    specialty: "Interventional Cardiologist",
-    designation: "Senior Consultant",
-    hospital: "",
-    location: "New Delhi",
-    experience: "20+ Years Experience",
-    education: "MBBS, MD, DM (Cardiology)",
-    image: "https://www.vaidam.com/sites/default/files/dr._dheeraj_garg.jpg",
-    about: "Dr. Dheeraj Garg, Senior Consultant Interventional Cardiologist in New Delhi, India, with over 15 years of experience. Specializes in Adult Intervention Cardiology and Cardiac Electrophysiology, performing procedures such as Coronary Angiography, Angioplasty, Pacemaker Implantation, and Cardiac Ablation. Known for expertise in complex cardiac interventions.",
-    expertise: [
-      "Interventional Cardiology",
-      "Cardiac Electrophysiology",
-      "Coronary Angiography",
-      "Pacemaker Implantation"
-    ],
-    awards: [
-      "10,000 Coronary Angiograms performed",
-      "200 Permanent Pacemakers implanted",
-      "200 Supraventricular Arrhythmias treated"
-    ],
-    patientCount: 10000,
-    successRate: 98.5
-  },
   "dr-subodh-chandra-pande": {
-    id: "dr-subodh-chandra-pande",
-    name: "Dr. Subodh Chandra Pande",
-    specialty: "Radiation Oncologist",
-    designation: "Consultant",
-    hospital: "Artemis Hospital, Gurgaon",
-    location: "Gurgaon",
-    experience: "10+ Years Experience",
-    education: "MBBS, MD, DMRT",
-    image: "https://www.vaidam.com/sites/default/files/dr-subhash-chandra-pande-radiation-oncology.jpg",
-    about: "Dr. Subodh Chandra Pande, a renowned Radiation Oncologist at Artemis Hospital, Gurgaon, India, boasts nearly five decades of experience. He is a pioneer in Image-Guided Radiation Therapy and pediatric oncology, with specialized expertise in Head & Neck, CNS, Childhood, and Prostate Cancers. Dr. Pande led the installation of Rajasthan's first Linear Accelerator.",
-    expertise: [
-      "Radiation Oncology",
-      "Image-Guided Therapy",
-      "Pediatric Oncology",
-      "Head & Neck Cancers"
+    "id": "dr-subodh-chandra-pande",
+    "name": "Dr. Subodh Chandra Pande",
+    "specialty": "Radiation Oncologist",
+    "designation": "Consultant",
+    "hospital": "Artemis Hospital, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "10+ Years Experience",
+    "education": "MBBS, MD in Radiotherapy",
+    "image": "https://www.vaidam.com/sites/default/files/dr-subhash-chandra-pande-radiation-oncology.jpg",
+    "about": "Dr. Subodh Chandra Pande, Consultant at Artemis Hospital, Gurgaon. Specializes in Radiation Oncologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Radiation Oncologist"
     ],
-    awards: [
-      "10+ years at Artemis Hospital",
-      "Leadership in Rajasthan",
-      "Specialized Expertise in Radiation Oncology"
+    "awards": [
+      "Best doctor of Artemis Hospital, Gurgaon"
     ],
-    patientCount: 1000,
-    successRate: 95.0
+    "patientCount": 8500,
+    "successRate": 99.24
   },
   "dr-anmol-nagaraj": {
-    id: "dr-anmol-nagaraj",
-    name: "Dr. Anmol Nagaraj",
-    specialty: "Neurosurgeon",
-    designation: "Consultant",
-    hospital: "Sparsh Hospital (Yeshwanthpur) Bangalore",
-    location: "Bangalore",
-    experience: "14+ Years Experience",
-    education: "M.Ch. Neurosurgery - Manipal Academy of Higher Education",
-    image: "https://www.vaidam.com/sites/default/files/dr._anmol_nagaraj-min.jpg",
-    about: "Dr. Anmol Nagaraj is a Consultant Neurosurgeon with over 10 years of experience. Graduated from JJM Medical College, Davangere, he completed his M.Ch. in Neurosurgery at Manipal Academy of Higher Education. Specializing in Brain Tumor Surgery, Spine Surgery, and more, he is dedicated to advancing neurosurgical care.",
-    expertise: [
-      "Neurosurgery",
-      "Brain Tumor Surgery",
-      "Radiosurgery (Cyberknife, Gamma Knife)",
-      "Spine Surgery"
+    "id": "dr-anmol-nagaraj",
+    "name": "Dr. Anmol Nagaraj",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Sparsh Hospital (Yeshwanthpur) Bangalore",
+    "location": "",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anmol_nagaraj-min.jpg",
+    "about": "Dr. Anmol Nagaraj, Consultant at Sparsh Hospital (Yeshwanthpur) Bangalore. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
     ],
-    awards: [
-      "10+ years experience",
-      "M.Ch. Neurosurgery, 2017",
-      "Published several papers"
+    "awards": [
+      "Best doctor of Sparsh Hospital (Yeshwanthpur) Bangalore"
     ],
-    patientCount: 1000,
-    successRate: 97.0
+    "patientCount": 1500,
+    "successRate": 97.33
   },
   "dr-mahesh-ghogare": {
-    id: "dr-mahesh-ghogare",
-    name: "Dr. Mahesh Ghogare",
-    specialty: "Interventional Cardiologist",
-    designation: "Consultant",
-    hospital: "Reliance Hospitals, Navi Mumbai",
-    location: "Mumbai",
-    experience: "14+ Years Experience",
-    education: "DM in Cardiology - Lokmanya Tilak Municipal Medical College, Mumbai",
-    image: "https://www.vaidam.com/sites/default/files/dr_mahesh.jpg",
-    about: "Dr. Mahesh Ghogare, Consultant Interventional Cardiologist in Mumbai, India, with 10+ years of experience. Specializes in Coronary Angiography, Angioplasty, Peripheral Vascular Interventions, Cardiac Catheterization, Valvular Heart Diseases, and more. Graduated from Government Medical College, Nagpur, and holds DM in Cardiology from Lokmanya Tilak Municipal Medical College, Mumbai. A member of various prestigious medical associations.",
-    expertise: [
-      "Interventional Cardiology",
-      "Cardiac Catheterisation",
-      "Valvular Heart Diseases",
-      "Permanent Pacemakers"
+    "id": "dr-mahesh-ghogare",
+    "name": "Dr. Mahesh Ghogare",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Reliance Hospitals, Navi Mumbai",
+    "location": "Navi Mumbai",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_mahesh.jpg",
+    "about": "Dr. Mahesh Ghogare, Consultant at Reliance Hospitals, Navi Mumbai. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
     ],
-    awards: [
-      "10+ years experience",
-      "Member of Medical Council",
-      "Guest speaker at conferences"
+    "awards": [
+      "Best doctor of Reliance Hospitals, Navi Mumbai"
     ],
-    patientCount: 500,
-    successRate: 96.5
+    "patientCount": 500,
+    "successRate": 99.41
   },
-  "dr-amit-sharma": {
-    id: "dr-amit-sharma",
-    name: "Dr. Amit Sharma",
-    specialty: "Spine Surgeon",
-    designation: "Consultant",
-    hospital: "Saifee Hospital, Mumbai",
-    location: "Mumbai",
-    experience: "14+ Years Experience",
-    education: "Pediatric orthopedics training from Children's Hospital, New Orleans, USA; Orthopedic surgery training from KEM Hospital, Mumbai",
-    image: "https://www.vaidam.com/sites/default/files/dr._amit_sharma_-_spine_surgeon.jpg",
-    about: "Dr. Amit Sharma, a Consultant Spine Surgeon at Saifee Hospital, Mumbai, specializes in various spine surgeries with over 10 years of experience. He is actively involved in research and has presented work in national and international meetings, with publications in international journals.",
-    expertise: [
-      "Cervical spine surgery",
-      "Minimally invasive spine surgery",
-      "Spinal deformity correction",
-      "Revision spine surgeries"
+  "dr-amit-sharma-spine-surgeon": {
+    "id": "dr-amit-sharma-spine-surgeon",
+    "name": "Dr. Amit Sharma",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Saifee Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._amit_sharma_-_spine_surgeon.jpg",
+    "about": "Dr. Amit Sharma, Consultant at Saifee Hospital, Mumbai. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
     ],
-    awards: [
-      "10+ years experience",
-      "Specializes in spine surgery",
-      "Published in international journals"
+    "awards": [
+      "Best doctor of Saifee Hospital, Mumbai"
     ],
-    patientCount: 500,
-    successRate: 98.0
-  },
-  "dr-arvind-prasad": {
-    id: "dr-arvind-prasad",
-    name: "Dr. Arvind Prasad",
-    specialty: "Interventional Cardiologist",
-    designation: "Consultant",
-    hospital: "",
-    location: "Bangalore",
-    experience: "14+ Years Experience",
-    education: "MBBS - Adichunchanagiri Institute of Medical Sciences; MD in Medicine - Government Medical College VIMS Bellary; DM in cardiology - Sri Jayadeva Institute of Cardiovascular Sciences & Research",
-    image: "https://www.vaidam.com/sites/default/files/dr._arvind_prasad_-_cardiologist.jpg",
-    about: "Dr. Arvind Prasad, an experienced Interventional Cardiologist in Bangalore, India, specializes in emergency and elective cardiac interventions such as primary PCI, Pacemaker Implantation, and Peripheral Interventions. With over 10 years of experience, he is affiliated with various medical associations and has multiple publications in national journals.",
-    expertise: [
-      "Interventional Cardiology",
-      "Emergency Cardiac Interventions",
-      "Elective Cardiac Interventions",
-      "Peripheral Interventions"
-    ],
-    awards: [
-      "10+ years of experience",
-      "Member of various medical associations",
-      "Multiple publications in national journals"
-    ],
-    patientCount: 1000,
-    successRate: 97.5
+    "patientCount": 10000,
+    "successRate": 96.16
   },
   "dr-yadhu-k-lokanath": {
-    id: "dr-yadhu-k-lokanath",
-    name: "Dr. Yadhu K Lokanath",
-    specialty: "Spine Surgeon",
-    designation: "Consultant",
-    hospital: "Aster RV Hospital (J P Nagar) Bangalore",
-    location: "Bangalore",
-    experience: "14+ Years Experience",
-    education: "MCh Neurosurgery J.N Medical College",
-    image: "https://www.vaidam.com/sites/default/files/dr-yadhu-k-lokanath.jpg",
-    about: "Dr. Yadhu K Lokanath, a Consultant Spine Surgeon based in Bangalore, India, specializes in spinal conditions across all age groups. With over 10 years of experience, he offers expertise in lateral access surgery, minimally invasive surgery, endoscopic spine surgery, and treatment of various brain and spine disorders.",
-    expertise: [
-      "Spine Surgeon",
-      "Neurosurgeon",
-      "Minimally Invasive Spine Surgeon",
-      "Trauma Surgeon"
+    "id": "dr-yadhu-k-lokanath",
+    "name": "Dr Yadhu K Lokanath",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Aster RV Hospital (J P Nagar) Bangalore",
+    "location": "",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr-yadhu-k-lokanath.jpg",
+    "about": "Dr Yadhu K Lokanath, Consultant at Aster RV Hospital (J P Nagar) Bangalore. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
     ],
-    awards: [
-      "10+ years of experience",
-      "National and international publications",
-      "Guest speaker worldwide"
+    "awards": [
+      "Best doctor of Aster RV Hospital (J P Nagar) Bangalore"
     ],
-    patientCount: 1000,
-    successRate: 96.0
+    "patientCount": 7000,
+    "successRate": 95.82
   },
   "dr-harsh-bhardwaj": {
-    id: "dr-harsh-bhardwaj",
-    name: "Dr. Harsh Bhardwaj",
-    specialty: "Neurologist",
-    designation: "Consultant",
-    hospital: "Aakash Healthcare Super Speciality Hospital, Dwarka, New Delhi",
-    location: "New Delhi",
-    experience: "13+ Years Experience",
-    education: "MBBS - Vardhman Mahavir Medical College 2011; MD in General Medicine - Same college 2014",
-    image: "https://www.vaidam.com/sites/default/files/dr-harsh-bhardwaj.jpg",
-    about: "Dr. Harsh Bhardwaj, a Consultant Neurologist based in New Delhi, India, brings 12 years of experience in treating over 10,000 patients with neurological disorders. Specializing in multiple sclerosis, autoimmune disorders, epilepsy, stroke, dementia, migraine, and movement disorders, he excels in thrombolytic therapy for stroke and BOTOX therapy for various neurological conditions.",
-    expertise: [
-      "Neurology",
-      "Multiple Sclerosis",
-      "Epilepsy",
-      "Stroke"
+    "id": "dr-harsh-bhardwaj",
+    "name": "Dr. Harsh Bhardwaj",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Aakash Healthcare Super Speciality Hospital, Dwarka, New Delhi",
+    "location": "New Delhi",
+    "experience": "13+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-harsh-bhardwaj.jpg",
+    "about": "Dr. Harsh Bhardwaj, Consultant at Aakash Healthcare Super Speciality Hospital, Dwarka, New Delhi. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
     ],
-    awards: [
-      "12 years experience",
-      "10,000+ patients treated",
-      "Vast stroke management experience"
+    "awards": [
+      "Best doctor of Aakash Healthcare Super Speciality Hospital, Dwarka, New Delhi"
     ],
-    patientCount: 10000,
-    successRate: 95.5
+    "patientCount": 1000,
+    "successRate": 96.55
+  },
+  "dr-ankit-singh": {
+    "id": "dr-ankit-singh",
+    "name": "Dr. Ankit Singh",
+    "specialty": "Neurologist",
+    "designation": "Associate Consultant",
+    "hospital": "Apollo Medics Super Speciality Hospital, Lucknow",
+    "location": "Lucknow",
+    "experience": "12+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ankit-min.png",
+    "about": "Dr. Ankit Singh, Associate Consultant at Apollo Medics Super Speciality Hospital, Lucknow. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Apollo Medics Super Speciality Hospital, Lucknow"
+    ],
+    "patientCount": 2000,
+    "successRate": 95.0
   },
   "dr-anurag-sihag": {
-    id: "dr-anurag-sihag",
-    name: "Dr. Anurag Sihag",
-    specialty: "Neurosurgeon",
-    designation: "Consultant",
-    hospital: "Shalby Hospital",
-    location: "Jaipur",
-    experience: "12+ Years Experience",
-    education: "MBBS, MS, MCh (Neurosurgery)",
-    image: "https://www.vaidam.com/sites/default/files/dr_anurag_sihag.png",
-    about: "Dr. Anurag Sihag is a skilled Neurosurgeon with over 12 years of experience. He specializes in complex brain and spine surgeries, with a focus on minimally invasive techniques and advanced neurosurgical procedures.",
-    expertise: [
-      "Brain Tumor Surgery",
-      "Spine Surgery",
-      "Minimally Invasive Neurosurgery",
-      "Neurotrauma"
+    "id": "dr-anurag-sihag",
+    "name": "Dr. Anurag Sihag",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Shalby Hospital, Jaipur",
+    "location": "Jaipur",
+    "experience": "12+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_anurag_sihag.png",
+    "about": "Dr. Anurag Sihag, Consultant at Shalby Hospital, Jaipur. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
     ],
-    awards: [
-      "12+ years of experience",
-      "Expert in complex neurosurgical procedures",
-      "Specialized training in advanced techniques"
+    "awards": [
+      "Best doctor of Shalby Hospital, Jaipur"
     ],
-    patientCount: 5000,
-    successRate: 98.5
-  },
-  "dr-rahul-jain-plastic-surgeon": {
-    id: "dr-rahul-jain-plastic-surgeon",
-    name: "Dr. Rahul Jain",
-    specialty: "Aesthetics and Plastic Surgeon",
-    designation: "Consultant",
-    hospital: "Fortis Hospital",
-    location: "Manesar, Gurgaon",
-    experience: "12+ Years Experience",
-    education: "MBBS, MS, MCh (Plastic Surgery)",
-    image: "https://d1ea147o02h74h.cloudfront.net/dr_rahul_jain.jpg",
-    about: "Dr. Rahul Jain is a renowned Aesthetics and Plastic Surgeon with extensive experience in cosmetic and reconstructive procedures. He is known for his expertise in facial aesthetics, body contouring, and reconstructive surgeries.",
-    expertise: [
-      "Facial Aesthetics",
-      "Body Contouring",
-      "Reconstructive Surgery",
-      "Cosmetic Procedures"
-    ],
-    awards: [
-      "12+ years of experience",
-      "Specialized in aesthetic procedures",
-      "Expert in reconstructive surgery"
-    ],
-    patientCount: 4000,
-    successRate: 97.8
-  },
-  "dr-ashok-kumar-p": {
-    id: "dr-ashok-kumar-p",
-    name: "Dr. Ashok Kumar P",
-    specialty: "Interventional Cardiologist",
-    designation: "Consultant",
-    hospital: "",
-    location: "",
-    experience: "16+ Years Experience",
-    education: "MBBS, MD, DM (Cardiology)",
-    image: "https://www.vaidam.com/sites/default/files/dr._ashok_kumar_p_-_cardiologist.jpg",
-    about: "Dr. Ashok Kumar P is an experienced Interventional Cardiologist with over 16 years of practice. He specializes in complex cardiac interventions and has performed numerous successful procedures in interventional cardiology.",
-    expertise: [
-      "Interventional Cardiology",
-      "Complex Coronary Interventions",
-      "Structural Heart Disease",
-      "Cardiac Catheterization"
-    ],
-    awards: [
-      "16+ years of experience",
-      "Expert in complex cardiac interventions",
-      "Specialized in structural heart disease"
-    ],
-    patientCount: 8000,
-    successRate: 98.2
+    "patientCount": 10000,
+    "successRate": 96.91
   },
   "dr-ved-prakash": {
-    id: "dr-ved-prakash",
-    name: "Dr. Ved Prakash",
-    specialty: "Interventional Cardiologist",
-    designation: "Consultant",
-    hospital: "Sarvodaya Hospital",
-    location: "Faridabad",
-    experience: "12+ Years Experience",
-    education: "MBBS, MD, DM (Cardiology)",
-    image: "https://www.vaidam.com/sites/default/files/dr._ved_prakash-removebg-preview-min_0.png",
-    about: "Dr. Ved Prakash is a skilled Interventional Cardiologist with extensive experience in cardiac interventions. He is known for his expertise in complex coronary procedures and has successfully treated numerous patients with cardiac conditions.",
-    expertise: [
-      "Interventional Cardiology",
-      "Coronary Angiography",
-      "Angioplasty",
-      "Cardiac Interventions"
+    "id": "dr-ved-prakash",
+    "name": "Dr. Ved Prakash",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Sarvodaya Hospital, Faridabad",
+    "location": "Faridabad",
+    "experience": "12+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ved_prakash-removebg-preview-min_0.png",
+    "about": "Dr. Ved Prakash, Consultant at Sarvodaya Hospital, Faridabad. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
     ],
-    awards: [
-      "12+ years of experience",
-      "Expert in coronary interventions",
-      "Specialized in complex cardiac procedures"
+    "awards": [
+      "Best doctor of Sarvodaya Hospital, Faridabad"
     ],
-    patientCount: 6000,
-    successRate: 97.9
+    "patientCount": 8000,
+    "successRate": 97.97
   },
   "dr-avinash-k-m": {
-    id: "dr-avinash-k-m",
-    name: "Dr. Avinash K M",
-    specialty: "Neurosurgeon",
-    designation: "Consultant",
-    hospital: "Manipal Hospital",
-    location: "Bangalore",
-    experience: "16+ Years Experience",
-    education: "MBBS, MS, MCh (Neurosurgery)",
-    image: "https://www.vaidam.com/sites/default/files/dr._avinash-min.jpg",
-    about: "Dr. Avinash K M is a highly experienced Neurosurgeon with expertise in complex brain and spine surgeries. He has successfully performed numerous neurosurgical procedures and is known for his patient-centric approach.",
-    expertise: [
-      "Brain Surgery",
-      "Spine Surgery",
-      "Minimally Invasive Neurosurgery",
-      "Neurotrauma"
+    "id": "dr-avinash-k-m",
+    "name": "Dr. Avinash K M",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Manipal Hospital Formerly Columbia Asia Referral Hospital, Bangalore (Yeshwanthpur)",
+    "location": "Bangalore (Yeshwanthpur)",
+    "experience": "16+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._avinash-min.jpg",
+    "about": "Dr. Avinash K M, Consultant at Manipal Hospital Formerly Columbia Asia Referral Hospital, Bangalore (Yeshwanthpur). Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
     ],
-    awards: [
-      "16+ years of experience",
-      "Expert in complex neurosurgical procedures",
-      "Specialized in minimally invasive techniques"
+    "awards": [
+      "Best doctor of Manipal Hospital Formerly Columbia Asia Referral Hospital, Bangalore (Yeshwanthpur)"
     ],
-    patientCount: 7000,
-    successRate: 98.3
+    "patientCount": 3500,
+    "successRate": 98.6
   },
   "dr-g-dimpu-edwin-jonathan": {
-    id: "dr-g-dimpu-edwin-jonathan",
-    name: "Dr. G Dimpu Edwin Jonathan",
-    specialty: "Interventional Cardiologist",
-    designation: "Consultant",
-    hospital: "Aster RV Hospital",
-    location: "Bangalore",
-    experience: "12+ Years Experience",
-    education: "MBBS, MD, DM (Cardiology)",
-    image: "https://www.vaidam.com/sites/default/files/dr._g_dimpu_edwin_jonathan.jpg",
-    about: "Dr. G Dimpu Edwin Jonathan is a skilled Interventional Cardiologist with expertise in complex cardiac procedures. He has successfully treated numerous patients with various cardiac conditions and is known for his precision in interventions.",
-    expertise: [
-      "Interventional Cardiology",
-      "Coronary Interventions",
-      "Structural Heart Disease",
-      "Cardiac Catheterization"
+    "id": "dr-g-dimpu-edwin-jonathan",
+    "name": "Dr. G Dimpu Edwin Jonathan",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Aster RV Hospital (J P Nagar) Bangalore",
+    "location": "",
+    "experience": "12+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._g_dimpu_edwin_jonathan.jpg",
+    "about": "Dr. G Dimpu Edwin Jonathan, Consultant at Aster RV Hospital (J P Nagar) Bangalore. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
     ],
-    awards: [
-      "12+ years of experience",
-      "Expert in cardiac interventions",
-      "Specialized in complex procedures"
+    "awards": [
+      "Best doctor of Aster RV Hospital (J P Nagar) Bangalore"
     ],
-    patientCount: 5000,
-    successRate: 97.7
-  },
-  "dr-annamaneni-ravi-chander-rao": {
-    id: "dr-annamaneni-ravi-chander-rao",
-    name: "Dr. Annamaneni Ravi Chander Rao",
-    specialty: "Aesthetics and Plastic Surgeon",
-    designation: "Consultant",
-    hospital: "Care Hospitals",
-    location: "Hyderabad",
-    experience: "13+ Years Experience",
-    education: "MBBS, MS, MCh (Plastic Surgery)",
-    image: "https://d1ea147o02h74h.cloudfront.net/dr_a_ravi_chander_rao-min.png",
-    about: "Dr. Annamaneni Ravi Chander Rao is a renowned Aesthetics and Plastic Surgeon with extensive experience in cosmetic and reconstructive procedures. He is known for his expertise in facial aesthetics and body contouring surgeries.",
-    expertise: [
-      "Facial Aesthetics",
-      "Body Contouring",
-      "Reconstructive Surgery",
-      "Cosmetic Procedures"
-    ],
-    awards: [
-      "13+ years of experience",
-      "Expert in aesthetic procedures",
-      "Specialized in reconstructive surgery"
-    ],
-    patientCount: 4500,
-    successRate: 98.1
+    "patientCount": 5000,
+    "successRate": 95.6
   },
   "dr-m-bharath-reddy": {
-    id: "dr-m-bharath-reddy",
-    name: "Dr. A. M. Bharath Reddy",
-    specialty: "Cardiac Surgeon",
-    designation: "Consultant",
-    hospital: "Apollo Spectra Hospital",
-    location: "Chennai",
-    experience: "17+ Years Experience",
-    education: "MBBS, MS, MCh (Cardiothoracic Surgery)",
-    image: "https://www.vaidam.com/sites/default/files/dr._a._m._bharath_reddy_-_cardiologist.jpg",
-    about: "Dr. A. M. Bharath Reddy is a highly experienced Cardiac Surgeon with expertise in complex cardiac surgeries. He has successfully performed numerous cardiac procedures and is known for his precision and patient care.",
-    expertise: [
-      "Cardiac Surgery",
-      "Coronary Artery Bypass Grafting",
-      "Valve Surgery",
-      "Minimally Invasive Cardiac Surgery"
+    "id": "dr-m-bharath-reddy",
+    "name": "Dr. A. M. Bharath Reddy",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Apollo Spectra Hospital, Chennai",
+    "location": "Chennai",
+    "experience": "17+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._a._m._bharath_reddy_-_cardiologist.jpg",
+    "about": "Dr. A. M. Bharath Reddy, Consultant at Apollo Spectra Hospital, Chennai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
     ],
-    awards: [
-      "17+ years of experience",
-      "Expert in complex cardiac surgeries",
-      "Specialized in minimally invasive procedures"
+    "awards": [
+      "Best doctor of Apollo Spectra Hospital, Chennai"
     ],
-    patientCount: 9000,
-    successRate: 98.6
+    "patientCount": 7500,
+    "successRate": 96.58
   },
   "dr-abhishek-patil": {
-    id: "dr-abhishek-patil",
-    name: "Dr. Abhishek Patil",
-    specialty: "Rheumatologist",
-    designation: "Consultant",
-    hospital: "Manipal Hospital (Old Airport Road) Bangalore",
-    location: "Bangalore",
-    experience: "14+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr.abhishek-min.png",
-    about: "Dr. Abhishek Patil is a Consultant Rheumatologist with extensive experience in treating conditions related to joints and autoimmune diseases.",
-    expertise: [
-      "Rheumatology",
-      "Arthritis Treatment",
-      "Osteoarthritis",
-      "Systemic Lupus Erythematosus"
+    "id": "dr-abhishek-patil",
+    "name": "Dr. Abhishek Patil",
+    "specialty": "Rheumatologist",
+    "designation": "Consultant",
+    "hospital": "Manipal Hospital (Old Airport Road) Bangalore",
+    "location": "",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Rheumatology",
+    "image": "https://www.vaidam.com/sites/default/files/dr.abhishek-min.png",
+    "about": "Dr. Abhishek Patil, Consultant at Manipal Hospital (Old Airport Road) Bangalore. Specializes in Rheumatologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Rheumatologist"
     ],
-    awards: [
-      "14+ years experience"
+    "awards": [
+      "Best doctor of Manipal Hospital (Old Airport Road) Bangalore"
     ],
-    patientCount: 1000,
-    successRate: 97.0
+    "patientCount": 1000,
+    "successRate": 98.73
   },
   "dr-sumana-b-pallegar": {
-    id: "dr-sumana-b-pallegar",
-    name: "Dr. Sumana B Pallegar",
-    specialty: "Neurosurgeon",
-    designation: "Consultant",
-    hospital: "Narayana Multispeciality Hospital, Bangalore",
-    location: "Bangalore",
-    experience: "18+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr._sumana_b_pallegar_-_neurosurgeon.jpg",
-    about: "Dr. Sumana B Pallegar is a Consultant Neurosurgeon specializing in neurological surgeries with over 18 years of experience.",
-    expertise: [
-      "Neurosurgery",
-      "Brain Tumor Surgery",
-      "Spine Surgery",
-      "Neurovascular Surgery"
+    "id": "dr-sumana-b-pallegar",
+    "name": "Dr. Sumana B Pallegar",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Narayana Multispeciality Hospital, Bangalore",
+    "location": "Bangalore",
+    "experience": "18+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._sumana_b_pallegar_-_neurosurgeon.jpg",
+    "about": "Dr. Sumana B Pallegar, Consultant at Narayana Multispeciality Hospital, Bangalore. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
     ],
-    awards: [
-      "18+ years experience"
+    "awards": [
+      "Best doctor of Narayana Multispeciality Hospital, Bangalore"
     ],
-    patientCount: 1200,
-    successRate: 96.5
+    "patientCount": 3500,
+    "successRate": 99.78
   },
   "dr-khushbu-goel": {
-    id: "dr-khushbu-goel",
-    name: "Dr. Khushbu Goel",
-    specialty: "Neurologist",
-    designation: "Consultant",
-    hospital: "Manipal Hospitals Dwarka, Delhi",
-    location: "Delhi",
-    experience: "17+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr_khushbu_goel.jpg",
-    about: "Dr. Khushbu Goel is a Consultant Neurologist with over 17 years of experience in treating a wide range of neurological disorders.",
-    expertise: [
-      "Neurology",
-      "Epilepsy Treatment",
-      "Stroke Management",
-      "Parkinson's Disease Treatment"
+    "id": "dr-khushbu-goel",
+    "name": "Dr Khushbu Goel",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Manipal Hospitals Dwarka, Delhi",
+    "location": "Delhi",
+    "experience": "17+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_khushbu_goel.jpg",
+    "about": "Dr Khushbu Goel, Consultant at Manipal Hospitals Dwarka, Delhi. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
     ],
-    awards: [
-      "17+ years experience"
+    "awards": [
+      "Best doctor of Manipal Hospitals Dwarka, Delhi"
     ],
-    patientCount: 1500,
-    successRate: 98.0
-  },
-  "dr-gundurao-harish-joshi": {
-    id: "dr-gundurao-harish-joshi",
-    name: "Dr. Gundurao Harish Joshi",
-    specialty: "Interventional Cardiologist",
-    designation: "Consultant",
-    hospital: "Not specified",
-    location: "Not specified",
-    experience: "18+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr._gundurao_harish_joshi_-_cardiologist_0.jpg",
-    about: "Dr. Gundurao Harish Joshi is an experienced Interventional Cardiologist specializing in advanced cardiac procedures.",
-    expertise: [
-      "Cardiology",
-      "Cardiac Interventions",
-      "Coronary Angioplasty",
-      "Heart Attack Management"
-    ],
-    awards: [
-      "18+ years experience"
-    ],
-    patientCount: 2000,
-    successRate: 95.0
+    "patientCount": 6500,
+    "successRate": 99.49
   },
   "dr-keval-changadiya": {
-    id: "dr-keval-changadiya",
-    name: "Dr. Keval Changadiya",
-    specialty: "Neurologist",
-    designation: "Consultant",
-    hospital: "CIMS Hospital, Ahmedabad",
-    location: "Ahmedabad",
-    experience: "14+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr_keval_changadiya.jpeg",
-    about: "Dr. Keval Changadiya is a Consultant Neurologist with expertise in treating various neurological conditions.",
-    expertise: [
-      "Neurology",
-      "Seizure Disorders",
-      "Multiple Sclerosis",
-      "Stroke Treatment"
+    "id": "dr-keval-changadiya",
+    "name": "Dr. Keval Changadiya",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "CIMS Hospital, Ahmedabad",
+    "location": "Ahmedabad",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_keval_changadiya.jpeg",
+    "about": "Dr. Keval Changadiya, Consultant at CIMS Hospital, Ahmedabad. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
     ],
-    awards: [
-      "14+ years experience"
+    "awards": [
+      "Best doctor of CIMS Hospital, Ahmedabad"
     ],
-    patientCount: 900,
-    successRate: 97.5
+    "patientCount": 3500,
+    "successRate": 98.88
   },
-  "dr-ankit-gupta": {
-    id: "dr-ankit-gupta",
-    name: "Dr. Ankit Gupta",
-    specialty: "Cardiac Surgeon",
-    designation: "Consultant",
-    hospital: "Shalby Hospital, Jaipur",
-    location: "Jaipur",
-    experience: "14+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr_ankit_gupta-min.png",
-    about: "Dr. Ankit Gupta is a Consultant Cardiac Surgeon with over 14 years of experience in performing heart surgeries.",
-    expertise: [
-      "Cardiac Surgery",
-      "Coronary Bypass Surgery",
-      "Valve Replacement",
-      "Minimally Invasive Heart Surgery"
+  "dr-ankit-gupta-cardiologist": {
+    "id": "dr-ankit-gupta-cardiologist",
+    "name": "Dr. Ankit Gupta",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Shalby Hospital, Jaipur",
+    "location": "Jaipur",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_ankit_gupta-min.png",
+    "about": "Dr. Ankit Gupta, Consultant at Shalby Hospital, Jaipur. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
     ],
-    awards: [
-      "14+ years experience"
+    "awards": [
+      "Best doctor of Shalby Hospital, Jaipur"
     ],
-    patientCount: 800,
-    successRate: 95.5
+    "patientCount": 9500,
+    "successRate": 99.4
   },
   "dr-nishant-shanker-yagnick": {
-    id: "dr-nishant-shanker-yagnick",
-    name: "Dr. Nishant Shanker Yagnick",
-    specialty: "Neurosurgeon",
-    designation: "Senior Consultant",
-    hospital: "Fortis Hospital, Manesar, Gurgaon",
-    location: "Gurgaon",
-    experience: "14+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr._nishant-min.jpg",
-    about: "Dr. Nishant Shanker Yagnick is a Senior Consultant Neurosurgeon with a vast experience in neurological surgeries.",
-    expertise: [
-      "Neurosurgery",
-      "Spine Surgery",
-      "Brain Tumor Surgery",
-      "Trauma Surgery"
+    "id": "dr-nishant-shanker-yagnick",
+    "name": "Dr. Nishant Shanker Yagnick",
+    "specialty": "Neurosurgeon",
+    "designation": "Senior Consultant",
+    "hospital": "Fortis Hospital, Manesar, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._nishant-min.jpg",
+    "about": "Dr. Nishant Shanker Yagnick, Senior Consultant at Fortis Hospital, Manesar, Gurgaon. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
     ],
-    awards: [
-      "14+ years experience"
+    "awards": [
+      "Best doctor of Fortis Hospital, Manesar, Gurgaon"
     ],
-    patientCount: 1100,
-    successRate: 96.0
-  },
-  "dr-anil-tibrewala": {
-    id: "dr-anil-tibrewala",
-    name: "Dr. Anil Tibrewala",
-    specialty: "Cosmetic Surgeon",
-    designation: "Consultant",
-    hospital: "Saifee Hospital, Mumbai",
-    location: "Mumbai",
-    experience: "19+ Years Experience",
-    education: "Not specified",
-    image: "https://d1ea147o02h74h.cloudfront.net/dr._anil_tibrewala_-_plastic_and_cosmetic_surgeon.jpg",
-    about: "Dr. Anil Tibrewala is a Consultant Cosmetic Surgeon with over 19 years of expertise in cosmetic and reconstructive surgery.",
-    expertise: [
-      "Cosmetic Surgery",
-      "Plastic Surgery",
-      "Hair Transplant",
-      "Facial Aesthetic Surgery"
-    ],
-    awards: [
-      "19+ years experience"
-    ],
-    patientCount: 1200,
-    successRate: 98.5
+    "patientCount": 4000,
+    "successRate": 97.45
   },
   "dr-anup-charles-steven": {
-    id: "dr-anup-charles-steven",
-    name: "Dr. Anup Charles Steven",
-    specialty: "Cardiac Surgeon",
-    designation: "Consultant",
-    hospital: "Aster CMI Hospital (Hebbel) Bangalore",
-    location: "Bangalore",
-    experience: "15+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr._anup_charles_steven_-_cardiothoracic_surgeon.jpg",
-    about: "Dr. Anup Charles Steven is a Consultant Cardiac Surgeon with over 15 years of experience in heart surgeries.",
-    expertise: [
-      "Cardiac Surgery",
-      "Valve Replacement",
-      "Coronary Artery Bypass Surgery",
-      "Heart Transplant"
+    "id": "dr-anup-charles-steven",
+    "name": "Dr. Anup Charles Steven",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Aster CMI Hospital (Hebbel) Bangalore",
+    "location": "",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anup_charles_steven_-_cardiothoracic_surgeon.jpg",
+    "about": "Dr. Anup Charles Steven, Consultant at Aster CMI Hospital (Hebbel) Bangalore. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
     ],
-    awards: [
-      "15+ years experience"
+    "awards": [
+      "Best doctor of Aster CMI Hospital (Hebbel) Bangalore"
     ],
-    patientCount: 1000,
-    successRate: 97.2
+    "patientCount": 10000,
+    "successRate": 99.21
   },
   "dr-praveen-phaneendranath-sadarmin": {
-    id: "dr-praveen-phaneendranath-sadarmin",
-    name: "Dr. Praveen Phaneendranath Sadarmin",
-    specialty: "Interventional Cardiologist",
-    designation: "Consultant",
-    hospital: "Narayana Institute of Cardiac Sciences, Bangalore",
-    location: "Bangalore",
-    experience: "15+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr._praveen_phaneendranath_sadarmin_-_cardiologist.jpg",
-    about: "Dr. Praveen Phaneendranath Sadarmin is an experienced Interventional Cardiologist with over 15 years of expertise in heart care.",
-    expertise: [
-      "Cardiology",
-      "Interventional Cardiology",
-      "Angioplasty",
-      "Heart Disease Treatment"
+    "id": "dr-praveen-phaneendranath-sadarmin",
+    "name": "Dr. Praveen Phaneendranath Sadarmin",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Narayana Institute of Cardiac Sciences, Bangalore",
+    "location": "Bangalore",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._praveen_phaneendranath_sadarmin_-_cardiologist.jpg",
+    "about": "Dr. Praveen Phaneendranath Sadarmin, Consultant at Narayana Institute of Cardiac Sciences, Bangalore. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
     ],
-    awards: [
-      "15+ years experience"
+    "awards": [
+      "Best doctor of Narayana Institute of Cardiac Sciences, Bangalore"
     ],
-    patientCount: 1400,
-    successRate: 96.8
+    "patientCount": 10000,
+    "successRate": 97.09
   },
   "dr-ashwin-borkar": {
-    id: "dr-ashwin-borkar",
-    name: "Dr. Ashwin Borkar",
-    specialty: "Neurosurgeon",
-    designation: "Consultant",
-    hospital: "Wockhardt Super Speciality Hospital, Mira Road",
-    location: "Mira Road, Mumbai",
-    experience: "15+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr._ashwin_borkar-min.jpg",
-    about: "Dr. Ashwin Borkar is a Consultant Neurosurgeon with over 15 years of experience in treating complex brain and spine disorders.",
-    expertise: [
-      "Neurosurgery",
-      "Brain Tumor Surgery",
-      "Spine Surgery",
-      "Neurotrauma Management"
+    "id": "dr-ashwin-borkar",
+    "name": "Dr. Ashwin Borkar",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Wockhardt Super Speciality Hospital, Mira Road",
+    "location": "Mira Road",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ashwin_borkar-min.jpg",
+    "about": "Dr. Ashwin Borkar, Consultant at Wockhardt Super Speciality Hospital, Mira Road. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
     ],
-    awards: [
-      "15+ years experience"
+    "awards": [
+      "Best doctor of Wockhardt Super Speciality Hospital, Mira Road"
     ],
-    patientCount: 4000,
-    successRate: 94.5
+    "patientCount": 1500,
+    "successRate": 99.36
   },
   "dr-srichandran-l": {
-    id: "dr-srichandran-l",
-    name: "Dr. Srichandran L",
-    specialty: "Interventional Cardiologist",
-    designation: "Consultant",
-    hospital: "MGM Healthcare, Chennai",
-    location: "Chennai",
-    experience: "19+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr._srichandran_l_-_interventional_cardiologist.jpg",
-    about: "Dr. Srichandran L is a leading Interventional Cardiologist with nearly two decades of experience in performing complex cardiac interventions.",
-    expertise: [
-      "Cardiology",
-      "Interventional Cardiology",
-      "Angioplasty",
-      "Pacemaker Implantation"
+    "id": "dr-srichandran-l",
+    "name": "Dr. Srichandran L",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "MGM Healthcare, Chennai",
+    "location": "Chennai",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._srichandran_l_-_interventional_cardiologist.jpg",
+    "about": "Dr. Srichandran L, Consultant at MGM Healthcare, Chennai. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
     ],
-    awards: [
-      "19+ years experience"
+    "awards": [
+      "Best doctor of MGM Healthcare, Chennai"
     ],
-    patientCount: 6000,
-    successRate: 96.2
+    "patientCount": 9500,
+    "successRate": 99.28
   },
   "dr-arvind-kulkarni": {
-    id: "dr-arvind-kulkarni",
-    name: "Dr. Arvind Kulkarni",
-    specialty: "Spine Surgeon",
-    designation: "Consultant",
-    hospital: "Saifee Hospital, Mumbai",
-    location: "Mumbai",
-    experience: "19+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr._arvind_kulkarni_-_spinal_surgeon_0.jpg",
-    about: "Dr. Arvind Kulkarni is a highly skilled Spine Surgeon specializing in minimally invasive spine surgeries and complex spinal deformity corrections.",
-    expertise: [
-      "Spine Surgery",
-      "Minimally Invasive Spine Surgery",
-      "Spinal Deformity Correction",
-      "Degenerative Spine Disorders"
+    "id": "dr-arvind-kulkarni",
+    "name": "Dr. Arvind Kulkarni",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Saifee Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._arvind_kulkarni_-_spinal_surgeon_0.jpg",
+    "about": "Dr. Arvind Kulkarni, Consultant at Saifee Hospital, Mumbai. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
     ],
-    awards: [
-      "19+ years experience"
+    "awards": [
+      "Best doctor of Saifee Hospital, Mumbai"
     ],
-    patientCount: 5000,
-    successRate: 95.8
-  },
-  "dr-mohamed-ibrahim-b-k": {
-    id: "dr-mohamed-ibrahim-b-k",
-    name: "Dr. Mohamed Ibrahim B K",
-    specialty: "Cosmetic Surgeon",
-    designation: "Consultant",
-    hospital: "SIMS Hospital, Vadapalani, Chennai",
-    location: "Vadapalani, Chennai",
-    experience: "15+ Years Experience",
-    education: "Not specified",
-    image: "https://d1ea147o02h74h.cloudfront.net/dr._mohamed_ibrahim_b_k.png",
-    about: "Dr. Mohamed Ibrahim B K is a renowned Cosmetic Surgeon known for advanced aesthetic surgeries and reconstructive procedures with a focus on natural-looking results.",
-    expertise: [
-      "Cosmetic Surgery",
-      "Aesthetic Surgery",
-      "Reconstructive Surgery",
-      "Facial and Body Contouring"
-    ],
-    awards: [
-      "15+ years experience"
-    ],
-    patientCount: 3500,
-    successRate: 97.1
+    "patientCount": 9000,
+    "successRate": 98.96
   },
   "dr-jimmy-lalkaka": {
-    id: "dr-jimmy-lalkaka",
-    name: "Dr. Jimmy Lalkaka",
-    specialty: "Neurologist",
-    designation: "Consultant",
-    hospital: "Saifee Hospital, Mumbai",
-    location: "Mumbai",
-    experience: "19+ Years Experience",
-    education: "Not specified",
-    image: "https://www.vaidam.com/sites/default/files/dr._jimmy_lalkaka_-_neurologist.jpg",
-    about: "Dr. Jimmy Lalkaka is an experienced Neurologist specializing in treating neurological disorders with advanced medical and therapeutic techniques.",
-    expertise: [
-      "Neurology",
-      "Stroke Management",
-      "Epilepsy Treatment",
-      "Neuromuscular Disorders"
+    "id": "dr-jimmy-lalkaka",
+    "name": "Dr. Jimmy Lalkaka",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Saifee Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._jimmy_lalkaka_-_neurologist.jpg",
+    "about": "Dr. Jimmy Lalkaka, Consultant at Saifee Hospital, Mumbai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
     ],
-    awards: [
-      "19+ years experience"
+    "awards": [
+      "Best doctor of Saifee Hospital, Mumbai"
     ],
-    patientCount: 5500,
-    successRate: 94.9
+    "patientCount": 7500,
+    "successRate": 97.1
   },
   "dr-kisley-shrivastav": {
-    id: "dr-kisley-shrivastav",
-    name: "Dr. Kisley Shrivastav",
-    specialty: "Interventional Cardiologist",
-    designation: "Consultant",
-    hospital: "Apollo SAGE Hospital",
-    location: "Bhopal",
-    experience: "15+ Years Experience",
-    education: "D.M. Cardiology - Top Indian Institutes",
-    image: "https://www.vaidam.com/sites/default/files/dr._kisley_shrivastav_0.jpg",
-    about: "Dr. Kisley Shrivastav is a skilled Interventional Cardiologist with expertise in complex coronary interventions and preventive cardiology.",
-    expertise: [
-      "Coronary Angioplasty",
-      "Device Implantation",
-      "Preventive Cardiology"
+    "id": "dr-kisley-shrivastav",
+    "name": "Dr. Kisley Shrivastav",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Apollo SAGE Hospital",
+    "location": "",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._kisley_shrivastav_0.jpg",
+    "about": "Dr. Kisley Shrivastav, Consultant at Apollo SAGE Hospital. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
     ],
-    awards: [
-      "Young Cardiologist Award, 2017",
-      "Advanced Fellowship in Interventional Cardiology"
+    "awards": [
+      "Best doctor of Apollo SAGE Hospital"
     ],
-    patientCount: 4500,
-    successRate: 96.0
+    "patientCount": 7000,
+    "successRate": 98.65
   },
   "dr-sankalp-bhartiya": {
-    id: "dr-sankalp-bhartiya",
-    name: "Dr. Sankalp Bhartiya",
-    specialty: "Neurosurgeon",
-    designation: "Consultant",
-    hospital: "Fortis Escorts Hospital Jaipur",
-    location: "Jaipur",
-    experience: "8+ Years Experience",
-    education: "M.Ch. Neurosurgery - Top Indian Institutes",
-    image: "https://www.vaidam.com/sites/default/files/dr._sankalp_bhartiya-min.jpg",
-    about: "Dr. Sankalp Bhartiya is a young and dynamic Neurosurgeon with extensive training in minimally invasive neurosurgical procedures.",
-    expertise: [
-      "Brain Tumor Surgery",
-      "Spinal Surgeries",
-      "Neurotrauma Care"
+    "id": "dr-sankalp-bhartiya",
+    "name": "Dr. Sankalp Bhartiya",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Fortis Escorts Hospital Jaipur",
+    "location": "",
+    "experience": "8+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._sankalp_bhartiya-min.jpg",
+    "about": "Dr. Sankalp Bhartiya, Consultant at Fortis Escorts Hospital Jaipur. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
     ],
-    awards: [
-      "Emerging Neurosurgeon Award, 2021",
-      "Certified Specialist in Neuro-Oncology"
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital Jaipur"
     ],
-    patientCount: 2000,
-    successRate: 93.5
+    "patientCount": 6500,
+    "successRate": 97.12
   },
-  "dr-sudhir-kumar": {
-    id: "dr-sudhir-kumar",
-    name: "Dr. Sudhir Kumar",
-    specialty: "Neurologist",
-    designation: "Consultant",
-    hospital: "Apollo Hospitals, Jubilee Hills Hyderabad",
-    location: "Hyderabad",
-    experience: "22+ Years Experience",
-    education: "D.M. Neurology - Premier Indian Institutes",
-    image: "https://d1ea147o02h74h.cloudfront.net/dr._sudhir_kumar_0.jpg",
-    about: "Dr. Sudhir Kumar is a Senior Consultant Neurologist renowned for his clinical expertise in treating complex neurological and neuromuscular disorders.",
-    expertise: [
-      "Stroke and Paralysis Management",
-      "Epilepsy and Seizure Treatment",
-      "Multiple Sclerosis and Neurodegenerative Diseases"
+  "dr-sudhir-kumar-neurologist": {
+    "id": "dr-sudhir-kumar-neurologist",
+    "name": "Dr. Sudhir Kumar",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Apollo Hospitals, Jubilee Hills Hyderabad",
+    "location": "Jubilee Hills Hyderabad",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._sudhir_kumar_0.jpg",
+    "about": "Dr. Sudhir Kumar, Consultant at Apollo Hospitals, Jubilee Hills Hyderabad. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
     ],
-    awards: [
-      "Lifetime Achievement Award in Neurology, 2022",
-      "Published Research Papers in Top Medical Journals"
+    "awards": [
+      "Best doctor of Apollo Hospitals, Jubilee Hills Hyderabad"
     ],
-    patientCount: 8000,
-    successRate: 97.3
+    "patientCount": 9000,
+    "successRate": 96.54
+  },
+  "dr-anshul-patodia": {
+    "id": "dr-anshul-patodia",
+    "name": "Dr. Anshul Patodia",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Shalby Hospital, Jaipur",
+    "location": "Jaipur",
+    "experience": "17+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_anshul_patodia-min.png",
+    "about": "Dr. Anshul Patodia, Consultant at Shalby Hospital, Jaipur. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Shalby Hospital, Jaipur"
+    ],
+    "patientCount": 7500,
+    "successRate": 99.25
+  },
+  "dr-arun-l-naik": {
+    "id": "dr-arun-l-naik",
+    "name": "Dr. Arun L. Naik",
+    "specialty": "Neurosurgeon",
+    "designation": "Head of Department",
+    "hospital": "Apollo Hospital (Bannerghatta Road) Bangalore",
+    "location": "",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._arun_l._naik_-_neurosurgeon.jpg",
+    "about": "Dr. Arun L. Naik, Head of Department at Apollo Hospital (Bannerghatta Road) Bangalore. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Hospital (Bannerghatta Road) Bangalore"
+    ],
+    "patientCount": 5500,
+    "successRate": 95.84
+  },
+  "dr-pawan-goyal": {
+    "id": "dr-pawan-goyal",
+    "name": "Dr. Pawan Goyal",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Artemis Hospital, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._pawan_goyal_-_neurosurgeon.jpg",
+    "about": "Dr. Pawan Goyal, Consultant at Artemis Hospital, Gurgaon. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Artemis Hospital, Gurgaon"
+    ],
+    "patientCount": 3500,
+    "successRate": 95.62
+  },
+  "dr-rajesh-benny": {
+    "id": "dr-rajesh-benny",
+    "name": "Dr. Rajesh Benny",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Fortis Hospital, Mulund, Mumbai",
+    "location": "Mumbai",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/drrajesh-benny.jpg",
+    "about": "Dr. Rajesh Benny, Consultant at Fortis Hospital, Mulund, Mumbai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Hospital, Mulund, Mumbai"
+    ],
+    "patientCount": 500,
+    "successRate": 97.76
+  },
+  "dr-k-r-balakrishnan": {
+    "id": "dr-k-r-balakrishnan",
+    "name": "Dr. K. R. Balakrishnan",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Chairman",
+    "hospital": "MGM Healthcare, Chennai",
+    "location": "Chennai",
+    "experience": "46+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._k._r._balakrishnan-min.jpg",
+    "about": "Dr. K. R. Balakrishnan, Chairman at MGM Healthcare, Chennai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of MGM Healthcare, Chennai"
+    ],
+    "patientCount": 8000,
+    "successRate": 96.75
+  },
+  "dr-lalit-aditya-malik": {
+    "id": "dr-lalit-aditya-malik",
+    "name": "Dr. Lalit Aditya Malik",
+    "specialty": "Cardiac Surgeon",
+    "designation": "HOD",
+    "hospital": "Manipal Hospital, Jaipur",
+    "location": "Jaipur",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._lalit_aditya_malik-min.jpg",
+    "about": "Dr. Lalit Aditya Malik, HOD at Manipal Hospital, Jaipur. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Manipal Hospital, Jaipur"
+    ],
+    "patientCount": 5000,
+    "successRate": 95.97
+  },
+  "dr-rahul-jain-neurosurgery": {
+    "id": "dr-rahul-jain-neurosurgery",
+    "name": "Dr. Rahul Jain",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Apollo SAGE Hospital",
+    "location": "",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_rahul_jain-min.jpeg",
+    "about": "Dr. Rahul Jain, Consultant at Apollo SAGE Hospital. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo SAGE Hospital"
+    ],
+    "patientCount": 3000,
+    "successRate": 96.7
+  },
+  "dr-mangesh-g-kohale": {
+    "id": "dr-mangesh-g-kohale",
+    "name": "Dr. Mangesh G Kohale",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Wockhardt Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._mangesh_g_kohale.jpg",
+    "about": "Dr. Mangesh G Kohale, Consultant at Wockhardt Hospital, Mumbai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Wockhardt Hospital, Mumbai"
+    ],
+    "patientCount": 10000,
+    "successRate": 99.91
+  },
+  "dr-arun-sharma": {
+    "id": "dr-arun-sharma",
+    "name": "Dr. Arun Sharma",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Indian Spinal Injuries Center, New Delhi",
+    "location": "New Delhi",
+    "experience": "23+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._arun_sharma_-neurosurgeon.jpg",
+    "about": "Dr. Arun Sharma, Consultant at Indian Spinal Injuries Center, New Delhi. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Indian Spinal Injuries Center, New Delhi"
+    ],
+    "patientCount": 2500,
+    "successRate": 97.93
+  },
+  "dr-siddhartha-ghosh": {
+    "id": "dr-siddhartha-ghosh",
+    "name": "Dr. Siddhartha Ghosh",
+    "specialty": "Neurosurgeon",
+    "designation": "Senior Consultant",
+    "hospital": "Apollo Proton Cancer Centre, Chennai",
+    "location": "Chennai",
+    "experience": "40+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/6_2.jpg",
+    "about": "Dr. Siddhartha Ghosh, Senior Consultant at Apollo Proton Cancer Centre, Chennai. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Proton Cancer Centre, Chennai"
+    ],
+    "patientCount": 10000,
+    "successRate": 95.94
+  },
+  "dr-amit-mittal": {
+    "id": "dr-amit-mittal",
+    "name": "Dr. Amit Mittal",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Indraprastha Apollo Hospital, New Delhi",
+    "location": "New Delhi",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._amit_mittal_-_interventional_cardiologist.jpg",
+    "about": "Dr. Amit Mittal, Consultant at Indraprastha Apollo Hospital, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Indraprastha Apollo Hospital, New Delhi"
+    ],
+    "patientCount": 7000,
+    "successRate": 99.29
+  },
+  "dr-annu-aggarwal": {
+    "id": "dr-annu-aggarwal",
+    "name": "Dr. Annu Aggarwal",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Kokilaben Dhirubhai Ambani Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_annu_aggarwal_-_consultant_neurologist.jpg",
+    "about": "Dr. Annu Aggarwal, Consultant at Kokilaben Dhirubhai Ambani Hospital, Mumbai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Kokilaben Dhirubhai Ambani Hospital, Mumbai"
+    ],
+    "patientCount": 2000,
+    "successRate": 96.39
+  },
+  "dr-emmanuel-thas-j": {
+    "id": "dr-emmanuel-thas-j",
+    "name": "Dr. Emmanuel Thas J",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Kauvery Hospital Radial Road Chennai",
+    "location": "",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._emmanuel_thas_j.jpg",
+    "about": "Dr. Emmanuel Thas J, Consultant at Kauvery Hospital Radial Road Chennai. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Kauvery Hospital Radial Road Chennai"
+    ],
+    "patientCount": 8000,
+    "successRate": 97.08
+  },
+  "dr-m-naga-suresh": {
+    "id": "dr-m-naga-suresh",
+    "name": "Dr. M. Naga Suresh",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Medicover Hospital, Kurnool",
+    "location": "Kurnool",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr.suresh-min.png",
+    "about": "Dr. M. Naga Suresh, Consultant at Medicover Hospital, Kurnool. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Medicover Hospital, Kurnool"
+    ],
+    "patientCount": 2500,
+    "successRate": 95.86
+  },
+  "dr-vishal-kundnani": {
+    "id": "dr-vishal-kundnani",
+    "name": "Dr. Vishal Kundnani",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "P.D Hinduja Hospital & Medical Research Centre, Mumbai",
+    "location": "Mumbai",
+    "experience": "18+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._vishal_kundnani_-_spine_surgeon.jpg",
+    "about": "Dr. Vishal Kundnani, Consultant at P.D Hinduja Hospital & Medical Research Centre, Mumbai. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of P.D Hinduja Hospital & Medical Research Centre, Mumbai"
+    ],
+    "patientCount": 7000,
+    "successRate": 95.85
+  },
+  "dr-pawan-garg": {
+    "id": "dr-pawan-garg",
+    "name": "Dr. Pawan Garg",
+    "specialty": "Neurosurgeon",
+    "designation": "Senior Consultant",
+    "hospital": "Medeor Hospital, Qutab, New Delhi",
+    "location": "New Delhi",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._pawan_garg_-_neurosurgeon.jpg",
+    "about": "Dr. Pawan Garg, Senior Consultant at Medeor Hospital, Qutab, New Delhi. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Medeor Hospital, Qutab, New Delhi"
+    ],
+    "patientCount": 1000,
+    "successRate": 95.28
+  },
+  "dr-rahul-chaudhari": {
+    "id": "dr-rahul-chaudhari",
+    "name": "Dr. Rahul Chaudhari",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Manipal Hospital, Baner, Pune",
+    "location": "Pune",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_rahul_chaudhari.jpg",
+    "about": "Dr. Rahul Chaudhari, Consultant at Manipal Hospital, Baner, Pune. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Manipal Hospital, Baner, Pune"
+    ],
+    "patientCount": 10000,
+    "successRate": 95.88
+  },
+  "dr-amitabh-gupta": {
+    "id": "dr-amitabh-gupta",
+    "name": "Dr. Amitabh Gupta",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Pushpawati Singhania Research Institute, New Delhi",
+    "location": "New Delhi",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._amitabh_gupta.jpg",
+    "about": "Dr. Amitabh Gupta, Consultant at Pushpawati Singhania Research Institute, New Delhi. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Pushpawati Singhania Research Institute, New Delhi"
+    ],
+    "patientCount": 8000,
+    "successRate": 97.09
+  },
+  "dr-j-kannan": {
+    "id": "dr-j-kannan",
+    "name": "Dr. J. Kannan",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Narayana Institute of Cardiac Sciences, Bangalore",
+    "location": "Bangalore",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/_dr._kannan_j.jpg",
+    "about": "Dr. J. Kannan, Consultant at Narayana Institute of Cardiac Sciences, Bangalore. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Narayana Institute of Cardiac Sciences, Bangalore"
+    ],
+    "patientCount": 2000,
+    "successRate": 98.48
+  },
+  "dr-sushil-tandel": {
+    "id": "dr-sushil-tandel",
+    "name": "Dr. Sushil Tandel",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Asian Heart Institute, Mumbai",
+    "location": "Mumbai",
+    "experience": "26+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._sushil_tandel-min.png",
+    "about": "Dr. Sushil Tandel, Consultant at Asian Heart Institute, Mumbai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Asian Heart Institute, Mumbai"
+    ],
+    "patientCount": 5500,
+    "successRate": 96.86
+  },
+  "dr-rahul-chakor": {
+    "id": "dr-rahul-chakor",
+    "name": "Dr. Rahul Chakor",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Saifee Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "27+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rahul_chakor_-_neurologist.jpg",
+    "about": "Dr. Rahul Chakor, Consultant at Saifee Hospital, Mumbai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Saifee Hospital, Mumbai"
+    ],
+    "patientCount": 1000,
+    "successRate": 96.6
+  },
+  "dr-rithesh-r-nair": {
+    "id": "dr-rithesh-r-nair",
+    "name": "Dr. Rithesh R Nair",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "SIMS Hospital, Vadapalani, Chennai",
+    "location": "Chennai",
+    "experience": "26+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rithesh_r_nair.jpg",
+    "about": "Dr. Rithesh R Nair, Consultant at SIMS Hospital, Vadapalani, Chennai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of SIMS Hospital, Vadapalani, Chennai"
+    ],
+    "patientCount": 6500,
+    "successRate": 99.79
+  },
+  "dr-anil-kumar-kansal": {
+    "id": "dr-anil-kumar-kansal",
+    "name": "Dr. Anil Kumar Kansal",
+    "specialty": "Neurosurgeon",
+    "designation": "Head of Department",
+    "hospital": "BLK-Max Super Speciality Hospital Delhi",
+    "location": "",
+    "experience": "34+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr-anil-kumar-kansal-neurosurgeon_0.jpg",
+    "about": "Dr. Anil Kumar Kansal, Head of Department at BLK-Max Super Speciality Hospital Delhi. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of BLK-Max Super Speciality Hospital Delhi"
+    ],
+    "patientCount": 4500,
+    "successRate": 96.96
+  },
+  "dr-saurabh-chopra": {
+    "id": "dr-saurabh-chopra",
+    "name": "Dr. Saurabh Chopra",
+    "specialty": "Paediatric Neurologist",
+    "designation": "Consultant",
+    "hospital": "Indraprastha Apollo Hospital, New Delhi",
+    "location": "New Delhi",
+    "experience": "24+ Years Experience",
+    "education": "MBBS, MD in Paediatrics, DM in Paediatric Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_saurabh_chopra-min.jpg",
+    "about": "Dr. Saurabh Chopra, Consultant at Indraprastha Apollo Hospital, New Delhi. Specializes in Paediatric Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Paediatric Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Indraprastha Apollo Hospital, New Delhi"
+    ],
+    "patientCount": 6000,
+    "successRate": 96.23
+  },
+  "dr-mohit-goel": {
+    "id": "dr-mohit-goel",
+    "name": "Dr. Mohit Goel",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Max Super Speciality Hospital, Saket, New Delhi",
+    "location": "New Delhi",
+    "experience": "28+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._mohit_goel.jpg",
+    "about": "Dr. Mohit Goel, Consultant at Max Super Speciality Hospital, Saket, New Delhi. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Saket, New Delhi"
+    ],
+    "patientCount": 1500,
+    "successRate": 99.5
+  },
+  "dr-surya-prakasa-rao-vithala": {
+    "id": "dr-surya-prakasa-rao-vithala",
+    "name": "Dr. Surya Prakasa Rao Vithala",
+    "specialty": "Interventional Cardiologist",
+    "designation": "HOD",
+    "hospital": "Care Hospitals, Banjara Hills, Hyderabad",
+    "location": "Hyderabad",
+    "experience": "25+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._surya_prakasa_rao_vithala-min.jpg",
+    "about": "Dr. Surya Prakasa Rao Vithala, HOD at Care Hospitals, Banjara Hills, Hyderabad. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Care Hospitals, Banjara Hills, Hyderabad"
+    ],
+    "patientCount": 1500,
+    "successRate": 99.25
+  },
+  "dr-shahid-merchant": {
+    "id": "dr-shahid-merchant",
+    "name": "Dr. Shahid Merchant",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Senior Consultant",
+    "hospital": "Saifee Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "29+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._shahid_merchant_-_cardiologist.jpg",
+    "about": "Dr. Shahid Merchant, Senior Consultant at Saifee Hospital, Mumbai. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Saifee Hospital, Mumbai"
+    ],
+    "patientCount": 10000,
+    "successRate": 97.98
+  },
+  "dr-anudath-brahmadathan": {
+    "id": "dr-anudath-brahmadathan",
+    "name": "Dr. Anudath Brahmadathan",
+    "specialty": "Neurosurgeon",
+    "designation": "HOD",
+    "hospital": "Meitra Hospital, Kerala",
+    "location": "Kerala",
+    "experience": "26+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anudath_brahmadathan-min.jpg",
+    "about": "Dr. Anudath Brahmadathan, HOD at Meitra Hospital, Kerala. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Meitra Hospital, Kerala"
+    ],
+    "patientCount": 2500,
+    "successRate": 95.56
+  },
+  "dr-nirmal-surya": {
+    "id": "dr-nirmal-surya",
+    "name": "Dr. Nirmal Surya",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Saifee Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "33+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._nirmal_surya_-_neurologist.jpg",
+    "about": "Dr. Nirmal Surya, Consultant at Saifee Hospital, Mumbai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Saifee Hospital, Mumbai"
+    ],
+    "patientCount": 4000,
+    "successRate": 97.02
+  },
+  "dr-neeraj-gupta": {
+    "id": "dr-neeraj-gupta",
+    "name": "Dr. Neeraj Gupta",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Indian Spinal Injuries Center, New Delhi",
+    "location": "New Delhi",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._neeraj_gupta-min.jpg",
+    "about": "Dr. Neeraj Gupta, Consultant at Indian Spinal Injuries Center, New Delhi. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Indian Spinal Injuries Center, New Delhi"
+    ],
+    "patientCount": 4500,
+    "successRate": 97.99
+  },
+  "dr-muhammad-farooq": {
+    "id": "dr-muhammad-farooq",
+    "name": "Dr. Muhammad Farooq",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Saifee Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "30+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._muhammad_farooq_-_neurosurgeon.jpeg",
+    "about": "Dr. Muhammad Farooq, Consultant at Saifee Hospital, Mumbai. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Saifee Hospital, Mumbai"
+    ],
+    "patientCount": 5500,
+    "successRate": 99.35
+  },
+  "dr-vrajesh-udani": {
+    "id": "dr-vrajesh-udani",
+    "name": "Dr. Vrajesh Udani",
+    "specialty": "Paediatric Neurologist",
+    "designation": "Consultant",
+    "hospital": "Saifee Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "38+ Years Experience",
+    "education": "MBBS, MD in Paediatrics, DM in Paediatric Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._vrajesh_udani_-_pediatric_neurologist.jpg",
+    "about": "Dr. Vrajesh Udani, Consultant at Saifee Hospital, Mumbai. Specializes in Paediatric Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Paediatric Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Saifee Hospital, Mumbai"
+    ],
+    "patientCount": 4500,
+    "successRate": 99.55
+  },
+  "dr-anil-saxena": {
+    "id": "dr-anil-saxena",
+    "name": "Dr. Anil Saxena",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Director",
+    "hospital": "Fortis Escorts Heart Institute, New Delhi",
+    "location": "New Delhi",
+    "experience": "35+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anil_saxena.jpg",
+    "about": "Dr. Anil Saxena, Director at Fortis Escorts Heart Institute, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Heart Institute, New Delhi"
+    ],
+    "patientCount": 8500,
+    "successRate": 99.94
+  },
+  "dr-rajiv-khanna-ent": {
+    "id": "dr-rajiv-khanna-ent",
+    "name": "Dr. Rajiv Khanna",
+    "specialty": "ENT Surgeon",
+    "designation": "HOD",
+    "hospital": "Apollo Medics Super Speciality Hospital, Lucknow",
+    "location": "Lucknow",
+    "experience": "40+ Years Experience",
+    "education": "MBBS, MS in ENT",
+    "image": "https://www.vaidam.com/sites/default/files/dr_rajiv_khanna.jpg",
+    "about": "Dr. Rajiv Khanna, HOD at Apollo Medics Super Speciality Hospital, Lucknow. Specializes in ENT Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "ENT Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Medics Super Speciality Hospital, Lucknow"
+    ],
+    "patientCount": 3000,
+    "successRate": 96.91
+  },
+  "dr-sitla-prasad-pathak": {
+    "id": "dr-sitla-prasad-pathak",
+    "name": "Dr. Sitla Prasad Pathak",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Max Super Speciality Hospital, Vaishali",
+    "location": "Vaishali",
+    "experience": "10+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._sitla_prasad_pathak.jpg",
+    "about": "Dr. Sitla Prasad Pathak, Consultant at Max Super Speciality Hospital, Vaishali. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Vaishali"
+    ],
+    "patientCount": 2000,
+    "successRate": 98.8
+  },
+  "dr-satishchandra-p": {
+    "id": "dr-satishchandra-p",
+    "name": "Dr. Satishchandra P",
+    "specialty": "Neurologist",
+    "designation": "Senior Consultant",
+    "hospital": "Apollo Speciality Hospital, Jayanagar",
+    "location": "Jayanagar",
+    "experience": "43+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr.satishchandra_p.jpg",
+    "about": "Dr. Satishchandra P, Senior Consultant at Apollo Speciality Hospital, Jayanagar. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Apollo Speciality Hospital, Jayanagar"
+    ],
+    "patientCount": 3000,
+    "successRate": 97.46
+  },
+  "dr-k-subramanyan": {
+    "id": "dr-k-subramanyan",
+    "name": "Dr. K Subramanyan",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Director",
+    "hospital": "SIMS Hospital, Vadapalani, Chennai",
+    "location": "Chennai",
+    "experience": "43+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._k_subramanyan.jpg",
+    "about": "Dr. K Subramanyan, Director at SIMS Hospital, Vadapalani, Chennai. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of SIMS Hospital, Vadapalani, Chennai"
+    ],
+    "patientCount": 8000,
+    "successRate": 97.64
+  },
+  "dr-upendra-bhalerao": {
+    "id": "dr-upendra-bhalerao",
+    "name": "Dr. Upendra Bhalerao",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Senior Consultant",
+    "hospital": "Nanavati Super Specialty Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._upendra_bhalerao-min.jpg",
+    "about": "Dr. Upendra Bhalerao, Senior Consultant at Nanavati Super Specialty Hospital, Mumbai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Nanavati Super Specialty Hospital, Mumbai"
+    ],
+    "patientCount": 1000,
+    "successRate": 95.12
+  },
+  "dr-mahesh-chaudhari": {
+    "id": "dr-mahesh-chaudhari",
+    "name": "Dr. Mahesh Chaudhari",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "S. L. Raheja Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "46+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._mahesh_chaudhari_-_neurosurgeon.jpg",
+    "about": "Dr. Mahesh Chaudhari, Consultant at S. L. Raheja Hospital, Mumbai. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of S. L. Raheja Hospital, Mumbai"
+    ],
+    "patientCount": 1500,
+    "successRate": 99.59
+  },
+  "dr-sudesh-prabhakar": {
+    "id": "dr-sudesh-prabhakar",
+    "name": "Dr. Sudesh Prabhakar",
+    "specialty": "Neurologist",
+    "designation": "Director",
+    "hospital": "Fortis Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "46+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_sudesh.jpg",
+    "about": "Dr. Sudesh Prabhakar, Director at Fortis Hospital, Mohali. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Hospital, Mohali"
+    ],
+    "patientCount": 9000,
+    "successRate": 98.61
+  },
+  "dr-mahendra-prasad-tripathy": {
+    "id": "dr-mahendra-prasad-tripathy",
+    "name": "Dr. Mahendra Prasad Tripathy",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Director",
+    "hospital": "Care Super Specialty Hospital, Bhubaneswar",
+    "location": "Bhubaneswar",
+    "experience": "42+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-mp-tripaty.png",
+    "about": "Dr. Mahendra Prasad Tripathy, Director at Care Super Specialty Hospital, Bhubaneswar. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Care Super Specialty Hospital, Bhubaneswar"
+    ],
+    "patientCount": 3500,
+    "successRate": 99.72
+  },
+  "dr-anil-karapurkar": {
+    "id": "dr-anil-karapurkar",
+    "name": "Dr. Anil Karapurkar",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Breach Candy Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "50+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anil_karapurkar_-_neurosurgeon.jpg",
+    "about": "Dr. Anil Karapurkar, Consultant at Breach Candy Hospital, Mumbai. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Breach Candy Hospital, Mumbai"
+    ],
+    "patientCount": 10000,
+    "successRate": 95.16
+  },
+  "dr-rajiv-karnik": {
+    "id": "dr-rajiv-karnik",
+    "name": "Dr. Rajiv Karnik",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Fortis Hospital, Mulund, Mumbai",
+    "location": "Mumbai",
+    "experience": "44+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_rajiv_karnik.jpg",
+    "about": "Dr. Rajiv Karnik, Consultant at Fortis Hospital, Mulund, Mumbai. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Hospital, Mulund, Mumbai"
+    ],
+    "patientCount": 5500,
+    "successRate": 98.66
+  },
+  "dr-gaurav-khandelwal": {
+    "id": "dr-gaurav-khandelwal",
+    "name": "Dr. Gaurav Khandelwal",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Shalby Hospital, Surat",
+    "location": "Surat",
+    "experience": "23+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_gaurav_khandelwal-min.jpg",
+    "about": "Dr. Gaurav Khandelwal, Consultant at Shalby Hospital, Surat. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Shalby Hospital, Surat"
+    ],
+    "patientCount": 7500,
+    "successRate": 95.96
+  },
+  "dr-v-narendra-kumar": {
+    "id": "dr-v-narendra-kumar",
+    "name": "Dr. V. Narendra Kumar",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Senior Consultant",
+    "hospital": "Dr. Rela Institute and Medical Centre, Chennai",
+    "location": "Chennai",
+    "experience": "16+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_v_narendra_kumar.jpg",
+    "about": "Dr. V. Narendra Kumar, Senior Consultant at Dr. Rela Institute and Medical Centre, Chennai. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Dr. Rela Institute and Medical Centre, Chennai"
+    ],
+    "patientCount": 8500,
+    "successRate": 99.74
+  },
+  "dr-manoranjan-misra": {
+    "id": "dr-manoranjan-misra",
+    "name": "Dr. Manoranjan Misra",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Care Super Specialty Hospital, Bhubaneswar",
+    "location": "Bhubaneswar",
+    "experience": "10+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr.-manoranjan-misra.png",
+    "about": "Dr. Manoranjan Misra, Consultant at Care Super Specialty Hospital, Bhubaneswar. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Care Super Specialty Hospital, Bhubaneswar"
+    ],
+    "patientCount": 10000,
+    "successRate": 95.64
+  },
+  "dr-richa-agrawal": {
+    "id": "dr-richa-agrawal",
+    "name": "Dr. Richa Agrawal",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Metro Hospital and Heart Institute, Noida Sector 13",
+    "location": "Noida Sector 13",
+    "experience": "11+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._richa_agrawal-min.jpg",
+    "about": "Dr. Richa Agrawal, Consultant at Metro Hospital and Heart Institute, Noida Sector 13. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Metro Hospital and Heart Institute, Noida Sector 13"
+    ],
+    "patientCount": 500,
+    "successRate": 95.83
+  },
+  "dr-tridib-chowdhury": {
+    "id": "dr-tridib-chowdhury",
+    "name": "Dr. Tridib Chowdhury",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Manipal Hospital Formerly AMRI Hospital, Kolkata (Mukundapur)",
+    "location": "Kolkata (Mukundapur)",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._tridib_chowdhury-min.jpg",
+    "about": "Dr. Tridib Chowdhury, Consultant at Manipal Hospital Formerly AMRI Hospital, Kolkata (Mukundapur). Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Manipal Hospital Formerly AMRI Hospital, Kolkata (Mukundapur)"
+    ],
+    "patientCount": 4000,
+    "successRate": 97.73
+  },
+  "dr-ranjan-kachru": {
+    "id": "dr-ranjan-kachru",
+    "name": "Dr. Ranjan Kachru",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Additional Director",
+    "hospital": "Fortis Flt. Lt. Rajan Dhall Hospital, Vasant Kunj, New Delhi",
+    "location": "New Delhi",
+    "experience": "41+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ranjan_kachru-min.jpg",
+    "about": "Dr. Ranjan Kachru, Additional Director at Fortis Flt. Lt. Rajan Dhall Hospital, Vasant Kunj, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Flt. Lt. Rajan Dhall Hospital, Vasant Kunj, New Delhi"
+    ],
+    "patientCount": 7500,
+    "successRate": 96.03
+  },
+  "dr-amit-chakrabarty": {
+    "id": "dr-amit-chakrabarty",
+    "name": "Dr. Amit Chakrabarty",
+    "specialty": "Neurosurgeon",
+    "designation": "Additional Director",
+    "hospital": "CK Birla Hospital, Jaipur",
+    "location": "Jaipur",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._amit_chakrabarty.jpeg",
+    "about": "Dr. Amit Chakrabarty, Additional Director at CK Birla Hospital, Jaipur. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of CK Birla Hospital, Jaipur"
+    ],
+    "patientCount": 5000,
+    "successRate": 97.64
+  },
+  "dr-neetu-ramrakhiani": {
+    "id": "dr-neetu-ramrakhiani",
+    "name": "Dr. Neetu Ramrakhiani",
+    "specialty": "Neurologist",
+    "designation": "Additional Director",
+    "hospital": "Fortis Escorts Hospital Jaipur",
+    "location": "",
+    "experience": "17+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-neetu-ramrakhiani.jpeg",
+    "about": "Dr. Neetu Ramrakhiani, Additional Director at Fortis Escorts Hospital Jaipur. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital Jaipur"
+    ],
+    "patientCount": 3500,
+    "successRate": 97.8
+  },
+  "dr-km-hassan": {
+    "id": "dr-km-hassan",
+    "name": "Dr. KM Hassan",
+    "specialty": "Neurologist",
+    "designation": "Additional Director",
+    "hospital": "Jaypee Hospital, Noida",
+    "location": "Noida",
+    "experience": "33+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._km-hassan-min.jpg",
+    "about": "Dr. KM Hassan, Additional Director at Jaypee Hospital, Noida. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Jaypee Hospital, Noida"
+    ],
+    "patientCount": 2500,
+    "successRate": 96.77
+  },
+  "dr-vivek-vaid": {
+    "id": "dr-vivek-vaid",
+    "name": "Dr. Vivek Vaid",
+    "specialty": "Spine Surgeon",
+    "designation": "Additional Director",
+    "hospital": "Fortis Escorts Hospital Jaipur",
+    "location": "",
+    "experience": "18+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._vivek_vaid-min.jpg",
+    "about": "Dr. Vivek Vaid, Additional Director at Fortis Escorts Hospital Jaipur. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital Jaipur"
+    ],
+    "patientCount": 2500,
+    "successRate": 97.43
+  },
+  "dr-sharad-sharma-0": {
+    "id": "dr-sharad-sharma-0",
+    "name": "Dr. Sharad Sharma",
+    "specialty": "Paediatric Neurologist",
+    "designation": "Additional Director",
+    "hospital": "Fortis Escorts Hospital Jaipur",
+    "location": "",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MD in Paediatrics, DM in Paediatric Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._sharad_sharma-min.jpg",
+    "about": "Dr. Sharad Sharma, Additional Director at Fortis Escorts Hospital Jaipur. Specializes in Paediatric Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Paediatric Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital Jaipur"
+    ],
+    "patientCount": 8500,
+    "successRate": 96.76
+  },
+  "dr-sharad-sharma-1": {
+    "id": "dr-sharad-sharma-1",
+    "name": "Dr. Sharad Sharma",
+    "specialty": "Paediatric Neurologist",
+    "designation": "Additional Director",
+    "hospital": "Fortis Escorts Hospital Jaipur",
+    "location": "",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MD in Paediatrics, DM in Paediatric Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._sharad_sharma-min.jpg",
+    "about": "Dr. Sharad Sharma, Additional Director at Fortis Escorts Hospital Jaipur. Specializes in Paediatric Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Paediatric Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital Jaipur"
+    ],
+    "patientCount": 8500,
+    "successRate": 97.25
+  },
+  "dr-rakesh-chittora": {
+    "id": "dr-rakesh-chittora",
+    "name": "Dr. Rakesh Chittora",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Additional Director",
+    "hospital": "Fortis Escorts Hospital Jaipur",
+    "location": "",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rakesh_chittora-min.jpg",
+    "about": "Dr. Rakesh Chittora, Additional Director at Fortis Escorts Hospital Jaipur. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital Jaipur"
+    ],
+    "patientCount": 9000,
+    "successRate": 99.16
+  },
+  "dr-rahul-singhal": {
+    "id": "dr-rahul-singhal",
+    "name": "Dr. Rahul Singhal",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Additional Director",
+    "hospital": "Fortis Escorts Hospital Jaipur",
+    "location": "",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rahul_singhal-min.jpg",
+    "about": "Dr. Rahul Singhal, Additional Director at Fortis Escorts Hospital Jaipur. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital Jaipur"
+    ],
+    "patientCount": 9000,
+    "successRate": 98.2
+  },
+  "dr-ambuj-choudhary": {
+    "id": "dr-ambuj-choudhary",
+    "name": "Dr. Ambuj Choudhary",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Additional Director",
+    "hospital": "Fortis Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "28+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ambuj-min.jpg",
+    "about": "Dr. Ambuj Choudhary, Additional Director at Fortis Hospital, Mohali. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Hospital, Mohali"
+    ],
+    "patientCount": 2500,
+    "successRate": 95.92
+  },
+  "dr-vishnu-gupta": {
+    "id": "dr-vishnu-gupta",
+    "name": "Dr. Vishnu Gupta",
+    "specialty": "Spine Surgeon",
+    "designation": "Additional Director",
+    "hospital": "Fortis Hospital Ludhiana",
+    "location": "",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._vishnu_gupta-min.jpg",
+    "about": "Dr. Vishnu Gupta, Additional Director at Fortis Hospital Ludhiana. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Hospital Ludhiana"
+    ],
+    "patientCount": 1500,
+    "successRate": 96.87
+  },
+  "dr-atul-luthra-endocrinology-diabetes": {
+    "id": "dr-atul-luthra-endocrinology-diabetes",
+    "name": "Dr. Atul Luthra",
+    "specialty": "Endocrinologist",
+    "designation": "Additional Director",
+    "hospital": "Fortis Memorial Research Institute, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "34+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr._atul_luthra.jpg",
+    "about": "Dr. Atul Luthra, Additional Director at Fortis Memorial Research Institute, Gurgaon. Specializes in Endocrinologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Endocrinologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Memorial Research Institute, Gurgaon"
+    ],
+    "patientCount": 4500,
+    "successRate": 99.43
+  },
+  "dr-b-l-aggarwal": {
+    "id": "dr-b-l-aggarwal",
+    "name": "Dr. B L Aggarwal",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Additional Director",
+    "hospital": "Jaypee Hospital, Noida",
+    "location": "Noida",
+    "experience": "27+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-b-l-agarwal-min.jpg",
+    "about": "Dr. B L Aggarwal, Additional Director at Jaypee Hospital, Noida. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Jaypee Hospital, Noida"
+    ],
+    "patientCount": 7000,
+    "successRate": 95.75
+  },
+  "dr-vivek-raj-gastroentrology-and-hepatology": {
+    "id": "dr-vivek-raj-gastroentrology-and-hepatology",
+    "name": "Dr. Vivek Raj",
+    "specialty": "Medical Gastroenterologist",
+    "designation": "Director",
+    "hospital": "Max Super Speciality Hospital, Saket, New Delhi",
+    "location": "New Delhi",
+    "experience": "43+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr-vivek-raj-max.jpg",
+    "about": "Dr. Vivek Raj, Director at Max Super Speciality Hospital, Saket, New Delhi. Specializes in Medical Gastroenterologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Medical Gastroenterologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Saket, New Delhi"
+    ],
+    "patientCount": 8500,
+    "successRate": 97.98
+  },
+  "dr-dilip-kumar": {
+    "id": "dr-dilip-kumar",
+    "name": "Dr. Dilip Kumar",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Medica Superspecialty Hospital",
+    "location": "",
+    "experience": "16+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr.-dilip-kumar-cardiology.jpg",
+    "about": "Dr. Dilip Kumar, Consultant at Medica Superspecialty Hospital. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Medica Superspecialty Hospital"
+    ],
+    "patientCount": 5500,
+    "successRate": 96.45
+  },
+  "dr-neelam-kaul": {
+    "id": "dr-neelam-kaul",
+    "name": "Dr. Neelam Kaul",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Senior Consultant",
+    "hospital": "Amandeep Hospital, Pathankot",
+    "location": "Pathankot",
+    "experience": "18+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._neelam_kaul.jpg",
+    "about": "Dr. Neelam Kaul, Senior Consultant at Amandeep Hospital, Pathankot. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Amandeep Hospital, Pathankot"
+    ],
+    "patientCount": 6500,
+    "successRate": 95.8
+  },
+  "dr-ravi-kumar-r": {
+    "id": "dr-ravi-kumar-r",
+    "name": "Dr. Ravi Kumar R",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Senior Consultant",
+    "hospital": "MGM Healthcare, Chennai",
+    "location": "Chennai",
+    "experience": "29+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ravi_kumar_r_-_cardiologist.jpg",
+    "about": "Dr. Ravi Kumar R, Senior Consultant at MGM Healthcare, Chennai. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of MGM Healthcare, Chennai"
+    ],
+    "patientCount": 1000,
+    "successRate": 95.34
+  },
+  "dr-naveen-tahasildar": {
+    "id": "dr-naveen-tahasildar",
+    "name": "Dr. Naveen Tahasildar",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Sparsh Hospital, Bommasandra",
+    "location": "Bommasandra",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._naveen_tahasildar-min.jpg",
+    "about": "Dr. Naveen Tahasildar, Consultant at Sparsh Hospital, Bommasandra. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Sparsh Hospital, Bommasandra"
+    ],
+    "patientCount": 3000,
+    "successRate": 96.12
+  },
+  "dr-parthasarathy-srinivasan": {
+    "id": "dr-parthasarathy-srinivasan",
+    "name": "Dr. Parthasarathy Srinivasan",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Dr. Rela Institute and Medical Centre, Chennai",
+    "location": "Chennai",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._parthasarathy_srinivasan_-_consultant_spine_surgeon.jpg",
+    "about": "Dr. Parthasarathy Srinivasan, Consultant at Dr. Rela Institute and Medical Centre, Chennai. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Dr. Rela Institute and Medical Centre, Chennai"
+    ],
+    "patientCount": 3000,
+    "successRate": 99.68
+  },
+  "dr-muralidharan-v": {
+    "id": "dr-muralidharan-v",
+    "name": "Dr. Muralidharan V",
+    "specialty": "Spine Surgeon",
+    "designation": "Consultant",
+    "hospital": "Apollo Hospitals, Greams Road, Chennai",
+    "location": "Chennai",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/4_4.jpg",
+    "about": "Dr. Muralidharan V, Consultant at Apollo Hospitals, Greams Road, Chennai. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Hospitals, Greams Road, Chennai"
+    ],
+    "patientCount": 8500,
+    "successRate": 97.9
+  },
+  "dr-nitti-kapoor-kaushal": {
+    "id": "dr-nitti-kapoor-kaushal",
+    "name": "Dr. Nitti Kapoor Kaushal",
+    "specialty": "Neurologist",
+    "designation": "Associate Consultant",
+    "hospital": "Manipal Hospital Formerly Columbia Asia, Patiala",
+    "location": "Patiala",
+    "experience": "12+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview71-min.png",
+    "about": "Dr. Nitti Kapoor Kaushal, Associate Consultant at Manipal Hospital Formerly Columbia Asia, Patiala. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Manipal Hospital Formerly Columbia Asia, Patiala"
+    ],
+    "patientCount": 1000,
+    "successRate": 98.16
+  },
+  "dr-samir-puri": {
+    "id": "dr-samir-puri",
+    "name": "Dr. Samir Puri",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Associate Consultant",
+    "hospital": "Delhi heart and lung institute",
+    "location": "",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._samir_puri.jpg",
+    "about": "Dr. Samir Puri, Associate Consultant at Delhi heart and lung institute. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Delhi heart and lung institute"
+    ],
+    "patientCount": 9000,
+    "successRate": 96.31
+  },
+  "dr-s-t-sakthi-suganya": {
+    "id": "dr-s-t-sakthi-suganya",
+    "name": "Dr. S. T. Sakthi Suganya",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Consultant",
+    "hospital": "Kauvery Hospital, Alwarpet",
+    "location": "Alwarpet",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/untitled6929-min.png",
+    "about": "Dr. S. T. Sakthi Suganya, Associate Consultant at Kauvery Hospital, Alwarpet. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Kauvery Hospital, Alwarpet"
+    ],
+    "patientCount": 5500,
+    "successRate": 95.32
+  },
+  "dr-naveen-c-b": {
+    "id": "dr-naveen-c-b",
+    "name": "Dr. Naveen C B",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Consultant",
+    "hospital": "Fortis Hospital, Bangalore (Cunningham Road)",
+    "location": "Bangalore (Cunningham Road)",
+    "experience": "23+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/untitled690-min.png",
+    "about": "Dr. Naveen C B, Associate Consultant at Fortis Hospital, Bangalore (Cunningham Road). Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Hospital, Bangalore (Cunningham Road)"
+    ],
+    "patientCount": 6500,
+    "successRate": 97.08
+  },
+  "dr-dhanajay-zutshi": {
+    "id": "dr-dhanajay-zutshi",
+    "name": "Dr Dhanajay Zutshi",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Consultant",
+    "hospital": "Manipal Hospital, Baner, Pune",
+    "location": "Pune",
+    "experience": "10+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_dhanajay_zutshi-min.jpg",
+    "about": "Dr Dhanajay Zutshi, Associate Consultant at Manipal Hospital, Baner, Pune. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Manipal Hospital, Baner, Pune"
+    ],
+    "patientCount": 5000,
+    "successRate": 98.79
+  },
+  "dr-punish-sadana": {
+    "id": "dr-punish-sadana",
+    "name": "Dr. Punish Sadana",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Consultant",
+    "hospital": "Max Super Speciality Hospital, Dehradun",
+    "location": "Dehradun",
+    "experience": "12+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._punish_sadana-min.png",
+    "about": "Dr. Punish Sadana, Associate Consultant at Max Super Speciality Hospital, Dehradun. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Dehradun"
+    ],
+    "patientCount": 10000,
+    "successRate": 97.74
+  },
+  "dr-aditya-atal": {
+    "id": "dr-aditya-atal",
+    "name": "Dr. Aditya Atal",
+    "specialty": "Neurosurgeon",
+    "designation": "Associate Consultant",
+    "hospital": "Alexis Multispeciality Hospital, Nagpur, Maharashtra, India",
+    "location": "India",
+    "experience": "11+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._aditya_atal-min.jpg",
+    "about": "Dr. Aditya Atal, Associate Consultant at Alexis Multispeciality Hospital, Nagpur, Maharashtra, India. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Alexis Multispeciality Hospital, Nagpur, Maharashtra, India"
+    ],
+    "patientCount": 9000,
+    "successRate": 99.0
+  },
+  "dr-vikas-sharma": {
+    "id": "dr-vikas-sharma",
+    "name": "Dr. Vikas Sharma",
+    "specialty": "Neurosurgeon",
+    "designation": "Associate Consultant",
+    "hospital": "Fortis Memorial Research Institute, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "18+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._vikas_sharma.jpg",
+    "about": "Dr. Vikas Sharma, Associate Consultant at Fortis Memorial Research Institute, Gurgaon. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Memorial Research Institute, Gurgaon"
+    ],
+    "patientCount": 5000,
+    "successRate": 98.96
+  },
+  "dr-arunkumar-karthikayan": {
+    "id": "dr-arunkumar-karthikayan",
+    "name": "Dr. Arunkumar Karthikayan",
+    "specialty": "Neurosurgeon",
+    "designation": "Associate Consultant",
+    "hospital": "Kauvery Hospital, Alwarpet",
+    "location": "Alwarpet",
+    "experience": "8+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._arunkumar_karthikayan-min.jpg",
+    "about": "Dr. Arunkumar Karthikayan, Associate Consultant at Kauvery Hospital, Alwarpet. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Kauvery Hospital, Alwarpet"
+    ],
+    "patientCount": 5000,
+    "successRate": 95.37
+  },
+  "dr-ticini-joseph": {
+    "id": "dr-ticini-joseph",
+    "name": "Dr. Ticini Joseph",
+    "specialty": "Spine Surgeon",
+    "designation": "Associate Consultant",
+    "hospital": "Meitra Hospital, Kerala",
+    "location": "Kerala",
+    "experience": "7+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/untitled482-min.png",
+    "about": "Dr. Ticini Joseph, Associate Consultant at Meitra Hospital, Kerala. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Meitra Hospital, Kerala"
+    ],
+    "patientCount": 3000,
+    "successRate": 96.41
+  },
+  "dr-maninder-singh-sidhu": {
+    "id": "dr-maninder-singh-sidhu",
+    "name": "Dr. Maninder Singh Sidhu",
+    "specialty": "Non Invasive Cardiologist",
+    "designation": "Associate Consultant",
+    "hospital": "Fortis Escorts Hospital, Amritsar",
+    "location": "Amritsar",
+    "experience": "23+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr._maninder_singh_sidhu-min.jpg",
+    "about": "Dr. Maninder Singh Sidhu, Associate Consultant at Fortis Escorts Hospital, Amritsar. Specializes in Non Invasive Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Non Invasive Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital, Amritsar"
+    ],
+    "patientCount": 2500,
+    "successRate": 97.61
+  },
+  "dr-davinder-mohan-saini": {
+    "id": "dr-davinder-mohan-saini",
+    "name": "Dr. Davinder Mohan Saini",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Associate Consultant",
+    "hospital": "Fortis Escorts Hospital, Amritsar",
+    "location": "Amritsar",
+    "experience": "28+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._davinder_singh_saini.jpg",
+    "about": "Dr. Davinder Mohan Saini, Associate Consultant at Fortis Escorts Hospital, Amritsar. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital, Amritsar"
+    ],
+    "patientCount": 8000,
+    "successRate": 99.1
+  },
+  "dr-ramanujam-s": {
+    "id": "dr-ramanujam-s",
+    "name": "Dr. Ramanujam S",
+    "specialty": "Spine Surgeon",
+    "designation": "Associate Consultant",
+    "hospital": "Fortis Malar Hospital ,Chennai",
+    "location": "Chennai",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_rama.jpg",
+    "about": "Dr. Ramanujam S, Associate Consultant at Fortis Malar Hospital ,Chennai. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Malar Hospital ,Chennai"
+    ],
+    "patientCount": 4000,
+    "successRate": 96.37
+  },
+  "dr-swati-rawat": {
+    "id": "dr-swati-rawat",
+    "name": "Dr. Swati Rawat",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Consultant",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._swati_rawat.jpg",
+    "about": "Dr. Swati Rawat, Associate Consultant at Medanta - The Medicity, Gurgaon. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 7500,
+    "successRate": 95.4
+  },
+  "dr-pradeep-g": {
+    "id": "dr-pradeep-g",
+    "name": "Dr Pradeep G",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Associate Consultant",
+    "hospital": "MGM Healthcare, Chennai",
+    "location": "Chennai",
+    "experience": "11+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr.-pradeep-g-min.jpg",
+    "about": "Dr Pradeep G, Associate Consultant at MGM Healthcare, Chennai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of MGM Healthcare, Chennai"
+    ],
+    "patientCount": 1000,
+    "successRate": 98.32
+  },
+  "dr-vivekan-manoharan": {
+    "id": "dr-vivekan-manoharan",
+    "name": "Dr. Vivekan Manoharan",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Consultant",
+    "hospital": "MGM Healthcare, Chennai",
+    "location": "Chennai",
+    "experience": "13+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._vivekan_manoharan_-_interventional_cardiologist.jpg",
+    "about": "Dr. Vivekan Manoharan, Associate Consultant at MGM Healthcare, Chennai. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of MGM Healthcare, Chennai"
+    ],
+    "patientCount": 5500,
+    "successRate": 99.3
+  },
+  "dr-ghayoor-ahmed": {
+    "id": "dr-ghayoor-ahmed",
+    "name": "Dr. Ghayoor Ahmed",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Associate Consultant",
+    "hospital": "MGM Healthcare, Chennai",
+    "location": "Chennai",
+    "experience": "13+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ghayoor_ahmed_-_cardiothoracic_surgeon.jpg",
+    "about": "Dr. Ghayoor Ahmed, Associate Consultant at MGM Healthcare, Chennai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of MGM Healthcare, Chennai"
+    ],
+    "patientCount": 9000,
+    "successRate": 95.17
+  },
+  "dr-rajender-thaplu": {
+    "id": "dr-rajender-thaplu",
+    "name": "Dr. Rajender Thaplu",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Consultant",
+    "hospital": "Paras Hospitals, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rajendra.jpg",
+    "about": "Dr. Rajender Thaplu, Associate Consultant at Paras Hospitals, Gurgaon. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Paras Hospitals, Gurgaon"
+    ],
+    "patientCount": 7000,
+    "successRate": 97.62
+  },
+  "dr-ravindra-ghule": {
+    "id": "dr-ravindra-ghule",
+    "name": "Dr. Ravindra Ghule",
+    "specialty": "Cardiology",
+    "designation": "Associate Consultant",
+    "hospital": "Fortis Hospital, Mulund, Mumbai",
+    "location": "Mumbai",
+    "experience": "16+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ravindra_ghule-min.png",
+    "about": "Dr. Ravindra Ghule, Associate Consultant at Fortis Hospital, Mulund, Mumbai. Specializes in Cardiology and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiology"
+    ],
+    "awards": [
+      "Best doctor of Fortis Hospital, Mulund, Mumbai"
+    ],
+    "patientCount": 9000,
+    "successRate": 99.25
+  },
+  "dr-pallav-jain": {
+    "id": "dr-pallav-jain",
+    "name": "Dr. Pallav Jain",
+    "specialty": "Neurologist",
+    "designation": "Associate Consultant",
+    "hospital": "Max Super Speciality Hospital, Bathinda",
+    "location": "Bathinda",
+    "experience": "13+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._pallav_jain-min.jpg",
+    "about": "Dr. Pallav Jain, Associate Consultant at Max Super Speciality Hospital, Bathinda. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Bathinda"
+    ],
+    "patientCount": 2000,
+    "successRate": 95.11
+  },
+  "dr-arul-k": {
+    "id": "dr-arul-k",
+    "name": "Dr. Arul K",
+    "specialty": "Neurosurgeon",
+    "designation": "Associate Consultant",
+    "hospital": "Gleneagles Global Hospital, Chennai",
+    "location": "Chennai",
+    "experience": "29+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_arul_k-min.jpg",
+    "about": "Dr. Arul K, Associate Consultant at Gleneagles Global Hospital, Chennai. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Gleneagles Global Hospital, Chennai"
+    ],
+    "patientCount": 8000,
+    "successRate": 95.9
+  },
+  "dr-sanjeev-srivastava": {
+    "id": "dr-sanjeev-srivastava",
+    "name": "Dr. Sanjeev Srivastava",
+    "specialty": "Neurosurgeon",
+    "designation": "Associate Consultant",
+    "hospital": "Artemis Hospital, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "18+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._sanjeev-min_0.jpg",
+    "about": "Dr. Sanjeev Srivastava, Associate Consultant at Artemis Hospital, Gurgaon. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Artemis Hospital, Gurgaon"
+    ],
+    "patientCount": 6500,
+    "successRate": 99.56
+  },
+  "dr-harpreet-wasir": {
+    "id": "dr-harpreet-wasir",
+    "name": "Dr. Harpreet Wasir",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Associate Director",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "31+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._harpreet_wasir.jpg",
+    "about": "Dr. Harpreet Wasir, Associate Director at Medanta - The Medicity, Gurgaon. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 4000,
+    "successRate": 95.11
+  },
+  "dr-abhishek-parmar": {
+    "id": "dr-abhishek-parmar",
+    "name": "Dr. Abhishek Parmar",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Associate Director",
+    "hospital": "Sterling Hospital, Ahmedabad",
+    "location": "Ahmedabad",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._abhishek_parmar-min.jpg",
+    "about": "Dr. Abhishek Parmar, Associate Director at Sterling Hospital, Ahmedabad. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Sterling Hospital, Ahmedabad"
+    ],
+    "patientCount": 1000,
+    "successRate": 97.92
+  },
+  "dr-arvind-sethi": {
+    "id": "dr-arvind-sethi",
+    "name": "Dr. Arvind Sethi",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "BLK-Max Super Speciality Hospital Delhi",
+    "location": "",
+    "experience": "23+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-arvind-sethi-min.jpg",
+    "about": "Dr. Arvind Sethi, Associate Director at BLK-Max Super Speciality Hospital Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of BLK-Max Super Speciality Hospital Delhi"
+    ],
+    "patientCount": 5000,
+    "successRate": 95.35
+  },
+  "dr-biswajit-paul": {
+    "id": "dr-biswajit-paul",
+    "name": "Dr. Biswajit Paul",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Jaypee Hospital, Noida",
+    "location": "Noida",
+    "experience": "32+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-biswajit-paul-cardiologist.jpg",
+    "about": "Dr. Biswajit Paul, Associate Director at Jaypee Hospital, Noida. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Jaypee Hospital, Noida"
+    ],
+    "patientCount": 7000,
+    "successRate": 98.99
+  },
+  "dr-preeti-sharma": {
+    "id": "dr-preeti-sharma",
+    "name": "Dr. Preeti Sharma",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality Hospital, Dehradun",
+    "location": "Dehradun",
+    "experience": "17+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._preeti_sharma-min.png",
+    "about": "Dr. Preeti Sharma, Associate Director at Max Super Speciality Hospital, Dehradun. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Dehradun"
+    ],
+    "patientCount": 5500,
+    "successRate": 99.73
+  },
+  "dr-pawan-kumar": {
+    "id": "dr-pawan-kumar",
+    "name": "Dr. Pawan Kumar",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality Hospital, Patparganj, New Delhi",
+    "location": "New Delhi",
+    "experience": "26+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._pawan_kumar-min.jpg",
+    "about": "Dr. Pawan Kumar, Associate Director at Max Super Speciality Hospital, Patparganj, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Patparganj, New Delhi"
+    ],
+    "patientCount": 3000,
+    "successRate": 99.06
+  },
+  "dr-anil-bhatt": {
+    "id": "dr-anil-bhatt",
+    "name": "Dr. Anil Bhatt",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality Hospital, Patparganj, New Delhi",
+    "location": "New Delhi",
+    "experience": "42+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anil_bhatt-min.jpg",
+    "about": "Dr. Anil Bhatt, Associate Director at Max Super Speciality Hospital, Patparganj, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Patparganj, New Delhi"
+    ],
+    "patientCount": 9500,
+    "successRate": 97.79
+  },
+  "dr-yogendra-singh": {
+    "id": "dr-yogendra-singh",
+    "name": "Dr. Yogendra Singh",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality Hospital, Dehradun",
+    "location": "Dehradun",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._yogendra_singh-min.png",
+    "about": "Dr. Yogendra Singh, Associate Director at Max Super Speciality Hospital, Dehradun. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Dehradun"
+    ],
+    "patientCount": 500,
+    "successRate": 96.9
+  },
+  "dr-nishant-tyagi": {
+    "id": "dr-nishant-tyagi",
+    "name": "Dr. Nishant Tyagi",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality Hospital, Patparganj, New Delhi",
+    "location": "New Delhi",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._nishant_tyagi-min.jpg",
+    "about": "Dr. Nishant Tyagi, Associate Director at Max Super Speciality Hospital, Patparganj, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Patparganj, New Delhi"
+    ],
+    "patientCount": 4000,
+    "successRate": 98.22
+  },
+  "dr-vineet-bhatia": {
+    "id": "dr-vineet-bhatia",
+    "name": "Dr Vineet Bhatia",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality Hospital, Patparganj, New Delhi",
+    "location": "New Delhi",
+    "experience": "27+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_vineet_bhatia.jpg",
+    "about": "Dr Vineet Bhatia, Associate Director at Max Super Speciality Hospital, Patparganj, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Patparganj, New Delhi"
+    ],
+    "patientCount": 1000,
+    "successRate": 97.88
+  },
+  "dr-nagendra-singh-chauhan": {
+    "id": "dr-nagendra-singh-chauhan",
+    "name": "Dr. Nagendra Singh Chauhan",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "24+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview66-min.png",
+    "about": "Dr. Nagendra Singh Chauhan, Associate Director at Medanta - The Medicity, Gurgaon. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 9000,
+    "successRate": 99.29
+  },
+  "dr-atma-ram-bansal": {
+    "id": "dr-atma-ram-bansal",
+    "name": "Dr. Atma Ram Bansal",
+    "specialty": "Neurologist",
+    "designation": "Associate Director",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "16+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/atmaram.jpg",
+    "about": "Dr. Atma Ram Bansal, Associate Director at Medanta - The Medicity, Gurgaon. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 10000,
+    "successRate": 96.19
+  },
+  "dr-deepak": {
+    "id": "dr-deepak",
+    "name": "Dr. Deepak",
+    "specialty": "Neurologist",
+    "designation": "Associate Director",
+    "hospital": "Max Superspecialty Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_deepak_gupta_6ef0dae075-min.jpg",
+    "about": "Dr. Deepak, Associate Director at Max Superspecialty Hospital, Mohali. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Max Superspecialty Hospital, Mohali"
+    ],
+    "patientCount": 8500,
+    "successRate": 95.81
+  },
+  "dr-arpinder-singh-gill": {
+    "id": "dr-arpinder-singh-gill",
+    "name": "Dr. Arpinder Singh Gill",
+    "specialty": "Neurologist",
+    "designation": "Associate Director",
+    "hospital": "Max Superspecialty Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "32+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_arpinder_gill_1-min.png",
+    "about": "Dr. Arpinder Singh Gill, Associate Director at Max Superspecialty Hospital, Mohali. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Max Superspecialty Hospital, Mohali"
+    ],
+    "patientCount": 6000,
+    "successRate": 96.44
+  },
+  "dr-deepak-g": {
+    "id": "dr-deepak-g",
+    "name": "Dr. Deepak G",
+    "specialty": "Neurologist",
+    "designation": "Associate Director",
+    "hospital": "Max Superspecialty Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "16+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_deepak_gupta_1-min.jpg",
+    "about": "Dr. Deepak G, Associate Director at Max Superspecialty Hospital, Mohali. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Max Superspecialty Hospital, Mohali"
+    ],
+    "patientCount": 7500,
+    "successRate": 98.16
+  },
+  "dr-gaurav-goel": {
+    "id": "dr-gaurav-goel",
+    "name": "Dr. Gaurav Goel",
+    "specialty": "Neurologist",
+    "designation": "Associate Director",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._gaurav.jpg",
+    "about": "Dr. Gaurav Goel, Associate Director at Medanta - The Medicity, Gurgaon. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 3500,
+    "successRate": 98.64
+  },
+  "dr-rakesh-ranjan": {
+    "id": "dr-rakesh-ranjan",
+    "name": "Dr. Rakesh Ranjan",
+    "specialty": "Neurosurgeon",
+    "designation": "Associate Director",
+    "hospital": "Aditya Birla Memorial Hospital, Pune",
+    "location": "Pune",
+    "experience": "26+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/phot-frame-03-1-1-570x570_1-min.jpeg",
+    "about": "Dr. Rakesh Ranjan, Associate Director at Aditya Birla Memorial Hospital, Pune. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Aditya Birla Memorial Hospital, Pune"
+    ],
+    "patientCount": 5000,
+    "successRate": 96.03
+  },
+  "dr-anirban-deep-banerjee": {
+    "id": "dr-anirban-deep-banerjee",
+    "name": "Dr. Anirban Deep Banerjee",
+    "specialty": "Neurosurgeon",
+    "designation": "Associate Director",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "26+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anirban_deep_banerjee.jpg",
+    "about": "Dr. Anirban Deep Banerjee, Associate Director at Medanta - The Medicity, Gurgaon. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 9500,
+    "successRate": 99.6
+  },
+  "dr-rohit-bansil": {
+    "id": "dr-rohit-bansil",
+    "name": "Dr. Rohit Bansil",
+    "specialty": "Spine Surgeon",
+    "designation": "Associate Director",
+    "hospital": "BLK-Max Super Speciality Hospital Delhi",
+    "location": "",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_rohit_bansil.jpg",
+    "about": "Dr. Rohit Bansil, Associate Director at BLK-Max Super Speciality Hospital Delhi. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of BLK-Max Super Speciality Hospital Delhi"
+    ],
+    "patientCount": 500,
+    "successRate": 96.66
+  },
+  "dr-sajal-kakkar": {
+    "id": "dr-sajal-kakkar",
+    "name": "Dr. Sajal Kakkar",
+    "specialty": "Surgical Oncologist",
+    "designation": "Associate Director",
+    "hospital": "Max Superspecialty Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "21+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr_sajal_kakkar_df156ccfc4_1-min_1.jpg",
+    "about": "Dr. Sajal Kakkar, Associate Director at Max Superspecialty Hospital, Mohali. Specializes in Surgical Oncologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Surgical Oncologist"
+    ],
+    "awards": [
+      "Best doctor of Max Superspecialty Hospital, Mohali"
+    ],
+    "patientCount": 2000,
+    "successRate": 96.26
+  },
+  "dr-gpv-subbaiah": {
+    "id": "dr-gpv-subbaiah",
+    "name": "Dr. G.P.V Subbaiah",
+    "specialty": "Spine Surgeon",
+    "designation": "Associate Director",
+    "hospital": "Care Hospitals, HITEC City",
+    "location": "HITEC City",
+    "experience": "24+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._gpv_subbaiah-min.jpg",
+    "about": "Dr. G.P.V Subbaiah, Associate Director at Care Hospitals, HITEC City. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Care Hospitals, HITEC City"
+    ],
+    "patientCount": 5000,
+    "successRate": 99.36
+  },
+  "dr-ripen-gupta-cardiology": {
+    "id": "dr-ripen-gupta-cardiology",
+    "name": "Dr. Ripen Gupta",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality Hospital, Saket, New Delhi",
+    "location": "New Delhi",
+    "experience": "27+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ripen_gupta-min.jpg",
+    "about": "Dr. Ripen Gupta, Associate Director at Max Super Speciality Hospital, Saket, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Saket, New Delhi"
+    ],
+    "patientCount": 7000,
+    "successRate": 97.18
+  },
+  "dr-chandrashekhar": {
+    "id": "dr-chandrashekhar",
+    "name": "Dr. Chandrashekhar",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality hospital, Shalimar Bagh, New Delhi",
+    "location": "New Delhi",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._chandrashekhar-min.jpg",
+    "about": "Dr. Chandrashekhar, Associate Director at Max Super Speciality hospital, Shalimar Bagh, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality hospital, Shalimar Bagh, New Delhi"
+    ],
+    "patientCount": 9000,
+    "successRate": 97.89
+  },
+  "dr-manoj-khanal": {
+    "id": "dr-manoj-khanal",
+    "name": "Dr. Manoj Khanal",
+    "specialty": "Neurologist",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality hospital, Shalimar Bagh, New Delhi",
+    "location": "New Delhi",
+    "experience": "18+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._manoj_khanal-min.jpg",
+    "about": "Dr. Manoj Khanal, Associate Director at Max Super Speciality hospital, Shalimar Bagh, New Delhi. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality hospital, Shalimar Bagh, New Delhi"
+    ],
+    "patientCount": 3500,
+    "successRate": 96.68
+  },
+  "dr-rajesh-gupta": {
+    "id": "dr-rajesh-gupta",
+    "name": "Dr. Rajesh Gupta",
+    "specialty": "Neurosurgeon",
+    "designation": "Associate Director",
+    "hospital": "Max Super Speciality Hospital, Patparganj, New Delhi",
+    "location": "New Delhi",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rajesh_gupta-min.jpg",
+    "about": "Dr. Rajesh Gupta, Associate Director at Max Super Speciality Hospital, Patparganj, New Delhi. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Patparganj, New Delhi"
+    ],
+    "patientCount": 9000,
+    "successRate": 96.44
+  },
+  "dr-kapil-k-chattree": {
+    "id": "dr-kapil-k-chattree",
+    "name": "Dr. Kapil K Chattree",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Associate Director",
+    "hospital": "Max Superspecialty Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._kapil_k_chattree-min.jpg",
+    "about": "Dr. Kapil K Chattree, Associate Director at Max Superspecialty Hospital, Mohali. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Max Superspecialty Hospital, Mohali"
+    ],
+    "patientCount": 5000,
+    "successRate": 96.1
+  },
+  "dr-sudheer-saxena": {
+    "id": "dr-sudheer-saxena",
+    "name": "Dr. Sudheer Saxena",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Associate Director",
+    "hospital": "Max Superspecialty Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "29+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_sudheer_saxena_1-min.jpg",
+    "about": "Dr. Sudheer Saxena, Associate Director at Max Superspecialty Hospital, Mohali. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Max Superspecialty Hospital, Mohali"
+    ],
+    "patientCount": 6000,
+    "successRate": 99.35
+  },
+  "dr-sanjay-kumar-mishra": {
+    "id": "dr-sanjay-kumar-mishra",
+    "name": "Dr. Sanjay Kumar Mishra",
+    "specialty": "Neurologist",
+    "designation": "Associate Director",
+    "hospital": "Max Superspecialty Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "27+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_sanjay_mishra_1-min.jpg",
+    "about": "Dr. Sanjay Kumar Mishra, Associate Director at Max Superspecialty Hospital, Mohali. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Max Superspecialty Hospital, Mohali"
+    ],
+    "patientCount": 3000,
+    "successRate": 99.25
+  },
+  "dr-kartikeya-bhargava": {
+    "id": "dr-kartikeya-bhargava",
+    "name": "Dr. Kartikeya Bhargava",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-kartikeya-bhargava-cardiac-electrophysiologist.jpg",
+    "about": "Dr. Kartikeya Bhargava, Associate Director at Medanta - The Medicity, Gurgaon. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 500,
+    "successRate": 98.38
+  },
+  "dr-niraj-gupta": {
+    "id": "dr-niraj-gupta",
+    "name": "Dr. Niraj Gupta",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Director",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "24+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._niraj-min.jpg",
+    "about": "Dr. Niraj Gupta, Associate Director at Medanta - The Medicity, Gurgaon. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 3500,
+    "successRate": 96.96
+  },
+  "dr-jp-dhamija": {
+    "id": "dr-jp-dhamija",
+    "name": "Dr. JP Dhamija",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Professor",
+    "hospital": "Mahatma Gandhi Medical College & Hospital, Jaipur",
+    "location": "Jaipur",
+    "experience": "43+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._jp_dhamija-min.jpg",
+    "about": "Dr. JP Dhamija, Associate Professor at Mahatma Gandhi Medical College & Hospital, Jaipur. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Mahatma Gandhi Medical College & Hospital, Jaipur"
+    ],
+    "patientCount": 10000,
+    "successRate": 99.94
+  },
+  "dr-ramanand-sinha": {
+    "id": "dr-ramanand-sinha",
+    "name": "Dr. Ramanand Sinha",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Professor",
+    "hospital": "Mahatma Gandhi Medical College & Hospital, Jaipur",
+    "location": "Jaipur",
+    "experience": "18+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/sajdha-min.jpg",
+    "about": "Dr. Ramanand Sinha, Associate Professor at Mahatma Gandhi Medical College & Hospital, Jaipur. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Mahatma Gandhi Medical College & Hospital, Jaipur"
+    ],
+    "patientCount": 7500,
+    "successRate": 97.25
+  },
+  "dr-gaurav-goyal": {
+    "id": "dr-gaurav-goyal",
+    "name": "Dr. Gaurav Goyal",
+    "specialty": "Neurologist",
+    "designation": "Associate Professor",
+    "hospital": "Mahatma Gandhi Medical College & Hospital, Jaipur",
+    "location": "Jaipur",
+    "experience": "13+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/gaurav-min.jpg",
+    "about": "Dr. Gaurav Goyal, Associate Professor at Mahatma Gandhi Medical College & Hospital, Jaipur. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Mahatma Gandhi Medical College & Hospital, Jaipur"
+    ],
+    "patientCount": 7500,
+    "successRate": 96.58
+  },
+  "dr-sadanand-reddy": {
+    "id": "dr-sadanand-reddy",
+    "name": "Dr Sadanand Reddy",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Associate Professor",
+    "hospital": "Medicover Hospital, Nizamabad",
+    "location": "Nizamabad",
+    "experience": "27+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview_10.png",
+    "about": "Dr Sadanand Reddy, Associate Professor at Medicover Hospital, Nizamabad. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Medicover Hospital, Nizamabad"
+    ],
+    "patientCount": 3000,
+    "successRate": 96.36
+  },
+  "dr-anil-behl": {
+    "id": "dr-anil-behl",
+    "name": "Dr. Anil Behl",
+    "specialty": "Cosmetic Surgeon",
+    "designation": "Director",
+    "hospital": "Fortis Memorial Research Institute, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "49+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Plastic Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anil_behl_0.jpg",
+    "about": "Dr. Anil Behl, Director at Fortis Memorial Research Institute, Gurgaon. Specializes in Cosmetic Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cosmetic Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Memorial Research Institute, Gurgaon"
+    ],
+    "patientCount": 9500,
+    "successRate": 99.91
+  },
+  "dr-hitesh-garg-orthopedics": {
+    "id": "dr-hitesh-garg-orthopedics",
+    "name": "Dr. Hitesh Garg",
+    "specialty": "Spine Surgeon",
+    "designation": "HOD",
+    "hospital": "Artemis Hospital, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "23+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._hitesh_garg_-_orthopaedics_spine_surgeon-min.jpg",
+    "about": "Dr. Hitesh Garg, HOD at Artemis Hospital, Gurgaon. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Artemis Hospital, Gurgaon"
+    ],
+    "patientCount": 7500,
+    "successRate": 97.55
+  },
+  "dr-s-k-rajan-neurosurgery-spine-surgery": {
+    "id": "dr-s-k-rajan-neurosurgery-spine-surgery",
+    "name": "Dr. S K Rajan",
+    "specialty": "Spine Surgeon",
+    "designation": "HOD",
+    "hospital": "Artemis Hospital, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview70-min.png",
+    "about": "Dr. S K Rajan, HOD at Artemis Hospital, Gurgaon. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Artemis Hospital, Gurgaon"
+    ],
+    "patientCount": 2000,
+    "successRate": 98.66
+  },
+  "dr-vipul-gupta-neurointerventional-surgery": {
+    "id": "dr-vipul-gupta-neurointerventional-surgery",
+    "name": "Dr Vipul Gupta",
+    "specialty": "Spine Surgeon",
+    "designation": "Director",
+    "hospital": "Paras Hospitals, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "29+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_vipul_gupta-min.jpg",
+    "about": "Dr Vipul Gupta, Director at Paras Hospitals, Gurgaon. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Paras Hospitals, Gurgaon"
+    ],
+    "patientCount": 4000,
+    "successRate": 95.49
+  },
+  "dr-bipin-walia-neurology-neurosurgery": {
+    "id": "dr-bipin-walia-neurology-neurosurgery",
+    "name": "Dr. Bipin Walia",
+    "specialty": "Spine Surgeon",
+    "designation": "Director",
+    "hospital": "Max Super Speciality Hospital, Saket, New Delhi",
+    "location": "New Delhi",
+    "experience": "41+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._bipin_s._walia.jpg",
+    "about": "Dr. Bipin Walia, Director at Max Super Speciality Hospital, Saket, New Delhi. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Saket, New Delhi"
+    ],
+    "patientCount": 10000,
+    "successRate": 97.81
+  },
+  "dr-boga-venkatesh": {
+    "id": "dr-boga-venkatesh",
+    "name": "Dr. Boga Venkatesh",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Medicover Hospital, Karimnagar",
+    "location": "Karimnagar",
+    "experience": "11+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_boga_venkatesh.jpg",
+    "about": "Dr. Boga Venkatesh, Consultant at Medicover Hospital, Karimnagar. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Medicover Hospital, Karimnagar"
+    ],
+    "patientCount": 9000,
+    "successRate": 96.77
+  },
+  "dr-anusha-d": {
+    "id": "dr-anusha-d",
+    "name": "Dr. Anusha D",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Apollo Cancer Hospital, Chennai",
+    "location": "Chennai",
+    "experience": "17+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anusha_d.jpg",
+    "about": "Dr. Anusha D, Consultant at Apollo Cancer Hospital, Chennai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Apollo Cancer Hospital, Chennai"
+    ],
+    "patientCount": 9000,
+    "successRate": 98.3
+  },
+  "dr-arun-ed": {
+    "id": "dr-arun-ed",
+    "name": "Dr. Arun E.D.",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Apollo Specialty Hospital, OMR",
+    "location": "OMR",
+    "experience": "23+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._arul_e_d.jpg",
+    "about": "Dr. Arun E.D., Consultant at Apollo Specialty Hospital, OMR. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Specialty Hospital, OMR"
+    ],
+    "patientCount": 7000,
+    "successRate": 98.07
+  },
+  "dr-amjad-m-shaikh": {
+    "id": "dr-amjad-m-shaikh",
+    "name": "Dr. Amjad M Shaikh",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Kokilaben Dhirubhai Ambani Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._amjad_m_shaikh-min.jpg",
+    "about": "Dr. Amjad M Shaikh, Consultant at Kokilaben Dhirubhai Ambani Hospital, Mumbai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Kokilaben Dhirubhai Ambani Hospital, Mumbai"
+    ],
+    "patientCount": 7500,
+    "successRate": 97.91
+  },
+  "dr-s-venkatesh": {
+    "id": "dr-s-venkatesh",
+    "name": "Dr. S Venkatesh",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Aster RV Hospital (J P Nagar) Bangalore",
+    "location": "",
+    "experience": "34+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._venkatesh.jpg",
+    "about": "Dr. S Venkatesh, Consultant at Aster RV Hospital (J P Nagar) Bangalore. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Aster RV Hospital (J P Nagar) Bangalore"
+    ],
+    "patientCount": 3500,
+    "successRate": 95.85
+  },
+  "dr-revanur-vishwanath": {
+    "id": "dr-revanur-vishwanath",
+    "name": "Dr. Revanur Vishwanath",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Care Hospitals, Banjara Hills, Hyderabad",
+    "location": "Hyderabad",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._revanur_vishwanath-min.jpg",
+    "about": "Dr. Revanur Vishwanath, Consultant at Care Hospitals, Banjara Hills, Hyderabad. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Care Hospitals, Banjara Hills, Hyderabad"
+    ],
+    "patientCount": 4000,
+    "successRate": 96.28
+  },
+  "dr-rajneesh-kachhara": {
+    "id": "dr-rajneesh-kachhara",
+    "name": "Dr. Rajneesh Kachhara",
+    "specialty": "Spine Surgeon",
+    "designation": "Director",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "30+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rajneesh_kachhara-director_neurosurgeon.jpg",
+    "about": "Dr. Rajneesh Kachhara, Director at Medanta - The Medicity, Gurgaon. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 8500,
+    "successRate": 97.2
+  },
+  "dr-rohit-mody": {
+    "id": "dr-rohit-mody",
+    "name": "Dr. Rohit Mody",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Max Super Speciality Hospital, Bathinda",
+    "location": "Bathinda",
+    "experience": "36+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rohit_mody-min.jpg",
+    "about": "Dr. Rohit Mody, Consultant at Max Super Speciality Hospital, Bathinda. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Bathinda"
+    ],
+    "patientCount": 3000,
+    "successRate": 98.23
+  },
+  "dr-sivakumar": {
+    "id": "dr-sivakumar",
+    "name": "Dr. A. Sivakumar",
+    "specialty": "Cosmetic Surgeon",
+    "designation": "Director",
+    "hospital": "Kauvery Hospital Radial Road Chennai",
+    "location": "",
+    "experience": "30+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Plastic Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/a_sivakumar.jpg",
+    "about": "Dr. A. Sivakumar, Director at Kauvery Hospital Radial Road Chennai. Specializes in Cosmetic Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cosmetic Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Kauvery Hospital Radial Road Chennai"
+    ],
+    "patientCount": 7500,
+    "successRate": 95.76
+  },
+  "dr-pradeep-g-nayar": {
+    "id": "dr-pradeep-g-nayar",
+    "name": "Dr. Pradeep G Nayar",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Senior Consultant",
+    "hospital": "Fortis Malar Hospital ,Chennai",
+    "location": "Chennai",
+    "experience": "41+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._pradeep_g_nayar_-_interventional_cardiologist.jpg",
+    "about": "Dr. Pradeep G Nayar, Senior Consultant at Fortis Malar Hospital ,Chennai. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Malar Hospital ,Chennai"
+    ],
+    "patientCount": 2500,
+    "successRate": 98.54
+  },
+  "dr-gopal-krishna-dash": {
+    "id": "dr-gopal-krishna-dash",
+    "name": "Dr. Gopal Krishna Dash",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "NH Mazumdar Shaw Medical Centre, Bangalore",
+    "location": "Bangalore",
+    "experience": "23+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._gopal_krishna_dash.jpg",
+    "about": "Dr. Gopal Krishna Dash, Consultant at NH Mazumdar Shaw Medical Centre, Bangalore. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of NH Mazumdar Shaw Medical Centre, Bangalore"
+    ],
+    "patientCount": 1000,
+    "successRate": 98.98
+  },
+  "dr-ravindra-k-tongia": {
+    "id": "dr-ravindra-k-tongia",
+    "name": "Dr. Ravindra K Tongia",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Director",
+    "hospital": "Fortis Escorts Hospital Jaipur",
+    "location": "",
+    "experience": "54+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ravindra_k_tongia_edited-min.jpg",
+    "about": "Dr. Ravindra K Tongia, Director at Fortis Escorts Hospital Jaipur. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital Jaipur"
+    ],
+    "patientCount": 3500,
+    "successRate": 98.69
+  },
+  "dr-rajesh-taneja": {
+    "id": "dr-rajesh-taneja",
+    "name": "Dr. Rajesh Taneja",
+    "specialty": "Urologist",
+    "designation": "Senior Consultant",
+    "hospital": "Indraprastha Apollo Hospital, New Delhi",
+    "location": "New Delhi",
+    "experience": "31+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Urology",
+    "image": "https://www.vaidam.com/sites/default/files/rajesh_taneja-min.jpg",
+    "about": "Dr. Rajesh Taneja, Senior Consultant at Indraprastha Apollo Hospital, New Delhi. Specializes in Urologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Urologist"
+    ],
+    "awards": [
+      "Best doctor of Indraprastha Apollo Hospital, New Delhi"
+    ],
+    "patientCount": 5500,
+    "successRate": 95.91
+  },
+  "dr-mohit-walia": {
+    "id": "dr-mohit-walia",
+    "name": "Dr. Mohit Walia",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Senior Consultant",
+    "hospital": "Shalby Hospital, Mohali",
+    "location": "Mohali",
+    "experience": "24+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-mohit-walia-min.png",
+    "about": "Dr. Mohit Walia, Senior Consultant at Shalby Hospital, Mohali. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Shalby Hospital, Mohali"
+    ],
+    "patientCount": 5000,
+    "successRate": 95.69
+  },
+  "dr-ramneek-mahajan-orthopedics-joint-replacement": {
+    "id": "dr-ramneek-mahajan-orthopedics-joint-replacement",
+    "name": "Dr. Ramneek Mahajan",
+    "specialty": "Orthopaedic and Joint Replacement Surgeon",
+    "designation": "Director",
+    "hospital": "Max Super Speciality Hospital, Saket, New Delhi",
+    "location": "New Delhi",
+    "experience": "10+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ramneek_mahajan-min.jpeg",
+    "about": "Dr. Ramneek Mahajan, Director at Max Super Speciality Hospital, Saket, New Delhi. Specializes in Orthopaedic and Joint Replacement Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Orthopaedic and Joint Replacement Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Saket, New Delhi"
+    ],
+    "patientCount": 500,
+    "successRate": 97.15
+  },
+  "dr-pradeep-kumar-sharma": {
+    "id": "dr-pradeep-kumar-sharma",
+    "name": "Dr. Pradeep Kumar Sharma",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Ivy Hospital Mohali",
+    "location": "",
+    "experience": "11+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._pradeep-min_3.jpg",
+    "about": "Dr. Pradeep Kumar Sharma, Consultant at Ivy Hospital Mohali. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Ivy Hospital Mohali"
+    ],
+    "patientCount": 9000,
+    "successRate": 97.5
+  },
+  "dr-siddharth-kharkar": {
+    "id": "dr-siddharth-kharkar",
+    "name": "Dr. Siddharth Kharkar",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Nanavati Super Specialty Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "25+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._siddharth_kharkar-min.jpg",
+    "about": "Dr. Siddharth Kharkar, Consultant at Nanavati Super Specialty Hospital, Mumbai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Nanavati Super Specialty Hospital, Mumbai"
+    ],
+    "patientCount": 9500,
+    "successRate": 99.21
+  },
+  "dr-komal-prasad": {
+    "id": "dr-komal-prasad",
+    "name": "Dr. Komal Prasad",
+    "specialty": "Spine Surgeon",
+    "designation": "Senior Consultant",
+    "hospital": "NH Mazumdar Shaw Medical Centre, Bangalore",
+    "location": "Bangalore",
+    "experience": "24+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._dr._komal_prasadellur.jpg",
+    "about": "Dr. Komal Prasad, Senior Consultant at NH Mazumdar Shaw Medical Centre, Bangalore. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of NH Mazumdar Shaw Medical Centre, Bangalore"
+    ],
+    "patientCount": 1000,
+    "successRate": 95.56
+  },
+  "dr-v-k-jain-neurosurgery": {
+    "id": "dr-v-k-jain-neurosurgery",
+    "name": "Dr. V. K. Jain",
+    "specialty": "Neurosurgeon",
+    "designation": "Director",
+    "hospital": "Max Super Speciality Hospital, Saket, New Delhi",
+    "location": "New Delhi",
+    "experience": "50+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_v_k_jain_-_neurosurgeon-min.jpeg",
+    "about": "Dr. V. K. Jain, Director at Max Super Speciality Hospital, Saket, New Delhi. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Max Super Speciality Hospital, Saket, New Delhi"
+    ],
+    "patientCount": 2000,
+    "successRate": 95.17
+  },
+  "dr-k-r-suresh-bapu": {
+    "id": "dr-k-r-suresh-bapu",
+    "name": "Dr. K R Suresh Bapu",
+    "specialty": "Neurosurgeon",
+    "designation": "Director",
+    "hospital": "SIMS Hospital, Vadapalani, Chennai",
+    "location": "Chennai",
+    "experience": "49+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._k_r_suresh_bapu_-_neurosurgeon-min.jpg",
+    "about": "Dr. K R Suresh Bapu, Director at SIMS Hospital, Vadapalani, Chennai. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of SIMS Hospital, Vadapalani, Chennai"
+    ],
+    "patientCount": 10000,
+    "successRate": 98.82
+  },
+  "dr-subhash-jangid": {
+    "id": "dr-subhash-jangid",
+    "name": "Dr. Subhash Jangid",
+    "specialty": "Orthopaedic and Joint Replacement Surgeon",
+    "designation": "Director",
+    "hospital": "Fortis Memorial Research Institute, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "25+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics",
+    "image": "https://www.vaidam.com/sites/default/files/subhashjangid-gurgaon-7c8d42.jpg",
+    "about": "Dr. Subhash Jangid, Director at Fortis Memorial Research Institute, Gurgaon. Specializes in Orthopaedic and Joint Replacement Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Orthopaedic and Joint Replacement Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Memorial Research Institute, Gurgaon"
+    ],
+    "patientCount": 2500,
+    "successRate": 95.46
+  },
+  "dr-rajesh-kumar-verma": {
+    "id": "dr-rajesh-kumar-verma",
+    "name": "Dr. Rajesh Kumar Verma",
+    "specialty": "Spine Surgeon",
+    "designation": "Director",
+    "hospital": "Sanar International Hospital",
+    "location": "",
+    "experience": "27+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rajesh-min_0.jpg",
+    "about": "Dr. Rajesh Kumar Verma, Director at Sanar International Hospital. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Sanar International Hospital"
+    ],
+    "patientCount": 2500,
+    "successRate": 99.53
+  },
+  "dr-vikas-dua-pediatrician-hematologist": {
+    "id": "dr-vikas-dua-pediatrician-hematologist",
+    "name": "Dr. Vikas Dua",
+    "specialty": "Pediatric Hematologist",
+    "designation": "Director",
+    "hospital": "Fortis Memorial Research Institute, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "22+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr_vikas_dua-min.png",
+    "about": "Dr. Vikas Dua, Director at Fortis Memorial Research Institute, Gurgaon. Specializes in Pediatric Hematologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Pediatric Hematologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Memorial Research Institute, Gurgaon"
+    ],
+    "patientCount": 8000,
+    "successRate": 99.71
+  },
+  "dr-abdul-muniem": {
+    "id": "dr-abdul-muniem",
+    "name": "Dr. Abdul Muniem",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._abdul_0.jpg",
+    "about": "Dr. Abdul Muniem, Consultant at Medanta - The Medicity, Gurgaon. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 7500,
+    "successRate": 97.91
+  },
+  "dr-thiruthani-kumaran-m-m": {
+    "id": "dr-thiruthani-kumaran-m-m",
+    "name": "Dr. Thiruthani Kumaran M M",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "ANOVA Institute for Regenerative Medicine",
+    "location": "",
+    "experience": "16+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._thiruthani_kumaran_m_m.jpg",
+    "about": "Dr. Thiruthani Kumaran M M, Consultant at ANOVA Institute for Regenerative Medicine. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of ANOVA Institute for Regenerative Medicine"
+    ],
+    "patientCount": 5500,
+    "successRate": 99.88
+  },
+  "dr-shanmugasundaram-d": {
+    "id": "dr-shanmugasundaram-d",
+    "name": "Dr. Shanmugasundaram D",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Apollo Specialty Hospital, OMR",
+    "location": "OMR",
+    "experience": "28+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._shanmugasundaram_d-min.png",
+    "about": "Dr. Shanmugasundaram D, Consultant at Apollo Specialty Hospital, OMR. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Specialty Hospital, OMR"
+    ],
+    "patientCount": 9000,
+    "successRate": 98.62
+  },
+  "dr-minal-v-kekatpure": {
+    "id": "dr-minal-v-kekatpure",
+    "name": "Dr. Minal V. Kekatpure",
+    "specialty": "Paediatric Neurologist",
+    "designation": "Senior Consultant",
+    "hospital": "Narayana Multispeciality Hospital, Bangalore",
+    "location": "Bangalore",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MD in Paediatrics, DM in Paediatric Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._minal_v._kekatpure_-_pediatric_neurologist.jpg",
+    "about": "Dr. Minal V. Kekatpure, Senior Consultant at Narayana Multispeciality Hospital, Bangalore. Specializes in Paediatric Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Paediatric Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Narayana Multispeciality Hospital, Bangalore"
+    ],
+    "patientCount": 7000,
+    "successRate": 98.39
+  },
+  "dr-selvapandian-s": {
+    "id": "dr-selvapandian-s",
+    "name": "Dr. Selvapandian S",
+    "specialty": "Neurosurgeon",
+    "designation": "Consultant",
+    "hospital": "Apollo Specialty Hospitals, Vanagaram",
+    "location": "Vanagaram",
+    "experience": "25+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/5_1.jpg",
+    "about": "Dr. Selvapandian S, Consultant at Apollo Specialty Hospitals, Vanagaram. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Specialty Hospitals, Vanagaram"
+    ],
+    "patientCount": 8500,
+    "successRate": 99.12
+  },
+  "dr-chandar-mohan-batra": {
+    "id": "dr-chandar-mohan-batra",
+    "name": "Dr. Chandar Mohan Batra",
+    "specialty": "Endocrinologist",
+    "designation": "Senior Consultant",
+    "hospital": "Indraprastha Apollo Hospital, New Delhi",
+    "location": "New Delhi",
+    "experience": "34+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr._chandar_mohan_batra-min.jpg",
+    "about": "Dr. Chandar Mohan Batra, Senior Consultant at Indraprastha Apollo Hospital, New Delhi. Specializes in Endocrinologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Endocrinologist"
+    ],
+    "awards": [
+      "Best doctor of Indraprastha Apollo Hospital, New Delhi"
+    ],
+    "patientCount": 5500,
+    "successRate": 95.97
+  },
+  "dr-vikas-tandon": {
+    "id": "dr-vikas-tandon",
+    "name": "Dr. Vikas Tandon",
+    "specialty": "Spine Surgeon",
+    "designation": "Senior Consultant",
+    "hospital": "Indian Spinal Injuries Center, New Delhi",
+    "location": "New Delhi",
+    "experience": "25+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._vikas_tandon-min_0.jpg",
+    "about": "Dr. Vikas Tandon, Senior Consultant at Indian Spinal Injuries Center, New Delhi. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Indian Spinal Injuries Center, New Delhi"
+    ],
+    "patientCount": 10000,
+    "successRate": 97.12
+  },
+  "dr-udgeath-dhir": {
+    "id": "dr-udgeath-dhir",
+    "name": "Dr. Udgeath Dhir",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Director",
+    "hospital": "Fortis Memorial Research Institute, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._udgeath_dhir-removebg-preview-min.png",
+    "about": "Dr. Udgeath Dhir, Director at Fortis Memorial Research Institute, Gurgaon. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Memorial Research Institute, Gurgaon"
+    ],
+    "patientCount": 2000,
+    "successRate": 98.22
+  },
+  "dr-suhail-naseem-bukhari": {
+    "id": "dr-suhail-naseem-bukhari",
+    "name": "Dr. Suhail Naseem Bukhari",
+    "specialty": "Vascular Surgeon",
+    "designation": "Director",
+    "hospital": "BLK-Max Super Speciality Hospital Delhi",
+    "location": "",
+    "experience": "22+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr._suhail_naseem_bukhari.jpg",
+    "about": "Dr. Suhail Naseem Bukhari, Director at BLK-Max Super Speciality Hospital Delhi. Specializes in Vascular Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Vascular Surgeon"
+    ],
+    "awards": [
+      "Best doctor of BLK-Max Super Speciality Hospital Delhi"
+    ],
+    "patientCount": 9000,
+    "successRate": 99.67
+  },
+  "dr-kaustubh-patel": {
+    "id": "dr-kaustubh-patel",
+    "name": "Dr. Kaustubh Patel",
+    "specialty": "Surgical Oncologist",
+    "designation": "Senior Consultant",
+    "hospital": "HCG Cancer Centre, Ahmedabad",
+    "location": "Ahmedabad",
+    "experience": "50+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr-kaustubh-patel.jpg",
+    "about": "Dr. Kaustubh Patel, Senior Consultant at HCG Cancer Centre, Ahmedabad. Specializes in Surgical Oncologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Surgical Oncologist"
+    ],
+    "awards": [
+      "Best doctor of HCG Cancer Centre, Ahmedabad"
+    ],
+    "patientCount": 7000,
+    "successRate": 97.85
+  },
+  "dr-manoj-kumar-goel-pulmonology-and-sleep-medicine": {
+    "id": "dr-manoj-kumar-goel-pulmonology-and-sleep-medicine",
+    "name": "Dr. Manoj Kumar Goel",
+    "specialty": "Pulmonologist",
+    "designation": "Director",
+    "hospital": "Fortis Memorial Research Institute, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "36+ Years Experience",
+    "education": "MBBS, MD in Respiratory Medicine",
+    "image": "https://www.vaidam.com/sites/default/webp/50/files/dr._manoj_kumar_goel-removebg-preview-min.webp",
+    "about": "Dr. Manoj Kumar Goel, Director at Fortis Memorial Research Institute, Gurgaon. Specializes in Pulmonologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Pulmonologist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Memorial Research Institute, Gurgaon"
+    ],
+    "patientCount": 2000,
+    "successRate": 97.53
+  },
+  "dr-arun-saroha-neurosurgery": {
+    "id": "dr-arun-saroha-neurosurgery",
+    "name": "Dr. Arun Saroha",
+    "specialty": "Neurosurgeon",
+    "designation": "Director",
+    "hospital": "Max Super Specialty Hospital, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "29+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview45-min.png",
+    "about": "Dr. Arun Saroha, Director at Max Super Specialty Hospital, Gurgaon. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Max Super Specialty Hospital, Gurgaon"
+    ],
+    "patientCount": 7500,
+    "successRate": 99.03
+  },
+  "dr-mihir-bapat": {
+    "id": "dr-mihir-bapat",
+    "name": "Dr. Mihir Bapat",
+    "specialty": "Spine Surgeon",
+    "designation": "Director",
+    "hospital": "Nanavati Super Specialty Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "27+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._mihir_bapat_-_spine_surgeon-min.jpg",
+    "about": "Dr. Mihir Bapat, Director at Nanavati Super Specialty Hospital, Mumbai. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Nanavati Super Specialty Hospital, Mumbai"
+    ],
+    "patientCount": 10000,
+    "successRate": 98.58
+  },
+  "dr-ashok-vaid-leukemia-bone-marrow-transplant": {
+    "id": "dr-ashok-vaid-leukemia-bone-marrow-transplant",
+    "name": "Dr. Ashok Vaid",
+    "specialty": "Medical Oncologist",
+    "designation": "Consultant",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "41+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Medical Oncology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ashok_vaid_-_medical_oncologist-min.jpg",
+    "about": "Dr. Ashok Vaid, Consultant at Medanta - The Medicity, Gurgaon. Specializes in Medical Oncologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Medical Oncologist"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 1000,
+    "successRate": 97.3
+  },
+  "dr-gururaj-m": {
+    "id": "dr-gururaj-m",
+    "name": "Dr. Gururaj Sangondimath",
+    "specialty": "Spine Surgeon",
+    "designation": "Senior Consultant",
+    "hospital": "Indian Spinal Injuries Center, New Delhi",
+    "location": "New Delhi",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._gururaj-min.jpg",
+    "about": "Dr. Gururaj Sangondimath, Senior Consultant at Indian Spinal Injuries Center, New Delhi. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Indian Spinal Injuries Center, New Delhi"
+    ],
+    "patientCount": 3000,
+    "successRate": 98.27
+  },
+  "dr-senthilnathan-j": {
+    "id": "dr-senthilnathan-j",
+    "name": "Dr. Senthilnathan J",
+    "specialty": "Neurologist",
+    "designation": "Consultant",
+    "hospital": "Kauvery Hospital Formely Fortis Hospital, Vadapalani",
+    "location": "Vadapalani",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_senthilnathan.jpg",
+    "about": "Dr. Senthilnathan J, Consultant at Kauvery Hospital Formely Fortis Hospital, Vadapalani. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Kauvery Hospital Formely Fortis Hospital, Vadapalani"
+    ],
+    "patientCount": 4500,
+    "successRate": 96.32
+  },
+  "dr-raghu-m-g": {
+    "id": "dr-raghu-m-g",
+    "name": "Dr. Raghu M G",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Narayana Institute of Cardiac Sciences, Bangalore",
+    "location": "Bangalore",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._raghu_m_g_-_cardiac_surgeon.jpg",
+    "about": "Dr. Raghu M G, Consultant at Narayana Institute of Cardiac Sciences, Bangalore. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Narayana Institute of Cardiac Sciences, Bangalore"
+    ],
+    "patientCount": 9000,
+    "successRate": 99.14
+  },
+  "dr-rana-serbjeet-singh": {
+    "id": "dr-rana-serbjeet-singh",
+    "name": "Dr. Rana Serbjeet Singh",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Manipal Hospital, Saltlake",
+    "location": "Saltlake",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._rana_serbjeet_singh-min.png",
+    "about": "Dr. Rana Serbjeet Singh, Consultant at Manipal Hospital, Saltlake. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Manipal Hospital, Saltlake"
+    ],
+    "patientCount": 5000,
+    "successRate": 96.38
+  },
+  "dr-narendra-agarwal": {
+    "id": "dr-narendra-agarwal",
+    "name": "Dr. Narendra Agarwal",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Fortis Memorial Research Institute, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "11+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview68-min.png",
+    "about": "Dr. Narendra Agarwal, Consultant at Fortis Memorial Research Institute, Gurgaon. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Memorial Research Institute, Gurgaon"
+    ],
+    "patientCount": 4500,
+    "successRate": 96.46
+  },
+  "dr-nilesh-maru": {
+    "id": "dr-nilesh-maru",
+    "name": "Dr. Nilesh Maru",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Senior Consultant",
+    "hospital": "Reliance Hospitals, Navi Mumbai",
+    "location": "Navi Mumbai",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_nilesh_maru.jpg",
+    "about": "Dr. Nilesh Maru, Senior Consultant at Reliance Hospitals, Navi Mumbai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Reliance Hospitals, Navi Mumbai"
+    ],
+    "patientCount": 6000,
+    "successRate": 99.56
+  },
+  "dr-aliasgar-behrainwala": {
+    "id": "dr-aliasgar-behrainwala",
+    "name": "Dr. Aliasgar Behrainwala",
+    "specialty": "Cardiac Surgeon",
+    "designation": "HOD",
+    "hospital": "Saifee Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "30+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._aliasgar_behrainwala_-_cardiovascular_and_cardiothoracic_surgeon_1.jpg",
+    "about": "Dr. Aliasgar Behrainwala, HOD at Saifee Hospital, Mumbai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Saifee Hospital, Mumbai"
+    ],
+    "patientCount": 5000,
+    "successRate": 98.66
+  },
+  "dr-cibi-issac": {
+    "id": "dr-cibi-issac",
+    "name": "Dr. Cibi Issac",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "VPS Lakeshore Hospital, Kochi",
+    "location": "Kochi",
+    "experience": "19+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._cibi_issac_-_interventional_cardiologist.jpg",
+    "about": "Dr. Cibi Issac, Consultant at VPS Lakeshore Hospital, Kochi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of VPS Lakeshore Hospital, Kochi"
+    ],
+    "patientCount": 6500,
+    "successRate": 99.07
+  },
+  "dr-vijay-mohan-kohli": {
+    "id": "dr-vijay-mohan-kohli",
+    "name": "Dr. Vijay Mohan Kohli",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Senior Consultant",
+    "hospital": "Pushpawati Singhania Research Institute, New Delhi",
+    "location": "New Delhi",
+    "experience": "40+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_vijay_mohan_kohli_0.jpg",
+    "about": "Dr. Vijay Mohan Kohli, Senior Consultant at Pushpawati Singhania Research Institute, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Pushpawati Singhania Research Institute, New Delhi"
+    ],
+    "patientCount": 7000,
+    "successRate": 99.77
+  },
+  "dr-r-r-kasliwal": {
+    "id": "dr-r-r-kasliwal",
+    "name": "Dr. R. R. Kasliwal",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Chairman",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "50+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._r._r._kasliwal-chairman_cardiologist.jpg",
+    "about": "Dr. R. R. Kasliwal, Chairman at Medanta - The Medicity, Gurgaon. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 9500,
+    "successRate": 98.63
+  },
+  "dr-sanjay-kumar-neurosurgeon": {
+    "id": "dr-sanjay-kumar-neurosurgeon",
+    "name": "Dr. Sanjay Kumar",
+    "specialty": "Spine Surgeon",
+    "designation": "Chairman",
+    "hospital": "Bhagwan Mahavir Medica Superspecialty Hospital, Ranchi",
+    "location": "Ranchi",
+    "experience": "28+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_sanjay_0.jpg",
+    "about": "Dr. Sanjay Kumar, Chairman at Bhagwan Mahavir Medica Superspecialty Hospital, Ranchi. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Bhagwan Mahavir Medica Superspecialty Hospital, Ranchi"
+    ],
+    "patientCount": 4000,
+    "successRate": 98.21
+  },
+  "dr-charudutt-apte": {
+    "id": "dr-charudutt-apte",
+    "name": "Dr. Charudutt Apte",
+    "specialty": "Neurosurgeon",
+    "designation": "Chairman",
+    "hospital": "Sahyadri Speciality Hospital Pune",
+    "location": "",
+    "experience": "31+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._charudutt_apte-min.jpg",
+    "about": "Dr. Charudutt Apte, Chairman at Sahyadri Speciality Hospital Pune. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Sahyadri Speciality Hospital Pune"
+    ],
+    "patientCount": 500,
+    "successRate": 99.03
+  },
+  "dr-pradeep-sharma": {
+    "id": "dr-pradeep-sharma",
+    "name": "Dr. Pradeep Sharma",
+    "specialty": "Orthopaedic and Joint Replacement Surgeon",
+    "designation": "Chairman",
+    "hospital": "Indian Spinal Injuries Center, New Delhi",
+    "location": "New Delhi",
+    "experience": "33+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics",
+    "image": "https://www.vaidam.com/sites/default/files/dr.-pradeep-sharma.jpg",
+    "about": "Dr. Pradeep Sharma, Chairman at Indian Spinal Injuries Center, New Delhi. Specializes in Orthopaedic and Joint Replacement Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Orthopaedic and Joint Replacement Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Indian Spinal Injuries Center, New Delhi"
+    ],
+    "patientCount": 500,
+    "successRate": 96.31
+  },
+  "dr-rajiv-parakh-vascular-surgery": {
+    "id": "dr-rajiv-parakh-vascular-surgery",
+    "name": "Dr. Rajiv Parakh",
+    "specialty": "Vascular Surgeon",
+    "designation": "Chairman",
+    "hospital": "Medanta - The Medicity, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "42+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/webp/50/files/dr_rajiv_parakh.webp",
+    "about": "Dr. Rajiv Parakh, Chairman at Medanta - The Medicity, Gurgaon. Specializes in Vascular Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Vascular Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Medanta - The Medicity, Gurgaon"
+    ],
+    "patientCount": 10000,
+    "successRate": 96.81
+  },
+  "dr-kunal-hazari": {
+    "id": "dr-kunal-hazari",
+    "name": "Dr. Kunal Hazari",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Chairman",
+    "hospital": "Bhagwan Mahavir Medica Superspecialty Hospital, Ranchi",
+    "location": "Ranchi",
+    "experience": "23+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_kunal_0.jpg",
+    "about": "Dr. Kunal Hazari, Chairman at Bhagwan Mahavir Medica Superspecialty Hospital, Ranchi. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Bhagwan Mahavir Medica Superspecialty Hospital, Ranchi"
+    ],
+    "patientCount": 3000,
+    "successRate": 98.03
+  },
+  "dr-kunal-sarkar": {
+    "id": "dr-kunal-sarkar",
+    "name": "Dr. Kunal Sarkar",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Chairman",
+    "hospital": "Medica Superspecialty Hospital",
+    "location": "",
+    "experience": "28+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/kunal-sarkar-500x460.jpg",
+    "about": "Dr. Kunal Sarkar, Chairman at Medica Superspecialty Hospital. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Medica Superspecialty Hospital"
+    ],
+    "patientCount": 4000,
+    "successRate": 99.82
+  },
+  "dr-prakash-p-kotwal": {
+    "id": "dr-prakash-p-kotwal",
+    "name": "Dr. Prakash P kotwal",
+    "specialty": "Spine Surgeon",
+    "designation": "Chairman",
+    "hospital": "Pushpawati Singhania Research Institute, New Delhi",
+    "location": "New Delhi",
+    "experience": "43+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/kotwal.jpg",
+    "about": "Dr. Prakash P kotwal, Chairman at Pushpawati Singhania Research Institute, New Delhi. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Pushpawati Singhania Research Institute, New Delhi"
+    ],
+    "patientCount": 7000,
+    "successRate": 97.25
+  },
+  "dr-purvez-grant": {
+    "id": "dr-purvez-grant",
+    "name": "Dr. Purvez Grant",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Chairman",
+    "hospital": "Ruby Hall Clinic, Pune",
+    "location": "Pune",
+    "experience": "33+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview_-_2021-11-26t130014.615-min.png",
+    "about": "Dr. Purvez Grant, Chairman at Ruby Hall Clinic, Pune. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Ruby Hall Clinic, Pune"
+    ],
+    "patientCount": 7500,
+    "successRate": 96.24
+  },
+  "dr-ashok-bhanage": {
+    "id": "dr-ashok-bhanage",
+    "name": "Dr Ashok Bhanage",
+    "specialty": "Neurosurgeon",
+    "designation": "Chairman",
+    "hospital": "Ruby Hall Clinic, Pune",
+    "location": "Pune",
+    "experience": "38+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview_-_2021-11-30t125341.786-min.png",
+    "about": "Dr Ashok Bhanage, Chairman at Ruby Hall Clinic, Pune. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Ruby Hall Clinic, Pune"
+    ],
+    "patientCount": 500,
+    "successRate": 95.4
+  },
+  "dr-purshotam-lal": {
+    "id": "dr-purshotam-lal",
+    "name": "Dr. Purshotam Lal",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Chairman",
+    "hospital": "Metro Hospital and Heart Institute, Noida Sector 13",
+    "location": "Noida Sector 13",
+    "experience": "46+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._purshotam-min.jpg",
+    "about": "Dr. Purshotam Lal, Chairman at Metro Hospital and Heart Institute, Noida Sector 13. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Metro Hospital and Heart Institute, Noida Sector 13"
+    ],
+    "patientCount": 6000,
+    "successRate": 95.76
+  },
+  "dr-manmohan-singh-neurosurgeon": {
+    "id": "dr-manmohan-singh-neurosurgeon",
+    "name": "Dr. Manmohan Singh",
+    "specialty": "Neurosurgeon",
+    "designation": "Chairman",
+    "hospital": "Paras Hospitals, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "23+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr_manmohan_singh-min.jpg",
+    "about": "Dr. Manmohan Singh, Chairman at Paras Hospitals, Gurgaon. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Paras Hospitals, Gurgaon"
+    ],
+    "patientCount": 6500,
+    "successRate": 95.8
+  },
+  "dr-mahesh-wadhwani": {
+    "id": "dr-mahesh-wadhwani",
+    "name": "Dr. Mahesh  Wadhwani",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Chief",
+    "hospital": "Fortis Hospital, Manesar, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._mahesh-min.jpg",
+    "about": "Dr. Mahesh  Wadhwani, Chief at Fortis Hospital, Manesar, Gurgaon. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Hospital, Manesar, Gurgaon"
+    ],
+    "patientCount": 10000,
+    "successRate": 95.39
+  },
+  "dr-anil-kumar-mulpur": {
+    "id": "dr-anil-kumar-mulpur",
+    "name": "Dr. Anil Kumar Mulpur",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Chief",
+    "hospital": "KIMS Hospital Kondapur, Hyderabad",
+    "location": "Hyderabad",
+    "experience": "29+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._anil-min_1.jpg",
+    "about": "Dr. Anil Kumar Mulpur, Chief at KIMS Hospital Kondapur, Hyderabad. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of KIMS Hospital Kondapur, Hyderabad"
+    ],
+    "patientCount": 1000,
+    "successRate": 99.52
+  },
+  "dr-p-n-rao": {
+    "id": "dr-p-n-rao",
+    "name": "Dr. P. N. Rao",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Chief",
+    "hospital": "Sunshine Hospitals, Hyderabad",
+    "location": "Hyderabad",
+    "experience": "29+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._p_n_rao-min.jpg",
+    "about": "Dr. P. N. Rao, Chief at Sunshine Hospitals, Hyderabad. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Sunshine Hospitals, Hyderabad"
+    ],
+    "patientCount": 10000,
+    "successRate": 95.25
+  },
+  "dr-balbir-kalra": {
+    "id": "dr-balbir-kalra",
+    "name": "Dr. Balbir Kalra",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Chief",
+    "hospital": "Artemis Hospital, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "26+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-balbir-kalra.jpeg",
+    "about": "Dr. Balbir Kalra, Chief at Artemis Hospital, Gurgaon. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Artemis Hospital, Gurgaon"
+    ],
+    "patientCount": 7500,
+    "successRate": 98.67
+  },
+  "dr-sai-sudhakar": {
+    "id": "dr-sai-sudhakar",
+    "name": "Dr. Sai Sudhakar",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Chief",
+    "hospital": "Gleneagles Hospital, Lakdikapul, Hyderabad",
+    "location": "Hyderabad",
+    "experience": "24+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/drsaisudhakar.jpg",
+    "about": "Dr. Sai Sudhakar, Chief at Gleneagles Hospital, Lakdikapul, Hyderabad. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Gleneagles Hospital, Lakdikapul, Hyderabad"
+    ],
+    "patientCount": 7500,
+    "successRate": 95.18
+  },
+  "dr-rahul-mehrotra": {
+    "id": "dr-rahul-mehrotra",
+    "name": "Dr. Rahul Mehrotra",
+    "specialty": "Cardiology",
+    "designation": "Chief",
+    "hospital": "Artemis Hospital, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "24+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview75-min.png",
+    "about": "Dr. Rahul Mehrotra, Chief at Artemis Hospital, Gurgaon. Specializes in Cardiology and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiology"
+    ],
+    "awards": [
+      "Best doctor of Artemis Hospital, Gurgaon"
+    ],
+    "patientCount": 7500,
+    "successRate": 98.91
+  },
+  "dr-ganesh-kumar-av": {
+    "id": "dr-ganesh-kumar-av",
+    "name": "Dr. Ganesh Kumar AV",
+    "specialty": "Cardiology",
+    "designation": "Chief",
+    "hospital": "Dr. L H Hiranandani Hospital, Mumbai",
+    "location": "Mumbai",
+    "experience": "20+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr_ganesh_av_1-min.jpg",
+    "about": "Dr. Ganesh Kumar AV, Chief at Dr. L H Hiranandani Hospital, Mumbai. Specializes in Cardiology and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiology"
+    ],
+    "awards": [
+      "Best doctor of Dr. L H Hiranandani Hospital, Mumbai"
+    ],
+    "patientCount": 6000,
+    "successRate": 99.74
+  },
+  "dr-ravi-kumar-aluri": {
+    "id": "dr-ravi-kumar-aluri",
+    "name": "Dr. Ravi Kumar Aluri",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Chief",
+    "hospital": "KIMS Hospital Kondapur, Hyderabad",
+    "location": "Hyderabad",
+    "experience": "26+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ravi-min_2.jpg",
+    "about": "Dr. Ravi Kumar Aluri, Chief at KIMS Hospital Kondapur, Hyderabad. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of KIMS Hospital Kondapur, Hyderabad"
+    ],
+    "patientCount": 500,
+    "successRate": 95.85
+  },
+  "dr-upendra-kaul-cardiology": {
+    "id": "dr-upendra-kaul-cardiology",
+    "name": "Dr. Upendra Kaul",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Chief",
+    "hospital": "Batra Hospital & Medical Research Centre, New Delhi",
+    "location": "New Delhi",
+    "experience": "44+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr-upendra-kaul-cardiology.jpg",
+    "about": "Dr. Upendra Kaul, Chief at Batra Hospital & Medical Research Centre, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Batra Hospital & Medical Research Centre, New Delhi"
+    ],
+    "patientCount": 5500,
+    "successRate": 96.87
+  },
+  "dr-ramesh-arora": {
+    "id": "dr-ramesh-arora",
+    "name": "Dr. Ramesh Arora",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Chief",
+    "hospital": "Metro Hospital & Cancer Institute, Preet Vihar, New Delhi",
+    "location": "New Delhi",
+    "experience": "44+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ramesh_arora-min.jpg",
+    "about": "Dr. Ramesh Arora, Chief at Metro Hospital & Cancer Institute, Preet Vihar, New Delhi. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Metro Hospital & Cancer Institute, Preet Vihar, New Delhi"
+    ],
+    "patientCount": 3000,
+    "successRate": 97.54
+  },
+  "dr-ksankara-subramanian": {
+    "id": "dr-ksankara-subramanian",
+    "name": "Dr. K.Sankara Subramanian",
+    "specialty": "Neurologist",
+    "designation": "Chief",
+    "hospital": "Billroth Hospital, Chennai",
+    "location": "Chennai",
+    "experience": "18+ Years Experience",
+    "education": "MBBS, MD in Neurology, DM in Neurology",
+    "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview_-_2021-10-19t185359.814-min.png",
+    "about": "Dr. K.Sankara Subramanian, Chief at Billroth Hospital, Chennai. Specializes in Neurologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurologist"
+    ],
+    "awards": [
+      "Best doctor of Billroth Hospital, Chennai"
+    ],
+    "patientCount": 9500,
+    "successRate": 95.78
+  },
+  "dr-mazhar-husain": {
+    "id": "dr-mazhar-husain",
+    "name": "Dr. Mazhar Husain",
+    "specialty": "Neurosurgeon",
+    "designation": "Chief",
+    "hospital": "Sahara Hospital Lucknow",
+    "location": "",
+    "experience": "36+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._mazhar_husain-min.jpg",
+    "about": "Dr. Mazhar Husain, Chief at Sahara Hospital Lucknow. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Sahara Hospital Lucknow"
+    ],
+    "patientCount": 500,
+    "successRate": 99.69
+  },
+  "dr-n-k-venkataramana": {
+    "id": "dr-n-k-venkataramana",
+    "name": "Dr. N. K. Venkataramana",
+    "specialty": "Neurosurgeon",
+    "designation": "Chief",
+    "hospital": "Brains Neuro Spine Centre, Bangalore",
+    "location": "Bangalore",
+    "experience": "38+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._n._k._venkataramana.jpg",
+    "about": "Dr. N. K. Venkataramana, Chief at Brains Neuro Spine Centre, Bangalore. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Brains Neuro Spine Centre, Bangalore"
+    ],
+    "patientCount": 4000,
+    "successRate": 97.75
+  },
+  "dr-ishwarchand-premsagar": {
+    "id": "dr-ishwarchand-premsagar",
+    "name": "Dr. Ishwarchand Premsagar",
+    "specialty": "Neurosurgeon",
+    "designation": "Chief",
+    "hospital": "Rajiv Gandhi Cancer Institute and Research Centre, New Delhi",
+    "location": "New Delhi",
+    "experience": "32+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ishwarchand-min.jpg",
+    "about": "Dr. Ishwarchand Premsagar, Chief at Rajiv Gandhi Cancer Institute and Research Centre, New Delhi. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Rajiv Gandhi Cancer Institute and Research Centre, New Delhi"
+    ],
+    "patientCount": 4500,
+    "successRate": 98.02
+  },
+  "prof-anupam-wakhlu": {
+    "id": "prof-anupam-wakhlu",
+    "name": "Prof. Anupam Wakhlu",
+    "specialty": "Rheumatologist",
+    "designation": "Chief",
+    "hospital": "Apollo Medics Super Speciality Hospital, Lucknow",
+    "location": "Lucknow",
+    "experience": "31+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Rheumatology",
+    "image": "https://www.vaidam.com/sites/default/files/prof._anupam_wakhlu-min.jpg",
+    "about": "Prof. Anupam Wakhlu, Chief at Apollo Medics Super Speciality Hospital, Lucknow. Specializes in Rheumatologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Rheumatologist"
+    ],
+    "awards": [
+      "Best doctor of Apollo Medics Super Speciality Hospital, Lucknow"
+    ],
+    "patientCount": 5000,
+    "successRate": 97.38
+  },
+  "dr-h-s-chhabra-spine-surgeries": {
+    "id": "dr-h-s-chhabra-spine-surgeries",
+    "name": "Dr. H. S. Chhabra",
+    "specialty": "Spine Surgeon",
+    "designation": "Chief",
+    "hospital": "Sri Balaji Action Medical Institute New Delhi",
+    "location": "",
+    "experience": "38+ Years Experience",
+    "education": "MBBS, MS in Orthopaedics, Fellowship in Spine Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._hs_chabra-min.jpg",
+    "about": "Dr. H. S. Chhabra, Chief at Sri Balaji Action Medical Institute New Delhi. Specializes in Spine Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Spine Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Sri Balaji Action Medical Institute New Delhi"
+    ],
+    "patientCount": 8000,
+    "successRate": 95.67
+  },
+  "dr-ravi-s-batra": {
+    "id": "dr-ravi-s-batra",
+    "name": "Dr. Ravi S. Batra",
+    "specialty": "Dentist",
+    "designation": "Consultant",
+    "hospital": "Fortis Memorial Research Institute, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "22+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr._ravi_s._batra-min.jpg",
+    "about": "Dr. Ravi S. Batra, Consultant at Fortis Memorial Research Institute, Gurgaon. Specializes in Dentist and known for expertise in complex procedures.",
+    "expertise": [
+      "Dentist"
+    ],
+    "awards": [
+      "Best doctor of Fortis Memorial Research Institute, Gurgaon"
+    ],
+    "patientCount": 10000,
+    "successRate": 98.75
+  },
+  "dr-parul-gupta-khanna": {
+    "id": "dr-parul-gupta-khanna",
+    "name": "Dr. Parul Gupta Khanna",
+    "specialty": "Infertility Specialist",
+    "designation": "Consultant",
+    "hospital": "Nova IVF Fertility, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "9+ Years Experience",
+    "education": "MBBS",
+    "image": "https://www.vaidam.com/sites/default/files/dr._parul_gupta_1.png",
+    "about": "Dr. Parul Gupta Khanna, Consultant at Nova IVF Fertility, Gurgaon. Specializes in Infertility Specialist and known for expertise in complex procedures.",
+    "expertise": [
+      "Infertility Specialist"
+    ],
+    "awards": [
+      "Best doctor of Nova IVF Fertility, Gurgaon"
+    ],
+    "patientCount": 4000,
+    "successRate": 99.1
+  },
+  "dr-sumit-sinha": {
+    "id": "dr-sumit-sinha",
+    "name": "Dr. Sumit Sinha",
+    "specialty": "Neurosurgeon",
+    "designation": "Director",
+    "hospital": "Paras Hospitals, Gurgaon",
+    "location": "Gurgaon",
+    "experience": "31+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr.-sumit-sinha-neurosurgeon.jpg",
+    "about": "Dr. Sumit Sinha, Director at Paras Hospitals, Gurgaon. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Paras Hospitals, Gurgaon"
+    ],
+    "patientCount": 6500,
+    "successRate": 97.81
+  },
+  "dr-anupam-mehrotra": {
+    "id": "dr-anupam-mehrotra",
+    "name": "Dr. Anupam Mehrotra",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Chandan Hospital, Lucknow",
+    "location": "Lucknow",
+    "experience": "14+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_anupam.jpg",
+    "about": "Dr. Anupam Mehrotra, Consultant at Chandan Hospital, Lucknow. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Chandan Hospital, Lucknow"
+    ],
+    "patientCount": 9500,
+    "successRate": 95.34
+  },
+  "dr-sudhir-suryakant-shetkar": {
+    "id": "dr-sudhir-suryakant-shetkar",
+    "name": "Dr. Sudhir Suryakant Shetkar",
+    "specialty": "Interventional Cardiologist",
+    "designation": "Consultant",
+    "hospital": "Medicover Hospitals, Nashik",
+    "location": "Nashik",
+    "experience": "15+ Years Experience",
+    "education": "MBBS, MD in Internal Medicine, DM in Cardiology, Fellowship in Interventional Cardiology",
+    "image": "https://www.vaidam.com/sites/default/files/dr_sudhir_suryakant_shetkar.png",
+    "about": "Dr. Sudhir Suryakant Shetkar, Consultant at Medicover Hospitals, Nashik. Specializes in Interventional Cardiologist and known for expertise in complex procedures.",
+    "expertise": [
+      "Interventional Cardiologist"
+    ],
+    "awards": [
+      "Best doctor of Medicover Hospitals, Nashik"
+    ],
+    "patientCount": 10000,
+    "successRate": 95.53
+  },
+  "dr-kamal-verma-neurosurgery": {
+    "id": "dr-kamal-verma-neurosurgery",
+    "name": "Dr. Kamal Verma",
+    "specialty": "Neurosurgeon",
+    "designation": "Director",
+    "hospital": "Fortis Escorts Hospital, Faridabad",
+    "location": "Faridabad",
+    "experience": "20+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Neurosurgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._kamal_verma-min.jpg",
+    "about": "Dr. Kamal Verma, Director at Fortis Escorts Hospital, Faridabad. Specializes in Neurosurgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Neurosurgeon"
+    ],
+    "awards": [
+      "Best doctor of Fortis Escorts Hospital, Faridabad"
+    ],
+    "patientCount": 1500,
+    "successRate": 97.78
+  },
+  "dr-charudatta-chaudhari": {
+    "id": "dr-charudatta-chaudhari",
+    "name": "Dr. Charudatta Chaudhari",
+    "specialty": "Aesthetics and Plastic Surgeon",
+    "designation": "Consultant",
+    "hospital": "Apollo Hospitals, Mumbai",
+    "location": "Mumbai",
+    "experience": "35+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Plastic Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/charudutt_chaudhari.jpg",
+    "about": "Dr. Charudatta Chaudhari, Consultant at Apollo Hospitals, Mumbai. Specializes in Aesthetics and Plastic Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Aesthetics and Plastic Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Hospitals, Mumbai"
+    ],
+    "patientCount": 9000,
+    "successRate": 99.17
+  },
+  "dr-kshitij-dubey": {
+    "id": "dr-kshitij-dubey",
+    "name": "Dr. Kshitij Dubey",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Apollo Hospital, Indore",
+    "location": "Indore",
+    "experience": "22+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._kshitij_dubey.jpg",
+    "about": "Dr. Kshitij Dubey, Consultant at Apollo Hospital, Indore. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Hospital, Indore"
+    ],
+    "patientCount": 7000,
+    "successRate": 98.83
+  },
+  "dr-rahul-r-gupta": {
+    "id": "dr-rahul-r-gupta",
+    "name": "Dr. Rahul R Gupta",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Apollo Hospitals, Mumbai",
+    "location": "Mumbai",
+    "experience": "21+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/rahul_gupta.jpg",
+    "about": "Dr. Rahul R Gupta, Consultant at Apollo Hospitals, Mumbai. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Apollo Hospitals, Mumbai"
+    ],
+    "patientCount": 9500,
+    "successRate": 96.5
+  },
+  "dr-divakar-bhat": {
+    "id": "dr-divakar-bhat",
+    "name": "Dr. Divakar Bhat",
+    "specialty": "Cardiac Surgeon",
+    "designation": "Consultant",
+    "hospital": "Aster RV Hospital (J P Nagar) Bangalore",
+    "location": "",
+    "experience": "34+ Years Experience",
+    "education": "MBBS, MS in General Surgery, MCh in Cardiac Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/divakar_1-min.jpg",
+    "about": "Dr. Divakar Bhat, Consultant at Aster RV Hospital (J P Nagar) Bangalore. Specializes in Cardiac Surgeon and known for expertise in complex procedures.",
+    "expertise": [
+      "Cardiac Surgeon"
+    ],
+    "awards": [
+      "Best doctor of Aster RV Hospital (J P Nagar) Bangalore"
+    ],
+    "patientCount": 1000,
+    "successRate": 96.9
   }
 };
 
