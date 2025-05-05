@@ -668,7 +668,7 @@ const Doctors = () => {
       "specialty": "paediatric neurologist",
       "designation": "consultant",
       "hospital": "saifee hospital, mumbai",
-      "city": "unknown",
+      "city": "Mumbai",
       "experience": "38+ Yrs",
       "image": "https://www.vaidam.com/sites/default/files/dr._vrajesh_udani_-_pediatric_neurologist.jpg",
       "path": "/doctors/dr-vrajesh-udani"
