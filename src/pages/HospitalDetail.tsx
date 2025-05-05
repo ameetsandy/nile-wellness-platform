@@ -30,7 +30,7 @@ const HospitalDetail = () => {
             established: 2011,
             description: "Aakash Healthcare Super Speciality Hospital is a state-of-the-art multi-specialty hospital in Dwarka, New Delhi. With 200 beds and advanced medical infrastructure, it provides comprehensive healthcare services with a focus on patient-centric care.",
             image: "/images/hospitals/aakash-healthcare.jpg",
-            logo: "https://placehold.co/200x100/white/gray/?text=Aakash",
+            logo: "https://www.vaidam.com/sites/default/files/main_image-min_14.jpg",
             internationalPatients: 2000,
             beds: 200,
             doctors: 150,
@@ -1917,11 +1917,6 @@ const HospitalDetail = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                       <div className="lg:col-span-2">
                         <div className="bg-white rounded-xl shadow-md overflow-hidden">
-                          <img 
-                            src={hospital.image}
-                            alt={hospital.name}
-                            className="w-full h-64 object-cover"
-                          />
                           <div className="p-6">
                             <h2 className="text-2xl font-semibold mb-4">About {hospital.name}</h2>
                             <p className="text-gray-700 mb-6">{hospital.description}</p>
