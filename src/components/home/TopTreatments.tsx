@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -56,7 +55,7 @@ const TopTreatments = () => {
 
   return (
     <section className="section-container bg-gray-50">
-      <h2 className="section-title">Most Searched Treatments in India</h2>
+      <h2 className="section-title">Affordable & Advanced Treatments Across Specialties in India</h2>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
         {treatments.map((treatment, index) => (
