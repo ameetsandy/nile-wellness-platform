@@ -14,6 +14,45 @@ const Hero = () => {
     window.location.href = "tel:+911234567890"; // Replace with actual phone number
   };
 
+  const flags = [
+    { code: 'bd', name: 'Bangladesh' },
+    { code: 'bh', name: 'Bahrain' },
+    { code: 'cd', name: 'DR Congo' },
+    { code: 'cm', name: 'Cameroon' },
+    { code: 'dj', name: 'Djibouti' },
+    { code: 'et', name: 'Ethiopia' },
+    { code: 'gh', name: 'Ghana' },
+    { code: 'iq', name: 'Iraq' },
+    { code: 'ke', name: 'Kenya' },
+    { code: 'kg', name: 'Kyrgyzstan' },
+    { code: 'kz', name: 'Kazakhstan' },
+    { code: 'lk', name: 'Sri Lanka' },
+    { code: 'mg', name: 'Madagascar' },
+    { code: 'mm', name: 'Myanmar' },
+    { code: 'mn', name: 'Mongolia' },
+    { code: 'mu', name: 'Mauritius' },
+    { code: 'mv', name: 'Maldives' },
+    { code: 'mw', name: 'Malawi' },
+    { code: 'mz', name: 'Mozambique' },
+    { code: 'ng', name: 'Nigeria' },
+    { code: 'om', name: 'Oman' },
+    { code: 'rw', name: 'Rwanda' },
+    { code: 'sa', name: 'Saudi Arabia' },
+    { code: 'sc', name: 'Seychelles' },
+    { code: 'sd', name: 'Sudan' },
+    { code: 'so', name: 'Somalia' },
+    { code: 'ss', name: 'South Sudan' },
+    { code: 'td', name: 'Chad' },
+    { code: 'tj', name: 'Tajikistan' },
+    { code: 'tm', name: 'Turkmenistan' },
+    { code: 'tz', name: 'Tanzania' },
+    { code: 'ug', name: 'Uganda' },
+    { code: 'uz', name: 'Uzbekistan' },
+    { code: 'ye', name: 'Yemen' },
+    { code: 'zm', name: 'Zambia' },
+    { code: 'zw', name: 'Zimbabwe' }
+  ];
+
   return (
     <div className="bg-gradient-to-r from-medical-50 to-nile-50 pt-20 pb-24 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -21,7 +60,6 @@ const Hero = () => {
           <div className="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0 text-left">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
               Get Free Medical Opinion from India's Top Doctors
-              <span className="block text-nile-600 mt-2">With Govt. Verified Support</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-xl">
               Fast, Affordable, and Trusted Medical Care in India for International Patients.
@@ -80,20 +118,36 @@ const Hero = () => {
           <div className="lg:w-1/2 relative">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden">
               <img 
-                src="https://i.ibb.co/q3D41rJ3/Untitled-design-15.png" 
+                src="https://i.ibb.co/N2J8jPZX/Untitled-design-16.png" 
                 alt="Happy recovered Black patient with smiling doctor" 
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -left-6 bg-nile-600 text-white py-3 px-5 rounded-lg shadow-lg text-sm">
-              Trusted by 1000+ International Patients
-            </div>
-            <div className="absolute -top-6 -right-6 bg-white rounded-full p-3 shadow-lg flex items-center justify-center">
-              <div className="text-center">
-                <span className="block text-nile-600 font-bold text-lg">70%</span>
-                <span className="text-xs text-gray-600">Cost Savings</span>
+          </div>
+        </div>
+
+        {/* Static Text Strip */}
+        <div className="mt-8 bg-gradient-to-r from-nile-600 to-nile-700 text-white py-4 px-6 rounded-lg shadow-lg">
+          <div className="flex items-center justify-center">
+            <span className="text-xl font-semibold tracking-wide">
+              Get 2X the Difference If You Find a Lower Treatment Cost in India
+            </span>
+          </div>
+        </div>
+
+        {/* Country Flags Grid */}
+        <div className="mt-8 bg-white rounded-lg shadow-md p-6">
+          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-4">
+            {flags.map((flag, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <img 
+                  src={`https://flagcdn.com/w40/${flag.code}.png`} 
+                  alt={flag.name} 
+                  className="h-8 w-auto shadow-sm hover:shadow-md transition-shadow duration-300"
+                />
+                <span className="text-xs text-gray-600 mt-1">{flag.name}</span>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
