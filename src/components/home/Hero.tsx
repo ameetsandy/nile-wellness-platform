@@ -80,7 +80,7 @@ const Hero = () => {
           <div className="lg:w-1/2 relative">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden">
               <img 
-                src="https://i.ibb.co/Q3Vp56zs/Home-Page-Image.jpg" 
+                src="https://i.ibb.co/q3D41rJ3/Untitled-design-15.png" 
                 alt="Happy recovered Black patient with smiling doctor" 
                 className="w-full h-auto object-cover"
               />
