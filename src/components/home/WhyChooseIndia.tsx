@@ -4,7 +4,7 @@ import { Award, DollarSign, Plane } from "lucide-react";
 const WhyChooseIndia = () => {
   return (
     <section className="section-container">
-      <h2 className="section-title">India Offers World-Class Treatment – At 70% Lower Cost</h2>
+      <h2 className="section-title">India Offers World-Class Treatment At 70% Lower Cost</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
         <div className="bg-white rounded-lg p-8 shadow-md flex flex-col items-center text-center">
