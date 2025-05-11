@@ -2330,7 +2330,7 @@ const Doctors = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">{doctor.experience}</span>
+                    <span className="text-sm font-medium block text-center">{doctor.experience} Exp</span>
                   </div>
                 </div>
                 
