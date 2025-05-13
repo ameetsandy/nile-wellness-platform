@@ -118,8 +118,8 @@ const Hero = () => {
           <div className="lg:w-1/2 relative">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden">
               <img 
-                src="https://i.ibb.co/N2J8jPZX/Untitled-design-16.png" 
-                alt="Happy recovered Black patient with smiling doctor" 
+                src="https://i.ibb.co/x8zpphL7/Chat-GPT-Image-May-12-2025-06-53-29-AM.png" 
+                alt="Fast, Affordable, and Trusted Medical Care in India" 
                 className="w-full h-auto object-cover"
               />
             </div>

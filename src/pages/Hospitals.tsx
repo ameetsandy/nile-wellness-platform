@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 import { Search, Filter, Star, MapPin, Building, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { hospitals, categories, cities } from "@/data/hospitals";
 
 // Utility function to generate random star rating between 4 and 5
 const generateStarRating = () => {
@@ -15,402 +16,7 @@ const Hospitals = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("");
   const [city, setCity] = useState("");
-
-  const hospitals = [
-    {
-      id: 1,
-      name: "Aakash Healthcare Super Speciality Hospital, Dwarka, New Delhi",
-      location: "New Delhi",
-      category: "Multi Specialty",
-      accreditation: "NABH",
-      founded: 2011,
-      beds: 200,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/main_image-min_14.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Aakash",
-      path: "/hospitals/aakash-healthcare-super-speciality-hospital-dwarka-new-delhi-new-delhi"
-    },
-    {
-      id: 2,
-      name: "Aditya Birla Memorial Hospital, Pune",
-      location: "Pune",
-      category: "Multi Specialty",
-      accreditation: "JCI, NABH",
-      founded: 2006,
-      beds: 500,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/aditya_birla_memorial_hospital_pune_building-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Aditya+Birla",
-      path: "/hospitals/aditya-birla-memorial-hospital-pune-pune"
-    },
-    {
-      id: 3,
-      name: "Advance Fertility and Gynaecology Centre, New Delhi",
-      location: "New Delhi",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 2011,
-      beds: 0,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/advanced_fertility_center_-dr_kaberi_banerjee-_new_delhi.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Advance",
-      path: "/hospitals/advance-fertility-and-gynaecology-centre-new-delhi-new-delhi"
-    },
-    {
-      id: 4,
-      name: "Ahalia Ayurveda Hospital, Kerala , Palakkad",
-      location: "Palakkad",
-      category: "Multi Specialty",
-      accreditation: "JCI, NABH",
-      founded: 1984,
-      beds: 100,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/ahalia_ayurveda_hospital_kerala.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Ahalia",
-      path: "/hospitals/ahalia-ayurveda-hospital-kerala--palakkad-palakkad"
-    },
-    {
-      id: 5,
-      name: "Ajanta Hospital & IVF Centre Pvt. Ltd. , Lucknow",
-      location: "Lucknow",
-      category: "Multi Specialty",
-      accreditation: "NABH",
-      founded: 2004,
-      beds: 141,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/ajanta_hospital_building-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Ajanta",
-      path: "/hospitals/ajanta-hospital--ivf-centre-pvt-ltd--lucknow-lucknow"
-    },
-    {
-      id: 6,
-      name: "Alexis Multispeciality Hospital, Nagpur",
-      location: "Nagpur",
-      category: "Multi Specialty",
-      accreditation: "JCI",
-      founded: 2016,
-      beds: 200,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/alexis_profile-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Alexis",
-      path: "/hospitals/alexis-multispeciality-hospital-nagpur-nagpur"
-    },
-    {
-      id: 7,
-      name: "Alive Wellness Clinics, New Delhi",
-      location: "New Delhi",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 1997,
-      beds: 0,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/alive-wellness-list-image-min.png",
-      logo: "https://placehold.co/200x100/white/gray/?text=Alive",
-      path: "/hospitals/alive-wellness-clinics-new-delhi-new-delhi"
-    },
-    {
-      id: 8,
-      name: "Amandeep Hospital, Amritsar",
-      location: "Amritsar",
-      category: "Multi Specialty",
-      accreditation: "NABH",
-      founded: 1990,
-      beds: 500,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/amandeep_hospital_amritsar_0.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Amandeep",
-      path: "/hospitals/amandeep-hospital-amritsar-amritsar"
-    },
-    {
-      id: 9,
-      name: "Amandeep Hospital, Pathankot",
-      location: "Pathankot",
-      category: "Multi Specialty",
-      accreditation: "NABH",
-      founded: 2015,
-      beds: 200,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/amandeep_hospital_pathankot_building-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Amandeep",
-      path: "/hospitals/amandeep-hospital-pathankot-pathankot"
-    },
-    {
-      id: 10,
-      name: "Amandeep Medicity Hospital Amritsar",
-      location: "Amritsar",
-      category: "Multi Specialty",
-      accreditation: "NABH",
-      founded: 1990,
-      beds: 500,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/amandeep_medicity_building1-min.png",
-      logo: "https://placehold.co/200x100/white/gray/?text=Amandeep",
-      path: "/hospitals/amandeep-medicity-hospital-amritsar-amritsar"
-    },
-    {
-      id: 11,
-      name: "AMRI Hospitals, Southern Avenue , Kolkata",
-      location: "Kolkata",
-      category: "Multi Specialty",
-      accreditation: "NABH",
-      founded: 2002,
-      beds: 0,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/southern_avenue.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=AMRI",
-      path: "/hospitals/amri-hospitals-southern-avenue--kolkata-kolkata"
-    },
-    {
-      id: 12,
-      name: "Amrita Hospital, Faridabad",
-      location: "Faridabad",
-      category: "Multi Specialty",
-      accreditation: "nan",
-      founded: 2022,
-      beds: 2600,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/amrita_hospital_building_1.png",
-      logo: "https://placehold.co/200x100/white/gray/?text=Amrita",
-      path: "/hospitals/amrita-hospital-faridabad-faridabad"
-    },
-    {
-      id: 13,
-      name: "Amrita Institute of Medical Sciences and Research Centre, Kochi",
-      location: "Kochi",
-      category: "Super Specialty",
-      accreditation: "NABH, NABL",
-      founded: 1998,
-      beds: 1450,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/amrita_institute_of_medical_sciences_and_research_centre_kochi-home.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Amrita",
-      path: "/hospitals/amrita-institute-of-medical-sciences-and-research-centre-kochi-kochi"
-    },
-    {
-      id: 14,
-      name: "Apex Super Specialty Hospital, Varanasi",
-      location: "Varanasi",
-      category: "Super Specialty",
-      accreditation: "NABH",
-      founded: 1988,
-      beds: 200,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apex-hospital-varanasi-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apex",
-      path: "/hospitals/apex-super-specialty-hospital-varanasi-varanasi"
-    },
-    {
-      id: 15,
-      name: "Apollo Adlux Hospital, Angamaly",
-      location: "Angamaly",
-      category: "Multi Specialty",
-      accreditation: "JCI",
-      founded: 1983,
-      beds: 300,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_adlux_hospital-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-adlux-hospital-angamaly-angamaly"
-    },
-    {
-      id: 16,
-      name: "Apollo Cancer Hospital, Chennai",
-      location: "Chennai",
-      category: "Single Specialty",
-      accreditation: "NABH",
-      founded: 1970,
-      beds: 300,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_cancer_hospital_chennai_list_image-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-cancer-hospital-chennai-chennai"
-    },
-    {
-      id: 17,
-      name: "Apollo Children's Hospital, Chennai  , Chennai",
-      location: "Chennai",
-      category: "Multi Specialty",
-      accreditation: "NABH",
-      founded: 2009,
-      beds: 70,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/anyconv.com_apollo_list_image-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-childrens-hospital-chennai---chennai-chennai"
-    },
-    {
-      id: 18,
-      name: "Apollo Cosmetic Clinic, MRC Nagar , Chennai",
-      location: "Chennai",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 1970,
-      beds: 47,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_cosmetic_clinic_mrc_nagar_list_image-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-cosmetic-clinic-mrc-nagar--chennai-chennai"
-    },
-    {
-      id: 19,
-      name: "Apollo Cradle & Children's Hospital, Jayanagar , Bangalore",
-      location: "Bangalore",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 2013,
-      beds: 28,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_cradle_childrens_hospital_jayanagar_reception-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-cradle--childrens-hospital-jayanagar--bangalore-bangalore"
-    },
-    {
-      id: 20,
-      name: "Apollo Cradle & Children's Hospital, Koramangala , Bangalore",
-      location: "Bangalore",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 1970,
-      beds: 31,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_cradle_childrens_hospital_koramangala_building1-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-cradle--childrens-hospital-koramangala--bangalore-bangalore"
-    },
-    {
-      id: 21,
-      name: "Apollo Cradle & Children's Hospital, Moti Nagar , New Delhi",
-      location: "New Delhi",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 2015,
-      beds: 59,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_cradle_childrens_hospital_koramangala_building1-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-cradle--childrens-hospital-moti-nagar--new-delhi-new-delhi"
-    },
-    {
-      id: 22,
-      name: "Apollo Cradle and Apollo Women's Hospitals, Chennai",
-      location: "Chennai",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 1970,
-      beds: 50,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_cradle_childrens_hospital_moti_nagar_building-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-cradle-and-apollo-womens-hospitals-chennai-chennai"
-    },
-    {
-      id: 23,
-      name: "Apollo Cradle Maternity & Children's Hospital, Nehru Place , New Delhi",
-      location: "New Delhi",
-      category: "Multi Specialty",
-      accreditation: "nan",
-      founded: 1970,
-      beds: 42,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/anyconv.com_apollo_cradle_and_apollo_womens_hospitals_thousand_lights_list_image-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-cradle-maternity--childrens-hospital-jubilee-hills--hyderabad-hyderabad"
-    },
-    {
-      id: 24,
-      name: "Apollo Cradle Maternity & Children's Hospital Jubilee Hills , Hyderabad",
-      location: "Hyderabad",
-      category: "Multi Specialty",
-      accreditation: "nan",
-      founded: 1970,
-      beds: 0,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_cradle_maternity_childrens_hospital_nehru_place_outside-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-cradle-maternity-hospital-kondapur--hyderabad-hyderabad"
-    },
-    {
-      id: 25,
-      name: "Apollo Cradle Maternity Hospital, Kondapur , Hyderabad",
-      location: "Hyderabad",
-      category: "Multi Specialty",
-      accreditation: "nan",
-      founded: 1970,
-      beds: 0,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/building_apollo_cradle_jubilee_hills_hyderabad.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-fertility-banjara-hills--hyderabad-hyderabad"
-    },
-    {
-      id: 26,
-      name: "Apollo Fertility Banjara Hills , Hyderabad",
-      location: "Hyderabad",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 1970,
-      beds: 0,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/main_building_apollo_cradle_maternity_hospital_kondapur.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-fertility-banjara-hills--hyderabad-hyderabad"
-    },
-    {
-      id: 27,
-      name: "Apollo Fertility Center, Lajpat Nagar , New Delhi",
-      location: "New Delhi",
-      category: "Super Specialty",
-      accreditation: "nan",
-      founded: 2015,
-      beds: 0,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/main_building_apollo_fertility_banjara_hills_hyderabad.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-fertility-center-lajpat-nagar--new-delhi-new-delhi"
-    },
-    {
-      id: 28,
-      name: "Apollo Fertility Centre, Anna Nagar, Chennai",
-      location: "Chennai",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 2016,
-      beds: 75,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_profile-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-fertility-centre-anna-nagar-chennai-chennai"
-    },
-    {
-      id: 29,
-      name: "Apollo Fertility Centre, Kolkata (Gobra) , Kolkata",
-      location: "Kolkata",
-      category: "Single Specialty",
-      accreditation: "JCI, NABH",
-      founded: 2018,
-      beds: 0,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_fertility_anna_nagar_list_image-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-fertility-centre-kolkata-gobra--kolkata-kolkata"
-    },
-    {
-      id: 30,
-      name: "Apollo Fertility, Borivali , Mumbai",
-      location: "Mumbai",
-      category: "Single Specialty",
-      accreditation: "nan",
-      founded: 2021,
-      beds: 0,
-      rating: generateStarRating(),
-      image: "https://www.vaidam.com/sites/default/files/apollo_kolkoata_image_view-min.jpg",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-fertility-borivali--mumbai-mumbai"
-    }
-  ];
-
-  const categories = ["Multi Speciality", "Super Speciality", "Single Speciality"];
-  const cities = ["Delhi", "Mumbai", "Gurgaon", "Chennai", "Bangalore", "Hyderabad"];
+  const [visibleHospitals, setVisibleHospitals] = useState(30);
 
   const filteredHospitals = hospitals.filter(hospital => {
     const matchesSearch = hospital.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -426,6 +32,13 @@ const Hospitals = () => {
     
     return matchesSearch && matchesCategory && matchesCity;
   });
+
+  const displayedHospitals = filteredHospitals.slice(0, visibleHospitals);
+  const hasMoreHospitals = visibleHospitals < filteredHospitals.length;
+
+  const loadMoreHospitals = () => {
+    setVisibleHospitals(prev => prev + 30);
+  };
 
   // Function to render star rating
   const renderStarRating = (rating: number) => {
@@ -474,6 +87,7 @@ const Hospitals = () => {
     setSearchTerm("");
     setCategory("");
     setCity("");
+    setVisibleHospitals(30);
   };
 
   return (
@@ -544,7 +158,7 @@ const Hospitals = () => {
           
           {/* Hospitals Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredHospitals.map((hospital) => (
+            {displayedHospitals.map((hospital) => (
               <div 
                 key={hospital.id}
                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full"
@@ -617,6 +231,18 @@ const Hospitals = () => {
               <p className="text-gray-500 mb-4">Try changing your search criteria</p>
               <Button onClick={resetFilters}>
                 Reset Filters
+              </Button>
+            </div>
+          )}
+
+          {/* Show More Button */}
+          {hasMoreHospitals && (
+            <div className="mt-12 text-center">
+              <Button 
+                onClick={loadMoreHospitals}
+                className="cta-secondary"
+              >
+                Show More Hospitals <ArrowRight className="ml-1 h-4 w-4" />
               </Button>
             </div>
           )}
