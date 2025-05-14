@@ -1,4 +1,3 @@
-
 import { Award, DollarSign, Plane } from "lucide-react";
 
 const WhyChooseIndia = () => {
@@ -8,8 +7,8 @@ const WhyChooseIndia = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
         <div className="bg-white rounded-lg p-8 shadow-md flex flex-col items-center text-center">
-          <div className="bg-medical-50 p-4 rounded-full mb-6">
-            <Award className="h-12 w-12 text-medical-600" />
+          <div className="bg-nile-50 p-4 rounded-full mb-6">
+            <Award className="h-12 w-12 text-nile-600" />
           </div>
           <h3 className="text-xl font-semibold mb-4">Global Quality</h3>
           <p className="text-gray-600">
@@ -17,15 +16,15 @@ const WhyChooseIndia = () => {
           </p>
           <ul className="mt-4 text-left space-y-2">
             <li className="flex items-start">
-              <span className="text-medical-600 mr-2">•</span>
+              <span className="text-nile-600 mr-2">•</span>
               <span>US/UK trained specialists</span>
             </li>
             <li className="flex items-start">
-              <span className="text-medical-600 mr-2">•</span>
+              <span className="text-nile-600 mr-2">•</span>
               <span>International accreditations</span>
             </li>
             <li className="flex items-start">
-              <span className="text-medical-600 mr-2">•</span>
+              <span className="text-nile-600 mr-2">•</span>
               <span>Latest medical equipment</span>
             </li>
           </ul>
@@ -56,8 +55,8 @@ const WhyChooseIndia = () => {
         </div>
         
         <div className="bg-white rounded-lg p-8 shadow-md flex flex-col items-center text-center">
-          <div className="bg-medical-50 p-4 rounded-full mb-6">
-            <Plane className="h-12 w-12 text-medical-600" />
+          <div className="bg-nile-50 p-4 rounded-full mb-6">
+            <Plane className="h-12 w-12 text-nile-600" />
           </div>
           <h3 className="text-xl font-semibold mb-4">Easy Travel</h3>
           <p className="text-gray-600">
@@ -65,15 +64,15 @@ const WhyChooseIndia = () => {
           </p>
           <ul className="mt-4 text-left space-y-2">
             <li className="flex items-start">
-              <span className="text-medical-600 mr-2">•</span>
+              <span className="text-nile-600 mr-2">•</span>
               <span>Fast medical visa assistance</span>
             </li>
             <li className="flex items-start">
-              <span className="text-medical-600 mr-2">•</span>
+              <span className="text-nile-600 mr-2">•</span>
               <span>Airport pickup & accommodation</span>
             </li>
             <li className="flex items-start">
-              <span className="text-medical-600 mr-2">•</span>
+              <span className="text-nile-600 mr-2">•</span>
               <span>Translators in multiple languages</span>
             </li>
           </ul>
