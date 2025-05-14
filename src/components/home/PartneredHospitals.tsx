@@ -88,7 +88,7 @@ const PartneredHospitals = () => {
 
   return (
     <section className="section-container">
-      <h2 className="section-title">Partnered with India's Best Hospitals</h2>
+      <h2 className="section-title">We’ve Negotiated Special Rates with the Best Hospitals in India</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {hospitals.map((hospital) => (
