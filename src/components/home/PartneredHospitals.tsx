@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Building, Star } from "lucide-react";
+import { hospitals as allHospitals } from "@/data/hospitals";
 
 // Utility function to generate random star rating between 4 and 5
 const generateStarRating = () => {
@@ -7,41 +8,7 @@ const generateStarRating = () => {
 };
 
 const PartneredHospitals = () => {
-  const hospitals = [
-    {
-      id: 1,
-      name: "Apollo Hospitals",
-      location: "Chennai",
-      category: "Super Speciality",
-      accreditation: "JCI",
-      rating: generateStarRating(),
-      image: "https://placehold.co/600x400/medical-600/white/?text=Apollo+Hospitals",
-      logo: "https://placehold.co/200x100/white/gray/?text=Apollo",
-      path: "/hospitals/apollo-chennai"
-    },
-    {
-      id: 2,
-      name: "Medanta Hospital",
-      location: "Gurgaon",
-      category: "Multi Speciality",
-      accreditation: "NABH",
-      rating: generateStarRating(),
-      image: "https://placehold.co/600x400/medical-600/white/?text=Medanta+Hospital",
-      logo: "https://placehold.co/200x100/white/gray/?text=Medanta",
-      path: "/hospitals/medanta-gurgaon"
-    },
-    {
-      id: 3,
-      name: "Fortis Healthcare",
-      location: "Mumbai",
-      category: "Super Speciality",
-      accreditation: "JCI",
-      rating: generateStarRating(),
-      image: "https://placehold.co/600x400/medical-600/white/?text=Fortis+Healthcare",
-      logo: "https://placehold.co/200x100/white/gray/?text=Fortis",
-      path: "/hospitals/fortis-mumbai"
-    }
-  ];
+  const hospitals = allHospitals.slice(0, 3);
 
   // Function to render star rating
   const renderStarRating = (rating: number) => {
@@ -88,7 +55,7 @@ const PartneredHospitals = () => {
 
   return (
     <section className="section-container">
-      <h2 className="section-title">We’ve Negotiated Special Rates with the Best Hospitals in India</h2>
+      <h2 className="section-title">We've Negotiated Special Rates with the Best Hospitals in India</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {hospitals.map((hospital) => (
