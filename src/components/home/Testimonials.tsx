@@ -46,7 +46,7 @@ const Testimonials = () => {
 
   return (
     <section className="section-container">
-      <h2 className="section-title">What Our Patients Say</h2>
+      <h2 className="section-title">What Our Patients Say About Nile Wellness</h2>
       
       <div className="mt-10 relative">
         <div className="max-w-4xl mx-auto">
