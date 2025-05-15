@@ -144,12 +144,168 @@ const AllTreatments = () => {
           </div>
         </section>
 
-        {/* Treatment Categories */}
+        {/* Popular Treatments */}
         <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">Most Popular Medical Procedures</h2>
+            <div className="relative max-w-7xl mx-auto">
+              {/* Arrow Buttons (overlapping cards) */}
+              <button
+                type="button"
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white shadow-md rounded-full p-2 border border-gray-200"
+                style={{ left: '-20px' }}
+                aria-label="Scroll left"
+                onClick={() => {
+                  document.getElementById('popular-treatments-scroll')?.scrollBy({ left: -350, behavior: 'smooth' });
+                }}
+              >
+                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left text-nile-600"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button
+                type="button"
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white shadow-md rounded-full p-2 border border-gray-200"
+                style={{ right: '-20px' }}
+                aria-label="Scroll right"
+                onClick={() => {
+                  document.getElementById('popular-treatments-scroll')?.scrollBy({ left: 350, behavior: 'smooth' });
+                }}
+              >
+                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right text-nile-600"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              {/* Horizontal Scrollable Treatments */}
+              <div
+                id="popular-treatments-scroll"
+                className="flex overflow-x-auto gap-8 scroll-smooth pb-4 hide-scrollbar"
+                style={{ scrollSnapType: 'x mandatory' }}
+              >
+                {/* Treatment Cards - previous style restored */}
+                {[
+                  {
+                    name: 'Heart Bypass Surgery',
+                    path: '/treatments/heart-bypass',
+                    icon: <Heart className="h-5 w-5 text-red-500" />,
+                    desc: 'Restore blood flow to your heart with world-class cardiac care at a fraction of Western costs.',
+                    save: 'Save up to 90%'
+                  },
+                  {
+                    name: 'Knee Replacement',
+                    path: '/treatments/knee-replacement',
+                    icon: <Bone className="h-5 w-5 text-amber-600" />,
+                    desc: 'Regain mobility and relieve pain with advanced joint replacement surgery by top orthopedic surgeons.',
+                    save: 'Save up to 85%'
+                  },
+                  {
+                    name: 'Hip Replacement',
+                    path: '/treatments/hip-replacement',
+                    icon: <Bone className="h-5 w-5 text-amber-600" />,
+                    desc: 'Get back to active living with minimally invasive hip replacement by leading specialists.',
+                    save: 'Save up to 80%'
+                  },
+                  {
+                    name: 'Knee & Hip Replacement',
+                    path: '/treatments/knee-hip-replacement',
+                    icon: <Bone className="h-5 w-5 text-amber-600" />,
+                    desc: 'Comprehensive joint replacement solutions for knees and hips with rapid recovery.',
+                    save: 'Save up to 80%'
+                  },
+                  {
+                    name: 'Cancer Treatment',
+                    path: '/treatments/cancer-treatment',
+                    icon: <Microscope className="h-5 w-5 text-purple-600" />,
+                    desc: 'Advanced cancer care including surgery, chemotherapy, and radiation at top oncology centers.',
+                    save: 'Save up to 75%'
+                  },
+                  {
+                    name: 'Kidney Transplant',
+                    path: '/treatments/kidney-transplant',
+                    icon: <Activity className="h-5 w-5 text-green-600" />,
+                    desc: 'Expert kidney transplant programs with high success rates and affordable packages.',
+                    save: 'Save up to 80%'
+                  },
+                  {
+                    name: 'Liver Transplant',
+                    path: '/treatments/liver-transplant',
+                    icon: <Activity className="h-5 w-5 text-green-600" />,
+                    desc: 'Life-saving liver transplants with world-class surgeons and comprehensive care.',
+                    save: 'Save up to 80%'
+                  },
+                  {
+                    name: 'Kidney & Liver Transplant',
+                    path: '/treatments/kidney-liver-transplant',
+                    icon: <Activity className="h-5 w-5 text-green-600" />,
+                    desc: 'Combined kidney and liver transplant programs for complex cases.',
+                    save: 'Save up to 80%'
+                  },
+                  {
+                    name: 'Spine Surgery',
+                    path: '/treatments/spine-surgery',
+                    icon: <Bone className="h-5 w-5 text-indigo-600" />,
+                    desc: 'Minimally invasive and advanced spine surgeries for pain relief and mobility.',
+                    save: 'Save up to 75%'
+                  },
+                  {
+                    name: 'Brain Surgery',
+                    path: '/treatments/brain-surgery',
+                    icon: <Brain className="h-5 w-5 text-indigo-600" />,
+                    desc: 'Expert neurosurgeons for brain tumor, epilepsy, and other brain conditions.',
+                    save: 'Save up to 75%'
+                  },
+                  {
+                    name: 'Spine & Brain Surgery',
+                    path: '/treatments/spine-brain-surgery',
+                    icon: <Brain className="h-5 w-5 text-indigo-600" />,
+                    desc: 'Comprehensive neuro and spine surgery care for complex cases.',
+                    save: 'Save up to 75%'
+                  },
+                  {
+                    name: 'IVF & Fertility',
+                    path: '/treatments/ivf-fertility',
+                    icon: <Baby className="h-5 w-5 text-pink-500" />,
+                    desc: 'Build your family with high success rate IVF procedures and personalized fertility care.',
+                    save: 'Save up to 80%'
+                  },
+                  {
+                    name: 'Bariatric Surgery',
+                    path: '/treatments/bariatric-surgery',
+                    icon: <Activity className="h-5 w-5 text-orange-500" />,
+                    desc: 'Weight loss and metabolic surgery for a healthier, more active life.',
+                    save: 'Save up to 70%'
+                  },
+                ].map((treatment) => (
+                  <div
+                    key={treatment.name}
+                    className="bg-white rounded-xl shadow-lg overflow-hidden min-w-[340px] max-w-xs flex-shrink-0 flex flex-col justify-between"
+                    style={{ scrollSnapAlign: 'start' }}
+                  >
+                    <div className="h-40 flex items-center justify-center bg-gray-100">
+                      <span className="text-3xl font-bold text-gray-300">{treatment.name.split(' ')[0]}</span>
+                    </div>
+                    <div className="p-6 flex flex-col h-full justify-between">
+                      <div className="flex items-center gap-2 mb-3">
+                        {treatment.icon}
+                        <h3 className="text-xl font-bold text-black">{treatment.name}</h3>
+                      </div>
+                      <p className="text-gray-600 mb-4">{treatment.desc}</p>
+                      <div className="mb-4">
+                        <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">{treatment.save}</span>
+                      </div>
+                      <Link to={treatment.path}>
+                        <Button className="w-full">Learn More</Button>
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Treatment Categories */}
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Browse Treatments by Category</h2>
             
-            <Tabs defaultValue="cardiac" className="w-full mb-8">
+            <Tabs defaultValue="cardiac" className="w-full max-w-7xl mx-auto">
               <TabsList className="flex flex-wrap justify-center gap-2 mb-8">
                 {treatmentCategories.map(category => (
                   <TabsTrigger key={category.id} value={category.id} className="flex items-center gap-2">
@@ -185,87 +341,6 @@ const AllTreatments = () => {
                 </TabsContent>
               ))}
             </Tabs>
-          </div>
-        </section>
-
-        {/* Popular Treatments */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Most Popular Medical Procedures</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Procedure 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Heart+Bypass"
-                    alt="Heart Bypass Surgery"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Heart className="h-5 w-5 text-red-500" />
-                    <h3 className="text-xl font-bold">Heart Bypass Surgery</h3>
-                  </div>
-                  <p className="text-gray-600 mb-4">Restore blood flow to your heart with world-class cardiac care at a fraction of Western costs.</p>
-                  <div className="mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Save up to 90%</span>
-                  </div>
-                  <Link to="/treatments/heart-bypass">
-                    <Button className="w-full">Learn More</Button>
-                  </Link>
-                </div>
-              </div>
-
-              {/* Procedure 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Knee+Replacement"
-                    alt="Knee Replacement"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Bone className="h-5 w-5 text-amber-600" />
-                    <h3 className="text-xl font-bold">Knee Replacement</h3>
-                  </div>
-                  <p className="text-gray-600 mb-4">Regain mobility and relieve pain with advanced joint replacement surgery by top orthopedic surgeons.</p>
-                  <div className="mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Save up to 85%</span>
-                  </div>
-                  <Link to="/treatments/knee-replacement">
-                    <Button className="w-full">Learn More</Button>
-                  </Link>
-                </div>
-              </div>
-
-              {/* Procedure 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=IVF"
-                    alt="IVF Treatment"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Baby className="h-5 w-5 text-pink-500" />
-                    <h3 className="text-xl font-bold">IVF Treatment</h3>
-                  </div>
-                  <p className="text-gray-600 mb-4">Build your family with high success rate IVF procedures and personalized fertility care.</p>
-                  <div className="mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Save up to 80%</span>
-                  </div>
-                  <Link to="/treatments/ivf-fertility">
-                    <Button className="w-full">Learn More</Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
