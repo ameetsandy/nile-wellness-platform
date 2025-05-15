@@ -304,43 +304,80 @@ const AllTreatments = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Browse Treatments by Category</h2>
-            
-            <Tabs defaultValue="cardiac" className="w-full max-w-7xl mx-auto">
-              <TabsList className="flex flex-wrap justify-center gap-2 mb-8">
-                {treatmentCategories.map(category => (
-                  <TabsTrigger key={category.id} value={category.id} className="flex items-center gap-2">
-                    {category.icon}
-                    <span>{category.name}</span>
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-              
-              {treatmentCategories.map(category => (
-                <TabsContent key={category.id} value={category.id} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {category.treatments.map((treatment, index) => (
-                      <Link 
-                        key={index} 
-                        to={treatment.path}
-                        className={`p-6 rounded-xl shadow-md transition-all hover:shadow-lg ${
-                          treatment.path !== "#" 
-                            ? "bg-white hover:bg-blue-50 cursor-pointer" 
-                            : "bg-gray-50 cursor-not-allowed"
-                        }`}
-                      >
-                        <div className="flex items-center gap-3">
-                          {category.icon}
-                          <h3 className="font-semibold text-lg">{treatment.name}</h3>
-                        </div>
-                        {treatment.path === "#" && (
-                          <div className="mt-2 text-sm text-gray-500">Coming soon</div>
-                        )}
-                      </Link>
-                    ))}
+            {/* Custom 2-row grid for categories */}
+            <div className="w-full max-w-7xl mx-auto">
+              {/* Row 1: 5 categories (excluding Neuro & Fertility) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-8">
+                {treatmentCategories.filter(cat => !['neuro', 'fertility'].includes(cat.id)).slice(0, 5).map(category => (
+                  <div key={category.id} className="bg-white rounded-xl shadow-md p-6 flex flex-col h-full">
+                    <div className="flex items-center gap-2 mb-4">{category.icon}<span className="font-semibold text-lg">{category.name}</span></div>
+                    <div className="flex flex-col gap-3">
+                      {category.treatments.map((treatment, idx) => (
+                        treatment.path !== '#' ? (
+                          <Link
+                            key={treatment.name}
+                            to={treatment.path}
+                            className="p-3 rounded-lg bg-blue-50 hover:bg-blue-100 transition cursor-pointer text-nile-700 font-medium"
+                            style={{padding: '0.75rem 1rem'}}
+                          >
+                            {treatment.name}
+                          </Link>
+                        ) : (
+                          <a
+                            key={treatment.name}
+                            href="https://wa.me/919999999999"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 rounded-lg bg-green-50 hover:bg-green-100 transition cursor-pointer text-green-700 font-medium"
+                            style={{padding: '0.75rem 1rem'}}
+                          >
+                            {treatment.name}
+                            <span className="ml-2 text-xs bg-green-200 text-green-800 px-2 py-0.5 rounded">Know More</span>
+                          </a>
+                        )
+                      ))}
+                    </div>
                   </div>
-                </TabsContent>
-              ))}
-            </Tabs>
+                ))}
+              </div>
+              {/* Row 2: 4 categories (Neuro, Fertility, and 2 others) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {[
+                  ...treatmentCategories.filter(cat => ['neuro', 'fertility'].includes(cat.id)),
+                  ...treatmentCategories.filter(cat => !['neuro', 'fertility'].includes(cat.id)).slice(5, 7)
+                ].map(category => (
+                  <div key={category.id} className="bg-white rounded-xl shadow-md p-6 flex flex-col h-full">
+                    <div className="flex items-center gap-2 mb-4">{category.icon}<span className="font-semibold text-lg">{category.name}</span></div>
+                    <div className="flex flex-col gap-3">
+                      {category.treatments.map((treatment, idx) => (
+                        treatment.path !== '#' ? (
+                          <Link
+                            key={treatment.name}
+                            to={treatment.path}
+                            className="p-3 rounded-lg bg-blue-50 hover:bg-blue-100 transition cursor-pointer text-nile-700 font-medium"
+                            style={{padding: '0.75rem 1rem'}}
+                          >
+                            {treatment.name}
+                          </Link>
+                        ) : (
+                          <a
+                            key={treatment.name}
+                            href="https://wa.me/919999999999"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 rounded-lg bg-green-50 hover:bg-green-100 transition cursor-pointer text-green-700 font-medium"
+                            style={{padding: '0.75rem 1rem'}}
+                          >
+                            {treatment.name}
+                            <span className="ml-2 text-xs bg-green-200 text-green-800 px-2 py-0.5 rounded">Know More</span>
+                          </a>
+                        )
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
