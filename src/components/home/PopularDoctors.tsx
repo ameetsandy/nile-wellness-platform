@@ -120,7 +120,7 @@ const PopularDoctors = () => {
           </div>
         ))}
       </div>
-      <div className="mt-12 text-center">
+      <div className="mt-20 text-center">
         <Link to="/doctors" className="cta-secondary">
           View More Doctors <ArrowRight className="ml-1 h-4 w-4" />
         </Link>

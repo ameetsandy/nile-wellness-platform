@@ -116,7 +116,7 @@ const PartneredHospitals = () => {
         ))}
       </div>
       
-      <div className="mt-12 text-center">
+      <div className="mt-20 text-center">
         <Link 
           to="/hospitals"
           className="cta-secondary"

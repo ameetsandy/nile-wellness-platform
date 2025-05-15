@@ -123,7 +123,7 @@ const HowItWorks = () => {
           </div>
         </div>
       
-        <div className="mt-20 text-center">
+        <div className="mt-8 text-center">
           <div className="inline-block bg-gray-50 rounded-lg p-8 max-w-xl">
             <h3 className="text-2xl font-semibold mb-3 text-gray-900">
               Ready to Begin Your Healing Journey?

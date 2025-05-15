@@ -288,13 +288,13 @@ const AllTreatments = () => {
                       <p className="text-gray-600 mb-4">{treatment.desc}</p>
                       <div className="mb-4">
                         <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">{treatment.save}</span>
-                      </div>
+                        </div>
                       <Link to={treatment.path}>
                         <Button className="w-full">Learn More</Button>
                       </Link>
                     </div>
                   </div>
-                ))}
+              ))}
               </div>
             </div>
           </div>
@@ -336,7 +336,7 @@ const AllTreatments = () => {
                           </a>
                         )
                       ))}
-                    </div>
+                </div>
                   </div>
                 ))}
               </div>
@@ -358,7 +358,7 @@ const AllTreatments = () => {
                             style={{padding: '0.75rem 1rem'}}
                           >
                             {treatment.name}
-                          </Link>
+                  </Link>
                         ) : (
                           <a
                             key={treatment.name}
@@ -373,7 +373,7 @@ const AllTreatments = () => {
                           </a>
                         )
                       ))}
-                    </div>
+                </div>
                   </div>
                 ))}
               </div>
