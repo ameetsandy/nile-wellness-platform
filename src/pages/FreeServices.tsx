@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -134,7 +133,7 @@ const FreeServices = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-semibold mb-4">Comprehensive Support at Every Step</h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
-                All services are completely free for patients who book their treatment through Nile Wellness. No hidden fees or charges.
+                All services are completely free for patients who book their treatment through Nile Wellness.<br></br>  No hidden fees or charges.
               </p>
             </div>
             
@@ -229,20 +228,24 @@ const FreeServices = () => {
                 <div className="md:w-1/2">
                   <div className="bg-white rounded-xl overflow-hidden shadow-md">
                     <img 
-                      src="https://placehold.co/600x400/medical-600/white/?text=Patient+Coordinator"
+                      src="https://i.postimg.cc/BvNgwkwB/Abdul-Juma-Knee-Replacement-patient-from-Tanzania.png"
                       alt="Patient coordinator helping international patient"
                       className="w-full h-auto"
                     />
                     <div className="p-6">
                       <h3 className="text-xl font-semibold mb-3">What Our Patients Say</h3>
                       <div className="bg-gray-50 p-4 rounded-lg italic text-gray-600 mb-4">
-                        "The free support services made all the difference in my medical journey. From airport pickup to language assistance, everything was taken care of professionally. I could focus completely on my treatment and recovery."
+                        "Great staff & low cost. Best decision for mobility & health."
                       </div>
                       <div className="flex items-center">
-                        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+                        <img 
+                          src="https://i.postimg.cc/BvNgwkwB/Abdul-Juma-Knee-Replacement-patient-from-Tanzania.png"
+                          alt="Abdul Juma"
+                          className="w-10 h-10 rounded-full object-cover mr-3"
+                        />
                         <div>
-                          <p className="font-medium">Ahmed K.</p>
-                          <p className="text-sm text-gray-500">Heart valve replacement patient from UAE</p>
+                          <p className="font-medium">Abdul Juma</p>
+                          <p className="text-sm text-gray-500">Knee Replacement patient from Tanzania</p>
                         </div>
                       </div>
                     </div>

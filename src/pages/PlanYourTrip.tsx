@@ -29,7 +29,7 @@ import {
 import { Calendar as CalendarIcon } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
-import { format } from "date-fns";
+import { format, isValid } from "date-fns";
 import { DayPicker } from "react-day-picker";
 import { useToast } from "@/components/ui/use-toast";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
@@ -38,6 +38,7 @@ const PlanYourTrip = () => {
   const [step, setStep] = useState(1);
   const [destination, setDestination] = useState("");
   const [travelDates, setTravelDates] = useState<Date | undefined>();
+  const [dateInput, setDateInput] = useState("");
   const [numTravelers, setNumTravelers] = useState("1");
   const [medicalRequirements, setMedicalRequirements] = useState("");
   const [budget, setBudget] = useState("");
@@ -160,36 +161,22 @@ const PlanYourTrip = () => {
                     </div>
                     <div>
                       <Label>Preferred Travel Dates:</Label>
-                      <Popover>
-                        <PopoverTrigger asChild>
-                          <Button
-                            variant={"outline"}
-                            className={cn(
-                              "w-full justify-start text-left font-normal",
-                              !travelDates && "text-muted-foreground"
-                            )}
-                          >
-                            <CalendarIcon className="mr-2 h-4 w-4" />
-                            {travelDates ? (
-                              format(travelDates, "PPP")
-                            ) : (
-                              <span>Pick a date</span>
-                            )}
-                          </Button>
-                        </PopoverTrigger>
-                        <PopoverContent
-                          className="w-auto p-0"
-                          align="start"
-                        >
-                          <DayPicker
-                            mode="single"
-                            selected={travelDates}
-                            onSelect={setTravelDates}
-                            disabled={{ before: new Date() }}
-                            className="border-0 shadow-sm rounded-md"
-                          />
-                        </PopoverContent>
-                      </Popover>
+                      <Input
+                        type="text"
+                        placeholder="YYYY-MM-DD"
+                        value={dateInput}
+                        onChange={(e) => {
+                          setDateInput(e.target.value);
+                          const date = new Date(e.target.value);
+                          if (isValid(date)) {
+                            setTravelDates(date);
+                          }
+                        }}
+                        className="w-full"
+                      />
+                      <p className="text-sm text-gray-500 mt-1">
+                        Enter your preferred travel date in YYYY-MM-DD format
+                      </p>
                     </div>
                     <Button onClick={nextStep}>Next</Button>
                   </div>
