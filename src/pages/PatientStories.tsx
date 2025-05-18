@@ -37,7 +37,7 @@ const PatientStories = () => {
       country: "Kenya",
       treatment: "Liver Transplant",
       hospital: "Medanta Hospital",
-      quote: "My mother’s cancer treatment in India was a life-saving decision. The pre-operative care, surgery, and post-operative monitoring were all exceptional. What impressed me most was how the Nile Wellness team handled everything from accommodation for my family to dietary requirements. I'm eternally grateful to the medical team.",
+      quote: "My mother's cancer treatment in India was a life-saving decision. The pre-operative care, surgery, and post-operative monitoring were all exceptional. What impressed me most was how the Nile Wellness team handled everything from accommodation for my family to dietary requirements. I'm eternally grateful to the medical team.",
       image: "https://i.postimg.cc/tCP8mRdd/Amina-Osman-Kenya.png",
       rating: 5
     }
@@ -312,6 +312,7 @@ const PatientStories = () => {
           </div>
         </section>
         
+        {/* Video Testimonials Section - Hidden
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
@@ -366,6 +367,7 @@ const PatientStories = () => {
             </div>
           </div>
         </section>
+        */}
         
         <section className="py-16">
           <div className="container mx-auto px-4">
