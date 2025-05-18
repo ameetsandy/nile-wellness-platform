@@ -13,32 +13,32 @@ const PatientStories = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Ahmed Khalid",
-      country: "United Arab Emirates",
-      treatment: "Heart Valve Replacement",
-      hospital: "Apollo Hospitals, Chennai",
-      quote: "I was skeptical about medical tourism, but my experience in India exceeded all expectations. The quality of care was world-class, and the cost was 70% less than what I was quoted in my home country. The doctors explained everything clearly, and the staff made me feel comfortable throughout my stay.",
-      image: "https://placehold.co/400x400/medical-600/white/?text=Ahmed+K",
+      name: "Tinashe Moyo",
+      country: "Zimbabwe",
+      treatment: "Bone Marrow Transplant",
+      hospital: "Apollo Hospital",
+      quote: " I was skeptical about medical tourism, but my experience in India exceeded all expectations. The quality of care was world-class, and the cost was almost 50% less than what I was quoted in Turkey. The doctors explained everything clearly, and the Nile Wellness staff made me feel comfortable throughout my stay",
+      image: "https://i.postimg.cc/t4BkB8ct/Tinashe-Moyo-Zimbabwe.png",
       rating: 5
     },
     {
       id: 2,
-      name: "Sarah Johnson",
+      name: "Sunieta Patel",
       country: "United Kingdom",
       treatment: "Total Knee Replacement",
-      hospital: "Fortis Hospital, Delhi",
-      quote: "After being on a 2-year waiting list in the UK, I decided to explore options in India. Within 2 weeks of contacting Nile Wellness, I was in Delhi receiving treatment. The hospital facilities were impressive, and my surgeon had trained at the Royal College in London. My recovery has been remarkable.",
-      image: "https://placehold.co/400x400/medical-600/white/?text=Sarah+J",
+      hospital: "Fortis Hospital",
+      quote: "After being on a 3-month waiting list in the UK, I decided to explore options in India. Within 2 weeks of contacting Nile Wellness, I was in Delhi receiving treatment. The hospital facilities were impressive, and my surgeon had trained at the Royal College in London. My recovery has been remarkable.",
+      image: "https://i.postimg.cc/x8N38Cj6/Sunieta-Patel.png",
       rating: 5
     },
     {
       id: 3,
-      name: "Omar Farooq",
-      country: "Nigeria",
+      name: "Amina Osman",
+      country: "Kenya",
       treatment: "Liver Transplant",
-      hospital: "Medanta Hospital, Gurugram",
-      quote: "My liver transplant in India was a life-saving decision. The pre-operative care, surgery, and post-operative monitoring were all exceptional. What impressed me most was how the hospital handled everything - from accommodation for my family to dietary requirements. I'm eternally grateful to the medical team.",
-      image: "https://placehold.co/400x400/medical-600/white/?text=Omar+F",
+      hospital: "Medanta Hospital",
+      quote: "My mother’s cancer treatment in India was a life-saving decision. The pre-operative care, surgery, and post-operative monitoring were all exceptional. What impressed me most was how the Nile Wellness team handled everything from accommodation for my family to dietary requirements. I'm eternally grateful to the medical team.",
+      image: "https://i.postimg.cc/tCP8mRdd/Amina-Osman-Kenya.png",
       rating: 5
     }
   ];
@@ -180,7 +180,7 @@ const PatientStories = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                Real Patient Stories & Testimonials
+                 Patient Stories & Testimonials
                 <span className="block text-nile-600 mt-2">Life-Changing Medical Journeys in India</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8">
@@ -192,7 +192,7 @@ const PatientStories = () => {
                   className="bg-nile-600 hover:bg-nile-700"
                   onClick={openWhatsApp}
                 >
-                  <MessageCircle className="mr-2 h-4 w-4" /> Share Your Story With Us
+                  <MessageCircle className="mr-2 h-4 w-4" /> Start Your Treatment Journey
                 </Button>
                 <Link to="/free-opinion">
                   <Button 
@@ -287,7 +287,7 @@ const PatientStories = () => {
                             className="bg-nile-600 hover:bg-nile-700"
                             onClick={openWhatsApp}
                           >
-                            <MessageCircle className="mr-2 h-4 w-4" /> Ask About Similar Treatment
+                            <MessageCircle className="mr-2 h-4 w-4" /> Ask About Your Treatment
                           </Button>
                         </div>
                       </div>
