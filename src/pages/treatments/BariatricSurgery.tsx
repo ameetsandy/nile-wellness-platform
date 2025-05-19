@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
@@ -101,11 +100,11 @@ const BariatricSurgery = () => {
               </div>
               
               <div className="lg:w-1/2 relative">
-                <div className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
-                  <img 
-                    src="https://placehold.co/600x400/medical-600/white/?text=Bariatric+Surgery" 
-                    alt="Patient transformation before/after bariatric surgery" 
-                    className="w-full h-auto object-cover"
+                <div className="rounded-xl overflow-hidden shadow-2xl max-w-[500px] mx-auto">
+                  <img
+                    src="https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png"
+                    alt="Bariatric Surgery"
+                    className="w-full h-[300px] object-contain"
                   />
                 </div>
                 <div className="absolute -bottom-4 -left-6 bg-nile-600 text-white py-3 px-5 rounded-lg shadow-lg text-sm">
@@ -121,79 +120,91 @@ const BariatricSurgery = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="space-y-6">
-                <div className="flex items-center gap-3">
-                  <Weight className="h-8 w-8 text-nile-600" />
-                  <h2 className="text-3xl font-bold text-gray-800">What is Bariatric Surgery?</h2>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  Bariatric surgery, also known as weight loss surgery, helps individuals with obesity lose excess weight by altering the digestive system. Common procedures include gastric bypass, sleeve gastrectomy, and mini gastric bypass. 
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  These surgeries work by limiting food intake and/or reducing nutrient absorption. Bariatric surgery is not just cosmetic—it's a medical intervention that can help reverse diabetes, hypertension, sleep apnea, and improve overall quality of life.
-                </p>
-                
-                <div className="mt-8">
-                  <h3 className="text-xl font-semibold mb-4">Common Procedures:</h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="bg-gray-50 p-5 rounded-lg">
-                      <h4 className="font-semibold text-nile-600">Sleeve Gastrectomy</h4>
-                      <p className="text-sm text-gray-600 mt-2">Removal of 80% of the stomach, creating a small sleeve-shaped stomach.</p>
-                    </div>
-                    <div className="bg-gray-50 p-5 rounded-lg">
-                      <h4 className="font-semibold text-nile-600">Gastric Bypass</h4>
-                      <p className="text-sm text-gray-600 mt-2">Creates a small pouch from the stomach and connects it directly to the small intestine.</p>
-                    </div>
-                    <div className="bg-gray-50 p-5 rounded-lg">
-                      <h4 className="font-semibold text-nile-600">Mini Gastric Bypass</h4>
-                      <p className="text-sm text-gray-600 mt-2">A simplified version of the gastric bypass with fewer complications.</p>
-                    </div>
-                    <div className="bg-gray-50 p-5 rounded-lg">
-                      <h4 className="font-semibold text-nile-600">Intragastric Balloon</h4>
-                      <p className="text-sm text-gray-600 mt-2">Non-surgical option where a balloon is placed in the stomach to reduce space for food.</p>
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center mb-6">
+                    <img 
+                      src="https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png" 
+                      alt="Bariatric Surgery" 
+                      className="h-6 w-6 mr-3 object-contain"
+                    />
+                    <h2 className="text-2xl font-bold">What is Bariatric Surgery?</h2>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    Bariatric surgery, also known as weight loss surgery, helps individuals with obesity lose excess weight by altering the digestive system. Common procedures include gastric bypass, sleeve gastrectomy, and mini gastric bypass. 
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    These surgeries work by limiting food intake and/or reducing nutrient absorption. Bariatric surgery is not just cosmetic—it's a medical intervention that can help reverse diabetes, hypertension, sleep apnea, and improve overall quality of life.
+                  </p>
+                  
+                  <div className="mt-8">
+                    <h3 className="text-xl font-semibold mb-4">Common Procedures:</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div className="bg-gray-50 p-5 rounded-lg">
+                        <h4 className="font-semibold text-nile-600">Sleeve Gastrectomy</h4>
+                        <p className="text-sm text-gray-600 mt-2">Removal of 80% of the stomach, creating a small sleeve-shaped stomach.</p>
+                      </div>
+                      <div className="bg-gray-50 p-5 rounded-lg">
+                        <h4 className="font-semibold text-nile-600">Gastric Bypass</h4>
+                        <p className="text-sm text-gray-600 mt-2">Creates a small pouch from the stomach and connects it directly to the small intestine.</p>
+                      </div>
+                      <div className="bg-gray-50 p-5 rounded-lg">
+                        <h4 className="font-semibold text-nile-600">Mini Gastric Bypass</h4>
+                        <p className="text-sm text-gray-600 mt-2">A simplified version of the gastric bypass with fewer complications.</p>
+                      </div>
+                      <div className="bg-gray-50 p-5 rounded-lg">
+                        <h4 className="font-semibold text-nile-600">Intragastric Balloon</h4>
+                        <p className="text-sm text-gray-600 mt-2">Non-surgical option where a balloon is placed in the stomach to reduce space for food.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div className="space-y-6">
-                <div className="flex items-center gap-3">
-                  <Shield className="h-8 w-8 text-nile-600" />
-                  <h2 className="text-3xl font-bold text-gray-800">Why Choose India?</h2>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  India offers world-class bariatric care with experienced metabolic surgeons, advanced laparoscopic and robotic technology, and international standards in safety and infection control.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  With success rates above 90% and 75% cost savings over Western countries, India is a preferred destination for medical tourists. Hospitals provide personalized nutrition plans, physiotherapy, and multi-lingual care coordinators to guide international patients through their transformation journey.
-                </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-                  <div className="flex items-start gap-3">
-                    <BadgeCheck className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold">Experienced Surgeons</h4>
-                      <p className="text-sm text-gray-600">Internationally trained doctors with 20+ years experience</p>
-                    </div>
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center mb-6">
+                    <img 
+                      src="https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png" 
+                      alt="Bariatric Surgery" 
+                      className="h-6 w-6 mr-3 object-contain"
+                    />
+                    <h2 className="text-2xl font-bold">Why Choose India?</h2>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <BadgeCheck className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold">Advanced Technology</h4>
-                      <p className="text-sm text-gray-600">Latest laparoscopic and robotic surgical systems</p>
+                  <p className="text-gray-700 leading-relaxed">
+                    India offers world-class bariatric care with experienced metabolic surgeons, advanced laparoscopic and robotic technology, and international standards in safety and infection control.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    With success rates above 90% and 75% cost savings over Western countries, India is a preferred destination for medical tourists. Hospitals provide personalized nutrition plans, physiotherapy, and multi-lingual care coordinators to guide international patients through their transformation journey.
+                  </p>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                    <div className="flex items-start gap-3">
+                      <BadgeCheck className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold">Experienced Surgeons</h4>
+                        <p className="text-sm text-gray-600">Internationally trained doctors with 20+ years experience</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <BadgeCheck className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold">Patient Support</h4>
-                      <p className="text-sm text-gray-600">Multilingual coordinators & comprehensive post-op care</p>
+                    <div className="flex items-start gap-3">
+                      <BadgeCheck className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold">Advanced Technology</h4>
+                        <p className="text-sm text-gray-600">Latest laparoscopic and robotic surgical systems</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <BadgeCheck className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold">Accredited Hospitals</h4>
-                      <p className="text-sm text-gray-600">JCI and NABH certified facilities with international standards</p>
+                    <div className="flex items-start gap-3">
+                      <BadgeCheck className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold">Patient Support</h4>
+                        <p className="text-sm text-gray-600">Multilingual coordinators & comprehensive post-op care</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <BadgeCheck className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold">Accredited Hospitals</h4>
+                        <p className="text-sm text-gray-600">JCI and NABH certified facilities with international standards</p>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
@@ -32,11 +31,11 @@ const BrainSurgery = () => {
                   </Button>
                 </div>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-2xl">
+              <div className="rounded-xl overflow-hidden shadow-2xl max-w-[500px] mx-auto">
                 <img
-                  src="https://placehold.co/800x600/nile-600/white/?text=Brain+Surgery"
-                  alt="Brain Tumor Surgery"
-                  className="w-full h-auto"
+                  src="https://i.postimg.cc/3w35LZS1/brain-tumor.png"
+                  alt="Brain Surgery"
+                  className="w-full h-[300px] object-contain"
                 />
               </div>
             </div>
@@ -49,7 +48,11 @@ const BrainSurgery = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="bg-white p-8 rounded-xl shadow-md">
                 <div className="flex items-center mb-6">
-                  <Brain className="text-red-500 mr-3 h-8 w-8" />
+                  <img 
+                    src="https://i.postimg.cc/3w35LZS1/brain-tumor.png" 
+                    alt="Brain Surgery" 
+                    className="h-6 w-6 mr-3 object-contain"
+                  />
                   <h2 className="text-2xl font-bold">What is Brain Tumor Surgery?</h2>
                 </div>
                 <p className="text-gray-700">
@@ -58,7 +61,11 @@ const BrainSurgery = () => {
               </div>
               <div className="bg-white p-8 rounded-xl shadow-md">
                 <div className="flex items-center mb-6">
-                  <Shield className="text-nile-600 mr-3 h-8 w-8" />
+                  <img 
+                    src="https://i.postimg.cc/3w35LZS1/brain-tumor.png" 
+                    alt="Brain Surgery" 
+                    className="h-6 w-6 mr-3 object-contain"
+                  />
                   <h2 className="text-2xl font-bold">Why Choose India?</h2>
                 </div>
                 <p className="text-gray-700">
