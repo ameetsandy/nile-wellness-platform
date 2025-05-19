@@ -257,17 +257,6 @@ const Doctors = () => {
     },
     {
       "id": 23,
-      "name": "Dr. Sandeep Attawar",
-      "specialty": "Cardiac Surgeon",
-      "designation": " Director",
-      "hospital": "KIMS Hospital Kondapur, Hyderabad",
-      "city": "Hyderabad, India",
-      "experience": "33+",
-      "image": "https://www.vaidam.com/sites/default/files/dr_sandeep_attawar-min.jpg",
-      "path": "/doctors/dr-sandeep-attawar"
-    },
-    {
-      "id": 24,
       "name": "Dr. Sanjay Sarup",
       "specialty": "Paediatric Orthopedecian",
       "designation": " Senior Consultant",
@@ -278,7 +267,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sanjay-sarup"
     },
     {
-      "id": 25,
+      "id": 24,
       "name": "Dr. Jatinder Bir Singh Jaggi",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Director",
@@ -289,7 +278,7 @@ const Doctors = () => {
       "path": "/doctors/dr-jatinder-bir-singh-jaggi"
     },
     {
-      "id": 26,
+      "id": 25,
       "name": "Dr. Rajeev Verma",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Chairman",
@@ -300,7 +289,7 @@ const Doctors = () => {
       "path": "/doctors/dr-rajeev-verma"
     },
     {
-      "id": 27,
+      "id": 26,
       "name": "Dr. Subhash Jangid",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Director",
@@ -311,7 +300,7 @@ const Doctors = () => {
       "path": "/doctors/dr-subhash-jangid"
     },
     {
-      "id": 28,
+      "id": 27,
       "name": "Dr. Ishwar Bohra",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Senior Consultant",
@@ -322,7 +311,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ishwar-bohra"
     },
     {
-      "id": 29,
+      "id": 28,
       "name": "Dr. Vikram Barua Kaushik",
       "specialty": "Urologist",
       "designation": " Consultant",
@@ -333,7 +322,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vikram-barua-kaushik"
     },
     {
-      "id": 30,
+      "id": 29,
       "name": "Dr. Z S Meharwal",
       "specialty": "Cardiac Surgeon",
       "designation": " Chairman",
@@ -344,18 +333,7 @@ const Doctors = () => {
       "path": "/doctors/dr-z-s-meharwal"
     },
     {
-      "id": 31,
-      "name": "Dr. Z S Meharwal",
-      "specialty": "Cardiac Surgeon",
-      "designation": " Chairman",
-      "hospital": "Fortis Escorts Heart Institute, New Delhi",
-      "city": "New Delhi, India",
-      "experience": "42+",
-      "image": "https://www.vaidam.com/sites/default/files/dr-z-s-meharwal_cardio-thorasic-vascular-surgery982956-min.jpg",
-      "path": "/doctors/dr-z-s-meharwal"
-    },
-    {
-      "id": 32,
+      "id": 30,
       "name": "Dr. Yash Gulati",
       "specialty": "Spine and Pain Specialist",
       "designation": " Senior Consultant",
@@ -366,7 +344,7 @@ const Doctors = () => {
       "path": "/doctors/dr-yash-gulati"
     },
     {
-      "id": 33,
+      "id": 31,
       "name": "Dr. Y K Mishra",
       "specialty": "Cardiac Surgeon",
       "designation": " Chairman",
@@ -377,7 +355,7 @@ const Doctors = () => {
       "path": "/doctors/dr-y-k-mishra"
     },
     {
-      "id": 34,
+      "id": 32,
       "name": "Dr. Vivekanandan Shanmugam",
       "specialty": "Liver Transplant Surgeon",
       "designation": " Senior Consultant",
@@ -388,7 +366,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vivekanandan-shanmugam"
     },
     {
-      "id": 35,
+      "id": 33,
       "name": "Dr. Vivek Vij",
       "specialty": "Liver Transplant Surgeon",
       "designation": " Chairman",
@@ -399,7 +377,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vivek-vij"
     },
     {
-      "id": 36,
+      "id": 34,
       "name": "Dr. Vivek Raj",
       "specialty": "Medical Gastroenterologist",
       "designation": " Director",
@@ -410,7 +388,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vivek-raj"
     },
     {
-      "id": 37,
+      "id": 35,
       "name": "Dr Vipul Gupta",
       "specialty": "Neurosurgeon",
       "designation": " Director",
@@ -421,18 +399,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vipul-gupta"
     },
     {
-      "id": 38,
-      "name": "Dr Vipul Gupta",
-      "specialty": "Neurosurgeon",
-      "designation": " Director",
-      "hospital": "Paras Hospitals, Gurgaon",
-      "city": "Gurgaon, India",
-      "experience": "29+",
-      "image": "https://d1ea147o02h74h.cloudfront.net/dr_vipul_gupta-min.jpg",
-      "path": "/doctors/dr-vipul-gupta"
-    },
-    {
-      "id": 39,
+      "id": 36,
       "name": "Dr. Vinod Raina",
       "specialty": "Medical Oncologist",
       "designation": " Chairman",
@@ -443,7 +410,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vinod-raina"
     },
     {
-      "id": 40,
+      "id": 37,
       "name": "Dr. Vinod Kumar Nigam",
       "specialty": "General Surgeon",
       "designation": " Senior Consultant",
@@ -454,7 +421,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vinod-kumar-nigam"
     },
     {
-      "id": 41,
+      "id": 38,
       "name": "Dr. Vineesh Mathur",
       "specialty": "Spine Surgeon",
       "designation": " Director",
@@ -465,7 +432,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vineesh-mathur"
     },
     {
-      "id": 42,
+      "id": 39,
       "name": "Dr. Vikram Pratap Singh",
       "specialty": "Surgical Oncologist",
       "designation": " Senior Consultant",
@@ -476,7 +443,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vikram-pratap-singh"
     },
     {
-      "id": 43,
+      "id": 40,
       "name": "Dr Vikas Singhal",
       "specialty": "Obesity and Bariatric Surgeon",
       "designation": " Consultant",
@@ -487,7 +454,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vikas-singhal"
     },
     {
-      "id": 44,
+      "id": 41,
       "name": "Dr. Vikas Dua",
       "specialty": "Pediatric Hematologist",
       "designation": " Director",
@@ -498,7 +465,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vikas-dua"
     },
     {
-      "id": 45,
+      "id": 42,
       "name": "Dr. Vijaya Rajakumari",
       "specialty": "Nephrologist",
       "designation": " Consultant",
@@ -509,7 +476,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vijaya-rajakumari"
     },
     {
-      "id": 46,
+      "id": 43,
       "name": "Dr. Vidyadhara S.",
       "specialty": "Spine Surgeon",
       "designation": " HOD",
@@ -520,7 +487,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vidyadhara-s"
     },
     {
-      "id": 47,
+      "id": 44,
       "name": "Dr. Vidur Jyoti",
       "specialty": "Advanced Laparoscopic, Minimal Access and Bariatric Surgeon",
       "designation": " Director",
@@ -531,7 +498,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vidur-jyoti"
     },
     {
-      "id": 48,
+      "id": 45,
       "name": "Dr. Veena Bhat",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Director",
@@ -542,7 +509,7 @@ const Doctors = () => {
       "path": "/doctors/dr-veena-bhat"
     },
     {
-      "id": 49,
+      "id": 46,
       "name": "Dr. V. P. Singh",
       "specialty": "Neurosurgeon",
       "designation": " Chairman",
@@ -553,7 +520,7 @@ const Doctors = () => {
       "path": "/doctors/dr-v-p-singh"
     },
     {
-      "id": 50,
+      "id": 47,
       "name": "Dr. Umesh Gupta",
       "specialty": "Nephrologist",
       "designation": " Director",
@@ -564,7 +531,7 @@ const Doctors = () => {
       "path": "/doctors/dr-umesh-gupta"
     },
     {
-      "id": 51,
+      "id": 48,
       "name": "Dr. Tushar Shah",
       "specialty": "Neurosurgeon",
       "designation": " Consultant",
@@ -575,7 +542,7 @@ const Doctors = () => {
       "path": "/doctors/dr-tushar-shah"
     },
     {
-      "id": 52,
+      "id": 49,
       "name": "Dr. TPR Bharadwaj",
       "specialty": "Hematologist",
       "designation": " Consultant",
@@ -586,7 +553,7 @@ const Doctors = () => {
       "path": "/doctors/dr-tpr-bharadwaj"
     },
     {
-      "id": 53,
+      "id": 50,
       "name": "Dr. T. S. Kler",
       "specialty": "Interventional Cardiologist",
       "designation": " Chairman",
@@ -597,18 +564,7 @@ const Doctors = () => {
       "path": "/doctors/dr-t-s-kler"
     },
     {
-      "id": 54,
-      "name": "Dr. T. S. Kler",
-      "specialty": "Electrophysiologist",
-      "designation": " Chairman",
-      "hospital": "BLK-Max Super Speciality Hospital Delhi",
-      "city": "New Delhi, India",
-      "experience": "48+",
-      "image": "https://www.vaidam.com/sites/default/files/dr._t._s._kler-min.png",
-      "path": "/doctors/dr-t-s-kler"
-    },
-    {
-      "id": 55,
+      "id": 51,
       "name": "Dr. Sushma Ved",
       "specialty": "Infertility Specialist",
       "designation": " Senior Consultant",
@@ -619,7 +575,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sushma-ved"
     },
     {
-      "id": 56,
+      "id": 52,
       "name": "Prof. Dr. Suresh H. Advani",
       "specialty": "Medical Oncologist",
       "designation": " Senior Consultant",
@@ -630,7 +586,7 @@ const Doctors = () => {
       "path": "/doctors/prof-dr-suresh-h-advani"
     },
     {
-      "id": 57,
+      "id": 53,
       "name": "Dr. Suneeta Mittal",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Director",
@@ -641,7 +597,7 @@ const Doctors = () => {
       "path": "/doctors/dr-suneeta-mittal"
     },
     {
-      "id": 58,
+      "id": 54,
       "name": "Dr. Sumit Malhotra",
       "specialty": "Aesthetics and Plastic Surgeon",
       "designation": " Consultant",
@@ -652,7 +608,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sumit-malhotra"
     },
     {
-      "id": 59,
+      "id": 55,
       "name": "Dr. Sulbha Arora",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Director",
@@ -663,7 +619,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sulbha-arora"
     },
     {
-      "id": 60,
+      "id": 56,
       "name": "Dr. Sukhvinder Singh Saggu",
       "specialty": "Advanced Laparoscopic, Minimal Access and Bariatric Surgeon",
       "designation": " Consultant",
@@ -674,7 +630,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sukhvinder-singh-saggu"
     },
     {
-      "id": 61,
+      "id": 57,
       "name": "Dr. Sujit Chaudhury",
       "specialty": "Medical Gastroenterologist",
       "designation": " Consultant",
@@ -685,7 +641,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sujit-chaudhury"
     },
     {
-      "id": 62,
+      "id": 58,
       "name": "Dr. Sudhir Dubey",
       "specialty": "Neurosurgeon",
       "designation": " Chairman",
@@ -696,18 +652,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sudhir-dubey"
     },
     {
-      "id": 63,
-      "name": "Dr. Sudhir Dubey",
-      "specialty": "Neurosurgeon",
-      "designation": " Chairman",
-      "hospital": "Medanta - The Medicity, Gurgaon",
-      "city": "Gurgaon, India",
-      "experience": "30+",
-      "image": "https://d1ea147o02h74h.cloudfront.net/dr._sudhir_dubey-removebg-preview-min.png",
-      "path": "/doctors/dr-sudhir-dubey"
-    },
-    {
-      "id": 64,
+      "id": 59,
       "name": "Dr. Subodh Chandra Pande",
       "specialty": "Radiation Oncologist",
       "designation": " Consultant",
@@ -718,7 +663,7 @@ const Doctors = () => {
       "path": "/doctors/dr-subodh-chandra-pande"
     },
     {
-      "id": 65,
+      "id": 60,
       "name": "Dr. Srinivasa Prasad B V",
       "specialty": "Interventional Cardiologist",
       "designation": " Consultant",
@@ -729,7 +674,7 @@ const Doctors = () => {
       "path": "/doctors/dr-srinivasa-prasad-b-v"
     },
     {
-      "id": 66,
+      "id": 61,
       "name": "Dr. Srikanth M",
       "specialty": "Hematologist",
       "designation": " Consultant",
@@ -740,7 +685,7 @@ const Doctors = () => {
       "path": "/doctors/dr-srikanth-m"
     },
     {
-      "id": 67,
+      "id": 62,
       "name": "Dr. Smita Mishra",
       "specialty": "Pediatric Cardiologist",
       "designation": " HOD",
@@ -751,7 +696,7 @@ const Doctors = () => {
       "path": "/doctors/dr-smita-mishra"
     },
     {
-      "id": 68,
+      "id": 63,
       "name": "Dr. Siddhartha Ghosh",
       "specialty": "Neurosurgeon",
       "designation": " Senior Consultant",
@@ -762,7 +707,7 @@ const Doctors = () => {
       "path": "/doctors/dr-siddhartha-ghosh"
     },
     {
-      "id": 69,
+      "id": 64,
       "name": "Dr. Shilpa Saple",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Consultant",
@@ -773,7 +718,7 @@ const Doctors = () => {
       "path": "/doctors/dr-shilpa-saple"
     },
     {
-      "id": 70,
+      "id": 65,
       "name": "Dr. Shashidhar",
       "specialty": "Interventional Cardiologist",
       "designation": " Consultant",
@@ -784,7 +729,7 @@ const Doctors = () => {
       "path": "/doctors/dr-shashidhar"
     },
     {
-      "id": 71,
+      "id": 66,
       "name": "Dr. Sharad Sheth",
       "specialty": "Nephrologist",
       "designation": " Head of Department",
@@ -795,7 +740,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sharad-sheth"
     },
     {
-      "id": 72,
+      "id": 67,
       "name": "Dr. Shakti Bhan Khanna",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Senior Consultant",
@@ -806,7 +751,7 @@ const Doctors = () => {
       "path": "/doctors/dr-shakti-bhan-khanna"
     },
     {
-      "id": 73,
+      "id": 68,
       "name": "Dr. Sejal Shah",
       "specialty": "Pediatric Cardiologist",
       "designation": " Senior Consultant",
@@ -817,7 +762,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sejal-shah"
     },
     {
-      "id": 74,
+      "id": 69,
       "name": "Dr. Vineet Bhushan Gupta",
       "specialty": "Paediatrician",
       "designation": " Senior Consultant",
@@ -828,7 +773,7 @@ const Doctors = () => {
       "path": "/doctors/dr-vineet-bhushan-gupta"
     },
     {
-      "id": 75,
+      "id": 70,
       "name": "Dr Saurabh Rawall",
       "specialty": "Spine Surgeon",
       "designation": " Consultant",
@@ -839,7 +784,7 @@ const Doctors = () => {
       "path": "/doctors/dr-saurabh-rawall"
     },
     {
-      "id": 76,
+      "id": 71,
       "name": "Dr. Satya Gupta",
       "specialty": "Interventional Cardiologist",
       "designation": " Consultant",
@@ -850,7 +795,7 @@ const Doctors = () => {
       "path": "/doctors/dr-satya-gupta"
     },
     {
-      "id": 77,
+      "id": 72,
       "name": "Dr. Satish N",
       "specialty": "General Surgeon",
       "designation": " Senior Consultant",
@@ -861,7 +806,7 @@ const Doctors = () => {
       "path": "/doctors/dr-satish-n"
     },
     {
-      "id": 78,
+      "id": 73,
       "name": "Dr. Sanjay Verma",
       "specialty": "Advanced Laparoscopic, Minimal Access and Bariatric Surgeon",
       "designation": " Director",
@@ -872,7 +817,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sanjay-verma"
     },
     {
-      "id": 79,
+      "id": 74,
       "name": "Dr. Sanjay Gogoi",
       "specialty": "Urologist and Renal Transplant Specialist",
       "designation": " Director",
@@ -883,7 +828,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sanjay-gogoi"
     },
     {
-      "id": 80,
+      "id": 75,
       "name": "Dr. Sandip Shah",
       "specialty": "Neurosurgeon",
       "designation": " Consultant",
@@ -894,7 +839,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sandip-shah"
     },
     {
-      "id": 81,
+      "id": 76,
       "name": "Dr. Sandeep Vaishya",
       "specialty": "Neurosurgeon",
       "designation": " Director",
@@ -905,7 +850,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sandeep-vaishya"
     },
     {
-      "id": 82,
+      "id": 77,
       "name": "Dr. Sameer Kaul",
       "specialty": "Medical Oncologist",
       "designation": " Senior Consultant",
@@ -916,7 +861,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sameer-kaul"
     },
     {
-      "id": 83,
+      "id": 78,
       "name": "Dr. Salil Jain",
       "specialty": "Nephrologist",
       "designation": " Director",
@@ -927,7 +872,7 @@ const Doctors = () => {
       "path": "/doctors/dr-salil-jain"
     },
     {
-      "id": 84,
+      "id": 79,
       "name": "Dr. Saket Goel",
       "specialty": "Colo-Rectal Surgeon",
       "designation": " Consultant",
@@ -938,7 +883,7 @@ const Doctors = () => {
       "path": "/doctors/dr-saket-goel"
     },
     {
-      "id": 85,
+      "id": 80,
       "name": "Dr. Sajan K Hegde",
       "specialty": "Spine Surgeon",
       "designation": " Senior Consultant",
@@ -949,7 +894,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sajan-k-hegde"
     },
     {
-      "id": 86,
+      "id": 81,
       "name": "Dr. Sabhyata Gupta",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Director",
@@ -960,7 +905,7 @@ const Doctors = () => {
       "path": "/doctors/dr-sabhyata-gupta"
     },
     {
-      "id": 87,
+      "id": 82,
       "name": "Dr. S K Rajan",
       "specialty": "Spine Surgeon",
       "designation": " HOD",
@@ -971,7 +916,7 @@ const Doctors = () => {
       "path": "/doctors/dr-s-k-rajan"
     },
     {
-      "id": 88,
+      "id": 83,
       "name": "Dr. S. V. Kotwal",
       "specialty": "Urologist",
       "designation": " Head of Department",
@@ -982,7 +927,7 @@ const Doctors = () => {
       "path": "/doctors/dr-s-v-kotwal"
     },
     {
-      "id": 89,
+      "id": 84,
       "name": "Dr. Robert Mao",
       "specialty": "Interventional Cardiologist",
       "designation": " Consultant",
@@ -993,18 +938,7 @@ const Doctors = () => {
       "path": "/doctors/dr-robert-mao"
     },
     {
-      "id": 90,
-      "name": "Dr. Robert Mao",
-      "specialty": "Interventional Cardiologist",
-      "designation": " Consultant",
-      "hospital": "Apollo Hospitals, Greams Road, Chennai",
-      "city": "Chennai, India",
-      "experience": "53+",
-      "image": "https://www.vaidam.com/sites/default/files/dr-robert-mao-cardiologist.jpg",
-      "path": "/doctors/dr-robert-mao"
-    },
-    {
-      "id": 91,
+      "id": 85,
       "name": "Dr. Robert Coelho",
       "specialty": "Pediatric Cardiac Surgeon",
       "designation": " Director",
@@ -1015,7 +949,7 @@ const Doctors = () => {
       "path": "/doctors/dr-robert-coelho"
     },
     {
-      "id": 92,
+      "id": 86,
       "name": "Dr. Revathi Raj",
       "specialty": "Pediatric Hematologist",
       "designation": " Senior Consultant",
@@ -1026,7 +960,7 @@ const Doctors = () => {
       "path": "/doctors/dr-revathi-raj"
     },
     {
-      "id": 93,
+      "id": 87,
       "name": "Dr. Renu Raina Sehgal",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Senior Consultant",
@@ -1037,7 +971,7 @@ const Doctors = () => {
       "path": "/doctors/dr-renu-raina-sehgal"
     },
     {
-      "id": 94,
+      "id": 88,
       "name": "Dr. Ravi Bhatia",
       "specialty": "Neurosurgeon",
       "designation": " Senior Consultant",
@@ -1048,7 +982,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ravi-bhatia"
     },
     {
-      "id": 95,
+      "id": 89,
       "name": "Dr. Ramya Mishra",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Senior Consultant",
@@ -1059,7 +993,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ramya-mishra"
     },
     {
-      "id": 96,
+      "id": 90,
       "name": "Dr. Ramesh Sarin",
       "specialty": "Surgical Oncologist",
       "designation": " Senior Consultant",
@@ -1070,7 +1004,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ramesh-sarin"
     },
     {
-      "id": 97,
+      "id": 91,
       "name": "Dr. Ramesh S Bilimagga",
       "specialty": "Radiation Oncologist",
       "designation": " Senior Consultant",
@@ -1081,7 +1015,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ramesh-s-bilimagga"
     },
     {
-      "id": 98,
+      "id": 92,
       "name": "Dr. Ramen Goel",
       "specialty": "General Surgeon",
       "designation": " Consultant",
@@ -1092,7 +1026,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ramen-goel"
     },
     {
-      "id": 99,
+      "id": 93,
       "name": "Dr. Ramani Narasimhan",
       "specialty": "Paediatric Orthopedecian",
       "designation": " Senior Consultant",
@@ -1103,7 +1037,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ramani-narasimhan"
     },
     {
-      "id": 100,
+      "id": 94,
       "name": "Dr. Rakesh Agarwal",
       "specialty": "Neurologist",
       "designation": " Senior Consultant",
@@ -1114,7 +1048,7 @@ const Doctors = () => {
       "path": "/doctors/dr-rakesh-agarwal"
     },
     {
-      "id": 101,
+      "id": 95,
       "name": "Dr Raju Vyas",
       "specialty": "Cardiac Surgeon",
       "designation": " Director",
@@ -1125,18 +1059,7 @@ const Doctors = () => {
       "path": "/doctors/dr-raju-vyas"
     },
     {
-      "id": 102,
-      "name": "Dr Raju Vyas",
-      "specialty": "Cardiac Surgeon",
-      "designation": " Director",
-      "hospital": "Fortis Hospital, Shalimar Bagh, New Delhi",
-      "city": "New Delhi, India",
-      "experience": "36+",
-      "image": "https://www.vaidam.com/sites/default/files/dr_raju_vyas_cleanup-min.jpg",
-      "path": "/doctors/dr-raju-vyas"
-    },
-    {
-      "id": 103,
+      "id": 96,
       "name": "Dr Rajinder Yadav",
       "specialty": "Urologist",
       "designation": " Director",
@@ -1147,7 +1070,7 @@ const Doctors = () => {
       "path": "/doctors/dr-rajinder-yadav"
     },
     {
-      "id": 104,
+      "id": 97,
       "name": "Dr. Rajesh Sharma",
       "specialty": "Pediatric Cardiac Surgeon",
       "designation": " Program Director",
@@ -1158,7 +1081,7 @@ const Doctors = () => {
       "path": "/doctors/dr-rajesh-sharma"
     },
     {
-      "id": 105,
+      "id": 98,
       "name": "Dr. Rajesh Kumar Verma",
       "specialty": "Spine Surgeon",
       "designation": " Director",
@@ -1169,18 +1092,7 @@ const Doctors = () => {
       "path": "/doctors/dr-rajesh-kumar-verma"
     },
     {
-      "id": 106,
-      "name": "Dr. Rajesh Kumar Verma",
-      "specialty": "Spine Surgeon",
-      "designation": " Director",
-      "hospital": "Sanar International Hospital",
-      "city": "Gurgaon, India",
-      "experience": "27+",
-      "image": "https://d1ea147o02h74h.cloudfront.net/dr._rajesh-min_0.jpg",
-      "path": "/doctors/dr-rajesh-kumar-verma"
-    },
-    {
-      "id": 107,
+      "id": 99,
       "name": "Dr. Rajesh Kapoor",
       "specialty": "Surgical Gastroenterologist",
       "designation": " Director",
@@ -1191,7 +1103,7 @@ const Doctors = () => {
       "path": "/doctors/dr-rajesh-kapoor"
     },
     {
-      "id": 108,
+      "id": 100,
       "name": "Dr. Rajat Kumar Gupta",
       "specialty": "Pediatric Cardiologist",
       "designation": " Senior Consultant",
@@ -1202,7 +1114,7 @@ const Doctors = () => {
       "path": "/doctors/dr-rajat-kumar-gupta"
     },
     {
-      "id": 109,
+      "id": 101,
       "name": "Dr. Rajagopalan Krishnan",
       "specialty": "Spine Surgeon",
       "designation": " Senior Consultant",
@@ -1213,18 +1125,7 @@ const Doctors = () => {
       "path": "/doctors/dr-rajagopalan-krishnan"
     },
     {
-      "id": 110,
-      "name": "Dr. Rajagopalan Krishnan",
-      "specialty": "Spine Surgeon",
-      "designation": " Senior Consultant",
-      "hospital": NaN,
-      "city": "New Delhi, India",
-      "experience": "32+",
-      "image": "https://d1ea147o02h74h.cloudfront.net/image-removebg-preview46-min.png",
-      "path": "/doctors/dr-rajagopalan-krishnan"
-    },
-    {
-      "id": 111,
+      "id": 102,
       "name": "Dr. Rahul Bhargava",
       "specialty": "Hematologist",
       "designation": " Director",
@@ -1235,7 +1136,7 @@ const Doctors = () => {
       "path": "/doctors/dr-rahul-bhargava"
     },
     {
-      "id": 112,
+      "id": 103,
       "name": "Dr. Raghuram Sekhar",
       "specialty": "Endovascular Surgeon",
       "designation": " Consultant",
@@ -1246,7 +1147,7 @@ const Doctors = () => {
       "path": "/doctors/dr-raghuram-sekhar"
     },
     {
-      "id": 113,
+      "id": 104,
       "name": "Dr. Puneet Girdhar",
       "specialty": "Spine Surgeon",
       "designation": " Head of Department",
@@ -1257,7 +1158,7 @@ const Doctors = () => {
       "path": "/doctors/dr-puneet-girdhar"
     },
     {
-      "id": 114,
+      "id": 105,
       "name": "Dr. Priyadarshan K",
       "specialty": "Aesthetics and Plastic Surgeon",
       "designation": " Consultant",
@@ -1268,7 +1169,7 @@ const Doctors = () => {
       "path": "/doctors/dr-priyadarshan-k"
     },
     {
-      "id": 115,
+      "id": 106,
       "name": "Dr. Prita Trehan",
       "specialty": "General Paediatrician",
       "designation": " Senior Consultant",
@@ -1279,7 +1180,7 @@ const Doctors = () => {
       "path": "/doctors/dr-prita-trehan"
     },
     {
-      "id": 116,
+      "id": 107,
       "name": "Dr. Pranathi Gutta",
       "specialty": "Paediatric Neurologist",
       "designation": " Consultant",
@@ -1290,18 +1191,7 @@ const Doctors = () => {
       "path": "/doctors/dr-pranathi-gutta"
     },
     {
-      "id": 117,
-      "name": "Dr. Pranathi Gutta",
-      "specialty": "Paediatric Neurologist",
-      "designation": " Consultant",
-      "hospital": "Rainbow Children's Hospital and BirthRight by Rainbow, Kondapur, Hyderabad",
-      "city": "Hyderabad, India",
-      "experience": "23+",
-      "image": "https://d1ea147o02h74h.cloudfront.net/dr._pranathi_gutta.jpg",
-      "path": "/doctors/dr-pranathi-gutta"
-    },
-    {
-      "id": 118,
+      "id": 108,
       "name": "Dr. Pradeep Chowbey",
       "specialty": "Obesity and Bariatric Surgeon",
       "designation": " Chairman",
@@ -1312,7 +1202,7 @@ const Doctors = () => {
       "path": "/doctors/dr-pradeep-chowbey"
     },
     {
-      "id": 119,
+      "id": 109,
       "name": "Dr. Philomena Vaz",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Consultant",
@@ -1323,7 +1213,7 @@ const Doctors = () => {
       "path": "/doctors/dr-philomena-vaz"
     },
     {
-      "id": 120,
+      "id": 110,
       "name": "Dr. Pawan Rawal",
       "specialty": "Medical Gastroenterologist",
       "designation": " Head of Department",
@@ -1334,7 +1224,7 @@ const Doctors = () => {
       "path": "/doctors/dr-pawan-rawal"
     },
     {
-      "id": 121,
+      "id": 111,
       "name": "Dr. Parul Katiyar",
       "specialty": "Infertility Specialist",
       "designation": " Consultant",
@@ -1345,7 +1235,7 @@ const Doctors = () => {
       "path": "/doctors/dr-parul-katiyar"
     },
     {
-      "id": 122,
+      "id": 112,
       "name": "Dr. Parul Gupta Khanna",
       "specialty": "Infertility Specialist",
       "designation": " Consultant",
@@ -1356,7 +1246,7 @@ const Doctors = () => {
       "path": "/doctors/dr-parul-gupta-khanna"
     },
     {
-      "id": 123,
+      "id": 113,
       "name": "Dr. Pankaj Venkatrao Deshpande",
       "specialty": "Paediatric Nephrologist",
       "designation": " Consultant",
@@ -1367,7 +1257,7 @@ const Doctors = () => {
       "path": "/doctors/dr-pankaj-venkatrao-deshpande"
     },
     {
-      "id": 124,
+      "id": 114,
       "name": "Dr. Nutan Agarwal",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Head of Department",
@@ -1378,7 +1268,7 @@ const Doctors = () => {
       "path": "/doctors/dr-nutan-agarwal"
     },
     {
-      "id": 125,
+      "id": 115,
       "name": "Dr. Nitin Sood",
       "specialty": "Hematologist",
       "designation": " Director",
@@ -1389,7 +1279,7 @@ const Doctors = () => {
       "path": "/doctors/dr-nitin-sood"
     },
     {
-      "id": 126,
+      "id": 116,
       "name": "Dr. Niranjan Naik",
       "specialty": "Surgical Oncologist",
       "designation": " Consultant",
@@ -1400,7 +1290,7 @@ const Doctors = () => {
       "path": "/doctors/dr-niranjan-naik"
     },
     {
-      "id": 127,
+      "id": 117,
       "name": "Dr. Neville Solomon",
       "specialty": "Pediatric Cardiac Surgeon",
       "designation": " Consultant",
@@ -1411,7 +1301,7 @@ const Doctors = () => {
       "path": "/doctors/dr-neville-solomon"
     },
     {
-      "id": 128,
+      "id": 118,
       "name": "Dr. Neha Gupta",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Senior Consultant",
@@ -1422,7 +1312,7 @@ const Doctors = () => {
       "path": "/doctors/dr-neha-gupta"
     },
     {
-      "id": 129,
+      "id": 119,
       "name": "Dr. Neeraj Awasthy",
       "specialty": "Pediatric Cardiologist",
       "designation": " Director",
@@ -1433,7 +1323,7 @@ const Doctors = () => {
       "path": "/doctors/dr-neeraj-awasthy"
     },
     {
-      "id": 130,
+      "id": 120,
       "name": "Dr. Naveen Bhamri",
       "specialty": "Interventional Cardiologist",
       "designation": " Consultant",
@@ -1444,7 +1334,7 @@ const Doctors = () => {
       "path": "/doctors/dr-naveen-bhamri"
     },
     {
-      "id": 131,
+      "id": 121,
       "name": "Dr. Nagraj Gururaj Huilgol",
       "specialty": "Radiation Oncologist",
       "designation": " Consultant",
@@ -1455,7 +1345,7 @@ const Doctors = () => {
       "path": "/doctors/dr-nagraj-gururaj-huilgol"
     },
     {
-      "id": 132,
+      "id": 122,
       "name": "Dr. N. Ragavan",
       "specialty": "Endourologist",
       "designation": " Consultant",
@@ -1466,7 +1356,7 @@ const Doctors = () => {
       "path": "/doctors/dr-n-ragavan"
     },
     {
-      "id": 133,
+      "id": 123,
       "name": "Dr. Murugan N",
       "specialty": "Hepato-Pancreato-Biliary Surgeon",
       "designation": " Consultant",
@@ -1477,7 +1367,7 @@ const Doctors = () => {
       "path": "/doctors/dr-murugan-n"
     },
     {
-      "id": 134,
+      "id": 124,
       "name": "Dr. Mukut Minz",
       "specialty": "Urologist and Renal Transplant Specialist",
       "designation": " Director",
@@ -1488,7 +1378,7 @@ const Doctors = () => {
       "path": "/doctors/dr-mukut-minz"
     },
     {
-      "id": 135,
+      "id": 125,
       "name": "Dr. Mriganka Sekhar Sharma",
       "specialty": "Advanced Laparoscopic, Minimal Access and Bariatric Surgeon",
       "designation": " Chief",
@@ -1499,7 +1389,7 @@ const Doctors = () => {
       "path": "/doctors/dr-mriganka-sekhar-sharma"
     },
     {
-      "id": 136,
+      "id": 126,
       "name": "Dr. Moorthy G",
       "specialty": "Pediatric Urologist",
       "designation": " Senior Consultant",
@@ -1510,7 +1400,7 @@ const Doctors = () => {
       "path": "/doctors/dr-moorthy-g"
     },
     {
-      "id": 137,
+      "id": 127,
       "name": "Dr. Meenakshi Dua",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Senior Consultant",
@@ -1521,7 +1411,7 @@ const Doctors = () => {
       "path": "/doctors/dr-meenakshi-dua"
     },
     {
-      "id": 138,
+      "id": 128,
       "name": "Dr Manvinder Singh Sachdev",
       "specialty": "Pediatric Cardiologist",
       "designation": " Consultant",
@@ -1532,7 +1422,7 @@ const Doctors = () => {
       "path": "/doctors/dr-manvinder-singh-sachdev"
     },
     {
-      "id": 139,
+      "id": 129,
       "name": "Dr. Manoj Miglani",
       "specialty": "Spine Surgeon",
       "designation": " Director",
@@ -1543,7 +1433,7 @@ const Doctors = () => {
       "path": "/doctors/dr-manoj-miglani"
     },
     {
-      "id": 140,
+      "id": 130,
       "name": "Dr. Manju Sinha",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Senior Consultant",
@@ -1554,7 +1444,7 @@ const Doctors = () => {
       "path": "/doctors/dr-manju-sinha"
     },
     {
-      "id": 141,
+      "id": 131,
       "name": "Dr. Madan Mohan Reddy",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Senior Consultant",
@@ -1565,7 +1455,7 @@ const Doctors = () => {
       "path": "/doctors/dr-madan-mohan-reddy"
     },
     {
-      "id": 142,
+      "id": 132,
       "name": "Dr. Lavi Sindhu",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Consultant",
@@ -1576,7 +1466,7 @@ const Doctors = () => {
       "path": "/doctors/dr-lavi-sindhu"
     },
     {
-      "id": 143,
+      "id": 133,
       "name": "Dr. Lakshmi Kant Tripathi",
       "specialty": "Nephrologist",
       "designation": " Senior Consultant",
@@ -1587,7 +1477,7 @@ const Doctors = () => {
       "path": "/doctors/dr-lakshmi-kant-tripathi"
     },
     {
-      "id": 144,
+      "id": 134,
       "name": "Dr. Kulbhushan Singh Dagar",
       "specialty": "Cardiac Surgeon",
       "designation": " Director",
@@ -1598,18 +1488,7 @@ const Doctors = () => {
       "path": "/doctors/dr-kulbhushan-singh-dagar"
     },
     {
-      "id": 145,
-      "name": "Dr. Kulbhushan Singh Dagar",
-      "specialty": "Cardiac Surgeon",
-      "designation": " Director",
-      "hospital": "Max Super Speciality Hospital, Saket, New Delhi",
-      "city": "New Delhi, India",
-      "experience": "36+",
-      "image": "https://d1ea147o02h74h.cloudfront.net/dr._kulbhushan_singh_dagar.jpg",
-      "path": "/doctors/dr-kulbhushan-singh-dagar"
-    },
-    {
-      "id": 146,
+      "id": 135,
       "name": "Dr. Krishna S Iyer",
       "specialty": "Pediatric Cardiac Surgeon",
       "designation": " Director",
@@ -1620,7 +1499,7 @@ const Doctors = () => {
       "path": "/doctors/dr-krishna-s-iyer"
     },
     {
-      "id": 147,
+      "id": 136,
       "name": "Dr. Kokkula Praneeth",
       "specialty": "Neurosurgeon",
       "designation": " Consultant",
@@ -1631,7 +1510,7 @@ const Doctors = () => {
       "path": "/doctors/dr-kokkula-praneeth"
     },
     {
-      "id": 148,
+      "id": 137,
       "name": "Dr Keshava R",
       "specialty": "Interventional Cardiologist",
       "designation": " Director",
@@ -1642,7 +1521,7 @@ const Doctors = () => {
       "path": "/doctors/dr-keshava-r"
     },
     {
-      "id": 149,
+      "id": 138,
       "name": "Dr. Kaustubh Patel",
       "specialty": "Surgical Oncologist",
       "designation": " Senior Consultant",
@@ -1653,7 +1532,7 @@ const Doctors = () => {
       "path": "/doctors/dr-kaustubh-patel"
     },
     {
-      "id": 150,
+      "id": 139,
       "name": "Dr. Kapil Kumar",
       "specialty": "Surgical Oncologist",
       "designation": " Director",
@@ -1664,7 +1543,7 @@ const Doctors = () => {
       "path": "/doctors/dr-kapil-kumar"
     },
     {
-      "id": 151,
+      "id": 140,
       "name": "Dr. KNK Shetty",
       "specialty": "Medical Gastroenterologist",
       "designation": " Consultant",
@@ -1675,7 +1554,7 @@ const Doctors = () => {
       "path": "/doctors/dr-knk-shetty"
     },
     {
-      "id": 152,
+      "id": 141,
       "name": "Dr. K.N. Srivastava",
       "specialty": "General Surgeon",
       "designation": " HOD",
@@ -1686,18 +1565,7 @@ const Doctors = () => {
       "path": "/doctors/dr-kn-srivastava"
     },
     {
-      "id": 153,
-      "name": "Dr. K.N. Srivastava",
-      "specialty": "General Surgeon",
-      "designation": " HOD",
-      "hospital": "BLK-Max Super Speciality Hospital Delhi",
-      "city": "New Delhi, India",
-      "experience": "52+",
-      "image": "https://d1ea147o02h74h.cloudfront.net/dr._kn-min.jpg",
-      "path": "/doctors/dr-kn-srivastava"
-    },
-    {
-      "id": 154,
+      "id": 142,
       "name": "Dr. Jyoti Anant Bobe",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Consultant",
@@ -1708,7 +1576,7 @@ const Doctors = () => {
       "path": "/doctors/dr-jyoti-anant-bobe"
     },
     {
-      "id": 155,
+      "id": 143,
       "name": "Dr. Jayesh Sardhara",
       "specialty": "Neurosurgeon",
       "designation": " Senior Consultant",
@@ -1719,7 +1587,7 @@ const Doctors = () => {
       "path": "/doctors/dr-jayesh-sardhara"
     },
     {
-      "id": 156,
+      "id": 144,
       "name": "Dr. Jayant Arora",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Director",
@@ -1730,7 +1598,7 @@ const Doctors = () => {
       "path": "/doctors/dr-jayant-arora"
     },
     {
-      "id": 157,
+      "id": 145,
       "name": "Dr. Jai Dev Wig",
       "specialty": "Surgical Oncologist",
       "designation": " Director",
@@ -1741,7 +1609,7 @@ const Doctors = () => {
       "path": "/doctors/dr-jai-dev-wig"
     },
     {
-      "id": 158,
+      "id": 146,
       "name": "Dr. IPS Oberoi",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Chairman",
@@ -1752,7 +1620,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ips-oberoi"
     },
     {
-      "id": 159,
+      "id": 147,
       "name": "Dr. I. P. S. Kochar",
       "specialty": "Endocrinologist",
       "designation": " Senior Consultant",
@@ -1763,7 +1631,7 @@ const Doctors = () => {
       "path": "/doctors/dr-i-p-s-kochar"
     },
     {
-      "id": 160,
+      "id": 148,
       "name": "Dr. Hitesh Garg",
       "specialty": "Spine Surgeon",
       "designation": " HOD",
@@ -1774,7 +1642,7 @@ const Doctors = () => {
       "path": "/doctors/dr-hitesh-garg"
     },
     {
-      "id": 161,
+      "id": 149,
       "name": "Dr. Hemant Sharma",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Chairman",
@@ -1785,7 +1653,7 @@ const Doctors = () => {
       "path": "/doctors/dr-hemant-sharma"
     },
     {
-      "id": 162,
+      "id": 150,
       "name": "Dr. Harshavardhan Hegde",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Director",
@@ -1796,7 +1664,7 @@ const Doctors = () => {
       "path": "/doctors/dr-harshavardhan-hegde"
     },
     {
-      "id": 163,
+      "id": 151,
       "name": "Dr. Harnarayan Singh",
       "specialty": "Neurosurgeon",
       "designation": " Consultant",
@@ -1807,7 +1675,7 @@ const Doctors = () => {
       "path": "/doctors/dr-harnarayan-singh"
     },
     {
-      "id": 164,
+      "id": 152,
       "name": "Dr Hari Goyal",
       "specialty": "Medical Oncologist",
       "designation": " HOD",
@@ -1818,7 +1686,7 @@ const Doctors = () => {
       "path": "/doctors/dr-hari-goyal"
     },
     {
-      "id": 165,
+      "id": 153,
       "name": "Dr. H. S. Bhatyal",
       "specialty": "Urologist",
       "designation": " Senior Consultant",
@@ -1829,7 +1697,7 @@ const Doctors = () => {
       "path": "/doctors/dr-h-s-bhatyal"
     },
     {
-      "id": 166,
+      "id": 154,
       "name": "Dr. Giriraj Bora",
       "specialty": "Surgical Gastroenterologist",
       "designation": " Additional Director",
@@ -1840,7 +1708,7 @@ const Doctors = () => {
       "path": "/doctors/dr-giriraj-bora"
     },
     {
-      "id": 167,
+      "id": 155,
       "name": "Dr. Gaurav Kharya",
       "specialty": "Hematologist",
       "designation": " Senior Consultant",
@@ -1851,7 +1719,7 @@ const Doctors = () => {
       "path": "/doctors/dr-gaurav-kharya"
     },
     {
-      "id": 168,
+      "id": 156,
       "name": "Dr. G. Balamurali",
       "specialty": "Spine Surgeon",
       "designation": " HOD",
@@ -1862,7 +1730,7 @@ const Doctors = () => {
       "path": "/doctors/dr-g-balamurali"
     },
     {
-      "id": 169,
+      "id": 157,
       "name": "Dr. Dinesh Kansal",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Head of Department",
@@ -1873,7 +1741,7 @@ const Doctors = () => {
       "path": "/doctors/dr-dinesh-kansal"
     },
     {
-      "id": 170,
+      "id": 158,
       "name": "Dr. Deepak Govil",
       "specialty": "Surgical Gastroenterologist",
       "designation": " Senior Consultant",
@@ -1884,7 +1752,7 @@ const Doctors = () => {
       "path": "/doctors/dr-deepak-govil"
     },
     {
-      "id": 171,
+      "id": 159,
       "name": "Dr. Deepak Dubey",
       "specialty": "Urologist and Renal Transplant Specialist",
       "designation": " Consultant",
@@ -1895,7 +1763,7 @@ const Doctors = () => {
       "path": "/doctors/dr-deepak-dubey"
     },
     {
-      "id": 172,
+      "id": 160,
       "name": "Dr. D. K.Agarwal",
       "specialty": "Nephrologist",
       "designation": " Senior Consultant",
@@ -1906,7 +1774,7 @@ const Doctors = () => {
       "path": "/doctors/dr-d-kagarwal"
     },
     {
-      "id": 173,
+      "id": 161,
       "name": "Dr. Brahm Datt Pathak",
       "specialty": "Advanced Laparoscopic, Minimal Access and Bariatric Surgeon",
       "designation": " Director",
@@ -1917,7 +1785,7 @@ const Doctors = () => {
       "path": "/doctors/dr-brahm-datt-pathak"
     },
     {
-      "id": 174,
+      "id": 162,
       "name": "Dr. Bipin Walia",
       "specialty": "Spine Surgeon",
       "designation": " Director",
@@ -1928,7 +1796,7 @@ const Doctors = () => {
       "path": "/doctors/dr-bipin-walia"
     },
     {
-      "id": 175,
+      "id": 163,
       "name": "Dr. Bindu Garg",
       "specialty": "Infertility Specialist",
       "designation": " Chairman",
@@ -1939,7 +1807,7 @@ const Doctors = () => {
       "path": "/doctors/dr-bindu-garg"
     },
     {
-      "id": 176,
+      "id": 164,
       "name": "Dr. Bhushan Nariani",
       "specialty": "Orthopaedic and Joint Replacement Surgeon",
       "designation": " Chairman",
@@ -1950,7 +1818,7 @@ const Doctors = () => {
       "path": "/doctors/dr-bhushan-nariani"
     },
     {
-      "id": 177,
+      "id": 165,
       "name": "Dr. Bhaba Nanda Das",
       "specialty": "Cardiac Surgeon",
       "designation": " Chief",
@@ -1961,18 +1829,7 @@ const Doctors = () => {
       "path": "/doctors/dr-bhaba-nanda-das"
     },
     {
-      "id": 178,
-      "name": "Dr. Bhaba Nanda Das",
-      "specialty": "Cardiac Surgeon",
-      "designation": " Chief",
-      "hospital": "Indraprastha Apollo Hospital, New Delhi",
-      "city": "New Delhi, India",
-      "experience": "47+",
-      "image": "https://www.vaidam.com/sites/default/files/dr_bhaba_nanda_das-min.jpg",
-      "path": "/doctors/dr-bhaba-nanda-das"
-    },
-    {
-      "id": 179,
+      "id": 166,
       "name": "Dr. B M L Kapoor",
       "specialty": "Colo-Rectal Surgeon",
       "designation": " Senior Consultant",
@@ -1983,7 +1840,7 @@ const Doctors = () => {
       "path": "/doctors/dr-b-m-l-kapoor"
     },
     {
-      "id": 180,
+      "id": 167,
       "name": "Dr. Atul Sharma Joshi",
       "specialty": "Advanced Laparoscopic, Minimal Access and Bariatric Surgeon",
       "designation": " Associate Director",
@@ -1994,7 +1851,7 @@ const Doctors = () => {
       "path": "/doctors/dr-atul-sharma-joshi"
     },
     {
-      "id": 181,
+      "id": 168,
       "name": "Dr. Ashutosh Marwah",
       "specialty": "Pediatric Cardiac Surgeon",
       "designation": " Director",
@@ -2005,7 +1862,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ashutosh-marwah"
     },
     {
-      "id": 182,
+      "id": 169,
       "name": "Dr. Ashok Sarin",
       "specialty": "Nephrologist",
       "designation": " Consultant",
@@ -2016,7 +1873,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ashok-sarin"
     },
     {
-      "id": 183,
+      "id": 170,
       "name": "Dr. Ashok Vaid",
       "specialty": "Medical Oncologist",
       "designation": " Consultant",
@@ -2027,7 +1884,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ashok-vaid"
     },
     {
-      "id": 184,
+      "id": 171,
       "name": "Dr. Ashish Sabharwal",
       "specialty": "Urologist",
       "designation": " Consultant",
@@ -2038,7 +1895,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ashish-sabharwal"
     },
     {
-      "id": 185,
+      "id": 172,
       "name": "Dr. Ashish Dixit",
       "specialty": "Hematologist",
       "designation": " Consultant",
@@ -2049,7 +1906,7 @@ const Doctors = () => {
       "path": "/doctors/dr-ashish-dixit"
     },
     {
-      "id": 186,
+      "id": 173,
       "name": "Dr. Asheesh Sharma",
       "specialty": "General Surgeon",
       "designation": " Senior Consultant",
@@ -2060,7 +1917,7 @@ const Doctors = () => {
       "path": "/doctors/dr-asheesh-sharma"
     },
     {
-      "id": 187,
+      "id": 174,
       "name": "Dr. Arvinder Singh Soin",
       "specialty": "Liver Transplant Surgeon",
       "designation": " Chairman",
@@ -2071,7 +1928,7 @@ const Doctors = () => {
       "path": "/doctors/dr-arvinder-singh-soin"
     },
     {
-      "id": 188,
+      "id": 175,
       "name": "Dr. Arvind Khurana",
       "specialty": "Medical Gastroenterologist",
       "designation": " Director",
@@ -2082,7 +1939,7 @@ const Doctors = () => {
       "path": "/doctors/dr-arvind-khurana"
     },
     {
-      "id": 189,
+      "id": 176,
       "name": "Dr. Aruna Kalra",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Director",
@@ -2093,7 +1950,7 @@ const Doctors = () => {
       "path": "/doctors/dr-aruna-kalra"
     },
     {
-      "id": 190,
+      "id": 177,
       "name": "Dr. Arun Halankar",
       "specialty": "Nephrologist",
       "designation": " Consultant",
@@ -2104,7 +1961,7 @@ const Doctors = () => {
       "path": "/doctors/dr-arun-halankar"
     },
     {
-      "id": 191,
+      "id": 178,
       "name": "Dr. Anupam Jindal",
       "specialty": "Neurosurgeon",
       "designation": " Additional Director",
@@ -2115,7 +1972,7 @@ const Doctors = () => {
       "path": "/doctors/dr-anupam-jindal"
     },
     {
-      "id": 192,
+      "id": 179,
       "name": "Dr. Anjila Aneja",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Director",
@@ -2126,7 +1983,7 @@ const Doctors = () => {
       "path": "/doctors/dr-anjila-aneja"
     },
     {
-      "id": 193,
+      "id": 180,
       "name": "Dr. Anjali Kumar",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Head of Department",
@@ -2137,7 +1994,7 @@ const Doctors = () => {
       "path": "/doctors/dr-anjali-kumar"
     },
     {
-      "id": 194,
+      "id": 181,
       "name": "Dr. Anil Bhan",
       "specialty": "Cardiac Surgeon",
       "designation": " Chairman",
@@ -2148,18 +2005,7 @@ const Doctors = () => {
       "path": "/doctors/dr-anil-bhan"
     },
     {
-      "id": 195,
-      "name": "Dr. Anil Bhan",
-      "specialty": "Cardiac Surgeon",
-      "designation": " Chairman",
-      "hospital": "Medanta - The Medicity, Gurgaon",
-      "city": "Gurgaon, India",
-      "experience": "49+",
-      "image": "https://www.vaidam.com/sites/default/files/dr_anil_bhan-min.jpg",
-      "path": "/doctors/dr-anil-bhan"
-    },
-    {
-      "id": 196,
+      "id": 182,
       "name": "Dr. Amitabha Ghosh",
       "specialty": "Laparoscopic Surgeon",
       "designation": " Consultant",
@@ -2170,7 +2016,7 @@ const Doctors = () => {
       "path": "/doctors/dr-amitabha-ghosh"
     },
     {
-      "id": 197,
+      "id": 183,
       "name": "Dr. Alka Kriplani",
       "specialty": "Gynaecologist and Obstetrician",
       "designation": " Head of Department",
@@ -2181,7 +2027,7 @@ const Doctors = () => {
       "path": "/doctors/dr-alka-kriplani"
     },
     {
-      "id": 198,
+      "id": 184,
       "name": "Dr. Akhil Mishra",
       "specialty": "Nephrologist",
       "designation": " Senior Consultant",
@@ -2192,7 +2038,7 @@ const Doctors = () => {
       "path": "/doctors/dr-akhil-mishra"
     },
     {
-      "id": 199,
+      "id": 185,
       "name": "Dr. Akhil Govil",
       "specialty": "Cardiac Surgeon",
       "designation": " Senior Consultant",
@@ -2203,17 +2049,171 @@ const Doctors = () => {
       "path": "/doctors/dr-akhil-govil"
     },
     {
-      "id": 200,
-      "name": "Dr. Akhil Govil",
+      "id": 186,
+      "name": "Dr. Ajit Singh Narula",
+      "specialty": "Nephrologist",
+      "designation": " Director",
+      "hospital": "Fortis Escorts Heart Institute, New Delhi",
+      "city": "New Delhi, India",
+      "experience": "48+",
+      "image": "https://www.vaidam.com/sites/default/files/dr._ajit_singh_narula.jpg",
+      "path": "/doctors/dr-ajit-singh-narula"
+    },
+    {
+      "id": 187,
+      "name": "Dr. Ajay Kaul",
       "specialty": "Cardiac Surgeon",
-      "designation": " Senior Consultant",
+      "designation": " Chairman",
+      "hospital": "Fortis Hospital, Noida",
+      "city": "Noida, India",
+      "experience": "38+",
+      "image": "https://www.vaidam.com/sites/default/webp/50/files/dr._ajay-min_2.webp",
+      "path": "/doctors/dr-ajay-kaul"
+    },
+    {
+      "id": 188,
+      "name": "Dr. Aditya Gupta",
+      "specialty": "Neurosurgeon",
+      "designation": " Director",
       "hospital": "Artemis Hospital, Gurgaon",
       "city": "Gurgaon, India",
+      "experience": "30+",
+      "image": "https://www.vaidam.com/sites/default/files/dr_aditya_gupta.png",
+      "path": "/doctors/dr-aditya-gupta"
+    },
+    {
+      "id": 189,
+      "name": "Dr. Abhilash C. Chokshi",
+      "specialty": "General Surgeon",
+      "designation": " Consultant",
+      "hospital": "CIMS Hospital, Ahmedabad",
+      "city": "Ahmedabad, India",
+      "experience": "33+",
+      "image": "https://d1ea147o02h74h.cloudfront.net/dr._abhilash_c._chokshi.jpg",
+      "path": "/doctors/dr-abhilash-c-chokshi"
+    },
+    {
+      "id": 190,
+      "name": "Dr. A.A Mehra",
+      "specialty": "Spine Surgeon",
+      "designation": " Senior Consultant",
+      "hospital": "Amandeep Hospital, Amritsar",
+      "city": "Amritsar, India",
       "experience": "29+",
-      "image": "https://d1ea147o02h74h.cloudfront.net/dr._akhil_govil_0.jpg",
-      "path": "/doctors/dr-akhil-govil"
-    }  
-    
+      "image": "https://www.vaidam.com/sites/default/files/dr._a.a_mehra_-_spine_and_neurosurgeon.jpg",
+      "path": "/doctors/dr-aa-mehra"
+    },
+    {
+      "id": 191,
+      "name": "Dr. A.K. Roy",
+      "specialty": "Neurologist",
+      "designation": " Consultant",
+      "hospital": "Manipal Hospital (Old Airport Road) Bangalore",
+      "city": "Bangalore, India",
+      "experience": "46+",
+      "image": "https://www.vaidam.com/sites/default/files/dr._a.k._roy.jpg",
+      "path": "/doctors/dr-ak-roy"
+    },
+    {
+      "id": 192,
+      "name": "Dr. Dinakar. A",
+      "specialty": "Spine Surgeon",
+      "designation": " Consultant",
+      "hospital": "KIMS Sunshine Hospitals, Begumpet",
+      "city": "Hyderabad, India",
+      "experience": "33+",
+      "image": "https://www.vaidam.com/sites/default/files/dr._dinakar-min.jpg",
+      "path": "/doctors/dr-dinakar-a"
+    },
+    {
+      "id": 193,
+      "name": "Dr. (Prof) Raju Vaishya",
+      "specialty": "Orthopaedic and Joint Replacement Surgeon",
+      "designation": " Senior Consultant",
+      "hospital": "Indraprastha Apollo Hospital, New Delhi",
+      "city": "New Delhi, India",
+      "experience": "42+",
+      "image": "https://www.vaidam.com/sites/default/files/dr._prof_raju_vaishya-min_0.jpg",
+      "path": "/doctors/dr-prof-raju-vaishya"
+    },
+    {
+      "id": 194,
+      "name": "Dr. (Col.) Manjinder Singh Sandhu",
+      "specialty": "Interventional Cardiologist",
+      "designation": " Consultant",
+      "hospital": "Fortis Memorial Research Institute, Gurgaon",
+      "city": "Gurgaon, India",
+      "experience": "23+",
+      "image": "https://www.vaidam.com/sites/default/webp/50/files/dr_col_sandhu.webp",
+      "path": "/doctors/dr-col-manjinder-singh-sandhu"
+    },
+    {
+      "id": 195,
+      "name": "Dr. Erika Patel",
+      "specialty": "Gynaecologist and Obstetrician",
+      "designation": " Consultant",
+      "hospital": "ART Fertility Clinic, Chennai",
+      "city": "Chennai, India",
+      "experience": "16+",
+      "image": "https://d1ea147o02h74h.cloudfront.net/dr._erika_patel-min-min.jpg",
+      "path": "/doctors/dr-erika-patel"
+    },
+    {
+      "id": 196,
+      "name": "Dr. Aswati Nair",
+      "specialty": "Gynaecologist and Obstetrician",
+      "designation": " Director",
+      "hospital": "NOVA IVI Fertility, New Delhi",
+      "city": "New Delhi, India",
+      "experience": "20+",
+      "image": "https://www.vaidam.com/sites/default/files/dr._aswati-min.jpeg",
+      "path": "/doctors/dr-aswati-nair"
+    },
+    {
+      "id": 197,
+      "name": "Dr. Vikram Sharma",
+      "specialty": "Urologist",
+      "designation": " Director",
+      "hospital": "Fortis Memorial Research Institute, Gurgaon",
+      "city": "Gurgaon, India",
+      "experience": "36+",
+      "image": "https://www.vaidam.com/sites/default/files/dr._vikram_sharma.jpg",
+      "path": "/doctors/dr-vikram-sharma"
+    },
+    {
+      "id": 198,
+      "name": "Dr. Tarun Kukreja",
+      "specialty": "Spine Surgeon",
+      "designation": " Consultant",
+      "hospital": "Artemis Hospital, Gurgaon",
+      "city": "Gurgaon, India",
+      "experience": "9+",
+      "image": "https://www.vaidam.com/sites/default/files/dr._tarun_kukreja_-_spine_surgeon_and_orthopedist.jpg",
+      "path": "/doctors/dr-tarun-kukreja"
+    },
+    {
+      "id": 199,
+      "name": "Dr. Senthilkumar D",
+      "specialty": "Cardiac Surgeon",
+      "designation": " Consultant",
+      "hospital": "MGM Healthcare, Chennai",
+      "city": "Chennai, India",
+      "experience": "9+",
+      "image": "https://www.vaidam.com/sites/default/files/dr._senthilkumar-d-min.jpg",
+      "path": "/doctors/dr-senthilkumar-d"
+    },
+    {
+      "id": 200,
+      "name": "Dr. Krunal Tamakuwala",
+      "specialty": "Interventional Cardiologist",
+      "designation": " Consultant",
+      "hospital": "KD Hospital Ahmedabad",
+      "city": "Ahmedabad, India",
+      "experience": "9+",
+      "image": "https://www.vaidam.com/sites/default/files/dr._krunal_tamakuwala-min.jpg",
+      "path": "/doctors/dr-krunal-tamakuwala"
+    }
+
   ];
 
   const specialties = ["Cardiologist", "Oncologist", "Orthopedic Surgeon", "Neurologist", "Gynecologist", "Nephrologist", "Laparoscopic Surgeon", "Cosmetic Surgeon"];

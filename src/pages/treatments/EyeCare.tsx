@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
@@ -32,11 +31,11 @@ const EyeCare = () => {
                   </Button>
                 </div>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-2xl">
+              <div className="rounded-xl overflow-hidden shadow-2xl max-w-[500px] mx-auto">
                 <img
-                  src="https://placehold.co/800x600/nile-600/white/?text=Eye+Care"
-                  alt="Cataract Surgery"
-                  className="w-full h-auto"
+                  src="https://i.postimg.cc/qvw4HYCS/eye-care.png"
+                  alt="Eye Care"
+                  className="w-full h-[300px] object-contain"
                 />
               </div>
             </div>
@@ -49,8 +48,12 @@ const EyeCare = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="bg-white p-8 rounded-xl shadow-md">
                 <div className="flex items-center mb-6">
-                  <Eye className="text-blue-500 mr-3 h-8 w-8" />
-                  <h2 className="text-2xl font-bold">What is Cataract Surgery?</h2>
+                  <img 
+                    src="https://i.postimg.cc/qvw4HYCS/eye-care.png" 
+                    alt="Eye Care" 
+                    className="h-6 w-6 mr-3 object-contain"
+                  />
+                  <h2 className="text-2xl font-bold">What is Eye Care Treatment?</h2>
                 </div>
                 <p className="text-gray-700">
                   Cataract surgery is a safe and quick procedure used to remove a clouded natural lens of the eye and replace it with a clear artificial lens (IOL). This restores vision that has been impaired due to aging, diabetes, trauma, or prolonged steroid use. Modern cataract surgery is typically done under local anesthesia and takes less than 30 minutes with minimal downtime.
@@ -58,7 +61,11 @@ const EyeCare = () => {
               </div>
               <div className="bg-white p-8 rounded-xl shadow-md">
                 <div className="flex items-center mb-6">
-                  <Check className="text-nile-600 mr-3 h-8 w-8" />
+                  <img 
+                    src="https://i.postimg.cc/qvw4HYCS/eye-care.png" 
+                    alt="Eye Care" 
+                    className="h-6 w-6 mr-3 object-contain"
+                  />
                   <h2 className="text-2xl font-bold">Why Choose India?</h2>
                 </div>
                 <p className="text-gray-700">
