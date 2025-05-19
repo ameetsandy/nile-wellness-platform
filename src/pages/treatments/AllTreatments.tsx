@@ -202,13 +202,6 @@ const AllTreatments = () => {
                     save: 'Save up to 80%'
                   },
                   {
-                    name: 'Knee & Hip Replacement',
-                    path: '/treatments/knee-hip-replacement',
-                    icon: <Bone className="h-5 w-5 text-amber-600" />,
-                    desc: 'Comprehensive joint replacement solutions for knees and hips with rapid recovery.',
-                    save: 'Save up to 80%'
-                  },
-                  {
                     name: 'Cancer Treatment',
                     path: '/treatments/cancer-treatment',
                     icon: <Microscope className="h-5 w-5 text-purple-600" />,
@@ -230,13 +223,6 @@ const AllTreatments = () => {
                     save: 'Save up to 80%'
                   },
                   {
-                    name: 'Kidney & Liver Transplant',
-                    path: '/treatments/kidney-liver-transplant',
-                    icon: <Activity className="h-5 w-5 text-green-600" />,
-                    desc: 'Combined kidney and liver transplant programs for complex cases.',
-                    save: 'Save up to 80%'
-                  },
-                  {
                     name: 'Spine Surgery',
                     path: '/treatments/spine-surgery',
                     icon: <Bone className="h-5 w-5 text-indigo-600" />,
@@ -248,13 +234,6 @@ const AllTreatments = () => {
                     path: '/treatments/brain-surgery',
                     icon: <Brain className="h-5 w-5 text-indigo-600" />,
                     desc: 'Expert neurosurgeons for brain tumor, epilepsy, and other brain conditions.',
-                    save: 'Save up to 75%'
-                  },
-                  {
-                    name: 'Spine & Brain Surgery',
-                    path: '/treatments/spine-brain-surgery',
-                    icon: <Brain className="h-5 w-5 text-indigo-600" />,
-                    desc: 'Comprehensive neuro and spine surgery care for complex cases.',
                     save: 'Save up to 75%'
                   },
                   {
@@ -271,6 +250,20 @@ const AllTreatments = () => {
                     desc: 'Weight loss and metabolic surgery for a healthier, more active life.',
                     save: 'Save up to 70%'
                   },
+                  {
+                    name: 'Dental Implants',
+                    path: '/treatments/dental-implants',
+                    icon: <Smile className="h-5 w-5 text-cyan-500" />,
+                    desc: 'Restore your smile with high-quality dental implants.',
+                    save: 'Save up to 75%'
+                  },
+                  {
+                    name: 'Eye Care',
+                    path: '/treatments/eye-care',
+                    icon: <Eye className="h-5 w-5 text-blue-500" />,
+                    desc: 'Comprehensive eye care and vision correction procedures.',
+                    save: 'Save up to 70%'
+                  }
                 ].map((treatment) => (
                   <div
                     key={treatment.name}
@@ -288,13 +281,13 @@ const AllTreatments = () => {
                       <p className="text-gray-600 mb-4">{treatment.desc}</p>
                       <div className="mb-4">
                         <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">{treatment.save}</span>
-                        </div>
+                      </div>
                       <Link to={treatment.path}>
                         <Button className="w-full">Learn More</Button>
                       </Link>
                     </div>
                   </div>
-              ))}
+                ))}
               </div>
             </div>
           </div>
