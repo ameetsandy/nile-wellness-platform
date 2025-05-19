@@ -85,75 +85,147 @@ const PatientStories = () => {
   const successStories = [
     {
       id: 1,
-      title: "From Wheelchair to Walking: David's Journey",
-      patient: "David Okonkwo",
-      country: "Nigeria",
+      title: "Quick Spine Surgery in India",
+      patient: "Tatiana Nazarbekova",
+      country: "Uzbekistan",
       treatment: "Spinal Fusion Surgery",
-      hospital: "Fortis Hospital, Mumbai",
+      hospital: "Fortis Hospital",
       doctor: "Dr. Sunil Sharma",
-      excerpt: "After a severe workplace accident left him unable to walk, David found hope in India's advanced spine surgery options...",
-      image: "https://placehold.co/600x400/medical-600/white/?text=David's+Story",
-      date: "August 15, 2022"
+      excerpt: "Got back on feet fast with Fortis' expert spine team. Affordable & safe.",
+      image: "https://i.postimg.cc/sfLnzFfn/Tatiana-Nazarbekova-Uzbekistan.png",
+      date: "August 16, 2023"
     },
     {
       id: 2,
-      title: "A Mother's Gift: Kidney Donation Success Story",
-      patient: "Aisha and Leila Mahmoud",
-      country: "Egypt",
-      treatment: "Kidney Transplant",
-      hospital: "Apollo Hospitals, Chennai",
-      doctor: "Dr. Prathap Reddy",
-      excerpt: "When Leila's kidneys began failing, her mother Aisha didn't hesitate to become a donor. Their journey to India became a story of hope...",
-      image: "https://placehold.co/600x400/medical-600/white/?text=Aisha+and+Leila",
-      date: "March 23, 2023"
+      title: "Tanzania to Max for Knee Fix",
+      patient: "Abdul Juma",
+      country: "Tanzania",
+      treatment: "Knee Replacement",
+      hospital: "Max Hospital",
+      doctor: "Dr. S.K. Rajan",
+      excerpt: "Great staff & low cost. Best decision for mobility & health.",
+      image: "https://i.postimg.cc/BvNgwkwB/Abdul-Juma-Knee-Replacement-patient-from-Tanzania.png",
+      date: "October 27, 2023"
     },
     {
       id: 3,
-      title: "Beating Heart Failure: James's Second Chance",
-      patient: "James Wilson",
-      country: "United States",
-      treatment: "CABG Surgery",
-      hospital: "Medanta Hospital, Gurugram",
-      doctor: "Dr. Naresh Trehan",
-      excerpt: "Facing a 6-month waiting list and a $200,000 bill in the US, James found a new lease on life with heart surgery in India...",
-      image: "https://placehold.co/600x400/medical-600/white/?text=James's+Story",
-      date: "May 7, 2023"
+      title: "Knee Surgery in 7 Days, UK to India",
+      patient: "Sunieta Patel",
+      country: "United Kingdom",
+      treatment: "Total Knee Replacement",
+      hospital: "Fortis Hospital",
+      doctor: "Dr. Prathap Reddy",
+      excerpt: "Delighted with speedy recovery & excellent care at Fortis Hospital.",
+      image: "https://i.postimg.cc/x8N38Cj6/Sunieta-Patel.png",
+      date: "January 14, 2024"
     },
     {
       id: 4,
-      title: "The Miracle Baby: Emma & Michael's IVF Success",
-      patient: "Emma and Michael Brown",
-      country: "Australia",
-      treatment: "IVF Treatment",
-      hospital: "Cloudnine Hospital, Bangalore",
-      doctor: "Dr. Priti Gupta",
-      excerpt: "After 4 failed IVF cycles in Australia, this couple's journey to India resulted in the family they had always dreamed of...",
-      image: "https://placehold.co/600x400/medical-600/white/?text=Emma+and+Michael",
-      date: "January 12, 2023"
+      title: "Life-Saving Liver Transplant in 8 Days",
+      patient: "Amina Osman",
+      country: "Kenya",
+      treatment: "Liver Transplant",
+      hospital: "Medanta Hospital",
+      doctor: "Dr. Naresh Trehan",
+      excerpt: "Fast, safe & cost-effective care at Medanta. Trusted team!",
+      image: "https://i.postimg.cc/tCP8mRdd/Amina-Osman-Kenya.png",
+      date: "July 19, 2023"
     },
     {
       id: 5,
-      title: "Walking Pain-Free: Ibrahim's Hip Replacement Journey",
-      patient: "Ibrahim Al-Farsi",
-      country: "Oman",
-      treatment: "Hip Replacement",
-      hospital: "Max Hospital, Delhi",
-      doctor: "Dr. S.K. Rajan",
-      excerpt: "Years of osteoarthritis had left Ibrahim unable to walk without severe pain. His journey to India changed everything...",
-      image: "https://placehold.co/600x400/medical-600/white/?text=Ibrahim's+Story",
-      date: "October 30, 2022"
+      title: "Liver Transplant Done in 10 Days",
+      patient: "Lensa Tadesse",
+      country: "Ethiopia",
+      treatment: "Liver Transplant",
+      hospital: "Apollo Hospital",
+      doctor: "Dr. Vishal Rao",
+      excerpt: "Affordable, expert-led transplant saved my life. Smooth & quick process.",
+      image: "https://i.postimg.cc/T307ZKKb/Lensa-Tadesse.png",
+      date: "March 27, 2025"
     },
     {
       id: 6,
-      title: "Defeating Cancer: Sophia's Immunotherapy Success",
-      patient: "Sophia Mbeki",
-      country: "South Africa",
-      treatment: "Cancer Immunotherapy",
-      hospital: "HCG Cancer Centre, Bangalore",
-      doctor: "Dr. Vishal Rao",
-      excerpt: "When conventional treatments failed, Sophia found hope in India's cutting-edge immunotherapy options, leading to complete remission...",
-      image: "https://placehold.co/600x400/medical-600/white/?text=Sophia's+Story",
-      date: "April 18, 2023"
+      title: "Hip Surgery That Changed My Life",
+      patient: "Ivan Kabuye",
+      country: "Uganda",
+      treatment: "Orthopedic Surgery - Hip Replacement",
+      hospital: "Max Hospital",
+      doctor: "Dr. S.K. Rajan",
+      excerpt: "I walk pain-free now. Quick, professional care at Max Hospital.",
+      image: "https://i.postimg.cc/gJXgX4Ny/Ivan-Kabuye.png",
+      date: "June 24, 2023"
+    },
+    {
+      id: 7,
+      title: "BMT in India Changed My Future",
+      patient: "Tinashe Moyo",
+      country: "Zimbabwe",
+      treatment: "Bone Marrow Transplant",
+      hospital: "Apollo Hospital",
+      doctor: "Dr. Apollo Specialist",
+      excerpt: "Excellent cancer care at Apollo. Very thankful for their expert help.",
+      image: "https://i.postimg.cc/t4BkB8ct/Tinashe-Moyo-Zimbabwe.png",
+      date: "July 20, 2023"
+    },
+    {
+      id: 8,
+      title: "Lung Cancer Treated in Budget",
+      patient: "Mwansa Phiri",
+      country: "Zambia",
+      treatment: "Lung Cancer Treatment",
+      hospital: "Max Hospital",
+      doctor: "Dr. Max Specialist",
+      excerpt: "Fast recovery, expert oncology care, and compassionate team.",
+      image: "https://i.postimg.cc/WzcwDVDj/Mwansa-Phiri.png",
+      date: "September 02, 2024"
+    },
+    {
+      id: 9,
+      title: "Maldives to India for Heart Surgery",
+      patient: "Ahmed Al-Shamsi",
+      country: "Maldives",
+      treatment: "Heart Valve Replacement",
+      hospital: "Fortis Hospital",
+      doctor: "Dr. Fortis Specialist",
+      excerpt: "Quick diagnosis, cost saved & expert team made it stress-free.",
+      image: "https://i.postimg.cc/wBtX0MLg/Ahmed-Al-Shamsi-Oman.png",
+      date: "October 04, 2024"
+    },
+    {
+      id: 10,
+      title: "Prostate Cancer Cured Affordably",
+      patient: "Abena Osei",
+      country: "Ghana",
+      treatment: "Prostate Cancer Treatment",
+      hospital: "Fortis Hospital",
+      doctor: "Dr. Fortis Specialist",
+      excerpt: "Painless & professional treatment at Fortis. Truly grateful!",
+      image: "https://i.postimg.cc/RZHyyScQ/Abena-Osei.png",
+      date: "November 19, 2024"
+    },
+    {
+      id: 11,
+      title: "Liver Cancer Surgery: Smooth & Safe",
+      patient: "Tanvir Rahman",
+      country: "Bangladesh",
+      treatment: "Liver Cancer Treatment",
+      hospital: "Max Hospital",
+      doctor: "Dr. Max Specialist",
+      excerpt: "Amazing support, fast surgery & affordable costs at Max.",
+      image: "https://i.postimg.cc/vZK9gyjj/Tanvir-Rahman.png",
+      date: "May 25, 2023"
+    },
+    {
+      id: 12,
+      title: "Disc Replacement, 6-Day Recovery",
+      patient: "Eric Nshimiyimana",
+      country: "Rwanda",
+      treatment: "Spinal Disc Replacement",
+      hospital: "Fortis Hospital",
+      doctor: "Dr. Fortis Specialist",
+      excerpt: "Thankful to Fortis for great care & comfort. Back to work fast!",
+      image: "https://i.postimg.cc/t4snHfTz/Eric-Nshimiyimana.png",
+      date: "March 01, 2024"
     }
   ];
   
@@ -381,35 +453,26 @@ const PatientStories = () => {
             <Tabs defaultValue="all" className="w-full max-w-5xl mx-auto">
               <div className="flex justify-center mb-6">
                 <TabsList className="h-auto p-1">
-                  <TabsTrigger 
-                    value="all"
-                    className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600"
-                  >
+                  <TabsTrigger value="all" className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600">
                     All Stories
                   </TabsTrigger>
-                  <TabsTrigger 
-                    value="cardiac"
-                    className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600"
-                  >
-                    Cardiac
+                  <TabsTrigger value="spinal" className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600">
+                    Spinal Surgery
                   </TabsTrigger>
-                  <TabsTrigger 
-                    value="orthopedic"
-                    className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600"
-                  >
-                    Orthopedic
+                  <TabsTrigger value="cancer" className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600">
+                    Cancer Treatment
                   </TabsTrigger>
-                  <TabsTrigger 
-                    value="transplant"
-                    className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600"
-                  >
-                    Transplant
+                  <TabsTrigger value="liver" className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600">
+                    Liver Transplant
                   </TabsTrigger>
-                  <TabsTrigger 
-                    value="fertility"
-                    className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600"
-                  >
-                    Fertility
+                  <TabsTrigger value="orthopedic" className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600">
+                    Orthopedic Surgery
+                  </TabsTrigger>
+                  <TabsTrigger value="knee" className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600">
+                    Knee Replacement
+                  </TabsTrigger>
+                  <TabsTrigger value="cardiology" className="rounded-md py-2 px-4 data-[state=active]:bg-nile-600">
+                    Cardiology Treatment
                   </TabsTrigger>
                 </TabsList>
               </div>
@@ -417,16 +480,15 @@ const PatientStories = () => {
               <TabsContent value="all">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {successStories.map((story) => (
-                    <div 
-                      key={story.id}
-                      className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
-                    >
-                      <img 
-                        src={story.image}
-                        alt={story.title}
-                        className="w-full h-48 object-cover"
-                      />
-                      <div className="p-6">
+                    <div key={story.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
+                      <div className="relative w-full h-[300px] bg-white">
+                        <img 
+                          src={story.image}
+                          alt={story.title}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-grow">
                         <div className="flex items-center text-sm text-gray-500 mb-3">
                           <Calendar className="h-4 w-4 mr-1" />
                           <span>{story.date}</span>
@@ -436,7 +498,7 @@ const PatientStories = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2 line-clamp-2">{story.title}</h3>
                         <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
-                        <div className="flex justify-between items-center mb-4">
+                        <div className="flex flex-col space-y-2 mb-4">
                           <div className="flex items-center text-gray-500 text-sm">
                             <UserIcon className="h-4 w-4 mr-1" />
                             <span>{story.patient}</span>
@@ -445,35 +507,39 @@ const PatientStories = () => {
                             <HeartPulse className="h-4 w-4 mr-1" />
                             <span>{story.treatment}</span>
                           </div>
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <Building2 className="h-4 w-4 mr-1" />
+                            <span>{story.hospital}</span>
+                          </div>
                         </div>
-                        <Link to={`/patient-stories/${story.id}`} className="inline-block">
-                          <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                            Read Full Story <ArrowRight className="ml-1 h-4 w-4" />
-                          </Button>
-                        </Link>
+                        <div className="mt-auto">
+                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
+                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                              Know More <ArrowRight className="ml-1 h-4 w-4" />
+                            </Button>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   ))}
                 </div>
               </TabsContent>
               
-              <TabsContent value="cardiac">
+              <TabsContent value="spinal">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {successStories.filter(story => 
-                    story.treatment.toLowerCase().includes('heart') || 
-                    story.treatment.toLowerCase().includes('cabg') ||
-                    story.treatment.toLowerCase().includes('cardiac')
+                    story.treatment.toLowerCase().includes('spine') || 
+                    story.treatment.toLowerCase().includes('spinal')
                   ).map((story) => (
-                    <div 
-                      key={story.id}
-                      className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
-                    >
-                      <img 
-                        src={story.image}
-                        alt={story.title}
-                        className="w-full h-48 object-cover"
-                      />
-                      <div className="p-6">
+                    <div key={story.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
+                      <div className="relative w-full h-[300px] bg-white">
+                        <img 
+                          src={story.image}
+                          alt={story.title}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-grow">
                         <div className="flex items-center text-sm text-gray-500 mb-3">
                           <Calendar className="h-4 w-4 mr-1" />
                           <span>{story.date}</span>
@@ -483,7 +549,7 @@ const PatientStories = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2 line-clamp-2">{story.title}</h3>
                         <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
-                        <div className="flex justify-between items-center mb-4">
+                        <div className="flex flex-col space-y-2 mb-4">
                           <div className="flex items-center text-gray-500 text-sm">
                             <UserIcon className="h-4 w-4 mr-1" />
                             <span>{story.patient}</span>
@@ -492,36 +558,139 @@ const PatientStories = () => {
                             <HeartPulse className="h-4 w-4 mr-1" />
                             <span>{story.treatment}</span>
                           </div>
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <Building2 className="h-4 w-4 mr-1" />
+                            <span>{story.hospital}</span>
+                          </div>
                         </div>
-                        <Link to={`/patient-stories/${story.id}`} className="inline-block">
-                          <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                            Read Full Story <ArrowRight className="ml-1 h-4 w-4" />
-                          </Button>
-                        </Link>
+                        <div className="mt-auto">
+                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
+                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                              Know More <ArrowRight className="ml-1 h-4 w-4" />
+                            </Button>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   ))}
                 </div>
               </TabsContent>
-              
+
+              <TabsContent value="cancer">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {successStories.filter(story => 
+                    story.treatment.toLowerCase().includes('cancer')
+                  ).map((story) => (
+                    <div key={story.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
+                      <div className="relative w-full h-[300px] bg-white">
+                        <img 
+                          src={story.image}
+                          alt={story.title}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-grow">
+                        <div className="flex items-center text-sm text-gray-500 mb-3">
+                          <Calendar className="h-4 w-4 mr-1" />
+                          <span>{story.date}</span>
+                          <span className="mx-2">•</span>
+                          <MapPin className="h-4 w-4 mr-1" />
+                          <span>{story.country}</span>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2 line-clamp-2">{story.title}</h3>
+                        <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
+                        <div className="flex flex-col space-y-2 mb-4">
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <UserIcon className="h-4 w-4 mr-1" />
+                            <span>{story.patient}</span>
+                          </div>
+                          <div className="flex items-center text-nile-600 text-sm">
+                            <HeartPulse className="h-4 w-4 mr-1" />
+                            <span>{story.treatment}</span>
+                          </div>
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <Building2 className="h-4 w-4 mr-1" />
+                            <span>{story.hospital}</span>
+                          </div>
+                        </div>
+                        <div className="mt-auto">
+                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
+                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                              Know More <ArrowRight className="ml-1 h-4 w-4" />
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </TabsContent>
+
+              <TabsContent value="liver">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {successStories.filter(story => 
+                    story.treatment.toLowerCase().includes('liver')
+                  ).map((story) => (
+                    <div key={story.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
+                      <div className="relative w-full h-[300px] bg-white">
+                        <img 
+                          src={story.image}
+                          alt={story.title}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-grow">
+                        <div className="flex items-center text-sm text-gray-500 mb-3">
+                          <Calendar className="h-4 w-4 mr-1" />
+                          <span>{story.date}</span>
+                          <span className="mx-2">•</span>
+                          <MapPin className="h-4 w-4 mr-1" />
+                          <span>{story.country}</span>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2 line-clamp-2">{story.title}</h3>
+                        <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
+                        <div className="flex flex-col space-y-2 mb-4">
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <UserIcon className="h-4 w-4 mr-1" />
+                            <span>{story.patient}</span>
+                          </div>
+                          <div className="flex items-center text-nile-600 text-sm">
+                            <HeartPulse className="h-4 w-4 mr-1" />
+                            <span>{story.treatment}</span>
+                          </div>
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <Building2 className="h-4 w-4 mr-1" />
+                            <span>{story.hospital}</span>
+                          </div>
+                        </div>
+                        <div className="mt-auto">
+                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
+                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                              Know More <ArrowRight className="ml-1 h-4 w-4" />
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </TabsContent>
+
               <TabsContent value="orthopedic">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {successStories.filter(story => 
-                    story.treatment.toLowerCase().includes('hip') || 
-                    story.treatment.toLowerCase().includes('knee') ||
-                    story.treatment.toLowerCase().includes('spine') ||
-                    story.treatment.toLowerCase().includes('orthopedic')
+                    story.treatment.toLowerCase().includes('orthopedic') ||
+                    story.treatment.toLowerCase().includes('hip')
                   ).map((story) => (
-                    <div 
-                      key={story.id}
-                      className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
-                    >
-                      <img 
-                        src={story.image}
-                        alt={story.title}
-                        className="w-full h-48 object-cover"
-                      />
-                      <div className="p-6">
+                    <div key={story.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
+                      <div className="relative w-full h-[300px] bg-white">
+                        <img 
+                          src={story.image}
+                          alt={story.title}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-grow">
                         <div className="flex items-center text-sm text-gray-500 mb-3">
                           <Calendar className="h-4 w-4 mr-1" />
                           <span>{story.date}</span>
@@ -531,7 +700,7 @@ const PatientStories = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2 line-clamp-2">{story.title}</h3>
                         <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
-                        <div className="flex justify-between items-center mb-4">
+                        <div className="flex flex-col space-y-2 mb-4">
                           <div className="flex items-center text-gray-500 text-sm">
                             <UserIcon className="h-4 w-4 mr-1" />
                             <span>{story.patient}</span>
@@ -540,12 +709,120 @@ const PatientStories = () => {
                             <HeartPulse className="h-4 w-4 mr-1" />
                             <span>{story.treatment}</span>
                           </div>
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <Building2 className="h-4 w-4 mr-1" />
+                            <span>{story.hospital}</span>
+                          </div>
                         </div>
-                        <Link to={`/patient-stories/${story.id}`} className="inline-block">
-                          <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                            Read Full Story <ArrowRight className="ml-1 h-4 w-4" />
-                          </Button>
-                        </Link>
+                        <div className="mt-auto">
+                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
+                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                              Know More <ArrowRight className="ml-1 h-4 w-4" />
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </TabsContent>
+
+              <TabsContent value="knee">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {successStories.filter(story => 
+                    story.treatment.toLowerCase().includes('knee')
+                  ).map((story) => (
+                    <div key={story.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
+                      <div className="relative w-full h-[300px] bg-white">
+                        <img 
+                          src={story.image}
+                          alt={story.title}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-grow">
+                        <div className="flex items-center text-sm text-gray-500 mb-3">
+                          <Calendar className="h-4 w-4 mr-1" />
+                          <span>{story.date}</span>
+                          <span className="mx-2">•</span>
+                          <MapPin className="h-4 w-4 mr-1" />
+                          <span>{story.country}</span>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2 line-clamp-2">{story.title}</h3>
+                        <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
+                        <div className="flex flex-col space-y-2 mb-4">
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <UserIcon className="h-4 w-4 mr-1" />
+                            <span>{story.patient}</span>
+                          </div>
+                          <div className="flex items-center text-nile-600 text-sm">
+                            <HeartPulse className="h-4 w-4 mr-1" />
+                            <span>{story.treatment}</span>
+                          </div>
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <Building2 className="h-4 w-4 mr-1" />
+                            <span>{story.hospital}</span>
+                          </div>
+                        </div>
+                        <div className="mt-auto">
+                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
+                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                              Know More <ArrowRight className="ml-1 h-4 w-4" />
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </TabsContent>
+
+              <TabsContent value="cardiology">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {successStories.filter(story => 
+                    story.treatment.toLowerCase().includes('heart') ||
+                    story.treatment.toLowerCase().includes('cardiac') ||
+                    story.treatment.toLowerCase().includes('cardiology')
+                  ).map((story) => (
+                    <div key={story.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
+                      <div className="relative w-full h-[300px] bg-white">
+                        <img 
+                          src={story.image}
+                          alt={story.title}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="p-6 flex flex-col flex-grow">
+                        <div className="flex items-center text-sm text-gray-500 mb-3">
+                          <Calendar className="h-4 w-4 mr-1" />
+                          <span>{story.date}</span>
+                          <span className="mx-2">•</span>
+                          <MapPin className="h-4 w-4 mr-1" />
+                          <span>{story.country}</span>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2 line-clamp-2">{story.title}</h3>
+                        <p className="text-gray-600 mb-4 line-clamp-3">{story.excerpt}</p>
+                        <div className="flex flex-col space-y-2 mb-4">
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <UserIcon className="h-4 w-4 mr-1" />
+                            <span>{story.patient}</span>
+                          </div>
+                          <div className="flex items-center text-nile-600 text-sm">
+                            <HeartPulse className="h-4 w-4 mr-1" />
+                            <span>{story.treatment}</span>
+                          </div>
+                          <div className="flex items-center text-gray-500 text-sm">
+                            <Building2 className="h-4 w-4 mr-1" />
+                            <span>{story.hospital}</span>
+                          </div>
+                        </div>
+                        <div className="mt-auto">
+                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
+                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                              Know More <ArrowRight className="ml-1 h-4 w-4" />
+                            </Button>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   ))}
