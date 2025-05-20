@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Heart, HeartPulse, Phone, MessageCircle } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import { Search, Filter, Calendar, ArrowRight } from "lucide-react";
 
 const HeartBypassSurgery = () => {
   return (
@@ -133,97 +134,187 @@ const HeartBypassSurgery = () => {
           </div>
         </section>
 
-        {/* Top Cardiac Doctors */}
-        <section className="py-16 bg-white">
+        {/* Top Doctors */}
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Top Cardiac Doctors in India</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Doctor 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+              <Link
+                to="/doctors/dr-devi-prasad-shetty"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
+              >
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Trehan"
-                      alt="Dr. Naresh Trehan"
-                      className="w-full h-full object-cover"
+                      src="https://www.vaidam.com/sites/default/webp/50/files/dr._devi_prasad_shetty.webp"
+                      alt="Dr. Devi Prasad Shetty"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Naresh Trehan</h3>
-                  <p className="text-center text-nile-600 mb-2">Cardiothoracic Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">40+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Medanta</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Gurgaon</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
-                    </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
-                    </Button>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">45+ Exp</span>
                   </div>
                 </div>
-              </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Devi Prasad Shetty
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      Cardiac Surgeon
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Senior Consultant
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Narayana Institute of Cardiac Sciences, Bangalore, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
+                    </Button>
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
+                    </Button>
+                  </div>
+                  <div
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
+                  >
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
+                  </div>
+                </div>
+              </Link>
 
               {/* Doctor 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+              <Link
+                to="/doctors/dr-naresh-trehan"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
+              >
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Balakrishnan"
-                      alt="Dr. K R Balakrishnan"
-                      className="w-full h-full object-cover"
+                      src="https://www.vaidam.com/sites/default/webp/50/files/dr._naresh_trehan-min.webp"
+                      alt="Dr. Naresh Trehan"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. K R Balakrishnan</h3>
-                  <p className="text-center text-nile-600 mb-2">Heart & Lung Transplant Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">MGM Healthcare</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Chennai</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
-                    </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
-                    </Button>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">56+ Exp</span>
                   </div>
                 </div>
-              </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Naresh Trehan
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      Cardiac Surgeon
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Chairman
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Medanta - The Medicity, Gurgaon, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
+                    </Button>
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
+                    </Button>
+                  </div>
+                  <div
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
+                  >
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
+                  </div>
+                </div>
+              </Link>
 
               {/* Doctor 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+              <Link
+                to="/doctors/dr-z-s-meharwal"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
+              >
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Shetty"
-                      alt="Dr. Devi Prasad Shetty"
-                      className="w-full h-full object-cover"
+                      src="https://www.vaidam.com/sites/default/webp/50/files/dr-z-s-meharwal_cardio-thorasic-vascular-surgery982956-min.webp"
+                      alt="Dr. Z S Meharwal"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Devi Prasad Shetty</h3>
-                  <p className="text-center text-nile-600 mb-2">Cardiac Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Narayana Health</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Bangalore</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
-                    </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
-                    </Button>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">42+ Exp</span>
                   </div>
                 </div>
-              </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Z S Meharwal
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      Cardiac Surgeon
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Chairman
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Fortis Escorts Heart Institute, New Delhi, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
+                    </Button>
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
+                    </Button>
+                  </div>
+                  <div
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
+                  >
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
@@ -234,61 +325,118 @@ const HeartBypassSurgery = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Hospitals for Heart Surgery</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Hospital 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Medanta"
-                    alt="Medanta - The Medicity"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Medanta - The Medicity</h3>
-                  <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH & JCI Accredited</span>
+              <Link to="/hospitals/fortis-memorial-research-institute" className="block">
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="relative h-48">
+                    <img
+                      src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis_memorial_hospital_gurgaon_list_view_image-min.webp"
+                      alt="Fortis Memorial Research Institute"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <p className="text-gray-600 mb-4">Gurgaon</p>
-                  <Button className="w-full">View Hospital</Button>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">Fortis Memorial Research Institute</h3>
+                    <p className="text-gray-600 mb-4">Gurgaon, India</p>
+                    <div className="space-y-2 mb-4">
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Accreditation:</span>
+                        <span className="font-medium">JCI, NABH</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Established:</span>
+                        <span className="font-medium">2001</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Beds:</span>
+                        <span className="font-medium">300</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Type:</span>
+                        <span className="font-medium">Multi Specialty</span>
+                      </div>
+                    </div>
+                    <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                      View Hospital Profile
+                    </Button>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Hospital 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Narayana"
-                    alt="Narayana Health"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Narayana Health</h3>
-                  <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited</span>
+              <Link to="/hospitals/fortis-escorts-heart-institute" className="block">
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="relative h-48">
+                    <img
+                      src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis-escorts-heart-institute_0.webp"
+                      alt="Fortis Escorts Heart Institute"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <p className="text-gray-600 mb-4">Bangalore</p>
-                  <Button className="w-full">View Hospital</Button>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">Fortis Escorts Heart Institute</h3>
+                    <p className="text-gray-600 mb-4">New Delhi, India</p>
+                    <div className="space-y-2 mb-4">
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Accreditation:</span>
+                        <span className="font-medium">JCI, NABH</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Established:</span>
+                        <span className="font-medium">1988</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Beds:</span>
+                        <span className="font-medium">310</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Type:</span>
+                        <span className="font-medium">Multi Specialty</span>
+                      </div>
+                    </div>
+                    <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                      View Hospital Profile
+                    </Button>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Hospital 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Fortis"
-                    alt="Fortis Escorts Heart Institute"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Fortis Escorts Heart Institute</h3>
-                  <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH & JCI Accredited</span>
+              <Link to="/hospitals/narayana-institute-of-cardiac-sciences" className="block">
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                  <div className="relative h-48">
+                    <img
+                      src="https://www.vaidam.com/sites/default/files/narayana_institute_of_cardiac_sciences_bangalore_1-min.jpg"
+                      alt="Narayana Institute of Cardiac Sciences"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <p className="text-gray-600 mb-4">New Delhi</p>
-                  <Button className="w-full">View Hospital</Button>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">Narayana Institute of Cardiac Sciences</h3>
+                    <p className="text-gray-600 mb-4">Bangalore, India</p>
+                    <div className="space-y-2 mb-4">
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Accreditation:</span>
+                        <span className="font-medium">JCI, NABH</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Established:</span>
+                        <span className="font-medium">2000</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Beds:</span>
+                        <span className="font-medium">606</span>
+                      </div>
+                      <div className="flex items-center text-sm">
+                        <span className="text-gray-600 w-24">Type:</span>
+                        <span className="font-medium">Super Specialty</span>
+                      </div>
+                    </div>
+                    <Button className="w-full bg-nile-600 hover:bg-nile-700">
+                      View Hospital Profile
+                    </Button>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>
