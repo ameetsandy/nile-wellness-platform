@@ -246,7 +246,7 @@ const CancerTreatment = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Tata+Memorial"
+                    src="https://placehold.co/800x600/nile-600/white/?text=Tata"
                     alt="Tata Memorial Hospital"
                     className="w-full h-full object-cover"
                   />
@@ -254,7 +254,7 @@ const CancerTreatment = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Tata Memorial Hospital</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Govt. Cancer Institute | NABH Accredited</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Government Cancer Hospital | Advanced Treatment</span>
                   </div>
                   <p className="text-gray-600 mb-4">Mumbai</p>
                   <Button className="w-full">View Hospital</Button>
@@ -265,15 +265,15 @@ const CancerTreatment = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Fortis+Memorial"
-                    alt="Fortis Memorial Research Institute"
+                    src="https://placehold.co/800x600/nile-600/white/?text=Medanta"
+                    alt="Medanta - The Medicity"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Fortis Memorial Research Institute</h3>
+                  <h3 className="text-xl font-bold mb-2">Medanta - The Medicity</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH & JCI Accredited</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI Accredited | Comprehensive Cancer Care</span>
                   </div>
                   <p className="text-gray-600 mb-4">Gurgaon</p>
                   <Button className="w-full">View Hospital</Button>
@@ -284,17 +284,17 @@ const CancerTreatment = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Apollo+Cancer"
-                    alt="Apollo Cancer Centre"
+                    src="https://placehold.co/800x600/nile-600/white/?text=Apollo"
+                    alt="Apollo Hospitals"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Apollo Cancer Centre</h3>
+                  <h3 className="text-xl font-bold mb-2">Apollo Hospitals</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI Accredited | Dedicated Oncology Wing</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited | Advanced Oncology Center</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Chennai</p>
+                  <p className="text-gray-600 mb-4">Greams Road, Chennai</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
               </div>

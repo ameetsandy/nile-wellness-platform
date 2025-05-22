@@ -325,116 +325,68 @@ const HeartBypassSurgery = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Hospitals for Heart Surgery</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Hospital 1 */}
-              <Link to="/hospitals/fortis-memorial-research-institute" className="block">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="relative h-48">
+              <Link
+                to="/hospitals/medanta-medicity-gurgaon"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="h-48 overflow-hidden">
                   <img
-                      src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis_memorial_hospital_gurgaon_list_view_image-min.webp"
-                      alt="Fortis Memorial Research Institute"
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/medanta_the_medicity_gurgaon_list_view_image-min.webp"
+                    alt="Medanta - The Medicity"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">Fortis Memorial Research Institute</h3>
-                    <p className="text-gray-600 mb-4">Gurgaon, India</p>
-                    <div className="space-y-2 mb-4">
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Accreditation:</span>
-                        <span className="font-medium">JCI, NABH</span>
-                      </div>
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Established:</span>
-                        <span className="font-medium">2001</span>
-                      </div>
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Beds:</span>
-                        <span className="font-medium">300</span>
-                      </div>
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Type:</span>
-                        <span className="font-medium">Multi Specialty</span>
-                      </div>
-                    </div>
-                    <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                      View Hospital Profile
-                    </Button>
+                  <h3 className="text-xl font-bold mb-2">Medanta - The Medicity</h3>
+                  <div className="flex items-center mb-4">
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABH Certified | Super Specialty</span>
                   </div>
+                  <p className="text-gray-600 mb-4">Gurgaon • Est. 2009 • 1600 Beds</p>
+                  <Button className="w-full">View Hospital</Button>
                 </div>
               </Link>
 
               {/* Hospital 2 */}
-              <Link to="/hospitals/fortis-escorts-heart-institute" className="block">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="relative h-48">
+              <Link
+                to="/hospitals/narayana-institute-cardiac-sciences-bangalore"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="h-48 overflow-hidden">
                   <img
-                      src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis-escorts-heart-institute_0.webp"
-                      alt="Fortis Escorts Heart Institute"
+                    src="https://www.vaidam.com/sites/default/files/narayana_institute_of_cardiac_sciences_bangalore_1-min.jpg"
+                    alt="Narayana Institute of Cardiac Sciences"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">Fortis Escorts Heart Institute</h3>
-                    <p className="text-gray-600 mb-4">New Delhi, India</p>
-                    <div className="space-y-2 mb-4">
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Accreditation:</span>
-                        <span className="font-medium">JCI, NABH</span>
-                      </div>
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Established:</span>
-                        <span className="font-medium">1988</span>
-                      </div>
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Beds:</span>
-                        <span className="font-medium">310</span>
-                      </div>
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Type:</span>
-                        <span className="font-medium">Multi Specialty</span>
-                      </div>
-                    </div>
-                    <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                      View Hospital Profile
-                    </Button>
+                  <h3 className="text-xl font-bold mb-2">Narayana Institute of Cardiac Sciences</h3>
+                  <div className="flex items-center mb-4">
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABH Certified | Super Specialty</span>
                   </div>
+                  <p className="text-gray-600 mb-4">Bangalore • Est. 2000 • 606 Beds</p>
+                  <Button className="w-full">View Hospital</Button>
                 </div>
               </Link>
 
               {/* Hospital 3 */}
-              <Link to="/hospitals/narayana-institute-of-cardiac-sciences" className="block">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="relative h-48">
+              <Link
+                to="/hospitals/fortis-escorts-heart-institute-new-delhi"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="h-48 overflow-hidden">
                   <img
-                      src="https://www.vaidam.com/sites/default/files/narayana_institute_of_cardiac_sciences_bangalore_1-min.jpg"
-                      alt="Narayana Institute of Cardiac Sciences"
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis-escorts-heart-institute_0.webp"
+                    alt="Fortis Escorts Heart Institute"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">Narayana Institute of Cardiac Sciences</h3>
-                    <p className="text-gray-600 mb-4">Bangalore, India</p>
-                    <div className="space-y-2 mb-4">
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Accreditation:</span>
-                        <span className="font-medium">JCI, NABH</span>
-                      </div>
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Established:</span>
-                        <span className="font-medium">2000</span>
-                      </div>
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Beds:</span>
-                        <span className="font-medium">606</span>
-                      </div>
-                      <div className="flex items-center text-sm">
-                        <span className="text-gray-600 w-24">Type:</span>
-                        <span className="font-medium">Super Specialty</span>
-                      </div>
-                    </div>
-                    <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                      View Hospital Profile
-                    </Button>
+                  <h3 className="text-xl font-bold mb-2">Fortis Escorts Heart Institute</h3>
+                  <div className="flex items-center mb-4">
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABH Certified | Multi Specialty</span>
                   </div>
+                  <p className="text-gray-600 mb-4">New Delhi • Est. 1988 • 310 Beds</p>
+                  <Button className="w-full">View Hospital</Button>
                 </div>
               </Link>
             </div>

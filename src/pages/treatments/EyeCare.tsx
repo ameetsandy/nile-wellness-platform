@@ -240,64 +240,73 @@ const EyeCare = () => {
         {/* Top Eye Hospitals */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Top Hospitals for Cataract Surgery</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Top Eye Care Hospitals</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Hospital 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="https://www.nilewellness.com/hospitals/centre-sight-eye-hospital-sector-29-gurgaon"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Shroff"
-                    alt="Shroff Eye Centre"
+                    src="https://www.vaidam.com/sites/default/files/centre_for_sight_eye_hospital_sector_29_gurgaon_building-min.jpg"
+                    alt="Centre for Sight Eye Hospital"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Shroff Eye Centre</h3>
+                  <h3 className="text-xl font-bold mb-2">Centre for Sight Eye Hospital</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Certified | Eye-only specialty</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Established 1996</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Delhi, Gurgaon</p>
+                  <p className="text-gray-600 mb-4">Sector 29, Gurgaon</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
 
               {/* Hospital 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="https://www.nilewellness.com/hospitals/pbmas-h-v-desai-eye-hospital-pune"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Max"
-                    alt="Max Eye Care"
+                    src="https://www.vaidam.com/sites/default/files/pbmas_h_v_desai_eye_hospital_building-min.jpg"
+                    alt="PBMA'S H V Desai Eye Hospital"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Max Eye Care</h3>
+                  <h3 className="text-xl font-bold mb-2">PBMA'S H V Desai Eye Hospital</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Phaco + Laser Surgery | Eye department of Max Hospitals</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Gurgaon, Delhi</p>
+                  <p className="text-gray-600 mb-4">Pune</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
 
               {/* Hospital 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="https://www.nilewellness.com/hospitals/bharti-eye-hospital-new-delhi"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Agarwal's"
-                    alt="Dr. Agarwal's Eye Hospital"
+                    src="https://www.vaidam.com/sites/default/files/dr-s-bharti-with-patient-1-delhi_0.jpg"
+                    alt="Bharti Eye Hospital"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Dr. Agarwal's Eye Hospital</h3>
+                  <h3 className="text-xl font-bold mb-2">Bharti Eye Hospital</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Multicity Chain | Advanced cataract care</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Chennai, Bangalore, Delhi</p>
+                  <p className="text-gray-600 mb-4">New Delhi</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

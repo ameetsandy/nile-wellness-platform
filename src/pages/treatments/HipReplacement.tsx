@@ -243,61 +243,70 @@ const HipReplacement = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Hospitals</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Hospital 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/hospitals/indraprastha-apollo-hospital-new-delhi"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Shalby"
-                    alt="Shalby Hospitals, Ahmedabad"
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/Apollo%20Hospital%20Delhi%20Lobby_0.webp"
+                    alt="Indraprastha Apollo Hospital"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Shalby Hospitals, Ahmedabad</h3>
+                  <h3 className="text-xl font-bold mb-2">Indraprastha Apollo Hospital</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited | Specializes in Joint Replacement</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABL Certified | Multi Specialty</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Ahmedabad</p>
+                  <p className="text-gray-600 mb-4">New Delhi • Est. 1995 • 710 Beds</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
 
               {/* Hospital 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/hospitals/fortis-memorial-research-institute-gurgaon"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Medanta"
-                    alt="Medanta - The Medicity"
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis_memorial_hospital_gurgaon_list_view_image-min.webp"
+                    alt="Fortis Memorial Research Institute"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Medanta - The Medicity</h3>
+                  <h3 className="text-xl font-bold mb-2">Fortis Memorial Research Institute</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH & JCI Accredited</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABH Certified | Multi Specialty</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Gurgaon</p>
+                  <p className="text-gray-600 mb-4">Gurgaon • Est. 2001 • 310 Beds</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
 
               {/* Hospital 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/hospitals/blk-hospital-new-delhi"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Fortis"
-                    alt="Fortis Escorts, Delhi"
+                    src="https://www.vaidam.com/sites/default/files/blk_facade-1-min.jpg"
+                    alt="BLK-Max Super Speciality Hospital"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Fortis Escorts, Delhi</h3>
+                  <h3 className="text-xl font-bold mb-2">BLK-Max Super Speciality Hospital</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABH Certified | Super Specialty</span>
                   </div>
-                  <p className="text-gray-600 mb-4">New Delhi</p>
+                  <p className="text-gray-600 mb-4">New Delhi • Est. 1959 • 650 Beds</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

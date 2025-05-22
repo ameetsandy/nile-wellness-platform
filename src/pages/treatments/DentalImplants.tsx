@@ -243,61 +243,70 @@ const DentalImplants = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Dental Clinics for Implants</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Clinic 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="https://www.nilewellness.com/hospitals/cosmetic-dental-clinic-bangalore"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Clove"
-                    alt="Clove Dental Clinics"
+                    src="https://www.vaidam.com/sites/default/files/cosmetic_dental_clinic.jpg"
+                    alt="Cosmetic Dental Clinic"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Clove Dental Clinics</h3>
+                  <h3 className="text-xl font-bold mb-2">Cosmetic Dental Clinic</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Pan-India Chain | Global Implant Systems</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Established 2001</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Multiple Cities</p>
+                  <p className="text-gray-600 mb-4">Bangalore</p>
                   <Button className="w-full">View Clinic</Button>
                 </div>
-              </div>
+              </Link>
 
               {/* Clinic 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="https://www.nilewellness.com/hospitals/dental-brasstacks-gurgaon"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=FMS"
-                    alt="FMS Dental Hospitals"
+                    src="https://www.vaidam.com/sites/default/files/dental-brass-tacks-gurgaon.jpg"
+                    alt="Dental Brasstacks"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">FMS Dental Hospitals</h3>
+                  <h3 className="text-xl font-bold mb-2">Dental Brasstacks</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited | Dedicated Implantology Wing</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Established 2016</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Hyderabad</p>
+                  <p className="text-gray-600 mb-4">Gurgaon</p>
                   <Button className="w-full">View Clinic</Button>
                 </div>
-              </div>
+              </Link>
 
               {/* Clinic 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="https://www.nilewellness.com/hospitals/dental-square-mumbai"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Max"
-                    alt="Max Dental Care"
+                    src="https://www.vaidam.com/sites/default/files/dental_square_mumbai-home-min.jpg"
+                    alt="Dental Square"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Max Dental Care</h3>
+                  <h3 className="text-xl font-bold mb-2">Dental Square</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Cosmetic + Full Mouth Rehabilitation</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Specialized Dental Center</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Delhi & Gurgaon</p>
+                  <p className="text-gray-600 mb-4">Mumbai</p>
                   <Button className="w-full">View Clinic</Button>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

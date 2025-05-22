@@ -329,10 +329,13 @@ const KneeReplacement = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Hospitals for Knee Replacement</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Hospital 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/hospitals/medanta-medicity-gurgaon"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Medanta"
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/medanta_the_medicity_gurgaon_list_view_image-min.webp"
                     alt="Medanta - The Medicity"
                     className="w-full h-full object-cover"
                   />
@@ -340,50 +343,56 @@ const KneeReplacement = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Medanta - The Medicity</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH & JCI Accredited</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABH Certified | Super Specialty</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Gurgaon</p>
+                  <p className="text-gray-600 mb-4">Gurgaon • Est. 2009 • 1600 Beds</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
 
               {/* Hospital 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/hospitals/indraprastha-apollo-hospital-new-delhi"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Apollo"
-                    alt="Apollo Hospitals"
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/Apollo%20Hospital%20Delhi%20Lobby_0.webp"
+                    alt="Indraprastha Apollo Hospital"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Apollo Hospitals, Delhi</h3>
+                  <h3 className="text-xl font-bold mb-2">Indraprastha Apollo Hospital</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI Accredited</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABL Certified | Multi Specialty</span>
                   </div>
-                  <p className="text-gray-600 mb-4">New Delhi</p>
+                  <p className="text-gray-600 mb-4">New Delhi • Est. 1995 • 710 Beds</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
 
               {/* Hospital 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/hospitals/fortis-memorial-research-institute-gurgaon"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Fortis"
-                    alt="Fortis Hospital"
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis_memorial_hospital_gurgaon_list_view_image-min.webp"
+                    alt="Fortis Memorial Research Institute"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Fortis Hospital, Bangalore</h3>
+                  <h3 className="text-xl font-bold mb-2">Fortis Memorial Research Institute</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABH Certified | Multi Specialty</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Bangalore</p>
+                  <p className="text-gray-600 mb-4">Gurgaon • Est. 2001 • 310 Beds</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

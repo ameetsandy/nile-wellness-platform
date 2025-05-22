@@ -242,11 +242,11 @@ const IVFFertility = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Top IVF Clinics & Hospitals</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Clinic 1 */}
+              {/* Hospital 1 */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Nova+IVF"
+                    src="https://placehold.co/800x600/nile-600/white/?text=Nova"
                     alt="Nova IVF Fertility"
                     className="w-full h-full object-cover"
                   />
@@ -261,7 +261,7 @@ const IVFFertility = () => {
                 </div>
               </div>
 
-              {/* Clinic 2 */}
+              {/* Hospital 2 */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-48 overflow-hidden">
                   <img
@@ -280,7 +280,7 @@ const IVFFertility = () => {
                 </div>
               </div>
 
-              {/* Clinic 3 */}
+              {/* Hospital 3 */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-48 overflow-hidden">
                   <img
@@ -298,6 +298,80 @@ const IVFFertility = () => {
                   <Button className="w-full">View Clinic</Button>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Top Hospitals */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">Top IVF & Fertility Centers</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Hospital 1 */}
+              <Link
+                to="https://www.nilewellness.com/hospitals/apollo-fertility-centre-anna-nagar"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src="https://www.vaidam.com/sites/default/files/apollo_fertility_anna_nagar_list_image-min.jpg"
+                    alt="Apollo Fertility Centre"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Apollo Fertility Centre</h3>
+                  <div className="flex items-center mb-4">
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Specialized IVF Center</span>
+                  </div>
+                  <p className="text-gray-600 mb-4">Anna Nagar, Chennai</p>
+                  <Button className="w-full">View Center</Button>
+                </div>
+              </Link>
+
+              {/* Hospital 2 */}
+              <Link
+                to="https://www.nilewellness.com/hospitals/world-infertility-and-ivf-centre-new-delhi"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src="https://www.vaidam.com/sites/default/files/world_infertility_and_ivf_centre_new_delhi_building-min.jpg"
+                    alt="World Infertility and IVF Centre"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">World Infertility and IVF Centre</h3>
+                  <div className="flex items-center mb-4">
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Established 1970</span>
+                  </div>
+                  <p className="text-gray-600 mb-4">New Delhi</p>
+                  <Button className="w-full">View Center</Button>
+                </div>
+              </Link>
+
+              {/* Hospital 3 */}
+              <Link
+                to="https://www.nilewellness.com/hospitals/apollo-fertility-banjara-hills"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src="https://www.vaidam.com/sites/default/files/main_building_apollo_fertility_banjara_hills_hyderabad.jpg"
+                    alt="Apollo Fertility Banjara Hills"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Apollo Fertility Banjara Hills</h3>
+                  <div className="flex items-center mb-4">
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Specialized IVF Center</span>
+                  </div>
+                  <p className="text-gray-600 mb-4">Hyderabad</p>
+                  <Button className="w-full">View Center</Button>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

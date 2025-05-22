@@ -265,17 +265,17 @@ const SpineSurgery = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Fortis"
-                    alt="Fortis Hospital"
+                    src="https://placehold.co/800x600/nile-600/white/?text=Max"
+                    alt="Max Super Speciality Hospital"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Fortis Hospital</h3>
+                  <h3 className="text-xl font-bold mb-2">Max Super Speciality Hospital</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI & NABH Accredited</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI Accredited | Advanced Spine Care</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Gurgaon</p>
+                  <p className="text-gray-600 mb-4">Saket, New Delhi</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
               </div>
@@ -292,9 +292,9 @@ const SpineSurgery = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Apollo Hospitals</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI Accredited | Advanced Spine Institute</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited | Comprehensive Spine Care</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Chennai & Bangalore</p>
+                  <p className="text-gray-600 mb-4">Greams Road, Chennai</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
               </div>
