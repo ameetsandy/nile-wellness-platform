@@ -139,49 +139,23 @@ const CancerTreatment = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Oncologists in India</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Doctor 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-vinod-raina-medical-oncology"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Advani"
-                      alt="Dr. Suresh Advani"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Suresh Advani</h3>
-                  <p className="text-center text-nile-600 mb-2">Medical & Hemato-Oncologist</p>
-                  <p className="text-center text-gray-600 mb-4">45+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Jaslok Hospital</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Mumbai</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
-                    </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Doctor 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
-                    <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Raina"
+                      src="https://www.vaidam.com/sites/default/files/dr._vinod_raina-min.png"
                       alt="Dr. Vinod Raina"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-center">Dr. Vinod Raina</h3>
                   <p className="text-center text-nile-600 mb-2">Medical Oncologist</p>
-                  <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
+                  <p className="text-center text-gray-600 mb-4">40+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Fortis Memorial</span>
+                    <span className="text-gray-600 font-medium">Fortis Memorial Research Institute</span>
                     <span className="mx-2">•</span>
                     <span className="text-gray-600">Gurgaon</span>
                   </div>
@@ -194,25 +168,28 @@ const CancerTreatment = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              {/* Doctor 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              {/* Doctor 2 */}
+              <Link
+                to="/doctors/dr-sameer-kaul"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Aggarwal"
-                      alt="Dr. Shyam Aggarwal"
+                      src="https://www.vaidam.com/sites/default/files/dr._kaul-min.jpg"
+                      alt="Dr. Sameer Kaul"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Shyam Aggarwal</h3>
-                  <p className="text-center text-nile-600 mb-2">Hemato-Oncologist</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Sameer Kaul</h3>
+                  <p className="text-center text-nile-600 mb-2">Medical Oncologist</p>
                   <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Sir Ganga Ram Hospital</span>
+                    <span className="text-gray-600 font-medium">Indraprastha Apollo Hospital</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Delhi</span>
+                    <span className="text-gray-600">New Delhi</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -223,7 +200,39 @@ const CancerTreatment = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
+
+              {/* Doctor 3 */}
+              <Link
+                to="/doctors/dr-hari-goyal"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="p-6">
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                    <img
+                      src="https://www.vaidam.com/sites/default/files/dr_hari_goyal-min.jpg"
+                      alt="Dr. Hari Goyal"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-center">Dr. Hari Goyal</h3>
+                  <p className="text-center text-nile-600 mb-2">Medical Oncologist</p>
+                  <p className="text-center text-gray-600 mb-4">29+ Years Experience</p>
+                  <div className="flex items-center justify-center mb-4">
+                    <span className="text-gray-600 font-medium">BLK-Max Super Speciality Hospital</span>
+                    <span className="mx-2">•</span>
+                    <span className="text-gray-600">New Delhi</span>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <Button className="bg-green-600 hover:bg-green-700 w-full">
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                    </Button>
+                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
+                      Request Appointment
+                    </Button>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

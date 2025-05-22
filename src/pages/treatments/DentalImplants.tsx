@@ -139,91 +139,100 @@ const DentalImplants = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Dental Implant Experts in India</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Doctor 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-anjana-satyajit"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Khanna"
-                      alt="Dr. Suneet Khanna"
+                      src="https://www.vaidam.com/sites/default/files/dr._anjana_satyajit.jpg"
+                      alt="Dr. Anjana Satyajit"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Suneet Khanna</h3>
-                  <p className="text-center text-nile-600 mb-2">Cosmetic & Implant Dentistry</p>
-                  <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Anjana Satyajit</h3>
+                  <p className="text-center text-nile-600 mb-2">Dentist</p>
+                  <p className="text-center text-gray-600 mb-4">29+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Dr. Khanna's Dental Care</span>
+                    <span className="text-gray-600 font-medium">Artemis Hospital, Gurgaon</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">New Delhi</span>
+                    <span className="text-gray-600">Gurgaon</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> Send X-Ray
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
                     </Button>
                     <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      WhatsApp
+                      Request Appointment
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Doctor 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-ravi-s-batra"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Sachdeva"
-                      alt="Dr. Rajat Sachdeva"
+                      src="https://www.vaidam.com/sites/default/files/dr._ravi_s._batra-min.jpg"
+                      alt="Dr. Ravi S. Batra"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Rajat Sachdeva</h3>
-                  <p className="text-center text-nile-600 mb-2">Full-Mouth Implant Expert</p>
-                  <p className="text-center text-gray-600 mb-4">20+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Sachdeva Dental</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Delhi</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> Send X-Ray
-                    </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      WhatsApp
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Doctor 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
-                    <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Pandit"
-                      alt="Dr. Vikram Pandit"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Vikram Pandit</h3>
-                  <p className="text-center text-nile-600 mb-2">Oral Surgeon & Implantologist</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Ravi S. Batra</h3>
+                  <p className="text-center text-nile-600 mb-2">Dentist</p>
                   <p className="text-center text-gray-600 mb-4">22+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Pandit Dental Clinic</span>
+                    <span className="text-gray-600 font-medium">Fortis Memorial Research Institute, Gurgaon</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Pune</span>
+                    <span className="text-gray-600">Gurgaon</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> Send X-Ray
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
                     </Button>
                     <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      WhatsApp
+                      Request Appointment
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
+
+              {/* Doctor 3 */}
+              <Link
+                to="/doctors/dr-rajni-sharma"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="p-6">
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                    <img
+                      src="https://www.vaidam.com/sites/default/files/dr._rajni_sharma.jpg"
+                      alt="Dr. Rajni Sharma"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-center">Dr. Rajni Sharma</h3>
+                  <p className="text-center text-nile-600 mb-2">Dentist</p>
+                  <p className="text-center text-gray-600 mb-4">17+ Years Experience</p>
+                  <div className="flex items-center justify-center mb-4">
+                    <span className="text-gray-600 font-medium">Fortis Memorial Research Institute, Gurgaon</span>
+                    <span className="mx-2">•</span>
+                    <span className="text-gray-600">Gurgaon</span>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <Button className="bg-green-600 hover:bg-green-700 w-full">
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                    </Button>
+                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
+                      Request Appointment
+                    </Button>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

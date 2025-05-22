@@ -33,7 +33,7 @@ const EyeCare = () => {
               </div>
               <div className="rounded-xl overflow-hidden shadow-2xl max-w-[500px] mx-auto">
                 <img
-                  src="https://i.postimg.cc/qvw4HYCS/eye-care.png"
+                  src="https://i.postimg.cc/k5jJKZJK/Eye-Care.png"
                   alt="Eye Care"
                   className="w-full h-[300px] object-contain"
                 />
@@ -49,7 +49,7 @@ const EyeCare = () => {
               <div className="bg-white p-8 rounded-xl shadow-md">
                 <div className="flex items-center mb-6">
                   <img 
-                    src="https://i.postimg.cc/qvw4HYCS/eye-care.png" 
+                    src="https://i.postimg.cc/k5jJKZJK/Eye-Care.png" 
                     alt="Eye Care" 
                     className="h-6 w-6 mr-3 object-contain"
                   />
@@ -62,7 +62,7 @@ const EyeCare = () => {
               <div className="bg-white p-8 rounded-xl shadow-md">
                 <div className="flex items-center mb-6">
                   <img 
-                    src="https://i.postimg.cc/qvw4HYCS/eye-care.png" 
+                    src="https://i.postimg.cc/k5jJKZJK/Eye-Care.png" 
                     alt="Eye Care" 
                     className="h-6 w-6 mr-3 object-contain"
                   />
@@ -139,22 +139,25 @@ const EyeCare = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Cataract Surgeons in India</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Doctor 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-ranjana-mithal"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Bhatia"
-                      alt="Dr. Sudhir Bhatia"
+                      src="https://www.vaidam.com/sites/default/files/dr_ranjana_mithal_-_opthalmology.jpg"
+                      alt="Dr. Ranjana Mithal"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Sudhir Bhatia</h3>
-                  <p className="text-center text-nile-600 mb-2">Cataract & Refractive Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Ranjana Mithal</h3>
+                  <p className="text-center text-nile-600 mb-2">Ophthalmologist</p>
+                  <p className="text-center text-gray-600 mb-4">38+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Shroff Eye Centre</span>
+                    <span className="text-gray-600 font-medium">Indraprastha Apollo Hospital, New Delhi</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Delhi</span>
+                    <span className="text-gray-600">New Delhi</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -165,23 +168,26 @@ const EyeCare = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Doctor 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-sudipto-pakrasi"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Sapra"
-                      alt="Dr. Arjun Sapra"
+                      src="https://www.vaidam.com/sites/default/files/dr_sudipto_pakrasi-min.jpg"
+                      alt="Dr. Sudipto Pakrasi"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Arjun Sapra</h3>
-                  <p className="text-center text-nile-600 mb-2">Femto Cataract Expert</p>
-                  <p className="text-center text-gray-600 mb-4">20+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Sudipto Pakrasi</h3>
+                  <p className="text-center text-nile-600 mb-2">Ophthalmologist</p>
+                  <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Max Eye Care</span>
+                    <span className="text-gray-600 font-medium">Medanta - The Medicity, Gurgaon</span>
                     <span className="mx-2">•</span>
                     <span className="text-gray-600">Gurgaon</span>
                   </div>
@@ -194,25 +200,28 @@ const EyeCare = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Doctor 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-madhuri-pattiwar"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Sethi"
-                      alt="Dr. Anita Sethi"
+                      src="https://d1ea147o02h74h.cloudfront.net/drmadhuri_pattiwar-min.jpg"
+                      alt="Dr. Madhuri Pattiwar"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Anita Sethi</h3>
-                  <p className="text-center text-nile-600 mb-2">Eye Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">25+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Madhuri Pattiwar</h3>
+                  <p className="text-center text-nile-600 mb-2">Ophthalmologist</p>
+                  <p className="text-center text-gray-600 mb-4">32+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Fortis Memorial Research Institute</span>
+                    <span className="text-gray-600 font-medium">Apollo Hospitals, Mumbai</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Gurgaon</span>
+                    <span className="text-gray-600">Mumbai</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -223,7 +232,7 @@ const EyeCare = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

@@ -132,18 +132,21 @@ const LiverTransplant = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Liver Transplant Surgeons in India</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Doctor 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-arvinder-singh-soin"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Soin"
-                      alt="Dr. A.S. Soin"
+                      src="https://www.vaidam.com/sites/default/files/dr._arvinder_singh_soin-removebg-preview-min.png"
+                      alt="Dr. Arvinder Singh Soin"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. A.S. Soin</h3>
-                  <p className="text-center text-nile-600 mb-2">Chief Liver Transplant Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Arvinder Singh Soin</h3>
+                  <p className="text-center text-nile-600 mb-2">Liver Transplant Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">38+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
                     <span className="text-gray-600 font-medium">Medanta - The Medicity</span>
                     <span className="mx-2">•</span>
@@ -158,25 +161,28 @@ const LiverTransplant = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Doctor 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-vivek-vij"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Saraf"
-                      alt="Dr. Subash Gupta"
+                      src="https://www.vaidam.com/sites/default/files/dr_vivek_vij.jpg"
+                      alt="Dr. Vivek Vij"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Subash Gupta</h3>
-                  <p className="text-center text-nile-600 mb-2">Liver Transplant & Hepatobiliary Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Vivek Vij</h3>
+                  <p className="text-center text-nile-600 mb-2">Liver Transplant Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">27+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Max Super Speciality Hospital</span>
+                    <span className="text-gray-600 font-medium">Fortis Hospital, Noida</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Delhi</span>
+                    <span className="text-gray-600">New Delhi</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -187,25 +193,28 @@ const LiverTransplant = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Doctor 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-subhash-gupta"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Rela"
-                      alt="Dr. Mohamed Rela"
+                      src="https://www.vaidam.com/sites/default/files/dr-subhash-gupta-liver-transplant-surgeon.jpg"
+                      alt="Dr. Subhash Gupta"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Mohamed Rela</h3>
-                  <p className="text-center text-nile-600 mb-2">Director, Institute of Liver Disease & Transplantation</p>
-                  <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Subhash Gupta</h3>
+                  <p className="text-center text-nile-600 mb-2">Liver Transplant Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">38+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Dr. Rela Institute & Medical Centre</span>
+                    <span className="text-gray-600 font-medium">Max Super Speciality Hospital, Saket</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Chennai</span>
+                    <span className="text-gray-600">New Delhi</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -216,7 +225,7 @@ const LiverTransplant = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

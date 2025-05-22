@@ -129,25 +129,28 @@ const KidneyTransplant = () => {
         {/* Top Kidney Transplant Surgeons */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Top Kidney Transplant Surgeons in India</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Top Nephrologists in India</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Doctor 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-arup-ratan-dutta"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Guleria"
-                      alt="Dr. Sandeep Guleria"
+                      src="https://d1ea147o02h74h.cloudfront.net/dr._dutta-min.jpg"
+                      alt="Dr. Arup Ratan Dutta"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Sandeep Guleria</h3>
-                  <p className="text-center text-nile-600 mb-2">Kidney Transplant Surgeon</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Arup Ratan Dutta</h3>
+                  <p className="text-center text-nile-600 mb-2">Nephrologist</p>
                   <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Indraprastha Apollo Hospitals</span>
+                    <span className="text-gray-600 font-medium">Fortis Hospital and Kidney Institute</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Delhi</span>
+                    <span className="text-gray-600">Kolkata</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -158,23 +161,26 @@ const KidneyTransplant = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Doctor 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-salil-jain-nephrology-renal-sciences"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Ahlawat"
-                      alt="Dr. Rajesh Ahlawat"
+                      src="https://www.vaidam.com/sites/default/files/dr._salil_jain-min.png"
+                      alt="Dr. Salil Jain"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Rajesh Ahlawat</h3>
-                  <p className="text-center text-nile-600 mb-2">Urologist & Transplant Specialist</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Salil Jain</h3>
+                  <p className="text-center text-nile-600 mb-2">Nephrologist</p>
                   <p className="text-center text-gray-600 mb-4">40+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Medanta - The Medicity</span>
+                    <span className="text-gray-600 font-medium">Fortis Memorial Research Institute</span>
                     <span className="mx-2">•</span>
                     <span className="text-gray-600">Gurgaon</span>
                   </div>
@@ -187,25 +193,28 @@ const KidneyTransplant = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Doctor 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-lakshmi-kant-tripathi"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Shroff"
-                      alt="Dr. Sunil Shroff"
+                      src="https://www.vaidam.com/sites/default/files/dr._lakshmi_kant_tripathi.jpg"
+                      alt="Dr. Lakshmi Kant Tripathi"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Sunil Shroff</h3>
-                  <p className="text-center text-nile-600 mb-2">Renal Transplant Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Lakshmi Kant Tripathi</h3>
+                  <p className="text-center text-nile-600 mb-2">Nephrologist</p>
+                  <p className="text-center text-gray-600 mb-4">31+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Madras Medical Mission</span>
+                    <span className="text-gray-600 font-medium">Artemis Hospital</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Chennai</span>
+                    <span className="text-gray-600">Gurgaon</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -216,7 +225,7 @@ const KidneyTransplant = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

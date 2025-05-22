@@ -138,7 +138,7 @@ const HeartBypassSurgery = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Top Cardiac Doctors in India</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Doctor 1 */}
               <Link
                 to="/doctors/dr-devi-prasad-shetty"
@@ -328,13 +328,13 @@ const HeartBypassSurgery = () => {
               <Link to="/hospitals/fortis-memorial-research-institute" className="block">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="relative h-48">
-                    <img
+                  <img
                       src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis_memorial_hospital_gurgaon_list_view_image-min.webp"
                       alt="Fortis Memorial Research Institute"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
                     <h3 className="text-xl font-bold mb-2">Fortis Memorial Research Institute</h3>
                     <p className="text-gray-600 mb-4">Gurgaon, India</p>
                     <div className="space-y-2 mb-4">
@@ -366,13 +366,13 @@ const HeartBypassSurgery = () => {
               <Link to="/hospitals/fortis-escorts-heart-institute" className="block">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="relative h-48">
-                    <img
+                  <img
                       src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis-escorts-heart-institute_0.webp"
                       alt="Fortis Escorts Heart Institute"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
                     <h3 className="text-xl font-bold mb-2">Fortis Escorts Heart Institute</h3>
                     <p className="text-gray-600 mb-4">New Delhi, India</p>
                     <div className="space-y-2 mb-4">
@@ -404,13 +404,13 @@ const HeartBypassSurgery = () => {
               <Link to="/hospitals/narayana-institute-of-cardiac-sciences" className="block">
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="relative h-48">
-                    <img
+                  <img
                       src="https://www.vaidam.com/sites/default/files/narayana_institute_of_cardiac_sciences_bangalore_1-min.jpg"
                       alt="Narayana Institute of Cardiac Sciences"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
                     <h3 className="text-xl font-bold mb-2">Narayana Institute of Cardiac Sciences</h3>
                     <p className="text-gray-600 mb-4">Bangalore, India</p>
                     <div className="space-y-2 mb-4">

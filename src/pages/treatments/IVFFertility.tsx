@@ -139,22 +139,25 @@ const IVFFertility = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Fertility Specialists in India</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Doctor 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-rama-joshi-gynae-oncology"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Palshetkar"
-                      alt="Dr. Nandita Palshetkar"
+                      src="https://d1ea147o02h74h.cloudfront.net/dr-rama-joshi-gynae-oncology-3.jpg"
+                      alt="Dr. Rama Joshi"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Nandita Palshetkar</h3>
-                  <p className="text-center text-nile-600 mb-2">IVF & Reproductive Medicine Expert</p>
-                  <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Rama Joshi</h3>
+                  <p className="text-center text-nile-600 mb-2">Gynaecologist and Obstetrician</p>
+                  <p className="text-center text-gray-600 mb-4">39+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">D.Y. Patil IVF Centre</span>
+                    <span className="text-gray-600 font-medium">Fortis Memorial Research Institute, Gurgaon</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Mumbai</span>
+                    <span className="text-gray-600">Gurgaon</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -165,25 +168,28 @@ const IVFFertility = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Doctor 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-veena-bhat-obstetrics-gynaecology"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Parikh"
-                      alt="Dr. Firuza Parikh"
+                      src="https://www.vaidam.com/sites/default/files/veena_bhat.jpg"
+                      alt="Dr. Veena Bhat"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Firuza Parikh</h3>
-                  <p className="text-center text-nile-600 mb-2">Pioneer in IVF in India</p>
-                  <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Veena Bhat</h3>
+                  <p className="text-center text-nile-600 mb-2">Gynaecologist and Obstetrician</p>
+                  <p className="text-center text-gray-600 mb-4">48+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Jaslok Hospital</span>
+                    <span className="text-gray-600 font-medium">Artemis Hospital, Gurgaon</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Mumbai</span>
+                    <span className="text-gray-600">Gurgaon</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -194,25 +200,28 @@ const IVFFertility = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Doctor 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-ramya-misra"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Malik"
-                      alt="Dr. Sonia Malik"
+                      src="https://www.vaidam.com/sites/default/files/dr_ramya_mishra.jpg"
+                      alt="Dr. Ramya Mishra"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Sonia Malik</h3>
-                  <p className="text-center text-nile-600 mb-2">Fertility & IVF Specialist</p>
-                  <p className="text-center text-gray-600 mb-4">28+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Ramya Mishra</h3>
+                  <p className="text-center text-nile-600 mb-2">Gynaecologist and Obstetrician</p>
+                  <p className="text-center text-gray-600 mb-4">16+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Max Healthcare</span>
+                    <span className="text-gray-600 font-medium">Apollo Fertility Center, Lajpat Nagar</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Delhi</span>
+                    <span className="text-gray-600">New Delhi</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -223,7 +232,7 @@ const IVFFertility = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

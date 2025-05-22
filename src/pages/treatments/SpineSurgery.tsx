@@ -139,22 +139,89 @@ const SpineSurgery = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Spine Surgeons in India</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Doctor 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-hemant-bhartiya"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Shetty"
-                      alt="Dr. Arvind Kulkarni"
+                      src="https://www.vaidam.com/sites/default/files/dr._hemant_bhartiya-min.jpg"
+                      alt="Dr. Hemant Bhartiya"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Arvind Kulkarni</h3>
+                  <h3 className="text-xl font-bold text-center">Dr. Hemant Bhartiya</h3>
+                  <p className="text-center text-nile-600 mb-2">Spine Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
+                  <div className="flex items-center justify-center mb-4">
+                    <span className="text-gray-600 font-medium">Fortis Escorts Hospital Jaipur</span>
+                    <span className="mx-2">•</span>
+                    <span className="text-gray-600">Jaipur</span>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <Button className="bg-green-600 hover:bg-green-700 w-full">
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                    </Button>
+                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
+                      Request Appointment
+                    </Button>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Doctor 2 */}
+              <Link
+                to="/doctors/dr-vineesh-mathur-orthopedics-spine"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="p-6">
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                    <img
+                      src="https://www.vaidam.com/sites/default/files/dr._vineesh_mathur-removebg-preview-min.png"
+                      alt="Dr. Vineesh Mathur"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-center">Dr. Vineesh Mathur</h3>
+                  <p className="text-center text-nile-600 mb-2">Spine Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">36+ Years Experience</p>
+                  <div className="flex items-center justify-center mb-4">
+                    <span className="text-gray-600 font-medium">Medanta - The Medicity, Gurgaon</span>
+                    <span className="mx-2">•</span>
+                    <span className="text-gray-600">Gurgaon</span>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <Button className="bg-green-600 hover:bg-green-700 w-full">
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                    </Button>
+                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
+                      Request Appointment
+                    </Button>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Doctor 3 */}
+              <Link
+                to="/doctors/dr-vidyadhara-s"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="p-6">
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                    <img
+                      src="https://www.vaidam.com/sites/default/files/dr._vidyadhara.jpg"
+                      alt="Dr. Vidyadhara S."
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-center">Dr. Vidyadhara S.</h3>
                   <p className="text-center text-nile-600 mb-2">Spine Surgeon</p>
                   <p className="text-center text-gray-600 mb-4">25+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Bombay Hospital</span>
+                    <span className="text-gray-600 font-medium">Manipal Hospital (Old Airport Road) Bangalore</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">Mumbai</span>
+                    <span className="text-gray-600">Bangalore</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -165,65 +232,7 @@ const SpineSurgery = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
-
-              {/* Doctor 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
-                    <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Bhojraj"
-                      alt="Dr. S. Y. Bhojraj"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold text-center">Dr. S. Y. Bhojraj</h3>
-                  <p className="text-center text-nile-600 mb-2">Spine Specialist</p>
-                  <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Lilavati Hospital</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Mumbai</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
-                    </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Doctor 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
-                    <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Sahu"
-                      alt="Dr. H.S. Chhabra"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold text-center">Dr. H.S. Chhabra</h3>
-                  <p className="text-center text-nile-600 mb-2">Spine & Neuro Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Indian Spinal Injuries Centre</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">New Delhi</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
-                    </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
-                    </Button>
-                  </div>
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

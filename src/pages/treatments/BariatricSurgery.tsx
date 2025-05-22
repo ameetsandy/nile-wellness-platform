@@ -303,140 +303,101 @@ const BariatricSurgery = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src="https://placehold.co/400x300/medical-600/white/?text=Dr.+Lakdawala" 
-                    alt="Dr. Muffazal Lakdawala" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              {/* Doctor 1 */}
+              <Link
+                to="/doctors/dr-satish-n"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Dr. Muffazal Lakdawala</h3>
-                  <div className="flex items-center text-gray-600 mb-3">
-                    <Hospital className="h-4 w-4 mr-2" />
-                    <span>Saifee Hospital, Mumbai</span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                    <img
+                      src="https://d1ea147o02h74h.cloudfront.net/dr_satish_n-removebg-preview-min.png"
+                      alt="Dr. Satish N"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="flex items-center text-gray-600 mb-3">
-                    <Weight className="h-4 w-4 mr-2" />
-                    <span>Laparoscopic & Bariatric Surgery</span>
+                  <h3 className="text-xl font-bold text-center">Dr. Satish N</h3>
+                  <p className="text-center text-nile-600 mb-2">General Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">32+ Years Experience</p>
+                  <div className="flex items-center justify-center mb-4">
+                    <span className="text-gray-600 font-medium">Manipal Hospital Formerly Columbia Asia Referral Hospital, Bangalore</span>
+                    <span className="mx-2">•</span>
+                    <span className="text-gray-600">Bangalore</span>
                   </div>
-                  <div className="flex items-center text-gray-600 mb-4">
-                    <CalendarClock className="h-4 w-4 mr-2" />
-                    <span>25+ Years Experience</span>
-                  </div>
-                  <div className="flex items-center text-gray-600 mb-6">
-                    <MapPin className="h-4 w-4 mr-2" />
-                    <span>Mumbai</span>
-                  </div>
-                  
-                  <div className="flex gap-2">
-                    <Button 
-                      className="flex-1 bg-nile-600 hover:bg-nile-700"
-                      onClick={openWhatsApp}
-                    >
-                      <MessageCircle className="h-4 w-4 mr-1" />
-                      WhatsApp
+                  <div className="flex flex-col gap-2">
+                    <Button className="bg-green-600 hover:bg-green-700 w-full">
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
                     </Button>
-                    <Button 
-                      variant="outline" 
-                      className="flex-1 border-nile-600 text-nile-600 hover:bg-nile-50"
-                    >
+                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
                       Request Appointment
                     </Button>
                   </div>
                 </div>
-              </div>
-              
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src="https://placehold.co/400x300/medical-600/white/?text=Dr.+Wadhawan" 
-                    alt="Dr. Randeep Wadhawan" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              </Link>
+
+              {/* Doctor 2 */}
+              <Link
+                to="/doctors/dr-ramen-goel"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Dr. Randeep Wadhawan</h3>
-                  <div className="flex items-center text-gray-600 mb-3">
-                    <Hospital className="h-4 w-4 mr-2" />
-                    <span>Max Super Speciality Hospital, Delhi</span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                    <img
+                      src="https://d1ea147o02h74h.cloudfront.net/dr._ramen_goel.jpg"
+                      alt="Dr. Ramen Goel"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="flex items-center text-gray-600 mb-3">
-                    <Weight className="h-4 w-4 mr-2" />
-                    <span>Robotic Bariatric Surgeon</span>
+                  <h3 className="text-xl font-bold text-center">Dr. Ramen Goel</h3>
+                  <p className="text-center text-nile-600 mb-2">General Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">39+ Years Experience</p>
+                  <div className="flex items-center justify-center mb-4">
+                    <span className="text-gray-600 font-medium">Wockhardt Hospital, Mumbai</span>
+                    <span className="mx-2">•</span>
+                    <span className="text-gray-600">Mumbai</span>
                   </div>
-                  <div className="flex items-center text-gray-600 mb-4">
-                    <CalendarClock className="h-4 w-4 mr-2" />
-                    <span>20+ Years Experience</span>
-                  </div>
-                  <div className="flex items-center text-gray-600 mb-6">
-                    <MapPin className="h-4 w-4 mr-2" />
-                    <span>Delhi</span>
-                  </div>
-                  
-                  <div className="flex gap-2">
-                    <Button 
-                      className="flex-1 bg-nile-600 hover:bg-nile-700"
-                      onClick={openWhatsApp}
-                    >
-                      <MessageCircle className="h-4 w-4 mr-1" />
-                      WhatsApp
+                  <div className="flex flex-col gap-2">
+                    <Button className="bg-green-600 hover:bg-green-700 w-full">
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
                     </Button>
-                    <Button 
-                      variant="outline" 
-                      className="flex-1 border-nile-600 text-nile-600 hover:bg-nile-50"
-                    >
+                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
                       Request Appointment
                     </Button>
                   </div>
                 </div>
-              </div>
-              
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src="https://placehold.co/400x300/medical-600/white/?text=Dr.+Baijal" 
-                    alt="Dr. Manish Baijal" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              </Link>
+
+              {/* Doctor 3 */}
+              <Link
+                to="/doctors/dr-kn-srivastava"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Dr. Manish Baijal</h3>
-                  <div className="flex items-center text-gray-600 mb-3">
-                    <Hospital className="h-4 w-4 mr-2" />
-                    <span>Max Healthcare, Gurgaon</span>
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                    <img
+                      src="https://www.vaidam.com/sites/default/files/dr._kn-min.jpg"
+                      alt="Dr. K.N. Srivastava"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="flex items-center text-gray-600 mb-3">
-                    <Weight className="h-4 w-4 mr-2" />
-                    <span>Metabolic & Obesity Surgeon</span>
+                  <h3 className="text-xl font-bold text-center">Dr. K.N. Srivastava</h3>
+                  <p className="text-center text-nile-600 mb-2">General Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">52+ Years Experience</p>
+                  <div className="flex items-center justify-center mb-4">
+                    <span className="text-gray-600 font-medium">BLK-Max Super Speciality Hospital Delhi</span>
+                    <span className="mx-2">•</span>
+                    <span className="text-gray-600">New Delhi</span>
                   </div>
-                  <div className="flex items-center text-gray-600 mb-4">
-                    <CalendarClock className="h-4 w-4 mr-2" />
-                    <span>22+ Years Experience</span>
-                  </div>
-                  <div className="flex items-center text-gray-600 mb-6">
-                    <MapPin className="h-4 w-4 mr-2" />
-                    <span>Gurgaon</span>
-                  </div>
-                  
-                  <div className="flex gap-2">
-                    <Button 
-                      className="flex-1 bg-nile-600 hover:bg-nile-700"
-                      onClick={openWhatsApp}
-                    >
-                      <MessageCircle className="h-4 w-4 mr-1" />
-                      WhatsApp
+                  <div className="flex flex-col gap-2">
+                    <Button className="bg-green-600 hover:bg-green-700 w-full">
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
                     </Button>
-                    <Button 
-                      variant="outline" 
-                      className="flex-1 border-nile-600 text-nile-600 hover:bg-nile-50"
-                    >
+                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
                       Request Appointment
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

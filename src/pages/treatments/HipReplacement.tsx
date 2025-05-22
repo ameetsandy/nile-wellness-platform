@@ -139,49 +139,23 @@ const HipReplacement = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Orthopedic Doctors</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Doctor 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/doctors/dr-ashok-rajgopal-bone-joint-replacement"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Shah"
-                      alt="Dr. Vikram Shah"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Vikram Shah</h3>
-                  <p className="text-center text-nile-600 mb-2">Hip Replacement Specialist</p>
-                  <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Shalby Hospitals</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Ahmedabad</span>
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
-                    </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
-                    </Button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Doctor 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
-                    <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Rajgopal"
+                      src="https://www.vaidam.com/sites/default/files/dr_ashok_rajgopal-min.png"
                       alt="Dr. Ashok Rajgopal"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-center">Dr. Ashok Rajgopal</h3>
-                  <p className="text-center text-nile-600 mb-2">Robotic Joint Replacement Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">35+ Years Experience</p>
+                  <p className="text-center text-nile-600 mb-2">Orthopaedic and Joint Replacement Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">50+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Medanta Hospital</span>
+                    <span className="text-gray-600 font-medium">Medanta - The Medicity</span>
                     <span className="mx-2">•</span>
                     <span className="text-gray-600">Gurgaon</span>
                   </div>
@@ -194,25 +168,28 @@ const HipReplacement = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              {/* Doctor 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              {/* Doctor 2 */}
+              <Link
+                to="/doctors/dr-jatinder-bir-singh-jaggi-orthopaedics-joint-replacement"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
                 <div className="p-6">
                   <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                     <img
-                      src="https://placehold.co/300x300/nile-600/white/?text=Dr.+Sharma"
-                      alt="Dr. Hemant Sharma"
+                      src="https://www.vaidam.com/sites/default/files/dr-jatinder-bir-singh-jaggi-arthroscopy-orthopedics.jpg"
+                      alt="Dr. Jatinder Bir Singh Jaggi"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Hemant Sharma</h3>
-                  <p className="text-center text-nile-600 mb-2">Orthopedic Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">28+ Years Experience</p>
+                  <h3 className="text-xl font-bold text-center">Dr. Jatinder Bir Singh Jaggi</h3>
+                  <p className="text-center text-nile-600 mb-2">Orthopaedic and Joint Replacement Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">31+ Years Experience</p>
                   <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Fortis Hospital</span>
+                    <span className="text-gray-600 font-medium">Max Super Specialty Hospital</span>
                     <span className="mx-2">•</span>
-                    <span className="text-gray-600">New Delhi</span>
+                    <span className="text-gray-600">Gurgaon</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Button className="bg-green-600 hover:bg-green-700 w-full">
@@ -223,7 +200,39 @@ const HipReplacement = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </Link>
+
+              {/* Doctor 3 */}
+              <Link
+                to="/doctors/dr-ips-oberoi"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="p-6">
+                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                    <img
+                      src="https://www.vaidam.com/sites/default/files/dr._ips_oberoi_-_orthopaedics-min.jpg"
+                      alt="Dr. IPS Oberoi"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-center">Dr. IPS Oberoi</h3>
+                  <p className="text-center text-nile-600 mb-2">Orthopaedic and Joint Replacement Surgeon</p>
+                  <p className="text-center text-gray-600 mb-4">31+ Years Experience</p>
+                  <div className="flex items-center justify-center mb-4">
+                    <span className="text-gray-600 font-medium">Artemis Hospital</span>
+                    <span className="mx-2">•</span>
+                    <span className="text-gray-600">Gurgaon</span>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <Button className="bg-green-600 hover:bg-green-700 w-full">
+                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                    </Button>
+                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
+                      Request Appointment
+                    </Button>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
