@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/common/WhatsAppButton";
 import { Search, Filter, Star, MapPin, Building, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { hospitals, categories, cities } from "@/data/hospitals";
+import AppointmentForm from "@/components/common/AppointmentForm";
 
 // Utility function to generate random star rating between 4 and 5
 const generateStarRating = () => {
@@ -17,6 +18,7 @@ const Hospitals = () => {
   const [category, setCategory] = useState("");
   const [city, setCity] = useState("");
   const [visibleHospitals, setVisibleHospitals] = useState(30);
+  const [selectedHospital, setSelectedHospital] = useState<{ name: string; formType: "appointment" | "second-opinion" | "reports" } | null>(null);
 
   const filteredHospitals = hospitals.filter(hospital => {
     const matchesSearch = hospital.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -88,6 +90,14 @@ const Hospitals = () => {
     setCategory("");
     setCity("");
     setVisibleHospitals(30);
+  };
+
+  const handleFormOpen = (hospitalName: string, formType: "appointment" | "second-opinion" | "reports") => {
+    setSelectedHospital({ name: hospitalName, formType });
+  };
+
+  const handleFormClose = () => {
+    setSelectedHospital(null);
   };
 
   return (
@@ -209,7 +219,10 @@ const Hospitals = () => {
                   </div>
                   
                   <div className="mt-auto">
-                    <Button className="w-full cta-primary">
+                    <Button 
+                      className="w-full cta-primary"
+                      onClick={() => handleFormOpen(hospital.name, "reports")}
+                    >
                       Send Reports for Opinion
                     </Button>
                     <Link 
@@ -266,6 +279,15 @@ const Hospitals = () => {
       </main>
       <WhatsAppButton />
       <Footer />
+
+      {selectedHospital && (
+        <AppointmentForm
+          isOpen={true}
+          onClose={handleFormClose}
+          doctorName={selectedHospital.name}
+          formType={selectedHospital.formType}
+        />
+      )}
     </div>
   );
 };

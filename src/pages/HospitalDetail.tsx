@@ -7,6 +7,7 @@ import { MessageCircle, Building, Award, MapPin, ArrowRight, Phone, CheckCircle,
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import AppointmentForm from "@/components/common/AppointmentForm";
 import { calculateInternationalPatients, generatePatientSatisfaction, generateSuccessRate } from "@/utils/hospitalStats";
 import { hospitalDetails } from "@/data/hospitalDetails";
 
@@ -14,6 +15,7 @@ const HospitalDetail = () => {
   const { id } = useParams();
   const [hospital, setHospital] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [selectedForm, setSelectedForm] = useState<"appointment" | "second-opinion" | "reports" | null>(null);
 
   useEffect(() => {
     // This would be replaced with a real API call in production
@@ -44,6 +46,14 @@ const HospitalDetail = () => {
     const message = `I'm interested in treatment at ${hospital.name}.`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+  };
+
+  const handleFormOpen = (formType: "appointment" | "second-opinion" | "reports") => {
+    setSelectedForm(formType);
+  };
+
+  const handleFormClose = () => {
+    setSelectedForm(null);
   };
 
   return (
@@ -90,11 +100,18 @@ const HospitalDetail = () => {
                           >
                             <MessageCircle className="mr-2 h-4 w-4" /> Inquire on WhatsApp
                           </Button>
-                          <Button className="bg-nile-600 hover:bg-nile-700">
-                            <Phone className="mr-2 h-4 w-4" /> Call Hospital
+                          <Button 
+                            className="bg-nile-600 hover:bg-nile-700"
+                            onClick={() => handleFormOpen("appointment")}
+                          >
+                            <Phone className="mr-2 h-4 w-4" /> Book Appointment
                           </Button>
-                          <Button variant="outline" className="border-nile-600 text-nile-600 hover:bg-nile-50">
-                            Get Cost Estimate
+                          <Button 
+                            variant="outline" 
+                            className="border-nile-600 text-nile-600 hover:bg-nile-50"
+                            onClick={() => handleFormOpen("second-opinion")}
+                          >
+                            Get Second Opinion
                           </Button>
                         </div>
                       </div>
@@ -471,14 +488,19 @@ const HospitalDetail = () => {
                       >
                         <MessageCircle className="mr-2 h-4 w-4" /> Ask on WhatsApp
                       </Button>
-                      <Button className="bg-nile-600 hover:bg-nile-700">
-                        Get Cost Estimate
+                      <Button 
+                        className="bg-nile-600 hover:bg-nile-700"
+                        onClick={() => handleFormOpen("appointment")}
+                      >
+                        Book Appointment
                       </Button>
-                      <Link to="/free-opinion">
-                        <Button variant="outline" className="border-nile-600 text-nile-600 hover:bg-nile-50 w-full sm:w-auto">
-                          Upload Medical Reports
-                        </Button>
-                      </Link>
+                      <Button 
+                        variant="outline" 
+                        className="border-nile-600 text-nile-600 hover:bg-nile-50"
+                        onClick={() => handleFormOpen("reports")}
+                      >
+                        Upload Medical Reports
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -489,6 +511,15 @@ const HospitalDetail = () => {
       </main>
       <WhatsAppButton />
       <Footer />
+
+      {selectedForm && (
+        <AppointmentForm
+          isOpen={true}
+          onClose={handleFormClose}
+          doctorName={hospital?.name}
+          formType={selectedForm}
+        />
+      )}
     </div>
   );
 };

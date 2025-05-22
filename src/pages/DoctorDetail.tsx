@@ -5,30 +5,40 @@ import Footer from "@/components/layout/Footer";
 import { Calendar, MessageCircle, Building, Award, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import AppointmentForm from "@/components/common/AppointmentForm";
 import { mockDoctors } from "@/data/doctors";
 
 const DoctorDetail = () => {
   const { id } = useParams();
   const [doctor, setDoctor] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [selectedForm, setSelectedForm] = useState<"appointment" | "second-opinion" | "reports" | null>(null);
 
   useEffect(() => {
     fetchDoctor();
   }, [id]);
 
-    const fetchDoctor = () => {
-      // Simulate API call
-      setTimeout(() => {
+  const fetchDoctor = () => {
+    // Simulate API call
+    setTimeout(() => {
       const doctorData = mockDoctors[id as keyof typeof mockDoctors];
       setDoctor(doctorData);
-        setLoading(false);
+      setLoading(false);
     }, 1000);
-    };
+  };
 
   const openWhatsApp = () => {
     const message = `Hello, I would like to know more about Dr. ${doctor?.name}`;
     const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
+  };
+
+  const handleFormOpen = (formType: "appointment" | "second-opinion" | "reports") => {
+    setSelectedForm(formType);
+  };
+
+  const handleFormClose = () => {
+    setSelectedForm(null);
   };
 
   return (
@@ -73,7 +83,10 @@ const DoctorDetail = () => {
                     </div>
                     
                     <div className="flex flex-wrap gap-4">
-                      <Button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6">
+                      <Button 
+                        className="bg-emerald-600 hover:bg-emerald-700 text-white px-6"
+                        onClick={() => handleFormOpen("appointment")}
+                      >
                         <Calendar className="mr-2 h-4 w-4" /> Book Appointment
                       </Button>
                       <Button 
@@ -82,7 +95,11 @@ const DoctorDetail = () => {
                       >
                         <MessageCircle className="mr-2 h-4 w-4" /> Consult on WhatsApp
                       </Button>
-                      <Button variant="outline" className="border-emerald-600 text-emerald-600 hover:bg-emerald-50 px-6">
+                      <Button 
+                        variant="outline" 
+                        className="border-emerald-600 text-emerald-600 hover:bg-emerald-50 px-6"
+                        onClick={() => handleFormOpen("second-opinion")}
+                      >
                         Get Second Opinion
                       </Button>
                     </div>
@@ -206,6 +223,15 @@ const DoctorDetail = () => {
       </main>
       <WhatsAppButton />
       <Footer />
+
+      {selectedForm && (
+        <AppointmentForm
+          isOpen={true}
+          onClose={handleFormClose}
+          doctorName={doctor?.name}
+          formType={selectedForm}
+        />
+      )}
     </div>
   );
 };

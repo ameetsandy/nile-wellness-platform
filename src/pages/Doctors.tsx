@@ -5,12 +5,14 @@ import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 import { Search, Filter, Calendar, MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AppointmentForm from "@/components/common/AppointmentForm";
 
 const Doctors = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [specialty, setSpecialty] = useState("");
   const [city, setCity] = useState("");
-  const [visibleDoctors, setVisibleDoctors] = useState(40); // Show 12 doctors initially (3 rows)
+  const [visibleDoctors, setVisibleDoctors] = useState(40);
+  const [selectedDoctor, setSelectedDoctor] = useState<{name: string, formType: "appointment" | "second-opinion" | "reports"} | null>(null);
 
   const doctors = [
     {
@@ -2250,6 +2252,14 @@ const Doctors = () => {
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
 
+  const handleAppointmentClick = (doctorName: string, formType: "appointment" | "second-opinion" | "reports") => {
+    setSelectedDoctor({ name: doctorName, formType });
+  };
+
+  const closeForm = () => {
+    setSelectedDoctor(null);
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
@@ -2354,7 +2364,12 @@ const Doctors = () => {
                   </div>
                   
                   <div className="flex gap-2">
-                    <Button variant="outline" size="sm" className="flex-1 whitespace-nowrap text-xs py-1">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick(doctor.name, "appointment")}
+                    >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button 
@@ -2363,6 +2378,25 @@ const Doctors = () => {
                       onClick={() => openWhatsApp(doctor.name)}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
+                    </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center gap-2">
+                    <Button
+                      variant="link"
+                      size="sm"
+                      className="text-nile-600 hover:text-nile-700 text-xs"
+                      onClick={() => handleAppointmentClick(doctor.name, "second-opinion")}
+                    >
+                      Get Second Opinion
+                    </Button>
+                    <span className="text-gray-300">|</span>
+                    <Button
+                      variant="link"
+                      size="sm"
+                      className="text-nile-600 hover:text-nile-700 text-xs"
+                      onClick={() => handleAppointmentClick(doctor.name, "reports")}
+                    >
+                      Send Reports
                     </Button>
                   </div>
                   <Link 
@@ -2417,6 +2451,15 @@ const Doctors = () => {
       </main>
       <WhatsAppButton />
       <Footer />
+      
+      {selectedDoctor && (
+        <AppointmentForm
+          isOpen={true}
+          onClose={closeForm}
+          doctorName={selectedDoctor.name}
+          formType={selectedDoctor.formType}
+        />
+      )}
     </div>
   );
 };
