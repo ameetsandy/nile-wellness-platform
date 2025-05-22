@@ -94,7 +94,7 @@ const Hospitals = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
       <main className="flex-grow">
-        <section className="bg-medical-800 text-white py-12">
+        <section className="bg-nile-600 text-white py-12">
           <div className="container mx-auto px-4">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">Top Hospitals in India</h1>
             <p className="text-lg text-gray-200 max-w-3xl">
