@@ -1,7 +1,7 @@
 export const mockDoctors = {
   "dr-devi-prasad-shetty": {
     "id": "dr-devi-prasad-shetty",
-    "name": "Dr. Devi Prasad Shetty",
+    "name": "Devi Prasad Shetty",
     "specialty": "Cardiac Surgeon",
     "designation": "Senior Consultant",
     "hospital": "Narayana Institute of Cardiac Sciences, Bangalore",
@@ -141,7 +141,7 @@ export const mockDoctors = {
   },
   "dr-harit-chaturvedi": {
     "id": "dr-harit-chaturvedi",
-    "name": "Dr. Harit Chaturvedi",
+    "name": "Harit Chaturvedi",
     "specialty": "Surgical Oncologist",
     "designation": "Chairman",
     "hospital": "Max Super Speciality Hospital, Patparganj, New Delhi",
@@ -161,7 +161,7 @@ export const mockDoctors = {
   },
   "dr-hemant-bhartiya": {
     "id": "dr-hemant-bhartiya",
-    "name": "Dr. Hemant Bhartiya",
+    "name": "Hemant Bhartiya",
     "specialty": "Spine Surgeon",
     "designation": "Director",
     "hospital": "Fortis Escorts Hospital Jaipur",
@@ -261,7 +261,7 @@ export const mockDoctors = {
   },
   "dr-praveen-gupta": {
     "id": "dr-praveen-gupta",
-    "name": "Dr. Praveen Gupta",
+    "name": "Praveen Gupta",
     "specialty": "Neurologist",
     "designation": "Senior Consultant",
     "hospital": "Fortis Memorial Research Institute, Gurgaon",

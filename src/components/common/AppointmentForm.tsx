@@ -102,9 +102,9 @@ const AppointmentForm = ({ isOpen, onClose, doctorName, formType }: AppointmentF
 
           {doctorName && (
             <p className="text-gray-600 mb-6">
-              {formType === "appointment" ? `Book an appointment with Dr. ${doctorName}` :
-               formType === "second-opinion" ? `Get a second opinion from Dr. ${doctorName}` :
-               `Send medical reports to Dr. ${doctorName}`}
+              {formType === "appointment" ? `Book an appointment with ${doctorName}` :
+               formType === "second-opinion" ? `Get a second opinion from ${doctorName}` :
+               `Send medical reports to ${doctorName}`}
             </p>
           )}
 
