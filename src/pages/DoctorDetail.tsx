@@ -28,7 +28,7 @@ const DoctorDetail = () => {
   };
 
   const openWhatsApp = () => {
-    const message = `Hello, I would like to know more about ${doctor?.name}`;
+    const message = `Hello, I would like to know more about Dr. ${doctor?.name}`;
     const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

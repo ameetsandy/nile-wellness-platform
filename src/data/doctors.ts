@@ -1,23 +1,27 @@
 export const mockDoctors = {
+  
   "dr-devi-prasad-shetty": {
     "id": "dr-devi-prasad-shetty",
-    "name": "Devi Prasad Shetty",
+    "name": "Dr. Devi Prasad Shetty",
     "specialty": "Cardiac Surgeon",
-    "designation": "Senior Consultant",
+    "designation": " Senior Consultant",
     "hospital": "Narayana Institute of Cardiac Sciences, Bangalore",
     "location": "Bangalore",
     "experience": "45+ Years Experience",
-    "education": "",
-    "image": "https://www.vaidam.com/sites/default/webp/50/files/dr._devi_prasad_shetty.webp",
-    "about": "Dr. Devi Prasad Shetty is one of the most renowned cardiothoracic surgeons in India and the visionary founder of Narayana Hrudayalaya. With over 45 years of experience, Dr. Shetty has performed over 1,20,000 heart surgeries, impacting countless lives through his dedication to accessible and innovative cardiac care. He is a recipient of the Padma Shri and Padma Bhushan, India's fourth and third highest civilian awards, respectively, for his contributions to healthcare.",
+    "education": "- MBBS, MS, MCh\n- Pioneer in Innovative Techniques\n- World-Class Expertise in Beating Heart Surgery",
+    "image": "https://www.vaidam.com/sites/default/files/dr._devi_prasad_shetty.jpg",
+    "about": "Dr. Devi Prasad Shetty, a Senior Consultant Cardiac Surgeon based in Bangalore, India, is a pioneer in innovative cardiac surgery techniques. With over 45 years of experience and 1,20,000 heart surgeries performed, he is renowned for his world-class expertise in beating heart surgery and commitment to accessible care.",
     "expertise": [
-      "Cardiac Surgeon"
+      "Cardiac Surgery",
+      "Pediatric Surgery",
+      "Cardiomyoplasty",
+      "Bypass Surgery"
     ],
     "awards": [
       "Best doctor of Narayana Institute of Cardiac Sciences, Bangalore"
     ],
-    "patientCount": 1000,
-    "successRate": 95.24
+    "patientCount": 54200,
+    "successRate": 99.24
   },
   "dr-adarsh-choudhary": {
     "id": "dr-adarsh-choudhary",
@@ -141,7 +145,7 @@ export const mockDoctors = {
   },
   "dr-harit-chaturvedi": {
     "id": "dr-harit-chaturvedi",
-    "name": "Harit Chaturvedi",
+    "name": "Dr. Harit Chaturvedi",
     "specialty": "Surgical Oncologist",
     "designation": "Chairman",
     "hospital": "Max Super Speciality Hospital, Patparganj, New Delhi",
@@ -161,7 +165,7 @@ export const mockDoctors = {
   },
   "dr-hemant-bhartiya": {
     "id": "dr-hemant-bhartiya",
-    "name": "Hemant Bhartiya",
+    "name": "Dr. Hemant Bhartiya",
     "specialty": "Spine Surgeon",
     "designation": "Director",
     "hospital": "Fortis Escorts Hospital Jaipur",
@@ -261,7 +265,7 @@ export const mockDoctors = {
   },
   "dr-praveen-gupta": {
     "id": "dr-praveen-gupta",
-    "name": "Praveen Gupta",
+    "name": "Dr. Praveen Gupta",
     "specialty": "Neurologist",
     "designation": "Senior Consultant",
     "hospital": "Fortis Memorial Research Institute, Gurgaon",
