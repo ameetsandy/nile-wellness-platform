@@ -177,13 +177,6 @@ const DoctorDetail = () => {
                           <p className="text-gray-600 text-sm">Sarita Vihar, Delhi Mathura Road, New Delhi - 110076</p>
                         </div>
                       </div>
-                      <div className="bg-gray-100 p-3 rounded-lg">
-                        <img 
-                          src="https://placehold.co/400x200/white/gray/?text=Hospital+Map"
-                          alt="Hospital Location Map"
-                          className="w-full h-auto rounded"
-                        />
-                      </div>
                     </div>
                     
                     <div className="bg-nile-50 rounded-xl shadow-md p-6">

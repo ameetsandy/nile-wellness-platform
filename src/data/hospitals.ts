@@ -5,7 +5,7 @@ export const generateStarRating = () => {
 
 export const hospitals = [
   {
-    "id": "indraprastha-apollo-hospital-new-delhi-new-delhi",
+    "id": "indraprastha-apollo-hospital-new-delhi",
     "name": "Indraprastha Apollo Hospital, New Delhi",
     "location": "New Delhi",
     "category": "Multi Specialty",
@@ -15,10 +15,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/Apollo%20Hospital%20Delhi%20Lobby_0.webp",
     "logo": "https://placehold.co/200x100/white/gray/?text=Indraprastha+Apollo",
-    "path": "/hospitals/indraprastha-apollo-hospital-new-delhi-new-delhi"
+    "path": "/hospitals/indraprastha-apollo-hospital-new-delhi"
   },
   {
-    "id": "blk-max-super-speciality-hospital-new-delhi-new-delhi",
+    "id": "blk-max-super-speciality-hospital-new-delhi",
     "name": "BLK-Max Super Speciality Hospital, New Delhi",
     "location": "New Delhi",
     "category": "Super Specialty",
@@ -28,10 +28,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/blk_facade-1-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=BLK-Max+Super",
-    "path": "/hospitals/blk-max-super-speciality-hospital-new-delhi-new-delhi"
+    "path": "/hospitals/blk-max-super-speciality-hospital-new-delhi"
   },
   {
-    "id": "fortis-memorial-research-institute-gurgaon-gurgaon",
+    "id": "fortis-memorial-research-institute-gurgaon",
     "name": "Fortis Memorial Research Institute, Gurgaon",
     "location": "Gurgaon",
     "category": "Multi Specialty",
@@ -41,10 +41,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis_memorial_hospital_gurgaon_list_view_image-min.webp",
     "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Memorial",
-    "path": "/hospitals/fortis-memorial-research-institute-gurgaon-gurgaon"
+    "path": "/hospitals/fortis-memorial-research-institute-gurgaon"
   },
   {
-    "id": "medanta-the-medicity-gurgaon-gurgaon",
+    "id": "medanta-the-medicity-gurgaon",
     "name": "Medanta - The Medicity, Gurgaon",
     "location": "Gurgaon",
     "category": "Super Specialty",
@@ -54,10 +54,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/medanta_the_medicity_gurgaon_list_view_image-min.webp",
     "logo": "https://placehold.co/200x100/white/gray/?text=Medanta+-",
-    "path": "/hospitals/medanta-the-medicity-gurgaon-gurgaon"
+    "path": "/hospitals/medanta-the-medicity-gurgaon"
   },
   {
-    "id": "apollo-hospitals-greams-road-chennai-chennai",
+    "id": "apollo-hospitals-greams-road-chennai",
     "name": "Apollo Hospitals, Greams Road, Chennai",
     "location": "Chennai",
     "category": "Multi Specialty",
@@ -67,10 +67,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_hospital_tondiarpet_list_image-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals,",
-    "path": "/hospitals/apollo-hospitals-greams-road-chennai-chennai"
+    "path": "/hospitals/apollo-hospitals-greams-road-chennai"
   },
   {
-    "id": "artemis-hospital-gurgaon-gurgaon",
+    "id": "artemis-hospital-gurgaon",
     "name": "Artemis Hospital, Gurgaon",
     "location": "Gurgaon",
     "category": "Multi Specialty",
@@ -80,10 +80,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/aretmis-gurgaon.webp",
     "logo": "https://placehold.co/200x100/white/gray/?text=Artemis+Hospital,",
-    "path": "/hospitals/artemis-hospital-gurgaon-gurgaon"
+    "path": "/hospitals/artemis-hospital-gurgaon"
   },
   {
-    "id": "apollo-cancer-hospital-chennai-chennai",
+    "id": "apollo-cancer-hospital-chennai",
     "name": "Apollo Cancer Hospital, Chennai",
     "location": "Chennai",
     "category": "Single Specialty",
@@ -93,10 +93,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_cancer_hospital_chennai_list_image-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Cancer",
-    "path": "/hospitals/apollo-cancer-hospital-chennai-chennai"
+    "path": "/hospitals/apollo-cancer-hospital-chennai"
   },
   {
-    "id": "fortis-escorts-heart-institute-new-delhi-new-delhi",
+    "id": "fortis-escorts-heart-institute-new-delhi",
     "name": "Fortis Escorts Heart Institute, New Delhi",
     "location": "New Delhi",
     "category": "Multi Specialty",
@@ -106,10 +106,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis-escorts-heart-institute_0.webp",
     "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Escorts",
-    "path": "/hospitals/fortis-escorts-heart-institute-new-delhi-new-delhi"
+    "path": "/hospitals/fortis-escorts-heart-institute-new-delhi"
   },
   {
-    "id": "miot-international-chennai-chennai",
+    "id": "miot-international-chennai",
     "name": "MIOT International, Chennai",
     "location": "Chennai",
     "category": "Multi Specialty",
@@ -119,10 +119,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/miot-international-chennai_list_view_image-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=MIOT+International,",
-    "path": "/hospitals/miot-international-chennai-chennai"
+    "path": "/hospitals/miot-international-chennai"
   },
   {
-    "id": "narayana-institute-of-cardiac-sciences-bangalore-bangalore",
+    "id": "narayana-institute-of-cardiac-sciences-bangalore",
     "name": "Narayana Institute of Cardiac Sciences, Bangalore",
     "location": "Bangalore",
     "category": "Super Specialty",
@@ -132,10 +132,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/narayana_institute_of_cardiac_sciences_bangalore_1-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Narayana+Institute",
-    "path": "/hospitals/narayana-institute-of-cardiac-sciences-bangalore-bangalore"
+    "path": "/hospitals/narayana-institute-of-cardiac-sciences-bangalore"
   },
   {
-    "id": "apollo-hospital-bannerghatta-road-bangalore-bangalore",
+    "id": "apollo-hospital-bannerghatta-road-bangalore",
     "name": "Apollo Hospital (Bannerghatta Road), Bangalore",
     "location": "Bangalore",
     "category": "Multi Specialty",
@@ -145,10 +145,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_hospitals_bangalore1.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospital",
-    "path": "/hospitals/apollo-hospital-bannerghatta-road-bangalore-bangalore"
+    "path": "/hospitals/apollo-hospital-bannerghatta-road-bangalore"
   },
   {
-    "id": "max-super-speciality-hospital-saket-new-delhi-new-delhi",
+    "id": "max-super-speciality-hospital-saket-new-delhi",
     "name": "Max Super Speciality Hospital, Saket, New Delhi",
     "location": "New Delhi",
     "category": "Super Specialty",
@@ -158,10 +158,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/max_hospital_saket_building-min.webp",
     "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super",
-    "path": "/hospitals/max-super-speciality-hospital-saket-new-delhi-new-delhi"
+    "path": "/hospitals/max-super-speciality-hospital-saket-new-delhi"
   },
   {
-    "id": "kokilaben-dhirubhai-ambani-hospital-mumbai-mumbai",
+    "id": "kokilaben-dhirubhai-ambani-hospital-mumbai",
     "name": "Kokilaben Dhirubhai Ambani Hospital, Mumbai",
     "location": "Mumbai",
     "category": "Multi Specialty",
@@ -171,10 +171,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/kokilaben_hospital_mumbai.webp",
     "logo": "https://placehold.co/200x100/white/gray/?text=Kokilaben+Dhirubhai",
-    "path": "/hospitals/kokilaben-dhirubhai-ambani-hospital-mumbai-mumbai"
+    "path": "/hospitals/kokilaben-dhirubhai-ambani-hospital-mumbai"
   },
   {
-    "id": "ruby-hall-clinic-pune-pune",
+    "id": "ruby-hall-clinic-pune",
     "name": "Ruby Hall Clinic, Pune",
     "location": "Pune",
     "category": "Multi Specialty",
@@ -184,10 +184,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/ruby_hall_clinic-home.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Ruby+Hall",
-    "path": "/hospitals/ruby-hall-clinic-pune-pune"
+    "path": "/hospitals/ruby-hall-clinic-pune"
   },
   {
-    "id": "apollo-hospitals-jubilee-hills-hyderabad-hyderabad",
+    "id": "apollo-hospitals-jubilee-hills-hyderabad",
     "name": "Apollo Hospitals, Jubilee Hills, Hyderabad",
     "location": "Hyderabad",
     "category": "Super Specialty",
@@ -197,10 +197,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/apollo_hospitals_jubilee_hills_hyderabad_building1-min.webp",
     "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals,",
-    "path": "/hospitals/apollo-hospitals-jubilee-hills-hyderabad-hyderabad"
+    "path": "/hospitals/apollo-hospitals-jubilee-hills-hyderabad"
   },
   {
-    "id": "amrita-hospital-faridabad-faridabad",
+    "id": "amrita-hospital-faridabad",
     "name": "Amrita Hospital, Faridabad",
     "location": "Faridabad",
     "category": "Multi Specialty",
@@ -210,10 +210,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/amrita_hospital_building_1.png",
     "logo": "https://placehold.co/200x100/white/gray/?text=Amrita+Hospital,",
-    "path": "/hospitals/amrita-hospital-faridabad-faridabad"
+    "path": "/hospitals/amrita-hospital-faridabad"
   },
   {
-    "id": "dr-d-y-patil-medical-college-hospital-and-research-centre-pune-pune",
+    "id": "dr-d-y-patil-medical-college-hospital-and-research-centre-pune",
     "name": "Dr. D.Y. Patil Medical College, Hospital and Research Centre , Pune",
     "location": "Pune",
     "category": "Super Specialty",
@@ -223,10 +223,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/dr._d.y._patil_medical_college_hospital_and_research_centre_building2-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Dr.+D.Y.",
-    "path": "/hospitals/dr-d-y-patil-medical-college-hospital-and-research-centre-pune-pune"
+    "path": "/hospitals/dr-d-y-patil-medical-college-hospital-and-research-centre-pune"
   },
   {
-    "id": "seven-hills-hospital-mumbai-mumbai",
+    "id": "seven-hills-hospital-mumbai",
     "name": "Seven Hills Hospital, Mumbai",
     "location": "Mumbai",
     "category": "Multi Specialty",
@@ -236,10 +236,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/seven_hills_hospital_mumbai_building1-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Seven+Hills",
-    "path": "/hospitals/seven-hills-hospital-mumbai-mumbai"
+    "path": "/hospitals/seven-hills-hospital-mumbai"
   },
   {
-    "id": "sri-ramachandra-medical-centre-chennai-chennai",
+    "id": "sri-ramachandra-medical-centre-chennai",
     "name": "Sri Ramachandra Medical Centre, Chennai",
     "location": "Chennai",
     "category": "Multi Specialty",
@@ -249,10 +249,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/sri_ramachandra_hospital-chennai-home-min_0.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Sri+Ramachandra",
-    "path": "/hospitals/sri-ramachandra-medical-centre-chennai-chennai"
+    "path": "/hospitals/sri-ramachandra-medical-centre-chennai"
   },
   {
-    "id": "amrita-institute-of-medical-sciences-and-research-centre-kochi-kochi",
+    "id": "amrita-institute-of-medical-sciences-and-research-centre-kochi",
     "name": "Amrita Institute of Medical Sciences and Research Centre, Kochi",
     "location": "Kochi",
     "category": "Super Specialty",
@@ -262,10 +262,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/amrita_institute_of_medical_sciences_and_research_centre_kochi-home.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Amrita+Institute",
-    "path": "/hospitals/amrita-institute-of-medical-sciences-and-research-centre-kochi-kochi"
+    "path": "/hospitals/amrita-institute-of-medical-sciences-and-research-centre-kochi"
   },
   {
-    "id": "mahatma-gandhi-medical-college-hospital-jaipur-jaipur",
+    "id": "mahatma-gandhi-medical-college-hospital-jaipur",
     "name": "Mahatma Gandhi Medical College & Hospital, Jaipur",
     "location": "Jaipur",
     "category": "Super Specialty",
@@ -275,10 +275,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/main_building_mg_hospital_jaipur.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Mahatma+Gandhi",
-    "path": "/hospitals/mahatma-gandhi-medical-college-hospital-jaipur-jaipur"
+    "path": "/hospitals/mahatma-gandhi-medical-college-hospital-jaipur"
   },
   {
-    "id": "jaypee-hospital-noida-noida",
+    "id": "jaypee-hospital-noida",
     "name": "Jaypee Hospital, Noida",
     "location": "Noida",
     "category": "Multi Specialty",
@@ -288,10 +288,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/Jaypee-Building-3.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Jaypee+Hospital,",
-    "path": "/hospitals/jaypee-hospital-noida-noida"
+    "path": "/hospitals/jaypee-hospital-noida"
   },
   {
-    "id": "rajagiri-hospital-kochi-kochi",
+    "id": "rajagiri-hospital-kochi",
     "name": "Rajagiri Hospital, Kochi",
     "location": "Kochi",
     "category": "Multi Specialty",
@@ -301,10 +301,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/rajagiri_5.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Rajagiri+Hospital,",
-    "path": "/hospitals/rajagiri-hospital-kochi-kochi"
+    "path": "/hospitals/rajagiri-hospital-kochi"
   },
   {
-    "id": "yatharth-super-specialty-hospital-greater-noida-noida",
+    "id": "yatharth-super-specialty-hospital-greater-noida",
     "name": "Yatharth Super Specialty Hospital, Greater Noida",
     "location": "Noida",
     "category": "Super Specialty",
@@ -314,10 +314,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/yatharth_super_specialty_hospital_greater_noida-home.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Yatharth+Super",
-    "path": "/hospitals/yatharth-super-specialty-hospital-greater-noida-noida"
+    "path": "/hospitals/yatharth-super-specialty-hospital-greater-noida"
   },
   {
-    "id": "jupiter-lifeline-hospitals-ltd-pune-pune",
+    "id": "jupiter-lifeline-hospitals-ltd-pune",
     "name": "Jupiter Lifeline Hospitals Ltd., Pune",
     "location": "Pune",
     "category": "Multi Specialty",
@@ -327,10 +327,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/jupiter_lifeline_hospitals_ltd._pune-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Jupiter+Lifeline",
-    "path": "/hospitals/jupiter-lifeline-hospitals-ltd-pune-pune"
+    "path": "/hospitals/jupiter-lifeline-hospitals-ltd-pune"
   },
   {
-    "id": "sterling-hospital-ahmedabad-ahmedabad",
+    "id": "sterling-hospital-ahmedabad",
     "name": "Sterling Hospital, Ahmedabad",
     "location": "Ahmedabad",
     "category": "Multi Specialty",
@@ -340,10 +340,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/sterling_hospital_ahmedabad_building-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Sterling+Hospital,",
-    "path": "/hospitals/sterling-hospital-ahmedabad-ahmedabad"
+    "path": "/hospitals/sterling-hospital-ahmedabad"
   },
   {
-    "id": "gleneagles-global-hospital-chennai-chennai",
+    "id": "gleneagles-global-hospital-chennai",
     "name": "Gleneagles Global Hospital, Chennai",
     "location": "Chennai",
     "category": "Multi Specialty",
@@ -353,10 +353,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/global-chennai-facade.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Gleneagles+Global",
-    "path": "/hospitals/gleneagles-global-hospital-chennai-chennai"
+    "path": "/hospitals/gleneagles-global-hospital-chennai"
   },
   {
-    "id": "kims-hospital-secunderabad-hyderabad-hyderabad",
+    "id": "kims-hospital-secunderabad-hyderabad",
     "name": "KIMS Hospital, Secunderabad , Hyderabad",
     "location": "Hyderabad",
     "category": "Multi Specialty",
@@ -366,10 +366,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/main_building_kims_secunderabad.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=KIMS+Hospital,",
-    "path": "/hospitals/kims-hospital-secunderabad-hyderabad-hyderabad"
+    "path": "/hospitals/kims-hospital-secunderabad-hyderabad"
   },
   {
-    "id": "kovai-medical-center-and-hospital-coimbatore-coimbatore-coimbatore",
+    "id": "kovai-medical-center-and-hospital-coimbatore-coimbatore",
     "name": "Kovai Medical Center and Hospital, Coimbatore , Coimbatore",
     "location": "Coimbatore",
     "category": "Multi Specialty",
@@ -379,10 +379,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/kovai_medical_center_and_hospital-home.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Kovai+Medical",
-    "path": "/hospitals/kovai-medical-center-and-hospital-coimbatore-coimbatore-coimbatore"
+    "path": "/hospitals/kovai-medical-center-and-hospital-coimbatore-coimbatore"
   },
   {
-    "id": "moolchand-hospital-new-delhi-new-delhi",
+    "id": "moolchand-hospital-new-delhi",
     "name": "Moolchand Hospital , New Delhi",
     "location": "New Delhi",
     "category": "Multi Specialty",
@@ -392,10 +392,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/heritage_lobby.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Moolchand+Hospital",
-    "path": "/hospitals/moolchand-hospital-new-delhi-new-delhi"
+    "path": "/hospitals/moolchand-hospital-new-delhi"
   },
   {
-    "id": "rainbow-children-s-hospital-hyderabad-hyderabad",
+    "id": "rainbow-children-s-hospital-hyderabad",
     "name": "Rainbow Children's Hospital, Hyderabad",
     "location": "Hyderabad",
     "category": "Multi Specialty",
@@ -405,10 +405,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/rainbow_childrens_hospital_hyderabad_building-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Rainbow+Children's",
-    "path": "/hospitals/rainbow-children-s-hospital-hyderabad-hyderabad"
+    "path": "/hospitals/rainbow-children-s-hospital-hyderabad"
   },
   {
-    "id": "ss-sparsh-hospital-mysore-road-bangalore-bangalore",
+    "id": "ss-sparsh-hospital-mysore-road-bangalore",
     "name": "SS SPARSH Hospital (Mysore Road) Bangalore",
     "location": "Bangalore",
     "category": "Super Specialty",
@@ -418,10 +418,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/br_lifehosptial-home.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=SS+SPARSH",
-    "path": "/hospitals/ss-sparsh-hospital-mysore-road-bangalore-bangalore"
+    "path": "/hospitals/ss-sparsh-hospital-mysore-road-bangalore"
   },
   {
-    "id": "medanta-hospital-lucknow-lucknow",
+    "id": "medanta-hospital-lucknow",
     "name": "Medanta Hospital, Lucknow",
     "location": "Lucknow",
     "category": "Multi Specialty",
@@ -431,10 +431,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/medanta_lucknow_list_image-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Medanta+Hospital,",
-    "path": "/hospitals/medanta-hospital-lucknow-lucknow"
+    "path": "/hospitals/medanta-hospital-lucknow"
   },
   {
-    "id": "sharda-hospital-greater-noida-noida",
+    "id": "sharda-hospital-greater-noida",
     "name": "Sharda Hospital, Greater Noida",
     "location": "Noida",
     "category": "Super Specialty",
@@ -444,10 +444,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/2-2_1.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Sharda+Hospital,",
-    "path": "/hospitals/sharda-hospital-greater-noida-noida"
+    "path": "/hospitals/sharda-hospital-greater-noida"
   },
   {
-    "id": "deenanath-mangeshkar-hospital-and-research-center-pune-pune",
+    "id": "deenanath-mangeshkar-hospital-and-research-center-pune",
     "name": "Deenanath Mangeshkar Hospital and Research Center, Pune",
     "location": "Pune",
     "category": "Multi Specialty",
@@ -457,10 +457,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/deenanath_mangeshkar_hospital_and_research_center_pune-home.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Deenanath+Mangeshkar",
-    "path": "/hospitals/deenanath-mangeshkar-hospital-and-research-center-pune-pune"
+    "path": "/hospitals/deenanath-mangeshkar-hospital-and-research-center-pune"
   },
   {
-    "id": "nh-mazumdar-shaw-medical-centre-bangalore-bangalore",
+    "id": "nh-mazumdar-shaw-medical-centre-bangalore",
     "name": "NH Mazumdar Shaw Medical Centre, Bangalore",
     "location": "Bangalore",
     "category": "Multi Specialty",
@@ -470,10 +470,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/mazumdar_shaw_medical_centre_bangalore_1-min.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=NH+Mazumdar",
-    "path": "/hospitals/nh-mazumdar-shaw-medical-centre-bangalore-bangalore"
+    "path": "/hospitals/nh-mazumdar-shaw-medical-centre-bangalore"
   },
   {
-    "id": "apollo-gleneagles-hospital-kolkata-kolkata",
+    "id": "apollo-gleneagles-hospital-kolkata",
     "name": "Apollo Gleneagles Hospital, Kolkata",
     "location": "Kolkata",
     "category": "Multi Specialty",
@@ -483,10 +483,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo-gleneagles-hospitals-728_01.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Gleneagles",
-    "path": "/hospitals/apollo-gleneagles-hospital-kolkata-kolkata"
+    "path": "/hospitals/apollo-gleneagles-hospital-kolkata"
   },
   {
-    "id": "continental-hospitals-hyderabad-hyderabad",
+    "id": "continental-hospitals-hyderabad",
     "name": "Continental Hospitals, Hyderabad",
     "location": "Hyderabad",
     "category": "Super Specialty",
@@ -496,10 +496,10 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/continental_hospital_-_building.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Continental+Hospitals,",
-    "path": "/hospitals/continental-hospitals-hyderabad-hyderabad"
+    "path": "/hospitals/continental-hospitals-hyderabad"
   },
   {
-    "id": "vijaya-hospital-chennai-chennai",
+    "id": "vijaya-hospital-chennai",
     "name": "Vijaya Hospital, Chennai",
     "location": "Chennai",
     "category": "Multi Specialty",
@@ -509,7 +509,7 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/vijaya_hospital_chenna-home.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Vijaya+Hospital,",
-    "path": "/hospitals/vijaya-hospital-chennai-chennai"
+    "path": "/hospitals/vijaya-hospital-chennai"
   },
   //508
 
