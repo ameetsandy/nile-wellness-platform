@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Baby, HeartHandshake, Phone, MessageCircle } from "lucide-react";
+import { Baby, HeartHandshake, Phone, MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const IVFFertility = () => {
@@ -133,103 +133,178 @@ const IVFFertility = () => {
           </div>
         </section>
 
-        {/* Top Fertility Specialists */}
+        {/* Top IVF Specialists */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Top Fertility Specialists in India</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h2 className="text-3xl font-bold text-center mb-12">Top IVF Specialists in India</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Doctor 1 */}
               <Link
-                to="/doctors/dr-rama-joshi-gynae-oncology"
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                to="/doctors/dr-rajeev-agarwal-ivf"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
-                      src="https://d1ea147o02h74h.cloudfront.net/dr-rama-joshi-gynae-oncology-3.jpg"
-                      alt="Dr. Rama Joshi"
-                      className="w-full h-full object-cover"
+                      src="https://www.vaidam.com/sites/default/files/dr-rajeev-agarwal-min.jpg"
+                      alt="Dr. Rajeev Agarwal"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Rama Joshi</h3>
-                  <p className="text-center text-nile-600 mb-2">Gynaecologist and Obstetrician</p>
-                  <p className="text-center text-gray-600 mb-4">39+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Fortis Memorial Research Institute, Gurgaon</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Gurgaon</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">25+ Exp</span>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Rajeev Agarwal
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      IVF Specialist
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Senior Consultant
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Indraprastha Apollo Hospital, New Delhi, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
                 </div>
               </Link>
 
               {/* Doctor 2 */}
               <Link
-                to="/doctors/dr-veena-bhat-obstetrics-gynaecology"
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                to="/doctors/dr-archana-dhawan-bajaj-ivf"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
-                      src="https://www.vaidam.com/sites/default/files/veena_bhat.jpg"
-                      alt="Dr. Veena Bhat"
-                      className="w-full h-full object-cover"
+                      src="https://www.vaidam.com/sites/default/files/dr-archana-dhawan-bajaj-min.jpg"
+                      alt="Dr. Archana Dhawan Bajaj"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Veena Bhat</h3>
-                  <p className="text-center text-nile-600 mb-2">Gynaecologist and Obstetrician</p>
-                  <p className="text-center text-gray-600 mb-4">48+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Artemis Hospital, Gurgaon</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Gurgaon</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">20+ Exp</span>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Archana Dhawan Bajaj
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      IVF Specialist
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Senior Consultant
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Nurture IVF Centre, New Delhi, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
                 </div>
               </Link>
 
               {/* Doctor 3 */}
               <Link
-                to="/doctors/dr-ramya-misra"
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                to="/doctors/dr-ritu-singh-ivf"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
-                      src="https://www.vaidam.com/sites/default/files/dr_ramya_mishra.jpg"
-                      alt="Dr. Ramya Mishra"
-                      className="w-full h-full object-cover"
+                      src="https://www.vaidam.com/sites/default/files/dr-ritu-singh-min.jpg"
+                      alt="Dr. Ritu Singh"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Ramya Mishra</h3>
-                  <p className="text-center text-nile-600 mb-2">Gynaecologist and Obstetrician</p>
-                  <p className="text-center text-gray-600 mb-4">16+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Apollo Fertility Center, Lajpat Nagar</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">New Delhi</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">15+ Exp</span>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Ritu Singh
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      IVF Specialist
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Senior Consultant
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Nova IVF Fertility, New Delhi, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
                 </div>
               </Link>

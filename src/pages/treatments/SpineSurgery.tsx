@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Spline, CheckCircle, Phone, MessageCircle } from "lucide-react";
+import { Spline, CheckCircle, Phone, MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const SpineSurgery = () => {
@@ -137,35 +137,60 @@ const SpineSurgery = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Top Spine Surgeons in India</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Doctor 1 */}
               <Link
                 to="/doctors/dr-hemant-bhartiya"
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
                       src="https://www.vaidam.com/sites/default/files/dr._hemant_bhartiya-min.jpg"
                       alt="Dr. Hemant Bhartiya"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Hemant Bhartiya</h3>
-                  <p className="text-center text-nile-600 mb-2">Spine Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">30+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Fortis Escorts Hospital Jaipur</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Jaipur</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">30+ Exp</span>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Hemant Bhartiya
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      Spine Surgeon
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Senior Consultant
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Fortis Escorts Hospital Jaipur, Jaipur, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
                 </div>
               </Link>
@@ -173,31 +198,56 @@ const SpineSurgery = () => {
               {/* Doctor 2 */}
               <Link
                 to="/doctors/dr-vineesh-mathur-orthopedics-spine"
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
                       src="https://www.vaidam.com/sites/default/files/dr._vineesh_mathur-removebg-preview-min.png"
                       alt="Dr. Vineesh Mathur"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Vineesh Mathur</h3>
-                  <p className="text-center text-nile-600 mb-2">Spine Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">36+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Medanta - The Medicity, Gurgaon</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Gurgaon</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">36+ Exp</span>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Vineesh Mathur
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      Spine Surgeon
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Senior Consultant
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Medanta - The Medicity, Gurgaon, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
                 </div>
               </Link>
@@ -205,31 +255,56 @@ const SpineSurgery = () => {
               {/* Doctor 3 */}
               <Link
                 to="/doctors/dr-vidyadhara-s"
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
                       src="https://www.vaidam.com/sites/default/files/dr._vidyadhara.jpg"
                       alt="Dr. Vidyadhara S."
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Vidyadhara S.</h3>
-                  <p className="text-center text-nile-600 mb-2">Spine Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">25+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Manipal Hospital (Old Airport Road) Bangalore</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Bangalore</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">25+ Exp</span>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Vidyadhara S.
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      Spine Surgeon
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Senior Consultant
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Manipal Hospital (Old Airport Road) Bangalore, Bangalore, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
                 </div>
               </Link>

@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Bone, ShieldCheck, Phone, MessageCircle } from "lucide-react";
+import { Bone, ShieldCheck, Phone, MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const HipReplacement = () => {
@@ -137,35 +137,60 @@ const HipReplacement = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Top Orthopedic Doctors</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Doctor 1 */}
               <Link
                 to="/doctors/dr-ashok-rajgopal-bone-joint-replacement"
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
                       src="https://www.vaidam.com/sites/default/files/dr_ashok_rajgopal-min.png"
                       alt="Dr. Ashok Rajgopal"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Ashok Rajgopal</h3>
-                  <p className="text-center text-nile-600 mb-2">Orthopaedic and Joint Replacement Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">50+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Medanta - The Medicity</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Gurgaon</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">50+ Exp</span>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Ashok Rajgopal
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      Orthopaedic and Joint Replacement Surgeon
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Senior Consultant
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Medanta - The Medicity, Gurgaon, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
                 </div>
               </Link>
@@ -173,31 +198,56 @@ const HipReplacement = () => {
               {/* Doctor 2 */}
               <Link
                 to="/doctors/dr-jatinder-bir-singh-jaggi-orthopaedics-joint-replacement"
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
                       src="https://www.vaidam.com/sites/default/files/dr-jatinder-bir-singh-jaggi-arthroscopy-orthopedics.jpg"
                       alt="Dr. Jatinder Bir Singh Jaggi"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. Jatinder Bir Singh Jaggi</h3>
-                  <p className="text-center text-nile-600 mb-2">Orthopaedic and Joint Replacement Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">31+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Max Super Specialty Hospital</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Gurgaon</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">31+ Exp</span>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. Jatinder Bir Singh Jaggi
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      Orthopaedic and Joint Replacement Surgeon
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Director
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Max Super Specialty Hospital, Gurgaon, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
                 </div>
               </Link>
@@ -205,31 +255,56 @@ const HipReplacement = () => {
               {/* Doctor 3 */}
               <Link
                 to="/doctors/dr-ips-oberoi"
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
-                <div className="p-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
+                  <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
                       src="https://www.vaidam.com/sites/default/files/dr._ips_oberoi_-_orthopaedics-min.jpg"
                       alt="Dr. IPS Oberoi"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-center">Dr. IPS Oberoi</h3>
-                  <p className="text-center text-nile-600 mb-2">Orthopaedic and Joint Replacement Surgeon</p>
-                  <p className="text-center text-gray-600 mb-4">31+ Years Experience</p>
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-gray-600 font-medium">Artemis Hospital</span>
-                    <span className="mx-2">•</span>
-                    <span className="text-gray-600">Gurgaon</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
+                    <span className="text-sm font-medium block text-center">31+ Exp</span>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Button className="bg-green-600 hover:bg-green-700 w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
+                </div>
+
+                <div className="p-4">
+                  <h3 className="text-base font-semibold mb-1">
+                    Dr. IPS Oberoi
+                  </h3>
+
+                  <div className="space-y-1 mb-3">
+                    <p className="text-sm text-gray-700 font-medium">
+                      Orthopaedic and Joint Replacement Surgeon
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Director
+                    </p>
+                    <p className="text-gray-600 text-xs">
+                      Artemis Hospital, Gurgaon, India
+                    </p>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
-                    <Button variant="outline" className="border-nile-600 text-nile-600 hover:text-nile-700 w-full">
-                      Request Appointment
+                    <Button
+                      size="sm"
+                      className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                    >
+                      <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
+                  </div>
+                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    View Full Profile
+                    <ArrowRight className="ml-1 h-3 w-3" />
                   </div>
                 </div>
               </Link>
