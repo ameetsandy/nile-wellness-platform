@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Calendar, MessageCircle, Building, Award, Clock, MapPin } from "lucide-react";
@@ -173,7 +173,12 @@ const DoctorDetail = () => {
                       <div className="flex items-start mb-4">
                         <MapPin className="h-5 w-5 text-nile-600 mr-2 flex-shrink-0 mt-0.5" />
                         <div>
-                          <h4 className="font-medium">{doctor.hospital}</h4>
+                          <Link 
+                            to={`/hospitals/${doctor.hospital.toLowerCase().replace(/[,\s]+/g, '-')}`}
+                            className="font-medium hover:text-nile-600 transition-colors"
+                          >
+                            {doctor.hospital}
+                          </Link>
                           <p className="text-gray-600 text-sm">Sarita Vihar, Delhi Mathura Road, New Delhi - 110076</p>
                         </div>
                       </div>
