@@ -318,61 +318,70 @@ const CancerTreatment = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Cancer Hospitals in India</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Hospital 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <Link
+                to="/hospitals/fortis-memorial-research-institute-gurgaon"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Tata"
-                    alt="Tata Memorial Hospital"
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis_memorial_hospital_gurgaon_list_view_image-min.webp"
+                    alt="Fortis Memorial Research Institute"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Tata Memorial Hospital</h3>
+                  <h3 className="text-xl font-bold mb-2">Fortis Memorial Research Institute</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Government Cancer Hospital | Advanced Treatment</span>
-                  </div>
-                  <p className="text-gray-600 mb-4">Mumbai</p>
-                  <Button className="w-full">View Hospital</Button>
-                </div>
-              </div>
-
-              {/* Hospital 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Medanta"
-                    alt="Medanta - The Medicity"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Medanta - The Medicity</h3>
-                  <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI Accredited | Comprehensive Cancer Care</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI, NABH Accredited | 310 Beds</span>
                   </div>
                   <p className="text-gray-600 mb-4">Gurgaon</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
 
-              {/* Hospital 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              {/* Hospital 2 */}
+              <Link
+                to="/hospitals/apollo-cancer-hospital-chennai"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Apollo"
-                    alt="Apollo Hospitals"
+                    src="https://www.vaidam.com/sites/default/files/apollo_cancer_hospital_chennai_list_image-min.jpg"
+                    alt="Apollo Cancer Hospital"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Apollo Hospitals</h3>
+                  <h3 className="text-xl font-bold mb-2">Apollo Cancer Hospital</h3>
                   <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited | Advanced Oncology Center</span>
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited | 300 Beds</span>
                   </div>
-                  <p className="text-gray-600 mb-4">Greams Road, Chennai</p>
+                  <p className="text-gray-600 mb-4">Chennai</p>
                   <Button className="w-full">View Hospital</Button>
                 </div>
-              </div>
+              </Link>
+
+              {/* Hospital 3 */}
+              <Link
+                to="/hospitals/apollo-hospitals-hyderabad"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/apollo_hospitals_jubilee_hills_hyderabad_building1-min.webp"
+                    alt="Apollo Hospitals, Jubilee Hills"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Apollo Hospitals, Jubilee Hills</h3>
+                  <div className="flex items-center mb-4">
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">JCI Accredited | 550 Beds</span>
+                  </div>
+                  <p className="text-gray-600 mb-4">Hyderabad</p>
+                  <Button className="w-full">View Hospital</Button>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

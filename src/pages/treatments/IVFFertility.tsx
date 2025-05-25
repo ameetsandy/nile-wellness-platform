@@ -140,36 +140,36 @@ const IVFFertility = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Doctor 1 */}
               <Link
-                to="/doctors/dr-rajeev-agarwal-ivf"
+                to="/doctors/dr-rama-joshi-gynae-oncology"
                 className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
-                      src="https://www.vaidam.com/sites/default/files/dr-rajeev-agarwal-min.jpg"
-                      alt="Dr. Rajeev Agarwal"
+                      src="https://d1ea147o02h74h.cloudfront.net/dr-rama-joshi-gynae-oncology-3.jpg"
+                      alt="Dr. Rama Joshi"
                       className="w-full h-full object-cover object-center"
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">25+ Exp</span>
+                    <span className="text-sm font-medium block text-center">39+ Exp</span>
                   </div>
                 </div>
 
                 <div className="p-4">
                   <h3 className="text-base font-semibold mb-1">
-                    Dr. Rajeev Agarwal
+                    Dr. Rama Joshi
                   </h3>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
-                      IVF Specialist
+                      Gynaecologist and Obstetrician
                     </p>
                     <p className="text-xs text-gray-500">
-                      Senior Consultant
+                      Consultant
                     </p>
                     <p className="text-gray-600 text-xs">
-                      Indraprastha Apollo Hospital, New Delhi, India
+                      Fortis Memorial Research Institute, Gurgaon, India
                     </p>
                   </div>
 
@@ -197,36 +197,36 @@ const IVFFertility = () => {
 
               {/* Doctor 2 */}
               <Link
-                to="/doctors/dr-archana-dhawan-bajaj-ivf"
+                to="/doctors/dr-veena-bhat-obstetrics-gynaecology"
                 className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
-                      src="https://www.vaidam.com/sites/default/files/dr-archana-dhawan-bajaj-min.jpg"
-                      alt="Dr. Archana Dhawan Bajaj"
+                      src="https://www.vaidam.com/sites/default/files/veena_bhat.jpg"
+                      alt="Dr. Veena Bhat"
                       className="w-full h-full object-cover object-center"
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">20+ Exp</span>
+                    <span className="text-sm font-medium block text-center">48+ Exp</span>
                   </div>
                 </div>
 
                 <div className="p-4">
                   <h3 className="text-base font-semibold mb-1">
-                    Dr. Archana Dhawan Bajaj
+                    Dr. Veena Bhat
                   </h3>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
-                      IVF Specialist
+                      Gynaecologist and Obstetrician
                     </p>
                     <p className="text-xs text-gray-500">
-                      Senior Consultant
+                      Director
                     </p>
                     <p className="text-gray-600 text-xs">
-                      Nurture IVF Centre, New Delhi, India
+                      Artemis Hospital, Gurgaon, India
                     </p>
                   </div>
 
@@ -254,36 +254,36 @@ const IVFFertility = () => {
 
               {/* Doctor 3 */}
               <Link
-                to="/doctors/dr-ritu-singh-ivf"
+                to="/doctors/dr-ramya-misra"
                 className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
               >
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
-                      src="https://www.vaidam.com/sites/default/files/dr-ritu-singh-min.jpg"
-                      alt="Dr. Ritu Singh"
+                      src="https://www.vaidam.com/sites/default/files/dr_ramya_mishra.jpg"
+                      alt="Dr. Ramya Mishra"
                       className="w-full h-full object-cover object-center"
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">15+ Exp</span>
+                    <span className="text-sm font-medium block text-center">16+ Exp</span>
                   </div>
                 </div>
 
                 <div className="p-4">
                   <h3 className="text-base font-semibold mb-1">
-                    Dr. Ritu Singh
+                    Dr. Ramya Mishra
                   </h3>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
-                      IVF Specialist
+                      Gynaecologist and Obstetrician
                     </p>
                     <p className="text-xs text-gray-500">
                       Senior Consultant
                     </p>
                     <p className="text-gray-600 text-xs">
-                      Nova IVF Fertility, New Delhi, India
+                      Apollo Fertility Center, Lajpat Nagar, New Delhi, India
                     </p>
                   </div>
 
@@ -312,72 +312,7 @@ const IVFFertility = () => {
           </div>
         </section>
 
-        {/* Top IVF Clinics */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Top IVF Clinics & Hospitals</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Hospital 1 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Nova"
-                    alt="Nova IVF Fertility"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Nova IVF Fertility</h3>
-                  <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Pan-India chain with high success rates</span>
-                  </div>
-                  <p className="text-gray-600 mb-4">Delhi, Mumbai, Chennai, Bangalore</p>
-                  <Button className="w-full">View Clinic</Button>
-                </div>
-              </div>
-
-              {/* Hospital 2 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Max"
-                    alt="Max Multi Speciality Centre"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Max Multi Speciality Centre</h3>
-                  <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">NABH Accredited | Fertility Wing</span>
-                  </div>
-                  <p className="text-gray-600 mb-4">Delhi</p>
-                  <Button className="w-full">View Clinic</Button>
-                </div>
-              </div>
-
-              {/* Hospital 3 */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src="https://placehold.co/800x600/nile-600/white/?text=Jaslok"
-                    alt="Jaslok FertilTree"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Jaslok FertilTree</h3>
-                  <div className="flex items-center mb-4">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Advanced IVF Lab | International patients</span>
-                  </div>
-                  <p className="text-gray-600 mb-4">Mumbai</p>
-                  <Button className="w-full">View Clinic</Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Top Hospitals */}
+        {/* Top IVF & Fertility Centers */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Top IVF & Fertility Centers</h2>

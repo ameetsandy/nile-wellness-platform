@@ -48,13 +48,12 @@ const BariatricSurgery = () => {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-medical-50 to-nile-50 py-16 md:py-20">
+        <section className="bg-gradient-to-r from-blue-50 to-white py-16 md:py-20">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center">
               <div className="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0 text-left">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
                   Weight Loss Surgery in India
-                  <span className="block text-nile-600 mt-2">Long-term obesity solutions with trusted bariatric surgeons</span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 max-w-xl">
                   Transform your life with safe, effective, and affordable bariatric surgery at JCI-accredited hospitals in India.
@@ -65,38 +64,16 @@ const BariatricSurgery = () => {
                     onClick={openWhatsApp}
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
-                    Share Reports for Free Evaluation
+                    WhatsApp Now
                   </Button>
                   <Button 
                     variant="outline"
-                    className="text-base py-3 px-6 h-auto border-nile-600 text-nile-600 hover:bg-nile-50"
+                    className="text-base py-3 px-6 h-auto border-blue-600 text-blue-600 hover:bg-blue-50"
                     onClick={callNow}
                   >
                     <Phone className="mr-2 h-5 w-5" />
-                    Speak to a Coordinator
+                    Call Us
                   </Button>
-                </div>
-                
-                {/* Trust Indicators */}
-                <div className="flex flex-wrap items-center gap-4 mt-8">
-                  <div className="bg-white p-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <BadgeCheck className="h-5 w-5 text-green-600" />
-                      <span className="text-sm font-medium">NABH Accredited</span>
-                    </div>
-                  </div>
-                  <div className="bg-white p-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <Shield className="h-5 w-5 text-blue-600" />
-                      <span className="text-sm font-medium">JCI Certified</span>
-                    </div>
-                  </div>
-                  <div className="bg-white p-2 rounded-md shadow-md hover:shadow-lg transition-all duration-300">
-                    <div className="flex items-center gap-2">
-                      <HeartPulse className="h-5 w-5 text-red-600" />
-                      <span className="text-sm font-medium">90%+ Success Rate</span>
-                    </div>
-                  </div>
                 </div>
               </div>
               
@@ -107,9 +84,6 @@ const BariatricSurgery = () => {
                     alt="Bariatric Surgery"
                     className="w-full h-[300px] object-contain"
                   />
-                </div>
-                <div className="absolute -bottom-4 -left-6 bg-nile-600 text-white py-3 px-5 rounded-lg shadow-lg text-sm">
-                  75% Cost Savings vs Western Countries
                 </div>
               </div>
             </div>
@@ -483,10 +457,13 @@ const BariatricSurgery = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <Link
+                to="https://www.nilewellness.com/hospitals/saifee-hospital-mumbai"
+                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="https://placehold.co/400x300/medical-600/white/?text=Saifee+Hospital" 
+                    src="https://www.vaidam.com/sites/default/files/saifee-hospital.jpg" 
                     alt="Saifee Hospital" 
                     className="w-full h-full object-cover"
                   />
@@ -495,11 +472,15 @@ const BariatricSurgery = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">Saifee Hospital</h3>
                   <div className="flex items-center text-green-600 mb-4">
                     <BadgeCheck className="h-5 w-5 mr-2" />
-                    <span className="font-medium">Center of Excellence in Bariatric Surgery</span>
+                    <span className="font-medium">NABH, NABL Accredited</span>
                   </div>
                   <div className="flex items-center text-gray-600 mb-6">
                     <MapPin className="h-4 w-4 mr-2" />
                     <span>Mumbai</span>
+                  </div>
+                  <div className="flex items-center text-gray-600 mb-6">
+                    <Shield className="h-4 w-4 mr-2" />
+                    <span>257 Beds | Est. 1948</span>
                   </div>
                   
                   <Button 
@@ -508,12 +489,15 @@ const BariatricSurgery = () => {
                     View Details
                   </Button>
                 </div>
-              </div>
+              </Link>
               
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <Link
+                to="https://www.nilewellness.com/hospitals/max-super-speciality-hospital-saket-new-delhi"
+                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="https://placehold.co/400x300/medical-600/white/?text=Max+Hospital" 
+                    src="https://d1pkj1wi9lp6qx.cloudfront.net/50/files/max_hospital_saket_building-min.webp" 
                     alt="Max Super Speciality Hospital" 
                     className="w-full h-full object-cover"
                   />
@@ -522,11 +506,15 @@ const BariatricSurgery = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">Max Super Speciality Hospital</h3>
                   <div className="flex items-center text-green-600 mb-4">
                     <BadgeCheck className="h-5 w-5 mr-2" />
-                    <span className="font-medium">NABH Accredited | Advanced Robotics</span>
+                    <span className="font-medium">JCI, NABH Accredited</span>
                   </div>
                   <div className="flex items-center text-gray-600 mb-6">
                     <MapPin className="h-4 w-4 mr-2" />
-                    <span>Delhi & Gurgaon</span>
+                    <span>New Delhi</span>
+                  </div>
+                  <div className="flex items-center text-gray-600 mb-6">
+                    <Shield className="h-4 w-4 mr-2" />
+                    <span>550 Beds | Est. 2005</span>
                   </div>
                   
                   <Button 
@@ -535,12 +523,15 @@ const BariatricSurgery = () => {
                     View Details
                   </Button>
                 </div>
-              </div>
+              </Link>
               
-              <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <Link
+                to="https://www.nilewellness.com/hospitals/fortis-hospital-bangalore"
+                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              >
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="https://placehold.co/400x300/medical-600/white/?text=Fortis+Hospital" 
+                    src="https://www.vaidam.com/sites/default/files/fortis_hospital_bangalore_0.jpg" 
                     alt="Fortis Hospital" 
                     className="w-full h-full object-cover"
                   />
@@ -549,11 +540,15 @@ const BariatricSurgery = () => {
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">Fortis Hospital</h3>
                   <div className="flex items-center text-green-600 mb-4">
                     <BadgeCheck className="h-5 w-5 mr-2" />
-                    <span className="font-medium">Experienced team | High Success Rate</span>
+                    <span className="font-medium">JCI, NABH Accredited</span>
                   </div>
                   <div className="flex items-center text-gray-600 mb-6">
                     <MapPin className="h-4 w-4 mr-2" />
                     <span>Bangalore</span>
+                  </div>
+                  <div className="flex items-center text-gray-600 mb-6">
+                    <Shield className="h-4 w-4 mr-2" />
+                    <span>284 Beds | Est. 2006</span>
                   </div>
                   
                   <Button 
@@ -562,7 +557,7 @@ const BariatricSurgery = () => {
                     View Details
                   </Button>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>
