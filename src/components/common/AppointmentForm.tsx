@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { db } from "@/firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
 
 interface AppointmentFormProps {
   isOpen: boolean;
@@ -15,7 +17,6 @@ const AppointmentForm = ({ isOpen, onClose, doctorName, formType }: AppointmentF
     phone: "",
     email: "",
     treatment: "",
-    files: [] as File[],
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -47,37 +48,37 @@ const AppointmentForm = ({ isOpen, onClose, doctorName, formType }: AppointmentF
       return;
     }
 
-    // Here you would typically send the form data to your backend
-    // For now, we'll just log it and close the form
-    console.log("Form submitted:", formData);
-    
-    // TODO: Implement actual form submission
-    // const formDataToSend = new FormData();
-    // Object.entries(formData).forEach(([key, value]) => {
-    //   if (key === 'files') {
-    //     value.forEach((file: File) => {
-    //       formDataToSend.append('files', file);
-    //     });
-    //   } else {
-    //     formDataToSend.append(key, value);
-    //   }
-    // });
-    
-    onClose();
-  };
+    try {
+      // Prepare data for Firestore
+      const appointmentData = {
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        treatment: formData.treatment,
+        doctorName: doctorName || "N/A", // Include doctorName, default to "N/A" if not provided
+        formType: formType,
+        timestamp: new Date(), // Add a timestamp
+      };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = Array.from(e.target.files || []);
-    const validFiles = files.filter(file => {
-      const isValidType = ['application/pdf', 'image/jpeg', 'image/png'].includes(file.type);
-      const isValidSize = file.size <= 15 * 1024 * 1024; // 15MB
-      return isValidType && isValidSize;
-    });
-    
-    setFormData(prev => ({
-      ...prev,
-      files: validFiles
-    }));
+      // Add document to Firestore
+      const docRef = await addDoc(collection(db, "appointments"), appointmentData);
+      console.log("Document written with ID: ", docRef.id);
+      
+      // Clear form and close modal on success
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        treatment: "",
+      });
+      onClose();
+
+    } catch (e) {
+      console.error("Error adding document: ", e);
+      // Optionally show an error message to the user
+      alert("There was an error submitting your form. Please try again.");
+      onClose(); // Close form even on error for now, can be adjusted
+    }
   };
 
   if (!isOpen) return null;
@@ -162,22 +163,6 @@ const AppointmentForm = ({ isOpen, onClose, doctorName, formType }: AppointmentF
                 className="w-full p-2 border border-gray-300 rounded-md"
                 placeholder="Specify the treatment or issue"
               />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Upload Medical Reports
-              </label>
-              <input
-                type="file"
-                multiple
-                onChange={handleFileChange}
-                accept=".pdf,.jpg,.jpeg,.png"
-                className="w-full p-2 border border-gray-300 rounded-md"
-              />
-              <p className="text-xs text-gray-500 mt-1">
-                Accepted formats: PDF, JPG, PNG (Max size: 15MB)
-              </p>
             </div>
 
             <div className="pt-4">
