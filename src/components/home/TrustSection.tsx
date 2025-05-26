@@ -38,11 +38,11 @@ const TrustSection = () => {
     <section className="section-container bg-white">
       <h2 className="section-title">
         <span className="block text-3xl md:text-4xl font-bold mb-2">
-          <span className="text-nile-600">Trusted by 100,000+</span>
-          <span className="text-gray-800"> International Patients</span>
+          <span className="text-nile-600">Get 2X the Difference</span>
+          <span className="text-gray-800"> </span>
         </span>
         <span className="block text-2xl md:text-3xl text-gray-700">
-          for World-Class Treatment in India
+        If You Find a Lower Treatment Cost in India
         </span>
       </h2>
       

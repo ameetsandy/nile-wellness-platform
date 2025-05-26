@@ -127,10 +127,12 @@ const Hero = () => {
         </div>
 
         {/* Static Text Strip */}
-        <div className="mt-8 bg-gradient-to-r from-nile-600 to-nile-700 text-white py-4 px-6 rounded-lg shadow-lg">
+        <div className="mt-8 bg-[#F2FFFD] text-black py-4 px-6 rounded-lg shadow-sm">
           <div className="flex items-center justify-center">
-            <span className="text-xl font-semibold tracking-wide">
-              Get 2X the Difference If You Find a Lower Treatment Cost in India
+            <span className="text-xl font-medium tracking-wide">
+            Trusted by 100,000+ International Patients
+for World-Class Treatment in India
+    
             </span>
           </div>
         </div>
