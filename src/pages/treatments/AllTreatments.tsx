@@ -333,7 +333,6 @@ const AllTreatments = () => {
                             style={{padding: '0.75rem 1rem'}}
                           >
                             {treatment.name}
-                            <span className="ml-2 text-xs bg-green-200 text-green-800 px-2 py-0.5 rounded">Know More</span>
                           </a>
                         )
                       ))}
@@ -370,7 +369,6 @@ const AllTreatments = () => {
                             style={{padding: '0.75rem 1rem'}}
                           >
                             {treatment.name}
-                            <span className="ml-2 text-xs bg-green-200 text-green-800 px-2 py-0.5 rounded">Know More</span>
                           </a>
                         )
                       ))}
