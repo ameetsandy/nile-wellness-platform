@@ -183,84 +183,84 @@ const AllTreatments = () => {
                   {
                     name: 'Heart Bypass Surgery',
                     path: '/treatments/heart-bypass',
-                    icon: <img src="https://i.postimg.cc/BbFJWnxB/Heart-Bypass-Surgery-CABG.png" alt="Heart Bypass" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/BbFJWnxB/Heart-Bypass-Surgery-CABG.png',
                     desc: 'Restore blood flow to your heart with world-class cardiac care at a fraction of Western costs.',
                     save: 'Save up to 90%'
                   },
                   {
                     name: 'Knee Replacement',
                     path: '/treatments/knee-replacement',
-                    icon: <img src="https://i.postimg.cc/tR6b47xh/Knee-Replacement-Surgery.png" alt="Knee Replacement" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/tR6b47xh/Knee-Replacement-Surgery.png',
                     desc: 'Regain mobility and relieve pain with advanced joint replacement surgery by top orthopedic surgeons.',
                     save: 'Save up to 85%'
                   },
                   {
                     name: 'Hip Replacement',
                     path: '/treatments/hip-replacement',
-                    icon: <img src="https://i.postimg.cc/Vs0f0D30/hip-replacement.png" alt="Hip Replacement" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/Vs0f0D30/hip-replacement.png',
                     desc: 'Get back to active living with minimally invasive hip replacement by leading specialists.',
                     save: 'Save up to 80%'
                   },
                   {
                     name: 'Cancer Treatment',
                     path: '/treatments/cancer-treatment',
-                    icon: <img src="https://i.postimg.cc/4yDjpvHz/Cancer-Treatment.png" alt="Cancer Treatment" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/4yDjpvHz/Cancer-Treatment.png',
                     desc: 'Advanced cancer care including surgery, chemotherapy, and radiation at top oncology centers.',
                     save: 'Save up to 75%'
                   },
                   {
                     name: 'Kidney Transplant',
                     path: '/treatments/kidney-transplant',
-                    icon: <img src="https://i.postimg.cc/qvw4HYCS/kidney-transplant.png" alt="Kidney Transplant" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/qvw4HYCS/kidney-transplant.png',
                     desc: 'Expert kidney transplant programs with high success rates and affordable packages.',
                     save: 'Save up to 80%'
                   },
                   {
                     name: 'Liver Transplant',
                     path: '/treatments/liver-transplant',
-                    icon: <img src="https://i.postimg.cc/MGX22Gwf/liver-transplant.png" alt="Liver Transplant" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/MGX22Gwf/liver-transplant.png',
                     desc: 'Life-saving liver transplants with world-class surgeons and comprehensive care.',
                     save: 'Save up to 80%'
                   },
                   {
                     name: 'Spine Surgery',
                     path: '/treatments/spine-surgery',
-                    icon: <img src="https://i.postimg.cc/8zPxMCjX/spine-surgery.png" alt="Spine Surgery" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/8zPxMCjX/spine-surgery.png',
                     desc: 'Minimally invasive and advanced spine surgeries for pain relief and mobility.',
                     save: 'Save up to 75%'
                   },
                   {
                     name: 'Brain Surgery',
                     path: '/treatments/brain-surgery',
-                    icon: <img src="https://i.postimg.cc/3w35LZS1/brain-tumor.png" alt="Brain Surgery" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/3w35LZS1/brain-tumor.png',
                     desc: 'Expert neurosurgeons for brain tumor, epilepsy, and other brain conditions.',
                     save: 'Save up to 75%'
                   },
                   {
                     name: 'IVF & Fertility',
                     path: '/treatments/ivf-fertility',
-                    icon: <img src="https://i.postimg.cc/Qxpj0VNX/IVF-Fertility.png" alt="IVF & Fertility" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/Qxpj0VNX/IVF-Fertility.png',
                     desc: 'Build your family with high success rate IVF procedures and personalized fertility care.',
                     save: 'Save up to 80%'
                   },
                   {
                     name: 'Bariatric Surgery',
                     path: '/treatments/bariatric-surgery',
-                    icon: <img src="https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png" alt="Bariatric Surgery" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png',
                     desc: 'Weight loss and metabolic surgery for a healthier, more active life.',
                     save: 'Save up to 70%'
                   },
                   {
                     name: 'Dental Implants',
                     path: '/treatments/dental-implants',
-                    icon: <img src="https://i.postimg.cc/fRNRNmqt/Dental-Implants.png" alt="Dental Implants" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/fRNRNmqt/Dental-Implants.png',
                     desc: 'Restore your smile with high-quality dental implants.',
                     save: 'Save up to 75%'
                   },
                   {
                     name: 'Eye Care',
                     path: '/treatments/eye-care',
-                    icon: <img src="https://i.postimg.cc/k5jJKZJK/Eye-Care.png" alt="Eye Care" className="h-5 w-5" />,
+                    image: 'https://i.postimg.cc/k5jJKZJK/Eye-Care.png',
                     desc: 'Comprehensive eye care and vision correction procedures.',
                     save: 'Save up to 70%'
                   }
@@ -270,18 +270,26 @@ const AllTreatments = () => {
                     className="bg-white rounded-xl shadow-lg overflow-hidden min-w-[340px] max-w-xs flex-shrink-0 flex flex-col justify-between"
                     style={{ scrollSnapAlign: 'start' }}
                   >
-                    <div className="h-40 flex items-center justify-center bg-gray-100">
-                      <span className="text-3xl font-bold text-gray-300">{treatment.name.split(' ')[0]}</span>
+                    {/* Image Area */}
+                    <div className="h-40 overflow-hidden bg-white flex items-center justify-center">
+                      <img
+                        src={treatment.image}
+                        alt={treatment.name}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div className="p-6 flex flex-col h-full justify-between">
+                      {/* Title and Icon (Icon removed as image is at top)*/}
                       <div className="flex items-center gap-2 mb-3">
-                        {treatment.icon}
                         <h3 className="text-xl font-bold text-black">{treatment.name}</h3>
                       </div>
+                      {/* Description */}
                       <p className="text-gray-600 mb-4">{treatment.desc}</p>
+                      {/* Save Tag */}
                       <div className="mb-4">
                         <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">{treatment.save}</span>
                       </div>
+                      {/* Learn More Button */}
                       <Link to={treatment.path}>
                         <Button className="w-full">Learn More</Button>
                       </Link>
