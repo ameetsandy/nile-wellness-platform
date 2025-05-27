@@ -80,7 +80,7 @@ const BariatricSurgery = () => {
               <div className="lg:w-1/2 relative">
                 <div className="rounded-xl overflow-hidden shadow-2xl max-w-[500px] mx-auto">
                   <img
-                    src="https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png"
+                    src="	https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png"
                     alt="Bariatric Surgery"
                     className="w-full h-[300px] object-contain"
                   />
@@ -98,7 +98,7 @@ const BariatricSurgery = () => {
                 <div className="bg-white p-8 rounded-xl shadow-md">
                   <div className="flex items-center mb-6">
                     <img 
-                      src="https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png" 
+                      src="	https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png" 
                       alt="Bariatric Surgery" 
                       className="h-6 w-6 mr-3 object-contain"
                     />
@@ -139,7 +139,7 @@ const BariatricSurgery = () => {
                 <div className="bg-white p-8 rounded-xl shadow-md">
                   <div className="flex items-center mb-6">
                     <img 
-                      src="https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png" 
+                      src="	https://i.postimg.cc/TPKSNHjr/Weight-Loss-Surgery-Bariatric.png" 
                       alt="Bariatric Surgery" 
                       className="h-6 w-6 mr-3 object-contain"
                     />

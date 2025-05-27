@@ -33,7 +33,7 @@ const SpineSurgery = () => {
               </div>
               <div className="rounded-xl overflow-hidden shadow-2xl max-w-[500px] mx-auto">
                 <img
-                  src="https://i.postimg.cc/qvw4HYCS/spine-surgery.png"
+                  src="https://i.postimg.cc/8zPxMCjX/spine-surgery.png"
                   alt="Spine Surgery"
                   className="w-full h-[300px] object-contain"
                 />

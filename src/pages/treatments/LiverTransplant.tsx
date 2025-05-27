@@ -33,7 +33,7 @@ const LiverTransplant = () => {
               </div>
               <div className="rounded-xl overflow-hidden shadow-2xl max-w-[500px] mx-auto">
                 <img
-                  src="https://i.postimg.cc/qvw4HYCS/liver-transplant.png"
+                  src="	https://i.postimg.cc/MGX22Gwf/liver-transplant.png"
                   alt="Liver Transplant"
                   className="w-full h-[300px] object-contain"
                 />
