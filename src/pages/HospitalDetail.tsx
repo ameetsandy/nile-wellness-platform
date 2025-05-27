@@ -223,13 +223,6 @@ const HospitalDetail = () => {
                                   </div>
                                 ))}
                               </div>
-                              <div className="flex items-start mt-4">
-                                <MapPin className="h-5 w-5 text-nile-600 mr-2 flex-shrink-0 mt-0.5" />
-                                <div>
-                                  <p className="text-gray-700">{hospital.address}</p>
-                                  <p className="text-sm text-gray-500 mt-1">5 km from Indira Gandhi International Airport</p>
-                                </div>
-                              </div>
                             </div>
                           </div>
                         </div>

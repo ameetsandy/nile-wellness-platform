@@ -1,8 +1,8 @@
 import { calculateInternationalPatients, generatePatientSatisfaction, generateSuccessRate, calculateOperationTheaters, calculateICUBeds } from "@/utils/hospitalStats";
 
 export const hospitalDetails = {
-  "indraprastha-apollo-hospital-new-delhi-new-delhi": {
-        "id": "indraprastha-apollo-hospital-new-delhi-new-delhi",
+  "indraprastha-apollo-hospital-new-delhi": {
+        "id": "indraprastha-apollo-hospital-new-delhi",
         "name": "Indraprastha Apollo Hospital, New Delhi, New Delhi",
         "location": "New Delhi",
         "address": "Indraprastha Apollo Hospital, New Delhi, New Delhi",
