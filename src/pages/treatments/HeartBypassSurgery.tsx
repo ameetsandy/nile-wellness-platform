@@ -153,7 +153,7 @@ const HeartBypassSurgery = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">45+ Exp</span>
+                    <span className="text-sm font-medium block text-center">45+ Years of Experience</span>
                   </div>
                 </div>
 
@@ -212,7 +212,7 @@ const HeartBypassSurgery = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">56+ Exp</span>
+                    <span className="text-sm font-medium block text-center">56+ Years of Experience</span>
                   </div>
                 </div>
 
@@ -271,7 +271,7 @@ const HeartBypassSurgery = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">42+ Exp</span>
+                    <span className="text-sm font-medium block text-center">42+ Years of Experience</span>
                   </div>
                 </div>
 

@@ -152,7 +152,7 @@ const DentalImplants = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">29+ Exp</span>
+                    <span className="text-sm font-medium block text-center">29+ Years of Experience</span>
                   </div>
                 </div>
 
@@ -209,7 +209,7 @@ const DentalImplants = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">22+ Exp</span>
+                    <span className="text-sm font-medium block text-center">22+ Years of Experience</span>
                   </div>
                 </div>
 
@@ -266,7 +266,7 @@ const DentalImplants = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">17+ Exp</span>
+                    <span className="text-sm font-medium block text-center">17+ Years of Experience</span>
                   </div>
                 </div>
 

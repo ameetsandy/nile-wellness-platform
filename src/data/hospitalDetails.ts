@@ -2,51 +2,91 @@ import { calculateInternationalPatients, generatePatientSatisfaction, generateSu
 
 export const hospitalDetails = {
   "indraprastha-apollo-hospital-new-delhi": {
-        "id": "indraprastha-apollo-hospital-new-delhi",
-        "name": "Indraprastha Apollo Hospital, New Delhi, New Delhi",
-        "location": "New Delhi",
-        "address": "Indraprastha Apollo Hospital, New Delhi, New Delhi",
-        "accreditation": [
-            "JCI",
-            "NABL"
+    "id": "indraprastha-apollo-hospital-new-delhi",
+    "name": "Indraprastha Apollo Hospital, New Delhi",
+    "location": "Sarita Vihar, Delhi Mathura Road, New Delhi",
+    "address": "Indraprastha Apollo Hospital, Sarita Vihar, Delhi Mathura Road, New Delhi, 110076",
+    "accreditation": [
+        "JCI",
+        "NABL",
+        "NABH",
+        "ISO 9001:2015",
+        "FICCI Healthcare Award",
+        "Best Hospital Award"
+    ],
+    "established": 1995,
+    "description": "Established in 1995, Indraprastha Apollo Hospital in Delhi is part of India’s largest healthcare chain. It offers 52 specialties, including Cardiology, Oncology, and Robotic Surgery. With over 1,70,000 heart surgeries, advanced technologies like CyberKnife® and Da Vinci® Robotic Surgical System are used. The facility spans 15 acres with 710 beds.",
+    "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/Apollo%20Hospital%20Delhi%20Lobby_0.webp",
+    "logo": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/Apollo%20Hospital%20Delhi%20Lobby_0.webp",
+    "internationalPatients": 1000,
+    "beds": 710,
+    "doctors": 100,
+    "specialties": 52,
+    "specializations": [
+        "Anaesthesia",
+        "Cardiology",
+        "Cardiac Surgery",
+        "Cancer",
+        "Paediatrics",
+        "Critical Care",
+        "Emergency Care",
+        "Foetal Medicine"
+    ],
+    "facilities": {
+        "medical": [
+            "CyberKnife for cancer",
+            "Proton therapy for cancer",
+            "Brain tumor surgery",
+            "Da Vinci® Robotic Surgical System",
+            "Advanced Imaging Center",
+            "Intensive Care Units (largest ICU beds)"
         ],
-        "established": 1995,
-        "description": "Indraprastha Apollo Hospital, New Delhi is a leading multi specialty hospital located in New Delhi. Known for excellent patient care, it has a capacity of 710.0 beds and offers a wide range of medical services.",
-        "image": "/images/hospitals/indraprastha-apollo-hospital-new-delhi-new-delhi.jpg",
-        "logo": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/Apollo%20Hospital%20Delhi%20Lobby_0.webp",
-        "internationalPatients": 1000,
-        "beds": 710,
-        "doctors": 100,
-        "specialties": 15,
-        "specializations": [],
-        "facilities": {
-            "medical": [
-                "Modern Operation Theaters (20)",
-                "Intensive Care Units (40 beds)",
-                "Advanced Imaging Center",
-                "Cath Lab",
-                "Dialysis Unit",
-                "24/7 Emergency Department"
-            ],
-            "amenities": [
-                "International Patient Lounge",
-                "Visa Assistance",
-                "Airport Transfer",
-                "Language Interpreters",
-                "Currency Exchange",
-                "24/7 Pharmacy",
-                "Cafeteria"
-            ]
-        },
-        "topDoctors": [],
-        "reviews": 4.3,
-        "reviewCount": 100,
-        "images": [
-            "https://placehold.co/600x400/medical-600/white/?text=Indraprastha Apollo Hospital, New Delhi+1",
-            "https://placehold.co/600x400/medical-600/white/?text=Indraprastha Apollo Hospital, New Delhi+2",
-            "https://placehold.co/600x400/medical-600/white/?text=Indraprastha Apollo Hospital, New Delhi+3"
+        "amenities": [
+            "International Patient Lounge",
+            "Visa Assistance",
+            "Airport Transfer",
+            "Language Interpreters",
+            "Currency Exchange",
+            "24/7 Pharmacy",
+            "Cafeteria"
         ]
     },
+    "topDoctors": [
+        {
+            "image": "https://www.vaidam.com/sites/default/webp/50/files/dr_rakesh_mahajan.webp",
+            "name": "Dr. Rakesh Mahajan",
+            "speciality": "Vascular Surgeon",
+            "experience": "40 years"
+        },
+        {
+            "image": "https://www.vaidam.com/sites/default/webp/50/files/6_webp",
+            "name": "Dr. Subhash Wangnoo",
+            "speciality": "Endocrinologist",
+            "experience": "35 years"
+        },
+        {
+            "image": "https://www.vaidam.com/sites/default/webp/50/files/dr._p._l._dhingra-removebg-preview-min.webp",
+            "name": "Dr. P. L. Dhingra",
+            "speciality": "ENT Surgeon",
+            "experience": "51 years"
+        },
+        {
+            "image": "https://www.vaidam.com/sites/default/webp/50/files/123webp",
+            "name": "Dr. Shakti Bhan Khanna",
+            "speciality": "Gynaecologist and Obstetrician",
+            "experience": "66 years"
+        }
+    ],
+    "reviews": 4.3,
+    "reviewCount": 100,
+    "images": [
+        "https://www.vaidam.com/sites/default/webp/50/files/hospitals/Apollo%20Hospital%20Delhi.webp",
+        "https://www.vaidam.com/sites/default/webp/50/files/hospitals/indraprastha_apollo_outside-min.webp",
+        "https://www.vaidam.com/sites/default/webp/50/files/Apollo%20Hospital%20Delhi%20View%20webp",
+        "https://www.vaidam.com/sites/default/webp/50/files/Apollo%20Hospital%20Delhi%20Lobby%20webp"
+    ]
+},
+
     
     "blk-max-super-speciality-hospital-new-delhi": {
         "id": "blk-max-super-speciality-hospital-new-delhi",

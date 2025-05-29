@@ -152,7 +152,7 @@ const EyeCare = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">38+ Exp</span>
+                    <span className="text-sm font-medium block text-center">38+ Years of Experience</span>
                   </div>
                 </div>
 
@@ -209,7 +209,7 @@ const EyeCare = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">35+ Exp</span>
+                    <span className="text-sm font-medium block text-center">35+ Years of Experience</span>
                   </div>
                 </div>
 
@@ -266,7 +266,7 @@ const EyeCare = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">32+ Exp</span>
+                    <span className="text-sm font-medium block text-center">32+ Years of Experience</span>
                   </div>
                 </div>
 
