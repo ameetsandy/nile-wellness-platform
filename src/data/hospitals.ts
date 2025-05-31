@@ -4,7 +4,7 @@ export const generateStarRating = () => {
 };
 
 export const hospitals = [
-   {
+  {
     "id": "indraprastha-apollo-hospital-new-delhi",
     "name": "Indraprastha Apollo Hospital, New Delhi",
     "location": "110076",
@@ -13,8 +13,8 @@ export const hospitals = [
     "founded": 1995,
     "beds": 710,
     "rating": generateStarRating(),
-    "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/Apollo%20Hospital%20Delhi%20Lobby_0.webp",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Indraprastha+Apollo+Hospital",
+    "image": "https://www.vaidam.com/sites/default/webp/50/files/hospitals/Apollo%20Hospital%20Delhi.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Indraprastha+Apollo+Hospital,+New+Delhi",
     "path": "/hospitals/indraprastha-apollo-hospital-new-delhi"
   },
   {
@@ -27,8 +27,8 @@ export const hospitals = [
     "beds": 650,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/blk_facade-1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=BLK-Max+Super+Speciality+Hospital",
-    "path": "/hospitals/blk-max-super-speciality-hospital-new-delhi"
+    "logo": "https://placehold.co/200x100/white/gray/?text=BLK-Max+Super+Speciality+Hospital,+New+Delhi",
+    "path": "/hospitals/blk-hospital-new-delhi"
   },
   {
     "id": "fortis-memorial-research-institute-gurgaon",
@@ -40,7 +40,7 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis_memorial_hospital_gurgaon_list_view_image-min.webp",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Memorial+Research+Institute",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Memorial+Research+Institute,+Gurgaon",
     "path": "/hospitals/fortis-memorial-research-institute-gurgaon"
   },
   {
@@ -53,8 +53,8 @@ export const hospitals = [
     "beds": 1600,
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/medanta_the_medicity_gurgaon_list_view_image-min.webp",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Medanta+-+The+Medicity",
-    "path": "/hospitals/medanta-the-medicity-gurgaon"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Medanta+-+The+Medicity,+Gurgaon",
+    "path": "/hospitals/medanta-medicity-gurgaon"
   },
   {
     "id": "apollo-hospitals-greams-road-chennai",
@@ -66,8 +66,8 @@ export const hospitals = [
     "beds": 60,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_hospital_tondiarpet_list_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals",
-    "path": "/hospitals/apollo-hospitals-greams-road-chennai"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals,+Greams+Road,+Chennai",
+    "path": "/hospitals/apollo-hospitals-tondiarpet"
   },
   {
     "id": "artemis-hospital-gurgaon",
@@ -79,20 +79,20 @@ export const hospitals = [
     "beds": 750,
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/aretmis-gurgaon.webp",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Artemis+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Artemis+Hospital,+Gurgaon",
     "path": "/hospitals/artemis-hospital-gurgaon"
   },
   {
     "id": "apollo-cancer-hospital-chennai",
     "name": "Apollo Cancer Hospital, Chennai",
-    "location": "Chennai",
+    "location": "",
     "category": "Single Specialty",
     "accreditation": "NABH, nan",
     "founded": 1970,
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_cancer_hospital_chennai_list_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Cancer+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Cancer+Hospital,+Chennai",
     "path": "/hospitals/apollo-cancer-hospital-chennai"
   },
   {
@@ -105,7 +105,7 @@ export const hospitals = [
     "beds": 310,
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/fortis-escorts-heart-institute_0.webp",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Escorts+Heart+Institute",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Escorts+Heart+Institute,+New+Delhi",
     "path": "/hospitals/fortis-escorts-heart-institute-new-delhi"
   },
   {
@@ -118,8 +118,8 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/fortis_hospital_bangalore_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital",
-    "path": "/hospitals/fortis-hospital-bangalore-bannerghatta-road"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital,+Bangalore+(Bannerghatta+Road)",
+    "path": "/hospitals/fortis-hospital-bangalore"
   },
   {
     "id": "narayana-institute-of-cardiac-sciences-bangalore",
@@ -131,21 +131,21 @@ export const hospitals = [
     "beds": 606,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/narayana_institute_of_cardiac_sciences_bangalore_1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Narayana+Institute+of+Cardiac+Sciences",
-    "path": "/hospitals/narayana-institute-of-cardiac-sciences-bangalore"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Narayana+Institute+of+Cardiac+Sciences,+Bangalore",
+    "path": "/hospitals/narayana-institute-cardiac-sciences-bangalore"
   },
   {
     "id": "apollo-hospital-bannerghatta-road-bangalore",
-    "name": "Apollo Hospital (Bannerghatta Road), Bangalore ",
+    "name": "Apollo Hospital (Bannerghatta Road), Bangalore",
     "location": "560076",
     "category": "Multi Specialty",
     "accreditation": "JCI, nan",
     "founded": 2007,
     "beds": 250,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/apollo_hospitals_bangalorejpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospital+(Bannerghatta+Road)",
-    "path": "/hospitals/apollo-hospital-bannerghatta-road-bangalore"
+    "image": "https://i.postimg.cc/tTVLTd22/Assets-03.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospital+(Bannerghatta+Road),+Bangalore",
+    "path": "/hospitals/apollo-hospital-bangalore"
   },
   {
     "id": "max-super-speciality-hospital-saket-new-delhi",
@@ -157,7 +157,7 @@ export const hospitals = [
     "beds": 550,
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/max_hospital_saket_building-min.webp",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Speciality+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Speciality+Hospital,+Saket,+New+Delhi",
     "path": "/hospitals/max-super-speciality-hospital-saket-new-delhi"
   },
   {
@@ -170,7 +170,7 @@ export const hospitals = [
     "beds": 500,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_hospitalsmumbai.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals,+Mumbai",
     "path": "/hospitals/apollo-hospitals-mumbai"
   },
   {
@@ -182,9 +182,9 @@ export const hospitals = [
     "founded": 2007,
     "beds": 100,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/max-gurgaon-building-jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Specialty+Hospital",
-    "path": "/hospitals/max-super-specialty-hospital-gurgaon"
+    "image": "https://i.postimg.cc/rmWPcVwH/2023-04-05.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Specialty+Hospital,+Gurgaon",
+    "path": "/hospitals/max-hospital-gurgaon"
   },
   {
     "id": "apollo-hospitals-jubilee-hills-hyderabad",
@@ -196,8 +196,8 @@ export const hospitals = [
     "beds": 550,
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/apollo_hospitals_jubilee_hills_hyderabad_building1-min.webp",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals",
-    "path": "/hospitals/apollo-hospitals-jubilee-hills-hyderabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals,+Jubilee+Hills,+Hyderabad",
+    "path": "/hospitals/apollo-hospitals-hyderabad"
   },
   {
     "id": "fortis-flt-lt-rajan-dhall-hospital-vasant-kunj-new-delhi",
@@ -209,7 +209,7 @@ export const hospitals = [
     "beds": 200,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/fortis-vasant-kunj-delhi.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Flt.+Lt.+Rajan+Dhall+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Flt.+Lt.+Rajan+Dhall+Hospital,+Vasant+Kunj,+New+Delhi",
     "path": "/hospitals/fortis-flt-lt-rajan-dhall-hospital-vasant-kunj-new-delhi"
   },
   {
@@ -221,20 +221,20 @@ export const hospitals = [
     "founded": 1992,
     "beds": 500,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/3fortis_malar_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Malar+Hospital",
+    "image": "https://i.postimg.cc/dtWnbk91/2025-03-18.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Malar+Hospital+,Chennai",
     "path": "/hospitals/fortis-malar-hospital-chennai"
   },
   {
     "id": "fortis-hospital-anandapur-kolkata",
     "name": "Fortis Hospital (Anandapur) Kolkata",
-    "location": "Kolkata",
+    "location": "",
     "category": "Super Specialty",
     "accreditation": "NABH, nan",
     "founded": 2011,
     "beds": 400,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/fortis-hospital-kolkatajpg",
+    "image": "https://www.vaidam.com/sites/default/files/hospitals/fortis-hospital-kolkata.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital+(Anandapur)+Kolkata",
     "path": "/hospitals/fortis-hospital-anandapur-kolkata"
   },
@@ -248,7 +248,7 @@ export const hospitals = [
     "beds": 1500,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/sri_ramachandra_hospital-chennai-home-min_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Sri+Ramachandra+Medical+Centre",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sri+Ramachandra+Medical+Centre,+Chennai",
     "path": "/hospitals/sri-ramachandra-medical-centre-chennai"
   },
   {
@@ -261,7 +261,7 @@ export const hospitals = [
     "beds": 400,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/fortis_mulund_mumbai_building.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital,+Mulund,+Mumbai",
     "path": "/hospitals/fortis-hospital-mulund-mumbai"
   },
   {
@@ -273,8 +273,8 @@ export const hospitals = [
     "founded": 2001,
     "beds": 400,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/fortis_hospital_mohali-home.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital",
+    "image": "https://i.postimg.cc/DZXwTXsK/unnamed-10.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital,+Mohali",
     "path": "/hospitals/fortis-hospital-mohali"
   },
   {
@@ -287,7 +287,7 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/fortis-hospital-noida_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital,+Noida",
     "path": "/hospitals/fortis-hospital-noida"
   },
   {
@@ -299,8 +299,8 @@ export const hospitals = [
     "founded": 1869,
     "beds": 1200,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/rajagiri_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Rajagiri+Hospital",
+    "image": "https://www.vaidam.com/sites/default/files/hospitals/rajagiri_2-min_1_0.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Rajagiri+Hospital,+Kochi",
     "path": "/hospitals/rajagiri-hospital-kochi"
   },
   {
@@ -313,7 +313,7 @@ export const hospitals = [
     "beds": 100,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/noida_facade-1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Multi+Speciality+Centre",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Multi+Speciality+Centre,+Noida",
     "path": "/hospitals/max-multi-speciality-centre-noida"
   },
   {
@@ -325,8 +325,8 @@ export const hospitals = [
     "founded": 2010,
     "beds": 300,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/fortis_hospital_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital",
+    "image": "https://www.vaidam.com/sites/default/files/hospitals/fortis_shalimar_bagh_building-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital,+Shalimar+Bagh,+New+Delhi",
     "path": "/hospitals/fortis-hospital-shalimar-bagh-new-delhi"
   },
   {
@@ -339,8 +339,8 @@ export const hospitals = [
     "beds": 1100,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/sterling_hospital_ahmedabad_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Sterling+Hospital",
-    "path": "/hospitals/sterling-hospital-ahmedabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sterling+Hospital,+Ahmedabad",
+    "path": "/hospitals/sterling-hospital-ahmedabad-india"
   },
   {
     "id": "gleneagles-global-hospital-chennai",
@@ -352,8 +352,8 @@ export const hospitals = [
     "beds": 1000,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/global-chennai-facade.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Gleneagles+Global+Hospital",
-    "path": "/hospitals/gleneagles-global-hospital-chennai"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Gleneagles+Global+Hospital,+Chennai",
+    "path": "/hospitals/gleneagles-global-hospitals-chennai"
   },
   {
     "id": "kims-hospital-secunderabad-hyderabad",
@@ -365,8 +365,8 @@ export const hospitals = [
     "beds": 1000,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/main_building_kims_secunderabad.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=KIMS+Hospital",
-    "path": "/hospitals/kims-hospital-secunderabad-hyderabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=KIMS+Hospital,+Secunderabad+,+Hyderabad",
+    "path": "/hospitals/kims-hospital-secunderabad"
   },
   {
     "id": "fortis-escorts-hospital-jaipur",
@@ -391,21 +391,21 @@ export const hospitals = [
     "beds": 150,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/fortis_hiranandani_hospital_vashi-home.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hiranandani+Hospital",
-    "path": "/hospitals/fortis-hiranandani-hospital-vashi-mumbai"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hiranandani+Hospital,+Vashi+,+Mumbai",
+    "path": "/hospitals/fortis-hiranandani-hospital-vashi"
   },
   {
     "id": "rainbow-children-s-hospital-hyderabad",
     "name": "Rainbow Children's Hospital, Hyderabad",
-    "location": "500 034",
+    "location": "",
     "category": "Multi Specialty",
     "accreditation": "NABH, nan",
     "founded": 1999,
     "beds": 1000,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/rainbow_childrens_hospital_hyderabad_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Rainbow+Children's+Hospital",
-    "path": "/hospitals/rainbow-children-s-hospital-hyderabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Rainbow+Children's+Hospital,+Hyderabad",
+    "path": "/hospitals/rainbow-childrens-hospital-hyderabad"
   },
   {
     "id": "ss-sparsh-hospital-mysore-road-bangalore",
@@ -418,7 +418,7 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/br_lifehosptial-home.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=SS+SPARSH+Hospital+(Mysore+Road)+Bangalore",
-    "path": "/hospitals/ss-sparsh-hospital-mysore-road-bangalore"
+    "path": "/hospitals/br-life-hospitals-bangalore"
   },
   {
     "id": "medanta-hospital-lucknow",
@@ -430,7 +430,7 @@ export const hospitals = [
     "beds": 900,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/medanta_lucknow_list_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Medanta+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Medanta+Hospital,+Lucknow",
     "path": "/hospitals/medanta-hospital-lucknow"
   },
   {
@@ -442,8 +442,8 @@ export const hospitals = [
     "founded": 2005,
     "beds": 900,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/2-2_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Sharda+Hospital",
+    "image": "https://i.postimg.cc/cHRGhMw6/download.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sharda+Hospital,+Greater+Noida",
     "path": "/hospitals/sharda-hospital-greater-noida"
   },
   {
@@ -456,7 +456,7 @@ export const hospitals = [
     "beds": 800,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/deenanath_mangeshkar_hospital_and_research_center_pune-home.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Deenanath+Mangeshkar+Hospital+and+Research+Center",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Deenanath+Mangeshkar+Hospital+and+Research+Center,+Pune",
     "path": "/hospitals/deenanath-mangeshkar-hospital-and-research-center-pune"
   },
   {
@@ -469,8 +469,8 @@ export const hospitals = [
     "beds": 750,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/mazumdar_shaw_medical_centre_bangalore_1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=NH+Mazumdar+Shaw+Medical+Centre",
-    "path": "/hospitals/nh-mazumdar-shaw-medical-centre-bangalore"
+    "logo": "https://placehold.co/200x100/white/gray/?text=NH+Mazumdar+Shaw+Medical+Centre,+Bangalore",
+    "path": "/hospitals/mazumdar-shaw-medical-centre-bangalore"
   },
   {
     "id": "apollo-gleneagles-hospital-kolkata",
@@ -481,9 +481,9 @@ export const hospitals = [
     "founded": 2003,
     "beds": 750,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/apollo-gleneagles-hospitals-728_0jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Gleneagles+Hospital",
-    "path": "/hospitals/apollo-gleneagles-hospital-kolkata"
+    "image": "https://i.postimg.cc/k49pJrRX/display-Doctor-Image-kolkata.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Gleneagles+Hospital,+Kolkata",
+    "path": "/hospitals/apolllo-gleneagles-hospital-kolkata"
   },
   {
     "id": "continental-hospitals-hyderabad",
@@ -495,7 +495,7 @@ export const hospitals = [
     "beds": 750,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/continental_hospital_-_building.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Continental+Hospitals",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Continental+Hospitals,+Hyderabad",
     "path": "/hospitals/continental-hospitals-hyderabad"
   },
   {
@@ -508,34 +508,8 @@ export const hospitals = [
     "beds": 750,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/vijaya_hospital_chenna-home.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Vijaya+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Vijaya+Hospital,+Chennai",
     "path": "/hospitals/vijaya-hospital-chennai"
-  },
-  {
-    "id": "bombay-hospital-medical-research-center-mumbai",
-    "name": "Bombay Hospital & Medical Research Center, Mumbai",
-    "location": "400020",
-    "category": "Multi Specialty",
-    "accreditation": "nan, nan",
-    "founded": 1952,
-    "beds": 725,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/bh_gif",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Bombay+Hospital+&+Medical+Research+Center",
-    "path": "/hospitals/bombay-hospital-medical-research-center-mumbai"
-  },
-  {
-    "id": "mgm-medical-college-hospital-and-medical-center-research-institute-aurangabad",
-    "name": "MGM Medical College Hospital and Medical Center Research Institute, Aurangabad",
-    "location": "Aurangabad",
-    "category": "Multi Specialty",
-    "accreditation": "NABH, nan",
-    "founded": 1990,
-    "beds": 700,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/mgm_medical_college_hospital_and_medical_center_research_institute_aurangabad_building.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=MGM+Medical+College+Hospital+and+Medical+Center+Research+Institute",
-    "path": "/hospitals/mgm-medical-college-hospital-and-medical-center-research-institute-aurangabad"
   },
   {
     "id": "aster-mims-calicut",
@@ -547,7 +521,7 @@ export const hospitals = [
     "beds": 650,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/aster_mims_calicut_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Aster+MIMS",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Aster+MIMS,+Calicut",
     "path": "/hospitals/aster-mims-calicut"
   },
   {
@@ -573,7 +547,7 @@ export const hospitals = [
     "beds": 650,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/hosmat_hospital_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Hosmat+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Hosmat+Hospital,+Bangalore",
     "path": "/hospitals/hosmat-hospital-bangalore"
   },
   {
@@ -586,20 +560,20 @@ export const hospitals = [
     "beds": 600,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/rabindranath_tagore_international_institute_of_cardiac_sciences_kolkata_1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=NH+Rabindranath+Tagore+International+Institute+of+Cardiac+Sciences",
-    "path": "/hospitals/nh-rabindranath-tagore-international-institute-of-cardiac-sciences-kolkata"
+    "logo": "https://placehold.co/200x100/white/gray/?text=NH+Rabindranath+Tagore+International+Institute+of+Cardiac+Sciences,+Kolkata",
+    "path": "/hospitals/rabindranath-tagore-international-institute-cardiac-sciences-kolkata"
   },
   {
     "id": "billroth-hospital-chennai",
     "name": "Billroth Hospital, Chennai",
-    "location": "Chennai",
+    "location": "",
     "category": "Multi Specialty",
     "accreditation": "NABH, nan",
     "founded": 1990,
     "beds": 600,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/url.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Billroth+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Billroth+Hospital,+Chennai",
     "path": "/hospitals/billroth-hospital-chennai"
   },
   {
@@ -612,8 +586,8 @@ export const hospitals = [
     "beds": 600,
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/manipal_hospital_old_airport_road_bangalore_building1-min.webp",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital+(Old+Airport+Road)",
-    "path": "/hospitals/manipal-hospital-old-airport-road-bangalore"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital+(Old+Airport+Road),+Bangalore",
+    "path": "/hospitals/manipal-hospital-bangalore"
   },
   {
     "id": "medica-superspecialty-hospital-kolkata",
@@ -625,21 +599,8 @@ export const hospitals = [
     "beds": 600,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/medica_superspecialty_hospital_building1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Medica+Superspecialty+Hospital",
-    "path": "/hospitals/medica-superspecialty-hospital-kolkata"
-  },
-  {
-    "id": "star-hospital-financial-district-hyderabad",
-    "name": "Star Hospital, Financial District, Hyderabad",
-    "location": "Hyderabad",
-    "category": "Multi Specialty",
-    "accreditation": "NABH,  NABL",
-    "founded": 2008,
-    "beds": 600,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/star_hospital_financial_district_front_1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Star+Hospital",
-    "path": "/hospitals/star-hospital-financial-district-hyderabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Medica+Superspecialty+Hospital,+Kolkata",
+    "path": "/hospitals/medica-superspecialty-hospital"
   },
   {
     "id": "sir-ganga-ram-hospital-new-delhi",
@@ -651,34 +612,8 @@ export const hospitals = [
     "beds": 575,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/sir_ganga_ram_hospital_delhi_building_list_view-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Sir+Ganga+Ram+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sir+Ganga+Ram+Hospital,+New+Delhi",
     "path": "/hospitals/sir-ganga-ram-hospital-new-delhi"
-  },
-  {
-    "id": "kiran-multi-super-speciality-hospital-research-center-surat",
-    "name": "Kiran Multi Super Speciality Hospital & Research Center , Surat",
-    "location": "395004",
-    "category": "Multi Specialty",
-    "accreditation": "NABH, nan",
-    "founded": 2017,
-    "beds": 550,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/kiran_main_1-min_1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Kiran+Multi+Super+Speciality+Hospital+&+Research+Center",
-    "path": "/hospitals/kiran-multi-super-speciality-hospital-research-center-surat"
-  },
-  {
-    "id": "kmc-hospital-research-centre-meerut",
-    "name": "KMC Hospital & Research Centre, Meerut",
-    "location": "Meerut",
-    "category": "Super Specialty",
-    "accreditation": "NABH, nan",
-    "founded": 1998,
-    "beds": 550,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/kmc_hospital_research_centre_meerut_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=KMC+Hospital+&+Research+Centre",
-    "path": "/hospitals/kmc-hospital-research-centre-meerut"
   },
   {
     "id": "zydus-hospital-ahmedabad",
@@ -690,21 +625,8 @@ export const hospitals = [
     "beds": 550,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/zydus_5_outer.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Zydus+Hospital",
-    "path": "/hospitals/zydus-hospital-ahmedabad"
-  },
-  {
-    "id": "cancer-institute-wia-adyar-chennai",
-    "name": "Cancer Institute (WIA) Adyar, Chennai",
-    "location": "Chennai",
-    "category": "Single Specialty",
-    "accreditation": "nan, nan",
-    "founded": 1954,
-    "beds": 500,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/cancer_institute_wia_adyar_chennai-home.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Cancer+Institute+(WIA)+Adyar",
-    "path": "/hospitals/cancer-institute-wia-adyar-chennai"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Zydus+Hospital,+Ahmedabad",
+    "path": "/hospitals/zydus-hospital-ahemdabad"
   },
   {
     "id": "aditya-birla-memorial-hospital-pune",
@@ -716,7 +638,7 @@ export const hospitals = [
     "beds": 500,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/aditya_birla_memorial_hospital_pune_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Aditya+Birla+Memorial+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Aditya+Birla+Memorial+Hospital,+Pune",
     "path": "/hospitals/aditya-birla-memorial-hospital-pune"
   },
   {
@@ -729,7 +651,7 @@ export const hospitals = [
     "beds": 500,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/amandeep_hospital_amritsar_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Amandeep+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Amandeep+Hospital,+Amritsar",
     "path": "/hospitals/amandeep-hospital-amritsar"
   },
   {
@@ -755,7 +677,7 @@ export const hospitals = [
     "beds": 750,
     "rating": generateStarRating(),
     "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/kokilaben_hospital_mumbai.webp",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Kokilaben+Dhirubhai+Ambani+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Kokilaben+Dhirubhai+Ambani+Hospital,+Mumbai",
     "path": "/hospitals/kokilaben-dhirubhai-ambani-hospital-mumbai"
   },
   {
@@ -769,7 +691,7 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/aster_cmi_hospital.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Aster+CMI+Hospital+(Hebbel)+Bangalore",
-    "path": "/hospitals/aster-cmi-hospital-hebbel-bangalore"
+    "path": "/hospitals/aster-cmi-hospital-bangalore"
   },
   {
     "id": "basavatarakam-indo-american-cancer-hospital-research-institute-hyderabad",
@@ -781,47 +703,8 @@ export const hospitals = [
     "beds": 500,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/basavatarakam_indo_american_cancer_hospital_research_institute-home.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Basavatarakam+Indo+American+Cancer+Hospital+&+Research+Institute",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Basavatarakam+Indo+American+Cancer+Hospital+&+Research+Institute,+Hyderabad",
     "path": "/hospitals/basavatarakam-indo-american-cancer-hospital-research-institute-hyderabad"
-  },
-  {
-    "id": "bombay-hospital-indore",
-    "name": "Bombay Hospital, Indore",
-    "location": "Indore",
-    "category": "Multi Specialty",
-    "accreditation": "JCI,  ISO 9001",
-    "founded": 1950,
-    "beds": 500,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/image_1_1-min_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Bombay+Hospital",
-    "path": "/hospitals/bombay-hospital-indore"
-  },
-  {
-    "id": "dr-d-y-patil-medical-college-hospital-and-research-centre-pune",
-    "name": "Dr. D.Y. Patil Medical College, Hospital and Research Centre , Pune",
-    "location": "Pune",
-    "category": "Super Specialty",
-    "accreditation": "NABH,  NABL",
-    "founded": 1996,
-    "beds": 2000,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/dr._d.y._patil_medical_college_hospital_and_research_centre_building2-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Dr.+D.Y.+Patil+Medical+College",
-    "path": "/hospitals/dr-d-y-patil-medical-college-hospital-and-research-centre-pune"
-  },
-  {
-    "id": "shalby-hospital-indore",
-    "name": "Shalby Hospital, Indore",
-    "location": "Indore",
-    "category": "Multi Specialty",
-    "accreditation": "NABH,  NABL",
-    "founded": 1991,
-    "beds": 500,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/1_1-min_1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Shalby+Hospital",
-    "path": "/hospitals/shalby-hospital-indore"
   },
   {
     "id": "vps-lakeshore-hospital-kochi",
@@ -833,20 +716,20 @@ export const hospitals = [
     "beds": 500,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/vps_lakeshore_hospital_kochi-home-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=VPS+Lakeshore+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=VPS+Lakeshore+Hospital,+Kochi",
     "path": "/hospitals/vps-lakeshore-hospital-kochi"
   },
   {
     "id": "batra-hospital-medical-research-centre-new-delhi",
     "name": "Batra Hospital & Medical Research Centre, New Delhi",
-    "location": "New Delhi",
+    "location": "",
     "category": "Multi Specialty",
     "accreditation": "NABH,  NABL",
     "founded": 1987,
     "beds": 500,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/batra_hospital_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Batra+Hospital+&+Medical+Research+Centre",
+    "image": "https://i.postimg.cc/qMZpmRj3/unnamed-22.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Batra+Hospital+&+Medical+Research+Centre,+New+Delhi",
     "path": "/hospitals/batra-hospital-medical-research-centre-new-delhi"
   },
   {
@@ -859,7 +742,7 @@ export const hospitals = [
     "beds": 450,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/dr-rela-institute-and-medical-centre_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Dr.+Rela+Institute+and+Medical+Centre",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Dr.+Rela+Institute+and+Medical+Centre,+Chennai",
     "path": "/hospitals/dr-rela-institute-and-medical-centre-chennai"
   },
   {
@@ -872,8 +755,8 @@ export const hospitals = [
     "beds": 450,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/facade.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Global+Hospitals",
-    "path": "/hospitals/global-hospitals-mumbai"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Global+Hospitals,+Mumbai",
+    "path": "/hospitals/global-hospital-mumbai"
   },
   {
     "id": "hcg-hospital-ahmedabad",
@@ -885,7 +768,7 @@ export const hospitals = [
     "beds": 450,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/hcg_hospital_ahmedabad_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=HCG+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=HCG+Hospital,+Ahmedabad",
     "path": "/hospitals/hcg-hospital-ahmedabad"
   },
   {
@@ -898,8 +781,8 @@ export const hospitals = [
     "beds": 450,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/qrg_hospital_list-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Marengo+Asia+Hospitals+Formerly+QRG+Health+City",
-    "path": "/hospitals/marengo-asia-hospitals-formerly-qrg-health-city-faridabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Marengo+Asia+Hospitals+Formerly+QRG+Health+City,+Faridabad",
+    "path": "/hospitals/qrg-health-city-faridabad"
   },
   {
     "id": "sarvodaya-hospital-faridabad",
@@ -911,7 +794,7 @@ export const hospitals = [
     "beds": 450,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/sarvodaya_hospital_faridabad_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Sarvodaya+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sarvodaya+Hospital,+Faridabad",
     "path": "/hospitals/sarvodaya-hospital-faridabad"
   },
   {
@@ -924,7 +807,7 @@ export const hospitals = [
     "beds": 500,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/care_hospitals_banjara_hills_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Care+Hospitals",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Care+Hospitals,+Banjara+Hills,+Hyderabad",
     "path": "/hospitals/care-hospitals-banjara-hills-hyderabad"
   },
   {
@@ -950,21 +833,8 @@ export const hospitals = [
     "beds": 425,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/asian_institute_of_medical_sciences_faridabad-home-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Asian+Institute+of+Medical+Sciences",
-    "path": "/hospitals/asian-institute-of-medical-sciences-faridabad"
-  },
-  {
-    "id": "t-s-misra-medical-college-and-hospital-lucknow",
-    "name": "T. S. Misra Medical College and Hospital, Lucknow",
-    "location": "Lucknow",
-    "category": "Multi Specialty",
-    "accreditation": "NABH, nan",
-    "founded": 2016,
-    "beds": 500,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/t._s._misra_medical_college_and_hospital_lucknow_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=T.+S.+Misra+Medical+College+and+Hospital",
-    "path": "/hospitals/t-s-misra-medical-college-and-hospital-lucknow"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Asian+Institute+of+Medical+Sciences,+Faridabad",
+    "path": "/hospitals/asian-institute-medical-sciences-faridabad"
   },
   {
     "id": "calcutta-medical-research-institute-kolkata",
@@ -976,7 +846,7 @@ export const hospitals = [
     "beds": 400,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/calcutta_medical_research_institute_kolkata_-home.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Calcutta+Medical+Research+Institute",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Calcutta+Medical+Research+Institute,+Kolkata",
     "path": "/hospitals/calcutta-medical-research-institute-kolkata"
   },
   {
@@ -989,34 +859,21 @@ export const hospitals = [
     "beds": 1500,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/seven_hills_hospital_mumbai_building1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Seven+Hills+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Seven+Hills+Hospital,+Mumbai",
     "path": "/hospitals/seven-hills-hospital-mumbai"
-  },
-  {
-    "id": "amrita-institute-of-medical-sciences-and-research-centre-kochi",
-    "name": "Amrita Institute of Medical Sciences and Research Centre, Kochi",
-    "location": "Kochi",
-    "category": "Super Specialty",
-    "accreditation": "NABH,  NABL",
-    "founded": 1998,
-    "beds": 1450,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/amrita_institute_of_medical_sciences_and_research_centre_kochi-home.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Amrita+Institute+of+Medical+Sciences+and+Research+Centre",
-    "path": "/hospitals/amrita-institute-of-medical-sciences-and-research-centre-kochi"
   },
   {
     "id": "manipal-hospital-formerly-amri-hospitals-bhubaneswar",
     "name": "Manipal Hospital Formerly AMRI Hospitals, Bhubaneswar",
-    "location": "751 030",
+    "location": "",
     "category": "Multi Specialty",
     "accreditation": "NABH, nan",
     "founded": 2014,
     "beds": 400,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/list_view_2jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital+Formerly+AMRI+Hospitals",
-    "path": "/hospitals/manipal-hospital-formerly-amri-hospitals-bhubaneswar"
+    "image": "https://i.postimg.cc/ZqN3bXCw/unnamed-27.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital+Formerly+AMRI+Hospitals,+Bhubaneswar",
+    "path": "/hospitals/amri-hospitals-bhubaneswar"
   },
   {
     "id": "max-super-speciality-hospital-patparganj-new-delhi",
@@ -1028,7 +885,7 @@ export const hospitals = [
     "beds": 400,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/patparganj_hospital.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Speciality+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Speciality+Hospital,+Patparganj,+New+Delhi",
     "path": "/hospitals/max-super-speciality-hospital-patparganj-new-delhi"
   },
   {
@@ -1041,7 +898,7 @@ export const hospitals = [
     "beds": 400,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/metro-hospital-faridabad_list_view-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Metro+Hospital+and+Heart+Institute",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Metro+Hospital+and+Heart+Institute,+Faridabad",
     "path": "/hospitals/metro-hospital-and-heart-institute-faridabad"
   },
   {
@@ -1054,7 +911,7 @@ export const hospitals = [
     "beds": 400,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/mgm_healthcare_chennai_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=MGM+Healthcare",
+    "logo": "https://placehold.co/200x100/white/gray/?text=MGM+Healthcare,+Chennai",
     "path": "/hospitals/mgm-healthcare-chennai"
   },
   {
@@ -1066,9 +923,9 @@ export const hospitals = [
     "founded": 1951,
     "beds": 400,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/hinduja_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=P.D+Hinduja+Hospital+&+Medical+Research+Centre",
-    "path": "/hospitals/p-d-hinduja-hospital-medical-research-centre-mumbai"
+    "image": "https://i.postimg.cc/nrNphSs1/unnamed-34.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=P.D+Hinduja+Hospital+&+Medical+Research+Centre,+Mumbai",
+    "path": "/hospitals/pd-hinduja-hospital-medical-research-centre-mumbai"
   },
   {
     "id": "manipal-hospitals-dwarka-delhi",
@@ -1080,7 +937,7 @@ export const hospitals = [
     "beds": 380,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/manipal_hospitals_dwarka_delhi_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospitals+Dwarka",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospitals+Dwarka,+Delhi",
     "path": "/hospitals/manipal-hospitals-dwarka-delhi"
   },
   {
@@ -1097,19 +954,6 @@ export const hospitals = [
     "path": "/hospitals/sahara-hospital-lucknow"
   },
   {
-    "id": "mahatma-gandhi-medical-college-hospital-jaipur",
-    "name": "Mahatma Gandhi Medical College & Hospital, Jaipur",
-    "location": "302 022",
-    "category": "Super Specialty",
-    "accreditation": "NABH, nan",
-    "founded": 2000,
-    "beds": 1400,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/main_building_mg_hospital_jaipur.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Mahatma+Gandhi+Medical+College+&+Hospital",
-    "path": "/hospitals/mahatma-gandhi-medical-college-hospital-jaipur"
-  },
-  {
     "id": "metro-hospital-haridwar",
     "name": "Metro Hospital, Haridwar",
     "location": "249403",
@@ -1118,22 +962,22 @@ export const hospitals = [
     "founded": 1970,
     "beds": 400,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/image_list-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Metro+Hospital",
+    "image": "https://i.postimg.cc/VstY712G/2020-08-07.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Metro+Hospital,+Haridwar",
     "path": "/hospitals/metro-hospital-haridwar"
   },
   {
-    "id": "nayati-medicity-mathura",
-    "name": "Nayati Medicity, Mathura",
-    "location": "281004",
+    "id": "mahatma-gandhi-medical-college-hospital-jaipur",
+    "name": "Mahatma Gandhi Medical College & Hospital, Jaipur",
+    "location": "",
     "category": "Super Specialty",
-    "accreditation": "nan, nan",
-    "founded": 2016,
-    "beds": 400,
+    "accreditation": "NABH, nan",
+    "founded": 2000,
+    "beds": 1400,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/hospital-header.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Nayati+Medicity",
-    "path": "/hospitals/nayati-medicity-mathura"
+    "image": "https://www.vaidam.com/sites/default/files/main_building_mg_hospital_jaipur.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Mahatma+Gandhi+Medical+College+&+Hospital,+Jaipur",
+    "path": "/hospitals/mahatma-gandhi-medical-college-hospital-jaipur"
   },
   {
     "id": "apollo-sage-hospital-bhopal",
@@ -1145,34 +989,8 @@ export const hospitals = [
     "beds": 350,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_sage_hospital_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+SAGE+Hospital",
-    "path": "/hospitals/apollo-sage-hospital-bhopal"
-  },
-  {
-    "id": "ashoka-medicover-hospitals-nashik",
-    "name": "Ashoka Medicover Hospitals Nashik",
-    "location": "Nashik",
-    "category": "Super Specialty",
-    "accreditation": "nan, nan",
-    "founded": 2015,
-    "beds": 350,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/ashoka_medicover_hospital_nashik_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Ashoka+Medicover+Hospitals+Nashik",
-    "path": "/hospitals/ashoka-medicover-hospitals-nashik"
-  },
-  {
-    "id": "asian-noble-hospital-pvt-ltd-ahmednagar-ahmednagar",
-    "name": "Asian Noble Hospital Pvt. Ltd., Ahmednagar , Ahmednagar",
-    "location": "Ahmednagar",
-    "category": "Super Specialty",
-    "accreditation": "NABH, nan",
-    "founded": 2007,
-    "beds": 350,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/main1_1_png",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Asian+Noble+Hospital+Pvt.+Ltd.",
-    "path": "/hospitals/asian-noble-hospital-pvt-ltd-ahmednagar-ahmednagar"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+SAGE+Hospital,+Bhopal",
+    "path": "/hospitals/apollo-sage-hospital"
   },
   {
     "id": "cims-hospital-ahmedabad",
@@ -1184,7 +1002,7 @@ export const hospitals = [
     "beds": 350,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/cims_hospital_ahmedabad_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=CIMS+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=CIMS+Hospital,+Ahmedabad",
     "path": "/hospitals/cims-hospital-ahmedabad"
   },
   {
@@ -1197,8 +1015,8 @@ export const hospitals = [
     "beds": 350,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/fortis_manesar_building-min.png",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital",
-    "path": "/hospitals/fortis-hospital-manesar-gurgaon"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Hospital,+Manesar,+Gurgaon",
+    "path": "/hospitals/rockland-hospital-manesar-gurgaon"
   },
   {
     "id": "jaslok-hospital-mumbai",
@@ -1210,7 +1028,7 @@ export const hospitals = [
     "beds": 350,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/jaslok-facade-mumbai-hospital.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Jaslok+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Jaslok+Hospital,+Mumbai",
     "path": "/hospitals/jaslok-hospital-mumbai"
   },
   {
@@ -1236,8 +1054,8 @@ export const hospitals = [
     "beds": 350,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/kims_sunshine_hospitals_begumpet_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=KIMS+Sunshine+Hospitals",
-    "path": "/hospitals/kims-sunshine-hospitals-begumpet-hyderabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=KIMS+Sunshine+Hospitals,+Begumpet+,+Hyderabad",
+    "path": "/hospitals/sunshine-hospital-hyderabad"
   },
   {
     "id": "manipal-hospital-formerly-amri-hospital-kolkata-dhakuria-kolkata",
@@ -1248,9 +1066,9 @@ export const hospitals = [
     "founded": 1996,
     "beds": 350,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/amri_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital+Formerly+AMRI+Hospital",
-    "path": "/hospitals/manipal-hospital-formerly-amri-hospital-kolkata-dhakuria-kolkata"
+    "image": "https://i.postimg.cc/SNzz7wGk/unnamed-42.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital+Formerly+AMRI+Hospital,+Kolkata+(Dhakuria),+Kolkata",
+    "path": "/hospitals/amri-hospital-kolkata"
   },
   {
     "id": "max-super-speciality-hospital-vaishali-ghaziabad",
@@ -1262,8 +1080,8 @@ export const hospitals = [
     "beds": 350,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/vaishali_facade-1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Speciality+Hospital",
-    "path": "/hospitals/max-super-speciality-hospital-vaishali-ghaziabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Speciality+Hospital,+Vaishali+,+Ghaziabad",
+    "path": "/hospitals/max-super-speciality-hospital-vaishali"
   },
   {
     "id": "medicover-hospitals-nashik",
@@ -1274,8 +1092,8 @@ export const hospitals = [
     "founded": 2015,
     "beds": 350,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/list_view_3jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Medicover+Hospitals",
+    "image": "https://i.postimg.cc/4dmzCnph/unnamed-44.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Medicover+Hospitals,+Nashik",
     "path": "/hospitals/medicover-hospitals-nashik"
   },
   {
@@ -1288,7 +1106,7 @@ export const hospitals = [
     "beds": 350,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/nanavati_super_specialty_hospital.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Nanavati+Super+Specialty+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Nanavati+Super+Specialty+Hospital,+Mumbai",
     "path": "/hospitals/nanavati-super-specialty-hospital-mumbai"
   },
   {
@@ -1300,8 +1118,8 @@ export const hospitals = [
     "founded": 2009,
     "beds": 350,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/image_list-min_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Sunshine+Hospitals",
+    "image": "https://i.postimg.cc/X78X84CM/2024-07-08.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sunshine+Hospitals,+Hyderabad",
     "path": "/hospitals/sunshine-hospitals-hyderabad"
   },
   {
@@ -1314,8 +1132,8 @@ export const hospitals = [
     "beds": 350,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/new_age_wockhardt_hospital_mumbai_list_view_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Wockhardt+Hospital",
-    "path": "/hospitals/wockhardt-hospital-mumbai"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Wockhardt+Hospital,+Mumbai",
+    "path": "/hospitals/new-age-wockhardt-hospital"
   },
   {
     "id": "wockhardt-super-speciality-hospital-mira-road-mumbai",
@@ -1327,8 +1145,8 @@ export const hospitals = [
     "beds": 350,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/wockhardt-front-min.png",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Wockhardt+Super+Speciality+Hospital",
-    "path": "/hospitals/wockhardt-super-speciality-hospital-mira-road-mumbai"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Wockhardt+Super+Speciality+Hospital,+Mira+Road,+Mumbai",
+    "path": "/hospitals/wockhardt-super-speciality-hospital-mira-road"
   },
   {
     "id": "sims-hospital-vadapalani-chennai",
@@ -1340,21 +1158,8 @@ export const hospitals = [
     "beds": 400,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/sims-hospital-vadapalani-chennai_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=SIMS+Hospital",
-    "path": "/hospitals/sims-hospital-vadapalani-chennai"
-  },
-  {
-    "id": "sir-hn-reliance-foundation-hospital-research-centre-mumbai",
-    "name": "Sir HN Reliance Foundation Hospital & Research Centre, Mumbai",
-    "location": "400004",
-    "category": "Multi Specialty",
-    "accreditation": "NABH, nan",
-    "founded": 1925,
-    "beds": 400,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/main_image-min_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Sir+HN+Reliance+Foundation+Hospital+&+Research+Centre",
-    "path": "/hospitals/sir-hn-reliance-foundation-hospital-research-centre-mumbai"
+    "logo": "https://placehold.co/200x100/white/gray/?text=SIMS+Hospital,+Vadapalani,+Chennai",
+    "path": "/hospitals/sims-hospital-chennai"
   },
   {
     "id": "apollo-medics-super-speciality-hospital-lucknow",
@@ -1365,9 +1170,9 @@ export const hospitals = [
     "founded": 2019,
     "beds": 330,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/apollo_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Medics+Super+Speciality+Hospital",
-    "path": "/hospitals/apollo-medics-super-speciality-hospital-lucknow"
+    "image": "https://i.postimg.cc/tJ8kvWfT/2025-03-04.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Medics+Super+Speciality+Hospital,+Lucknow",
+    "path": "/hospitals/apollo-medics-super-speciality-hospitals-lucknow"
   },
   {
     "id": "noble-hospital-pune",
@@ -1379,7 +1184,7 @@ export const hospitals = [
     "beds": 330,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/image1_1_1-min.jpeg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Noble+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Noble+Hospital,+Pune",
     "path": "/hospitals/noble-hospital-pune"
   },
   {
@@ -1392,7 +1197,7 @@ export const hospitals = [
     "beds": 325,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/kailash_hospital_and_heart_institute.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Kailash+Hospital+and+Heart+Institute",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Kailash+Hospital+and+Heart+Institute,+Noida",
     "path": "/hospitals/kailash-hospital-and-heart-institute-noida"
   },
   {
@@ -1405,7 +1210,7 @@ export const hospitals = [
     "beds": 325,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/venkateshwar_hospitals.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Venkateshwar+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Venkateshwar+Hospital,+New+Delhi",
     "path": "/hospitals/venkateshwar-hospital-new-delhi"
   },
   {
@@ -1418,7 +1223,7 @@ export const hospitals = [
     "beds": 400,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/narayana_multispeciality_hospital_ahmedabad_1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Narayana+Superspeciality+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Narayana+Superspeciality+Hospital,+Jaipur",
     "path": "/hospitals/narayana-superspeciality-hospital-jaipur"
   },
   {
@@ -1431,7 +1236,7 @@ export const hospitals = [
     "beds": 310,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/star_hospitals_hyderabad-home.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Star+Hospitals",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Star+Hospitals,+Hyderabad",
     "path": "/hospitals/star-hospitals-hyderabad"
   },
   {
@@ -1444,7 +1249,7 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/rajiv_gandhi_cancer_institute_and_research_centre_new_delhi-home-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Rajiv+Gandhi+Cancer+Institute+and+Research+Centre",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Rajiv+Gandhi+Cancer+Institute+and+Research+Centre,+New+Delhi",
     "path": "/hospitals/rajiv-gandhi-cancer-institute-and-research-centre-new-delhi"
   },
   {
@@ -1457,8 +1262,8 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_adlux_hospital-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Adlux+Hospital",
-    "path": "/hospitals/apollo-adlux-hospital-angamaly"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Adlux+Hospital,+Angamaly",
+    "path": "/hospitals/apollo-adlux-hospital"
   },
   {
     "id": "apollo-hospitals-ahmedabad-gandhinagar",
@@ -1470,8 +1275,8 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_hospitals_ahmedabad_building.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals",
-    "path": "/hospitals/apollo-hospitals-ahmedabad-gandhinagar"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Hospitals,+Ahmedabad+,+Gandhinagar",
+    "path": "/hospitals/apollo-hospitals-ahmedabad"
   },
   {
     "id": "bhagwan-mahaveer-cancer-hospital-research-centre-jaipur",
@@ -1483,20 +1288,20 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/main_building_bmchrc_jaipur.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Bhagwan+Mahaveer+Cancer+Hospital+&+Research+Centre",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Bhagwan+Mahaveer+Cancer+Hospital+&+Research+Centre,+Jaipur",
     "path": "/hospitals/bhagwan-mahaveer-cancer-hospital-research-centre-jaipur"
   },
   {
     "id": "bhagwan-mahavir-medica-superspecialty-hospital-ranchi",
     "name": "Bhagwan Mahavir Medica Superspecialty Hospital, Ranchi",
-    "location": "Ranchi",
+    "location": "",
     "category": "Super Specialty",
     "accreditation": "NABH, nan",
     "founded": 2014,
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/medica_ranchi_list_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Bhagwan+Mahavir+Medica+Superspecialty+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Bhagwan+Mahavir+Medica+Superspecialty+Hospital,+Ranchi",
     "path": "/hospitals/bhagwan-mahavir-medica-superspecialty-hospital-ranchi"
   },
   {
@@ -1509,7 +1314,7 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/care_list.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Care+Super+Specialty+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Care+Super+Specialty+Hospital,+Bhubaneswar",
     "path": "/hospitals/care-super-specialty-hospital-bhubaneswar"
   },
   {
@@ -1522,7 +1327,7 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/chandan_hospital_lucknow_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Chandan+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Chandan+Hospital,+Lucknow",
     "path": "/hospitals/chandan-hospital-lucknow"
   },
   {
@@ -1535,7 +1340,7 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/charak_hospital_research_centre_lucknow_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Charak+Hospital+&+Research+Centre",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Charak+Hospital+&+Research+Centre,+Lucknow",
     "path": "/hospitals/charak-hospital-research-centre-lucknow"
   },
   {
@@ -1548,26 +1353,26 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/list_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Dr.+Kamakshi+Memorial+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Dr.+Kamakshi+Memorial+Hospital,+Chennai",
     "path": "/hospitals/dr-kamakshi-memorial-hospital-chennai"
   },
   {
     "id": "kauvery-hospital-radial-road-chennai",
     "name": "Kauvery Hospital Radial Road Chennai",
-    "location": "600 129",
+    "location": "",
     "category": "Multi Specialty",
     "accreditation": "nan, nan",
     "founded": 1999,
     "beds": 300,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/kauvery_hospital_radial_road_chennai_building-min_jpg",
+    "image": "https://i.postimg.cc/25zKpdH9/unnamed-63.webp",
     "logo": "https://placehold.co/200x100/white/gray/?text=Kauvery+Hospital+Radial+Road+Chennai",
     "path": "/hospitals/kauvery-hospital-radial-road-chennai"
   },
   {
     "id": "kd-hospital-ahmedabad",
     "name": "KD Hospital Ahmedabad",
-    "location": "Ahmedabad",
+    "location": "",
     "category": "Multi Specialty",
     "accreditation": "NABH, nan",
     "founded": 2018,
@@ -1582,7 +1387,7 @@ export const hospitals = [
     "name": "Kingsway Hospital Nagpur",
     "location": "440001",
     "category": "Multi Specialty",
-    "accreditation": "NABL",
+    "accreditation": "NABL,",
     "founded": 2019,
     "beds": 300,
     "rating": generateStarRating(),
@@ -1600,7 +1405,7 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/shalimar_bagh_facade_delhi.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Speciality+hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Super+Speciality+hospital,+Shalimar+Bagh,+New+Delhi",
     "path": "/hospitals/max-super-speciality-hospital-shalimar-bagh-new-delhi"
   },
   {
@@ -1613,7 +1418,7 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/medicover_hospitals_aurangabad_building1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Medicover+Hospitals",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Medicover+Hospitals,+Aurangabad",
     "path": "/hospitals/medicover-hospitals-aurangabad"
   },
   {
@@ -1626,21 +1431,8 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/paras_hospital_gurgaon_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Paras+Hospitals",
-    "path": "/hospitals/paras-hospitals-gurgaon"
-  },
-  {
-    "id": "poona-hospital-and-research-centre-pune",
-    "name": "Poona Hospital and Research Centre, Pune",
-    "location": "Pune",
-    "category": "Multi Specialty",
-    "accreditation": "NABH,  NABL",
-    "founded": 1985,
-    "beds": 300,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/poona_hospital_and_research_centre_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Poona+Hospital+and+Research+Centre",
-    "path": "/hospitals/poona-hospital-and-research-centre-pune"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Paras+Hospitals,+Gurgaon",
+    "path": "/hospitals/paras-hospital-gurgaon"
   },
   {
     "id": "tender-palm-hospital-lucknow",
@@ -1652,21 +1444,8 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/resize-16324090001200656611main1-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Tender+Palm+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Tender+Palm+Hospital,+Lucknow",
     "path": "/hospitals/tender-palm-hospital-lucknow"
-  },
-  {
-    "id": "united-ciigma-hospital-aurangabad",
-    "name": "United CIIGMA Hospital, Aurangabad",
-    "location": "431005",
-    "category": "Multi Specialty",
-    "accreditation": "NABH,  ISO 9001",
-    "founded": 2013,
-    "beds": 300,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/building.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=United+CIIGMA+Hospital",
-    "path": "/hospitals/united-ciigma-hospital-aurangabad"
   },
   {
     "id": "metro-hospital-noida",
@@ -1678,8 +1457,8 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/best-cardiology-hospital-in-delhi.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Metro+Hospital",
-    "path": "/hospitals/metro-hospital-noida"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Metro+Hospital,+Noida",
+    "path": "/hospitals/metro-hospitals-heart-institute-noida-sector-11"
   },
   {
     "id": "max-superspecialty-hospital-mohali-chandigarh",
@@ -1690,9 +1469,9 @@ export const hospitals = [
     "founded": 2000,
     "beds": 300,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/max_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Superspecialty+Hospital",
-    "path": "/hospitals/max-superspecialty-hospital-mohali-chandigarh"
+    "image": "https://i.postimg.cc/4xTZrWzN/unnamed-66.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Max+Superspecialty+Hospital,+Mohali+,+Chandigarh",
+    "path": "/hospitals/max-superspecialty-hospital-mohali"
   },
   {
     "id": "miot-international-chennai",
@@ -1704,7 +1483,7 @@ export const hospitals = [
     "beds": 1000,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/miot-international-chennai_list_view_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=MIOT+International",
+    "logo": "https://placehold.co/200x100/white/gray/?text=MIOT+International,+Chennai",
     "path": "/hospitals/miot-international-chennai"
   },
   {
@@ -1717,8 +1496,8 @@ export const hospitals = [
     "beds": 280,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/b-min_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+hospitals+Life's+On",
-    "path": "/hospitals/manipal-hospitals-life-s-on-whitefield-bangalore"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+hospitals+Life's+On,+Whitefield+,+Bangalore",
+    "path": "/hospitals/manipal-hospitals-lifes-whitefield"
   },
   {
     "id": "ruby-general-hospital-kolkata",
@@ -1730,7 +1509,7 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/ruby_general_hospital_kolkata_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Ruby+General+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Ruby+General+Hospital,+Kolkata",
     "path": "/hospitals/ruby-general-hospital-kolkata"
   },
   {
@@ -1743,8 +1522,8 @@ export const hospitals = [
     "beds": 275,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/sparsh_hospital_yeswanthpur_building-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Sparsh+Hospital",
-    "path": "/hospitals/sparsh-hospital-yeswanthpur-bangalore"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sparsh+Hospital,+Yeswanthpur+,+Bangalore",
+    "path": "/hospitals/sparsh-hospitals-yeswanthpur"
   },
   {
     "id": "shalby-hospital-ahmedabad",
@@ -1756,8 +1535,8 @@ export const hospitals = [
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/shalby-building.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Shalby+Hospital",
-    "path": "/hospitals/shalby-hospital-ahmedabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Shalby+Hospital,+Ahmedabad",
+    "path": "/hospitals/shalby-hospital-ahemdabad"
   },
   {
     "id": "jupiter-lifeline-hospitals-ltd-pune",
@@ -1769,46 +1548,33 @@ export const hospitals = [
     "beds": 1100,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/jupiter_lifeline_hospitals_ltd._pune-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Jupiter+Lifeline+Hospitals+Ltd.",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Jupiter+Lifeline+Hospitals+Ltd.,+Pune",
     "path": "/hospitals/jupiter-lifeline-hospitals-ltd-pune"
   },
   {
     "id": "apollo-specialty-hospital-omr-chennai",
     "name": "Apollo Specialty Hospital, OMR , Chennai",
-    "location": "Chennai",
+    "location": "",
     "category": "Multi Specialty",
     "accreditation": "NABH, nan",
     "founded": 2017,
     "beds": 300,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/apollo_speciality_hospital_o_m_r_list_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Specialty+Hospital",
-    "path": "/hospitals/apollo-specialty-hospital-omr-chennai"
-  },
-  {
-    "id": "kamalnayan-bajaj-hospital-aurangabad",
-    "name": "Kamalnayan Bajaj Hospital, Aurangabad",
-    "location": "Aurangabad",
-    "category": "Multi Specialty",
-    "accreditation": "NABL",
-    "founded": 1989,
-    "beds": 300,
-    "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/kamalnayan_bajaj_hospital_aurangabad_building.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Kamalnayan+Bajaj+Hospital",
-    "path": "/hospitals/kamalnayan-bajaj-hospital-aurangabad"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Apollo+Specialty+Hospital,+OMR+,+Chennai",
+    "path": "/hospitals/apollo-specialty-hospital-omr"
   },
   {
     "id": "saideep-healthcare-research-pvt-ltd-ahmednagar",
     "name": "Saideep Healthcare & Research Pvt. Ltd., Ahmednagar",
-    "location": "Ahmednagar",
+    "location": "",
     "category": "Super Specialty",
     "accreditation": "NABH, nan",
     "founded": 2012,
     "beds": 250,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/saideep_healthcare_research_pvt._ltd._ahmednagar_buildingjpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Saideep+Healthcare+&+Research+Pvt.+Ltd.",
+    "image": "https://i.postimg.cc/D0j61pnQ/unnamed-69.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Saideep+Healthcare+&+Research+Pvt.+Ltd.,+Ahmednagar",
     "path": "/hospitals/saideep-healthcare-research-pvt-ltd-ahmednagar"
   },
   {
@@ -1834,7 +1600,7 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/saifee-hospital.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Saifee+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Saifee+Hospital,+Mumbai",
     "path": "/hospitals/saifee-hospital-mumbai"
   },
   {
@@ -1847,7 +1613,7 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/narayana_multispeciality_hospital_mysore_1-min_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Narayana+Multispeciality+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Narayana+Multispeciality+Hospital,+Mysore",
     "path": "/hospitals/narayana-multispeciality-hospital-mysore"
   },
   {
@@ -1860,7 +1626,7 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/asian_heart_institute_mumbai-home-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Asian+Heart+Institute",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Asian+Heart+Institute,+Mumbai",
     "path": "/hospitals/asian-heart-institute-mumbai"
   },
   {
@@ -1873,13 +1639,13 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/aster_prime_hospita_home-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Aster+Prime+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Aster+Prime+Hospital,+Hyderabad",
     "path": "/hospitals/aster-prime-hospital-hyderabad"
   },
   {
     "id": "aster-rv-hospital-j-p-nagar-bangalore",
     "name": "Aster RV Hospital (J P Nagar) Bangalore",
-    "location": "560093",
+    "location": "560078",
     "category": "Multi Specialty",
     "accreditation": "nan, nan",
     "founded": 1987,
@@ -1887,7 +1653,7 @@ export const hospitals = [
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/aster.jpg",
     "logo": "https://placehold.co/200x100/white/gray/?text=Aster+RV+Hospital+(J+P+Nagar)+Bangalore",
-    "path": "/hospitals/aster-rv-hospital-j-p-nagar-bangalore"
+    "path": "/hospitals/aster-rv-hospital-bangalore"
   },
   {
     "id": "cloudnine-hospital-gurgaon-sector-47-gurgaon",
@@ -1899,8 +1665,8 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/b.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Cloudnine+Hospital",
-    "path": "/hospitals/cloudnine-hospital-gurgaon-sector-47-gurgaon"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Cloudnine+Hospital,+Gurgaon+(Sector-47)+,+Gurgaon",
+    "path": "/hospitals/cloudnine-hospital-gurgaon-sector-47"
   },
   {
     "id": "kauvery-hospital-formely-fortis-hospital-vadapalani-chennai",
@@ -1912,8 +1678,8 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/optimized-hospitalfrontview-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Kauvery+Hospital+Formely+Fortis+Hospital",
-    "path": "/hospitals/kauvery-hospital-formely-fortis-hospital-vadapalani-chennai"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Kauvery+Hospital+Formely+Fortis+Hospital,+Vadapalani+,+Chennai",
+    "path": "/hospitals/fortis-hospital-vadapalani"
   },
   {
     "id": "manipal-hospital-baner-pune",
@@ -1925,20 +1691,20 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/manipal_hospital_building_0.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital",
-    "path": "/hospitals/manipal-hospital-baner-pune"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital,+Baner,+Pune",
+    "path": "/hospitals/manipal-hospital-baner"
   },
   {
     "id": "manipal-hospital-jaipur",
     "name": "Manipal Hospital, Jaipur",
-    "location": "Jaipur",
+    "location": "",
     "category": "Multi Specialty",
     "accreditation": "NABH,  NABL",
     "founded": 2014,
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/manipal_hospital_jaipur_list_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital,+Jaipur",
     "path": "/hospitals/manipal-hospital-jaipur"
   },
   {
@@ -1951,7 +1717,7 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/medicover_hospital_hitec_city_outside-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Medicover+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Medicover+Hospital,+Hitec+City",
     "path": "/hospitals/medicover-hospital-hitec-city"
   },
   {
@@ -1964,7 +1730,7 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/paras_panchkula_list_view_image-min.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Paras+Hospital",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Paras+Hospital,+Panchkula",
     "path": "/hospitals/paras-hospital-panchkula"
   },
   {
@@ -1977,8 +1743,8 @@ export const hospitals = [
     "beds": 250,
     "rating": generateStarRating(),
     "image": "https://www.vaidam.com/sites/default/files/primus-super-speciality-hospital-building.jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Primus+Super+Speciality+Hospital",
-    "path": "/hospitals/primus-super-speciality-hospital-new-delhi"
+    "logo": "https://placehold.co/200x100/white/gray/?text=Primus+Super+Speciality+Hospital,+New+Delhi",
+    "path": "/hospitals/primus-super-specialty-hospital-new-delhi"
   },
   {
     "id": "sparsh-super-speciality-hospital-infantry-road-bangalore",
@@ -1989,9 +1755,9 @@ export const hospitals = [
     "founded": 2011,
     "beds": 250,
     "rating": generateStarRating(),
-    "image": "https://www.vaidam.com/sites/default/files/sparsh_jpg",
-    "logo": "https://placehold.co/200x100/white/gray/?text=Sparsh+Super+Speciality+Hospital",
-    "path": "/hospitals/sparsh-super-speciality-hospital-infantry-road-bangalore"
+    "image": "https://www.vaidam.com/sites/default/files/hospitals/sparsh_2_0.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sparsh+Super+Speciality+Hospital,+Infantry+Road+,+Bangalore",
+    "path": "/hospitals/sparsh-super-speciality-hospitals-infantry-road"
   },
   {
     "id": "sri-balaji-action-medical-institute-new-delhi",
@@ -2006,6 +1772,306 @@ export const hospitals = [
     "logo": "https://placehold.co/200x100/white/gray/?text=Sri+Balaji+Action+Medical+Institute+New+Delhi",
     "path": "/hospitals/sri-balaji-action-medical-institute-new-delhi"
   },
+  {
+    "id": "shalby-hospital-surat",
+    "name": "Shalby Hospital, Surat",
+    "location": "395009",
+    "category": "Multi Specialty",
+    "accreditation": "NABH,  NABL",
+    "founded": 2017,
+    "beds": 250,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/shalby_list_view-min.png",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Shalby+Hospital,+Surat",
+    "path": "/hospitals/shalby-hospital-surat"
+  },
+  {
+    "id": "dr-l-h-hiranandani-hospital-mumbai",
+    "name": "Dr. L H Hiranandani Hospital, Mumbai",
+    "location": "",
+    "category": "Super Specialty",
+    "accreditation": "NABH,  NABL",
+    "founded": 2004,
+    "beds": 240,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/lh_6-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Dr.+L+H+Hiranandani+Hospital,+Mumbai",
+    "path": "/hospitals/dr-l-h-hiranandani-hospital-mumbai"
+  },
+  {
+    "id": "shalby-hospital-jaipur",
+    "name": "Shalby Hospital, Jaipur",
+    "location": "302021",
+    "category": "Multi Specialty",
+    "accreditation": "NABH,  NABL",
+    "founded": 2018,
+    "beds": 240,
+    "rating": generateStarRating(),
+    "image": "https://i.postimg.cc/jdnFYNT8/unnamed-72.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Shalby+Hospital,+Jaipur",
+    "path": "/hospitals/shalby-hospital-jaipur"
+  },
+  {
+    "id": "jaypee-hospital-noida",
+    "name": "Jaypee Hospital, Noida",
+    "location": "201304",
+    "category": "Multi Specialty",
+    "accreditation": "NABH,  NABL",
+    "founded": 2014,
+    "beds": 1200,
+    "rating": generateStarRating(),
+    "image": "https://i.postimg.cc/bv6vc4Hf/jaypee-2.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Jaypee+Hospital,+Noida",
+    "path": "/hospitals/jaypee-hospital-noida"
+  },
+  {
+    "id": "jaypee-hospital-noida",
+    "name": "Jaypee Hospital, Noida",
+    "location": "390011",
+    "category": "Single Specialty",
+    "accreditation": "nan, nan",
+    "founded": 1970,
+    "beds": 10,
+    "rating": generateStarRating(),
+    "image": "https://i.postimg.cc/0QKjxcyW/unnamed-86.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Jaypee+Hospital,+Noida",
+    "path": "/hospitals/centre-sight-eye-hospital-akota-vadodra"
+  },
+  {
+    "id": "ck-birla-hospital-jaipur",
+    "name": "CK Birla Hospital, Jaipur",
+    "location": "",
+    "category": "Multi Specialty",
+    "accreditation": "nan, nan",
+    "founded": 1970,
+    "beds": 230,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/ck_birla_jaipur_list_image-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=CK+Birla+Hospital,+Jaipur",
+    "path": "/hospitals/ck-birla-hospital-jaipur"
+  },
+  {
+    "id": "ck-birla-hospital-punjabi-bagh-new-delhi",
+    "name": "CK Birla Hospital, Punjabi Bagh, New Delhi",
+    "location": "110026",
+    "category": "Multi Specialty",
+    "accreditation": "NABL,",
+    "founded": 1970,
+    "beds": 230,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/ck_birla_hospital_punjabi_bagh_new_delhi_building-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=CK+Birla+Hospital,+Punjabi+Bagh,+New+Delhi",
+    "path": "/hospitals/ck-birla-hospital-punjabi-bagh-new-delhi"
+  },
+  {
+    "id": "manipal-hospital-millers-road-formerly-vikram-hospital-bangalore",
+    "name": "Manipal Hospital Millers Road formerly Vikram Hospital Bangalore",
+    "location": "560052",
+    "category": "Multi Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 2009,
+    "beds": 225,
+    "rating": generateStarRating(),
+    "image": "https://i.postimg.cc/V6xmzwJp/images-2.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital+Millers+Road+formerly+Vikram+Hospital+Bangalore",
+    "path": "/hospitals/vikram-hospitals-bangalore"
+  },
+  {
+    "id": "rainbow-children-s-hospital-and-birthright-by-rainbow-hyderabad",
+    "name": "Rainbow Children's Hospital and BirthRight by Rainbow, Hyderabad",
+    "location": "500034",
+    "category": "Super Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 1999,
+    "beds": 225,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/rainbow_hospital_hyderabad-home.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Rainbow+Children's+Hospital+and+BirthRight+by+Rainbow,+Hyderabad",
+    "path": "/hospitals/rainbow-childrens-hospital-and-birthright-rainbow-hyderabad"
+  },
+  {
+    "id": "narayana-superspeciality-hospital-gurgaon",
+    "name": "Narayana Superspeciality Hospital, Gurgaon",
+    "location": "",
+    "category": "Super Specialty",
+    "accreditation": "JCI,  NABH",
+    "founded": 2019,
+    "beds": 250,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/narayana_superspeciality_hospital_gurgaon.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Narayana+Superspeciality+Hospital,+Gurgaon",
+    "path": "/hospitals/narayana-superspeciality-hospital-gurgaon"
+  },
+  {
+    "id": "care-hospitals-hitec-city-hyderabad",
+    "name": "Care Hospitals, HITEC City , Hyderabad",
+    "location": "500032",
+    "category": "Multi Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 1997,
+    "beds": 220,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/care_hospitals_hitec_city-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Care+Hospitals,+HITEC+City+,+Hyderabad",
+    "path": "/hospitals/care-hospitals-hyderabad"
+  },
+  {
+    "id": "manipal-hospitals-broadway-formerly-amri-hospitals-saltlake-kolkata",
+    "name": "Manipal Hospitals Broadway Formerly AMRI Hospitals, Saltlake , Kolkata",
+    "location": "700098",
+    "category": "Multi Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 2001,
+    "beds": 220,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/amri_hospitals_saltlake1-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospitals+Broadway+Formerly+AMRI+Hospitals,+Saltlake+,+Kolkata",
+    "path": "/hospitals/amri-hospitals-saltlake"
+  },
+  {
+    "id": "meitra-hospital-kerala",
+    "name": "Meitra Hospital, Kerala",
+    "location": "",
+    "category": "Super Specialty",
+    "accreditation": "JCI,  NABH",
+    "founded": 2012,
+    "beds": 220,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/meitra_hsopital_1-min_0.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Meitra+Hospital,+Kerala",
+    "path": "/hospitals/meitra-hospital-kerala"
+  },
+  {
+    "id": "metro-mas-hospital-jaipur",
+    "name": "Metro Mas Hospital, Jaipur",
+    "location": "302020",
+    "category": "Super Specialty",
+    "accreditation": "NABH,  NABL",
+    "founded": 2012,
+    "beds": 220,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/main_1_1_1-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Metro+Mas+Hospital,+Jaipur",
+    "path": "/hospitals/metro-mas-hospital-jaipur"
+  },
+  {
+    "id": "bm-birla-heart-research-centre-kolkata",
+    "name": "BM Birla Heart Research Centre, Kolkata",
+    "location": "700027",
+    "category": "Super Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 1989,
+    "beds": 210,
+    "rating": generateStarRating(),
+    "image": "https://i.postimg.cc/3r2H2P4r/unnamed-73.webp",
+    "logo": "https://placehold.co/200x100/white/gray/?text=BM+Birla+Heart+Research+Centre,+Kolkata",
+    "path": "/hospitals/bm-birla-heart-research-centre-kolkata"
+  },
+  {
+    "id": "emc-super-specialty-hospital-amritsar",
+    "name": "EMC Super Specialty Hospital, Amritsar",
+    "location": "143001",
+    "category": "Super Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 2003,
+    "beds": 210,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/emc_super_specialty_hospital_amritsar_building-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=EMC+Super+Specialty+Hospital,+Amritsar",
+    "path": "/hospitals/emc-super-specialty-hospital-amritsar"
+  },
+  {
+    "id": "fortis-escorts-hospital-faridabad",
+    "name": "Fortis Escorts Hospital, Faridabad",
+    "location": "121001",
+    "category": "Multi Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 1982,
+    "beds": 210,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/fortis_escorts_hospital_faridabad-home.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Fortis+Escorts+Hospital,+Faridabad",
+    "path": "/hospitals/fortis-escorts-hospital-faridabad"
+  },
+  {
+    "id": "manipal-hospital-sarjapur-road-bangalore",
+    "name": "Manipal Hospital Sarjapur Road , Bangalore",
+    "location": "560102",
+    "category": "Multi Specialty",
+    "accreditation": "NABH,  NABL",
+    "founded": 2019,
+    "beds": 250,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/hospitals/manipal_hospital_sarjapur_road_bengaluru_building-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Manipal+Hospital+Sarjapur+Road+,+Bangalore",
+    "path": "/hospitals/manipal-hospital-sarjapur-road-Bangalore"
+  },
+  {
+    "id": "sahyadri-superspeciality-hospital-nashik",
+    "name": "Sahyadri Superspeciality Hospital Nashik",
+    "location": "422001",
+    "category": "Multi Specialty",
+    "accreditation": "nan, nan",
+    "founded": 2014,
+    "beds": 250,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/sahyadri_superspeciality_hospital_nashik_building-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sahyadri+Superspeciality+Hospital+Nashik",
+    "path": "/hospitals/sahyadri-superspeciality-hospital-nashik"
+  },
+  {
+    "id": "pawana-hospital-pune",
+    "name": "Pawana Hospital Pune",
+    "location": "410506",
+    "category": "Multi Specialty",
+    "accreditation": "NABH,  ISO 9001",
+    "founded": 1997,
+    "beds": 203,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/pawana_hospital_pune_building.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Pawana+Hospital+Pune",
+    "path": "/hospitals/pawana-hospital-pune"
+  },
+  {
+    "id": "sahyadri-speciality-hospital-pune",
+    "name": "Sahyadri Speciality Hospital Pune",
+    "location": "",
+    "category": "Super Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 2004,
+    "beds": 202,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/sahyadri_speciality_hospital_pune_building.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sahyadri+Speciality+Hospital+Pune",
+    "path": "/hospitals/sahyadri-speciality-hospital-pune"
+  },
+  {
+    "id": "sahyadri-super-speciality-hospital-hadapsar-pune",
+    "name": "Sahyadri Super Speciality Hospital, Hadapsar, Pune",
+    "location": "411004",
+    "category": "Multi Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 2013,
+    "beds": 250,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/sahyadri_super_speciality_hospital_hadapsar_building-min.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Sahyadri+Super+Speciality+Hospital,+Hadapsar,+Pune",
+    "path": "/hospitals/sahyadri-super-speciality-hospital-hadapsar-pune"
+  },
+  {
+    "id": "aakash-healthcare-super-speciality-hospital-dwarka-new-delhi",
+    "name": "Aakash Healthcare Super Speciality Hospital, Dwarka, New Delhi",
+    "location": "110075",
+    "category": "Multi Specialty",
+    "accreditation": "NABH, nan",
+    "founded": 2011,
+    "beds": 200,
+    "rating": generateStarRating(),
+    "image": "https://www.vaidam.com/sites/default/files/hospitals/2-min_60.jpg",
+    "logo": "https://placehold.co/200x100/white/gray/?text=Aakash+Healthcare+Super+Speciality+Hospital,+Dwarka,+New+Delhi",
+    "path": "/hospitals/aakash-healthcare-super-speciality-hospital-dwarka-new-delhi"
+  },
+  //2030
   
 ];
 
