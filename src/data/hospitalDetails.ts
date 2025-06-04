@@ -42,6 +42,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Brain Tumour Surgery"
+            },
+            {
+                "name": "Bioresorbable Vascular Scaffold (BVS)"
+            },
+            {
+                "name": "CyberKnife® for precise cancer treatment"
+            },
+            {
+                "name": "Da Vinci® Robotic Surgical System"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/webp/50/files/dr_rakesh_mahajan.webp",
@@ -116,6 +130,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Robotic surgeries"
+            },
+            {
+                "name": "Cancer care"
+            },
+            {
+                "name": "Bone marrow transplants (BMTs)"
+            },
+            {
+                "name": "Liver and heart transplants"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._t._s._kler-min.png",
@@ -190,6 +218,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Neurosciences"
+            },
+            {
+                "name": "Oncology"
+            },
+            {
+                "name": "Cardiology"
+            },
+            {
+                "name": "Orthopaedics"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._arvind_khurana-min.jpg",
@@ -264,6 +306,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Cardiac surgeries"
+            },
+            {
+                "name": "Joint replacement surgeries"
+            },
+            {
+                "name": "Intestinal transplant"
+            },
+            {
+                "name": "Endovascular Surgical Cath Lab"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/dr_rajiv_parakh.webp",
@@ -338,6 +394,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "CT scans"
+            },
+            {
+                "name": "MRIs"
+            },
+            {
+                "name": "Cardiac surgeries"
+            },
+            {
+                "name": "Dialysis"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._ramakrishnan_s-min.png",
@@ -412,6 +482,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Artemis Heart Centre"
+            },
+            {
+                "name": "Nuclear Medicine"
+            },
+            {
+                "name": "M6 CyberKnife Radiosurgery"
+            },
+            {
+                "name": "Emergency & Trauma Services"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._pawan_rawal-min.jpg",
@@ -486,6 +570,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Oncology"
+            },
+            {
+                "name": "Neurosurgery"
+            },
+            {
+                "name": "Orthopedics"
+            },
+            {
+                "name": "Head & Neck Surgery"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr_mayil_vahanan_natarajan.jpg",
@@ -560,6 +658,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Coronary Angiography"
+            },
+            {
+                "name": "PTCA"
+            },
+            {
+                "name": "CABG"
+            },
+            {
+                "name": "Congenital surgeries"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._krishna_s_iyer-min_0.jpg",
@@ -634,6 +746,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Neurosurgery"
+            },
+            {
+                "name": "Gastrointestinal Surgery"
+            },
+            {
+                "name": "Oncology"
+            },
+            {
+                "name": "Cardiac Sciences"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._vivek_jawali.jpg",
@@ -708,6 +834,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Coronary artery bypass graft"
+            },
+            {
+                "name": "Heart transplant"
+            },
+            {
+                "name": "Complex heart surgeries"
+            },
+            {
+                "name": "Pediatric cardiac care"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._devi_prasad_shetty.jpg",
@@ -782,6 +922,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Thallium Laser Surgery"
+            },
+            {
+                "name": "Holmium Laser Surgery"
+            },
+            {
+                "name": "Digital X-Ray Imaging"
+            },
+            {
+                "name": "Y-shaped Stent Placement"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/dr-dinesh-min.webp",
@@ -856,6 +1010,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Oncology"
+            },
+            {
+                "name": "Cardiology & Cardiac Surgery"
+            },
+            {
+                "name": "Neurology & Neurosurgery"
+            },
+            {
+                "name": "Orthopedics"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr-vivek-raj-max.jpg",
@@ -930,6 +1098,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Bone Marrow Transplant"
+            },
+            {
+                "name": "Cardiovascular & Thoracic Surgery"
+            },
+            {
+                "name": "Organ Transplant (Kidney, Liver, Heart)"
+            },
+            {
+                "name": "Robotic Surgery"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/_dr_sanjay_tulsiram_helale_-min.jpg",
@@ -1004,6 +1186,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Cardiac Sciences"
+            },
+            {
+                "name": "Nephrology"
+            },
+            {
+                "name": "Minimal Access, Laparoscopic Surgery"
+            },
+            {
+                "name": "Neurosciences"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview45-min.png",
@@ -1079,6 +1275,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Organ Transplants"
+            },
+            {
+                "name": "Neurology"
+            },
+            {
+                "name": "Gynaecology"
+            },
+            {
+                "name": "Ophthalmology"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/webp/50/files/dr._sanjay_maitra_-_nephrologist.webp",
@@ -1153,6 +1363,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Brachytherapy"
+            },
+            {
+                "name": "HIPEC surgery"
+            },
+            {
+                "name": "Endoscopic ultrasound"
+            },
+            {
+                "name": "Endobronchial ultrasound"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._manoj_miglani_-_orthopedics_and_joint_replacement_surgeon.jpg",
@@ -1227,6 +1451,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Cardiology"
+            },
+            {
+                "name": "Cardiothoracic surgery"
+            },
+            {
+                "name": "Neurology"
+            },
+            {
+                "name": "Neurosurgery"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._satish_rao-removebg-preview-min.png",
@@ -1301,6 +1539,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Cardiology and Cardiac Surgery"
+            },
+            {
+                "name": "Urology"
+            },
+            {
+                "name": "Nephrology"
+            },
+            {
+                "name": "Neurosciences"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr_k_m_mandana_-min.jpg",
@@ -1375,6 +1627,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Cardiac catheterization"
+            },
+            {
+                "name": "Laparoscopic surgery"
+            },
+            {
+                "name": "Chemotherapy"
+            },
+            {
+                "name": "Dialysis"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://i.postimg.cc/9FjrcJJg/karthikkailash-final-469153850.jpg",
@@ -1449,6 +1715,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Multi-organ transplants"
+            },
+            {
+                "name": "Heart transplants"
+            },
+            {
+                "name": "Bone Marrow Transplant"
+            },
+            {
+                "name": "Robotic surgeries"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr_rajiv_karnik.jpg",
@@ -1523,6 +1803,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Transcatheter Aortic Valve Implantation (TAVI)"
+            },
+            {
+                "name": "Left Ventricular Assist Device (LVAD)"
+            },
+            {
+                "name": "Right Ventricular Assist Device (RVAD)"
+            },
+            {
+                "name": "Minimally Invasive Direct Coronary Artery Bypass Surgery (MIDCAB)"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview49-min.png",
@@ -1597,6 +1891,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Kidney transplant"
+            },
+            {
+                "name": "Liver transplant"
+            },
+            {
+                "name": "Knee surgery"
+            },
+            {
+                "name": "Cancer diagnosis and treatment"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr_vivek_vij.jpg",
@@ -1671,6 +1979,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Organ transplantation"
+            },
+            {
+                "name": "Kidney transplant"
+            },
+            {
+                "name": "Heart transplant"
+            },
+            {
+                "name": "Intestinal and GI transplant"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._m._g_usha.jpg",
@@ -1745,6 +2067,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Cardiology"
+            },
+            {
+                "name": "Orthopedics"
+            },
+            {
+                "name": "Oncology"
+            },
+            {
+                "name": "Liver Transplant & Biliary Sciences"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://i.postimg.cc/0NL9cy4X/Screenshot-2025-05-28-201350.png",
@@ -1819,6 +2155,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Cardiac Bypass Surgery"
+            },
+            {
+                "name": "Interventional Cardiology"
+            },
+            {
+                "name": "Non-Invasive Cardiology"
+            },
+            {
+                "name": "Paediatric Cardiac Surgery"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._priyanka_kharbanda-min.jpg",
@@ -1893,6 +2243,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Liver transplant"
+            },
+            {
+                "name": "CRRT Dialysis"
+            },
+            {
+                "name": "Bone marrow unit"
+            },
+            {
+                "name": "Thrombolytic therapy"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr.navin-min.png",
@@ -1967,6 +2331,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Organ Transplants"
+            },
+            {
+                "name": "Robotic Surgeries"
+            },
+            {
+                "name": "Lung Transplantation"
+            },
+            {
+                "name": "Minimally Invasive Lung Transplant"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr_s_balakumar-min.jpg",
@@ -2041,6 +2419,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Cardiology"
+            },
+            {
+                "name": "Gastroenterology & Hepatology"
+            },
+            {
+                "name": "Neuro Sciences"
+            },
+            {
+                "name": "Organ Transplantation"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._nagendra_parvataneni.jpg",
@@ -2115,6 +2507,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Kidney Transplant"
+            },
+            {
+                "name": "Total Knee & Hip Replacement with Robotics & Computer Navigation"
+            },
+            {
+                "name": "Adult and Paediatric Cardiac Surgery including Congenital Heart Disease"
+            },
+            {
+                "name": "Complex Neuro Intervention Procedures with minimal invasive through computer Navigation"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._a_k_sharma-min.jpg",
@@ -2189,6 +2595,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Orthopedic surgery"
+            },
+            {
+                "name": "Cardiac catheterization"
+            },
+            {
+                "name": "Neurosurgery"
+            },
+            {
+                "name": "Pediatric surgery"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._atul_gattani-min.jpg",
@@ -2261,6 +2681,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Deliveries"
+            },
+            {
+                "name": "Preterm baby treatment"
+            },
+            {
+                "name": "IVF treatment"
+            },
+            {
+                "name": "Surgeries"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._nageswaro-min.jpg",
@@ -2335,6 +2769,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Kidney Transplant"
+            },
+            {
+                "name": "Coronary Artery Bypass Surgery"
+            },
+            {
+                "name": "Cardiac Care"
+            },
+            {
+                "name": "Operation Theatres"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr._manjunath_mk-min.jpg",
@@ -2408,6 +2856,20 @@ export const hospitalDetails =
                 "Airport Transfer"
             ]
         },
+        "procedures": [
+            {
+                "name": "Coronary artery bypass grafting (CABG)"
+            },
+            {
+                "name": "Bone marrow transplant"
+            },
+            {
+                "name": "Robotic radical prostatectomy"
+            },
+            {
+                "name": "Liver biopsy"
+            }
+        ],
         "topDoctors": [
             {
                 "image": "https://www.vaidam.com/sites/default/files/dr_neelam.jpg",
@@ -2443,6 +2905,1148 @@ export const hospitalDetails =
             "https://www.vaidam.com/sites/default/files/hospitals/medanta_lucknow_4-min.jpg"
         ]
     },
-    //2055
-
-}; 
+    "sharda-hospital-greater-noida": {
+        "id": "sharda-hospital-greater-noida",
+        "name": "Sharda Hospital, Greater Noida",
+        "location": "Plot # 32-34",
+        "address": "Plot # 32-34, Knowledge Park-III, Gautam Budh Nagar, Knowledge Park III Noida, 201306",
+        "accreditation": [
+            "NABH",
+            "NABL"
+        ],
+        "established": 2005,
+        "description": "",
+        "image": "https://i.postimg.cc/cHRGhMw6/download.jpg",
+        "logo": "https://i.postimg.cc/cHRGhMw6/download.jpg",
+        "internationalPatients": 1000,
+        "beds": 900,
+        "doctors": 90,
+        "specialties": 52,
+        "specializations": [
+            "Cardiology",
+            "Cardiothoracic Surgery",
+            "Neurosciences",
+            "Joint Replacement",
+            "Spine Surgery",
+            "Orthopedics",
+            "Urology",
+            "Nephrology"
+        ],
+        "facilities": {
+            "medical": [
+                "Panchakarma Centre",
+                "Telemedicine Technologies",
+                "School of Medical Sciences"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Cardiology"
+            },
+            {
+                "name": "Cardiothoracic Surgery"
+            },
+            {
+                "name": "Neurosciences"
+            },
+            {
+                "name": "Joint Replacement"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_virender_kumar_gautam-min.jpg",
+                "name": "Dr. Virender Kumar Gautam",
+                "speciality": "Orthopaedic and Joint Replacement Surgeon",
+                "experience": "42 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_sashi_bhushan_paed_sharda_hospital_grnoida.jpg",
+                "name": "Dr. Sashi Bhushan",
+                "speciality": "Neonatologist",
+                "experience": "32 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_neerja_goel_obs_gyn_sharda_hospital_grnoida.jpg",
+                "name": "Dr.neerja Goel",
+                "speciality": "Gynaecologist and Obstetrician",
+                "experience": "41 years"
+            },
+            {
+                "image": "https://i.postimg.cc/x867psCj/Dr-Ashutosh-Niranjan.jpg",
+                "name": "Dr. Ashutosh Niranjan",
+                "speciality": "Surgical Gastroenterologist",
+                "experience": "34 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://i.postimg.cc/cHRGhMw6/download.jpg",
+            "https://i.postimg.cc/G3j1sKb5/unnamed-14.webp",
+            "https://i.postimg.cc/CLLpC81L/Red-Zone-Emergency.webp",
+            "https://i.postimg.cc/FHYt8Q3M/unnamed-15.webp"
+        ]
+    },
+    "deenanath-mangeshkar-hospital-and-research-center-pune": {
+        "id": "deenanath-mangeshkar-hospital-and-research-center-pune",
+        "name": "Deenanath Mangeshkar Hospital and Research Center, Pune",
+        "location": "Near Mhatre Bridge",
+        "address": "Near Mhatre Bridge, Erandawne Pune, 411004",
+        "accreditation": [
+            "",
+            ""
+        ],
+        "established": 2001,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/deenanath_mangeshkar_hospital_and_research_center_pune-min.jpg",
+        "logo": "https://www.vaidam.com/sites/default/files/deenanath_mangeshkar_hospital_and_research_center_pune-home.jpg",
+        "internationalPatients": 1000,
+        "beds": 800,
+        "doctors": 80,
+        "specialties": 52,
+        "specializations": [
+            "Voice Disorders",
+            "Joint Replacement",
+            "Gastroenterology",
+            "Cardiology",
+            "Urology",
+            "Cardiothoracic Surgery",
+            "Neurology",
+            "Nephrology"
+        ],
+        "facilities": {
+            "medical": [
+                "Human milk bank",
+                "Voice disorders care",
+                "EMS with ambulances"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Voice disorders treatment"
+            },
+            {
+                "name": "Joint replacement surgery"
+            },
+            {
+                "name": "Cardiac procedures"
+            },
+            {
+                "name": "Kidney transplant"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dranil_bhatia-min.jpg",
+                "name": "Dr. Anil Bhatia",
+                "speciality": "Orthopaedic and Joint Replacement Surgeon",
+                "experience": "32 years"
+            },
+            {
+                "image": "",
+                "name": "",
+                "speciality": "",
+                "experience": ""
+            },
+            {
+                "image": "",
+                "name": "",
+                "speciality": "",
+                "experience": ""
+            },
+            {
+                "image": "",
+                "name": "",
+                "speciality": "",
+                "experience": ""
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/deenanath_mangeshkar_hospital_and_research_center_pune-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/deenanath_mangeshkar_hospital_and_research_center-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/waiting_area-min_0.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/cafeteria-min.jpg"
+        ]
+    },
+    "mazumdar-shaw-medical-centre-bangalore": {
+        "id": "mazumdar-shaw-medical-centre-bangalore",
+        "name": "NH Mazumdar Shaw Medical Centre, Bangalore",
+        "location": "Narayana Health City Bangalore",
+        "address": "Narayana Health City Bangalore, 560099",
+        "accreditation": [
+            "NABH",
+            ""
+        ],
+        "established": 2000,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/mazumdar_shaw_medical_centre_bangalore_1-min.jpg",
+        "logo": "https://www.vaidam.com/sites/default/files/mazumdar_shaw_medical_centre_bangalore_1-min.jpg",
+        "internationalPatients": 1000,
+        "beds": 750,
+        "doctors": 75,
+        "specialties": 52,
+        "specializations": [
+            "Cardiology",
+            "Cardiac Surgery",
+            "Oncology",
+            "Neurology",
+            "Neurosurgery",
+            "Gastroenterology",
+            "Hepatology",
+            "Nephrology"
+        ],
+        "facilities": {
+            "medical": [
+                "Cancer care center",
+                "Bone marrow transplant unit",
+                "Oncology wing"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Bone Marrow Transplant"
+            },
+            {
+                "name": "Cancer Therapy"
+            },
+            {
+                "name": "Cardiac Surgery"
+            },
+            {
+                "name": "Neurosurgery"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._prashanth_b.n-min.jpg",
+                "name": "Dr. Prashanth B.N",
+                "speciality": "Orthopaedic and Joint Replacement Surgeon",
+                "experience": "24 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._thimappa_hegde.jpg",
+                "name": "Dr. Thimappa Hegde",
+                "speciality": "Neurosurgeon",
+                "experience": "35 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._sunil_bhat.jpg",
+                "name": "Dr. Sunil Bhat",
+                "speciality": "Pediatric Hematologist",
+                "experience": "22 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._vikas_ellur.jpg",
+                "name": "Dr. Vikas Ellur",
+                "speciality": "Paediatric Orthopedecian",
+                "experience": "17 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/mazumdar_shaw_medical_centre_bangalore_1-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/mazumdar_shaw_medical_centre_bangalore_2-min.jpg",
+            "https://www.vaidam.com/sites/default/files/mazumdar_shaw_medical_centre_bangalore_3-min.jpg",
+            "https://www.vaidam.com/sites/default/files/mazumdar_shaw_medical_centre_bangalore_4-min.jpg"
+        ]
+    },
+    "apolllo-gleneagles-hospital-kolkata": {
+        "id": "apolllo-gleneagles-hospital-kolkata",
+        "name": "Apollo Gleneagles Hospital, Kolkata",
+        "location": "58",
+        "address": "58, Canal Circular Road, Kadapara Kolkata, 700054",
+        "accreditation": [
+            "JCI",
+            "NABL"
+        ],
+        "established": 2003,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/apollo-gleneagles-hospitals-728_0.jpg",
+        "logo": "https://i.postimg.cc/k49pJrRX/display-Doctor-Image-kolkata.jpg",
+        "internationalPatients": 1000,
+        "beds": 750,
+        "doctors": 75,
+        "specialties": 52,
+        "specializations": [
+            "Emergency Care",
+            "Cardiology",
+            "Oncology",
+            "Neurology",
+            "Gastroenterology",
+            "Robotic Surgery",
+            "Neurosurgery",
+            "Orthopaedics"
+        ],
+        "facilities": {
+            "medical": [
+                "Cellvizio System for imaging",
+                "Cadaver transplant services",
+                "CARTO Electrophysiology Mapping workshop"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Reverse Shoulder Prosthesis Replacement"
+            },
+            {
+                "name": "Cellvizio System for real-time, in vivo cellular imaging"
+            },
+            {
+                "name": "Cadaver transplant"
+            },
+            {
+                "name": "CARTO or Electrophysiology Mapping Technique workshop"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._mahesh_goenka-min.jpg",
+                "name": "Dr. Mahesh Goenka",
+                "speciality": "Medical Gastroenterologist",
+                "experience": "38 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_v_v_lakshiminarayanan-min.png",
+                "name": "Dr V V Lakshiminarayanan",
+                "speciality": "Nephrologist",
+                "experience": "45 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_s_n_singh-min.jpg",
+                "name": "Dr S N Singh",
+                "speciality": "Neurosurgeon",
+                "experience": "27 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_nipanjan_ghosh-min.jpg",
+                "name": "Dr.nipanjan Ghosh",
+                "speciality": "General Surgeon",
+                "experience": "18 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/apollo-gleneagles-hospitals-728_0.jpg",
+            "https://i.postimg.cc/k49pJrRX/display-Doctor-Image-kolkata.jpg",
+            "https://www.vaidam.com/sites/default/files/room_0.jpg",
+            "https://i.postimg.cc/mDw6hd73/apollo-kolkata.jpg"
+        ]
+    },
+    "continental-hospitals-hyderabad": {
+        "id": "continental-hospitals-hyderabad",
+        "name": "Continental Hospitals, Hyderabad",
+        "location": "Continental Hospitals Ltd. Plot No. 3 Road",
+        "address": "Continental Hospitals Ltd. Plot No. 3 Road, No. 2, Hyderabad, 500032",
+        "accreditation": [
+            "JCI",
+            "NABH"
+        ],
+        "established": 2013,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/continental_hospital_-_building.jpg",
+        "logo": "https://www.vaidam.com/sites/default/files/continental_hospital_-_building.jpg",
+        "internationalPatients": 1000,
+        "beds": 750,
+        "doctors": 75,
+        "specialties": 52,
+        "specializations": [
+            "Oncology (Cancer)- Radiation",
+            "Cardiology/Cardiac Surgery",
+            "Neurology/Neurosurgery",
+            "Spine Surgery",
+            "Joint Replacement Surgeries (Shoulder/Knee/Hip)",
+            "Organ Transplant (Liver, Kidney and Heart)",
+            "Gastroenterology, Liver Diseases and Bariatrics",
+            "Woman and Child Care"
+        ],
+        "facilities": {
+            "medical": [
+                "StentViz Cardiology Technology",
+                "Dual Energy CT",
+                "TrueBeam STX Radiation"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Oncology (Cancer) - Radiation"
+            },
+            {
+                "name": "Cardiology/Cardiac Surgery"
+            },
+            {
+                "name": "Neurology/Neurosurgery"
+            },
+            {
+                "name": "Organ Transplant (Liver, Kidney and Heart)"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._m._k._singh-min.jpg",
+                "name": "Dr. M. K. Singh",
+                "speciality": "Neurosurgeon",
+                "experience": "26 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._abhisekh_mohanty-min.jpg",
+                "name": "Dr. Abhisekh Mohanty",
+                "speciality": "Interventional Cardiologist",
+                "experience": "23 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr-deepthi-nandan.jpg",
+                "name": "Dr. Deepthi Nandan Reddy A",
+                "speciality": "Orthopaedic and Joint Replacement Surgeon",
+                "experience": "32 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr.-vishwambar-nath.jpg",
+                "name": "Dr. Vishwambar Nath",
+                "speciality": "Urologist",
+                "experience": "32 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/continental_hospital_-_building.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/continentalhospital.jpg",
+            "https://www.vaidam.com/sites/default/files/continental-hospitals.jpg",
+            "https://www.vaidam.com/sites/default/files/mainlobby_-continental_hospital.jpg"
+        ]
+    },
+    "vijaya-hospital-chennai": {
+        "id": "vijaya-hospital-chennai",
+        "name": "Vijaya Hospital, Chennai",
+        "location": "No:434",
+        "address": "No:434, Arcot Rd, Vadapalani, Chennai, 600026",
+        "accreditation": [
+            "NABH",
+            "NABL"
+        ],
+        "established": 1972,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/vijaya_hospital_chennai.jpg",
+        "logo": "https://www.vaidam.com/sites/default/files/vijaya_hospital_chenna-home.jpg",
+        "internationalPatients": 1000,
+        "beds": 750,
+        "doctors": 75,
+        "specialties": 52,
+        "specializations": [
+            "Cardiology",
+            "Neurology",
+            "Oncology",
+            "Orthopedics",
+            "Gastroenterology",
+            "Pediatrics",
+            "Dermatology",
+            "Ophthalmology"
+        ],
+        "facilities": {
+            "medical": [
+                "International Patient Services",
+                "Advanced Medical Technologies",
+                "Comprehensive Treatment Services"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Beating heart surgeries"
+            },
+            {
+                "name": "Angiographic procedures"
+            },
+            {
+                "name": "Intensive care units"
+            },
+            {
+                "name": "Operation theatres"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_reddy.jpg",
+                "name": "Dr. C. Rajasekhara Reddy",
+                "speciality": "Orthopaedic and Joint Replacement Surgeon",
+                "experience": "42 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._n.s_reddy-min.jpg",
+                "name": "Dr.n.S Reddy",
+                "speciality": "ENT Surgeon",
+                "experience": "23 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/image-removebg-preview52-min.png",
+                "name": "Dr. C. Chinnaswami",
+                "speciality": "Urologist and Renal Transplant Specialist",
+                "experience": "61 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_sathish_m._rao-min.jpg",
+                "name": "Dr Sathish M. Rao",
+                "speciality": "Nephrologist",
+                "experience": "35 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/vijaya_hospital_chennai.jpg",
+            "https://i.postimg.cc/4y2LQmLm/unnamed-16.webp",
+            "https://www.vaidam.com/sites/default/files/hospitals/vijaya_hospital.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/children_area.jpg"
+        ]
+    },
+    "aster-mims-calicut": {
+        "id": "aster-mims-calicut",
+        "name": "Aster MIMS, Calicut",
+        "location": "Mini By-pass Road",
+        "address": "Mini By-pass Road, Govindapuram P.O. Calicut, 673016",
+        "accreditation": [
+            "NABH",
+            "NABL"
+        ],
+        "established": 2000,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/aster_mims_calicut_building-min.jpg",
+        "logo": "https://www.vaidam.com/sites/default/files/aster_mims_calicut_building-min.jpg",
+        "internationalPatients": 1000,
+        "beds": 650,
+        "doctors": 65,
+        "specialties": 52,
+        "specializations": [
+            "Cardiology",
+            "Nephrology",
+            "Oncology",
+            "Robotic Surgery",
+            "Cochlear Implantation",
+            "Critical Care",
+            "Trauma Care",
+            "Neurology"
+        ],
+        "facilities": {
+            "medical": [
+                "Kidney stone microtechnology",
+                "Robotic liver cancer surgery",
+                "Cochlear implantation centre"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Kidney stone treatment with micro-technology"
+            },
+            {
+                "name": "Robotic liver cancer surgery"
+            },
+            {
+                "name": "Robotic surgery with da Vinci Robot"
+            },
+            {
+                "name": "Cochlear implantation"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr.-v-v-ashraf.jpg",
+                "name": "Dr. Ashraf V V",
+                "speciality": "Neurologist",
+                "experience": "21 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_jacob.jpg",
+                "name": "Dr. Jacob Alappat",
+                "speciality": "Neurosurgeon",
+                "experience": "31 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._sajith.jpg",
+                "name": "Dr. Sajith Narayanan",
+                "speciality": "Neurologist",
+                "experience": "28 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._girish.jpg",
+                "name": "Dr. Girish Warrier",
+                "speciality": "Pediatric Cardiologist",
+                "experience": "25 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/aster_mims_calicut_building-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/aster_mims_calicut_building1-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/help-desk-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/corridor-min.jpg"
+        ]
+    },
+    "aster-medcity-kochi": {
+        "id": "aster-medcity-kochi",
+        "name": "Aster Medcity Kochi",
+        "location": "Kuttisahib Road Cheranalloor",
+        "address": "Kuttisahib Road Cheranalloor, South Chittoor Kochi, 682027",
+        "accreditation": [
+            "JCI",
+            "NABH"
+        ],
+        "established": 2014,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/aster_medcity_kochi_building_outside-min.jpg",
+        "logo": "https://www.vaidam.com/sites/default/files/aster_medcity_hospital_entrance.jpg",
+        "internationalPatients": 1000,
+        "beds": 670,
+        "doctors": 67,
+        "specialties": 52,
+        "specializations": [
+            "Cardiology",
+            "Neurosciences",
+            "Oncology",
+            "Orthopedics",
+            "Organ Transplantation",
+            "Physical Medicine & Rehabilitation",
+            "Bone Marrow Transplant",
+            "Liver Transplant"
+        ],
+        "facilities": {
+            "medical": [
+                "Robotic MARS surgeries",
+                "ECMO facilities",
+                "DBS treatment"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Cardiology"
+            },
+            {
+                "name": "Neurosciences"
+            },
+            {
+                "name": "Oncology"
+            },
+            {
+                "name": "Orthopedics"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr_manoj_p_nair.jpg",
+                "name": "Dr Manoj P Nair",
+                "speciality": "Cardiac Surgeon",
+                "experience": "28 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._vineeth_viswam.jpg",
+                "name": "Dr. Vineeth Viswam",
+                "speciality": "ENT",
+                "experience": "years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr.shyam-sundar.jpg",
+                "name": "Dr. Shyam Sundar S",
+                "speciality": "Neurosurgeon",
+                "experience": "18 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._p_s_binu-min.jpg",
+                "name": "Dr. P S Binu",
+                "speciality": "General Surgeon",
+                "experience": "43 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/aster_medcity_kochi_building_outside-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/astermedcity-main_building.jpg",
+            "https://www.vaidam.com/sites/default/files/astermedcity_lake_view.jpg",
+            "https://www.vaidam.com/sites/default/files/gallery-03-new.jpg"
+        ]
+    },
+    "hosmat-hospital-bangalore": {
+        "id": "hosmat-hospital-bangalore",
+        "name": "Hosmat Hospital, Bangalore",
+        "location": "#45 Magrath Road Bangalore",
+        "address": "#45 Magrath Road Bangalore, 560025",
+        "accreditation": [
+            "NABH",
+            "ISO 9001"
+        ],
+        "established": 2002,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/hosmat_hospital_building-min.jpg",
+        "logo": "https://www.vaidam.com/sites/default/files/hosmat_hospital_building-min.jpg",
+        "internationalPatients": 1000,
+        "beds": 650,
+        "doctors": 65,
+        "specialties": 52,
+        "specializations": [
+            "Joint Replacement",
+            "Neurosciences",
+            "Plastic & Reconstructive Surgery",
+            "Gastroenterology",
+            "Physiotherapy",
+            "Urology",
+            "Orthopedics",
+            "Accident-Trauma Care"
+        ],
+        "facilities": {
+            "medical": [
+                "Cancer Treatment Center",
+                "Rehabilitation Services",
+                "Pain Management Clinic"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Joint Replacement"
+            },
+            {
+                "name": "Neurosciences"
+            },
+            {
+                "name": "Plastic & Reconstructive Surgery"
+            },
+            {
+                "name": "Gastroenterology"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._ananya_puttaraju-min.jpg",
+                "name": "Dr. Ananya Puttaraju",
+                "speciality": "Orthopaedic and Joint Replacement Surgeon",
+                "experience": "19 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._thomas-min.jpg",
+                "name": "Dr. Thomas A. Chandy",
+                "speciality": "Orthopaedic and Joint Replacement Surgeon",
+                "experience": "48 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._mn_kumar-min.jpg",
+                "name": "Dr. M N Kumar",
+                "speciality": "Orthopaedic and Joint Replacement Surgeon",
+                "experience": "29 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._ravishankar-min.jpg",
+                "name": "Dr. RaviShankar M R",
+                "speciality": "Orthopaedic and Joint Replacement Surgeon",
+                "experience": "22 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/hosmat_hospital_building-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/hosmat_hospital_2nd-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hosmat_hospital_bangalore_reception-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hosmat_hospital_bangalore_counter-min.jpg"
+        ]
+    },
+    "rabindranath-tagore-international-institute-cardiac-sciences-kolkata": {
+        "id": "rabindranath-tagore-international-institute-cardiac-sciences-kolkata",
+        "name": "NH Rabindranath Tagore International Institute of Cardiac Sciences, Kolkata",
+        "location": "Premises No: 1489",
+        "address": "Premises No: 1489, 124, Eastern Metropolitan Bypass, Mukundapur Market Kolkata, 700099",
+        "accreditation": [
+            "NABH",
+            ""
+        ],
+        "established": 2000,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/rabindranath_tagore_international_institute_of_cardiac_sciences_kolkata_1-min.jpg",
+        "logo": "https://www.vaidam.com/sites/default/files/rabindranath_tagore_international_institute_of_cardiac_sciences_kolkata_1-min.jpg",
+        "internationalPatients": 1000,
+        "beds": 600,
+        "doctors": 60,
+        "specialties": 52,
+        "specializations": [
+            "Cardiac Surgery",
+            "Heart Transplants",
+            "LVAD",
+            "Interventional Cardiology",
+            "Pacemaker and Device Therapy",
+            "Electrophysiology",
+            "Preventive Cardiology",
+            "Neurology"
+        ],
+        "facilities": {
+            "medical": [
+                "Vascular disease clinical centre",
+                "200 kidney transplants annually",
+                "Brain Pacemakers for Parkinson's"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Cardiac Surgery"
+            },
+            {
+                "name": "Heart Transplants"
+            },
+            {
+                "name": "Interventional Cardiology"
+            },
+            {
+                "name": "Kidney Transplants"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._arun_ganguly.jpg",
+                "name": "Dr. Arun Ganguli",
+                "speciality": "Aesthetics and Plastic Surgeon",
+                "experience": "17 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._gautam_mukhopadhyay.jpg",
+                "name": "Dr. Gautam Mukhopadhyay",
+                "speciality": "Surgical Oncologist",
+                "experience": "38 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._partha_karmakar.jpg",
+                "name": "Dr. Partha Karmakar",
+                "speciality": "Nephrologist",
+                "experience": "27 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._abhijit_chatterjee.jpg",
+                "name": "Dr. Abhijit Chatterjee",
+                "speciality": "Interventional Cardiologist",
+                "experience": "40 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/rabindranath_tagore_international_institute_of_cardiac_sciences_kolkata_1-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/rabindranath_tagore_international_institute_of_cardiac_sciences_kolkata_2-min.jpg",
+            "https://www.vaidam.com/sites/default/files/rabindranath_tagore_international_institute_of_cardiac_sciences_kolkata_3-min.jpg",
+            "https://www.vaidam.com/sites/default/files/rabindranath_tagore_international_institute_of_cardiac_sciences_kolkata_4-min.jpg"
+        ]
+    },
+    "billroth-hospital-chennai": {
+        "id": "billroth-hospital-chennai",
+        "name": "Billroth Hospital, Chennai",
+        "location": "Chennai",
+        "address": "Chennai",
+        "accreditation": [
+            "NABH",
+            ""
+        ],
+        "established": 1990,
+        "description": "",
+        "image": "",
+        "logo": "https://www.vaidam.com/sites/default/files/url.jpg",
+        "internationalPatients": 1000,
+        "beds": 600,
+        "doctors": 60,
+        "specialties": 52,
+        "specializations": [
+            "Critical Care",
+            "Radiology",
+            "Imaging Sciences",
+            "Anaesthesiology",
+            "Physicians",
+            "Nurse Practitioners",
+            "Technicians",
+            "Physiotherapists"
+        ],
+        "facilities": {
+            "medical": [
+                "Cancer Treatment Center",
+                "Rehabilitation Services",
+                "Pediatric Specialty Clinic"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Critical Care Unit"
+            },
+            {
+                "name": "Radiology and Imaging Sciences"
+            },
+            {
+                "name": "Laboratory Services"
+            },
+            {
+                "name": "Free Medical Camps"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "",
+                "name": "",
+                "speciality": "",
+                "experience": ""
+            },
+            {
+                "image": "",
+                "name": "",
+                "speciality": "",
+                "experience": ""
+            },
+            {
+                "image": "",
+                "name": "",
+                "speciality": "",
+                "experience": ""
+            },
+            {
+                "image": "",
+                "name": "",
+                "speciality": "",
+                "experience": ""
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "manipal-hospital-bangalore": {
+        "id": "manipal-hospital-bangalore",
+        "name": "Manipal Hospital (Old Airport Road), Bangalore",
+        "location": "Manipal Hospital Bangalore",
+        "address": "Manipal Hospital Bangalore, 560017",
+        "accreditation": [
+            "NABH",
+            "NABL"
+        ],
+        "established": 1991,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/manipal_hospital_old_airport_road_bangalore_building1-min.jpg",
+        "logo": "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/manipal_hospital_old_airport_road_bangalore_building1-min.webp",
+        "internationalPatients": 1000,
+        "beds": 600,
+        "doctors": 60,
+        "specialties": 52,
+        "specializations": [
+            "Oncology",
+            "Cardiology",
+            "ENT",
+            "Gastrointestinal",
+            "Orthopaedics",
+            "Organ transplant",
+            "Dermatology",
+            "Neurology"
+        ],
+        "facilities": {
+            "medical": [
+                "Intracavitary Chemotherapy",
+                "Gamma med brachytherapy system",
+                "Volumetric modulated arc therapy"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Intracavitary Chemotherapy"
+            },
+            {
+                "name": "Gamma med brachytherapy system"
+            },
+            {
+                "name": "Volumetric modulated arc therapy (VMAT)"
+            },
+            {
+                "name": "Intensity-modulated radiotherapy (IMRT)"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._venkatesh_reddy.jpg",
+                "name": "Dr. Venkatesh Reddy",
+                "speciality": "Vascular Surgeon",
+                "experience": "32 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._madva_jayashankar.jpg",
+                "name": "Dr. Madva Jayashankar",
+                "speciality": "General Surgeon",
+                "experience": "40 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._e.v._raman-removebg-preview-min_0.png",
+                "name": "Dr. E.V. Raman",
+                "speciality": "ENT Surgeon",
+                "experience": "42 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._mohan_y_badgandi-min.png",
+                "name": "Dr. Mohan Y. Badgandi",
+                "speciality": "Endocrinologist",
+                "experience": "48 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/manipal_hospital_old_airport_road_bangalore_building1-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/manipal_hospital_bangalore.jpg",
+            "https://www.vaidam.com/sites/default/files/manipal_hospital_old_airport_road_bangalore_registration_counter.jpg",
+            "https://www.vaidam.com/sites/default/files/manipal_hospital_old_airport_road_bangalore_waiting_lounge.jpg"
+        ]
+    },
+    "medica-superspecialty-hospital": {
+        "id": "medica-superspecialty-hospital",
+        "name": "Medica Superspecialty Hospital, Kolkata",
+        "location": "127",
+        "address": "127, Eastern Metropolitan Bypass Rd, Nitai Nagar, Mukundapur Kolkata, 700099",
+        "accreditation": [
+            "NABH",
+            "NABL"
+        ],
+        "established": 2010,
+        "description": "",
+        "image": "https://www.vaidam.com/sites/default/files/hospitals/medica_superspecialty_hospital_building1-min.jpg",
+        "logo": "https://www.vaidam.com/sites/default/files/medica_superspecialty_hospital_building1-min.jpg",
+        "internationalPatients": 1000,
+        "beds": 600,
+        "doctors": 60,
+        "specialties": 52,
+        "specializations": [
+            "Anaesthesiology",
+            "Cardiology",
+            "Cardiac surgery",
+            "Critical care",
+            "Dermatology & cosmetology",
+            "Dentistry",
+            "Emergency medicine",
+            "Endocrinology"
+        ],
+        "facilities": {
+            "medical": [
+                "Medical Dialysis Center",
+                "Green Operation Theatre",
+                "Robotic Surgery Training Center"
+            ],
+            "amenities": [
+                "International Patient Lounge",
+                "Visa Assistance",
+                "Airport Transfer"
+            ]
+        },
+        "procedures": [
+            {
+                "name": "Robotic Surgery"
+            },
+            {
+                "name": "Dialysis"
+            },
+            {
+                "name": "Cardiac Surgery"
+            },
+            {
+                "name": "Critical Care"
+            }
+        ],
+        "topDoctors": [
+            {
+                "image": "https://www.vaidam.com/sites/default/files/kunal-sarkar-500x460.jpg",
+                "name": "Dr. Kunal Sarkar",
+                "speciality": "Cardiac Surgeon",
+                "experience": "28 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/prof_dr_rabin_chakraborty-min.png",
+                "name": "Prof Dr Rabin Chakraborty",
+                "speciality": "Electrophysiologist",
+                "experience": "41 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr._mrinal_das.jpg",
+                "name": "Dr. Mrinal Bandhu Das",
+                "speciality": "Cardiac Surgeon",
+                "experience": "41 years"
+            },
+            {
+                "image": "https://www.vaidam.com/sites/default/files/dr.soumya_patra.jpg",
+                "name": "Dr. Soumya Patra",
+                "speciality": "Cardiac Surgeon",
+                "experience": "20 years"
+            }
+        ],
+        "reviews": 4.5,
+        "reviewCount": 125,
+        "images": [
+            "https://www.vaidam.com/sites/default/files/hospitals/medica_superspecialty_hospital_building1-min.jpg",
+            "https://www.vaidam.com/sites/default/files/hospitals/main_d.png",
+            "https://www.vaidam.com/sites/default/files/reception_d.png",
+            "https://www.vaidam.com/sites/default/files/lobby_d.png"
+        ]
+    }
+};

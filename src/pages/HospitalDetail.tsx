@@ -318,46 +318,14 @@ const HospitalDetail = () => {
                       <div className="mt-10">
                         <h3 className="text-xl font-semibold mb-4">Popular Procedures</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <div className="h-10 w-10 rounded-full bg-nile-100 flex items-center justify-center text-nile-600 mr-3">
-                              <span className="font-semibold">1</span>
+                          {hospital.procedures.map((procedure: any, index: number) => (
+                            <div key={index} className="flex items-center bg-gray-50 p-4 rounded-lg">
+                              <div className="h-10 w-10 rounded-full bg-nile-100 flex items-center justify-center text-nile-600 mr-3 flex-shrink-0">
+                                <span className="font-semibold">{index + 1}</span>
+                              </div>
+                              <h4 className="font-medium text-gray-800">{procedure.name}</h4>
                             </div>
-                            <div>
-                              <h4 className="font-medium text-gray-800">Coronary Artery Bypass Grafting (CABG)</h4>
-                              <p className="text-sm text-gray-600 mt-1">Success rate: 98.7%</p>
-                              <p className="text-sm text-nile-600 mt-1">Starting from $5,800</p>
-                            </div>
-                          </div>
-                          <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <div className="h-10 w-10 rounded-full bg-nile-100 flex items-center justify-center text-nile-600 mr-3">
-                              <span className="font-semibold">2</span>
-                            </div>
-                            <div>
-                              <h4 className="font-medium text-gray-800">Knee Replacement Surgery</h4>
-                              <p className="text-sm text-gray-600 mt-1">Success rate: 99.2%</p>
-                              <p className="text-sm text-nile-600 mt-1">Starting from $6,200</p>
-                            </div>
-                          </div>
-                          <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <div className="h-10 w-10 rounded-full bg-nile-100 flex items-center justify-center text-nile-600 mr-3">
-                              <span className="font-semibold">3</span>
-                            </div>
-                            <div>
-                              <h4 className="font-medium text-gray-800">Liver Transplant</h4>
-                              <p className="text-sm text-gray-600 mt-1">Success rate: 95.8%</p>
-                              <p className="text-sm text-nile-600 mt-1">Starting from $35,000</p>
-                            </div>
-                          </div>
-                          <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                            <div className="h-10 w-10 rounded-full bg-nile-100 flex items-center justify-center text-nile-600 mr-3">
-                              <span className="font-semibold">4</span>
-                            </div>
-                            <div>
-                              <h4 className="font-medium text-gray-800">IVF Treatment</h4>
-                              <p className="text-sm text-gray-600 mt-1">Success rate: 68%</p>
-                              <p className="text-sm text-nile-600 mt-1">Starting from $3,500</p>
-                            </div>
-                          </div>
+                          ))}
                         </div>
                         
                         <div className="mt-6 text-center">
