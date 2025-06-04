@@ -41,9 +41,11 @@ const HospitalDetail = () => {
     fetchHospital();
   }, [id]);
 
-  const openWhatsApp = () => {
+  const openWhatsApp = (specialty?: string) => {
     const phoneNumber = "911234567890";
-    const message = `I'm interested in treatment at ${hospital.name}.`;
+    const message = specialty 
+      ? `I'm interested in ${specialty} treatment at ${hospital.name}.`
+      : `I'm interested in treatment at ${hospital.name}.`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
@@ -96,7 +98,7 @@ const HospitalDetail = () => {
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                           <Button 
                             className="bg-green-600 hover:bg-green-700"
-                            onClick={openWhatsApp}
+                            onClick={() => openWhatsApp()}
                           >
                             <MessageCircle className="mr-2 h-4 w-4" /> Inquire on WhatsApp
                           </Button>
@@ -281,7 +283,7 @@ const HospitalDetail = () => {
                           </ul>
                           <Button 
                             className="w-full bg-green-600 hover:bg-green-700"
-                            onClick={openWhatsApp}
+                            onClick={() => openWhatsApp()}
                           >
                             <MessageCircle className="mr-2 h-4 w-4" /> Inquire for More Details
                           </Button>
@@ -302,13 +304,13 @@ const HospitalDetail = () => {
                             <HeartPulse className="h-8 w-8 text-nile-600 mb-2" />
                             <h3 className="font-medium text-gray-800">{specialty}</h3>
                             <p className="text-sm text-gray-600 mt-1">World-class care</p>
-                            <Link 
-                              to={`/treatments/${specialty.toLowerCase()}`}
+                            <button 
+                              onClick={() => openWhatsApp(specialty)}
                               className="text-nile-600 text-sm flex items-center mt-2 hover:underline"
                             >
                               Learn more
                               <ArrowRight className="h-3 w-3 ml-1" />
-                            </Link>
+                            </button>
                           </div>
                         ))}
                       </div>
@@ -477,7 +479,7 @@ const HospitalDetail = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Button 
                         className="bg-green-600 hover:bg-green-700"
-                        onClick={openWhatsApp}
+                        onClick={() => openWhatsApp()}
                       >
                         <MessageCircle className="mr-2 h-4 w-4" /> Ask on WhatsApp
                       </Button>
