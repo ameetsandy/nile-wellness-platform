@@ -16,6 +16,7 @@ const HospitalDetail = () => {
   const [hospital, setHospital] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [selectedForm, setSelectedForm] = useState<"appointment" | "second-opinion" | "reports" | null>(null);
+  const [selectedDoctor, setSelectedDoctor] = useState<string | null>(null);
 
   useEffect(() => {
     // This would be replaced with a real API call in production
@@ -50,12 +51,14 @@ const HospitalDetail = () => {
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
 
-  const handleFormOpen = (formType: "appointment" | "second-opinion" | "reports") => {
+  const handleFormOpen = (formType: "appointment" | "second-opinion" | "reports", doctorName?: string) => {
     setSelectedForm(formType);
+    setSelectedDoctor(doctorName || null);
   };
 
   const handleFormClose = () => {
     setSelectedForm(null);
+    setSelectedDoctor(null);
   };
 
   return (
@@ -345,10 +348,9 @@ const HospitalDetail = () => {
                       <h2 className="text-2xl font-semibold mb-6">Top Doctors at {hospital.name}</h2>
                       
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {hospital.topDoctors.map((doctor: any) => (
-                          <Link 
-                            key={doctor.id}
-                            to={`/doctors/${doctor.id}`}
+                        {hospital.topDoctors.map((doctor: any, idx: number) => (
+                          <div
+                            key={idx}
                             className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-md transition-shadow"
                           >
                             <div className="flex flex-col sm:flex-row">
@@ -366,18 +368,21 @@ const HospitalDetail = () => {
                               </div>
                               <div className="p-4 flex-1">
                                 <h3 className="font-semibold text-gray-800">{doctor.name}</h3>
-                                <p className="text-nile-600 text-sm mb-2">{doctor.specialty}</p>
+                                <p className="text-nile-600 text-sm mb-2">{doctor.speciality}</p>
                                 <div className="flex items-center">
-                                  <Building className="h-4 w-4 text-gray-500 mr-1" />
-                                  <span className="text-gray-600 text-sm">{hospital.name}</span>
+                                  <Clock className="h-4 w-4 text-gray-500 mr-1" />
+                                  <span className="text-gray-600 text-sm">{doctor.experience} Experience</span>
                                 </div>
-                                <div className="mt-3 flex items-center text-nile-600 text-sm hover:underline">
-                                  View Profile
+                                <button 
+                                  onClick={() => handleFormOpen("appointment", doctor.name)}
+                                  className="mt-3 flex items-center text-nile-600 text-sm hover:underline"
+                                >
+                                  Book Appointment
                                   <ArrowRight className="h-3 w-3 ml-1" />
-                                </div>
+                                </button>
                               </div>
                             </div>
-                          </Link>
+                          </div>
                         ))}
                       </div>
                       
@@ -417,7 +422,7 @@ const HospitalDetail = () => {
                             <Hotel className="h-6 w-6 text-nile-600 mr-3" />
                             Patient Amenities
                           </h3>
-                          <div className="grid grid-cols-1 gap-3">
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                             {hospital.facilities.amenities.map((amenity: string, index: number) => (
                               <div 
                                 key={index}
@@ -479,7 +484,7 @@ const HospitalDetail = () => {
         <AppointmentForm
           isOpen={true}
           onClose={handleFormClose}
-          doctorName={hospital?.name}
+          doctorName={selectedDoctor || hospital?.name}
           formType={selectedForm}
         />
       )}
