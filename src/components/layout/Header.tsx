@@ -1,10 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Phone, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Header = () => {
   const [isTreatmentsOpen, setIsTreatmentsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsTreatmentsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const treatments = [
     { name: "Heart Bypass Surgery", path: "/treatments/heart-bypass" },
@@ -60,7 +74,7 @@ const Header = () => {
           <nav className="flex justify-between items-center h-14">
             {/* Left-aligned Menu Items */}
             <div className="flex items-center gap-8">
-              <div className="relative group">
+              <div className="relative group" ref={dropdownRef}>
                 <button
                   onClick={() => setIsTreatmentsOpen(!isTreatmentsOpen)}
                   className="flex items-center text-nile-700 hover:text-nile-900 font-medium transition-colors"
