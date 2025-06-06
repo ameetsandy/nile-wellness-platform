@@ -23,21 +23,31 @@ const HeartBypassSurgery = () => {
                 <p className="text-lg text-gray-700 mb-8">
                   World-class heart care, affordable prices, and leading cardiac surgeons
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-green-600 hover:bg-green-700">
-                    <MessageCircle className="mr-2 h-5 w-5" /> WhatsApp Now
+                <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                  <Button className="bg-green-600 hover:bg-green-700 text-white text-base py-3 px-6 h-auto">
+                    <MessageCircle className="mr-2 h-5 w-5" /> Share Reports for Free Evaluation
                   </Button>
-                  <Button variant="outline" className="border-blue-600 text-blue-600 hover:text-blue-700">
-                    <Phone className="mr-2 h-5 w-5" /> Call Us
+                  <Button variant="outline" className="text-base py-3 px-6 h-auto border-blue-600 text-blue-600 hover:bg-blue-50">
+                    <Phone className="mr-2 h-5 w-5" /> Speak to a Coordinator
                   </Button>
                 </div>
+                <div className="flex flex-wrap gap-3 mt-4">
+                  <span className="bg-white border border-nile-100 text-nile-700 px-4 py-2 rounded-lg text-sm font-semibold shadow-sm">NABH Accredited</span>
+                  <span className="bg-white border border-nile-100 text-nile-700 px-4 py-2 rounded-lg text-sm font-semibold shadow-sm">JCI Certified</span>
+                  <span className="bg-white border border-nile-100 text-nile-700 px-4 py-2 rounded-lg text-sm font-semibold shadow-sm">97%+ Success Rate</span>
+                </div>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-2xl max-w-[500px] mx-auto">
-                <img
-                  src="https://i.postimg.cc/BbFJWnxB/Heart-Bypass-Surgery-CABG.png"
-                  alt="Heart Bypass Surgery"
-                  className="w-full h-[300px] object-contain"
-                />
+              <div className="relative flex items-end lg:justify-end mt-8 lg:mt-0">
+                <div className="rounded-xl overflow-hidden shadow-2xl max-w-[500px] mx-auto">
+                  <img
+                    src="https://i.postimg.cc/BbFJWnxB/Heart-Bypass-Surgery-CABG.png"
+                    alt="Heart Bypass Surgery"
+                    className="w-full h-[300px] object-contain"
+                  />
+                </div>
+                <span className="absolute -bottom-6 left-0 bg-nile-600 text-white px-6 py-3 rounded-lg text-sm font-semibold shadow-lg whitespace-nowrap">
+                  75% Cost Savings vs Western Countries
+                </span>
               </div>
             </div>
           </div>
