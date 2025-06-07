@@ -30,6 +30,7 @@ import CancerTreatment from "./pages/treatments/CancerTreatment";
 import IVFFertility from "./pages/treatments/IVFFertility";
 import EyeCare from "./pages/treatments/EyeCare";
 import AllTreatments from "./pages/treatments/AllTreatments";
+import OrthopedicSurgery from "./pages/treatments/OrthopedicSurgery";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +61,7 @@ const App = () => (
           <Route path="/treatments/eye-care" element={<EyeCare />} />
           <Route path="/treatments/cancer-treatment" element={<CancerTreatment />} />
           <Route path="/treatments/ivf-fertility" element={<IVFFertility />} />
+          <Route path="/treatments/orthopedic-surgery" element={<OrthopedicSurgery />} />
           <Route path="/free-opinion" element={<FreeOpinion />} />
           <Route path="/free-services" element={<FreeServices />} />
           <Route path="/patient-stories" element={<PatientStories />} />

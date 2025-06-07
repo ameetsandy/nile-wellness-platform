@@ -37,7 +37,7 @@ const PatientStories = () => {
       country: "Kenya",
       treatment: "Liver Transplant",
       hospital: "Medanta Hospital",
-      quote: "My mother's cancer treatment in India was a life-saving decision. The pre-operative care, surgery, and post-operative monitoring were all exceptional. What impressed me most was how the Nile Wellness team handled everything from accommodation for my family to dietary requirements. I'm eternally grateful to the medical team.",
+      quote: "My mother's liver transplant treatment in India was a life-saving decision. The pre-operative care, surgery, and post-operative monitoring were all exceptional. What impressed me most was how the Nile Wellness team handled everything from accommodation for my family to dietary requirements. I'm eternally grateful to the medical team.",
       image: "https://i.postimg.cc/tCP8mRdd/Amina-Osman-Kenya.png",
       rating: 5
     }
@@ -839,7 +839,7 @@ const PatientStories = () => {
                 <div className="text-center mb-8">
                   <h2 className="text-2xl md:text-3xl font-bold mb-4">Share Your Medical Journey</h2>
                   <p className="text-gray-600 max-w-3xl mx-auto">
-                    Your story can inspire and help others who are considering medical treatment in India.
+                  Your story can inspire and help others who are considering medical treatments at Nile Wellness.
                   </p>
                 </div>
                 

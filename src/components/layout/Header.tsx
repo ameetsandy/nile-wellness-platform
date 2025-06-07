@@ -24,6 +24,7 @@ const Header = () => {
     { name: "Heart Bypass Surgery", path: "/treatments/heart-bypass" },
     { name: "Knee Replacement", path: "/treatments/knee-replacement" },
     { name: "Hip Replacement", path: "/treatments/hip-replacement" },
+    { name: "Orthopedic Surgery", path: "/treatments/orthopedic-surgery" },
     { name: "Cancer Treatment", path: "/treatments/cancer-treatment" },
     { name: "Kidney Transplant", path: "/treatments/kidney-transplant" },
     { name: "Liver Transplant", path: "/treatments/liver-transplant" },
