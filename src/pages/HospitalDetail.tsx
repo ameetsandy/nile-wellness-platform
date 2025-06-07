@@ -335,8 +335,9 @@ const HospitalDetail = () => {
                           <Button 
                             variant="outline" 
                             className="border-nile-600 text-nile-600 hover:bg-nile-50"
+                            onClick={() => window.open('https://wa.me/919999999999', '_blank')}
                           >
-                            View All Procedures & Cost Estimates
+                            Get Detailed Cost Estimates
                           </Button>
                         </div>
                       </div>
