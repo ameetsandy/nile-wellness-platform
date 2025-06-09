@@ -174,7 +174,7 @@ const DoctorDetail = () => {
                         <MapPin className="h-5 w-5 text-nile-600 mr-2 flex-shrink-0 mt-0.5" />
                         <div>
                           <Link 
-                            to={`/hospitals/${doctor.hospital.toLowerCase().replace(/[,\s]+/g, '-')}`}
+                            to={doctor.hospitalLink}
                             className="font-medium hover:text-nile-600 transition-colors"
                           >
                             {doctor.hospital}

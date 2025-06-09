@@ -9,59 +9,86 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const doctors = [
   {
-    name: "Dr. Ashok Rajgopal",
-    hospital: "Medanta – The Medicity, Gurgaon",
-    specialty: "Joint Replacement Surgeon",
-    experience: "40+ Years",
-    city: "Gurgaon",
-    image: "https://www.vaidam.com/sites/default/files/dr_ashok_rajgopal-min.png"
+    name: "Dr Ashok Rajgopal",
+    hospital: "Medanta - The Medicity, Gurgaon",
+    specialty: "Orthopaedic and Joint Replacement Surgeon",
+    designation: "Senior Consultant",
+    experience: "50+ Years",
+    city: "Gurgaon, India",
+    image: "https://www.vaidam.com/sites/default/files/dr_ashok_rajgopal-min.png",
+    url: "/doctors/dr-ashok-rajgopal",
+    hospitalUrl: "/hospitals/medanta-medicity-gurgaon"
   },
   {
-    name: "Dr. Ranjan Pai",
-    hospital: "Manipal Hospital, Bangalore",
-    specialty: "Orthopedic & Spine Surgeon",
-    experience: "30+ Years",
-    city: "Bangalore",
-    image: "https://www.vaidam.com/sites/default/files/dr_ranjan_pai-min.jpg"
+    name: "Dr. IPS Oberoi",
+    hospital: "Artemis Hospital, Gurgaon",
+    specialty: "Orthopaedic and Joint Replacement Surgeon",
+    designation: "Chairman",
+    experience: "31+ Years",
+    city: "Gurgaon, India",
+    image: "https://www.vaidam.com/sites/default/files/dr._ips_oberoi_-_orthopaedics-min.jpg",
+    url: "/doctors/dr-ips-oberoi",
+    hospitalUrl: "/hospitals/artemis-hospital-gurgaon"
   },
   {
-    name: "Dr. Kaushal Malhan",
-    hospital: "Fortis Hospital, Mulund",
-    specialty: "Orthopedic Surgeon",
-    experience: "28+ Years",
-    city: "Mumbai",
-    image: "https://www.vaidam.com/sites/default/files/dr_kaushal_malhan-min.jpg"
+    name: "Dr. C Vijay Bose",
+    hospital: "SIMS Hospital, Vadapalani, Chennai",
+    specialty: "Orthopaedic and Joint Replacement Surgeon",
+    designation: "Director",
+    experience: "36+ Years",
+    city: "Chennai, India",
+    image: "https://d1ea147o02h74h.cloudfront.net/dr._c_vijay_bose-min.jpg",
+    url: "/doctors/dr-c-vijay-bose",
+    hospitalUrl: "/hospitals/sims-hospital-chennai"
   }
 ];
 
 const hospitals = [
   {
-    name: "Medanta – The Medicity",
-    accreditation: "JCI & NABH Accredited | Advanced Robotic Ortho Suite",
-    city: "Gurgaon",
-    image: "https://d1pkj1wi9lp6qx.cloudfront.net/50/files/medanta_the_medicity_gurgaon_list_view_image-min.webp"
+    name: "Indraprastha Apollo Hospital, New Delhi",
+    url: "http://localhost:8081/hospitals/indraprastha-apollo-hospital-new-delhi",
+    accreditation: "JCI & NABL Accredited",
+    beds: 710,
+    established: 1995,
+    location: "Sarita Vihar, Delhi Mathura Road New Delhi, 110076",
+    about: "Established in 1995, Indraprastha Apollo Hospital in Delhi is part of India's largest healthcare chain. It offers 52 specialties, including Cardiology, Oncology, and Robotic Surgery. With over 1,70,000 heart surgeries, advanced technologies like CyberKnife® and Da Vinci® Robotic Surgical System are used. The facility spans 15 acres with 710 beds.",
+    highlights: ["Top consultants", "52 specialties", "Centres of Excellence", "Largest ICU beds"],
+    accreditations: ["Accredited by NABH, NABL", "Winner of FICCI Healthcare", "ISO 9001:2015 certification", "Best Hospital Award"],
+    image: "https://www.vaidam.com/sites/default/webp/50/files/hospitals/Apollo%20Hospital%20Delhi.webp"
   },
   {
-    name: "Apollo Hospitals (Pan India)",
-    accreditation: "NABH Accredited | Comprehensive Joint Replacement Program",
-    city: "Chennai | Delhi | Hyderabad",
-    image: "https://www.vaidam.com/sites/default/files/apollo-hospitals-chennai.jpg"
+    name: "BLK-Max Super Speciality Hospital, New Delhi",
+    url: "http://localhost:8081/hospitals/blk-hospital-new-delhi",
+    accreditation: "JCI & NABH Accredited",
+    beds: 650,
+    established: 1959,
+    location: "Pusa Rd, Radha Soami Satsang, Rajendra Place New Delhi, 110005",
+    about: "BLK-Max Super Speciality Hospital in New Delhi, a top 10 multi-super speciality hospital in Delhi NCR, offers world-class healthcare with state-of-the-art technology. Accredited by JCI, NABH, and NABL, it has received 45 healthcare awards. Serving 20,000+ international patients annually, it has conducted 130,000 surgeries and treated 440,000 IPD patients.",
+    highlights: ["Advanced Surgical Equipment", "24/7 Dialysis Unit", "Renal Medical Emergencies", "Super Religare Laboratory"],
+    accreditations: ["JCI, NABH, NABL Accredited", "45 Healthcare Sector Awards", "ET Healthworld, AHPI, HMA", "MEDCON 2016 ASSOCHAM"],
+    image: "https://www.vaidam.com/sites/default/files/hospitals/blk_facade-1-min.jpg"
   },
   {
-    name: "Indian Spinal Injuries Centre",
-    accreditation: "NABH Accredited | Specialised in Spine & Trauma",
-    city: "Delhi",
-    image: "https://www.vaidam.com/sites/default/files/indian-spinal-injuries-centre-delhi.jpg"
+    name: "Fortis Memorial Research Institute, Gurgaon",
+    url: "http://localhost:8081/hospitals/fortis-memorial-research-institute-gurgaon",
+    accreditation: "JCI & NABH Accredited",
+    beds: 300,
+    established: 2001,
+    location: "Sector - 44, Opposite HUDA City Centre Gurgaon, 122002",
+    about: "Welcome to Fortis Memorial Research Institute (FMRI), a leading 310-bed hospital in Gurugram, offering advanced medical care in Neurosciences, Oncology, Cardiac Sciences, and more. With cutting-edge technology and a focus on patient comfort, FMRI ensures a seamless healthcare experience for international patients. Experience world-class treatment at FMRI, in association with Nile Wellness.",
+    highlights: ["Advanced equipment", "Skilled surgeons", "High success rate", "Specialized care"],
+    accreditations: ["NABH Accreditation", "NABL Accreditation", "JCI Accreditation", "NABH Nursing Excellence"],
+    image: "https://www.vaidam.com/sites/default/files/hospitals/fortis-gurgaon-building1_0.jpg"
   }
 ];
 
 const faqs = [
   {
     treatment: [
-      {
-        q: "Is robotic surgery available for knee or hip replacement?",
-        a: "Yes, top Indian hospitals offer robotic and computer-assisted joint surgeries."
-      },
+  {
+    q: "Is robotic surgery available for knee or hip replacement?",
+    a: "Yes, top Indian hospitals offer robotic and computer-assisted joint surgeries."
+  },
       {
         q: "What type of implants are used in India?",
         a: "FDA/CE-approved implants from reputed brands like Zimmer, Stryker, Johnson & Johnson."
@@ -72,15 +99,15 @@ const faqs = [
       }
     ],
     recovery: [
-      {
-        q: "Is post-surgery physiotherapy provided?",
-        a: "Yes. Hospitals offer in-patient and out-patient rehab with certified physiotherapists."
-      },
-      {
-        q: "Can I travel soon after the procedure?",
-        a: "Most patients can fly within 10–14 days depending on the surgery and healing."
-      },
-      {
+  {
+    q: "Is post-surgery physiotherapy provided?",
+    a: "Yes. Hospitals offer in-patient and out-patient rehab with certified physiotherapists."
+  },
+  {
+    q: "Can I travel soon after the procedure?",
+    a: "Most patients can fly within 10–14 days depending on the surgery and healing."
+  },
+  {
         q: "Is orthopedic surgery in India suitable for older adults?",
         a: "Yes, many elderly international patients undergo successful surgeries with excellent outcomes."
       }
@@ -237,7 +264,11 @@ const OrthopedicSurgery = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Orthopedic Surgeons in India</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {doctors.map((doc, idx) => (
-                <div key={idx} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                <Link 
+                  key={idx} 
+                  to={doc.url}
+                  className="bg-white rounded-xl overflow-hidden border border-gray-100 hover:border-nile-600 transition-all duration-300"
+                >
                   <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                     <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                       <img
@@ -270,7 +301,7 @@ const OrthopedicSurgery = () => {
                       <ArrowRight className="ml-1 h-3 w-3" />
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -282,7 +313,11 @@ const OrthopedicSurgery = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Orthopedic Hospitals</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {hospitals.map((hosp, idx) => (
-                <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                <Link 
+                  key={idx} 
+                  to={hosp.url}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 block"
+                >
                   <div className="h-48 overflow-hidden">
                     <img
                       src={hosp.image}
@@ -295,10 +330,10 @@ const OrthopedicSurgery = () => {
                     <div className="flex items-center mb-4">
                       <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">{hosp.accreditation}</span>
                     </div>
-                    <p className="text-gray-600 mb-4">{hosp.city}</p>
+                    <p className="text-gray-600 mb-4">{hosp.location}</p>
                     <Button className="w-full">View Hospital</Button>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
