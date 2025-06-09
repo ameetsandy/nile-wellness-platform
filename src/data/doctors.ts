@@ -4,6 +4,8 @@ export const mockDoctors = {
   
   
   
+  
+  
     "dr-devi-prasad-shetty": {
       "id": "dr-devi-prasad-shetty",
       "name": "Dr Devi Prasad Shetty",
@@ -28,7 +30,7 @@ export const mockDoctors = {
         "Pioneer in innovative cardiac techniques"
       ],
       "patientCount": 50000,
-      "successRate": 95.0
+      "successRate": 95.32
     },
     "dr-adarsh-choudhary": {
       "id": "dr-adarsh-choudhary",
@@ -53,7 +55,7 @@ export const mockDoctors = {
         "Vigyan Manch"
       ],
       "patientCount": 50000,
-      "successRate": 96.0
+      "successRate": 95.13
     },
     "dr-arun-saroha": {
       "id": "dr-arun-saroha",
@@ -78,7 +80,7 @@ export const mockDoctors = {
         "Best Scientific Paper Award, 2003"
       ],
       "patientCount": 50000,
-      "successRate": 97.0
+      "successRate": 95.23
     },
     "dr-arup-ratan-dutta": {
       "id": "dr-arup-ratan-dutta",
@@ -104,7 +106,7 @@ export const mockDoctors = {
         "Founding PDSI member"
       ],
       "patientCount": 50000,
-      "successRate": 98.0
+      "successRate": 95.28
     },
     "dr-ashok-rajgopal": {
       "id": "dr-ashok-rajgopal",
@@ -130,7 +132,7 @@ export const mockDoctors = {
         "Pioneer in Joint Replacement"
       ],
       "patientCount": 50000,
-      "successRate": 99.0
+      "successRate": 95.43
     },
     "dr-ashok-seth": {
       "id": "dr-ashok-seth",
@@ -156,7 +158,7 @@ export const mockDoctors = {
         "B.C. Roy National Award"
       ],
       "patientCount": 50000,
-      "successRate": 95.0
+      "successRate": 95.48
     },
     "dr-balbir-singh": {
       "id": "dr-balbir-singh",
@@ -182,7 +184,7 @@ export const mockDoctors = {
         "Pioneered new techniques in cardiology"
       ],
       "patientCount": 50000,
-      "successRate": 96.0
+      "successRate": 95.2
     },
     "dr-harit-chaturvedi": {
       "id": "dr-harit-chaturvedi",
@@ -206,7 +208,7 @@ export const mockDoctors = {
         "Young Scientist Award"
       ],
       "patientCount": 50000,
-      "successRate": 97.0
+      "successRate": 95.1
     },
     "dr-hemant-bhartiya": {
       "id": "dr-hemant-bhartiya",
@@ -232,7 +234,7 @@ export const mockDoctors = {
         "Expertise in spine surgery"
       ],
       "patientCount": 50000,
-      "successRate": 98.0
+      "successRate": 95.17
     },
     "dr-nc-krishnamani": {
       "id": "dr-nc-krishnamani",
@@ -254,7 +256,7 @@ export const mockDoctors = {
         "Rashtriya Rattan Gold Medal"
       ],
       "patientCount": 50000,
-      "successRate": 99.0
+      "successRate": 95.27
     },
     "dr-manoj-kumar-goel": {
       "id": "dr-manoj-kumar-goel",
@@ -280,7 +282,7 @@ export const mockDoctors = {
         "Specializes in pulmonary fibrosis treatment"
       ],
       "patientCount": 50000,
-      "successRate": 95.0
+      "successRate": 95.07
     },
     "dr-naresh-trehan": {
       "id": "dr-naresh-trehan",
@@ -306,7 +308,7 @@ export const mockDoctors = {
         "Lal Bahadur Shastri National Award"
       ],
       "patientCount": 50000,
-      "successRate": 96.0
+      "successRate": 95.08
     },
     "dr-praveen-chandra": {
       "id": "dr-praveen-chandra",
@@ -332,7 +334,7 @@ export const mockDoctors = {
         "Performs 2000+ percutaneous interventions annually"
       ],
       "patientCount": 50000,
-      "successRate": 97.0
+      "successRate": 95.02
     },
     "dr-praveen-gupta": {
       "id": "dr-praveen-gupta",
@@ -358,7 +360,7 @@ export const mockDoctors = {
         "Conducted first DBS procedure"
       ],
       "patientCount": 50000,
-      "successRate": 98.0
+      "successRate": 95.21
     },
     "dr-rama-joshi": {
       "id": "dr-rama-joshi",
@@ -384,7 +386,7 @@ export const mockDoctors = {
         "Robotic Surgery Specialist"
       ],
       "patientCount": 50000,
-      "successRate": 99.0
+      "successRate": 95.36
     },
     "dr-rana-patir": {
       "id": "dr-rana-patir",
@@ -410,7 +412,7 @@ export const mockDoctors = {
         "Specialises in minimally invasive surgeries"
       ],
       "patientCount": 50000,
-      "successRate": 95.0
+      "successRate": 95.29
     },
     "dr-sandeep-nayak": {
       "id": "dr-sandeep-nayak",
@@ -436,7 +438,7 @@ export const mockDoctors = {
         "Detroit Fellowship Award, 2012"
       ],
       "patientCount": 50000,
-      "successRate": 96.0
+      "successRate": 95.32
     },
     "dr-shuvanan-ray": {
       "id": "dr-shuvanan-ray",
@@ -463,7 +465,7 @@ export const mockDoctors = {
         "Over 23 years of experience"
       ],
       "patientCount": 50000,
-      "successRate": 97.0
+      "successRate": 95.44
     },
     "dr-subhash-gupta": {
       "id": "dr-subhash-gupta",
@@ -489,7 +491,7 @@ export const mockDoctors = {
         "Extensive Surgical Expertise"
       ],
       "patientCount": 50000,
-      "successRate": 98.0
+      "successRate": 95.27
     },
     "dr-c-vijay-bose": {
       "id": "dr-c-vijay-bose",
@@ -515,7 +517,7 @@ export const mockDoctors = {
         "3. Top orthopaedic doctor"
       ],
       "patientCount": 50000,
-      "successRate": 99.0
+      "successRate": 95.3
     },
     "dr-shyam-kishore-shrivastava": {
       "id": "dr-shyam-kishore-shrivastava",
@@ -542,7 +544,7 @@ export const mockDoctors = {
         "National & International Leadership"
       ],
       "patientCount": 50000,
-      "successRate": 95.0
+      "successRate": 95.27
     },
     "dr-sandeep-attawar": {
       "id": "dr-sandeep-attawar",
@@ -568,7 +570,7 @@ export const mockDoctors = {
         "Leader in Establishing Centers of Excellence"
       ],
       "patientCount": 50000,
-      "successRate": 96.0
+      "successRate": 95.21
     },
     "dr-sanjay-sarup": {
       "id": "dr-sanjay-sarup",
@@ -594,7 +596,7 @@ export const mockDoctors = {
         "Recognised for Surgical Excellence"
       ],
       "patientCount": 50000,
-      "successRate": 97.0
+      "successRate": 95.41
     },
     "dr-jatinder-bir-singh-jaggi": {
       "id": "dr-jatinder-bir-singh-jaggi",
@@ -620,7 +622,7 @@ export const mockDoctors = {
         "Extensive Trauma Expertise"
       ],
       "patientCount": 50000,
-      "successRate": 98.0
+      "successRate": 95.48
     },
     "dr-rajeev-verma": {
       "id": "dr-rajeev-verma",
@@ -646,7 +648,7 @@ export const mockDoctors = {
         "Expert in complex cases"
       ],
       "patientCount": 50000,
-      "successRate": 99.0
+      "successRate": 95.22
     },
     "dr-subhash-jangid": {
       "id": "dr-subhash-jangid",
@@ -672,7 +674,7 @@ export const mockDoctors = {
         "Pioneer in Innovative Techniques"
       ],
       "patientCount": 50000,
-      "successRate": 95.0
+      "successRate": 95.19
     },
     "dr-ishwar-bohra": {
       "id": "dr-ishwar-bohra",
@@ -698,7 +700,7 @@ export const mockDoctors = {
         "Nationally Recognised Leader"
       ],
       "patientCount": 50000,
-      "successRate": 96.0
+      "successRate": 95.45
     },
     "dr-vikram-barua-kaushik": {
       "id": "dr-vikram-barua-kaushik",
@@ -723,7 +725,7 @@ export const mockDoctors = {
         "Specialized in Renal Transplantation"
       ],
       "patientCount": 50000,
-      "successRate": 97.0
+      "successRate": 95.19
     },
     "dr-z-s-meharwal": {
       "id": "dr-z-s-meharwal",
@@ -749,7 +751,7 @@ export const mockDoctors = {
         "Nationally recognized and honored"
       ],
       "patientCount": 50000,
-      "successRate": 98.0
+      "successRate": 95.33
     },
     "dr-yash-gulati": {
       "id": "dr-yash-gulati",
@@ -775,7 +777,7 @@ export const mockDoctors = {
         "Skilled in minimally invasive spine surgery"
       ],
       "patientCount": 50000,
-      "successRate": 99.0
+      "successRate": 95.35
     },
     "dr-y-k-mishra": {
       "id": "dr-y-k-mishra",
@@ -801,7 +803,7 @@ export const mockDoctors = {
         "Nationally recognized & awarded"
       ],
       "patientCount": 50000,
-      "successRate": 95.0
+      "successRate": 95.11
     },
     "dr-vivekanandan-shanmugam": {
       "id": "dr-vivekanandan-shanmugam",
@@ -827,7 +829,7 @@ export const mockDoctors = {
         "Internationally Trained"
       ],
       "patientCount": 50000,
-      "successRate": 96.0
+      "successRate": 95.43
     },
     "dr-vivek-vij": {
       "id": "dr-vivek-vij",
@@ -853,7 +855,7 @@ export const mockDoctors = {
         "Global leader in minimally invasive surgery"
       ],
       "patientCount": 50000,
-      "successRate": 97.0
+      "successRate": 95.1
     },
     "dr-vivek-raj": {
       "id": "dr-vivek-raj",
@@ -879,7 +881,7 @@ export const mockDoctors = {
         "International training and recognition"
       ],
       "patientCount": 50000,
-      "successRate": 98.0
+      "successRate": 95.3
     },
     "dr-vipul-gupta": {
       "id": "dr-vipul-gupta",
@@ -905,7 +907,7 @@ export const mockDoctors = {
         "Pioneer in Innovative Techniques: Introduced innovative neurointerventional techniques"
       ],
       "patientCount": 50000,
-      "successRate": 99.0
+      "successRate": 95.45
     },
     "dr-vinod-raina": {
       "id": "dr-vinod-raina",
@@ -931,7 +933,7 @@ export const mockDoctors = {
         "Premier Cancer Treatment Provider"
       ],
       "patientCount": 50000,
-      "successRate": 95.0
+      "successRate": 95.45
     },
     "dr-vinod-kumar-nigam": {
       "id": "dr-vinod-kumar-nigam",
@@ -957,7 +959,7 @@ export const mockDoctors = {
         "Expert in Various Conditions"
       ],
       "patientCount": 50000,
-      "successRate": 96.0
+      "successRate": 95.11
     },
     "dr-vineesh-mathur": {
       "id": "dr-vineesh-mathur",
@@ -983,7 +985,7 @@ export const mockDoctors = {
         "Expertise in Complex Spinal Disorders"
       ],
       "patientCount": 50000,
-      "successRate": 97.0
+      "successRate": 95.12
     },
     "dr-vikram-pratap-singh": {
       "id": "dr-vikram-pratap-singh",
@@ -1007,7 +1009,7 @@ export const mockDoctors = {
         "Unmatched experience, Specialised expertise, Prestigious credentials"
       ],
       "patientCount": 50000,
-      "successRate": 98.0
+      "successRate": 95.15
     },
     "dr-vikas-singhal": {
       "id": "dr-vikas-singhal",
@@ -1033,7 +1035,7 @@ export const mockDoctors = {
         "American Board certified"
       ],
       "patientCount": 50000,
-      "successRate": 99.0
+      "successRate": 95.03
     },
     "dr-vikas-dua": {
       "id": "dr-vikas-dua",
@@ -1059,7 +1061,7 @@ export const mockDoctors = {
         "Award-Winning Excellence"
       ],
       "patientCount": 50000,
-      "successRate": 95.0
+      "successRate": 95.49
     },
     "dr-vijaya-rajakumari": {
       "id": "dr-vijaya-rajakumari",
@@ -1085,7 +1087,7 @@ export const mockDoctors = {
         "Academic Excellence"
       ],
       "patientCount": 50000,
-      "successRate": 96.0
+      "successRate": 95.31
     },
     "dr-vidyadhara-s": {
       "id": "dr-vidyadhara-s",
@@ -1110,7 +1112,7 @@ export const mockDoctors = {
         "Award-Winning Research and Innovation"
       ],
       "patientCount": 50000,
-      "successRate": 97.0
+      "successRate": 95.46
     },
     "dr-vidur-jyoti": {
       "id": "dr-vidur-jyoti",
@@ -1136,7 +1138,7 @@ export const mockDoctors = {
         "Record in Surgeries"
       ],
       "patientCount": 20000,
-      "successRate": 98.0
+      "successRate": 95.49
     },
     "dr-veena-bhat": {
       "id": "dr-veena-bhat",
@@ -1162,7 +1164,7 @@ export const mockDoctors = {
         "Unrivalled Expertise"
       ],
       "patientCount": 10000,
-      "successRate": 99.0
+      "successRate": 95.15
     },
     "dr-v-p-singh": {
       "id": "dr-v-p-singh",
@@ -1188,7 +1190,7 @@ export const mockDoctors = {
         "Expertise in Radiosurgery"
       ],
       "patientCount": 400,
-      "successRate": 95.0
+      "successRate": 95.23
     },
     "dr-umesh-gupta": {
       "id": "dr-umesh-gupta",
@@ -1214,7 +1216,7 @@ export const mockDoctors = {
         "Specialist in renal angiogram"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.3
     },
     "dr-tushar-shah": {
       "id": "dr-tushar-shah",
@@ -1240,7 +1242,7 @@ export const mockDoctors = {
         "Specialised Expertise: Sciatica, Back Pain"
       ],
       "patientCount": 700,
-      "successRate": 97.0
+      "successRate": 95.03
     },
     "dr-tpr-bharadwaj": {
       "id": "dr-tpr-bharadwaj",
@@ -1266,7 +1268,7 @@ export const mockDoctors = {
         "Renowned Haematologist"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.35
     },
     "dr-t-s-kler": {
       "id": "dr-t-s-kler",
@@ -1292,7 +1294,7 @@ export const mockDoctors = {
         "Established first EP department"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.49
     },
     "dr-sushma-ved": {
       "id": "dr-sushma-ved",
@@ -1318,7 +1320,7 @@ export const mockDoctors = {
         "International Training & Techniques"
       ],
       "patientCount": 6000,
-      "successRate": 95.0
+      "successRate": 95.43
     },
     "prof-dr-suresh-h-advani": {
       "id": "prof-dr-suresh-h-advani",
@@ -1344,7 +1346,7 @@ export const mockDoctors = {
         "Dhanvantari Award"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.0
     },
     "dr-suneeta-mittal": {
       "id": "dr-suneeta-mittal",
@@ -1370,7 +1372,7 @@ export const mockDoctors = {
         "Advanced skills in surgery"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.24
     },
     "dr-sumit-malhotra": {
       "id": "dr-sumit-malhotra",
@@ -1396,7 +1398,7 @@ export const mockDoctors = {
         "Extensive Experience"
       ],
       "patientCount": 2750,
-      "successRate": 98.0
+      "successRate": 95.2
     },
     "dr-sulbha-arora": {
       "id": "dr-sulbha-arora",
@@ -1422,7 +1424,7 @@ export const mockDoctors = {
         "Internationally trained"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.48
     },
     "dr-sukhvinder-singh-saggu": {
       "id": "dr-sukhvinder-singh-saggu",
@@ -1448,7 +1450,7 @@ export const mockDoctors = {
         "Expertise in Minimally Invasive"
       ],
       "patientCount": 42000,
-      "successRate": 95.0
+      "successRate": 95.17
     },
     "dr-sujit-chaudhury": {
       "id": "dr-sujit-chaudhury",
@@ -1474,7 +1476,7 @@ export const mockDoctors = {
         "Extensive Experience"
       ],
       "patientCount": 10000,
-      "successRate": 96.0
+      "successRate": 95.39
     },
     "dr-sudhir-dubey": {
       "id": "dr-sudhir-dubey",
@@ -1500,7 +1502,7 @@ export const mockDoctors = {
         "Master of Endoscopic Neurosurgery"
       ],
       "patientCount": 10000,
-      "successRate": 97.0
+      "successRate": 95.33
     },
     "dr-subodh-chandra-pande": {
       "id": "dr-subodh-chandra-pande",
@@ -1526,7 +1528,7 @@ export const mockDoctors = {
         "Specialised Expertise"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.48
     },
     "dr-srinivasa-prasad-b-v": {
       "id": "dr-srinivasa-prasad-b-v",
@@ -1550,7 +1552,7 @@ export const mockDoctors = {
         "Extensive experience, Comprehensive skillset, Advanced expertise"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.34
     },
     "dr-srikanth-m": {
       "id": "dr-srikanth-m",
@@ -1576,7 +1578,7 @@ export const mockDoctors = {
         "International Training & Credentials"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.24
     },
     "dr-smita-mishra": {
       "id": "dr-smita-mishra",
@@ -1602,7 +1604,7 @@ export const mockDoctors = {
         "Excellence in non-invasive cardiology"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.28
     },
     "dr-siddhartha-ghosh": {
       "id": "dr-siddhartha-ghosh",
@@ -1628,7 +1630,7 @@ export const mockDoctors = {
         "Charitable Trust for neurosurgeries"
       ],
       "patientCount": 20000,
-      "successRate": 97.0
+      "successRate": 95.43
     },
     "dr-shilpa-saple": {
       "id": "dr-shilpa-saple",
@@ -1654,7 +1656,7 @@ export const mockDoctors = {
         "25+ Years Experience"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.43
     },
     "dr-shashidhar": {
       "id": "dr-shashidhar",
@@ -1680,7 +1682,7 @@ export const mockDoctors = {
         "Pioneer in Cardiac Care: Groundbreaking technologies"
       ],
       "patientCount": 10000,
-      "successRate": 99.0
+      "successRate": 95.22
     },
     "dr-sharad-sheth": {
       "id": "dr-sharad-sheth",
@@ -1706,7 +1708,7 @@ export const mockDoctors = {
         "Expert in Kidney Transplantation"
       ],
       "patientCount": 530,
-      "successRate": 95.0
+      "successRate": 95.29
     },
     "dr-shakti-bhan-khanna": {
       "id": "dr-shakti-bhan-khanna",
@@ -1732,7 +1734,7 @@ export const mockDoctors = {
         "Renowned for surgical innovation contributions"
       ],
       "patientCount": 10000,
-      "successRate": 96.0
+      "successRate": 95.33
     },
     "dr-sejal-shah": {
       "id": "dr-sejal-shah",
@@ -1758,7 +1760,7 @@ export const mockDoctors = {
         "Specialized in invasive and fetal cardiology"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.4
     },
     "dr-saurabh-rawall": {
       "id": "dr-saurabh-rawall",
@@ -1784,7 +1786,7 @@ export const mockDoctors = {
         "Committed to advanced techniques"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.31
     },
     "dr-satya-gupta": {
       "id": "dr-satya-gupta",
@@ -1810,7 +1812,7 @@ export const mockDoctors = {
         "Pioneer in Tajikistan"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.08
     },
     "dr-satish-n": {
       "id": "dr-satish-n",
@@ -1836,7 +1838,7 @@ export const mockDoctors = {
         "Extensive experience in surgical practice"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.22
     },
     "dr-sanjay-verma": {
       "id": "dr-sanjay-verma",
@@ -1862,7 +1864,7 @@ export const mockDoctors = {
         "Advanced GI Surgical Care"
       ],
       "patientCount": 30000,
-      "successRate": 96.0
+      "successRate": 95.17
     },
     "dr-sanjay-gogoi": {
       "id": "dr-sanjay-gogoi",
@@ -1888,7 +1890,7 @@ export const mockDoctors = {
         "First in India with Pediatric Robotic Surgery"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.07
     },
     "dr-sandip-shah": {
       "id": "dr-sandip-shah",
@@ -1914,7 +1916,7 @@ export const mockDoctors = {
         "Prestigious fellowship from Switzerland"
       ],
       "patientCount": 10000,
-      "successRate": 98.0
+      "successRate": 95.45
     },
     "dr-sandeep-vaishya": {
       "id": "dr-sandeep-vaishya",
@@ -1940,7 +1942,7 @@ export const mockDoctors = {
         "Unmatched Experience"
       ],
       "patientCount": 15000,
-      "successRate": 99.0
+      "successRate": 95.16
     },
     "dr-sameer-kaul": {
       "id": "dr-sameer-kaul",
@@ -1966,7 +1968,7 @@ export const mockDoctors = {
         "Pioneering Innovations"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.05
     },
     "dr-salil-jain": {
       "id": "dr-salil-jain",
@@ -1992,7 +1994,7 @@ export const mockDoctors = {
         "Surgical options specialist"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.12
     },
     "dr-saket-goel": {
       "id": "dr-saket-goel",
@@ -2018,7 +2020,7 @@ export const mockDoctors = {
         "Vishist Chikitsak Ratan Award"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.25
     },
     "dr-sajan-k-hegde": {
       "id": "dr-sajan-k-hegde",
@@ -2044,7 +2046,7 @@ export const mockDoctors = {
         "Global leader in spinal surgery"
       ],
       "patientCount": 10000,
-      "successRate": 98.0
+      "successRate": 95.27
     },
     "dr-sabhyata-gupta": {
       "id": "dr-sabhyata-gupta",
@@ -2070,7 +2072,7 @@ export const mockDoctors = {
         "3. Holistic Women's Health Support"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.44
     },
     "dr-s-k-rajan": {
       "id": "dr-s-k-rajan",
@@ -2094,7 +2096,7 @@ export const mockDoctors = {
         "Areas of Interest: Minimally Invasive Surgery"
       ],
       "patientCount": 3000,
-      "successRate": 95.0
+      "successRate": 95.32
     },
     "dr-s-v-kotwal": {
       "id": "dr-s-v-kotwal",
@@ -2120,7 +2122,7 @@ export const mockDoctors = {
         "Specialized in complex reconstruction surgeries"
       ],
       "patientCount": 4300,
-      "successRate": 96.0
+      "successRate": 95.25
     },
     "dr-robert-mao": {
       "id": "dr-robert-mao",
@@ -2146,7 +2148,7 @@ export const mockDoctors = {
         "Expertise in advanced cardiac procedures"
       ],
       "patientCount": 10000,
-      "successRate": 97.0
+      "successRate": 95.23
     },
     "dr-robert-coelho": {
       "id": "dr-robert-coelho",
@@ -2172,7 +2174,7 @@ export const mockDoctors = {
         "Specialised in Complex Congenital Defects"
       ],
       "patientCount": 6000,
-      "successRate": 98.0
+      "successRate": 95.07
     },
     "dr-revathi-raj": {
       "id": "dr-revathi-raj",
@@ -2198,7 +2200,7 @@ export const mockDoctors = {
         "Internationally recognized expertise"
       ],
       "patientCount": 1500,
-      "successRate": 99.0
+      "successRate": 95.06
     },
     "dr-renu-raina-sehgal": {
       "id": "dr-renu-raina-sehgal",
@@ -2224,7 +2226,7 @@ export const mockDoctors = {
         "Skilled in Advanced Techniques"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.4
     },
     "dr-ravi-bhatia": {
       "id": "dr-ravi-bhatia",
@@ -2250,7 +2252,7 @@ export const mockDoctors = {
         "Specialised Neurosurgical Care Provider"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.28
     },
     "dr-ramya-mishra": {
       "id": "dr-ramya-mishra",
@@ -2276,7 +2278,7 @@ export const mockDoctors = {
         "Compassionate Patient Care"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.41
     },
     "dr-ramesh-sarin": {
       "id": "dr-ramesh-sarin",
@@ -2302,7 +2304,7 @@ export const mockDoctors = {
         "Prestigious Credentials"
       ],
       "patientCount": 10000,
-      "successRate": 98.0
+      "successRate": 95.16
     },
     "dr-ramesh-s-bilimagga": {
       "id": "dr-ramesh-s-bilimagga",
@@ -2328,7 +2330,7 @@ export const mockDoctors = {
         "Specialized Expertise in Radiotherapy"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.09
     },
     "dr-ramen-goel": {
       "id": "dr-ramen-goel",
@@ -2354,7 +2356,7 @@ export const mockDoctors = {
         "International Training and Recognition"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.18
     },
     "dr-ramani-narasimhan": {
       "id": "dr-ramani-narasimhan",
@@ -2380,7 +2382,7 @@ export const mockDoctors = {
         "39 Years Experience"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.08
     },
     "dr-rakesh-agarwal": {
       "id": "dr-rakesh-agarwal",
@@ -2406,7 +2408,7 @@ export const mockDoctors = {
         "Extensive Neurological Expertise"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.49
     },
     "dr-raju-vyas": {
       "id": "dr-raju-vyas",
@@ -2432,7 +2434,7 @@ export const mockDoctors = {
         "Appreciation Award"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.39
     },
     "dr-rajinder-yadav": {
       "id": "dr-rajinder-yadav",
@@ -2458,7 +2460,7 @@ export const mockDoctors = {
         "3. Pioneer in Minimally Invasive Techniques"
       ],
       "patientCount": 30000,
-      "successRate": 99.0
+      "successRate": 95.06
     },
     "dr-rajesh-sharma": {
       "id": "dr-rajesh-sharma",
@@ -2484,7 +2486,7 @@ export const mockDoctors = {
         "Expertise in cardiac ablation"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.09
     },
     "dr-rajesh-kumar-verma": {
       "id": "dr-rajesh-kumar-verma",
@@ -2510,7 +2512,7 @@ export const mockDoctors = {
         "Extensive Surgical Experience"
       ],
       "patientCount": 15000,
-      "successRate": 96.0
+      "successRate": 95.14
     },
     "dr-rajesh-kapoor": {
       "id": "dr-rajesh-kapoor",
@@ -2536,7 +2538,7 @@ export const mockDoctors = {
         "Cutting-edge care"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.41
     },
     "dr-rajat-kumar-gupta": {
       "id": "dr-rajat-kumar-gupta",
@@ -2562,7 +2564,7 @@ export const mockDoctors = {
         "Unmatched Experience"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.12
     },
     "dr-rajagopalan-krishnan": {
       "id": "dr-rajagopalan-krishnan",
@@ -2588,7 +2590,7 @@ export const mockDoctors = {
         "Specializes in various spinal surgeries"
       ],
       "patientCount": 10000,
-      "successRate": 99.0
+      "successRate": 95.42
     },
     "dr-rahul-bhargava": {
       "id": "dr-rahul-bhargava",
@@ -2614,7 +2616,7 @@ export const mockDoctors = {
         "Pioneer in Multiple Sclerosis transplant"
       ],
       "patientCount": 1500,
-      "successRate": 95.0
+      "successRate": 95.25
     },
     "dr-raghuram-sekhar": {
       "id": "dr-raghuram-sekhar",
@@ -2640,7 +2642,7 @@ export const mockDoctors = {
         "Comprehensive varicose vein solutions"
       ],
       "patientCount": 5000,
-      "successRate": 96.0
+      "successRate": 95.29
     },
     "dr-puneet-girdhar": {
       "id": "dr-puneet-girdhar",
@@ -2666,7 +2668,7 @@ export const mockDoctors = {
         "Well-Recognized Contributions"
       ],
       "patientCount": 15000,
-      "successRate": 97.0
+      "successRate": 95.06
     },
     "dr-priyadarshan-k": {
       "id": "dr-priyadarshan-k",
@@ -2692,7 +2694,7 @@ export const mockDoctors = {
         "Recognized by Karnataka government"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.05
     },
     "dr-prita-trehan": {
       "id": "dr-prita-trehan",
@@ -2718,7 +2720,7 @@ export const mockDoctors = {
         "Specialised Expertise"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.44
     },
     "dr-pranathi-gutta": {
       "id": "dr-pranathi-gutta",
@@ -2744,7 +2746,7 @@ export const mockDoctors = {
         "International credentials from Royal College"
       ],
       "patientCount": 10000,
-      "successRate": 95.0
+      "successRate": 95.35
     },
     "dr-pradeep-chowbey": {
       "id": "dr-pradeep-chowbey",
@@ -2770,7 +2772,7 @@ export const mockDoctors = {
         "Surgeon to Renowned Personalities"
       ],
       "patientCount": 10000,
-      "successRate": 96.0
+      "successRate": 95.31
     },
     "dr-philomena-vaz": {
       "id": "dr-philomena-vaz",
@@ -2796,7 +2798,7 @@ export const mockDoctors = {
         "Comprehensive women's health services"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.18
     },
     "dr-pawan-rawal": {
       "id": "dr-pawan-rawal",
@@ -2821,7 +2823,7 @@ export const mockDoctors = {
         "Young Investigator Award"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.09
     },
     "dr-parul-katiyar": {
       "id": "dr-parul-katiyar",
@@ -2847,7 +2849,7 @@ export const mockDoctors = {
         "Expert hysteroscopic surgeon"
       ],
       "patientCount": 3000,
-      "successRate": 99.0
+      "successRate": 95.15
     },
     "dr-parul-gupta-khanna": {
       "id": "dr-parul-gupta-khanna",
@@ -2873,7 +2875,7 @@ export const mockDoctors = {
         "Specialized focus on challenges"
       ],
       "patientCount": 10000,
-      "successRate": 95.0
+      "successRate": 95.06
     },
     "dr-pankaj-venkatrao-deshpande": {
       "id": "dr-pankaj-venkatrao-deshpande",
@@ -2899,7 +2901,7 @@ export const mockDoctors = {
         "Life-Saving Dialysis Expertise"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.32
     },
     "dr-nutan-agarwal": {
       "id": "dr-nutan-agarwal",
@@ -2925,7 +2927,7 @@ export const mockDoctors = {
         "Recipient of Numerous Accolades"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.44
     },
     "dr-nitin-sood": {
       "id": "dr-nitin-sood",
@@ -2951,7 +2953,7 @@ export const mockDoctors = {
         "Internationally Recognized"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.15
     },
     "dr-niranjan-naik": {
       "id": "dr-niranjan-naik",
@@ -2977,7 +2979,7 @@ export const mockDoctors = {
         "Performed over 12,500 operations"
       ],
       "patientCount": 12500,
-      "successRate": 99.0
+      "successRate": 95.47
     },
     "dr-neville-solomon": {
       "id": "dr-neville-solomon",
@@ -3003,7 +3005,7 @@ export const mockDoctors = {
         "Highly Skilled"
       ],
       "patientCount": 3000,
-      "successRate": 95.0
+      "successRate": 95.47
     },
     "dr-neha-gupta": {
       "id": "dr-neha-gupta",
@@ -3027,7 +3029,7 @@ export const mockDoctors = {
         "Six gold medals, Pfizer Gold Medal, Bhamashah Award"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.17
     },
     "dr-neeraj-awasthy": {
       "id": "dr-neeraj-awasthy",
@@ -3053,7 +3055,7 @@ export const mockDoctors = {
         "Prolific Speaker and Writer"
       ],
       "patientCount": 10000,
-      "successRate": 97.0
+      "successRate": 95.28
     },
     "dr-naveen-bhamri": {
       "id": "dr-naveen-bhamri",
@@ -3077,7 +3079,7 @@ export const mockDoctors = {
         "FSCAI (USA), FESC, Vashistha Chikitsa Ratan Award"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.07
     },
     "dr-nagraj-gururaj-huilgol": {
       "id": "dr-nagraj-gururaj-huilgol",
@@ -3101,7 +3103,7 @@ export const mockDoctors = {
         "Haldar Memorial Oration Award"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.01
     },
     "dr-n-ragavan": {
       "id": "dr-n-ragavan",
@@ -3127,7 +3129,7 @@ export const mockDoctors = {
         "Expert in Uro-Oncology"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.05
     },
     "dr-murugan-n": {
       "id": "dr-murugan-n",
@@ -3153,7 +3155,7 @@ export const mockDoctors = {
         "Comprehensive Treatment of Liver Diseases"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.39
     },
     "dr-mukut-minz": {
       "id": "dr-mukut-minz",
@@ -3179,7 +3181,7 @@ export const mockDoctors = {
         "Pioneer in Renal Transplantation"
       ],
       "patientCount": 3500,
-      "successRate": 97.0
+      "successRate": 95.33
     },
     "dr-mriganka-sekhar-sharma": {
       "id": "dr-mriganka-sekhar-sharma",
@@ -3205,7 +3207,7 @@ export const mockDoctors = {
         "International training and recognition"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.31
     },
     "dr-moorthy-g": {
       "id": "dr-moorthy-g",
@@ -3231,7 +3233,7 @@ export const mockDoctors = {
         "Best Poster Award"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.3
     },
     "dr-meenakshi-dua": {
       "id": "dr-meenakshi-dua",
@@ -3257,7 +3259,7 @@ export const mockDoctors = {
         "Leader in Fertility Centre"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.04
     },
     "dr-manvinder-singh-sachdev": {
       "id": "dr-manvinder-singh-sachdev",
@@ -3283,7 +3285,7 @@ export const mockDoctors = {
         "Pioneer in Paediatric Cardiology Programs"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.05
     },
     "dr-manoj-miglani": {
       "id": "dr-manoj-miglani",
@@ -3309,7 +3311,7 @@ export const mockDoctors = {
         "Minimally Invasive Approach: Endoscopic procedures"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.05
     },
     "dr-manju-sinha": {
       "id": "dr-manju-sinha",
@@ -3335,7 +3337,7 @@ export const mockDoctors = {
         "Skilled Surgeon"
       ],
       "patientCount": 10000,
-      "successRate": 98.0
+      "successRate": 95.26
     },
     "dr-madan-mohan-reddy": {
       "id": "dr-madan-mohan-reddy",
@@ -3361,7 +3363,7 @@ export const mockDoctors = {
         "Award-Winning Surgeon"
       ],
       "patientCount": 535,
-      "successRate": 99.0
+      "successRate": 95.29
     },
     "dr-lavi-sindhu": {
       "id": "dr-lavi-sindhu",
@@ -3387,7 +3389,7 @@ export const mockDoctors = {
         "Expert in Fertility-Enhancing Surgeries"
       ],
       "patientCount": 2000,
-      "successRate": 95.0
+      "successRate": 95.11
     },
     "dr-lakshmi-kant-tripathi": {
       "id": "dr-lakshmi-kant-tripathi",
@@ -3413,7 +3415,7 @@ export const mockDoctors = {
         "Fellowship and Society Recognition"
       ],
       "patientCount": 53000,
-      "successRate": 96.0
+      "successRate": 95.44
     },
     "dr-kulbhushan-singh-dagar": {
       "id": "dr-kulbhushan-singh-dagar",
@@ -3439,7 +3441,7 @@ export const mockDoctors = {
         "3. Expert in Congenital Heart Defects"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.47
     },
     "dr-krishna-s-iyer": {
       "id": "dr-krishna-s-iyer",
@@ -3465,7 +3467,7 @@ export const mockDoctors = {
         "3. Innovator in Surgical Techniques"
       ],
       "patientCount": 10000,
-      "successRate": 98.0
+      "successRate": 95.37
     },
     "dr-kokkula-praneeth": {
       "id": "dr-kokkula-praneeth",
@@ -3491,7 +3493,7 @@ export const mockDoctors = {
         "Comprehensive Paediatric Neurosurgery Care"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.27
     },
     "dr-keshava-r": {
       "id": "dr-keshava-r",
@@ -3517,7 +3519,7 @@ export const mockDoctors = {
         "Fellow of prestigious cardiology societies"
       ],
       "patientCount": 10000,
-      "successRate": 95.0
+      "successRate": 95.03
     },
     "dr-kaustubh-patel": {
       "id": "dr-kaustubh-patel",
@@ -3543,7 +3545,7 @@ export const mockDoctors = {
         "Award-Winning Research"
       ],
       "patientCount": 10000,
-      "successRate": 96.0
+      "successRate": 95.06
     },
     "dr-kapil-kumar": {
       "id": "dr-kapil-kumar",
@@ -3569,7 +3571,7 @@ export const mockDoctors = {
         "Specializes in Lung Cancer"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.46
     },
     "dr-knk-shetty": {
       "id": "dr-knk-shetty",
@@ -3595,7 +3597,7 @@ export const mockDoctors = {
         "Innovative Surgical Approach"
       ],
       "patientCount": 10000,
-      "successRate": 98.0
+      "successRate": 95.14
     },
     "dr-kn-srivastava": {
       "id": "dr-kn-srivastava",
@@ -3621,7 +3623,7 @@ export const mockDoctors = {
         "Fellowship in Indian Association of Gastrointestinal Endo Surgeons"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.01
     },
     "dr-jyoti-anant-bobe": {
       "id": "dr-jyoti-anant-bobe",
@@ -3647,7 +3649,7 @@ export const mockDoctors = {
         "Multilingual and Culturally Sensitive"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.22
     },
     "dr-jayesh-sardhara": {
       "id": "dr-jayesh-sardhara",
@@ -3673,7 +3675,7 @@ export const mockDoctors = {
         "Driving Neurosurgical Advancement"
       ],
       "patientCount": 2800,
-      "successRate": 96.0
+      "successRate": 95.3
     },
     "dr-jayant-arora": {
       "id": "dr-jayant-arora",
@@ -3699,7 +3701,7 @@ export const mockDoctors = {
         "World-Renowned Figure"
       ],
       "patientCount": 15000,
-      "successRate": 97.0
+      "successRate": 95.47
     },
     "dr-jai-dev-wig": {
       "id": "dr-jai-dev-wig",
@@ -3725,7 +3727,7 @@ export const mockDoctors = {
         "MBBS from Punjab University"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.34
     },
     "dr-ips-oberoi": {
       "id": "dr-ips-oberoi",
@@ -3751,7 +3753,7 @@ export const mockDoctors = {
         "Trusted by Athletes"
       ],
       "patientCount": 7000,
-      "successRate": 99.0
+      "successRate": 95.24
     },
     "dr-i-p-s-kochar": {
       "id": "dr-i-p-s-kochar",
@@ -3777,7 +3779,7 @@ export const mockDoctors = {
         "Specialised Expertise"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.21
     },
     "dr-hitesh-garg": {
       "id": "dr-hitesh-garg",
@@ -3803,7 +3805,7 @@ export const mockDoctors = {
         "Multiple Fellowship Completion Awards"
       ],
       "patientCount": 8800,
-      "successRate": 96.0
+      "successRate": 95.44
     },
     "dr-hemant-sharma": {
       "id": "dr-hemant-sharma",
@@ -3829,7 +3831,7 @@ export const mockDoctors = {
         "Specialist in joint replacement"
       ],
       "patientCount": 1000,
-      "successRate": 97.0
+      "successRate": 95.32
     },
     "dr-harshavardhan-hegde": {
       "id": "dr-harshavardhan-hegde",
@@ -3855,7 +3857,7 @@ export const mockDoctors = {
         "Comprehensive Orthopaedic Care"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.39
     },
     "dr-harnarayan-singh": {
       "id": "dr-harnarayan-singh",
@@ -3881,7 +3883,7 @@ export const mockDoctors = {
         "Extensive Neurosurgical Expertise"
       ],
       "patientCount": 3500,
-      "successRate": 99.0
+      "successRate": 95.38
     },
     "dr-hari-goyal": {
       "id": "dr-hari-goyal",
@@ -3907,7 +3909,7 @@ export const mockDoctors = {
         "Prestigious Recognition"
       ],
       "patientCount": 1000,
-      "successRate": 95.0
+      "successRate": 95.48
     },
     "dr-h-s-bhatyal": {
       "id": "dr-h-s-bhatyal",
@@ -3933,7 +3935,7 @@ export const mockDoctors = {
         "Dr C.K.P. Menon Award"
       ],
       "patientCount": 10000,
-      "successRate": 96.0
+      "successRate": 95.15
     },
     "dr-giriraj-bora": {
       "id": "dr-giriraj-bora",
@@ -3959,7 +3961,7 @@ export const mockDoctors = {
         "Pioneer in Liver Transplantation"
       ],
       "patientCount": 1500,
-      "successRate": 97.0
+      "successRate": 95.31
     },
     "dr-gaurav-kharya": {
       "id": "dr-gaurav-kharya",
@@ -3985,7 +3987,7 @@ export const mockDoctors = {
         "Pioneer in Cell and Gene Therapy"
       ],
       "patientCount": 600,
-      "successRate": 98.0
+      "successRate": 95.1
     },
     "dr-g-balamurali": {
       "id": "dr-g-balamurali",
@@ -4011,7 +4013,7 @@ export const mockDoctors = {
         "Extensive experience and expertise"
       ],
       "patientCount": 1000,
-      "successRate": 99.0
+      "successRate": 95.39
     },
     "dr-dinesh-kansal": {
       "id": "dr-dinesh-kansal",
@@ -4037,7 +4039,7 @@ export const mockDoctors = {
         "Expert in Complex Cases"
       ],
       "patientCount": 11000,
-      "successRate": 95.0
+      "successRate": 95.02
     },
     "dr-deepak-govil": {
       "id": "dr-deepak-govil",
@@ -4061,7 +4063,7 @@ export const mockDoctors = {
         "President's Appreciation Award"
       ],
       "patientCount": 1000,
-      "successRate": 96.0
+      "successRate": 95.41
     },
     "dr-deepak-dubey": {
       "id": "dr-deepak-dubey",
@@ -4087,7 +4089,7 @@ export const mockDoctors = {
         "Award-Winning Excellence"
       ],
       "patientCount": 1250,
-      "successRate": 97.0
+      "successRate": 95.23
     },
     "dr-d-kagarwal": {
       "id": "dr-d-kagarwal",
@@ -4113,7 +4115,7 @@ export const mockDoctors = {
         "Exceptional Renal Transplantation Record"
       ],
       "patientCount": 1000,
-      "successRate": 98.0
+      "successRate": 95.32
     },
     "dr-brahm-datt-pathak": {
       "id": "dr-brahm-datt-pathak",
@@ -4139,7 +4141,7 @@ export const mockDoctors = {
         "Record-Holding Surgeon"
       ],
       "patientCount": 30000,
-      "successRate": 99.0
+      "successRate": 95.46
     },
     "dr-bipin-walia": {
       "id": "dr-bipin-walia",
@@ -4165,6 +4167,6 @@ export const mockDoctors = {
         "Specialised Expertise in Spinal Tumour Surgery"
       ],
       "patientCount": 7000,
-      "successRate": 95.0
-    }
+      "successRate": 95.25
+    },
 }; 
