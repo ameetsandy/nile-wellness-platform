@@ -267,7 +267,7 @@ const OrthopedicSurgery = () => {
                 <Link 
                   key={idx} 
                   to={doc.url}
-                  className="bg-white rounded-xl overflow-hidden border border-gray-100 hover:border-nile-600 transition-all duration-300"
+                  className="bg-white rounded-xl overflow-hidden border border-gray-100 transition-all duration-300"
                 >
                   <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                     <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">

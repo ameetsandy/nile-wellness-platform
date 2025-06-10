@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "@/components/common/ScrollToTop";
+import GoogleTranslate from "@/components/common/GoogleTranslate";
 import Index from "./pages/Index";
 import Doctors from "./pages/Doctors";
 import Hospitals from "./pages/Hospitals";
@@ -37,10 +38,9 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <GoogleTranslate />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/doctors" element={<Doctors />} />
@@ -71,6 +71,8 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Toaster />
+        <Sonner />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
