@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Languages } from 'lucide-react';
 
 const GoogleTranslate = () => {
   useEffect(() => {
@@ -16,21 +17,31 @@ const GoogleTranslate = () => {
         font-size: 0 !important;
       }
       .goog-te-gadget .goog-te-combo {
-        padding: 8px 12px !important;
+        padding: 10px 16px !important;
         border-radius: 8px !important;
-        border: 1px solid #e2e8f0 !important;
+        border: 2px solid #0f766e !important;
         background-color: white !important;
-        color: #1e293b !important;
+        color: #0f766e !important;
         font-size: 14px !important;
-        font-weight: 500 !important;
+        font-weight: 600 !important;
         cursor: pointer !important;
         transition: all 0.2s ease !important;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
-        min-width: 120px !important;
+        box-shadow: 0 2px 4px rgba(15, 118, 110, 0.1) !important;
+        min-width: 140px !important;
+        appearance: none !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") !important;
+        background-repeat: no-repeat !important;
+        background-position: right 12px center !important;
+        background-size: 16px !important;
+        padding-right: 40px !important;
       }
       .goog-te-gadget .goog-te-combo:hover {
+        background-color: #f0fdfa !important;
         border-color: #0f766e !important;
-        box-shadow: 0 2px 8px rgba(15, 118, 110, 0.1) !important;
+        box-shadow: 0 4px 12px rgba(15, 118, 110, 0.15) !important;
+        transform: translateY(-1px) !important;
       }
       .goog-te-gadget .goog-te-combo:focus {
         outline: none !important;
@@ -47,8 +58,11 @@ const GoogleTranslate = () => {
         display: none !important;
       }
       .goog-te-gadget .goog-te-combo option {
-        padding: 8px !important;
+        padding: 12px !important;
         font-size: 14px !important;
+        background-color: white !important;
+        color: #0f766e !important;
+        font-weight: 500 !important;
       }
       .goog-te-gadget .goog-te-combo option:hover {
         background-color: #f0fdfa !important;
@@ -80,9 +94,11 @@ const GoogleTranslate = () => {
   return (
     <div 
       id="google_translate_element" 
-      className="absolute top-4 right-4 z-[60] bg-white rounded-lg p-2 shadow-sm"
+      className="absolute top-[1.25rem] right-4 z-[60] bg-white rounded-lg p-2 shadow-md flex items-center gap-2"
       style={{ direction: 'ltr' }}
-    />
+    >
+      <Languages className="h-4 w-4 text-nile-600" />
+    </div>
   );
 };
 

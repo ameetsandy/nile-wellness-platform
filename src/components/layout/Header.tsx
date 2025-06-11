@@ -54,7 +54,7 @@ const Header = () => {
           </div>
 
           {/* Right side - Contact Information */}
-          <div className="flex items-center gap-6 mr-20">
+          <div className="flex items-center gap-6 mr-32">
             <div className="flex items-center text-nile-700 hover:text-nile-800 transition-colors">
               <Phone className="h-5 w-5 mr-2" />
               <span className="font-semibold">+91 12345 67890</span>
