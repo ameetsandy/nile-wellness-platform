@@ -46,7 +46,7 @@ const doctors = [
 const hospitals = [
   {
     name: "Indraprastha Apollo Hospital, New Delhi",
-    url: "http://localhost:8081/hospitals/indraprastha-apollo-hospital-new-delhi",
+    url: "/hospitals/indraprastha-apollo-hospital-new-delhi",
     accreditation: "JCI & NABL Accredited",
     beds: 710,
     established: 1995,
