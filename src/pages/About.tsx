@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -91,8 +90,8 @@ const About = () => {
   ];
   
   const openWhatsApp = () => {
-    const phoneNumber = "911234567890";
-    const message = "Hello, I'd like to learn more about Nile Wellness and your medical tourism services.";
+    const phoneNumber = "918076036335";
+    const message = "Hello, I'd like to learn more about Nile Wellness services.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
@@ -491,8 +490,8 @@ const About = () => {
                         <div>
                           <h4 className="font-medium mb-1">Call Us</h4>
                           <p className="text-white/80">
-                            +91 1234567890 (International)<br />
-                            1800-123-4567 (Toll Free)
+                            +91 80760 36335 (International)<br />
+                            Available 24/7
                           </p>
                         </div>
                       </div>
@@ -502,7 +501,7 @@ const About = () => {
                         <div>
                           <h4 className="font-medium mb-1">WhatsApp</h4>
                           <p className="text-white/80">
-                            +91 1234567890
+                            +91 80760 36335
                           </p>
                           <Button 
                             className="mt-2 bg-green-600 hover:bg-green-700"

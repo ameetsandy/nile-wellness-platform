@@ -49,9 +49,9 @@ const doctors = [
   }
 ];
 
-const openWhatsApp = (doctorName: string) => {
-  const phoneNumber = "911234567890"; // Replace with actual WhatsApp number
-  const message = `I'd like to consult with ${doctorName} for my treatment.`;
+const openWhatsApp = () => {
+  const phoneNumber = "918076036335"; // WhatsApp number
+  const message = "I'd like to book an appointment with one of your doctors.";
   const encodedMessage = encodeURIComponent(message);
   window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
 };
@@ -104,7 +104,7 @@ const PopularDoctors = () => {
                 <Button
                   size="sm"
                   className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
-                  onClick={() => openWhatsApp(doctor.name)}
+                  onClick={() => openWhatsApp()}
                 >
                   <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                 </Button>

@@ -238,7 +238,7 @@ const PatientStories = () => {
   };
   
   const openWhatsApp = () => {
-    const phoneNumber = "911234567890";
+    const phoneNumber = "918076036335";
     const message = "Hello, I'd like to learn more about treatments in India after reading patient stories.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");

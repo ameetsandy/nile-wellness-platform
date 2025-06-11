@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -38,8 +37,8 @@ const FreeOpinion = () => {
   };
   
   const openWhatsApp = () => {
-    const phoneNumber = "911234567890";
-    const message = "Hello, I'd like to get a free medical opinion. Can you guide me through the process?";
+    const phoneNumber = "918076036335";
+    const message = "I'd like to get a free medical opinion for my condition.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
@@ -180,8 +179,8 @@ const FreeOpinion = () => {
                       >
                         Continue <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
-                      <p className="text-center text-sm text-gray-500 mt-4">
-                        Prefer to share via WhatsApp? Contact us at +91 1234567890
+                      <p className="text-gray-600 text-center mt-4">
+                        Prefer to share via WhatsApp? Contact us at +91 80760 36335
                       </p>
                     </div>
                   </div>

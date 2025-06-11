@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
@@ -50,6 +49,13 @@ const FAQ = () => {
     }
   };
 
+  const openWhatsApp = () => {
+    const phoneNumber = "918076036335"; // WhatsApp number
+    const message = "I have questions about medical treatment in India.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+  };
+
   return (
     <section className="section-container bg-gray-50">
       <h2 className="section-title">Common Questions, Clear Answers</h2>
@@ -97,12 +103,7 @@ const FAQ = () => {
         </p>
         <button 
           className="mt-4 cta-primary"
-          onClick={() => {
-            const phoneNumber = "911234567890";
-            const message = "I have questions about medical treatment in India.";
-            const encodedMessage = encodeURIComponent(message);
-            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
-          }}
+          onClick={openWhatsApp}
         >
           Ask Us Anything
         </button>

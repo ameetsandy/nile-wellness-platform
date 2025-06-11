@@ -43,7 +43,7 @@ const HospitalDetail = () => {
   }, [id]);
 
   const openWhatsApp = (specialty?: string) => {
-    const phoneNumber = "911234567890";
+    const phoneNumber = "918076036335";
     const message = specialty 
       ? `I'm interested in ${specialty} treatment at ${hospital.name}.`
       : `I'm interested in treatment at ${hospital.name}.`;

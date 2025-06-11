@@ -1,10 +1,9 @@
-
 import { useState } from 'react';
 import { MessageSquare, X } from 'lucide-react';
 
 const WhatsAppButton = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const phoneNumber = "911234567890"; // Replace with actual WhatsApp number
+  const phoneNumber = "918076036335"; // WhatsApp number
   const defaultMessage = "Hi, I'm looking for medical treatment in India. Please assist me.";
   const encodedMessage = encodeURIComponent(defaultMessage);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;

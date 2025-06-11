@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const openWhatsApp = () => {
-    const phoneNumber = "911234567890"; // Replace with actual WhatsApp number
+    const phoneNumber = "918076036335"; // WhatsApp number
     const message = "I'd like to send my medical reports for a free opinion.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
 
   const callNow = () => {
-    window.location.href = "tel:+911234567890"; // Replace with actual phone number
+    window.location.href = "tel:+918076036335"; // Phone number
   };
 
   const flags = [

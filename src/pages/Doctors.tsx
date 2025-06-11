@@ -40,7 +40,7 @@ const Doctors = () => {
   };
 
   const openWhatsApp = (doctorName: string) => {
-    const phoneNumber = "911234567890"; // Replace with actual WhatsApp number
+    const phoneNumber = "918076036335"; // Replace with actual WhatsApp number
     const message = `I'd like to consult with ${doctorName} for my treatment.`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");

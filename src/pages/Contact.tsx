@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -25,7 +24,7 @@ const Contact = () => {
   };
   
   const openWhatsApp = () => {
-    const phoneNumber = "911234567890";
+    const phoneNumber = "918076036335";
     const message = "Hello, I'd like to inquire about medical tourism services in India.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
@@ -36,12 +35,12 @@ const Contact = () => {
       icon: <Phone className="h-8 w-8 text-nile-600" />,
       title: "Call Us",
       details: [
-        "+91 1234567890 (International)",
-        "1800-123-4567 (Toll Free)"
+        "+91 80760 36335 ",
+        "Available 24/7"
       ],
       action: {
         text: "Call Now",
-        onClick: () => window.open("tel:+911234567890"),
+        onClick: () => window.open("tel:+918076036335"),
         variant: "default"
       }
     },
@@ -49,7 +48,7 @@ const Contact = () => {
       icon: <MessageCircle className="h-8 w-8 text-nile-600" />,
       title: "WhatsApp",
       details: [
-        "+91 1234567890",
+        "+91 80760 36335",
         "Available 24/7"
       ],
       action: {
@@ -62,12 +61,12 @@ const Contact = () => {
       icon: <Mail className="h-8 w-8 text-nile-600" />,
       title: "Email",
       details: [
-        "info@nilewellness.com",
-        "support@nilewellness.com"
+        "care@nilewellness.com",
+        "24/7 Support"
       ],
       action: {
         text: "Email Us",
-        onClick: () => window.open("mailto:info@nilewellness.com"),
+        onClick: () => window.open("mailto:care@nilewellness.com"),
         variant: "outline"
       }
     }
@@ -390,21 +389,21 @@ const Contact = () => {
                     <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
                       <Phone className="h-12 w-12 mx-auto mb-3 text-white/90" />
                       <h3 className="font-semibold text-xl mb-1">Call Hotline</h3>
-                      <p className="text-white/80">+91 9876543210</p>
+                      <p className="text-white/80">+91 80760 36335</p>
                       <p className="text-sm text-white/70">24/7 Emergency Line</p>
                     </div>
                     
                     <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
                       <MessageCircle className="h-12 w-12 mx-auto mb-3 text-white/90" />
                       <h3 className="font-semibold text-xl mb-1">WhatsApp</h3>
-                      <p className="text-white/80">+91 1234567890</p>
+                      <p className="text-white/80">+91 80760 36335</p>
                       <p className="text-sm text-white/70">Immediate Response</p>
                     </div>
                     
                     <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
                       <Mail className="h-12 w-12 mx-auto mb-3 text-white/90" />
                       <h3 className="font-semibold text-xl mb-1">Email</h3>
-                      <p className="text-white/80">urgent@nilewellness.com</p>
+                      <p className="text-white/80">care@nilewellness.com</p>
                       <p className="text-sm text-white/70">Priority Handling</p>
                     </div>
                   </div>

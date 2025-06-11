@@ -40,6 +40,13 @@ const HowItWorks = () => {
     }
   ];
 
+  const openWhatsApp = () => {
+    const phoneNumber = "918076036335"; // WhatsApp number
+    const message = "I'd like to learn more about the medical treatment process in India.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
@@ -133,12 +140,7 @@ const HowItWorks = () => {
             </p>
             <button 
               className="inline-flex items-center gap-2 px-6 py-3 bg-nile-600 text-white text-base font-medium rounded-md hover:bg-nile-700 transition-colors"
-              onClick={() => {
-                const phoneNumber = "911234567890";
-                const message = "I'd like to learn more about medical treatment in India.";
-                const encodedMessage = encodeURIComponent(message);
-                window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
-              }}
+              onClick={openWhatsApp}
             >
               <MessageCircle className="h-5 w-5" />
               Start Your Journey Today

@@ -33,14 +33,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const BariatricSurgery = () => {
   const openWhatsApp = () => {
-    const phoneNumber = "911234567890"; // Replace with actual WhatsApp number
+    const phoneNumber = "918076036335"; // Replace with actual WhatsApp number
     const message = "Hello, I'd like to inquire about Bariatric Surgery in India.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
 
   const callNow = () => {
-    window.location.href = "tel:+911234567890"; // Replace with actual phone number
+    window.location.href = "tel:+918076036335"; // Replace with actual phone number
   };
 
   return (

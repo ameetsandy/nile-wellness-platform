@@ -88,7 +88,7 @@ const FreeServices = () => {
   ];
 
   const openWhatsApp = () => {
-    const phoneNumber = "911234567890";
+    const phoneNumber = "918076036335";
     const message = "Hello, I'd like to learn more about the free services you offer for medical tourists in India.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
