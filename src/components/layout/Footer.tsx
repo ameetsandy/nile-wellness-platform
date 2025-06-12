@@ -114,7 +114,18 @@ const Footer = () => {
             <div className="space-y-4 mt-6">
               <div className="flex items-start group">
                 <MapPin className="mr-3 h-5 w-5 text-nile-400 flex-shrink-0 mt-1 group-hover:text-white transition-colors" />
-                <p className="text-gray-300 group-hover:text-white transition-colors">123 Healthcare Avenue, New Delhi, India - 110001</p>
+                <a 
+                  href="https://maps.app.goo.gl/FPGTe7XgNRZAkB4s8" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-300 group-hover:text-white transition-colors"
+                >
+                  24, Ground Floor<br />
+                  Tower - Ivory<br />
+                  Emerald Hills, Emaar, Sector 65<br />
+                  Golf Course Extension Road<br />
+                  Gurgaon, India - 122101
+                </a>
               </div>
               <div className="flex items-center group">
                 <Phone className="mr-3 h-5 w-5 text-nile-400 flex-shrink-0 group-hover:text-white transition-colors" />

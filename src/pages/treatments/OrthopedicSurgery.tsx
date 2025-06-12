@@ -46,7 +46,7 @@ const doctors = [
 const hospitals = [
   {
     name: "Indraprastha Apollo Hospital, New Delhi",
-    url: "http://localhost:8081/hospitals/indraprastha-apollo-hospital-new-delhi",
+    url: "/hospitals/indraprastha-apollo-hospital-new-delhi",
     accreditation: "JCI & NABL Accredited",
     beds: 710,
     established: 1995,
@@ -58,7 +58,7 @@ const hospitals = [
   },
   {
     name: "BLK-Max Super Speciality Hospital, New Delhi",
-    url: "http://localhost:8081/hospitals/blk-hospital-new-delhi",
+    url: "/hospitals/blk-hospital-new-delhi",
     accreditation: "JCI & NABH Accredited",
     beds: 650,
     established: 1959,
@@ -70,7 +70,7 @@ const hospitals = [
   },
   {
     name: "Fortis Memorial Research Institute, Gurgaon",
-    url: "http://localhost:8081/hospitals/fortis-memorial-research-institute-gurgaon",
+    url: "/hospitals/fortis-memorial-research-institute-gurgaon",
     accreditation: "JCI & NABH Accredited",
     beds: 300,
     established: 2001,

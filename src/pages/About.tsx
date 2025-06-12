@@ -477,11 +477,18 @@ const About = () => {
                         <Building className="h-5 w-5 mr-3 flex-shrink-0 mt-1" />
                         <div>
                           <h4 className="font-medium mb-1">Our Office</h4>
-                          <p className="text-white/80">
-                            123 Healthcare Avenue<br />
-                            Connaught Place, New Delhi<br />
-                            India - 110001
-                          </p>
+                          <a 
+                            href="https://maps.app.goo.gl/FPGTe7XgNRZAkB4s8" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="text-white/80 hover:text-white transition-colors"
+                          >
+                            24, Ground Floor<br />
+                            Tower - Ivory<br />
+                            Emerald Hills, Emaar, Sector 65<br />
+                            Golf Course Extension Road<br />
+                            Gurgaon, India - 122101
+                          </a>
                         </div>
                       </div>
                       
