@@ -214,12 +214,18 @@ const Contact = () => {
                       <MapPin className="h-5 w-5 mr-3 flex-shrink-0 mt-1" />
                       <div>
                         <h4 className="font-medium mb-1">Our Address</h4>
-                        <p className="text-white/80">
-                          Nile Wellness International<br />
-                          123 Healthcare Avenue<br />
-                          Connaught Place, New Delhi<br />
-                          India - 110001
-                        </p>
+                        <a 
+                          href="https://maps.app.goo.gl/FPGTe7XgNRZAkB4s8" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-white/80 hover:text-white transition-colors"
+                        >
+                          24, Ground Floor<br />
+                          Tower - Ivory<br />
+                          Emerald Hills, Emaar, Sector 65<br />
+                          Golf Course Extension Road<br />
+                          Gurgaon, India - 122101
+                        </a>
                       </div>
                     </div>
                     
@@ -243,7 +249,7 @@ const Contact = () => {
                   
                   <div className="rounded-lg overflow-hidden shadow-lg mb-8">
                     <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.852804247793!2d77.2139149!3d28.631481999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sus!4v1649795612974!5m2!1sen!2sus" 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.852804247793!2d77.0689679!3d28.4033648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23b813a452e1%3A0xe812686293eb0947!2sEMAAR%20Club%20Beryl!5e0!3m2!1sen!2sin!4v1709795612974!5m2!1sen!2sin" 
                       width="100%" 
                       height="250" 
                       style={{ border: 0 }} 
@@ -258,11 +264,11 @@ const Contact = () => {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="flex items-center bg-white/10 p-3 rounded-lg">
                       <Globe className="h-5 w-5 mr-2 text-white/80" />
-                      <span className="text-sm">UAE: +971 5X XXX XXXX</span>
+                      <span className="text-sm"> +91 80760 36335                      </span>
                     </div>
                     <div className="flex items-center bg-white/10 p-3 rounded-lg">
                       <Globe className="h-5 w-5 mr-2 text-white/80" />
-                      <span className="text-sm">USA: +1 XXX XXX XXXX</span>
+                      <span className="text-sm">+91 80760 36335                      </span>
                     </div>
                     <div className="flex items-center bg-white/10 p-3 rounded-lg">
                       <Languages className="h-5 w-5 mr-2 text-white/80" />
