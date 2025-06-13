@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,17 +13,29 @@ const Footer = () => {
               Your trusted partner for medical tourism in India. We connect international patients with top doctors and hospitals.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700">
+              <a 
+                href="https://www.facebook.com/NileWellnessIndia/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700"
+              >
                 <Facebook size={18} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700">
+              <a 
+                href="https://www.linkedin.com/company/nile-wellness" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700"
+              >
                 <Linkedin size={18} />
+              </a>
+              <a 
+                href="https://www.youtube.com/@NileWellness" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700"
+              >
+                <Youtube size={18} />
               </a>
             </div>
           </div>
