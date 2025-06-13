@@ -6,7 +6,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Header = () => {
   const [isTreatmentsOpen, setIsTreatmentsOpen] = useState(false);
+  const [isSecondaryNavSticky, setIsSecondaryNavSticky] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const primaryHeaderRef = useRef<HTMLDivElement>(null);
+  const secondaryNavRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -15,9 +18,20 @@ const Header = () => {
       }
     };
 
+    const handleScroll = () => {
+      if (primaryHeaderRef.current && secondaryNavRef.current) {
+        const primaryHeaderBottom = primaryHeaderRef.current.getBoundingClientRect().bottom;
+        const secondaryNavHeight = secondaryNavRef.current.offsetHeight;
+        setIsSecondaryNavSticky(primaryHeaderBottom <= 0);
+      }
+    };
+
     document.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener('scroll', handleScroll);
+    
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -39,9 +53,9 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
-      {/* Top Header */}
-      <div className="bg-white">
+    <header className="z-50">
+      {/* Primary Header - Scrolls naturally */}
+      <div ref={primaryHeaderRef} className="bg-white">
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Left side - Logo and Mobile Menu */}
@@ -167,74 +181,91 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Desktop Navigation Bar */}
-      <div className="hidden md:block border-y border-gray-100">
-        <div className="container mx-auto px-4">
-          <nav className="flex justify-between items-center h-14">
-            {/* Left-aligned Menu Items */}
-            <div className="flex items-center gap-8">
-              <div className="relative group" ref={dropdownRef}>
-                <button
-                  onClick={() => setIsTreatmentsOpen(!isTreatmentsOpen)}
-                  className="flex items-center text-nile-700 hover:text-nile-900 font-medium transition-colors"
+      {/* Secondary Navigation Container */}
+      <div className="relative">
+        {/* Placeholder to prevent layout shift */}
+        <div 
+          className={cn(
+            "hidden md:block",
+            isSecondaryNavSticky ? "h-14" : "h-0"
+          )}
+        />
+        
+        {/* Secondary Navigation Bar */}
+        <div 
+          ref={secondaryNavRef}
+          className={cn(
+            "hidden md:block border-y border-gray-100 bg-white transition-all duration-200",
+            isSecondaryNavSticky ? "fixed top-0 left-0 right-0 shadow-sm" : ""
+          )}
+        >
+          <div className="container mx-auto px-4">
+            <nav className="flex justify-between items-center h-14">
+              {/* Left-aligned Menu Items */}
+              <div className="flex items-center gap-8">
+                <div className="relative group" ref={dropdownRef}>
+                  <button
+                    onClick={() => setIsTreatmentsOpen(!isTreatmentsOpen)}
+                    className="flex items-center text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                  >
+                    Treatments
+                    <ChevronDown className={cn(
+                      "ml-1 h-4 w-4 transition-transform duration-200",
+                      isTreatmentsOpen && "rotate-180"
+                    )} />
+                  </button>
+                  {isTreatmentsOpen && (
+                    <div className="absolute left-0 mt-2 w-64 rounded-lg shadow-lg bg-white ring-1 ring-nile-100 p-2 space-y-1 z-50">
+                      {treatments.map((treatment) => (
+                        <Link
+                          key={treatment.name}
+                          to={treatment.path}
+                          className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-nile-50 hover:text-nile-600 rounded-md transition-colors"
+                          onClick={() => setIsTreatmentsOpen(false)}
+                        >
+                          {treatment.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <Link 
+                  to="/doctors" 
+                  className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
                 >
-                  Treatments
-                  <ChevronDown className={cn(
-                    "ml-1 h-4 w-4 transition-transform duration-200",
-                    isTreatmentsOpen && "rotate-180"
-                  )} />
-                </button>
-                {isTreatmentsOpen && (
-                  <div className="absolute left-0 mt-2 w-64 rounded-lg shadow-lg bg-white ring-1 ring-nile-100 p-2 space-y-1 z-50">
-                    {treatments.map((treatment) => (
-                      <Link
-                        key={treatment.name}
-                        to={treatment.path}
-                        className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-nile-50 hover:text-nile-600 rounded-md transition-colors"
-                        onClick={() => setIsTreatmentsOpen(false)}
-                      >
-                        {treatment.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
+                  Top Doctors
+                </Link>
+                <Link 
+                  to="/hospitals" 
+                  className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                >
+                  Best Hospitals
+                </Link>
               </div>
-              <Link 
-                to="/doctors" 
-                className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
-              >
-                Top Doctors
-              </Link>
-              <Link 
-                to="/hospitals" 
-                className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
-              >
-                Best Hospitals
-              </Link>
-            </div>
 
-            {/* Right-aligned Menu Items */}
-            <div className="flex items-center gap-8">
-              <Link 
-                to="/free-services" 
-                className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
-              >
-                Free Services
-              </Link>
-              <Link 
-                to="/patient-stories" 
-                className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
-              >
-                Patient Stories
-              </Link>
-              <Link 
-                to="/plan-your-trip" 
-                className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
-              >
-                Plan Your Trip
-              </Link>
-            </div>
-          </nav>
+              {/* Right-aligned Menu Items */}
+              <div className="flex items-center gap-8">
+                <Link 
+                  to="/free-services" 
+                  className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                >
+                  Free Services
+                </Link>
+                <Link 
+                  to="/patient-stories" 
+                  className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                >
+                  Patient Stories
+                </Link>
+                <Link 
+                  to="/plan-your-trip" 
+                  className="text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                >
+                  Plan Your Trip
+                </Link>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
