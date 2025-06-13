@@ -197,77 +197,65 @@ const FreeOpinion = () => {
                   </div>
                   
                   <div className="p-6">
-                    <form onSubmit={submitForm}>
+                    <form 
+                      action="https://formsubmit.co/care@nilewellness.com" 
+                      method="POST"
+                      encType="multipart/form-data"
+                      className="space-y-6"
+                    >
+                      <input type="hidden" name="_subject" value="New Free Medical Opinion Request" />
+                      <input type="hidden" name="_captcha" value="false" />
+
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div>
                           <Label htmlFor="name" className="text-gray-700 mb-2 block">Full Name</Label>
-                          <Input id="name" placeholder="Enter your full name" required />
+                          <Input id="name" name="name" placeholder="Enter your full name" required />
                         </div>
                         <div>
                           <Label htmlFor="email" className="text-gray-700 mb-2 block">Email Address</Label>
-                          <Input id="email" type="email" placeholder="Enter your email" required />
+                          <Input id="email" name="email" type="email" placeholder="Enter your email" required />
                         </div>
                         <div>
                           <Label htmlFor="phone" className="text-gray-700 mb-2 block">WhatsApp Number</Label>
-                          <Input id="phone" placeholder="With country code" required />
+                          <Input id="phone" name="phone" placeholder="With country code" required />
                         </div>
                         <div>
                           <Label htmlFor="age" className="text-gray-700 mb-2 block">Age</Label>
-                          <Input id="age" type="number" placeholder="Your age" required />
-                        </div>
-                        <div>
-                          <Label htmlFor="gender" className="text-gray-700 mb-2 block">Gender</Label>
-                          <Select defaultValue="select">
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select gender" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="select" disabled>Select gender</SelectItem>
-                              <SelectItem value="male">Male</SelectItem>
-                              <SelectItem value="female">Female</SelectItem>
-                              <SelectItem value="other">Other</SelectItem>
-                            </SelectContent>
-                          </Select>
-                        </div>
-                        <div>
-                          <Label htmlFor="country" className="text-gray-700 mb-2 block">Country</Label>
-                          <Input id="country" placeholder="Your country" required />
+                          <Input id="age" name="age" type="number" placeholder="Your age" required />
                         </div>
                       </div>
-                      
+
                       <div className="mb-6">
-                        <Label htmlFor="treatment-type" className="text-gray-700 mb-2 block">Treatment Type</Label>
-                        <Select defaultValue="select">
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select treatment type" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="select" disabled>Select treatment type</SelectItem>
-                            <SelectItem value="cardiac">Cardiac/Heart Treatment</SelectItem>
-                            <SelectItem value="orthopedic">Orthopedic Surgery</SelectItem>
-                            <SelectItem value="oncology">Cancer Treatment</SelectItem>
-                            <SelectItem value="neurology">Neurology & Brain</SelectItem>
-                            <SelectItem value="transplant">Organ Transplant</SelectItem>
-                            <SelectItem value="fertility">Fertility Treatment</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      
-                      <div className="mb-6">
-                        <Label htmlFor="condition" className="text-gray-700 mb-2 block">Describe Your Medical Condition</Label>
+                        <Label htmlFor="condition" className="text-gray-700 mb-2 block">Medical Condition</Label>
                         <Textarea 
                           id="condition" 
-                          placeholder="Please provide details about your condition, symptoms, current diagnosis (if any), and treatments you've tried so far."
-                          className="min-h-[120px]"
+                          name="condition"
+                          placeholder="Please describe your medical condition in detail"
+                          className="min-h-[100px]"
                           required
                         />
                       </div>
-                      
+
+                      <div className="mb-6">
+                        <Label htmlFor="reports" className="text-gray-700 mb-2 block">Upload Medical Reports</Label>
+                        <Input 
+                          id="reports" 
+                          name="reports"
+                          type="file" 
+                          multiple 
+                          accept=".pdf,.jpg,.jpeg,.png"
+                          required
+                        />
+                        <p className="text-sm text-gray-500 mt-1">
+                          Accepted formats: PDF, JPG, PNG (Max 10MB per file)
+                        </p>
+                      </div>
+
                       <div className="flex items-start mb-8">
                         <div className="flex items-center h-5">
                           <input
                             id="terms"
+                            name="terms"
                             type="checkbox"
                             className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300"
                             required
@@ -281,16 +269,8 @@ const FreeOpinion = () => {
                       <Button 
                         type="submit"
                         className="w-full bg-nile-600 hover:bg-nile-700 py-6 h-auto text-base"
-                        disabled={isSubmitting}
                       >
-                        {isSubmitting ? (
-                          <>
-                            <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
-                            Submitting...
-                          </>
-                        ) : (
-                          <>Submit Request <ArrowRight className="ml-2 h-4 w-4" /></>
-                        )}
+                        Submit Request <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                       
                       <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-500">

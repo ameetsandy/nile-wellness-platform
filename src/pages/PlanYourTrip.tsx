@@ -14,6 +14,8 @@ import {
   ChevronRight,
   ChevronLeft,
   User as UserIcon,
+  HeartPulse,
+  DollarSign,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -140,7 +142,15 @@ const PlanYourTrip = () => {
                 </div>
               </div>
 
-              <form onSubmit={handleFormSubmit}>
+              <form 
+                action="https://formsubmit.co/care@nilewellness.com" 
+                method="POST"
+                onSubmit={handleFormSubmit}
+                className="space-y-6"
+              >
+                <input type="hidden" name="_subject" value="New Trip Planning Request from Website" />
+                <input type="hidden" name="_captcha" value="false" />
+
                 {step === 1 && (
                   <div className="space-y-4">
                     <h3 className="text-xl font-semibold mb-4">
@@ -153,9 +163,8 @@ const PlanYourTrip = () => {
                       <Input
                         type="text"
                         id="destination"
+                        name="destination"
                         placeholder="e.g., Delhi, Mumbai, Chennai"
-                        value={destination}
-                        onChange={(e) => setDestination(e.target.value)}
                         required
                       />
                     </div>
@@ -163,16 +172,9 @@ const PlanYourTrip = () => {
                       <Label>Preferred Travel Dates:</Label>
                       <Input
                         type="text"
+                        name="travelDates"
                         placeholder="YYYY-MM-DD"
-                        value={dateInput}
-                        onChange={(e) => {
-                          setDateInput(e.target.value);
-                          const date = new Date(e.target.value);
-                          if (isValid(date)) {
-                            setTravelDates(date);
-                          }
-                        }}
-                        className="w-full"
+                        required
                       />
                       <p className="text-sm text-gray-500 mt-1">
                         Enter your preferred travel date in YYYY-MM-DD format
@@ -185,29 +187,32 @@ const PlanYourTrip = () => {
                 {step === 2 && (
                   <div className="space-y-4">
                     <h3 className="text-xl font-semibold mb-4">
-                      Number of Travelers
+                      Travel Details
                     </h3>
                     <div>
                       <Label htmlFor="numTravelers">
-                        Number of Patients & Companions:
+                        Number of Travelers:
                       </Label>
-                      <Select
-                        value={numTravelers}
-                        onValueChange={setNumTravelers}
-                      >
-                        <SelectTrigger className="w-full">
-                          <SelectValue placeholder="Select number of travelers" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {Array.from({ length: 10 }, (_, i) => i + 1).map(
-                            (num) => (
-                              <SelectItem key={num} value={String(num)}>
-                                {num}
-                              </SelectItem>
-                            )
-                          )}
-                        </SelectContent>
-                      </Select>
+                      <Input
+                        type="number"
+                        id="numTravelers"
+                        name="numTravelers"
+                        min="1"
+                        placeholder="Enter number of travelers"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="medicalRequirements">
+                        Medical Requirements:
+                      </Label>
+                      <Textarea
+                        id="medicalRequirements"
+                        name="medicalRequirements"
+                        placeholder="Describe any special medical requirements or accommodations needed"
+                        className="min-h-[100px]"
+                        required
+                      />
                     </div>
                     <div className="flex justify-between">
                       <Button variant="ghost" onClick={prevStep}>
@@ -221,20 +226,29 @@ const PlanYourTrip = () => {
                 {step === 3 && (
                   <div className="space-y-4">
                     <h3 className="text-xl font-semibold mb-4">
-                      Medical Requirements
+                      Budget & Additional Information
                     </h3>
                     <div>
-                      <Label htmlFor="medicalRequirements">
-                        Briefly describe your medical condition and required
-                        treatment:
+                      <Label htmlFor="budget">
+                        Estimated Budget (USD):
+                      </Label>
+                      <Input
+                        type="text"
+                        id="budget"
+                        name="budget"
+                        placeholder="Enter your estimated budget"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="additionalNotes">
+                        Additional Notes:
                       </Label>
                       <Textarea
-                        id="medicalRequirements"
-                        placeholder="e.g., Heart valve replacement, Knee replacement, Cancer treatment"
-                        rows={4}
-                        value={medicalRequirements}
-                        onChange={(e) => setMedicalRequirements(e.target.value)}
-                        required
+                        id="additionalNotes"
+                        name="additionalNotes"
+                        placeholder="Any other information you'd like to share"
+                        className="min-h-[100px]"
                       />
                     </div>
                     <div className="flex justify-between">
@@ -248,31 +262,43 @@ const PlanYourTrip = () => {
 
                 {step === 4 && (
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold mb-4">Budget</h3>
+                    <h3 className="text-xl font-semibold mb-4">
+                      Contact Information
+                    </h3>
                     <div>
-                      <Label htmlFor="budget">
-                        What is your estimated budget for the entire trip
-                        (including treatment, travel, and accommodation)?
+                      <Label htmlFor="name">
+                        Full Name:
                       </Label>
                       <Input
                         type="text"
-                        id="budget"
-                        placeholder="e.g., $5000 - $10000 USD"
-                        value={budget}
-                        onChange={(e) => setBudget(e.target.value)}
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
                         required
                       />
                     </div>
                     <div>
-                      <Label htmlFor="additionalNotes">
-                        Additional Notes or Preferences:
+                      <Label htmlFor="email">
+                        Email Address:
                       </Label>
-                      <Textarea
-                        id="additionalNotes"
-                        placeholder="e.g., Preferred type of accommodation, dietary requirements, language assistance"
-                        rows={4}
-                        value={additionalNotes}
-                        onChange={(e) => setAdditionalNotes(e.target.value)}
+                      <Input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <Label htmlFor="phone">
+                        Phone/WhatsApp:
+                      </Label>
+                      <Input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="With country code"
+                        required
                       />
                     </div>
                     <div className="flex justify-between">
@@ -289,35 +315,31 @@ const PlanYourTrip = () => {
                     <h3 className="text-xl font-semibold mb-4">
                       Review Your Information
                     </h3>
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-2">
-                        <MapPin className="h-5 w-5 text-nile-600" />
+                    <div className="bg-gray-50 p-6 rounded-lg space-y-4">
+                      <div className="flex items-start gap-2">
+                        <MapPin className="h-5 w-5 text-nile-600 mt-0.5" />
                         <span className="font-semibold">Destination:</span>
-                        <span>{destination}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Calendar className="h-5 w-5 text-nile-600" />
-                        <span className="font-semibold">Travel Dates:</span>
-                        <span>
-                          {travelDates
-                            ? format(travelDates, "PPP")
-                            : "Not specified"}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Users className="h-5 w-5 text-nile-600" />
-                        <span className="font-semibold">Number of Travelers:</span>
-                        <span>{numTravelers}</span>
+                        <span>{destination || "Not specified"}</span>
                       </div>
                       <div className="flex items-start gap-2">
-                        <HelpCircle className="h-5 w-5 text-nile-600 mt-0.5" />
-                        <span className="font-semibold">Medical Requirements:</span>
-                        <span>{medicalRequirements}</span>
+                        <Calendar className="h-5 w-5 text-nile-600 mt-0.5" />
+                        <span className="font-semibold">Travel Dates:</span>
+                        <span>{dateInput || "Not specified"}</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <CreditCard className="h-5 w-5 text-nile-600" />
+                      <div className="flex items-start gap-2">
+                        <Users className="h-5 w-5 text-nile-600 mt-0.5" />
+                        <span className="font-semibold">Number of Travelers:</span>
+                        <span>{numTravelers || "Not specified"}</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <HeartPulse className="h-5 w-5 text-nile-600 mt-0.5" />
+                        <span className="font-semibold">Medical Requirements:</span>
+                        <span>{medicalRequirements || "None"}</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <DollarSign className="h-5 w-5 text-nile-600 mt-0.5" />
                         <span className="font-semibold">Budget:</span>
-                        <span>{budget}</span>
+                        <span>{budget || "Not specified"}</span>
                       </div>
                       <div className="flex items-start gap-2">
                         <UserIcon className="h-5 w-5 text-nile-600 mt-0.5" />
@@ -330,37 +352,8 @@ const PlanYourTrip = () => {
                       <Button variant="ghost" onClick={prevStep}>
                         Previous
                       </Button>
-                      <Button type="submit" disabled={isLoading}>
-                        {isLoading ? (
-                          <>
-                            Submitting...
-                            <svg
-                              className="animate-spin h-5 w-5 ml-2"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                            >
-                              <circle
-                                className="opacity-25"
-                                cx="12"
-                                cy="12"
-                                r="10"
-                                stroke="currentColor"
-                                strokeWidth="4"
-                              ></circle>
-                              <path
-                                className="opacity-75"
-                                fill="currentColor"
-                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                              ></path>
-                            </svg>
-                          </>
-                        ) : (
-                          <>
-                            Submit Request
-                            <CheckCircle className="ml-2 h-4 w-4" />
-                          </>
-                        )}
+                      <Button type="submit">
+                        Submit Request <CheckCircle className="ml-2 h-4 w-4" />
                       </Button>
                     </div>
                   </div>
