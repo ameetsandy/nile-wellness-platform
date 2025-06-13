@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { db } from "@/firebaseConfig";
-import { collection, addDoc } from "firebase/firestore";
 
 interface AppointmentFormProps {
   isOpen: boolean;
@@ -12,73 +10,30 @@ interface AppointmentFormProps {
 }
 
 const AppointmentForm = ({ isOpen, onClose, doctorName, formType }: AppointmentFormProps) => {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    treatment: "",
-  });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const validateForm = () => {
+  const validateForm = (formData: FormData) => {
     const newErrors: Record<string, string> = {};
+    const name = formData.get('name') as string;
+    const phone = formData.get('phone') as string;
+    const email = formData.get('email') as string;
     
-    if (!formData.name.trim()) {
+    if (!name?.trim()) {
       newErrors.name = "Name is required";
     }
     
-    if (!formData.phone.trim()) {
+    if (!phone?.trim()) {
       newErrors.phone = "Phone number is required";
-    } else if (!/^\+?[1-9]\d{1,14}$/.test(formData.phone)) {
+    } else if (!/^\+?[1-9]\d{1,14}$/.test(phone)) {
       newErrors.phone = "Please enter a valid phone number with country code";
     }
     
-    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       newErrors.email = "Please enter a valid email address";
     }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!validateForm()) {
-      return;
-    }
-
-    try {
-      // Prepare data for Firestore
-      const appointmentData = {
-        name: formData.name,
-        phone: formData.phone,
-        email: formData.email,
-        treatment: formData.treatment,
-        doctorName: doctorName || "N/A", // Include doctorName, default to "N/A" if not provided
-        formType: formType,
-        timestamp: new Date(), // Add a timestamp
-      };
-
-      // Add document to Firestore
-      const docRef = await addDoc(collection(db, "appointments"), appointmentData);
-      console.log("Document written with ID: ", docRef.id);
-      
-      // Clear form and close modal on success
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        treatment: "",
-      });
-      onClose();
-
-    } catch (e) {
-      console.error("Error adding document: ", e);
-      // Optionally show an error message to the user
-      alert("There was an error submitting your form. Please try again.");
-      onClose(); // Close form even on error for now, can be adjusted
-    }
   };
 
   if (!isOpen) return null;
@@ -109,15 +64,28 @@ const AppointmentForm = ({ isOpen, onClose, doctorName, formType }: AppointmentF
             </p>
           )}
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form 
+            action="https://formsubmit.co/care@nilewellness.com" 
+            method="POST"
+            onSubmit={(e) => {
+              if (!validateForm(new FormData(e.currentTarget))) {
+                e.preventDefault();
+              }
+            }}
+            className="space-y-4"
+          >
+            <input type="hidden" name="_subject" value={`New ${formType} Request from Website`} />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="doctorName" value={doctorName || "N/A"} />
+            <input type="hidden" name="formType" value={formType} />
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Name <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
-                value={formData.name}
-                onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                name="name"
                 className={`w-full p-2 border rounded-md ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
                 placeholder="Enter your full name"
               />
@@ -130,8 +98,7 @@ const AppointmentForm = ({ isOpen, onClose, doctorName, formType }: AppointmentF
               </label>
               <input
                 type="tel"
-                value={formData.phone}
-                onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                name="phone"
                 className={`w-full p-2 border rounded-md ${errors.phone ? 'border-red-500' : 'border-gray-300'}`}
                 placeholder="+91 9876543210"
               />
@@ -144,8 +111,7 @@ const AppointmentForm = ({ isOpen, onClose, doctorName, formType }: AppointmentF
               </label>
               <input
                 type="email"
-                value={formData.email}
-                onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                name="email"
                 className={`w-full p-2 border rounded-md ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
                 placeholder="Enter your email address"
               />
@@ -158,8 +124,7 @@ const AppointmentForm = ({ isOpen, onClose, doctorName, formType }: AppointmentF
               </label>
               <input
                 type="text"
-                value={formData.treatment}
-                onChange={(e) => setFormData(prev => ({ ...prev, treatment: e.target.value }))}
+                name="treatment"
                 className="w-full p-2 border border-gray-300 rounded-md"
                 placeholder="Specify the treatment or issue"
               />

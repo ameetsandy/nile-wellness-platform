@@ -127,23 +127,30 @@ const Contact = () => {
                     Fill out the form below and our team will get back to you within 24 hours. For urgent inquiries, please contact us directly via phone or WhatsApp.
                   </p>
                   
-                  <form onSubmit={submitForm}>
+                  <form 
+                    action="https://formsubmit.co/care@nilewellness.com" 
+                    method="POST"
+                    className="space-y-6"
+                  >
+                    <input type="hidden" name="_subject" value="New Contact Form Submission from Website" />
+                    <input type="hidden" name="_captcha" value="false" />
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                       <div>
                         <Label htmlFor="name" className="text-gray-700 mb-2 block">Full Name</Label>
-                        <Input id="name" placeholder="Enter your full name" required />
+                        <Input id="name" name="name" placeholder="Enter your full name" required />
                       </div>
                       <div>
                         <Label htmlFor="email" className="text-gray-700 mb-2 block">Email Address</Label>
-                        <Input id="email" type="email" placeholder="Enter your email" required />
+                        <Input id="email" name="email" type="email" placeholder="Enter your email" required />
                       </div>
                       <div>
                         <Label htmlFor="phone" className="text-gray-700 mb-2 block">Phone/WhatsApp</Label>
-                        <Input id="phone" placeholder="With country code" required />
+                        <Input id="phone" name="phone" placeholder="With country code" required />
                       </div>
                       <div>
                         <Label htmlFor="country" className="text-gray-700 mb-2 block">Country</Label>
-                        <Input id="country" placeholder="Your country" required />
+                        <Input id="country" name="country" placeholder="Your country" required />
                       </div>
                     </div>
                     
@@ -169,7 +176,8 @@ const Contact = () => {
                       <Label htmlFor="message" className="text-gray-700 mb-2 block">Your Message</Label>
                       <Textarea 
                         id="message" 
-                        placeholder="Please describe your inquiry in detail. If medical related, briefly mention your condition."
+                        name="message"
+                        placeholder="Tell us how we can help you"
                         className="min-h-[150px]"
                         required
                       />
@@ -179,6 +187,7 @@ const Contact = () => {
                       <div className="flex items-center h-5">
                         <input
                           id="terms"
+                          name="terms"
                           type="checkbox"
                           className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300"
                           required
@@ -192,16 +201,8 @@ const Contact = () => {
                     <Button 
                       type="submit"
                       className="w-full bg-nile-600 hover:bg-nile-700 py-6 h-auto text-base"
-                      disabled={isSubmitting}
                     >
-                      {isSubmitting ? (
-                        <>
-                          <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
-                          Sending...
-                        </>
-                      ) : (
-                        <>Send Message <Send className="ml-2 h-4 w-4" /></>
-                      )}
+                      Send Message <Send className="ml-2 h-4 w-4" />
                     </Button>
                   </form>
                 </div>
