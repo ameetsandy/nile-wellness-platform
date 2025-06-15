@@ -244,6 +244,12 @@ const PatientStories = () => {
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
 
+  const handleStoryWhatsAppClick = (story: any) => {
+    const message = `Hi, I'm interested in ${story.treatment} in India after reading ${story.patient}'s success story. Please assist me.`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
@@ -513,11 +519,12 @@ const PatientStories = () => {
                           </div>
                         </div>
                         <div className="mt-auto">
-                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
-                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                              Know More <ArrowRight className="ml-1 h-4 w-4" />
-                            </Button>
-                          </Link>
+                          <Button 
+                            className="w-full bg-nile-600 hover:bg-nile-700"
+                            onClick={() => handleStoryWhatsAppClick(story)}
+                          >
+                            Know More <ArrowRight className="ml-1 h-4 w-4" />
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -564,11 +571,12 @@ const PatientStories = () => {
                           </div>
                         </div>
                         <div className="mt-auto">
-                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
-                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                              Know More <ArrowRight className="ml-1 h-4 w-4" />
-                            </Button>
-                          </Link>
+                          <Button 
+                            className="w-full bg-nile-600 hover:bg-nile-700"
+                            onClick={() => handleStoryWhatsAppClick(story)}
+                          >
+                            Know More <ArrowRight className="ml-1 h-4 w-4" />
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -614,11 +622,12 @@ const PatientStories = () => {
                           </div>
                         </div>
                         <div className="mt-auto">
-                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
-                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                              Know More <ArrowRight className="ml-1 h-4 w-4" />
-                            </Button>
-                          </Link>
+                          <Button 
+                            className="w-full bg-nile-600 hover:bg-nile-700"
+                            onClick={() => handleStoryWhatsAppClick(story)}
+                          >
+                            Know More <ArrowRight className="ml-1 h-4 w-4" />
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -664,11 +673,12 @@ const PatientStories = () => {
                           </div>
                         </div>
                         <div className="mt-auto">
-                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
-                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                              Know More <ArrowRight className="ml-1 h-4 w-4" />
-                            </Button>
-                          </Link>
+                          <Button 
+                            className="w-full bg-nile-600 hover:bg-nile-700"
+                            onClick={() => handleStoryWhatsAppClick(story)}
+                          >
+                            Know More <ArrowRight className="ml-1 h-4 w-4" />
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -715,11 +725,12 @@ const PatientStories = () => {
                           </div>
                         </div>
                         <div className="mt-auto">
-                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
-                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                              Know More <ArrowRight className="ml-1 h-4 w-4" />
-                            </Button>
-                          </Link>
+                          <Button 
+                            className="w-full bg-nile-600 hover:bg-nile-700"
+                            onClick={() => handleStoryWhatsAppClick(story)}
+                          >
+                            Know More <ArrowRight className="ml-1 h-4 w-4" />
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -765,11 +776,12 @@ const PatientStories = () => {
                           </div>
                         </div>
                         <div className="mt-auto">
-                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
-                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                              Know More <ArrowRight className="ml-1 h-4 w-4" />
-                            </Button>
-                          </Link>
+                          <Button 
+                            className="w-full bg-nile-600 hover:bg-nile-700"
+                            onClick={() => handleStoryWhatsAppClick(story)}
+                          >
+                            Know More <ArrowRight className="ml-1 h-4 w-4" />
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -817,11 +829,12 @@ const PatientStories = () => {
                           </div>
                         </div>
                         <div className="mt-auto">
-                          <Link to={`/patient-stories/${story.id}`} className="inline-block w-full">
-                            <Button className="w-full bg-nile-600 hover:bg-nile-700">
-                              Know More <ArrowRight className="ml-1 h-4 w-4" />
-                            </Button>
-                          </Link>
+                          <Button 
+                            className="w-full bg-nile-600 hover:bg-nile-700"
+                            onClick={() => handleStoryWhatsAppClick(story)}
+                          >
+                            Know More <ArrowRight className="ml-1 h-4 w-4" />
+                          </Button>
                         </div>
                       </div>
                     </div>
