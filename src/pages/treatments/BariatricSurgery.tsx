@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import TreatmentCTA from "@/components/common/TreatmentCTA";
 import { 
   Phone, 
   MessageCircle, 
@@ -32,15 +33,16 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const BariatricSurgery = () => {
-  const openWhatsApp = () => {
-    const phoneNumber = "918076036335"; // Replace with actual WhatsApp number
-    const message = "Hello, I'd like to inquire about Bariatric Surgery in India.";
+  const handleWhatsAppClick = () => {
+    const message = "Hi, I'm interested in Bariatric Surgery in India. Please assist me.";
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
   };
 
-  const callNow = () => {
-    window.location.href = "tel:+918076036335"; // Replace with actual phone number
+  const handlePhoneClick = () => {
+    const message = "Hi, I would like to speak with a coordinator about Bariatric Surgery in India.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
   };
 
   return (
@@ -61,6 +63,7 @@ const BariatricSurgery = () => {
                 <div className="flex flex-col sm:flex-row gap-4 mb-4">
                   <Button 
                     className="bg-green-600 hover:bg-green-700 text-white text-base py-3 px-6 h-auto"
+                    onClick={handleWhatsAppClick}
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
                     Share Reports for Free Evaluation
@@ -68,6 +71,7 @@ const BariatricSurgery = () => {
                   <Button 
                     variant="outline"
                     className="text-base py-3 px-6 h-auto border-blue-600 text-blue-600 hover:bg-blue-50"
+                    onClick={handleWhatsAppClick}
                   >
                     <Phone className="mr-2 h-5 w-5" />
                     Speak to a Coordinator
@@ -261,7 +265,7 @@ const BariatricSurgery = () => {
             <div className="mt-8 text-center">
               <Button 
                 className="bg-nile-600 hover:bg-nile-700"
-                onClick={openWhatsApp}
+                onClick={handleWhatsAppClick}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Get a Personalized Quote
@@ -673,7 +677,7 @@ const BariatricSurgery = () => {
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button 
                   className="bg-white text-nile-600 hover:bg-gray-100 text-lg py-6 px-8 h-auto"
-                  onClick={openWhatsApp}
+                  onClick={handleWhatsAppClick}
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Share Reports for Free Evaluation
@@ -681,7 +685,7 @@ const BariatricSurgery = () => {
                 <Button 
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 text-lg py-6 px-8 h-auto"
-                  onClick={callNow}
+                  onClick={handlePhoneClick}
                 >
                   <Phone className="mr-2 h-5 w-5" />
                   Speak to a Bariatric Coordinator
