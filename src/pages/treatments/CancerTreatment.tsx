@@ -5,8 +5,21 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Microscope, Heart, Phone, MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import TreatmentCTA from "@/components/common/TreatmentCTA";
 
 const CancerTreatment = () => {
+  const handleWhatsAppClick = () => {
+    const message = "Hi, I'm interested in Cancer Treatment in India. Please assist me.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const handlePhoneClick = () => {
+    const message = "Hi, I would like to speak with a coordinator about Cancer Treatment in India.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -23,10 +36,17 @@ const CancerTreatment = () => {
                   Advanced, personalized cancer care at affordable costs
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-4">
-                  <Button className="bg-green-600 hover:bg-green-700 text-white text-base py-3 px-6 h-auto">
+                  <Button 
+                    className="bg-green-600 hover:bg-green-700 text-white text-base py-3 px-6 h-auto"
+                    onClick={handleWhatsAppClick}
+                  >
                     <MessageCircle className="mr-2 h-5 w-5" /> Share Reports for Free Evaluation
                   </Button>
-                  <Button variant="outline" className="text-base py-3 px-6 h-auto border-blue-600 text-blue-600 hover:bg-blue-50">
+                  <Button 
+                    variant="outline" 
+                    className="text-base py-3 px-6 h-auto border-blue-600 text-blue-600 hover:bg-blue-50"
+                    onClick={handlePhoneClick}
+                  >
                     <Phone className="mr-2 h-5 w-5" /> Speak to a Coordinator
                   </Button>
                 </div>
@@ -455,10 +475,17 @@ const CancerTreatment = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8">Need help with your cancer treatment journey?</h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Button className="bg-green-600 hover:bg-green-700 text-lg py-6">
+              <Button 
+                className="bg-green-600 hover:bg-green-700 text-lg py-6"
+                onClick={handleWhatsAppClick}
+              >
                 <MessageCircle className="mr-2 h-5 w-5" /> Send Reports for Free Opinion on WhatsApp
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6">
+              <Button 
+                variant="outline" 
+                className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6"
+                onClick={handlePhoneClick}
+              >
                 <Phone className="mr-2 h-5 w-5" /> Speak to Our Oncology Expert
               </Button>
             </div>

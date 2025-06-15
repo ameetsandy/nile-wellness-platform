@@ -13,40 +13,39 @@ const GoogleTranslate = () => {
     const style = document.createElement('style');
     style.textContent = `
       .goog-te-gadget {
-        font-family: inherit !important;
+        font-family: 'Poppins', sans-serif !important;
         font-size: 0 !important;
       }
       .goog-te-gadget .goog-te-combo {
-        padding: 10px 16px !important;
-        border-radius: 8px !important;
-        border: 2px solid #0f766e !important;
+        padding: 8px 16px !important;
+        border-radius: 6px !important;
+        border: 1px solid #0f766e !important;
         background-color: white !important;
         color: #0f766e !important;
         font-size: 14px !important;
-        font-weight: 600 !important;
+        font-weight: 500 !important;
         cursor: pointer !important;
         transition: all 0.2s ease !important;
-        box-shadow: 0 2px 4px rgba(15, 118, 110, 0.1) !important;
-        min-width: 140px !important;
+        box-shadow: 0 1px 2px rgba(15, 118, 110, 0.1) !important;
+        min-width: 120px !important;
         appearance: none !important;
         -webkit-appearance: none !important;
         -moz-appearance: none !important;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") !important;
         background-repeat: no-repeat !important;
         background-position: right 12px center !important;
-        background-size: 16px !important;
-        padding-right: 40px !important;
+        background-size: 14px !important;
+        padding-right: 36px !important;
       }
       .goog-te-gadget .goog-te-combo:hover {
         background-color: #f0fdfa !important;
         border-color: #0f766e !important;
-        box-shadow: 0 4px 12px rgba(15, 118, 110, 0.15) !important;
-        transform: translateY(-1px) !important;
+        box-shadow: 0 2px 4px rgba(15, 118, 110, 0.1) !important;
       }
       .goog-te-gadget .goog-te-combo:focus {
         outline: none !important;
         border-color: #0f766e !important;
-        box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1) !important;
+        box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.1) !important;
       }
       .goog-te-banner-frame {
         display: none !important;
@@ -58,7 +57,7 @@ const GoogleTranslate = () => {
         display: none !important;
       }
       .goog-te-gadget .goog-te-combo option {
-        padding: 12px !important;
+        padding: 8px 12px !important;
         font-size: 14px !important;
         background-color: white !important;
         color: #0f766e !important;
@@ -66,6 +65,30 @@ const GoogleTranslate = () => {
       }
       .goog-te-gadget .goog-te-combo option:hover {
         background-color: #f0fdfa !important;
+      }
+      .goog-te-menu-frame {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+        border: none !important;
+        border-radius: 6px !important;
+      }
+      .goog-te-menu2 {
+        border: none !important;
+        border-radius: 6px !important;
+        padding: 4px !important;
+      }
+      .goog-te-menu2-item {
+        padding: 8px 12px !important;
+        font-size: 14px !important;
+        color: #0f766e !important;
+        font-weight: 500 !important;
+        border-radius: 4px !important;
+      }
+      .goog-te-menu2-item:hover {
+        background-color: #f0fdfa !important;
+      }
+      .goog-te-menu2-item:focus {
+        background-color: #f0fdfa !important;
+        outline: none !important;
       }
     `;
     document.head.appendChild(style);

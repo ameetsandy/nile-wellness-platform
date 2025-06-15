@@ -5,9 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ActivitySquare, CheckCircle, Phone, MessageCircle, Bone, Flag, CircleDollarSign, ArrowRight, Calendar } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import TreatmentCTA from "@/components/common/TreatmentCTA";
 import { Helmet } from "react-helmet";
 
 const KneeReplacement = () => {
+  const handleWhatsAppClick = () => {
+    const message = "Hi, I'm interested in Knee Replacement Surgery in India. Please assist me.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <Helmet>
@@ -28,10 +35,17 @@ const KneeReplacement = () => {
                   Affordable joint care by top orthopedic surgeons
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-4">
-                  <Button className="bg-green-600 hover:bg-green-700 text-white text-base py-3 px-6 h-auto">
+                  <Button 
+                    className="bg-green-600 hover:bg-green-700 text-white text-base py-3 px-6 h-auto"
+                    onClick={handleWhatsAppClick}
+                  >
                     <MessageCircle className="mr-2 h-5 w-5" /> Share Reports for Free Evaluation
                   </Button>
-                  <Button variant="outline" className="text-base py-3 px-6 h-auto border-blue-600 text-blue-600 hover:bg-blue-50">
+                  <Button 
+                    variant="outline" 
+                    className="text-base py-3 px-6 h-auto border-blue-600 text-blue-600 hover:bg-blue-50"
+                    onClick={handleWhatsAppClick}
+                  >
                     <Phone className="mr-2 h-5 w-5" /> Speak to a Coordinator
                   </Button>
                 </div>
@@ -460,13 +474,20 @@ const KneeReplacement = () => {
         {/* CTA Section */}
         <section className="bg-nile-600 py-16 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8">Ready to regain your mobility?</h2>
+            <h2 className="text-3xl font-bold mb-8">Need help with your treatment journey?</h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Button className="bg-green-600 hover:bg-green-700 text-lg py-6">
-                <MessageCircle className="mr-2 h-5 w-5" /> WhatsApp Us Your Reports
+              <Button 
+                className="bg-green-600 hover:bg-green-700 text-lg py-6"
+                onClick={handleWhatsAppClick}
+              >
+                <MessageCircle className="mr-2 h-5 w-5" /> Share Reports for Free Assessment
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6">
-                <Phone className="mr-2 h-5 w-5" /> Speak to Our Medical Coordinator
+              <Button 
+                variant="outline" 
+                className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6"
+                onClick={handleWhatsAppClick}
+              >
+                <Phone className="mr-2 h-5 w-5" /> Speak to a Knee Specialist
               </Button>
             </div>
           </div>

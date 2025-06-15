@@ -16,7 +16,7 @@ const Footer = () => {
               <a 
                 href="https://www.facebook.com/NileWellnessIndia/" 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700"
               >
                 <Facebook size={18} />
@@ -24,7 +24,7 @@ const Footer = () => {
               <a 
                 href="https://www.linkedin.com/company/nile-wellness" 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700"
               >
                 <Linkedin size={18} />
@@ -32,7 +32,7 @@ const Footer = () => {
               <a 
                 href="https://www.youtube.com/@NileWellness" 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors p-2 bg-gray-800 rounded-full hover:bg-gray-700"
               >
                 <Youtube size={18} />

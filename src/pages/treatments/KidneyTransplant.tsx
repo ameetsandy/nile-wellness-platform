@@ -7,12 +7,24 @@ import { Activity, CircleDollarSign, Phone, MessageCircle, Calendar, ArrowRight 
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const KidneyTransplant = () => {
+  const handleWhatsAppClick = () => {
+    const message = "Hi, I'm interested in Kidney Transplant in India. Please assist me.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const handlePhoneClick = () => {
+    const message = "Hi, I would like to speak with a coordinator about Kidney Transplant in India.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-50 to-green-50 py-16">
+        <section className="bg-gradient-to-r from-blue-50 to-purple-50 py-16">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
               <div>
@@ -20,13 +32,20 @@ const KidneyTransplant = () => {
                   Kidney Transplant in India
                 </h1>
                 <p className="text-lg text-gray-700 mb-8">
-                  Safe, ethical, and advanced transplant procedures by experts
+                  Advanced kidney transplant procedures with world-class surgeons
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-4">
-                  <Button className="bg-green-600 hover:bg-green-700 text-white text-base py-3 px-6 h-auto">
+                  <Button 
+                    className="bg-green-600 hover:bg-green-700 text-white text-base py-3 px-6 h-auto"
+                    onClick={handleWhatsAppClick}
+                  >
                     <MessageCircle className="mr-2 h-5 w-5" /> Share Reports for Free Evaluation
                   </Button>
-                  <Button variant="outline" className="text-base py-3 px-6 h-auto border-blue-600 text-blue-600 hover:bg-blue-50">
+                  <Button 
+                    variant="outline" 
+                    className="text-base py-3 px-6 h-auto border-blue-600 text-blue-600 hover:bg-blue-50"
+                    onClick={handleWhatsAppClick}
+                  >
                     <Phone className="mr-2 h-5 w-5" /> Speak to a Coordinator
                   </Button>
                 </div>
@@ -446,12 +465,19 @@ const KidneyTransplant = () => {
         {/* CTA Section */}
         <section className="bg-nile-600 py-16 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8">Ready to explore kidney transplant options in India?</h2>
+            <h2 className="text-3xl font-bold mb-8">Need help with your treatment journey?</h2>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Button className="bg-green-600 hover:bg-green-700 text-lg py-6">
+              <Button 
+                className="bg-green-600 hover:bg-green-700 text-lg py-6"
+                onClick={handleWhatsAppClick}
+              >
                 <MessageCircle className="mr-2 h-5 w-5" /> Send Your Reports via WhatsApp for Free Evaluation
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6">
+              <Button 
+                variant="outline" 
+                className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6"
+                onClick={handlePhoneClick}
+              >
                 <Phone className="mr-2 h-5 w-5" /> Speak to a Kidney Transplant Expert Now
               </Button>
             </div>

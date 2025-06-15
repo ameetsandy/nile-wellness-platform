@@ -72,9 +72,9 @@ const Header = () => {
                     <div className="p-4 border-b">
                       <Link to="/" className="flex items-center">
                         <img 
-                          src="https://i.ibb.co/ZRb7k2jp/Screenshot-2025-04-21-143211.png" 
+                          src="https://i.postimg.cc/NjWKdrzT/Screenshot-2025-06-14-192528.png" 
                           alt="Nile Wellness Logo" 
-                          className="h-10 w-auto"
+                          className="h-16 w-36"
                         />
                       </Link>
                     </div>
@@ -155,11 +155,11 @@ const Header = () => {
               </Sheet>
 
               {/* Logo - Now on the right */}
-              <Link to="/" className="flex items-center transition-transform hover:scale-105">
+              <Link to="/" className="flex items-center">
                 <img 
-                  src="https://i.ibb.co/ZRb7k2jp/Screenshot-2025-04-21-143211.png" 
+                  src="https://i.postimg.cc/NjWKdrzT/Screenshot-2025-06-14-192528.png" 
                   alt="Nile Wellness Logo" 
-                  className="h-12 md:h-14 w-auto"
+                  className="h-14 w-52"
                 />
               </Link>
             </div>
