@@ -117,7 +117,7 @@ const GoogleTranslate = () => {
   return (
     <div 
       id="google_translate_element" 
-      className="absolute top-[1.25rem] left-14 md:left-auto md:right-4 z-[60] bg-white rounded-lg p-1.5 md:p-2 shadow-md flex items-center gap-1.5 md:gap-2 scale-90 md:scale-100"
+      className="absolute top-[1rem] left-12 md:top-[1.25rem] md:left-auto md:right-4 z-[60] bg-white rounded-lg p-1.5 md:p-2 shadow-md flex items-center gap-1.5 md:gap-2 scale-90 md:scale-100"
       style={{ direction: 'ltr' }}
     >
       <Languages className="h-3.5 w-3.5 md:h-4 md:w-4 text-nile-600" />

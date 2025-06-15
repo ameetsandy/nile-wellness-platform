@@ -159,7 +159,7 @@ const Header = () => {
                 <img 
                   src="https://i.postimg.cc/NjWKdrzT/Screenshot-2025-06-14-192528.png" 
                   alt="Nile Wellness Logo" 
-                  className="h-14 w-52"
+                  className="h-10 w-36 md:h-14 md:w-52"
                 />
               </Link>
             </div>
