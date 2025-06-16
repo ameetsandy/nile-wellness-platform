@@ -480,7 +480,7 @@ const LiverTransplant = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6"
+                className="border-white text-nile-600 hover:bg-white hover:text-nile-600 text-lg py-6"
                 onClick={handleWhatsAppClick}
               >
                 <Phone className="mr-2 h-5 w-5" /> Speak to a Liver Specialist

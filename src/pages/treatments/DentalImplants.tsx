@@ -475,7 +475,7 @@ const DentalImplants = () => {
                 treatmentName="Dental Implants"
                 whatsappButtonText="Share Reports for Free Assessment"
                 phoneButtonText="Speak to a Dental Specialist"
-                className="text-white"
+                className="text-nile-600"
               />
             </div>
           </div>

@@ -475,7 +475,7 @@ const IVFFertility = () => {
                 treatmentName="IVF & Fertility Treatment"
                 whatsappButtonText="Share Reports for Free Assessment"
                 phoneButtonText="Speak to a Fertility Specialist"
-                className="text-white"
+                className="text-nile-600"
               />
             </div>
           </div>
