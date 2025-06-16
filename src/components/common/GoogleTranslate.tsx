@@ -1,7 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Languages } from 'lucide-react';
 
 const GoogleTranslate = () => {
+  const translateElementRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     // Add Google Translate script
     const script = document.createElement('script');
@@ -106,16 +108,89 @@ const GoogleTranslate = () => {
       );
     };
 
+    // Function to close the dropdown
+    const closeDropdown = () => {
+      const select = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+      if (select) {
+        select.blur();
+      }
+    };
+
+    // Handle clicks outside the dropdown
+    const handleClickOutside = (event: MouseEvent) => {
+      const dropdown = document.querySelector('.goog-te-menu-frame');
+      const trigger = document.querySelector('.goog-te-combo');
+      
+      if (dropdown && trigger) {
+        const isClickInside = dropdown.contains(event.target as Node) || trigger.contains(event.target as Node);
+        if (!isClickInside) {
+          closeDropdown();
+        }
+      }
+    };
+
+    // Handle touch events for mobile
+    const handleTouchOutside = (event: TouchEvent) => {
+      const dropdown = document.querySelector('.goog-te-menu-frame');
+      const trigger = document.querySelector('.goog-te-combo');
+      
+      if (dropdown && trigger) {
+        const isTouchInside = dropdown.contains(event.target as Node) || trigger.contains(event.target as Node);
+        if (!isTouchInside) {
+          closeDropdown();
+        }
+      }
+    };
+
+    // Handle back button press
+    const handleBackButton = () => {
+      const dropdown = document.querySelector('.goog-te-menu-frame');
+      if (dropdown) {
+        closeDropdown();
+      }
+    };
+
+    // Add mutation observer to detect dropdown state changes
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'childList') {
+          const dropdown = document.querySelector('.goog-te-menu-frame');
+          if (dropdown) {
+            // Dropdown is open, add event listeners
+            document.addEventListener('click', handleClickOutside);
+            document.addEventListener('touchstart', handleTouchOutside);
+            window.addEventListener('popstate', handleBackButton);
+          } else {
+            // Dropdown is closed, remove event listeners
+            document.removeEventListener('click', handleClickOutside);
+            document.removeEventListener('touchstart', handleTouchOutside);
+            window.removeEventListener('popstate', handleBackButton);
+          }
+        }
+      });
+    });
+
+    // Start observing the document body for changes
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
     return () => {
       // Cleanup
       document.body.removeChild(script);
       document.head.removeChild(style);
       delete window.googleTranslateElementInit;
+      observer.disconnect();
+      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener('touchstart', handleTouchOutside);
+      window.removeEventListener('popstate', handleBackButton);
     };
   }, []);
 
   return (
     <div 
+      ref={translateElementRef}
       id="google_translate_element" 
       className="absolute top-[1rem] left-12 md:top-[1.25rem] md:left-auto md:right-4 z-[60] bg-white rounded-lg p-1.5 md:p-2 shadow-md flex items-center gap-1.5 md:gap-2 scale-90 md:scale-100"
       style={{ direction: 'ltr' }}
