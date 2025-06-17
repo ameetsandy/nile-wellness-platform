@@ -7,12 +7,30 @@ import { ActivitySquare, CheckCircle, Phone, MessageCircle, Bone, Flag, CircleDo
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 import TreatmentCTA from "@/components/common/TreatmentCTA";
 import { Helmet } from "react-helmet";
+import AppointmentForm from "@/components/common/AppointmentForm";
+import { useState } from "react";
 
 const KneeReplacement = () => {
+  const [selectedDoctor, setSelectedDoctor] = useState<{name: string, formType: "appointment" | "second-opinion" | "reports"} | null>(null);
+
   const handleWhatsAppClick = () => {
     const message = "Hi, I'm interested in Knee Replacement Surgery in India. Please assist me.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const handleAppointmentClick = (doctorName: string, formType: "appointment" | "second-opinion" | "reports") => {
+    setSelectedDoctor({ name: doctorName, formType });
+  };
+
+  const handleWhatsAppDoctor = (doctorName: string) => {
+    const message = `Hi, I'm interested in consulting with ${doctorName} for Knee Replacement Surgery. Please assist me.`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const closeForm = () => {
+    setSelectedDoctor(null);
   };
 
   return (
@@ -207,12 +225,20 @@ const KneeReplacement = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleAppointmentClick("Dr. Ashok Rajgopal", "appointment");
+                      }}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleWhatsAppDoctor("Dr. Ashok Rajgopal");
+                      }}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
@@ -254,10 +280,10 @@ const KneeReplacement = () => {
                       Orthopaedic and Joint Replacement Surgeon
                     </p>
                     <p className="text-xs text-gray-500">
-                      Director
+                      Senior Consultant
                     </p>
                     <p className="text-gray-600 text-xs">
-                      SIMS Hospital, Vadapalani, Chennai, India
+                      Apollo Hospitals, Chennai, India
                     </p>
                   </div>
 
@@ -266,12 +292,20 @@ const KneeReplacement = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleAppointmentClick("Dr. C Vijay Bose", "appointment");
+                      }}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleWhatsAppDoctor("Dr. C Vijay Bose");
+                      }}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
@@ -484,7 +518,7 @@ const KneeReplacement = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6"
+                className="border-white text-nile-600 hover:bg-white hover:text-nile-600 text-lg py-6"
                 onClick={handleWhatsAppClick}
               >
                 <Phone className="mr-2 h-5 w-5" /> Speak to a Knee Specialist
@@ -495,6 +529,14 @@ const KneeReplacement = () => {
       </main>
       <Footer />
       <WhatsAppButton />
+      {selectedDoctor && (
+        <AppointmentForm
+          isOpen={true}
+          onClose={closeForm}
+          doctorName={selectedDoctor.name}
+          formType={selectedDoctor.formType}
+        />
+      )}
     </div>
   );
 };

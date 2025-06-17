@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
@@ -6,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Bone, User, Hospital, Calendar, MessageCircle, Phone, CheckCircle, ArrowRight, Shield, DollarSign } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import AppointmentForm from "@/components/common/AppointmentForm";
 
 const doctors = [
   {
@@ -130,10 +132,32 @@ const faqs = [
 ];
 
 const OrthopedicSurgery = () => {
+  const [selectedDoctor, setSelectedDoctor] = useState<{ name: string; formType: "appointment" | "second-opinion" | "reports" } | null>(null);
+
   const handleWhatsAppClick = () => {
     const message = "Hi, I'm interested in Orthopedic Surgery in India. Please assist me.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const handlePhoneClick = () => {
+    const message = "Hi, I would like to speak with a coordinator about Orthopedic Surgery in India.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const handleAppointmentClick = (doctorName: string) => {
+    setSelectedDoctor({ name: doctorName, formType: "appointment" });
+  };
+
+  const handleWhatsAppDoctor = (doctorName: string) => {
+    const message = `Hi, I'm interested in consulting with ${doctorName} for Orthopedic Surgery. Please assist me.`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const closeForm = () => {
+    setSelectedDoctor(null);
   };
 
   return (
@@ -277,9 +301,8 @@ const OrthopedicSurgery = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Orthopedic Surgeons in India</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {doctors.map((doc, idx) => (
-                <Link 
+                <div 
                   key={idx} 
-                  to={doc.url}
                   className="bg-white rounded-xl overflow-hidden border border-gray-100 transition-all duration-300"
                 >
                   <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
@@ -295,26 +318,37 @@ const OrthopedicSurgery = () => {
                     </div>
                   </div>
                   <div className="p-4">
-                    <h3 className="text-base font-semibold mb-1">{doc.name}</h3>
+                    <Link to={doc.url} className="text-base font-semibold mb-1 hover:text-nile-600">
+                      {doc.name}
+                    </Link>
                     <div className="space-y-1 mb-3">
                       <p className="text-sm text-gray-700 font-medium">{doc.specialty}</p>
                       <p className="text-xs text-gray-500">{doc.hospital}</p>
                       <p className="text-gray-600 text-xs">{doc.city}</p>
                     </div>
                     <div className="flex gap-2">
-                      <Button variant="outline" size="sm" className="flex-1 whitespace-nowrap text-xs py-1">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex-1 whitespace-nowrap text-xs py-1"
+                        onClick={() => handleAppointmentClick(doc.name)}
+                      >
                         <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                       </Button>
-                      <Button size="sm" className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1">
+                      <Button 
+                        size="sm" 
+                        className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                        onClick={() => handleWhatsAppDoctor(doc.name)}
+                      >
                         <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                       </Button>
                     </div>
-                    <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                    <Link to={doc.url} className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
                       View Full Profile
                       <ArrowRight className="ml-1 h-3 w-3" />
-                    </div>
+                    </Link>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -405,7 +439,7 @@ const OrthopedicSurgery = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6"
+                className="border-white text-nile-600 hover:bg-white hover:text-nile-600 text-lg py-6"
                 onClick={handleWhatsAppClick}
               >
                 <Phone className="mr-2 h-5 w-5" /> Speak to an Orthopedic Specialist
@@ -416,6 +450,14 @@ const OrthopedicSurgery = () => {
       </main>
       <WhatsAppButton />
       <Footer />
+      {selectedDoctor && (
+        <AppointmentForm
+          doctorName={selectedDoctor.name}
+          formType={selectedDoctor.formType}
+          onClose={closeForm}
+          isOpen={!!selectedDoctor}
+        />
+      )}
     </div>
   );
 };

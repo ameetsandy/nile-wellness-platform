@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 const Header = () => {
   const [isTreatmentsOpen, setIsTreatmentsOpen] = useState(false);
   const [isSecondaryNavSticky, setIsSecondaryNavSticky] = useState(false);
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const primaryHeaderRef = useRef<HTMLDivElement>(null);
   const secondaryNavRef = useRef<HTMLDivElement>(null);
@@ -35,6 +36,14 @@ const Header = () => {
     };
   }, []);
 
+  // Handle sheet open/close
+  const handleSheetOpenChange = (open: boolean) => {
+    setIsSheetOpen(open);
+    if (!open) {
+      setIsTreatmentsOpen(false);
+    }
+  };
+
   const treatments = [
     { name: "Heart Bypass Surgery", path: "/treatments/heart-bypass" },
     { name: "Knee Replacement", path: "/treatments/knee-replacement" },
@@ -61,7 +70,7 @@ const Header = () => {
             {/* Left side - Logo and Mobile Menu */}
             <div className="flex items-center justify-between w-full md:w-auto">
               {/* Mobile Menu Button - Now on the left */}
-              <Sheet>
+              <Sheet open={isSheetOpen} onOpenChange={handleSheetOpenChange}>
                 <SheetTrigger asChild className="md:hidden">
                   <button className="p-2 hover:bg-gray-100 rounded-md">
                     <Menu className="h-6 w-6 text-nile-700" />
@@ -88,11 +97,12 @@ const Header = () => {
                         <Link 
                           to="/contact" 
                           className="block w-full bg-nile-600 text-white px-4 py-2 rounded-md hover:bg-nile-700 transition-colors font-medium text-center"
+                          onClick={() => setIsSheetOpen(false)}
                         >
                           Contact Us
                         </Link>
                         
-                        <div className="space-y-2">
+                        <div className="space-y-2" ref={dropdownRef}>
                           <button
                             onClick={() => setIsTreatmentsOpen(!isTreatmentsOpen)}
                             className="flex items-center justify-between w-full text-nile-700 hover:text-nile-900 font-medium transition-colors"
@@ -110,7 +120,10 @@ const Header = () => {
                                   key={treatment.name}
                                   to={treatment.path}
                                   className="block text-sm text-gray-700 hover:text-nile-600 transition-colors"
-                                  onClick={() => setIsTreatmentsOpen(false)}
+                                  onClick={() => {
+                                    setIsTreatmentsOpen(false);
+                                    setIsSheetOpen(false);
+                                  }}
                                 >
                                   {treatment.name}
                                 </Link>
@@ -121,30 +134,35 @@ const Header = () => {
                         <Link 
                           to="/doctors" 
                           className="block text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                          onClick={() => setIsSheetOpen(false)}
                         >
                           Top Doctors
                         </Link>
                         <Link 
                           to="/hospitals" 
                           className="block text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                          onClick={() => setIsSheetOpen(false)}
                         >
                           Best Hospitals
                         </Link>
                         <Link 
                           to="/free-services" 
                           className="block text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                          onClick={() => setIsSheetOpen(false)}
                         >
                           Free Services
                         </Link>
                         <Link 
                           to="/patient-stories" 
                           className="block text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                          onClick={() => setIsSheetOpen(false)}
                         >
                           Patient Stories
                         </Link>
                         <Link 
                           to="/plan-your-trip" 
                           className="block text-nile-700 hover:text-nile-900 font-medium transition-colors"
+                          onClick={() => setIsSheetOpen(false)}
                         >
                           Plan Your Trip
                         </Link>

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import AppointmentForm from "@/components/common/AppointmentForm";
 
 const doctors = [
   {
@@ -57,6 +59,16 @@ const openWhatsApp = () => {
 };
 
 const PopularDoctors = () => {
+  const [selectedDoctor, setSelectedDoctor] = useState<{name: string, formType: "appointment" | "second-opinion" | "reports"} | null>(null);
+
+  const handleAppointmentClick = (doctorName: string, formType: "appointment" | "second-opinion" | "reports") => {
+    setSelectedDoctor({ name: doctorName, formType });
+  };
+
+  const closeForm = () => {
+    setSelectedDoctor(null);
+  };
+
   return (
     <section className="section-container bg-gray-50">
       <h2 className="section-title">Top-Rated Specialists at Your Service</h2>
@@ -98,7 +110,12 @@ const PopularDoctors = () => {
                 </p>
               </div>
               <div className="flex gap-2 mt-auto">
-                <Button variant="outline" size="sm" className="flex-1 whitespace-nowrap text-xs py-1">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex-1 whitespace-nowrap text-xs py-1"
+                  onClick={() => handleAppointmentClick(doctor.name, "appointment")}
+                >
                   <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                 </Button>
                 <Button
@@ -125,6 +142,15 @@ const PopularDoctors = () => {
           View More Doctors <ArrowRight className="ml-1 h-4 w-4" />
         </Link>
       </div>
+
+      {selectedDoctor && (
+        <AppointmentForm
+          isOpen={true}
+          onClose={closeForm}
+          doctorName={selectedDoctor.name}
+          formType={selectedDoctor.formType}
+        />
+      )}
     </section>
   );
 };

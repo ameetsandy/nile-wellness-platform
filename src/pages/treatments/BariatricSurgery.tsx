@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 import TreatmentCTA from "@/components/common/TreatmentCTA";
+import AppointmentForm from "@/components/common/AppointmentForm";
 import { 
   Phone, 
   MessageCircle, 
@@ -33,6 +34,8 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const BariatricSurgery = () => {
+  const [selectedDoctor, setSelectedDoctor] = useState<{ name: string; formType: "appointment" | "second-opinion" | "reports" } | null>(null);
+
   const handleWhatsAppClick = () => {
     const message = "Hi, I'm interested in Bariatric Surgery in India. Please assist me.";
     const encodedMessage = encodeURIComponent(message);
@@ -43,6 +46,20 @@ const BariatricSurgery = () => {
     const message = "Hi, I would like to speak with a coordinator about Bariatric Surgery in India.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const handleAppointmentClick = (doctorName: string) => {
+    setSelectedDoctor({ name: doctorName, formType: "appointment" });
+  };
+
+  const handleWhatsAppDoctor = (doctorName: string) => {
+    const message = `Hi, I'm interested in consulting with ${doctorName} for Bariatric Surgery. Please assist me.`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const closeForm = () => {
+    setSelectedDoctor(null);
   };
 
   return (
@@ -280,10 +297,7 @@ const BariatricSurgery = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Bariatric Surgeons in India</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Doctor 1 */}
-              <Link
-                to="/doctors/dr-satish-n"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -298,9 +312,9 @@ const BariatricSurgery = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
+                  <Link to="/doctors/dr-satish-n" className="text-base font-semibold mb-1 hover:text-nile-600">
                     Dr. Satish N
-                  </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -310,7 +324,7 @@ const BariatricSurgery = () => {
                       Senior Consultant
                     </p>
                     <p className="text-gray-600 text-xs">
-                      Manipal Hospital Formerly Columbia Asia Referral Hospital, Bangalore
+                      Apollo Hospitals, Bangalore
                     </p>
                   </div>
 
@@ -319,28 +333,27 @@ const BariatricSurgery = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Satish N")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Satish N")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link to="/doctors/dr-satish-n" className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
               {/* Doctor 2 */}
-              <Link
-                to="/doctors/dr-ramen-goel"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -355,9 +368,9 @@ const BariatricSurgery = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
+                  <Link to="/doctors/dr-ramen-goel" className="text-base font-semibold mb-1 hover:text-nile-600">
                     Dr. Ramen Goel
-                  </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -376,28 +389,27 @@ const BariatricSurgery = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Ramen Goel")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Ramen Goel")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link to="/doctors/dr-ramen-goel" className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
               {/* Doctor 3 */}
-              <Link
-                to="/doctors/dr-kn-srivastava"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -412,9 +424,9 @@ const BariatricSurgery = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
+                  <Link to="/doctors/dr-kn-srivastava" className="text-base font-semibold mb-1 hover:text-nile-600">
                     Dr. K.N. Srivastava
-                  </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -424,7 +436,7 @@ const BariatricSurgery = () => {
                       Senior Consultant
                     </p>
                     <p className="text-gray-600 text-xs">
-                      BLK-Max Super Speciality Hospital Delhi
+                      Max Super Speciality Hospital, New Delhi
                     </p>
                   </div>
 
@@ -433,22 +445,24 @@ const BariatricSurgery = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. K.N. Srivastava")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. K.N. Srivastava")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link to="/doctors/dr-kn-srivastava" className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -684,7 +698,7 @@ const BariatricSurgery = () => {
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 text-lg py-6 px-8 h-auto"
+                  className="border-white text-nile-600 hover:bg-white/10 text-lg py-6 px-8 h-auto"
                   onClick={handlePhoneClick}
                 >
                   <Phone className="mr-2 h-5 w-5" />
@@ -712,6 +726,14 @@ const BariatricSurgery = () => {
       </main>
       <WhatsAppButton />
       <Footer />
+      {selectedDoctor && (
+        <AppointmentForm
+          doctorName={selectedDoctor.name}
+          formType={selectedDoctor.formType}
+          onClose={closeForm}
+          isOpen={!!selectedDoctor}
+        />
+      )}
     </div>
   );
 };

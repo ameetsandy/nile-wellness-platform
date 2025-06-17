@@ -5,8 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Activity, CircleDollarSign, Phone, MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import AppointmentForm from "@/components/common/AppointmentForm";
+import { useState } from "react";
 
 const KidneyTransplant = () => {
+  const [selectedDoctor, setSelectedDoctor] = useState<{name: string, formType: "appointment" | "second-opinion" | "reports"} | null>(null);
+
   const handleWhatsAppClick = () => {
     const message = "Hi, I'm interested in Kidney Transplant in India. Please assist me.";
     const encodedMessage = encodeURIComponent(message);
@@ -17,6 +21,20 @@ const KidneyTransplant = () => {
     const message = "Hi, I would like to speak with a coordinator about Kidney Transplant in India.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const handleAppointmentClick = (doctorName: string, formType: "appointment" | "second-opinion" | "reports") => {
+    setSelectedDoctor({ name: doctorName, formType });
+  };
+
+  const handleWhatsAppDoctor = (doctorName: string) => {
+    const message = `Hi, I'm interested in consulting with ${doctorName} for Kidney Transplant. Please assist me.`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const closeForm = () => {
+    setSelectedDoctor(null);
   };
 
   return (
@@ -161,10 +179,7 @@ const KidneyTransplant = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Nephrologists in India</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Doctor 1 */}
-              <Link
-                to="/doctors/dr-arup-ratan-dutta"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -179,9 +194,11 @@ const KidneyTransplant = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
-                    Dr. Arup Ratan Dutta
-                  </h3>
+                  <Link to="/doctors/dr-arup-ratan-dutta">
+                    <h3 className="text-base font-semibold mb-1 hover:text-nile-600 transition-colors">
+                      Dr. Arup Ratan Dutta
+                    </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -200,28 +217,30 @@ const KidneyTransplant = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Arup Ratan Dutta", "appointment")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Arup Ratan Dutta")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link
+                    to="/doctors/dr-arup-ratan-dutta"
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
+                  >
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
               {/* Doctor 2 */}
-              <Link
-                to="/doctors/dr-salil-jain-nephrology-renal-sciences"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -236,9 +255,11 @@ const KidneyTransplant = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
-                    Dr. Salil Jain
-                  </h3>
+                  <Link to="/doctors/dr-salil-jain-nephrology-renal-sciences">
+                    <h3 className="text-base font-semibold mb-1 hover:text-nile-600 transition-colors">
+                      Dr. Salil Jain
+                    </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -248,7 +269,7 @@ const KidneyTransplant = () => {
                       Senior Consultant
                     </p>
                     <p className="text-gray-600 text-xs">
-                      Fortis Memorial Research Institute, Gurgaon, India
+                      Indraprastha Apollo Hospital, New Delhi, India
                     </p>
                   </div>
 
@@ -257,28 +278,30 @@ const KidneyTransplant = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Salil Jain", "appointment")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Salil Jain")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link
+                    to="/doctors/dr-salil-jain-nephrology-renal-sciences"
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
+                  >
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
               {/* Doctor 3 */}
-              <Link
-                to="/doctors/dr-lakshmi-kant-tripathi"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -293,9 +316,11 @@ const KidneyTransplant = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
-                    Dr. Lakshmi Kant Tripathi
-                  </h3>
+                  <Link to="/doctors/dr-lakshmi-kant-tripathi">
+                    <h3 className="text-base font-semibold mb-1 hover:text-nile-600 transition-colors">
+                      Dr. Lakshmi Kant Tripathi
+                    </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -314,22 +339,27 @@ const KidneyTransplant = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Lakshmi Kant Tripathi", "appointment")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Lakshmi Kant Tripathi")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link
+                    to="/doctors/dr-lakshmi-kant-tripathi"
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
+                  >
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -475,7 +505,7 @@ const KidneyTransplant = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6"
+                className="border-white text-nile-600 hover:bg-white hover:text-nile-600 text-lg py-6"
                 onClick={handlePhoneClick}
               >
                 <Phone className="mr-2 h-5 w-5" /> Speak to a Kidney Transplant Expert Now
@@ -486,6 +516,14 @@ const KidneyTransplant = () => {
       </main>
       <Footer />
       <WhatsAppButton />
+      {selectedDoctor && (
+        <AppointmentForm
+          isOpen={true}
+          onClose={closeForm}
+          doctorName={selectedDoctor.name}
+          formType={selectedDoctor.formType}
+        />
+      )}
     </div>
   );
 };

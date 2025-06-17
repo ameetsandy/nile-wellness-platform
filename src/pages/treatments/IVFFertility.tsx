@@ -6,8 +6,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Baby, HeartHandshake, Phone, MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 import TreatmentCTA from "@/components/common/TreatmentCTA";
+import AppointmentForm from "@/components/common/AppointmentForm";
+import { useState } from "react";
 
 const IVFFertility = () => {
+  const [selectedDoctor, setSelectedDoctor] = useState<{ name: string; formType: "appointment" | "second-opinion" | "reports" } | null>(null);
+
   const handleWhatsAppClick = () => {
     const message = "Hi, I'm interested in IVF Fertility Treatment in India. Please assist me.";
     const encodedMessage = encodeURIComponent(message);
@@ -18,6 +22,20 @@ const IVFFertility = () => {
     const message = "Hi, I would like to speak with a coordinator about IVF Fertility Treatment in India.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const handleAppointmentClick = (doctorName: string) => {
+    setSelectedDoctor({ name: doctorName, formType: "appointment" });
+  };
+
+  const handleWhatsAppDoctor = (doctorName: string) => {
+    const message = `Hi, I'm interested in consulting with ${doctorName} for IVF & Fertility Treatment. Please assist me.`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const closeForm = () => {
+    setSelectedDoctor(null);
   };
 
   return (
@@ -169,10 +187,7 @@ const IVFFertility = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top IVF Specialists in India</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Doctor 1 */}
-              <Link
-                to="/doctors/dr-rama-joshi-gynae-oncology"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -187,9 +202,9 @@ const IVFFertility = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
+                  <Link to="/doctors/dr-rama-joshi-gynae-oncology" className="text-base font-semibold mb-1 hover:text-nile-600">
                     Dr. Rama Joshi
-                  </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -208,28 +223,27 @@ const IVFFertility = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Rama Joshi")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Rama Joshi")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link to="/doctors/dr-rama-joshi-gynae-oncology" className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
               {/* Doctor 2 */}
-              <Link
-                to="/doctors/dr-veena-bhat-obstetrics-gynaecology"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -244,9 +258,9 @@ const IVFFertility = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
+                  <Link to="/doctors/dr-veena-bhat-obstetrics-gynaecology" className="text-base font-semibold mb-1 hover:text-nile-600">
                     Dr. Veena Bhat
-                  </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -265,28 +279,27 @@ const IVFFertility = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Veena Bhat")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Veena Bhat")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link to="/doctors/dr-veena-bhat-obstetrics-gynaecology" className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
               {/* Doctor 3 */}
-              <Link
-                to="/doctors/dr-ramya-misra"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -301,9 +314,9 @@ const IVFFertility = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
+                  <Link to="/doctors/dr-ramya-misra" className="text-base font-semibold mb-1 hover:text-nile-600">
                     Dr. Ramya Mishra
-                  </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -322,22 +335,24 @@ const IVFFertility = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Ramya Mishra")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Ramya Mishra")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link to="/doctors/dr-ramya-misra" className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -475,7 +490,7 @@ const IVFFertility = () => {
                 treatmentName="IVF & Fertility Treatment"
                 whatsappButtonText="Share Reports for Free Assessment"
                 phoneButtonText="Speak to a Fertility Specialist"
-                className="text-white"
+                className="text-nile-600"
               />
             </div>
           </div>
@@ -483,6 +498,14 @@ const IVFFertility = () => {
       </main>
       <Footer />
       <WhatsAppButton />
+      {selectedDoctor && (
+        <AppointmentForm
+          doctorName={selectedDoctor.name}
+          formType={selectedDoctor.formType}
+          onClose={closeForm}
+          isOpen={!!selectedDoctor}
+        />
+      )}
     </div>
   );
 };

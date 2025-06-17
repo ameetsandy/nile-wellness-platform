@@ -6,8 +6,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Microscope, Heart, Phone, MessageCircle, Calendar, ArrowRight } from "lucide-react";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 import TreatmentCTA from "@/components/common/TreatmentCTA";
+import AppointmentForm from "@/components/common/AppointmentForm";
+import { useState } from "react";
 
 const CancerTreatment = () => {
+  const [selectedDoctor, setSelectedDoctor] = useState<{name: string, formType: "appointment" | "second-opinion" | "reports"} | null>(null);
+
   const handleWhatsAppClick = () => {
     const message = "Hi, I'm interested in Cancer Treatment in India. Please assist me.";
     const encodedMessage = encodeURIComponent(message);
@@ -18,6 +22,20 @@ const CancerTreatment = () => {
     const message = "Hi, I would like to speak with a coordinator about Cancer Treatment in India.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const handleAppointmentClick = (doctorName: string, formType: "appointment" | "second-opinion" | "reports") => {
+    setSelectedDoctor({ name: doctorName, formType });
+  };
+
+  const handleWhatsAppDoctor = (doctorName: string) => {
+    const message = `Hi, I'm interested in consulting with ${doctorName} for Cancer Treatment. Please assist me.`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/918076036335?text=${encodedMessage}`, "_blank");
+  };
+
+  const closeForm = () => {
+    setSelectedDoctor(null);
   };
 
   return (
@@ -169,10 +187,7 @@ const CancerTreatment = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Top Oncologists in India</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Doctor 1 */}
-              <Link
-                to="/doctors/dr-vinod-raina-medical-oncology"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -187,9 +202,11 @@ const CancerTreatment = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
-                    Dr. Vinod Raina
-                  </h3>
+                  <Link to="/doctors/dr-vinod-raina-medical-oncology">
+                    <h3 className="text-base font-semibold mb-1 hover:text-nile-600 transition-colors">
+                      Dr. Vinod Raina
+                    </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
@@ -208,28 +225,30 @@ const CancerTreatment = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Vinod Raina", "appointment")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Vinod Raina")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link
+                    to="/doctors/dr-vinod-raina-medical-oncology"
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
+                  >
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
               {/* Doctor 2 */}
-              <Link
-                to="/doctors/dr-sameer-kaul"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -244,19 +263,21 @@ const CancerTreatment = () => {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
-                    Dr. Sameer Kaul
-                  </h3>
+                  <Link to="/doctors/dr-sameer-kaul">
+                    <h3 className="text-base font-semibold mb-1 hover:text-nile-600 transition-colors">
+                      Dr. Sameer Kaul
+                    </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
-                      Medical Oncologist
+                      Surgical Oncologist
                     </p>
                     <p className="text-xs text-gray-500">
                       Senior Consultant
                     </p>
                     <p className="text-gray-600 text-xs">
-                      Indraprastha Apollo Hospital, New Delhi, India
+                      Apollo Hospital, New Delhi, India
                     </p>
                   </div>
 
@@ -265,28 +286,30 @@ const CancerTreatment = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Sameer Kaul", "appointment")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Sameer Kaul")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link
+                    to="/doctors/dr-sameer-kaul"
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
+                  >
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
 
               {/* Doctor 3 */}
-              <Link
-                to="/doctors/dr-hari-goyal"
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-              >
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                 <div className="relative aspect-[2.5/1] bg-white pt-0 pb-4 px-4 flex items-center justify-center">
                   <div className="w-[200px] h-[200px] rounded-lg overflow-hidden">
                     <img
@@ -296,24 +319,26 @@ const CancerTreatment = () => {
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-nile-600 text-white py-2 px-3">
-                    <span className="text-sm font-medium block text-center">29+ Years of Experience</span>
+                    <span className="text-sm font-medium block text-center">25+ Years of Experience</span>
                   </div>
                 </div>
 
                 <div className="p-4">
-                  <h3 className="text-base font-semibold mb-1">
-                    Dr. Hari Goyal
-                  </h3>
+                  <Link to="/doctors/dr-hari-goyal">
+                    <h3 className="text-base font-semibold mb-1 hover:text-nile-600 transition-colors">
+                      Dr. Hari Goyal
+                    </h3>
+                  </Link>
 
                   <div className="space-y-1 mb-3">
                     <p className="text-sm text-gray-700 font-medium">
-                      Medical Oncologist
+                      Radiation Oncologist
                     </p>
                     <p className="text-xs text-gray-500">
                       Senior Consultant
                     </p>
                     <p className="text-gray-600 text-xs">
-                      BLK-Max Super Speciality Hospital, New Delhi, India
+                      Max Super Speciality Hospital, New Delhi, India
                     </p>
                   </div>
 
@@ -322,22 +347,27 @@ const CancerTreatment = () => {
                       variant="outline"
                       size="sm"
                       className="flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleAppointmentClick("Dr. Hari Goyal", "appointment")}
                     >
                       <Calendar className="mr-1 h-3 w-3" /> Request Appointment
                     </Button>
                     <Button
                       size="sm"
                       className="bg-green-600 hover:bg-green-700 flex-1 whitespace-nowrap text-xs py-1"
+                      onClick={() => handleWhatsAppDoctor("Dr. Hari Goyal")}
                     >
                       <MessageCircle className="mr-1 h-3 w-3" /> WhatsApp
                     </Button>
                   </div>
-                  <div className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs">
+                  <Link
+                    to="/doctors/dr-hari-goyal"
+                    className="mt-2 flex items-center justify-center text-nile-600 hover:text-nile-700 font-medium text-xs"
+                  >
                     View Full Profile
                     <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -481,9 +511,9 @@ const CancerTreatment = () => {
               >
                 <MessageCircle className="mr-2 h-5 w-5" /> Send Reports for Free Opinion on WhatsApp
               </Button>
-              <Button 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-nile-600 text-lg py-6"
+              <Button
+                variant="outline"
+                className="border-white text-nile-600 hover:bg-white hover:text-nile-600 text-lg py-6"
                 onClick={handlePhoneClick}
               >
                 <Phone className="mr-2 h-5 w-5" /> Speak to Our Oncology Expert
@@ -494,6 +524,14 @@ const CancerTreatment = () => {
       </main>
       <Footer />
       <WhatsAppButton />
+      {selectedDoctor && (
+        <AppointmentForm
+          isOpen={true}
+          onClose={closeForm}
+          doctorName={selectedDoctor.name}
+          formType={selectedDoctor.formType}
+        />
+      )}
     </div>
   );
 };
