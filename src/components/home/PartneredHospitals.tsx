@@ -84,8 +84,8 @@ const PartneredHospitals = () => {
             <div className="p-6 flex-grow flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <img 
-                  src={hospital.logo}
-                  alt={`${hospital.name} logo`}
+                  src="/Logo.png"
+                  alt="Hospital Logo"
                   className="h-10"
                 />
                 {renderStarRating(hospital.rating)}
