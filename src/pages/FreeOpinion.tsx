@@ -11,19 +11,7 @@ import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 const FreeOpinion = () => {
   const [formStep, setFormStep] = useState(1);
-  const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
-      const fileArray = Array.from(e.target.files).map(file => URL.createObjectURL(file));
-      setUploadedFiles(prev => [...prev, ...fileArray]);
-    }
-  };
-  
-  const removeFile = (index: number) => {
-    setUploadedFiles(uploadedFiles.filter((_, i) => i !== index));
-  };
   
   const submitForm = (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,6 +31,13 @@ const FreeOpinion = () => {
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
   };
 
+  const handleUploadWhatsApp = () => {
+    const phoneNumber = "918076036335";
+    const message = "I'd like to share my medical reports for a free medical opinion.";
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
@@ -54,7 +49,7 @@ const FreeOpinion = () => {
                 Get a Free Medical Opinion from India's Top Specialists
               </h1>
               <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-                Upload your medical reports and receive a detailed treatment plan, cost estimate, and hospital recommendations within 48 hours.
+                Share your medical reports via WhatsApp and receive a detailed treatment plan, cost estimate, and hospital recommendations within 48 hours.
               </p>
               
               <div className="flex flex-wrap justify-center gap-8 mb-10">
@@ -62,8 +57,8 @@ const FreeOpinion = () => {
                   <div className="w-14 h-14 rounded-full bg-nile-50 flex items-center justify-center mb-3">
                     <FileText className="h-7 w-7 text-nile-600" />
                   </div>
-                  <h3 className="font-medium text-gray-800 mb-1">Upload Reports</h3>
-                  <p className="text-sm text-gray-500 text-center">Share your medical documents</p>
+                  <h3 className="font-medium text-gray-800 mb-1">Share Reports</h3>
+                  <p className="text-sm text-gray-500 text-center">Send your medical documents via WhatsApp</p>
                 </div>
                 
                 <div className="bg-white p-5 rounded-lg shadow-md flex flex-col items-center max-w-[180px]">
@@ -94,105 +89,32 @@ const FreeOpinion = () => {
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button 
                   className="bg-green-600 hover:bg-green-700 text-base py-6 px-6 h-auto"
-                  onClick={openWhatsApp}
+                  onClick={handleUploadWhatsApp}
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Share Reports via WhatsApp
                 </Button>
                 <Button 
                   className="bg-nile-600 hover:bg-nile-700 text-base py-6 px-6 h-auto"
-                  onClick={() => window.scrollTo({ top: document.getElementById('upload-form')?.offsetTop, behavior: 'smooth' })}
+                  onClick={() => window.scrollTo({ top: document.getElementById('contact-form')?.offsetTop, behavior: 'smooth' })}
                 >
-                  <Upload className="mr-2 h-5 w-5" />
-                  Upload Reports Now
+                  <User className="mr-2 h-5 w-5" />
+                  Fill Contact Form
                 </Button>
               </div>
             </div>
           </div>
         </section>
         
-        <section id="upload-form" className="py-12">
+        <section id="contact-form" className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               {formStep === 1 && (
                 <div className="bg-white rounded-xl shadow-md overflow-hidden">
                   <div className="bg-nile-600 text-white p-6">
-                    <h2 className="text-2xl font-semibold">Upload Your Medical Reports</h2>
-                    <p className="text-nile-50">
-                      We accept all types of medical documents (Reports, Scans, Prescriptions, etc.)
-                    </p>
-                  </div>
-                  
-                  <div className="p-6">
-                    <div className="mb-8">
-                      <Label className="text-lg font-medium mb-2 block">Upload Files</Label>
-                      <div 
-                        className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:bg-gray-50 transition-colors cursor-pointer"
-                        onClick={() => document.getElementById('file-upload')?.click()}
-                      >
-                        <Upload className="h-10 w-10 text-gray-400 mx-auto mb-4" />
-                        <p className="text-gray-600 mb-2">Drag and drop your files here or click to browse</p>
-                        <p className="text-sm text-gray-500">
-                          Accepted formats: PDF, JPG, PNG (Max 10MB per file)
-                        </p>
-                        <Input 
-                          id="file-upload" 
-                          type="file" 
-                          multiple 
-                          className="hidden" 
-                          onChange={handleFileUpload}
-                        />
-                      </div>
-                      
-                      {uploadedFiles.length > 0 && (
-                        <div className="mt-6">
-                          <h3 className="font-medium text-gray-800 mb-3">Uploaded Files:</h3>
-                          <div className="space-y-2">
-                            {uploadedFiles.map((file, index) => (
-                              <div key={index} className="flex items-center justify-between bg-gray-50 p-3 rounded-lg">
-                                <div className="flex items-center">
-                                  <FilePlus className="h-5 w-5 text-nile-600 mr-2" />
-                                  <span className="text-gray-700 truncate max-w-xs">
-                                    File {index + 1}
-                                  </span>
-                                </div>
-                                <Button
-                                  variant="ghost"
-                                  size="sm"
-                                  className="text-red-500 hover:text-red-700 hover:bg-red-50"
-                                  onClick={() => removeFile(index)}
-                                >
-                                  <Ban className="h-4 w-4" />
-                                </Button>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                    
-                    <div className="mt-6">
-                      <Button 
-                        className="w-full bg-nile-600 hover:bg-nile-700 py-6 h-auto text-base"
-                        onClick={() => setFormStep(2)}
-                        disabled={uploadedFiles.length === 0}
-                      >
-                        Continue <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                      <p className="text-gray-600 text-center mt-4">
-                        Prefer to share via WhatsApp? Contact us at +91 80760 36335
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              )}
-              
-              {formStep === 2 && (
-                <div className="bg-white rounded-xl shadow-md overflow-hidden">
-                  <div className="bg-nile-600 text-white p-6">
                     <h2 className="text-2xl font-semibold">Tell Us About Your Medical Condition</h2>
                     <p className="text-nile-50">
-                      This information helps our doctors provide you with a more accurate opinion
+                      Share your details and our specialists will review your case
                     </p>
                   </div>
                   
@@ -200,7 +122,6 @@ const FreeOpinion = () => {
                     <form 
                       action="https://formsubmit.co/care@nilewellness.com" 
                       method="POST"
-                      encType="multipart/form-data"
                       className="space-y-6"
                     >
                       <input type="hidden" name="_subject" value="New Free Medical Opinion Request" />
@@ -234,21 +155,6 @@ const FreeOpinion = () => {
                           className="min-h-[100px]"
                           required
                         />
-                      </div>
-
-                      <div className="mb-6">
-                        <Label htmlFor="reports" className="text-gray-700 mb-2 block">Upload Medical Reports</Label>
-                        <Input 
-                          id="reports" 
-                          name="reports"
-                          type="file" 
-                          multiple 
-                          accept=".pdf,.jpg,.jpeg,.png"
-                          required
-                        />
-                        <p className="text-sm text-gray-500 mt-1">
-                          Accepted formats: PDF, JPG, PNG (Max 10MB per file)
-                        </p>
                       </div>
 
                       <div className="flex items-start mb-8">
@@ -289,7 +195,7 @@ const FreeOpinion = () => {
                     </div>
                     <h2 className="text-2xl font-semibold">Request Submitted Successfully!</h2>
                     <p className="text-green-50">
-                      Your medical reports have been received
+                      Your request has been received
                     </p>
                   </div>
                   
@@ -301,7 +207,7 @@ const FreeOpinion = () => {
                         <Clock className="h-8 w-8 text-nile-600 mx-auto mb-3" />
                         <h4 className="font-medium mb-2">Doctor Review</h4>
                         <p className="text-sm text-gray-600">
-                          Our specialist will review your reports within 24-48 hours
+                          Our specialist will review your case within 24-48 hours
                         </p>
                       </div>
                       <div className="bg-gray-50 p-4 rounded-lg">
@@ -327,10 +233,10 @@ const FreeOpinion = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Button 
                         className="bg-green-600 hover:bg-green-700"
-                        onClick={openWhatsApp}
+                        onClick={handleUploadWhatsApp}
                       >
                         <MessageCircle className="mr-2 h-4 w-4" />
-                        Contact Us on WhatsApp
+                        Share Reports via WhatsApp
                       </Button>
                       <Link to="/">
                         <Button variant="outline" className="w-full sm:w-auto">
