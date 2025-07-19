@@ -2,19 +2,19 @@ import { useEffect } from 'react';
 
 const GoogleAnalytics = () => {
   useEffect(() => {
-    // Add Google Analytics script
+    // Add Google Ads (gtag.js) script
     const script1 = document.createElement('script');
     script1.async = true;
-    script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-2EM7PKDET3';
+    script1.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17040751778';
     document.head.appendChild(script1);
 
-    // Initialize Google Analytics
-    window.dataLayer = window.dataLayer || [];
+    // Fix TypeScript error for window.dataLayer
+    (window as any).dataLayer = (window as any).dataLayer || [];
     function gtag(...args: any[]) {
-      window.dataLayer.push(arguments);
+      (window as any).dataLayer.push(args);
     }
     gtag('js', new Date());
-    gtag('config', 'G-2EM7PKDET3');
+    gtag('config', 'AW-17040751778');
 
     return () => {
       // Cleanup

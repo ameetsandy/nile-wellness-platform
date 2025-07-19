@@ -9,7 +9,7 @@ export interface Doctor {
   image: string;
   path: string;
 }
-
+  
 export const doctors: Doctor[] = [
   {
     "id": 1,
